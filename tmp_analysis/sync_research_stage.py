@@ -105,6 +105,78 @@ FULL_PAUSE_JSON = ["background_execution_receipt.json", "independent_completion_
                   "independent_support_audit_execution_receipt.json",
                   "dialogue_pause_receipt.json"]
 
+# Independent feature stage: do not inherit historical dependence/base evidence.
+# Raw cache/prediction rows and upstream papers remain local and hash-bound only.
+FEATURE_SPACETIME_REPORTS = ["项目进度.md", "COVTrack_特征与时空改进_20261024.md"]
+FEATURE_SPACETIME_SCRIPTS = [
+    "sync_research_stage.py", "feature_spacetime_handoff_20261024.md",
+    "full_stage_handoff_20261023.md", "covtrack_feature_spacetime_design_20261024.md",
+    "feature_spacetime_protected_before_20261024.json",
+    "feature_spacetime_stage_completion_20261024.json",
+    "audit_covtrack_feature_memory_path_20261024.py",
+    "covtrack_feature_memory_path_independent_review_20261024.md",
+    "covtrack_feature_memory_path_independent_review_20261024.json",
+    "audit_covtrack_geometry_time_math_20261024.py",
+    "covtrack_geometry_time_math_independent_review_20261024.json",
+    "context_feature_memory.py", "replay_context_feature_memory.py",
+    "context_feature_memory_protocol_20261024.json",
+    "context_feature_memory_replay_protocol_20261024.json",
+    "context_feature_memory_synthetic_round1_20261024_v2.json",
+    "context_feature_memory_synthetic_round2_20261024_v2.json",
+    "context_feature_memory_synthetic_round3_20261024_v2.json",
+    "audit_context_feature_memory_implementation_20261024.py",
+    "context_feature_memory_20261024_independent_preflight.json",
+    "audit_context_feature_memory_runner_20261024.py",
+    "context_feature_memory_independent_preflight_20261024.json",
+    "verify_context_feature_memory_output_20261024.py",
+    "supplement_context_memory_partition_20261024.py",
+    "relative_track_geometry.py", "relative_track_geometry_synthetic_20261024.json",
+    "relative_track_geometry_independent_review_20261024_v2.json",
+    "identity_memory_direction_audit_20261023.md",
+    "identity_memory_direction_source_receipt_20261023.json",
+    # Explicit lightweight dependencies used by the replay/audit identity decoder.
+    "build_fit_identity_edge_support.py", "verify_fit_identity_edge_support_output.py",
+]
+FEATURE_MEMORY_JSON = [
+    "summary.json", "protocol.json", "input_hashes.json", "predictions_sealed.json",
+    "producer_execution_receipt.json", "completion_receipt.json",
+    "independent_output_audit.json", "independent_audit_execution_receipt.json",
+    "independent_primary_partition_supplement.json",
+]
+# Final candidate v2 sources; real-output receipts are added by exact name only.
+FEATURE_SPACETIME_CANDIDATE_SCRIPTS = [
+    "diagnose_spacetime_candidate_features_20261024.py",
+    "spacetime_candidate_features_protocol_20261024.json",
+    "spacetime_candidate_features_synthetic_round1_20261024_v2.json",
+    "spacetime_candidate_features_synthetic_round2_20261024_v2.json",
+    "spacetime_candidate_features_synthetic_round3_20261024_v2.json",
+    "spacetime_candidate_features_independent_preflight_20261024.json",
+    "audit_spacetime_candidate_implementation_20261024.py",
+    "verify_spacetime_candidate_features_output_20261024.py",
+]
+FEATURE_SPACETIME_CANDIDATE_JSON = [
+    "spacetime_candidate_features_20261024_v1/summary.json",
+    "spacetime_candidate_features_20261024_v1/GT_free_candidates_sealed.json",
+    "spacetime_candidate_features_20261024_v1/producer_execution_receipt.json",
+    "spacetime_candidate_features_20261024_v1/independent_output_audit.json",
+    "spacetime_candidate_features_20261024_v1/independent_audit_execution_receipt.json",
+    "spacetime_candidate_features_20261024_v1/completion_receipt.json",
+]
+
+
+def feature_spacetime_mapping():
+    """Return the exact lightweight allowlist without reading or copying files."""
+    mapping = [(ROOT / "report" / name, Path("report") / name)
+               for name in FEATURE_SPACETIME_REPORTS]
+    mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name)
+                for name in FEATURE_SPACETIME_SCRIPTS + FEATURE_SPACETIME_CANDIDATE_SCRIPTS]
+    memory = Path("context_feature_memory_smoke_20261024_v1")
+    mapping += [(ROOT / "results" / memory / name, Path("evidence") / memory / name)
+                for name in FEATURE_MEMORY_JSON]
+    mapping += [(ROOT / "results" / source, Path("evidence") / source)
+                for source in FEATURE_SPACETIME_CANDIDATE_JSON]
+    return mapping
+
 
 def sha256(data):
     return hashlib.sha256(data).hexdigest()
@@ -113,23 +185,27 @@ def sha256(data):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--repo", type=Path, default=ROOT.parent / "ovvvv")
-    ap.add_argument("--stage", choices=["dependence_20261023", "base_error_interface_20261023", "base_error_20261023", "base_full_20261023", "base_full_pause_20261023"], required=True)
+    ap.add_argument("--stage", choices=["dependence_20261023", "base_error_interface_20261023", "base_error_20261023", "base_full_20261023", "base_full_pause_20261023", "feature_spacetime_20261024"], required=True)
     ap.add_argument("--diagnostic-json", nargs="*", default=[],
                     help="Exact relative JSON paths under dependence_audit_20261023; no glob")
     args = ap.parse_args()
     assert (args.repo / ".git").is_dir(), "Use the existing separate managed repository"
-    mapping = [(ROOT / "report" / p, Path("report") / p) for p in REPORTS]
-    mapping += [(ROOT / "tmp_analysis" / p, Path("tmp_analysis") / p) for p in SCRIPTS]
-    stage = ROOT / "results/dependence_audit_20261023"
-    json_paths = DEPENDENCE_JSON + args.diagnostic_json
-    for name in json_paths:
-        p = Path(name)
-        assert not p.is_absolute() and ".." not in p.parts and p.suffix == ".json", name
-        assert p.name not in ("tao_track.json", "validation_ours_v1.json"), name
-        mapping.append((stage / p, Path("evidence/dependence_audit_20261023") / p))
-    mapping += [(ROOT / "tmp_analysis/covtrackpp_live_sources_20261023" / name,
-                 Path("evidence/covtrackpp_code_audit_20261023") / name)
-                for name in ("manifest.json", "audit_verification.json")]
+    if args.stage == "feature_spacetime_20261024":
+        assert not args.diagnostic_json, "Feature stage uses its explicit allowlist only"
+        mapping = feature_spacetime_mapping()
+    else:
+        mapping = [(ROOT / "report" / p, Path("report") / p) for p in REPORTS]
+        mapping += [(ROOT / "tmp_analysis" / p, Path("tmp_analysis") / p) for p in SCRIPTS]
+        stage = ROOT / "results/dependence_audit_20261023"
+        json_paths = DEPENDENCE_JSON + args.diagnostic_json
+        for name in json_paths:
+            p = Path(name)
+            assert not p.is_absolute() and ".." not in p.parts and p.suffix == ".json", name
+            assert p.name not in ("tao_track.json", "validation_ours_v1.json"), name
+            mapping.append((stage / p, Path("evidence/dependence_audit_20261023") / p))
+        mapping += [(ROOT / "tmp_analysis/covtrackpp_live_sources_20261023" / name,
+                     Path("evidence/covtrackpp_code_audit_20261023") / name)
+                    for name in ("manifest.json", "audit_verification.json")]
     if args.stage in ("base_error_interface_20261023", "base_error_20261023", "base_full_20261023", "base_full_pause_20261023"):
         mapping.append((ROOT / "report/COVTrack_base观测采集_20261023.md", Path("report/COVTrack_base观测采集_20261023.md")))
         mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name) for name in BASE_SCRIPTS]
@@ -168,7 +244,11 @@ def main():
                 mapping += [(full / name, Path("evidence/base_error_full_collection_20261023") / name) for name in FULL_PAUSE_JSON]
     # Read and validate the entire allowlist before writing any destination.
     payloads = []
+    destinations = set()
     for source, rel in mapping:
+        assert not rel.is_absolute() and ".." not in rel.parts, str(rel)
+        assert rel not in destinations, "Duplicate destination: " + str(rel)
+        destinations.add(rel)
         assert source.is_file() and not source.is_symlink(), str(source)
         data = source.read_bytes()
         assert len(data) <= 2_000_000, "Only lightweight stage files: " + str(source)
@@ -179,7 +259,7 @@ def main():
         payloads.append((source, rel, data))
     assert sum(len(data) for _, _, data in payloads) <= 20_000_000
     manifest = {"stage": args.stage, "source_root": str(ROOT), "files": [],
-                "excludes": ["datasets", "checkpoints", "prediction rows", "raw posterior caches", "logs", "PDFs"],
+                "excludes": ["datasets", "checkpoints", "prediction rows", "raw posterior caches", "NPZ", "JSONL", "logs", "PDFs"],
                 "meaning": "Source artifact paths remain local; evidence JSON is a copied receipt, not the underlying data"}
     for source, rel, data in payloads:
         destination = args.repo / rel
@@ -191,7 +271,8 @@ def main():
         assert destination.read_bytes() == data
         manifest["files"].append({"source": str(source), "destination": str(rel),
                                   "bytes": len(data), "sha256": sha256(data)})
-    snapshot = args.repo / "evidence" / ("snapshot_20261023_" + args.stage + ".json")
+    snapshot_date = "20261024" if args.stage == "feature_spacetime_20261024" else "20261023"
+    snapshot = args.repo / "evidence" / ("snapshot_" + snapshot_date + "_" + args.stage + ".json")
     snapshot.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps({"copied_files": len(payloads), "bytes": sum(len(x[2]) for x in payloads),
                       "snapshot": str(snapshot)}, ensure_ascii=False))

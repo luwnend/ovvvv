@@ -1,0 +1,17 @@
+{
+  "status": "PASS_INDEPENDENT_CONTEXT_FEATURE_MEMORY_AUDIT_EXECUTION",
+  "auditor_session_id": 21264,
+  "auditor_observed_exit_code": 0,
+  "auditor_elapsed_seconds": 11.082676004618406,
+  "auditor_script_sha256": "6ca3b6ce58ca09f53ebc02b2348a4fa945c731e7522a48b6b734d22b3369c305",
+  "audit_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/context_feature_memory_smoke_20261024_v1/independent_output_audit.json",
+  "audit_sha256": "632818fa8027fc57d138295a2810da032f2fe102bd233e68eb8feb51d94ab1ed",
+  "supplement_session_id": 70387,
+  "supplement_observed_exit_code": 0,
+  "supplement_script_sha256": "0a41946edc81ae8a33d0107498d48f874262f5cc87c230fadbb6bba8a5d0ce6d",
+  "supplement_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/context_feature_memory_smoke_20261024_v1/independent_primary_partition_supplement.json",
+  "supplement_sha256": "1cabf1ddae3477ad957991956b140bd0f8fec6ba92d09b1c825904be421b605c",
+  "producer_execution_receipt_sha256": "07a4f5f488a4c8d3171c1e2be3d02027b6af4bd7c539c7494d282af9ad1b9d6e",
+  "GPU_used": false,
+  "model_inference_rerun": false
+}

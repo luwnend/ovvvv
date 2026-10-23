@@ -1,0 +1,40 @@
+{
+  "status": "ACTUAL_EXIT0_INDEPENDENT_SPACETIME_CANDIDATE_FEATURES_OUTPUT_AUDIT",
+  "recorded_utc": "2026-10-23T16:41:06.249576+00:00",
+  "actual_tool_execution": {
+    "session_id": 22828,
+    "exit_code": 0,
+    "observed_by": "evaluator_audit direct write_stdin terminal completion"
+  },
+  "elapsed_seconds": 15.67473862785846,
+  "audit_status": "PASS_INDEPENDENT_SPACETIME_CANDIDATE_FEATURES_OUTPUT_AUDIT",
+  "evidence": {
+    "results/spacetime_candidate_features_20261024_v1/independent_output_audit.json": {
+      "sha256": "7d051e9722ebd176e3490073d7653c9bfb4ee3c1b411a6e7480c39b668b84559",
+      "bytes": 355165
+    },
+    "results/spacetime_candidate_features_20261024_v1/producer_execution_receipt.json": {
+      "sha256": "a94de683d342b938f142eb3b66d9bbf31f2ee84d6176a69cf3e14ee5585c242f",
+      "bytes": 2839
+    },
+    "results/spacetime_candidate_features_20261024_v1/summary.json": {
+      "sha256": "cd381982d7023ab3f223f559abb3bb065b950e54549aedbb7b3a3d289d715b47",
+      "bytes": 494541
+    },
+    "tmp_analysis/verify_spacetime_candidate_features_output_20261024.py": {
+      "sha256": "a48e66a59ee5a911e5e84f311bf507cf12bb20050b716d3a77896c73aeb76d62",
+      "bytes": 23573
+    },
+    "tmp_analysis/audit_spacetime_candidate_implementation_20261024.py": {
+      "sha256": "b5a094ff01ee29b44022e381890682c83b94de35d167e47970858e35e45d6b73",
+      "bytes": 14152
+    }
+  },
+  "scope": "Fresh independent CPU feature/candidate/identity/AUROC/top1/order output recomputation; no fitting or official evaluation",
+  "earlier_auditor_adapter_attempt": {
+    "exit_code": 1,
+    "cause": "Receipt evidence schema adapted from SHA strings to sha256 and bytes objects before opening candidate/identity payloads; no sealed output changed"
+  },
+  "training": false,
+  "GPU": false
+}

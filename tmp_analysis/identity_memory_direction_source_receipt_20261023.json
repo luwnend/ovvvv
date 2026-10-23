@@ -1,0 +1,177 @@
+{
+  "status": "HOLD_NEW_IDENTITY_MEMORY_METHOD_FIT_DIAGNOSTIC_ONLY_CODE_CANDIDATES_UNIMPLEMENTED",
+  "created_utc": "2026-10-23T16:07:43.982206+00:00",
+  "audit_document": "tmp_analysis/identity_memory_direction_audit_20261023.md",
+  "primary_sources": [
+    {
+      "title": "Uncertainty Modeling of Contextual-Connections between Tracklets for Unconstrained Video-based Face Recognition",
+      "url": "https://arxiv.org/abs/1905.02756",
+      "coverage": "targeted methods Sec3.1-3.4 Eq1-12; reused existing primary PDF/text; not whole-paper review",
+      "files": [
+        {
+          "path": "tmp_analysis/covtrackpp_live_sources_20261023/ugg_iccv2019.pdf",
+          "bytes": 3636379,
+          "sha256": "52a2e2da74e7f3577943eab2ab5f2fec90bd4bb0e02082e2a8c37fabbff6cb0d"
+        },
+        {
+          "path": "tmp_analysis/covtrackpp_live_sources_20261023/ugg_iccv2019.txt",
+          "bytes": 78156,
+          "sha256": "c19cb954d79c0fd87af12e3b93ce36c23a9200c74310765a1ec0dcf8415575d4"
+        }
+      ]
+    },
+    {
+      "title": "Split and Connect: A Universal Tracklet Booster for Multi-Object Tracking",
+      "url": "https://arxiv.org/abs/2105.02426",
+      "coverage": "targeted methods SecIII-A/B/C and training/inference SecIV-B/C; not whole-paper review",
+      "HF": "Markdown/API404",
+      "arxiv": "abstract HTML PDF200"
+    },
+    {
+      "title": "ERM-Track: Disturbance-Aware and Reliability-Guided Multi-Object Tracking for UGVs Under Dynamic Viewpoints",
+      "url": "https://www.mdpi.com/2504-446X/10/9/692",
+      "coverage": "LEAD_ONLY_search_indexed_text_not_primary_fulltext",
+      "publisher_status": "HTTP403 via requests;429 via browser; one alternate fetch proxy failure",
+      "method_collision_excluded": false
+    }
+  ],
+  "primary_metadata_checks": {
+    "split_abs.html": {
+      "citation_title": "Split and Connect: A Universal Tracklet Booster for Multi-Object Tracking",
+      "citation_date": "2021/05/06",
+      "citation_arxiv_id": "2105.02426"
+    },
+    "ugg_abs.html": {
+      "citation_title": "Uncertainty Modeling of Contextual-Connections between Tracklets for Unconstrained Video-based Face Recognition",
+      "citation_date": "2019/05/07",
+      "citation_arxiv_id": "1905.02756"
+    }
+  },
+  "local_only_sources_and_fetch_receipts": [
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/erm_mdpi.html",
+      "bytes": 400,
+      "sha256": "8dfc067f53bd0c0afc4b5f651835258778daa056c1e73f6332b5a8a3bfd02818"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/erm_mdpi_pdf.pdf",
+      "bytes": 406,
+      "sha256": "0e003a9c033e4e5080e3530efc9b7cbea6513a6bbc396d5498237c17c86e0fe5"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/erm_mdpi_xml.xml",
+      "bytes": 408,
+      "sha256": "4fc5179fb5069678f27bb4ee71e5501d0d43ea2fdce0edc0ec7a45a65c168906"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/fetch_hf_receipt.json",
+      "bytes": 1451,
+      "sha256": "963421fc74b0f6d0117d4108a8107c4e6ab576d5db164351886cb9914e6fca39"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/fetch_primary_receipt.json",
+      "bytes": 1327,
+      "sha256": "a5b4c3362aee9a5bdf7bbadd7d9488857cf28f07c78d7851acf925581a86945f"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/split.pdf",
+      "bytes": 3131527,
+      "sha256": "21a7a09f2d45fb08d915821f9bd6dfd99d161799281e1f9423a8ea6666a4afe8"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/split_abs.html",
+      "bytes": 43493,
+      "sha256": "ca9fc80276d2352840c5fdf261dd01c2027d580e45ec167a9ff4ed45e098f5f3"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/split_full.html",
+      "bytes": 210531,
+      "sha256": "7c9a1000326f0ef6393c5726f2b1283824777adf4fa3e68a0fc467de5e35b9bf"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/split_fulltext.txt",
+      "bytes": 55621,
+      "sha256": "bfbdc56a85a05f45395504812ad0b66e6822426349720f0c308ea021437eaafe"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/split_hf.md",
+      "bytes": 53004,
+      "sha256": "8fba2ba98b603efae0b2ed333948f491cf7370fd3a12f2976e1ea29436cfafa0"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/split_hf_api.json",
+      "bytes": 303,
+      "sha256": "f686558587aa2490d930330e2bc78658e2d2081536e2719168ba2b2e36908aae"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/ugg_abs.html",
+      "bytes": 43705,
+      "sha256": "7d752e6048eccbedba5948626f762b2bb60d73aa62d69cc7831fda0965830d7f"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/ugg_hf.md",
+      "bytes": 53004,
+      "sha256": "31c0333e3a85ab2aca1fe9e71a1cef9d7fc2934399856de52507ce35144a4222"
+    },
+    {
+      "path": "tmp_analysis/identity_memory_primary_sources_20261023/ugg_hf_api.json",
+      "bytes": 303,
+      "sha256": "15e42b41d5ef7002f616a69a59df47f3306f002c834d0bccce23d57b69e586ac"
+    }
+  ],
+  "frozen_code_read_only_hashes": [
+    {
+      "path": "repos/COVTrack/ovtrack/models/trackers/ovtracker.py",
+      "bytes": 68817,
+      "sha256": "4f58f82cb7906b3e28c61b3ea9fe1ff217146d4eae5872a2507ec6e4d579e113"
+    },
+    {
+      "path": "repos/COVTrack/ovtrack/models/roi_heads/ovtrack_roi_head.py",
+      "bytes": 274525,
+      "sha256": "a35cf3ff2a5470955eb2638d3b80891dc44f8e26aff98938a74544ded2b32708"
+    },
+    {
+      "path": "repos/COVTrack/ovtrack/models/losses/cyc_loss.py",
+      "bytes": 13749,
+      "sha256": "0074cfee8db66dddb45fe59f80cb7e0e6ee22f5bf51f70e38eb052c9a8aeee8e"
+    },
+    {
+      "path": "repos/COVTrack/ovtrack/models/roi_heads/track_heads/quasi_dense_embed_head.py",
+      "bytes": 17918,
+      "sha256": "ff8c6ffd98506f9cbc0d524b5b5aa32e2406541beb6b081cd27c5ca9998cc4fe"
+    },
+    {
+      "path": "repos/COVTrack/configs/uncertainty-ovtrack-teta/ovtrack_r50_ctao_train.py",
+      "bytes": 13410,
+      "sha256": "282468d93c21b153b755047398b2fe8e95a8d67c003175309e337f9ed5bb600a"
+    }
+  ],
+  "prior_boundary_source": "tmp_analysis/covtrackpp_code_boundary_20261023.md",
+  "existing_oracle_design_read": "tmp_analysis/base_fit_identity_edge_support_20261023_oracle_design.md",
+  "code_candidates": [
+    "raw appearance confidence memory separate from fused matching memory",
+    "re-fuse current and historical raw features in current candidate context, controlled separately",
+    "relative object-scale pair geometry with explicit verified temporal and ego-motion units"
+  ],
+  "exact_code_limits": [
+    "singleton cycle confidence is1 regardless of similarity; adaptive residual then0",
+    "absolute xyxy cosine is not coordinate-origin invariant"
+  ],
+  "novelty_established": false,
+  "network_implemented": false,
+  "real_model_fit": false,
+  "dataset_files_opened_by_this_audit": false,
+  "new_tune_or_test_result_files_opened": false,
+  "heldout_correctness_opened": false,
+  "scope_incident": {
+    "existing_design_report_mean_fit_tune_summary_incidentally_displayed": true,
+    "used_for_B_design_or_selection": false,
+    "reported_to_parent": true
+  },
+  "receipt_limits": [
+    "Only two targeted primary-method readings; third is lead",
+    "No inference efficacy or mechanism gains measured",
+    "Identity oracle contrast is not a mathematical upper bound",
+    "No dense identity labels, fps or camera motion inferred from sparse cache"
+  ]
+}

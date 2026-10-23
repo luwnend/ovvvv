@@ -1,0 +1,52 @@
+{
+  "status": "PASS_FEATURE_MEMORY_FIT_SMOKE_AND_INDEPENDENT_OUTPUT_AUDIT",
+  "recorded_utc": "2026-10-23T16:22:32.281089+00:00",
+  "producer": {
+    "tool_session": 85118,
+    "actual_exit_code": 0,
+    "elapsed_seconds": 80.93512073159218,
+    "observed_by": "root direct terminal poll"
+  },
+  "independent_audit": {
+    "tool_session": 21264,
+    "actual_exit_code": 0,
+    "elapsed_seconds": 11.082676004618406,
+    "observed_by": "evaluator_audit direct terminal poll, reported to root"
+  },
+  "evidence": {
+    "results/context_feature_memory_smoke_20261024_v1/producer_execution_receipt.json": {
+      "sha256": "07a4f5f488a4c8d3171c1e2be3d02027b6af4bd7c539c7494d282af9ad1b9d6e",
+      "bytes": 2400
+    },
+    "results/context_feature_memory_smoke_20261024_v1/summary.json": {
+      "sha256": "b094a1cace5608d68a976a5cde8a935653ae6c8eedce17c018faa9392a1c8ee3",
+      "bytes": 36342
+    },
+    "results/context_feature_memory_smoke_20261024_v1/predictions_sealed.json": {
+      "sha256": "cbef482a64dfd8ad5ef01d6f08de005ed447d308f5e4984b66e32670d94cb27a",
+      "bytes": 676
+    },
+    "results/context_feature_memory_smoke_20261024_v1/independent_output_audit.json": {
+      "sha256": "632818fa8027fc57d138295a2810da032f2fe102bd233e68eb8feb51d94ab1ed",
+      "bytes": 71038
+    },
+    "tmp_analysis/verify_context_feature_memory_output_20261024.py": {
+      "sha256": "6ca3b6ce58ca09f53ebc02b2348a4fa945c731e7522a48b6b734d22b3369c305",
+      "bytes": 19767
+    }
+  },
+  "primary": "raw_confidence",
+  "primary_F1": 0.824266037648786,
+  "released_F1": 0.824266037648786,
+  "positive_gain_demonstrated": false,
+  "fit_sources": 12,
+  "videos": 20,
+  "frames": 697,
+  "retained_observations": 28082,
+  "eligible_manual_identity_observations": 924,
+  "official_TETA_or_AssocA_evaluated": false,
+  "model_training_started": false,
+  "GPU_used": false,
+  "research_goal_complete": false,
+  "scope": "All modes report sparse-fit-anchor new-ID BCubed conditioned on the same quantized cache; no efficacy/generalization conclusion."
+}

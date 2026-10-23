@@ -1,0 +1,34 @@
+{
+  "status": "ENGINEERING_INFERENCE_PROTOTYPE_SYNTHETIC_BEFORE_REAL_FIT_CACHE_REPLAY",
+  "hypothesis": "Current raw identity embeddings and historically fused appearance memory occupy different feature states when constructing appearance cycle confidence. Isolating raw confidence memory can test this implementation mismatch without changing the pretrained network or category readout.",
+  "module": "tmp_analysis/context_feature_memory.py",
+  "class": "OVTrackerContextMemory",
+  "class_alias": "OVTrackerContextFeatureMemory",
+  "constructor": "OVTrackerContextMemory(memory_mode=MODE, vis=False, **original_collection_tracker_config)",
+  "primary_mode": "raw_confidence",
+  "modes": {
+    "released": "Call the frozen scientific OVTrackerUncertainty.match unchanged. Record a raw EMA sidecar only after its decisions and memo updates; never read this sidecar to decide anything.",
+    "raw_confidence": "Preserve the released fused feature scoring bank and fused EMA update. Compute appearance cycle confidence using current raw256 versus independent raw256 EMA; bbox/class confidence inputs and the one-sided pretrained key fusion remain as released. No raw appearance EMA value is replaced by a fused output.",
+    "raw_only": "Score current raw256 versus historical raw256 EMA; no cycle or fusion calls. Keep all original scoring formula, thresholds and update parameters.",
+    "raw_store_one_sided": "Compute three key-side cycle confidences from current raw256 and historical raw256/last bbox/last cls; fuse the key transiently, score it against raw appearance memory, and write the original raw256 into appearance EMA.",
+    "raw_store_symmetric": "From one frozen current/raw-memory context compute all three cycle confidences in both directions. Call the original pretrained fusion head independently on key and reference snapshots, use both temporary fused sides for this score only, and write raw256 into appearance EMA. No temporary reference feature is persisted."
+  },
+  "fixed_runtime": "All init/object/match thresholds, memo_frames, momentum_embed, momentum_obj_score, distractor behavior, cosine/bi-softmax choice, temperature and class threshold are inherited from full_collect_v1/collection_config.py. The observed collector runtime uses match_score_thr=.37, memo_frames=50, momentum_embed=.4; no search or default substitution is permitted.",
+  "state_invariants": [
+    "Raw bank IDs and expiry follow exact filtered positive output IDs and original AFTER-update memo expiry; never prune before scoring or reactivate an ID by a different rule.",
+    "Every raw bank write is the current filtered raw256 or the original momentum EMA of raw256. Fused network outputs cannot reach this bank.",
+    "Last bbox, last class embedding and original class labels/history update exactly as the scientific superclass. No class readout, logits, posterior fusion or detector output is changed by this module.",
+    "Tensor clones isolate the original fusion head's optional in-place ablation mutations. Both symmetric confidences use the same pre-update snapshots.",
+    "Original input-order greedy one-to-one assignment, strict comparisons, ID initialization and expiry are explicit in four prototype modes. Other methods than ovtrack-teta reject.",
+    "vis defaults false and GT visualization is forbidden. This is inference under no_grad; no network fitting, checkpoint replacement or source edits."
+  ],
+  "prefiltered_entry": "match(...,pre_filtered=True) accepts the COMPLETE original retained rows in original order, including observations whose original track id was -1. The four explicit modes bypass NMS. released still calls super, reapplying released NMS, and asserts it is identity on all rows; a failure aborts rather than silently alter the cache boundary. Default pre_filtered=False preserves normal filtering. Real empty (0,256)/(0,512) frames advance expiry; legacy embeds=None preserves superclass missing-feature behavior.",
+  "replay_boundary": "The stored raw256/cls512 features are float16 and original GPU computation used float32. Frozen FP16-cache CPU released replay must be compared with original partition/IDs, with first divergence and discrepancy counts reported. This cannot be called bit-exact original-GPU replay. Every frame and all retained detections must be replayed; reducing rows changes cycle confidence and bi-softmax context.",
+  "reporting": "Primary raw_confidence comparison is fixed. Report all five modes, not the mode with the best observed score. Predictions must be sealed before independently joining eligible FIT manual identities to NEW predicted track IDs. Never reuse old supervised pairs/edge identities as new tracker evaluation ground truth. This prototype opens no real GT/cache by itself.",
+  "synthetic_rounds": {
+    "round1": ["Superclass released multi-frame output/memo/init parity", "Five-mode empty frame expiry/reset"],
+    "round2": ["Raw write invariance and primary fused scoring versus raw confidence bank separation over three frames", "Bidirectional confidence shape/value, frozen snapshots and in-place fusion side-effect isolation"],
+    "round3": ["Unambiguous permutation, one-to-one IDs, finite inference and caller tensor immutability", "Original distractor/id=-1 alignment, unsupported-method rejection, prefiltered API parity and actual FeatureFusionModule 256D CPU inference"]
+  },
+  "scientific_limit": "Train/inference feature-state consistency is an engineering hypothesis. No novelty, better association, covariance, classification efficacy or TETA improvement is established by synthetic checks. Full backbone/head retraining and ROI feature redesign are outside this implementation."
+}

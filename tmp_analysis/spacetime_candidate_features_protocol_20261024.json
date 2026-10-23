@@ -1,0 +1,46 @@
+{
+  "status": "PREDECLARED_FIXED_FIT_CACHE_NO_LEARNING_CANDIDATE_IDENTIFIABILITY_DIAGNOSTIC",
+  "output_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/spacetime_candidate_features_20261024_v1",
+  "population": "Exactly the presealed context_feature_memory_replay_protocol_20261024.json 12 source groups, 20 videos and all 697 cached sampled frames. No new source/video/frame selection, favorable pair filter or score threshold.",
+  "selection_protocol_sha256": "740d6c782fdfe8240ddc8c4b924e566cebd2465a6a05233f02197b1e904aaf1b",
+  "geometry_module_sha256": "c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a",
+  "fit_identity_helper_sha256": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+  "support_audit_sha256": "92174aaa954f6e66cd0e7f520f2f883f7b9e0017c84fbf9bf4509e734ba714e8",
+  "support_receipt_sha256": "e206051d0809b8e20b24529254eacece96f997c72b7155e8264197e7c07aae1e",
+  "pair_audit_sha256": "df7c386a8f01d3dbfce928e58758f9c455f685e8485dbfa8b19a0cd4ac936e81",
+  "gt_free_manifest_sha256": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+  "candidate_set": "For every adjacent cached sampled frame pair of each video: all current retained Q rows x ALL immediately previous sampled frame M retained rows, including unknown identities and released id=-1. The first frame and empty Q/M frames remain in the frame receipt. A previous empty frame gives zero candidates; do not jump backward to a nonempty frame.",
+  "coordinates": "Original image xyxy boxes and original frame indices. No ego-motion compensation or seconds inferred. Original-frame gaps may be irregular.",
+  "history": "For each reference row, use its released nonnegative (video_id,track_id) solely to locate the nearest earlier cached DIFFERENT frame occurrence, before the reference frame. id=-1 has no history. An ambiguous duplicate same-ID row in a history frame invalidates history until the next unique occurrence. Old IDs never define truth, positive labels, candidate selection or same-ID evaluation filtering. A reference frame containing duplicate same-ID rows gives no CV history to either duplicated current reference row even if an earlier unique occurrence exists; the next unique occurrence has no past history across that ambiguity and only establishes history for later references.",
+  "scores_high_is_positive": [
+    "raw_appearance_cosine: float64 cosine of cached float16 raw256 cast to float64; zero-norm vector normalizes to zero",
+    "absolute_xyxy_cosine: cosine of original four absolute box coordinates, retained as the original position-style control",
+    "box_iou: ordinary continuous xyxy IoU of current and reference boxes, no inclusive pixel padding",
+    "negative_normalized_displacement_norm: negative Euclidean norm of geometry.normalized_displacement",
+    "negative_normalized_CV_innovation_norm: negative Euclidean norm of geometry.normalized_CV_innovation; missing history is NaN with explicit mask",
+    "semantic_embedding_cosine: ordinary cached averaged semantic512 cosine, separate control; no class correctness or branch training"
+  ],
+  "seal_boundary": "Compute and seal every GT-free candidate score/coordinate/row mapping and complete selected frame receipts BEFORE importing/calling the fit supervised identity helper or opening supervised_observations payload. Hash every selected input NPZ, fixed protocol/module and metadata before and after. Candidate score NPZ never receives GT fields.",
+  "identity_join": "After GT-free seal only: exact eligible FIT manual identities from independently audited support, projected by observation_id and immutable GT-free index (image_id,dump_row). Decode split then skip tune before identity projection. Never decode gt_category_id/error/soft_risk/posterior_argmax_category_id. Unknown endpoint identity is label=-1, not a negative. Known labels compare (video_id,gt_track_id); no predicted ID is truth.",
+  "strata": "Report all-known candidates and their same-emitted-predicted-category subset, using cached det_labels only. Within EACH of those scopes report all non-CV scores on its complete candidates, and a separate CV-covered scope where ALL six scores share exactly the CV-valid known denominator. No finite-value dropping by score; reject unexpected invalid scores.",
+  "statistics": "For each of the fixed 12 sources and their union: known positive/negative pair counts, unique endpoint/source/video/official GT trajectory counts, unknown coverage, CV coverage, descriptive pair-level AUROC for each individual score. AUROC uses Mann-Whitney ranking with half credit for exact score ties and is null when either class is absent. Union AUROC is micro over known pairs; additionally report an unweighted mean of valid per-source AUROCs with its supported-source count. Pair counts and AUC are not independent-sample evidence, power, TETA or causal efficacy.",
+  "forbidden": "No learning/fusion weights, score search, threshold tuning, positive-gain selection, pair model, GT reference purification, tune/test/heldout correctness, GPU, real readout/cache or network modification. All declared features/scopes/sources reported; no best-score selection.",
+  "synthetic_rounds": {
+    "round1": [
+      "All QxM including id=-1 and previous-empty frame behavior; original-frame irregular CV gap",
+      "Past-only history no current-query leakage; no-ID history and duplicate-ID history invalidation"
+    ],
+    "round2": [
+      "High-good feature signs, exact raw/semantic cosine, translation effect on absolute versus relative geometry",
+      "Tie-aware AUROC brute-force parity, absent class null, shared CV denominator",
+      "Paired top1 repair/break and positive-negative order transitions; deterministic immutable-row tie, no-positive query coverage, common CV ranking denominator"
+    ],
+    "round3": [
+      "Seal-before-fit-identity join, tune/outcome decoder poison and unknown-not-negative",
+      "Permutation candidate completeness/row mapping, no source/input mutation and complete zero-candidate frame receipts"
+    ]
+  },
+  "interpretation": "This tests which cached individual cues distinguish sparse eligible manual identities on a fixed exploratory FIT population. CV history may inherit original tracker errors; no ego compensation or dynamics validity is established. AUROC does not establish an operating threshold, assignment improvement, learned fusion value, generalization or novelty. Current five-mode experiment remains a memory intervention; geometry remains nonlearned. Geometry AUROC alone does not establish information incremental to appearance. Paired ranking tables are descriptive complementarity checks on sparse eligible manual identities and a conditional known-reference subset, not deployed complete-candidate top1 or assignment gain. Positive-negative pair comparisons may share endpoints and queries.",
+  "query_ranking": "After sealing and identity join, each of all-candidate and same-emitted-predicted-category scopes uses exactly one common CV-valid known-candidate mask for all six scores. Group by immutable (video_id,query_image_id,query_dump_row). Primary top1 table uses queries with at least one positive and at least one negative in that fixed subset. Also report all nonempty-known queries, including no-positive queries scored wrong for every feature, with positive/negative availability, source/video/query counts and candidate counts. Each feature chooses highest score then lowest immutable reference dump_row on ties; GT never resolves a tie. Report paired rawcos-to-feature correct/wrong 2x2 transitions, repair raw error and break raw correct. Within the positive-and-negative-available queries also compare every known positive with every known negative: win/tie/loss counts and 3x3 rawcos-to-feature order transition matrix, strict loss-to-win repair and win-to-loss break. No GT affects the complete sealed candidate set.",
+  "sampling_gap_coverage": "Report original-frame gap min/median/max/full Counter once per adjacent sampled frame pair, including empty frames, rather than weighting by candidate count. Report history-to-reference original-frame gaps once per reference observation with available past history, never once per query-reference pair. Complete GT-free frame receipts retain both gap records."
+}

@@ -1,0 +1,106 @@
+{
+  "status": "PASS_FEATURE_MEMORY_AND_SPACETIME_DIAGNOSTIC_STAGE",
+  "recorded_utc": "2026-10-23T16:45:09.802278+00:00",
+  "stage": "feature_spacetime_20261024",
+  "evidence": {
+    "results/context_feature_memory_smoke_20261024_v1/completion_receipt.json": {
+      "sha256": "d649826692bbad3947199379333caccecb3b4f2bbf8811a15209b38df9a14a67",
+      "bytes": 2034
+    },
+    "results/context_feature_memory_smoke_20261024_v1/independent_primary_partition_supplement.json": {
+      "sha256": "1cabf1ddae3477ad957991956b140bd0f8fec6ba92d09b1c825904be421b605c",
+      "bytes": 15182
+    },
+    "results/context_feature_memory_smoke_20261024_v1/independent_audit_execution_receipt.json": {
+      "sha256": "2f054ee14e26b0ecd2a447ae94a73a0aef6404a7b0cdbdb1bb1b7dec05b82a9e",
+      "bytes": 1072
+    },
+    "tmp_analysis/context_feature_memory.py": {
+      "sha256": "4885de8169a5bf5177d9153907d18faa401811549681f535c59f320fd52abaa4",
+      "bytes": 24171
+    },
+    "tmp_analysis/replay_context_feature_memory.py": {
+      "sha256": "35e635ac66ee27da7561cac8c4b723d67776a2534f4b56faa5da5fa80a6d208b",
+      "bytes": 16579
+    },
+    "tmp_analysis/relative_track_geometry.py": {
+      "sha256": "c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a",
+      "bytes": 9277
+    },
+    "tmp_analysis/relative_track_geometry_synthetic_20261024.json": {
+      "sha256": "3f77c333e433c577f1b81af635721b0b34faacbe5f484aae56a10649ea2dde7e",
+      "bytes": 591
+    },
+    "tmp_analysis/relative_track_geometry_independent_review_20261024_v2.json": {
+      "sha256": "4d975726f32d43f3ebabb74a6d9253ae6bcc78565c803bf8429bf0f0387aa454",
+      "bytes": 904
+    },
+    "results/spacetime_candidate_features_20261024_v1/completion_receipt.json": {
+      "sha256": "27e8d729de16946937418e3d05b434d795303b2fd893c6d7cd99bc15c482958f",
+      "bytes": 4934
+    },
+    "results/spacetime_candidate_features_20261024_v1/independent_output_audit.json": {
+      "sha256": "7d051e9722ebd176e3490073d7653c9bfb4ee3c1b411a6e7480c39b668b84559",
+      "bytes": 355165
+    },
+    "tmp_analysis/sync_research_stage.py": {
+      "sha256": "86a2697592dec387c0122f156f184c052cadc9d1c330cb5eda37598ca18fc27b",
+      "bytes": 21125
+    }
+  },
+  "outcomes": {
+    "memory_primary_F1": 0.824266037648786,
+    "memory_released_F1": 0.824266037648786,
+    "memory_all_five_modes_reported": true,
+    "candidate_generation_and_independent_audit_complete": true,
+    "GT_free_candidates": 1210939,
+    "known_identity_candidates": 1832,
+    "CV_covered_comparable_queries": 391,
+    "raw_correct_queries": 384,
+    "CV_repair_raw_error": 4,
+    "CV_break_raw_correct": 63,
+    "same_predicted_category_comparable_queries": 88,
+    "same_predicted_category_raw_errors_sources": 1,
+    "positive_tracking_gain_demonstrated": false,
+    "novelty_demonstrated": false
+  },
+  "protected_files_after": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json": {
+      "exists": true,
+      "sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/OVTrack/teta_summary_results.pth": {
+      "exists": true,
+      "sha256": "621b769b60f88816be02c9cb79339b493ef60f17717a135cf663e3599a8a1d62"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/weights/ctao_public.pth": {
+      "exists": false,
+      "sha256": null
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base/configs/uncertainty-ovtrack-teta/ovtrack_r50_ctao_train.py": {
+      "exists": true,
+      "sha256": "d8ae926e540c327d4baa2ced8cb1338f70d6a67eb73d2fb02de4d79893cecc08"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/covtrack_ctao_train20_bs24_20261022/ovtrack_r50_ctao_train.py": {
+      "exists": true,
+      "sha256": "b907b90fe73d6c515d3487efeb7d921dbbc874b4ef4a840cecebb50a1e9a169d"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/scripts/train_covtrack20.py": {
+      "exists": true,
+      "sha256": "0beeac07b81caa5c1be3ee2232adee2d4d78a554bbac310b233e2d567395312c"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/repos/COVTrack/ovtrack/models/roi_heads/class_name.py": {
+      "exists": true,
+      "sha256": "6f50d7b3f16eef96e15b6cfbf97a53b195e26dbc34df51e7679645c99e6937d9"
+    }
+  },
+  "GT_free_candidates_or_predictions_sealed_before_supervision": true,
+  "unknown_is_negative": false,
+  "official_TETA_or_AssocA_evaluated": false,
+  "network_training_started": false,
+  "GPU_used": false,
+  "next_stage": "Prepare and independently preflight full FIT-only streaming lag{1,4} support audit before deciding appearance-adapter x geometry factorial; not yet launched",
+  "full_fit_next_stage_launched": false,
+  "research_goal_complete": false,
+  "git_snapshot_created_by": "sync_research_stage.py --stage feature_spacetime_20261024 after this receipt; repository/remote SHA verified separately to avoid a circular commit hash"
+}

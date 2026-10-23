@@ -1,0 +1,11 @@
+{
+  "status": "ALL_FIVE_GT_FREE_MODE_PREDICTIONS_SEALED_BEFORE_SUPERVISION",
+  "output_files_sha256": {
+    "released.jsonl": "59b6357fe188082f90c9d65a551512ec26dd178c2627ccf3cd3be58d55cc6d20",
+    "raw_confidence.jsonl": "15c709ddffd70d4d3e430f4f237338f70bac4247f794793eb31e70ea2b81f922",
+    "raw_only.jsonl": "4ff42a1e29b1a474d5cc0989cfdc8ed0920dda0f769d59f9f00937c8b57392d3",
+    "raw_store_one_sided.jsonl": "2b132bd5faaf7bec136312efc1892bb8629cc4456ad02a7a6a675436b69e5739",
+    "raw_store_symmetric.jsonl": "00cd564a48f10c20b4a1c977987e9ab5b4ea3fb965f8e1b376d5df5896c6e9f3"
+  },
+  "protocol_sha256": "740d6c782fdfe8240ddc8c4b924e566cebd2465a6a05233f02197b1e904aaf1b"
+}

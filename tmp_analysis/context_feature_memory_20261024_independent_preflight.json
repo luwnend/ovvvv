@@ -1,0 +1,30 @@
+{
+  "status": "PASS_INDEPENDENT_CONTEXT_FEATURE_MEMORY_IMPLEMENTATION_PREFLIGHT",
+  "module_sha256": "4885de8169a5bf5177d9153907d18faa401811549681f535c59f320fd52abaa4",
+  "protocol_sha256": "740d6c782fdfe8240ddc8c4b924e566cebd2465a6a05233f02197b1e904aaf1b",
+  "checks": [
+    "released_exact_class_parity_and_all_modes_zero_residual_reduction",
+    "independent_raw_EMA_reconstruction_primary_changes_only_appearance_confidence_memory",
+    "independent_bidirectional_same_raw_snapshot_unequal_scene_sizes",
+    "all_mode_original_filter_row_alignment_unassigned_context_and_empty_expiry"
+  ],
+  "protected_source_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/models/trackers/ovtracker.py": "0eaa4c96a09058f6f1b6ef73b1f860fb16aa0b6542ef43d0dc238de95a8f6db5",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/models/losses/cyc_loss.py": "0074cfee8db66dddb45fe59f80cb7e0e6ee22f5bf51f70e38eb052c9a8aeee8e",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/models/roi_heads/ovtrack_roi_head.py": "955d03011368fba48efde974b73bc4224e63a0d3add1028c17b97da54a2940d7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/core/track/similarity.py": "c22848edcc2511f3b608ff8888f776e5d3bd2aef7d6ee6571c8739d7136a00a7"
+  },
+  "actual_runtime": {
+    "torch": "1.10.0+cu113",
+    "python": "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "CPU_threads": 1,
+    "GPU_initialized": false
+  },
+  "real_cache_or_GT_opened": false,
+  "real_checkpoint_loaded": false,
+  "limitations": [
+    "Synthetic implementation preflight only",
+    "No exact original float32 GPU replay or real-data benefit established",
+    "Scoring runner requires separate preflight"
+  ]
+}

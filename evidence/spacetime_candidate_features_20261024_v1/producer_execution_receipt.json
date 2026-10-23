@@ -1,0 +1,67 @@
+{
+  "status": "ACTUAL_EXIT0_SPACETIME_CANDIDATE_FEATURES_PENDING_INDEPENDENT_OUTPUT_AUDIT",
+  "recorded_utc": "2026-10-23T16:39:17.351757+00:00",
+  "actual_tool_execution": {
+    "session_id": 21963,
+    "exit_code": 0,
+    "observed_by": "root direct terminal completion poll"
+  },
+  "elapsed_seconds": 20.48361086845398,
+  "all_candidates": 1210939,
+  "selected_frames": 697,
+  "evidence": {
+    "results/spacetime_candidate_features_20261024_v1/summary.json": {
+      "sha256": "cd381982d7023ab3f223f559abb3bb065b950e54549aedbb7b3a3d289d715b47",
+      "bytes": 494541
+    },
+    "results/spacetime_candidate_features_20261024_v1/GT_free_candidates_sealed.json": {
+      "sha256": "8c70125ed4b7d666083eed7687503dd4b1fbb9cb8a3ad741dae1eee390814458",
+      "bytes": 137323
+    },
+    "tmp_analysis/diagnose_spacetime_candidate_features_20261024.py": {
+      "sha256": "c6fef39442dd476f918c326210ace407cdcb4e8b4700544f34454e29ba7665aa",
+      "bytes": 36306
+    },
+    "tmp_analysis/spacetime_candidate_features_protocol_20261024.json": {
+      "sha256": "d38beac2839a6473ff6a973e41a7c194febb818e40e433df63793e3349f086a1",
+      "bytes": 8320
+    },
+    "tmp_analysis/spacetime_candidate_features_independent_preflight_20261024.json": {
+      "sha256": "952a45839bbefbf55ae4372b38cd90d259de3d1421e40c93d08ed405480b8214",
+      "bytes": 1258
+    }
+  },
+  "protected_files": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json": {
+      "exists": true,
+      "sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/OVTrack/teta_summary_results.pth": {
+      "exists": true,
+      "sha256": "621b769b60f88816be02c9cb79339b493ef60f17717a135cf663e3599a8a1d62"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/weights/ctao_public.pth": {
+      "exists": false,
+      "sha256": null
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base/configs/uncertainty-ovtrack-teta/ovtrack_r50_ctao_train.py": {
+      "exists": true,
+      "sha256": "d8ae926e540c327d4baa2ced8cb1338f70d6a67eb73d2fb02de4d79893cecc08"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/covtrack_ctao_train20_bs24_20261022/ovtrack_r50_ctao_train.py": {
+      "exists": true,
+      "sha256": "b907b90fe73d6c515d3487efeb7d921dbbc874b4ef4a840cecebb50a1e9a169d"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/scripts/train_covtrack20.py": {
+      "exists": true,
+      "sha256": "0beeac07b81caa5c1be3ee2232adee2d4d78a554bbac310b233e2d567395312c"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/repos/COVTrack/ovtrack/models/roi_heads/class_name.py": {
+      "exists": true,
+      "sha256": "6f50d7b3f16eef96e15b6cfbf97a53b195e26dbc34df51e7679645c99e6937d9"
+    }
+  },
+  "GPU_used": false,
+  "training_started": false,
+  "research_goal_complete": false
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_SPACETIME_CANDIDATE_FEATURES_SYNTHETIC_ROUND",
+  "round": 2,
+  "checks": [
+    "feature_sign_exact_cosine_translation_relative_vs_absolute",
+    "AUROC_exact_ties_bruteforce_and_absent_class_null",
+    "all_six_scores_share_one_CV_covered_denominator",
+    "paired_top1_repair_break_pair_order_fixed_tie_and_no_positive_coverage"
+  ],
+  "script_sha256": "c6fef39442dd476f918c326210ace407cdcb4e8b4700544f34454e29ba7665aa",
+  "protocol_sha256": "d38beac2839a6473ff6a973e41a7c194febb818e40e433df63793e3349f086a1",
+  "real_cache_or_supervised_payload_opened": false,
+  "training_started": false,
+  "GPU_used": false
+}

@@ -1,0 +1,35 @@
+{
+  "status": "PASS_INDEPENDENT_CONTEXT_FEATURE_MEMORY_IMPLEMENTATION_PREFLIGHT",
+  "runner_sha256": "35e635ac66ee27da7561cac8c4b723d67776a2534f4b56faa5da5fa80a6d208b",
+  "module_sha256": "4885de8169a5bf5177d9153907d18faa401811549681f535c59f320fd52abaa4",
+  "replay_protocol_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/context_feature_memory_replay_protocol_20261024.json",
+  "replay_protocol_sha256": "740d6c782fdfe8240ddc8c4b924e566cebd2465a6a05233f02197b1e904aaf1b",
+  "module_protocol_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/context_feature_memory_protocol_20261024.json",
+  "module_protocol_sha256": "535d98eaa96685074ec86d1e6921d9bd1a6798253adce41939ee1e6c8ad6e14e",
+  "identity_decoder_sha256": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+  "checks": [
+    "independent_B3_bruteforce_source_GT_observation_weighting_crossvideo_IDs_singletons",
+    "full_9_frame_3_video_5_mode_synthetic_runner_fusion_only_synthetic_checkpoint",
+    "all_five_predictions_verified_sealed_before_identity_join",
+    "tune_identity_and_correctness_poison_not_decoded_fixed_anchor_denominator",
+    "unknown_empty_source_reported_and_output_overwrite_rejected",
+    "reviewed_code_and_scientific_sources_unchanged_CPU_only"
+  ],
+  "module_independent_preflight": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/context_feature_memory_20261024_independent_preflight.json",
+  "protected_source_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/models/trackers/ovtracker.py": "0eaa4c96a09058f6f1b6ef73b1f860fb16aa0b6542ef43d0dc238de95a8f6db5",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/models/losses/cyc_loss.py": "0074cfee8db66dddb45fe59f80cb7e0e6ee22f5bf51f70e38eb052c9a8aeee8e",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/models/roi_heads/ovtrack_roi_head.py": "955d03011368fba48efde974b73bc4224e63a0d3add1028c17b97da54a2940d7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/core/track/similarity.py": "c22848edcc2511f3b608ff8888f776e5d3bd2aef7d6ee6571c8739d7136a00a7"
+  },
+  "synthetic_fixture_authentication": "Fixture-only accepted-authority digest map for three temp files; all physical fixture bytes independently snapshotted before/after. No real authority hashes changed.",
+  "real_cache_opened": false,
+  "real_supervision_opened": false,
+  "real_checkpoint_loaded": false,
+  "GPU_initialized": false,
+  "limitations": [
+    "Implementation preflight only; no real-data efficacy",
+    "FP16-cache CPU comparisons cannot guarantee original float32 GPU baseline parity",
+    "Final real outputs require independent output audit"
+  ]
+}

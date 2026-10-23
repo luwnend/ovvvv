@@ -1,0 +1,24 @@
+{
+  "status": "PASS_INDEPENDENT_RELATIVE_GEOMETRY_UNIT_IMPLEMENTATION_REVIEW",
+  "subject_sha256": "c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a",
+  "producer_selftest": {
+    "status": "PASS_RELATIVE_GEOMETRY_SYNTHETIC",
+    "checks": 11,
+    "real_cache_opened": false,
+    "trained": false,
+    "method_efficacy_established": false
+  },
+  "independent_checks": [
+    "projective_scale_gauge_and_sign_equivalence",
+    "singular_camera_map_rejected",
+    "CV_and_static_reference_prediction_explicitly_distinct",
+    "irregular_original_frame_gap_and_history_velocity_per_memory",
+    "aligned_per_memory_and_historical_camera_warp_sign_invariance",
+    "empty_query_memory_tensor_shapes"
+  ],
+  "old_counterexamples_fixed": true,
+  "real_cache_opened": false,
+  "camera_motion_estimator_tested": false,
+  "network_learning_executed": false,
+  "method_efficacy_established": false
+}

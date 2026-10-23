@@ -1,4 +1,21 @@
-# Full阶段当前交接（2026-10-23）
+# Full与特征时空阶段交接（更新2026-10-24）
+
+## 最新优先级与断点
+
+用户进一步要求检查代码、改善网络特征或更好利用时间/空间/外观/位置。当前优先级按此调整；下面旧full阶段的oracle next-step不再是立即执行项。整体研究继续，不能标完成或主动暂停。
+
+**最新精简续接见`feature_spacetime_handoff_20261024.md`。** 五模式memory与同12源组的1,210,939个相邻时空候选诊断均已实际exit0并独立全查通过；CV单独替代raw在391个条件query中修4/破63，没有方法收益。当前下一项为完整FIT固定lag `{1,4}` 的streaming支持审计，尚未真实执行；不按现12源组救参数，不开网络训练。
+
+- 代码驱动的raw/fused外观记忆问题已核实；`tmp_analysis/context_feature_memory.py`独立实现5个固定模式，原版影子缓存parity、raw EMA/双向同快照/过滤及空帧等三轮合成与独立预审通过。
+- `results/context_feature_memory_smoke_20261024_v1/`真实CPU回放session85118/actual exit0，80.935秒；独立输出审计session21264/actual exit0，11.083秒。12fit源组/20视频/697帧/28,082retained输出先封存预测，再用924条合法fit146 manual-anchor身份按新ID评分；没有旧ID pair选择。预定raw_confidence F1=0.824266，与released相同；raw-only/one-sided/symmetric均未提升。没有已证实收益，不改参数或扩大子集救结果。
+- 原float16 feature cache CPU重放不能保证原GPU分区一致：released仅18/20视频canonical分区完全相同。结果只属稀疏anchor量化缓存诊断，不是TETA/AssocA。首要模式输出分区虽改变但已知anchor指标不变；ID重编号级联不代表错误数。
+- `relative_track_geometry.py`支持尺度归一pair位移、size ratio、按originalframe间隔的CV残差及外部每reference camera H。修复singular H/scale gauge后11项producer+6项独立合成PASS，最终SHA `c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a`。仅单元实现，未估计真实camera或接入新评分。
+- 同一12源组的无学习时空候选诊断已完成：root session21963 actualexit0/20.484秒，独立session22828 actualexit0/15.675秒。1,210,939完整候选先封存，1,832双端身份已知，CV history仅past-only旧预测ID定位。391条件query中raw384对；同预测类别88query中5个raw错全部集中一源组。几何单列破坏多于纠正；semantic局部+1也不支持跨源训练。输出`results/spacetime_candidate_features_20261024_v1/`不重跑。
+- 身份净化oracle完整协议/实现和三轮合成已保存，尚未真实执行；不因旧handoff而抢先启动。真正feature learning的adapter/track head及pair网络仍属待验证设计，不触碰另一会话训练。
+
+当前细节：[特征与时空报告](../report/COVTrack_特征与时空改进_20261024.md)、`tmp_analysis/covtrack_feature_spacetime_design_20261024.md`。Memory smoke的`completion_receipt.json`绑定audit SHA `632818fa8027fc57d138295a2810da032f2fe102bd233e68eb8feb51d94ab1ed`。不要重跑任何已封存run。
+
+下面为已完成full阶段溯源和保护规则。
 
 用户已恢复，研究继续；整体目标未完成。目前没有本轮GPU任务或新detector/tracker/pair训练。旧pause JSON均为历史快照，不能据此重启已完成任务。
 
@@ -50,6 +67,6 @@ arXiv2609.22351v1全文方法/实验/参考文献及PDF关键页已核验，其�
 
 保护发布baseline、`repos/COVTrack`、原始数据、sealed pilot/full输出及另一会话`results/covtrack_ctao_train20_bs24_20261022`；不停止/修改其训练或配置。此次身份receipt再次核对7项保护文件未变。
 
-研究目录`/home/chenhc/ov/OVMOT_RESEARCH`，托管副本`/home/chenhc/ov/ovvvv`，远端`https://github.com/luwnend/ovvvv`；既有SSH可用，不需新密钥。当前最终阶段用`sync_research_stage.py --stage base_full_20261023`，逐文件核对snapshot SHA、diff后commit/push；旧`base_full_pause_20261023`快照保留历史，不是当前状态。
+研究目录`/home/chenhc/ov/OVMOT_RESEARCH`，托管副本`/home/chenhc/ov/ovvvv`，远端`https://github.com/luwnend/ovvvv`；既有SSH可用，不需新密钥。当前特征时空阶段用`sync_research_stage.py --stage feature_spacetime_20261024`，逐文件核对snapshot SHA、diff后commit/push；已推送full阶段为`cbe770a340f979bdb28d993c18c3b4e30509936b`，旧pause快照保留历史，不是当前状态。
 
 未来GPU启动前现场核owner/UUID，非4GB且启动前没有chenhc进程；他人任务可按授权共卡。预计GPU超过20分钟：可靠detached启动、验证、保存交接后按用户规则暂停Codex。CPU长任务不自动触发此规则。用户已恢复，本次不会主动暂停研究或标整体完成。

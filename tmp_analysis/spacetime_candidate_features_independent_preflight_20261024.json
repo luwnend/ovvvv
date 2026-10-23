@@ -1,0 +1,24 @@
+{
+  "status": "PASS_INDEPENDENT_SPACETIME_CANDIDATE_FEATURES_IMPLEMENTATION_PREFLIGHT",
+  "script_sha256": "c6fef39442dd476f918c326210ace407cdcb4e8b4700544f34454e29ba7665aa",
+  "protocol_sha256": "d38beac2839a6473ff6a973e41a7c194febb818e40e433df63793e3349f086a1",
+  "geometry_module_sha256": "c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a",
+  "selection_protocol_sha256": "740d6c782fdfe8240ddc8c4b924e566cebd2465a6a05233f02197b1e904aaf1b",
+  "checks": [
+    "independent_all_QxM_float64_feature_and_irregular_CV_recomputation_unequal_counts",
+    "original_row_mapping_unknown_ID_inclusion_empty_previous_not_skipped",
+    "current_duplicate_and_future_ID_history_invalidation_unique_recovery_without_jump",
+    "30_bruteforce_tie_AUC_and_absent_class_cases",
+    "160_independently_enumerated_common_CV_known_ranking_scopes_all_3x3_order_cells",
+    "immutable_reference_row_tie_wrong_GT_control_empty_and_no_positive_query_coverage",
+    "unsealed_identity_join_rejected_before_any_payload"
+  ],
+  "real_cache_opened": false,
+  "real_supervision_opened": false,
+  "real_model_opened": false,
+  "GPU": false,
+  "script_and_protocol_unchanged": true,
+  "limits": [
+    "Synthetic implementation preflight only; no efficacy evidence"
+  ]
+}

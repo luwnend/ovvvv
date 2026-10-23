@@ -1,0 +1,72 @@
+{
+  "status": "PASS_INDEPENDENT_COVTRACK_FEATURE_MEMORY_PATH_SYNTHETIC_AUDIT",
+  "scope": "CPU source and synthetic only; no checkpoint, real NPZ, GT, classification outcomes, training or GPU",
+  "source_hashes_before": {
+    "repos/COVTrack/ovtrack/models/trackers/ovtracker.py": "4f58f82cb7906b3e28c61b3ea9fe1ff217146d4eae5872a2507ec6e4d579e113",
+    "repos/COVTrack/ovtrack/models/roi_heads/ovtrack_roi_head.py": "a35cf3ff2a5470955eb2638d3b80891dc44f8e26aff98938a74544ded2b32708",
+    "repos/COVTrack/ovtrack/models/roi_heads/track_heads/quasi_dense_embed_head.py": "ff8c6ffd98506f9cbc0d524b5b5aa32e2406541beb6b081cd27c5ca9998cc4fe",
+    "repos/COVTrack/ovtrack/models/losses/cyc_loss.py": "0074cfee8db66dddb45fe59f80cb7e0e6ee22f5bf51f70e38eb052c9a8aeee8e",
+    "work/covtrack_base_error_20261023/ovtrack/models/trackers/ovtracker.py": "0eaa4c96a09058f6f1b6ef73b1f860fb16aa0b6542ef43d0dc238de95a8f6db5",
+    "work/covtrack_base_error_20261023/ovtrack/base_error_dump.py": "e0a934285b6966f4bf541a6ef40a7366ce186c608911cee9f1a624e36def2168"
+  },
+  "source_hashes_after": {
+    "repos/COVTrack/ovtrack/models/trackers/ovtracker.py": "4f58f82cb7906b3e28c61b3ea9fe1ff217146d4eae5872a2507ec6e4d579e113",
+    "repos/COVTrack/ovtrack/models/roi_heads/ovtrack_roi_head.py": "a35cf3ff2a5470955eb2638d3b80891dc44f8e26aff98938a74544ded2b32708",
+    "repos/COVTrack/ovtrack/models/roi_heads/track_heads/quasi_dense_embed_head.py": "ff8c6ffd98506f9cbc0d524b5b5aa32e2406541beb6b081cd27c5ca9998cc4fe",
+    "repos/COVTrack/ovtrack/models/losses/cyc_loss.py": "0074cfee8db66dddb45fe59f80cb7e0e6ee22f5bf51f70e38eb052c9a8aeee8e",
+    "work/covtrack_base_error_20261023/ovtrack/models/trackers/ovtracker.py": "0eaa4c96a09058f6f1b6ef73b1f860fb16aa0b6542ef43d0dc238de95a8f6db5",
+    "work/covtrack_base_error_20261023/ovtrack/base_error_dump.py": "e0a934285b6966f4bf541a6ef40a7366ce186c608911cee9f1a624e36def2168"
+  },
+  "checks": {
+    "memory_tensor_routing": {
+      "status": "PASS",
+      "first_frame_memory": "raw",
+      "fusion_calls_per_nonempty_memo_frame": 1,
+      "third_frame_raw_key": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "third_frame_context_conditioned_memo": [
+        [
+          1.100000023841858,
+          0.04000000283122063
+        ],
+        [
+          -0.04000000283122063,
+          1.1200000047683716
+        ]
+      ],
+      "caveat": "Deterministic stub proves source tensor routing, not learned fusion magnitude or real-data efficacy"
+    },
+    "after_filter_idempotence": {
+      "status": "PASS",
+      "random_cases": 100,
+      "nontransitive_chain": true
+    },
+    "retained_nonemitted_rows_affect_scores": {
+      "status": "PASS",
+      "with_other_row": 0.8749998807907104,
+      "alone": 0.9999998211860657
+    },
+    "empty_frame_expiry": {
+      "status": "PASS"
+    },
+    "cache_precision_loss": {
+      "status": "PASS",
+      "max_abs_error": 0.00012344121932983398,
+      "implication": "Exact original float32 replay cannot be guaranteed from float16 saved features"
+    }
+  },
+  "cuda_initialized": false,
+  "limitations": [
+    "No baseline replay or efficacy measured",
+    "After-filter idempotence assumes identical retained row order, boxes, scores, labels and thresholds",
+    "Synthetic fusion is a routing probe, not the released trained module"
+  ]
+}

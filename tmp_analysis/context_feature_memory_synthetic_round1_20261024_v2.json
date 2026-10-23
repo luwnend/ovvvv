@@ -1,0 +1,28 @@
+{
+  "status": "PASS_CONTEXT_FEATURE_MEMORY_SYNTHETIC_ROUND",
+  "round": 1,
+  "checks": [
+    "released_calls_super_exact_output_memo_ID_parity_over_multiple_frames",
+    "all_five_modes_empty_frame_expiry_and_reset"
+  ],
+  "primary_mode": "raw_confidence",
+  "reported_modes": [
+    "released",
+    "raw_confidence",
+    "raw_only",
+    "raw_store_one_sided",
+    "raw_store_symmetric"
+  ],
+  "module_sha256": "4885de8169a5bf5177d9153907d18faa401811549681f535c59f320fd52abaa4",
+  "protected_source_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/models/trackers/ovtracker.py": "0eaa4c96a09058f6f1b6ef73b1f860fb16aa0b6542ef43d0dc238de95a8f6db5",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/models/losses/cyc_loss.py": "0074cfee8db66dddb45fe59f80cb7e0e6ee22f5bf51f70e38eb052c9a8aeee8e",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/models/roi_heads/ovtrack_roi_head.py": "955d03011368fba48efde974b73bc4224e63a0d3add1028c17b97da54a2940d7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/core/track/similarity.py": "c22848edcc2511f3b608ff8888f776e5d3bd2aef7d6ee6571c8739d7136a00a7"
+  },
+  "real_cache_or_GT_opened": false,
+  "real_checkpoint_loaded": false,
+  "training_started": false,
+  "GPU_used": false,
+  "interpretation": "Engineering train/inference feature-state consistency hypothesis only; no novelty or efficacy established."
+}

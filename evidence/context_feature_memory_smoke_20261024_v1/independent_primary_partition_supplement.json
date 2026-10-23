@@ -1,0 +1,449 @@
+{
+  "status": "PASS_INDEPENDENT_CONTEXT_MEMORY_PARTITION_SUPPLEMENT",
+  "compared_modes": [
+    "released",
+    "raw_confidence"
+  ],
+  "aggregates": {
+    "all_retained": {
+      "observations": 28082,
+      "all_unordered_pairs": 21068052,
+      "released_same_pairs": 111289,
+      "primary_same_pairs": 111260,
+      "released_same_primary_different": 2606,
+      "released_different_primary_same": 2577,
+      "pair_disagreements": 5183,
+      "videos": 20,
+      "videos_with_partition_difference": 20
+    },
+    "known_eligible_fit_manual_anchors": {
+      "observations": 924,
+      "all_unordered_pairs": 27472,
+      "released_same_pairs": 6132,
+      "primary_same_pairs": 6132,
+      "released_same_primary_different": 0,
+      "released_different_primary_same": 0,
+      "pair_disagreements": 0,
+      "videos": 20,
+      "videos_with_partition_difference": 0
+    }
+  },
+  "per_video": {
+    "all_retained": {
+      "92": {
+        "observations": 1366,
+        "all_unordered_pairs": 932295,
+        "released_same_pairs": 5475,
+        "primary_same_pairs": 5510,
+        "released_same_primary_different": 22,
+        "released_different_primary_same": 57,
+        "pair_disagreements": 79,
+        "partition_equal": false
+      },
+      "221": {
+        "observations": 1661,
+        "all_unordered_pairs": 1378630,
+        "released_same_pairs": 5799,
+        "primary_same_pairs": 5786,
+        "released_same_primary_different": 39,
+        "released_different_primary_same": 26,
+        "pair_disagreements": 65,
+        "partition_equal": false
+      },
+      "301": {
+        "observations": 1940,
+        "all_unordered_pairs": 1880830,
+        "released_same_pairs": 12709,
+        "primary_same_pairs": 12715,
+        "released_same_primary_different": 26,
+        "released_different_primary_same": 32,
+        "pair_disagreements": 58,
+        "partition_equal": false
+      },
+      "936": {
+        "observations": 2157,
+        "all_unordered_pairs": 2325246,
+        "released_same_pairs": 6812,
+        "primary_same_pairs": 6967,
+        "released_same_primary_different": 354,
+        "released_different_primary_same": 509,
+        "pair_disagreements": 863,
+        "partition_equal": false
+      },
+      "995": {
+        "observations": 1552,
+        "all_unordered_pairs": 1203576,
+        "released_same_pairs": 3812,
+        "primary_same_pairs": 3831,
+        "released_same_primary_different": 84,
+        "released_different_primary_same": 103,
+        "pair_disagreements": 187,
+        "partition_equal": false
+      },
+      "1043": {
+        "observations": 641,
+        "all_unordered_pairs": 205120,
+        "released_same_pairs": 2694,
+        "primary_same_pairs": 2702,
+        "released_same_primary_different": 14,
+        "released_different_primary_same": 22,
+        "pair_disagreements": 36,
+        "partition_equal": false
+      },
+      "1126": {
+        "observations": 805,
+        "all_unordered_pairs": 323610,
+        "released_same_pairs": 1675,
+        "primary_same_pairs": 1652,
+        "released_same_primary_different": 44,
+        "released_different_primary_same": 21,
+        "pair_disagreements": 65,
+        "partition_equal": false
+      },
+      "1293": {
+        "observations": 1334,
+        "all_unordered_pairs": 889111,
+        "released_same_pairs": 4367,
+        "primary_same_pairs": 4371,
+        "released_same_primary_different": 229,
+        "released_different_primary_same": 233,
+        "pair_disagreements": 462,
+        "partition_equal": false
+      },
+      "1329": {
+        "observations": 1758,
+        "all_unordered_pairs": 1544403,
+        "released_same_pairs": 5432,
+        "primary_same_pairs": 5411,
+        "released_same_primary_different": 562,
+        "released_different_primary_same": 541,
+        "pair_disagreements": 1103,
+        "partition_equal": false
+      },
+      "1457": {
+        "observations": 1105,
+        "all_unordered_pairs": 609960,
+        "released_same_pairs": 4790,
+        "primary_same_pairs": 4789,
+        "released_same_primary_different": 164,
+        "released_different_primary_same": 163,
+        "pair_disagreements": 327,
+        "partition_equal": false
+      },
+      "1491": {
+        "observations": 1524,
+        "all_unordered_pairs": 1160526,
+        "released_same_pairs": 6935,
+        "primary_same_pairs": 6931,
+        "released_same_primary_different": 40,
+        "released_different_primary_same": 36,
+        "pair_disagreements": 76,
+        "partition_equal": false
+      },
+      "1574": {
+        "observations": 955,
+        "all_unordered_pairs": 455535,
+        "released_same_pairs": 1575,
+        "primary_same_pairs": 1576,
+        "released_same_primary_different": 21,
+        "released_different_primary_same": 22,
+        "pair_disagreements": 43,
+        "partition_equal": false
+      },
+      "1576": {
+        "observations": 1257,
+        "all_unordered_pairs": 789396,
+        "released_same_pairs": 4094,
+        "primary_same_pairs": 4079,
+        "released_same_primary_different": 132,
+        "released_different_primary_same": 117,
+        "pair_disagreements": 249,
+        "partition_equal": false
+      },
+      "1586": {
+        "observations": 1141,
+        "all_unordered_pairs": 650370,
+        "released_same_pairs": 3744,
+        "primary_same_pairs": 3789,
+        "released_same_primary_different": 46,
+        "released_different_primary_same": 91,
+        "pair_disagreements": 137,
+        "partition_equal": false
+      },
+      "1591": {
+        "observations": 1746,
+        "all_unordered_pairs": 1523385,
+        "released_same_pairs": 9997,
+        "primary_same_pairs": 9985,
+        "released_same_primary_different": 87,
+        "released_different_primary_same": 75,
+        "pair_disagreements": 162,
+        "partition_equal": false
+      },
+      "1610": {
+        "observations": 1494,
+        "all_unordered_pairs": 1115271,
+        "released_same_pairs": 5050,
+        "primary_same_pairs": 5009,
+        "released_same_primary_different": 48,
+        "released_different_primary_same": 7,
+        "pair_disagreements": 55,
+        "partition_equal": false
+      },
+      "2178": {
+        "observations": 1169,
+        "all_unordered_pairs": 682696,
+        "released_same_pairs": 8306,
+        "primary_same_pairs": 8298,
+        "released_same_primary_different": 36,
+        "released_different_primary_same": 28,
+        "pair_disagreements": 64,
+        "partition_equal": false
+      },
+      "2181": {
+        "observations": 1214,
+        "all_unordered_pairs": 736291,
+        "released_same_pairs": 9018,
+        "primary_same_pairs": 9015,
+        "released_same_primary_different": 63,
+        "released_different_primary_same": 60,
+        "pair_disagreements": 123,
+        "partition_equal": false
+      },
+      "2400": {
+        "observations": 1591,
+        "all_unordered_pairs": 1264845,
+        "released_same_pairs": 4744,
+        "primary_same_pairs": 4703,
+        "released_same_primary_different": 206,
+        "released_different_primary_same": 165,
+        "pair_disagreements": 371,
+        "partition_equal": false
+      },
+      "2608": {
+        "observations": 1672,
+        "all_unordered_pairs": 1396956,
+        "released_same_pairs": 4261,
+        "primary_same_pairs": 4141,
+        "released_same_primary_different": 389,
+        "released_different_primary_same": 269,
+        "pair_disagreements": 658,
+        "partition_equal": false
+      }
+    },
+    "known_eligible_fit_manual_anchors": {
+      "92": {
+        "observations": 101,
+        "all_unordered_pairs": 5050,
+        "released_same_pairs": 1109,
+        "primary_same_pairs": 1109,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "221": {
+        "observations": 69,
+        "all_unordered_pairs": 2346,
+        "released_same_pairs": 501,
+        "primary_same_pairs": 501,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "301": {
+        "observations": 35,
+        "all_unordered_pairs": 595,
+        "released_same_pairs": 92,
+        "primary_same_pairs": 92,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "936": {
+        "observations": 55,
+        "all_unordered_pairs": 1485,
+        "released_same_pairs": 485,
+        "primary_same_pairs": 485,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "995": {
+        "observations": 20,
+        "all_unordered_pairs": 190,
+        "released_same_pairs": 79,
+        "primary_same_pairs": 79,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "1043": {
+        "observations": 34,
+        "all_unordered_pairs": 561,
+        "released_same_pairs": 436,
+        "primary_same_pairs": 436,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "1126": {
+        "observations": 46,
+        "all_unordered_pairs": 1035,
+        "released_same_pairs": 309,
+        "primary_same_pairs": 309,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "1293": {
+        "observations": 57,
+        "all_unordered_pairs": 1596,
+        "released_same_pairs": 240,
+        "primary_same_pairs": 240,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "1329": {
+        "observations": 56,
+        "all_unordered_pairs": 1540,
+        "released_same_pairs": 550,
+        "primary_same_pairs": 550,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "1457": {
+        "observations": 20,
+        "all_unordered_pairs": 190,
+        "released_same_pairs": 75,
+        "primary_same_pairs": 75,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "1491": {
+        "observations": 27,
+        "all_unordered_pairs": 351,
+        "released_same_pairs": 83,
+        "primary_same_pairs": 83,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "1574": {
+        "observations": 39,
+        "all_unordered_pairs": 741,
+        "released_same_pairs": 40,
+        "primary_same_pairs": 40,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "1576": {
+        "observations": 19,
+        "all_unordered_pairs": 171,
+        "released_same_pairs": 18,
+        "primary_same_pairs": 18,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "1586": {
+        "observations": 23,
+        "all_unordered_pairs": 253,
+        "released_same_pairs": 78,
+        "primary_same_pairs": 78,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "1591": {
+        "observations": 69,
+        "all_unordered_pairs": 2346,
+        "released_same_pairs": 552,
+        "primary_same_pairs": 552,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "1610": {
+        "observations": 36,
+        "all_unordered_pairs": 630,
+        "released_same_pairs": 104,
+        "primary_same_pairs": 104,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "2178": {
+        "observations": 26,
+        "all_unordered_pairs": 325,
+        "released_same_pairs": 164,
+        "primary_same_pairs": 164,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "2181": {
+        "observations": 101,
+        "all_unordered_pairs": 5050,
+        "released_same_pairs": 819,
+        "primary_same_pairs": 819,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "2400": {
+        "observations": 14,
+        "all_unordered_pairs": 91,
+        "released_same_pairs": 55,
+        "primary_same_pairs": 55,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      },
+      "2608": {
+        "observations": 77,
+        "all_unordered_pairs": 2926,
+        "released_same_pairs": 343,
+        "primary_same_pairs": 343,
+        "released_same_primary_different": 0,
+        "released_different_primary_same": 0,
+        "pair_disagreements": 0,
+        "partition_equal": true
+      }
+    }
+  },
+  "input_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/context_feature_memory_smoke_20261024_v1/released.jsonl": "59b6357fe188082f90c9d65a551512ec26dd178c2627ccf3cd3be58d55cc6d20",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/context_feature_memory_smoke_20261024_v1/raw_confidence.jsonl": "15c709ddffd70d4d3e430f4f237338f70bac4247f794793eb31e70ea2b81f922",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/context_feature_memory_smoke_20261024_v1/independent_output_audit.json": "632818fa8027fc57d138295a2810da032f2fe102bd233e68eb8feb51d94ab1ed",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/supervised_observations.jsonl": "1b4c568792df1af28d53f1efe6ecf80b6573ccc161f5fd7865854450d14d7385",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_observations.jsonl": "fdd3a0e69d37f5be36c6a88c307fec0fe6035d09ef4939e5f8d4118becc300ce"
+  },
+  "interpretation": "Pair relations are invariant to positive local-ID renaming; known anchors are a sparse fixed subset and unknown identity is not a negative",
+  "GT_identity_or_category_values_decoded": false,
+  "real_model_opened": false,
+  "GPU": false,
+  "script_sha256": "0a41946edc81ae8a33d0107498d48f874262f5cc87c230fadbb6bba8a5d0ce6d"
+}

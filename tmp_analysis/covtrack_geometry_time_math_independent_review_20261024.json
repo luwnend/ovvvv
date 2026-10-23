@@ -1,0 +1,75 @@
+{
+  "status": "PASS_INDEPENDENT_COVTRACK_GEOMETRY_TIME_MATHEMATICAL_CHECK",
+  "scope": "Synthetic mathematical examples only; no dataset, model/checkpoint, learning, GPU or efficacy evaluation",
+  "source_sha256": "0074cfee8db66dddb45fe59f80cb7e0e6ee22f5bf51f70e38eb052c9a8aeee8e",
+  "absolute_xyxy_cosine": {
+    "original": [
+      [
+        0.9878291611472618,
+        0.8485552916276633
+      ],
+      [
+        0.7730990358326015,
+        0.9996451593714057
+      ]
+    ],
+    "translated": [
+      [
+        0.9999995059467708,
+        0.9999607693711082
+      ],
+      [
+        0.9999606129327288,
+        0.9999995233295014
+      ]
+    ],
+    "original_cycle_confidence": [
+      0.6624660312121873,
+      0.644507352317492
+    ],
+    "translated_cycle_confidence": [
+      0.500000129514386,
+      0.4999998885898411
+    ],
+    "common_translation_changes_cosine": true,
+    "relative_geometry_unchanged": true,
+    "common_uniform_scale_preserves_cosine": true,
+    "common_anisotropic_resize_changes_cosine": true,
+    "radial_scaling_can_give_cosine_one_with_zero_overlap": true
+  },
+  "cycle_singleton_degeneracy": {
+    "disjoint_box_confidence": [
+      1.0
+    ],
+    "orthogonal_appearance_confidence": [
+      1.0
+    ],
+    "explanation": "One candidate on each side makes both softmax matrices [1]; this is cycle assignment ambiguity, not absolute match quality"
+  },
+  "unequal_time_cv": {
+    "original_frame_index": [
+      0.0,
+      10.0,
+      40.0
+    ],
+    "sampled_step": [
+      0.0,
+      1.0,
+      2.0
+    ],
+    "centers": [
+      0.0,
+      10.0,
+      40.0
+    ],
+    "correct_original_frame_prediction": 40.0,
+    "wrong_unit_step_prediction": 20.0,
+    "target_center": 40.0
+  },
+  "limits": [
+    "No measured frequency or benefit on real data",
+    "Do not replace the pretrained bbox_transform coordinate units",
+    "Relative motion is a separate control with original-frame timing; lifecycle remains in the released sampled-step units unless separately specified",
+    "Original frame index is not seconds without verified FPS"
+  ]
+}
