@@ -1,0 +1,88 @@
+{
+  "status": "PREDECLARED_STREAMING_ALL_SEALED_FIT_LAG_IDENTITY_SUPPORT_ONLY",
+  "output_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1",
+  "lags": [
+    1,
+    4
+  ],
+  "input_pins": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/source_roles.json": "afa61df067f392b84ba917e1c536a9b64b869dbda19a2236b0a05b6f5c51cb8b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/independent_pair_context_audit.json": "df7c386a8f01d3dbfce928e58758f9c455f685e8485dbfa8b19a0cd4ac936e81",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/independent_support_audit.json": "92174aaa954f6e66cd0e7f520f2f883f7b9e0017c84fbf9bf4509e734ba714e8",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/support_receipt.json": "e206051d0809b8e20b24529254eacece96f997c72b7155e8264197e7c07aae1e",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_index_manifest.json": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/frame_execution.jsonl": "e0e327a887840fbbdf5acacc374a589f696ad529af62d7a9a535bc2dd6161c07",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump_inventory.json": "5a7f94a531e754aef0cec1c78b82a080ee92d6e451f943a46be8c71c6a7676db",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/relative_track_geometry.py": "c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_fit_identity_edge_support.py": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_factorial_design_20261024.md": "22557c159ad562439852bf054204c2cccfdde0be544e50b379504198af07b907"
+  },
+  "population": {
+    "sealed_fit_source_groups": 341,
+    "allocated_fit_videos": 405,
+    "selected_fit_videos": 403,
+    "selected_frames": 13791,
+    "retained_observations": 613536,
+    "selection": "All original sealed FIT source groups in source_roles, roles mean_role or pair_role, and all their cached full_collection frames. No new outcome/source/score selection; zero-support sources remain. The 405 FIT plan allocations include two uncollected videos 1720/1974 whose source groups are absent from original source_roles; report those explicitly but do not add them to the 341 sealed source groups. Every actually cached selected source must belong to the original sealed FIT roles.",
+    "uncollected_allocation_video_ids": [
+      1720,
+      1974
+    ],
+    "uncollected_allocation_sources": {
+      "1720": "LaSOT/racing-11",
+      "1974": "LaSOT/hippo-12"
+    }
+  },
+  "resource_bounds": {
+    "max_frame_rows": 77,
+    "max_video_frames": 41,
+    "max_candidates_per_frame_pair": 5929,
+    "candidates_by_lag": {
+      "1": 29096237,
+      "4": 26255927
+    },
+    "total_candidates": 55352164,
+    "score_storage_bytes": 2656903872,
+    "max_score_columns": 6,
+    "generation_ring_frames": 5,
+    "score_dtype": "float64",
+    "score_access": "npy memmap per video/lag, per frame-pair reads/writes only",
+    "estimated_CPU_minutes": [
+      15,
+      45
+    ],
+    "estimate_is_not_measurement": true
+  },
+  "feature_names": [
+    "raw_appearance_cosine",
+    "absolute_xyxy_cosine",
+    "box_iou",
+    "negative_normalized_displacement_norm",
+    "negative_normalized_CV_innovation_norm",
+    "semantic_embedding_cosine"
+  ],
+  "candidate_set": "Every retained query row x every retained row in the exact previous sampled-step lag 1 or 4 frame. Preserve empty/missing-prefix receipts, unknown and released id=-1; no nearest-nonempty fallback. Candidate selection is GT-free. No ego compensation. Original-frame time gaps, not sampled-step seconds.",
+  "history": "Released ID is only a past-history locator. Nonnegative same-ID duplicates have no current CV and invalidate the next unique history; id=-1 has no history. Keep explicit reason/mask/history coordinates in each video row metadata.",
+  "seal": "All GT-free scores, complete row/frame mapping and frame-pair receipts are globally SHA-sealed before importing any supervised helper or opening supervised identity payload. Then verify every shard/rowmap/receipt hash again before legal join.",
+  "identity_join": "Only audited eligible FIT manual identity fields via immutable observation index (image_id,dump_row). Skip tune before identity projection. No class-heldout target table or GT category/error/soft_risk/posterior_argmax is decoded. All retained candidates include unknown or heldout objects as unknown; unknown is never negative. No-positive in the known subset means missing eligible identity coverage, not a certified unmatched/null target; unknown refs may be the true same identity. Report no-positive coverage only, never generate no-match training labels.",
+  "reports": "Every source/role/dataset block, both fixed lags, all-candidate and same cached predicted-category scopes, all-known and common CV-valid masks. Exact known p/n/unknown, GT-trajectory support, CV/history missing, top1 tie lowest immutable dump_row; all nonempty-known and p+n query subsets, paired rawcos repair/break, per-GT/source error concentration, same-query cross-lag support and every source-held-out fold. Sparse-known conditional ranking only; no deployed full-candidate or assignment claim.",
+  "support_gate": "Necessary logical conditions only: at least two source groups with hard same-predcat CV query, at least two with raw-error query, cross-lag shared hard query, and at least one source-held-out fold with positive/negative hard-query training and evaluation support in BOTH fixed lags. Failures reported as blockers; status always HOLD_PENDING_SEPARATE_TRAINING_PROTOCOL, no automatic training approval or source selection.",
+  "forbidden": "No training, fitting weights, hyperparameter search, source/query/lag selection, threshold sweep, five-mode rescue, tune/test/heldout correctness, tracker/network/cache modification, GPU or new literature work.",
+  "synthetic_rounds": {
+    "1": [
+      "complete lag1/4 QxM and prefix/empty frame receipts",
+      "past-only duplicate/no-ID history and irregular original gaps"
+    ],
+    "2": [
+      "streamed score parity, query-row tie, common-CV denominator and unknown-not-negative",
+      "paired top1/source/GT distribution and cross-lag support oracle checks",
+      "Full temporary streamed generation/scoring/summary integration: union, zero-support source/folds and unchanged no-training gate"
+    ],
+    "3": [
+      "global seal must reject altered/missing shard before identity helper import",
+      "FIT decoder poison skips tune/class/error; bounded frame and memmap chunk access",
+      "Uncollected allocation may have no source role; cached source without original sealed FIT role must fail"
+    ]
+  }
+}

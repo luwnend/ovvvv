@@ -1,0 +1,20 @@
+{
+  "status": "PUSH_EXIT0_REMOTE_SHA_AND_CLEAN_WORKTREE_VERIFIED",
+  "recorded_utc": "2026-10-23T16:50:49.540273+00:00",
+  "repository": "https://github.com/luwnend/ovvvv",
+  "branch": "main",
+  "commit": "8263c3bb7703c9d00609c9f6975f03d2875c2e94",
+  "push_tool_session": 73225,
+  "push_actual_exit_code": 0,
+  "remote_verification_tool_session": 18800,
+  "remote_verification_actual_exit_code": 0,
+  "remote_ref_sha": "8263c3bb7703c9d00609c9f6975f03d2875c2e94",
+  "worktree_clean_observed": true,
+  "snapshot_files_verified": 56,
+  "snapshot_bytes": 1660376,
+  "snapshot_sha256": "fafd43421096f621e934f8fa7d50f145bbafa26afbc3c4c70f0bcc9291d8967b",
+  "source_destination_SHA256_equal": true,
+  "git_diff_check_pass": true,
+  "new_GitHub_key_required": false,
+  "note": "Two transient verification attempts failed; existing configured SSH proxy route succeeded on retry. No SSH configuration changed."
+}

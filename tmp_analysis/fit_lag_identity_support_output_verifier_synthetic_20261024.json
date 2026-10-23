@@ -1,0 +1,47 @@
+{
+  "status": "PASS_INDEPENDENT_FIT_LAG_OUTPUT_AUDITOR_SYNTHETIC",
+  "recorded_utc": "2026-10-23T17:03:23.029362+00:00",
+  "verifier_sha256": "74a5c59c957439411acdb7139822c8d83c583584ab07e9e21957e731e648d3ce",
+  "producer_sha256": "9beb8faf932d13f417d491ddd8f853de001d17a414eac0d59d016b0ffcf3af3b",
+  "protocol_sha256": "dd84da8fd028af36c223f42a30d19f9f23725eb790e60aaa668700c80a0806ad",
+  "preflight_sha256": "0344310cdf2ca904ac00cb64dd250db4a0b1b71f7f94904fb56f38d94ed36b0d",
+  "actual_tool_execution": {
+    "exit_code": 0,
+    "observed_by": "evaluator_audit direct exec_command terminal completion",
+    "command": "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python tmp_analysis/verify_fit_lag_identity_support_output_20261024.py --self-test",
+    "wall_time_seconds": 0.295774511
+  },
+  "checks": 8,
+  "full_temporary_audit_entry": true,
+  "full_temporary_fixture": {
+    "frames": 22,
+    "videos": 3,
+    "source_groups": 4,
+    "all_candidates": 115,
+    "lag_candidates": {
+      "1": 69,
+      "4": 46
+    },
+    "SQLite_rows": {
+      "query_support": 184,
+      "trajectories": 48,
+      "identity_pairs": 108
+    }
+  },
+  "synthetic_authority_overrides": [
+    "temporary plan/roles/frame execution/float16 cache and protocol/preflight",
+    "direct synthetic legal identity anchor map instead of supervised helper/payload"
+  ],
+  "producer_used_only_to_create_synthetic_subject_output": true,
+  "real_cache_or_supervision_opened": false,
+  "real_model_opened": false,
+  "training": false,
+  "GPU": false,
+  "real_audit_scope": "All55m six-score rows, exact lag rowmaps/history/seals, independent identity joins and all SQLite rows/summary/folds/union; per-block <=5929 scores, five feature frames",
+  "final_output_audit_status": "PASS_INDEPENDENT_FIT_LAG_IDENTITY_SUPPORT_OUTPUT_AUDIT",
+  "estimated_CPU_minutes": [
+    15,
+    45
+  ],
+  "estimate_is_not_measurement": true
+}

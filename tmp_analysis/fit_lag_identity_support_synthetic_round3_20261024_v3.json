@@ -1,0 +1,15 @@
+{
+  "status": "PASS_FIT_LAG_IDENTITY_SUPPORT_SYNTHETIC_ROUND",
+  "round": 3,
+  "checks": [
+    "global_seal_rejects_altered_shard_before_supervised_helper_import",
+    "FIT_identity_projection_tune_class_error_risk_poison_not_decoded",
+    "generation_rejects_declared_resource_bound_violation",
+    "uncollected_allocation_may_lack_role_but_every_cached_source_must_have_original_sealed_FIT_role"
+  ],
+  "script_sha256": "9beb8faf932d13f417d491ddd8f853de001d17a414eac0d59d016b0ffcf3af3b",
+  "protocol_sha256": "dd84da8fd028af36c223f42a30d19f9f23725eb790e60aaa668700c80a0806ad",
+  "real_cache_or_supervised_payload_opened": false,
+  "training_started": false,
+  "GPU_used": false
+}

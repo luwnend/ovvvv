@@ -1,0 +1,22 @@
+{
+  "status": "RUNNING_BACKGROUND_FIT_LAG_SUPPORT_CHECKPOINT",
+  "recorded_utc": "2026-10-23T17:06:12.945556+00:00",
+  "supervisor_status": "RUNNING",
+  "supervisor_identity_matches": true,
+  "producer_identity_matches": true,
+  "supervisor_PID": 305992,
+  "producer_PID": 305994,
+  "ready_status": "READY_PINNED_FIT_LAG_SUPPORT_PRODUCER",
+  "score_shards_created": 806,
+  "GT_free_seal_exists": true,
+  "GT_free_candidates_by_lag": {
+    "1": 29096237,
+    "4": 26255927
+  },
+  "GT_free_seal_sha256": "d24932ab0885bd6b902374532770726cf5fcca1f24fbe9ff9b239c7c538a20a3",
+  "actual_producer_exit_available": false,
+  "independent_audit_complete": false,
+  "training_started": false,
+  "GPU_used": false,
+  "overall_research_goal_complete": false
+}

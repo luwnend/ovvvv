@@ -1,0 +1,21 @@
+{
+  "process": {
+    "pid": 305992,
+    "start_ticks": 573774129,
+    "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+    "create_time_unix": 1792775040.29,
+    "cmdline": [
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+      "-u",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_fit_lag_support_background_20261024.py",
+      "run",
+      "--execution-dir",
+      "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1",
+      "--launch-spec-sha256",
+      "61b7952367407caa8d3e9061154bfaa19f62ac976c0f99b93c33123c4cd9d049"
+    ],
+    "state": "R",
+    "session_id": 305992
+  },
+  "recorded_utc": "2026-10-23T17:04:00.401892+00:00"
+}

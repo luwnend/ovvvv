@@ -1,0 +1,53 @@
+{
+  "status": "PASS_INDEPENDENT_FIT_LAG_IDENTITY_SUPPORT_IMPLEMENTATION_PREFLIGHT",
+  "script_sha256": "9beb8faf932d13f417d491ddd8f853de001d17a414eac0d59d016b0ffcf3af3b",
+  "protocol_sha256": "dd84da8fd028af36c223f42a30d19f9f23725eb790e60aaa668700c80a0806ad",
+  "geometry_sha256": "c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a",
+  "checker_sha256": "3cdb3a36fe58363ca14ed2dc06c71651f279a23ec78137f030d097b95eb8eb2b",
+  "GT_free_metadata_population": {
+    "sealed_fit_source_groups": 341,
+    "allocated_fit_videos": 405,
+    "selected_fit_videos": 403,
+    "selected_frames": 13791,
+    "retained_observations": 613536
+  },
+  "uncollected_allocated_FIT_video_ids": [
+    1720,
+    1974
+  ],
+  "synthetic_integration": {
+    "videos": 3,
+    "source_groups": 4,
+    "frames": 22,
+    "candidate_counts": {
+      "1": 69,
+      "4": 46
+    },
+    "SQLite_table_rows": {
+      "query_support": 184,
+      "trajectories": 48,
+      "identity_pairs": 108
+    },
+    "maximum_score_rows": 6,
+    "maximum_feature_ring_frames": 5
+  },
+  "checks": [
+    "all_frozen_FIT_roles_and_metadata_lag_QxM_counts_independently_recomputed",
+    "independent_all_six_feature_original_frame_CV_and_rowmap_recomputation_per_block",
+    "empty_previous_short_video_zero_length_lag4_and_zero_support_sources_and_folds",
+    "current_duplicate_history_invalidation_no_jump_and_lag4_past_snapshot",
+    "all_query_SQLite_identity_pair_trajectory_rows_and_3x3_orders_reconstructed",
+    "100_independent_literal_random_ranking_scopes_all_3x3_cells_and_absent_CV_columns",
+    "cross_lag_hard_query_join_source_held_out_BOTH_lag_gate_and_micro_union_parity",
+    "three_corrupt_member_types_and_missing_shard_rejected_before_supervised_helper_import",
+    "uncollected_allocation_without_role_preserved_but_cached_missing_role_rejected",
+    "published_three_v3_synthetic_receipts_bound_to_final_script_and_protocol"
+  ],
+  "real_cached_features_opened": false,
+  "real_supervised_payload_opened": false,
+  "real_model_opened": false,
+  "GPU": false,
+  "limits": [
+    "Implementation and GT-free metadata preflight only; real diagnostic and output audit remain unfinished"
+  ]
+}

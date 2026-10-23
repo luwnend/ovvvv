@@ -1,0 +1,14 @@
+{
+  "status": "PASS_FIT_LAG_IDENTITY_SUPPORT_SYNTHETIC_ROUND",
+  "round": 2,
+  "checks": [
+    "paired_query_source_identity_counts_unknown_not_negative_and_cross_lag_join",
+    "immutable_reference_row_tie_and_nonCV_score_mask_no_finite_value_selection",
+    "streamed_generation_scoring_summary_union_zero_source_and_all_fold_integration"
+  ],
+  "script_sha256": "9beb8faf932d13f417d491ddd8f853de001d17a414eac0d59d016b0ffcf3af3b",
+  "protocol_sha256": "dd84da8fd028af36c223f42a30d19f9f23725eb790e60aaa668700c80a0806ad",
+  "real_cache_or_supervised_payload_opened": false,
+  "training_started": false,
+  "GPU_used": false
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS_FIT_LAG_SUPPORT_BACKGROUND_SYNTHETIC",
+  "completed_utc": "2026-10-23T16:59:27.014521+00:00",
+  "checks": [
+    "detached launch returns before work and has its own session",
+    "actual producer exit receipt precedes independent verifier",
+    "success final receipt and protected absence preserved",
+    "duplicate launch or existing output rejected",
+    "duplicate run rejected without overwrite",
+    "detached supervisor completes after independent launcher process exits",
+    "PID start ticks binding rejects identity mismatch",
+    "producer_failure lands distinct final receipt",
+    "verifier_failure lands distinct final receipt",
+    "missing_audit lands distinct final receipt",
+    "protected_mutation lands distinct final receipt",
+    "stale producer SHA rejected before execution directory creation",
+    "existing producer output rejected before launch",
+    "existing execution directory rejected before launch",
+    "dangling output symlink rejected before launch",
+    "insufficient free disk rejected before launch",
+    "wrong launch spec SHA rejected before run claim"
+  ],
+  "checks_passed": 17,
+  "supervisor": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_fit_lag_support_background_20261024.py",
+    "sha256": "68818258f50e0d937d00611af20171e17d02fc2386b281095c400edd41a8eae8",
+    "bytes": 28497
+  },
+  "real_support_launched": false,
+  "protected_real_files_opened": false,
+  "training_started": false
+}

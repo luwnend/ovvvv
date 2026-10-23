@@ -1,0 +1,168 @@
+{
+  "stage": "fit_lag_identity_support_20261024",
+  "phase": "running",
+  "phase_is_completion": false,
+  "source_root": "/home/chenhc/ov/OVMOT_RESEARCH",
+  "files": [
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/sync_fit_lag_support_stage_20261024.py",
+      "destination": "tmp_analysis/sync_fit_lag_support_stage_20261024.py",
+      "bytes": 5842,
+      "sha256": "816d3adf2bd4bffc2710e96bdef9e0e3c9ff49830017d220194e845cab61fd03"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_factorial_design_20261024.md",
+      "destination": "tmp_analysis/identity_spacetime_factorial_design_20261024.md",
+      "bytes": 6831,
+      "sha256": "22557c159ad562439852bf054204c2cccfdde0be544e50b379504198af07b907"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_protocol_20261024.json",
+      "destination": "tmp_analysis/fit_lag_identity_support_protocol_20261024.json",
+      "bytes": 7253,
+      "sha256": "dd84da8fd028af36c223f42a30d19f9f23725eb790e60aaa668700c80a0806ad"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_fit_lag_identity_support_20261024.py",
+      "destination": "tmp_analysis/audit_fit_lag_identity_support_20261024.py",
+      "bytes": 44420,
+      "sha256": "9beb8faf932d13f417d491ddd8f853de001d17a414eac0d59d016b0ffcf3af3b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_synthetic_round1_20261024_v3.json",
+      "destination": "tmp_analysis/fit_lag_identity_support_synthetic_round1_20261024_v3.json",
+      "bytes": 622,
+      "sha256": "57430a4701b3eb710e12770075a8460eedce0139a6c958724c395d93eaa08113"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_synthetic_round2_20261024_v3.json",
+      "destination": "tmp_analysis/fit_lag_identity_support_synthetic_round2_20261024_v3.json",
+      "bytes": 625,
+      "sha256": "baa64472edeed12fc8f9a84e5a0e1bda8fe2b327aaa300f1a2cc8ad1b2906c92"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_synthetic_round3_20261024_v3.json",
+      "destination": "tmp_analysis/fit_lag_identity_support_synthetic_round3_20261024_v3.json",
+      "bytes": 682,
+      "sha256": "26563c3418a339e27623d10ce7bb72d84d61dcc7867e38ff0eb7eb2a154d7998"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_independent_preflight_20261024.json",
+      "destination": "tmp_analysis/fit_lag_identity_support_independent_preflight_20261024.json",
+      "bytes": 2174,
+      "sha256": "0344310cdf2ca904ac00cb64dd250db4a0b1b71f7f94904fb56f38d94ed36b0d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_fit_lag_identity_support_implementation_20261024.py",
+      "destination": "tmp_analysis/audit_fit_lag_identity_support_implementation_20261024.py",
+      "bytes": 10626,
+      "sha256": "3cdb3a36fe58363ca14ed2dc06c71651f279a23ec78137f030d097b95eb8eb2b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_fit_lag_identity_support_output_20261024.py",
+      "destination": "tmp_analysis/verify_fit_lag_identity_support_output_20261024.py",
+      "bytes": 42979,
+      "sha256": "74a5c59c957439411acdb7139822c8d83c583584ab07e9e21957e731e648d3ce"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_output_verifier_synthetic_20261024.json",
+      "destination": "tmp_analysis/fit_lag_identity_support_output_verifier_synthetic_20261024.json",
+      "bytes": 1892,
+      "sha256": "7724f0651c671580e08848217d4f512674366a48b388f30f0b79de207e7dc7a1"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_fit_lag_support_background_20261024.py",
+      "destination": "tmp_analysis/run_fit_lag_support_background_20261024.py",
+      "bytes": 28497,
+      "sha256": "68818258f50e0d937d00611af20171e17d02fc2386b281095c400edd41a8eae8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_support_background_synthetic_20261024_v2.json",
+      "destination": "tmp_analysis/fit_lag_support_background_synthetic_20261024_v2.json",
+      "bytes": 1472,
+      "sha256": "ccc407ad73934072d11d10c7efae47477b3756236b2c81e4a673c778de713d1f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_git_publication_20261024.json",
+      "destination": "tmp_analysis/feature_spacetime_git_publication_20261024.json",
+      "bytes": 903,
+      "sha256": "f76c15f7d60cdb1bd8ba636f3be002bc7891264cbda355cb8ae5bf981f94fb94"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_handoff_20261024.md",
+      "destination": "tmp_analysis/feature_spacetime_handoff_20261024.md",
+      "bytes": 5947,
+      "sha256": "5f041236515c7d712a194a6fbe1971ad49286f9ae05f5b0ac260770e2737a0bd"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_handoff_20261024.md",
+      "destination": "tmp_analysis/fit_lag_identity_support_handoff_20261024.md",
+      "bytes": 6151,
+      "sha256": "ff5d482158fd0da5dfbc822f0c3a25e0bd38b7c2bb9dfbfe6b7a325445a63f4b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/项目进度.md",
+      "destination": "report/项目进度.md",
+      "bytes": 17026,
+      "sha256": "b616dc6b0bed9384d218e47ec1381268e3820025e69032cc717bc8087793347b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_特征与时空改进_20261024.md",
+      "destination": "report/COVTrack_特征与时空改进_20261024.md",
+      "bytes": 13033,
+      "sha256": "a2b977d448ea6bd30d93274da95053be01ebd77f108c7655a954afedab68747b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/launch_spec.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/launch_spec.json",
+      "bytes": 6732,
+      "sha256": "61b7952367407caa8d3e9061154bfaa19f62ac976c0f99b93c33123c4cd9d049"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/launch_receipt.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/launch_receipt.json",
+      "bytes": 1678,
+      "sha256": "a46cd54318f1226a143f11f3e83bb478e7251b56e101b44bf920eab9b611f36f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/supervisor_ready.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/supervisor_ready.json",
+      "bytes": 5260,
+      "sha256": "040229408f2a5792c9904ed5ca82cf3380d0c3aa29283991b1ece4c59a6ec721"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/supervisor_process.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/supervisor_process.json",
+      "bytes": 693,
+      "sha256": "e5caa39ad5853e7631bf5444105edaf15a3ac95a77e5a77e8a1aff2070732c39"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/producer_process.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/producer_process.json",
+      "bytes": 765,
+      "sha256": "2f351c489435fef29342bff60118cce6f8f3c8af677a395f1c803918c83f22f1"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/protected_before.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/protected_before.json",
+      "bytes": 1502,
+      "sha256": "daa53c8aa3d528098fd3e01304402be3eda8c4fb0af292670ea2db6bbba9879f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/progress_receipt.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/progress_receipt.json",
+      "bytes": 746,
+      "sha256": "238c03651b303f1ad24d1cbb7d3f8fb036bd4104363e3ea570a9effa75be9c78"
+    }
+  ],
+  "excludes": [
+    "NPZ",
+    "NPY scores",
+    "JSONL",
+    "SQLite",
+    "full summary",
+    "checkpoints",
+    "logs",
+    "datasets"
+  ]
+}
