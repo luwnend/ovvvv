@@ -1,0 +1,34 @@
+{
+  "status": "PASS_INDEPENDENT_ANGULAR_APPEARANCE_OUTPUT_AUDITOR_SYNTHETIC",
+  "verifier_sha256": "c12bcd2ad7024a559cf0fa5c22ea7af9d3f6d2a18df8641cd379820fd139babd",
+  "producer_sha256": "1e9fae320d2435a4560ffeeba3bfe441891f9d9db202296b269ba0419096828e",
+  "protocol_sha256": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69",
+  "preflight_sha256": "fed48008427ce84c0a0732f9b6de25694cc2d199549dab84b2ad259e68b97824",
+  "math_oracle_checks": 8,
+  "full_temporary_audit_entry": true,
+  "integration": {
+    "candidates_by_lag": {
+      "1": 69,
+      "4": 46
+    },
+    "SQLite_table_rows": {
+      "query_support": 168
+    },
+    "original_parent_raw_statistics_verified": true,
+    "poisoned_payload_projection_verified": true,
+    "global_seal_tampered_types_rejected_before_identity": [
+      "shards/v1.rows.json",
+      "shards/v1_lag4.scores.npy",
+      "frame_pairs.jsonl"
+    ],
+    "missing_sealed_member_rejected_before_identity": true
+  },
+  "real_cache_or_supervision_opened": false,
+  "real_model_opened": false,
+  "GPU": false,
+  "synthetic_fixture_producer_and_core_used_only_to_create_subject_output": true,
+  "synthetic_authority_overrides": [
+    "temporary plan/roles/frame execution/float16 cache/protocol/preflight/parent outputs",
+    "temporary eligible-identity population counts only; real safe scanner and immutable-row join run unmodified"
+  ]
+}

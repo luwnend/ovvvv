@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ANGULAR_APPEARANCE_CONTROL_SYNTHETIC_ROUND",
+  "round": 3,
+  "checks": [
+    "full_temp_generation_global_seal_poison_safe_FIT_join_score_summary_zero_support_source",
+    "tampered_and_missing_sealed_file_block_supervision_before_helper_import",
+    "raw_parent_all_frame_block_exact_parity_and_mismatch_rejection",
+    "frozen_sealed_population_and_declared_resource_bound_rejection"
+  ],
+  "script_sha256": "1e9fae320d2435a4560ffeeba3bfe441891f9d9db202296b269ba0419096828e",
+  "protocol_sha256": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69",
+  "core_sha256": "8b534c5f133880165e3e46abbd93e49584ebf8e20bec9c58b46ab425fa8f5924",
+  "real_cache_or_supervised_payload_opened": false,
+  "training_started": false,
+  "GPU_used": false
+}

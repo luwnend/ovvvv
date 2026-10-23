@@ -1,0 +1,16 @@
+{
+  "status": "PASS_IDENTITY_SPACETIME_MODULES_SYNTHETIC",
+  "round": 1,
+  "checks": [
+    "identity_initialization_and_explicit_zero_mask_despite_learned_bias",
+    "nineteen_slot_head_identity_initialization_same_frozen_adapter_all_G_no_gradient_leak",
+    "complete_PxN_only_known_same_cached_category_unknown_has_no_gradient_or_null_label"
+  ],
+  "script_sha256": "2171db60d075039ba85c8b6b7389adc573793df0c1477e45390733b95b8c0bc3",
+  "contract_sha256": "23a1361129af172e201e10c0fefa82cf3e76c78ce640d824329652785f40f173",
+  "real_cache_or_identity_opened": false,
+  "training_runner_implemented": false,
+  "optimizer_steps": 0,
+  "GPU_used": false,
+  "ordinary_controls_not_novel_method": true
+}

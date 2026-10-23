@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ANGULAR_HISTORY_ASSUMPTION_SYNTHETIC",
+  "round": 2,
+  "checks": [
+    "predeclared_bin_boundaries_injected_exact_direction_and_unclipped_multiturn",
+    "antipodal_and_missing_history_actual_zero_turn_separate_from_hypothetical_rho_theta",
+    "zero_last_query_residual_invalid_and_missing_angular_history_not_fake_zero_bin",
+    "clean_three_anchor_tangent_direction_original_frame_speed_and_degenerate_denominators"
+  ],
+  "script_sha256": "2b48a706035e673527adc6563d2c38338ce3ba77960b24375dbe5d03ffc582f5",
+  "real_payload_opened": false,
+  "predictions_modified": false
+}

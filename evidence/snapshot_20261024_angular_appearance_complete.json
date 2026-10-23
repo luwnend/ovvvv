@@ -1,0 +1,312 @@
+{
+  "stage": "angular_appearance_control_20261024",
+  "phase": "complete",
+  "phase_is_completion": true,
+  "source_root": "/home/chenhc/ov/OVMOT_RESEARCH",
+  "files": [
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/sync_angular_appearance_stage_20261024.py",
+      "destination": "tmp_analysis/sync_angular_appearance_stage_20261024.py",
+      "bytes": 7022,
+      "sha256": "ced0b4f533147878c524463240873db95bb91812ea1d2fc6c0e9b15be6841d9b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_protocol_20261024.json",
+      "destination": "tmp_analysis/angular_appearance_control_protocol_20261024.json",
+      "bytes": 11706,
+      "sha256": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_angular_appearance_control_20261024.py",
+      "destination": "tmp_analysis/diagnose_angular_appearance_control_20261024.py",
+      "bytes": 53885,
+      "sha256": "1e9fae320d2435a4560ffeeba3bfe441891f9d9db202296b269ba0419096828e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_synthetic_round1_20261024_v2.json",
+      "destination": "tmp_analysis/angular_appearance_control_synthetic_round1_20261024_v2.json",
+      "bytes": 800,
+      "sha256": "4c9899b500cf9ae632731fa353b19b1ca418c38562c4df9ab7e2aa193fca8a21"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_synthetic_round2_20261024_v2.json",
+      "destination": "tmp_analysis/angular_appearance_control_synthetic_round2_20261024_v2.json",
+      "bytes": 700,
+      "sha256": "46b19555ab0c9b0556a933297ac3ba758e4d97807b25fb22a1ebb7257d54a7b8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_synthetic_round3_20261024_v2.json",
+      "destination": "tmp_analysis/angular_appearance_control_synthetic_round3_20261024_v2.json",
+      "bytes": 775,
+      "sha256": "e383192e798301b19b93fef55420f3a6f8462475d0b8256e920053c54809bbb9"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_synthetic_round3_failure1_20261024.json",
+      "destination": "tmp_analysis/angular_appearance_control_synthetic_round3_failure1_20261024.json",
+      "bytes": 430,
+      "sha256": "75da2a7ad0b277fd589971ef1c9b1107ab7737997733e2da91edf53ef3105a4e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_angular_appearance_control_implementation_20261024.py",
+      "destination": "tmp_analysis/audit_angular_appearance_control_implementation_20261024.py",
+      "bytes": 9593,
+      "sha256": "e0e9c565ec606057a7e9ad634bffb47a04c100d34c5d8788e17e7cbfb1b1fbe4"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_independent_preflight_20261024.json",
+      "destination": "tmp_analysis/angular_appearance_control_independent_preflight_20261024.json",
+      "bytes": 3270,
+      "sha256": "fed48008427ce84c0a0732f9b6de25694cc2d199549dab84b2ad259e68b97824"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_angular_appearance_control_output_20261024.py",
+      "destination": "tmp_analysis/verify_angular_appearance_control_output_20261024.py",
+      "bytes": 63372,
+      "sha256": "c12bcd2ad7024a559cf0fa5c22ea7af9d3f6d2a18df8641cd379820fd139babd"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_output_verifier_synthetic_20261024.json",
+      "destination": "tmp_analysis/angular_appearance_control_output_verifier_synthetic_20261024.json",
+      "bytes": 1390,
+      "sha256": "99d6caf4e24322bf196b4135eb69e666817b2165f2c09ea9ac72c0305d1f058f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_angular_appearance_background_20261024.py",
+      "destination": "tmp_analysis/run_angular_appearance_background_20261024.py",
+      "bytes": 28773,
+      "sha256": "dbfa9eb345493c91c2356fc1154b6d01f53bd55faa194826dcea997be41167a2"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_background_synthetic_20261024.json",
+      "destination": "tmp_analysis/angular_appearance_background_synthetic_20261024.json",
+      "bytes": 1486,
+      "sha256": "4a5b8d5a6f06710c8b4f1588c081b4f1a7a9443abcc5d5b1d1dc7ec989f56b45"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/finalize_angular_appearance_stage_20261024.py",
+      "destination": "tmp_analysis/finalize_angular_appearance_stage_20261024.py",
+      "bytes": 13639,
+      "sha256": "edb657589066e247ffe90ba9bac315856d68c85d9271e4c74af56ccff2fe687c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_handoff_20261024.md",
+      "destination": "tmp_analysis/angular_appearance_control_handoff_20261024.md",
+      "bytes": 5383,
+      "sha256": "13f4b313b1c00c57c019118b239765b6631fc50fb6b42901bb12e50e427fb864"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/appearance_transport_literature_audit_20261024.md",
+      "destination": "tmp_analysis/appearance_transport_literature_audit_20261024.md",
+      "bytes": 7285,
+      "sha256": "0eb46ce85441bd612d568e7f90a61ed2d4592e673d7116fda0c2d10dcaf618bc"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/appearance_transport_literature_sources_20261024.json",
+      "destination": "tmp_analysis/appearance_transport_literature_sources_20261024.json",
+      "bytes": 8557,
+      "sha256": "5e6b1725903cbcef6e8cd2ff3345e7a652164f59c9c5797a71353136b1f55c42"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_negative_diagnostic_plan_20261024.md",
+      "destination": "tmp_analysis/angular_appearance_negative_diagnostic_plan_20261024.md",
+      "bytes": 14350,
+      "sha256": "8f7bdfe5b4e2f3539350fd9006946628d7e9580ed62e53391b10f85850869eb2"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_angular_history_assumption_20261024.py",
+      "destination": "tmp_analysis/diagnose_angular_history_assumption_20261024.py",
+      "bytes": 35433,
+      "sha256": "2b48a706035e673527adc6563d2c38338ce3ba77960b24375dbe5d03ffc582f5"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_history_assumption_synthetic_round1_20261024_v4.json",
+      "destination": "tmp_analysis/angular_history_assumption_synthetic_round1_20261024_v4.json",
+      "bytes": 418,
+      "sha256": "d2b43b6ac03a264d043ee974966f877290411fa6bc290f6717b31d99ebedf75e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_history_assumption_synthetic_round2_20261024_v4.json",
+      "destination": "tmp_analysis/angular_history_assumption_synthetic_round2_20261024_v4.json",
+      "bytes": 597,
+      "sha256": "b6e7bb44ce9366771e0d429944be4b7723945e5a5f11062ce57a94e54c77deec"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_history_assumption_synthetic_round3_20261024_v4.json",
+      "destination": "tmp_analysis/angular_history_assumption_synthetic_round3_20261024_v4.json",
+      "bytes": 476,
+      "sha256": "1f8efcb87286f2e3677df7e12567eaf421e9d16659266f5f81e032b58a905aca"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_history_assumption_independent_review_20261024.json",
+      "destination": "tmp_analysis/angular_history_assumption_independent_review_20261024.json",
+      "bytes": 5470,
+      "sha256": "441e1da943abb1b7076459078d2ce5e1eb6166d91ec06c56c70b6247b958b4e7"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_modules_20261024.py",
+      "destination": "tmp_analysis/identity_spacetime_modules_20261024.py",
+      "bytes": 25416,
+      "sha256": "2171db60d075039ba85c8b6b7389adc573793df0c1477e45390733b95b8c0bc3"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_modules_synthetic_round1_20261024_v2.json",
+      "destination": "tmp_analysis/identity_spacetime_modules_synthetic_round1_20261024_v2.json",
+      "bytes": 699,
+      "sha256": "3917892eb703960368cad2e2d95e6b77401db09e5721da3aba8c61de4e2ce265"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_modules_synthetic_round2_20261024_v2.json",
+      "destination": "tmp_analysis/identity_spacetime_modules_synthetic_round2_20261024_v2.json",
+      "bytes": 774,
+      "sha256": "52c8668f94890aee43166f506b379f4c36a37d2ab26139bdba4f51a8da5cf865"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_modules_synthetic_round3_20261024_v2.json",
+      "destination": "tmp_analysis/identity_spacetime_modules_synthetic_round3_20261024_v2.json",
+      "bytes": 707,
+      "sha256": "b54756d6eb707db9069b60d324535b3547db780421b3cb68001f00641185c3b1"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_identity_spacetime_modules_independent_20261024.py",
+      "destination": "tmp_analysis/audit_identity_spacetime_modules_independent_20261024.py",
+      "bytes": 23168,
+      "sha256": "fc3b0bacc5168d42515b2404e6a6d0b203fb02cfdf18183345ea1b26f97cbda8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_modules_independent_audit_20261024.json",
+      "destination": "tmp_analysis/identity_spacetime_modules_independent_audit_20261024.json",
+      "bytes": 3486,
+      "sha256": "868a7e9fdf85d27b067a04c90fd9955115f9fd2b9f079596fd51673fb09f7a83"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/项目进度.md",
+      "destination": "report/项目进度.md",
+      "bytes": 19296,
+      "sha256": "27bf93d91d50a0ed127608bae330af05035320c0c0595e8c9fe2503e2169c193"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_特征与时空改进_20261024.md",
+      "destination": "report/COVTrack_特征与时空改进_20261024.md",
+      "bytes": 19200,
+      "sha256": "3e47de1296b9307c3b902a60c484f9761bbab15757208e9919a2709d57367106"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_动态外观对照_20261024.md",
+      "destination": "report/COVTrack_动态外观对照_20261024.md",
+      "bytes": 6324,
+      "sha256": "46ca560a1ff6ffb8c29e66c8914731b5b8e9fa03ffcc1521e4c9cc1b4ad07614"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_20261024_v1/producer_execution_receipt.json",
+      "destination": "evidence/angular_appearance_control_20261024_v1/producer_execution_receipt.json",
+      "bytes": 6451,
+      "sha256": "7bad39ca9e4663de7fa185fb741ac1c2a927dbda1665ed7c462e9d0ad26c376e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_20261024_v1/independent_output_audit.json",
+      "destination": "evidence/angular_appearance_control_20261024_v1/independent_output_audit.json",
+      "bytes": 45794,
+      "sha256": "9b50f800cec308894b6df2259830a96dc3348ef7916e00eb1eb6f88b7b4f2e77"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_20261024_v1/control_brief.json",
+      "destination": "evidence/angular_appearance_control_20261024_v1/control_brief.json",
+      "bytes": 1040612,
+      "sha256": "1cce578853cc479b87b8e97f4cd598ffb7b69dd8115042ff47d49afa733138f9"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_20261024_v1/completion_receipt.json",
+      "destination": "evidence/angular_appearance_control_20261024_v1/completion_receipt.json",
+      "bytes": 20823,
+      "sha256": "0dda118132cfd885fbbe1778fb39b13d1a9d3674428bdc2385a361499f3deaa8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/launch_spec.json",
+      "destination": "evidence/angular_appearance_control_execution_20261024_v1/launch_spec.json",
+      "bytes": 8516,
+      "sha256": "655bc706e51b9a6178af3082f6bff5242344418be5c6ef926ed31d13fe8fed5d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/launch_receipt.json",
+      "destination": "evidence/angular_appearance_control_execution_20261024_v1/launch_receipt.json",
+      "bytes": 1694,
+      "sha256": "5e1a3f369c25924da4fe7dae9ad821fc75ced34dfe3bd9668f3033a68099e70a"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/supervisor_ready.json",
+      "destination": "evidence/angular_appearance_control_execution_20261024_v1/supervisor_ready.json",
+      "bytes": 7034,
+      "sha256": "a0ce1cc1fff6339aed5d67b583c60e61d07b6d21c840f071edc96423d8af1045"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/supervisor_process.json",
+      "destination": "evidence/angular_appearance_control_execution_20261024_v1/supervisor_process.json",
+      "bytes": 698,
+      "sha256": "cabed5b8505d0269776a3ba7002468226683e124ef8d3aef1ac539865fe2c312"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/producer_process.json",
+      "destination": "evidence/angular_appearance_control_execution_20261024_v1/producer_process.json",
+      "bytes": 775,
+      "sha256": "34090edff137343ad8c58c67b89d0f079ee57968b1500f0254962ad6229a254d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/producer_exit.json",
+      "destination": "evidence/angular_appearance_control_execution_20261024_v1/producer_exit.json",
+      "bytes": 6451,
+      "sha256": "7bad39ca9e4663de7fa185fb741ac1c2a927dbda1665ed7c462e9d0ad26c376e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/verifier_process.json",
+      "destination": "evidence/angular_appearance_control_execution_20261024_v1/verifier_process.json",
+      "bytes": 949,
+      "sha256": "6cdd1c6275308eb19b21161912aa947b7f4a16a653ad8a00cc9a945efd08f335"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/verifier_exit.json",
+      "destination": "evidence/angular_appearance_control_execution_20261024_v1/verifier_exit.json",
+      "bytes": 6627,
+      "sha256": "e4a0f6b510ac428bac4905fc02be775693b8d039fb2fab3363ca95a25afc28cb"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/execution_receipt.json",
+      "destination": "evidence/angular_appearance_control_execution_20261024_v1/execution_receipt.json",
+      "bytes": 15058,
+      "sha256": "8b7602c6841b6768725a9c4b3de0ea0d7f17803bf74b80e74978cda48f44aacd"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/protected_before.json",
+      "destination": "evidence/angular_appearance_control_execution_20261024_v1/protected_before.json",
+      "bytes": 1502,
+      "sha256": "e2be4f179725271394f132c62f58f8cfabdbe783f52e0cca293c0acb511f6894"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/protected_after.json",
+      "destination": "evidence/angular_appearance_control_execution_20261024_v1/protected_after.json",
+      "bytes": 1501,
+      "sha256": "0d7a908a22f90039bc9f35ab488dcdb8b09fae442bafb0fda3a2c4e8d44ab46f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_history_assumption_20261024_v1/summary.json",
+      "destination": "evidence/angular_history_assumption_20261024_v1/summary.json",
+      "bytes": 858371,
+      "sha256": "b8ad568025b910f01cf4bcb7072f6ff175338cfcb7feb916d4a130606050ee19"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_history_assumption_20261024_v1/execution_receipt.json",
+      "destination": "evidence/angular_history_assumption_20261024_v1/execution_receipt.json",
+      "bytes": 1070,
+      "sha256": "0a52c721b0dfa9998b58b249b001ccd07e49be54437bfad641af765ecd09f3fc"
+    }
+  ],
+  "excludes": [
+    "NPZ",
+    "NPY scores",
+    "JSONL",
+    "SQLite",
+    "full summary",
+    "checkpoints",
+    "logs",
+    "datasets"
+  ]
+}

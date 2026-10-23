@@ -1,0 +1,101 @@
+{
+  "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_MODULES_SYNTHETIC_AUDIT",
+  "checker_sha256": "fc3b0bacc5168d42515b2404e6a6d0b203fb02cfdf18183345ea1b26f97cbda8",
+  "module_sha256": "2171db60d075039ba85c8b6b7389adc573793df0c1477e45390733b95b8c0bc3",
+  "recommendation_sha256": "23a1361129af172e201e10c0fefa82cf3e76c78ce640d824329652785f40f173",
+  "reviewed_subject_synthetic_round_files_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_modules_synthetic_round1_20261024_v2.json": "3917892eb703960368cad2e2d95e6b77401db09e5721da3aba8c61de4e2ce265",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_modules_synthetic_round2_20261024_v2.json": "52c8668f94890aee43166f506b379f4c36a37d2ab26139bdba4f51a8da5cf865",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_modules_synthetic_round3_20261024_v2.json": "b54756d6eb707db9069b60d324535b3547db780421b3cb68001f00641185c3b1"
+  },
+  "independent_hand_oracles": {
+    "hierarchy_weights": [
+      0.0625,
+      0.0625,
+      0.125,
+      0.25,
+      0.5
+    ],
+    "normalizer_means": [
+      12.5,
+      14.000000000000002,
+      0.0,
+      3.0,
+      12.5,
+      12.5,
+      12.5,
+      12.5,
+      12.5
+    ],
+    "normalizer_stds": [
+      7.182153808805081,
+      7.7680664996417965,
+      1.0,
+      1e-06,
+      7.182153808805081,
+      7.182153808805081,
+      7.182153808805081,
+      7.182153808805081,
+      7.182153808805081
+    ],
+    "valid_marginal_mass": [
+      1.0,
+      0.7291666666666666,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "independent_checks": {
+    "weight_and_normalizer": {
+      "hierarchical_records": 5,
+      "supported_sources": 2,
+      "all_sources": 4,
+      "imbalanced_PN_marginal_population_moments": true,
+      "dimensionwise_valid_mass_verified": true,
+      "duplicate_and_heldout_rejected": true,
+      "unknown_edges_weight_zero": true,
+      "normalizer_stream_mutation_rejected": true
+    },
+    "batch_gradient": {
+      "batch_last_two_gradient": 0.9,
+      "last_short_batch_gradient": 5.4,
+      "full_population_gradient": 2.4,
+      "uniform_subset_gradient_expectation": 2.4,
+      "gradients_observed_by_autograd": true
+    },
+    "adapter_and_loss": {
+      "identity_initialization_to_roundoff": true,
+      "learned_bias_zero_input_and_gradient_exact_zero": true,
+      "freeze_clears_stale_gradients": true,
+      "all_four_G_arms_frozen_adapter_gradient_block": true,
+      "head_zero_residual_exact": true,
+      "all_PxN_loss_and_gradient_oracle": true,
+      "unknown_and_other_category_gradient_zero": true
+    },
+    "Gperm_and_geometry": {
+      "full_retained_unknown_donor_preserved": true,
+      "immutable_row_cyclic_mapping_exact": true,
+      "own_time_and_masks_preserved": true,
+      "shared_normalizer_precedes_all_G_interventions": true,
+      "mapping_and_actual_value_coverage_separate": true,
+      "same_GT_donor_counterexample_retained": true,
+      "nine_geometry_slots_hand_checked": true,
+      "original_frame_timing": true,
+      "static_overlap_never_CV_IoU": true
+    }
+  },
+  "real_cache_or_identity_opened": false,
+  "real_model_or_checkpoint_opened": false,
+  "optimizer_steps": 0,
+  "training_runner_implemented": false,
+  "real_training_run": false,
+  "GPU_used": false,
+  "limits": [
+    "Pure synthetic module audit only; no runner, source-OOF supervision loader, real training or evaluation is authorized by this PASS"
+  ]
+}

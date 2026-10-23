@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ANGULAR_HISTORY_ASSUMPTION_SYNTHETIC",
+  "round": 3,
+  "checks": [
+    "tampered_global_seal_blocks_identity_helper_import",
+    "endtoend_query_strata_crosslag_zero_source_allpositive_macro_and_emptybins",
+    "full_temporary_metadata_scores_query_SQLite_stream_exact_support_allpositive_outputs"
+  ],
+  "script_sha256": "2b48a706035e673527adc6563d2c38338ce3ba77960b24375dbe5d03ffc582f5",
+  "real_payload_opened": false,
+  "predictions_modified": false
+}

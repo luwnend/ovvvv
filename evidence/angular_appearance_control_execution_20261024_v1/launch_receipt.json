@@ -1,0 +1,39 @@
+{
+  "status": "DETACHED_SUPERVISOR_LAUNCHED",
+  "launched_utc": "2026-10-23T17:42:08.271826+00:00",
+  "supervisor_pid": 321781,
+  "supervisor_process": {
+    "pid": 321781,
+    "start_ticks": 574002921,
+    "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+    "create_time_unix": 1792777328.21,
+    "cmdline": [
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+      "-u",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_angular_appearance_background_20261024.py",
+      "run",
+      "--execution-dir",
+      "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1",
+      "--launch-spec-sha256",
+      "655bc706e51b9a6178af3082f6bff5242344418be5c6ef926ed31d13fe8fed5d"
+    ],
+    "state": "R",
+    "session_id": 321781
+  },
+  "supervisor_command": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+    "-u",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_angular_appearance_background_20261024.py",
+    "run",
+    "--execution-dir",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1",
+    "--launch-spec-sha256",
+    "655bc706e51b9a6178af3082f6bff5242344418be5c6ef926ed31d13fe8fed5d"
+  ],
+  "launch_spec_sha256": "655bc706e51b9a6178af3082f6bff5242344418be5c6ef926ed31d13fe8fed5d",
+  "execution_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1",
+  "output_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_20261024_v1",
+  "start_new_session": true,
+  "stdin": "DEVNULL",
+  "stdout_stderr": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/supervisor.log"
+}

@@ -1,0 +1,134 @@
+{
+  "status": "PREDECLARED_FULL_SEALED_FIT_UNTRAINED_ANGULAR_APPEARANCE_CONTROL",
+  "output_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_20261024_v1",
+  "lags": [
+    1,
+    4
+  ],
+  "input_pins": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/source_roles.json": "afa61df067f392b84ba917e1c536a9b64b869dbda19a2236b0a05b6f5c51cb8b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/independent_pair_context_audit.json": "df7c386a8f01d3dbfce928e58758f9c455f685e8485dbfa8b19a0cd4ac936e81",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/independent_support_audit.json": "92174aaa954f6e66cd0e7f520f2f883f7b9e0017c84fbf9bf4509e734ba714e8",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/support_receipt.json": "e206051d0809b8e20b24529254eacece96f997c72b7155e8264197e7c07aae1e",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_index_manifest.json": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/frame_execution.jsonl": "e0e327a887840fbbdf5acacc374a589f696ad529af62d7a9a535bc2dd6161c07",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump_inventory.json": "5a7f94a531e754aef0cec1c78b82a080ee92d6e451f943a46be8c71c6a7676db",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/relative_track_geometry.py": "c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_fit_identity_edge_support.py": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_factorial_design_20261024.md": "22557c159ad562439852bf054204c2cccfdde0be544e50b379504198af07b907",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_fit_lag_identity_support_20261024.py": "9beb8faf932d13f417d491ddd8f853de001d17a414eac0d59d016b0ffcf3af3b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_protocol_20261024.json": "dd84da8fd028af36c223f42a30d19f9f23725eb790e60aaa668700c80a0806ad",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_independent_preflight_20261024.json": "0344310cdf2ca904ac00cb64dd250db4a0b1b71f7f94904fb56f38d94ed36b0d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport.py": "8b534c5f133880165e3e46abbd93e49584ebf8e20bec9c58b46ab425fa8f5924",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_independent_synthetic_20261024.json": "6f5000ab974130cba931135ebfaedfac0d14669ef1dc746ad6d962fce13b6dc9",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_independent_execution_20261024.json": "8fdd9162bd2d0bc43ff4f8926d4c7b480a6df026c202794d17beeea798a5a04d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/summary.json": "9764e2a6f35e4e0a5ce3ab319d15ca4642afda5383289710a5e9dd66e48974c1",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/GT_free_candidates_sealed.json": "d24932ab0885bd6b902374532770726cf5fcca1f24fbe9ff9b239c7c538a20a3",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/independent_output_audit.json": "99e0d3467529f23c85926591799ae624dfa0802c8d0a597c675b8c89968c6606",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/completion_receipt.json": "5e70740d4940f2a4a7cbf4e94c538b152f277826834ebeb8a58bd70d494f14b8",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_protected_before_20261024.json": "cb32e7704490e70b657b9cd3c7145d19a2f578aad33b9b77e61b951660207297"
+  },
+  "population": {
+    "sealed_fit_source_groups": 341,
+    "allocated_fit_videos": 405,
+    "selected_fit_videos": 403,
+    "selected_frames": 13791,
+    "retained_observations": 613536,
+    "selection": "All original sealed FIT source groups in source_roles, roles mean_role or pair_role, and all their cached full_collection frames. No new outcome/source/score selection; zero-support sources remain. The 405 FIT plan allocations include two uncollected videos 1720/1974 whose source groups are absent from original source_roles; report those explicitly but do not add them to the 341 sealed source groups. Every actually cached selected source must belong to the original sealed FIT roles.",
+    "uncollected_allocation_video_ids": [
+      1720,
+      1974
+    ],
+    "uncollected_allocation_sources": {
+      "1720": "LaSOT/racing-11",
+      "1974": "LaSOT/hippo-12"
+    }
+  },
+  "resource_bounds": {
+    "max_frame_rows": 77,
+    "max_video_frames": 41,
+    "max_candidates_per_frame_pair": 5929,
+    "candidates_by_lag": {
+      "1": 29096237,
+      "4": 26255927
+    },
+    "total_candidates": 55352164,
+    "score_storage_bytes": 885634624,
+    "max_score_columns": 2,
+    "generation_ring_frames": 5,
+    "score_dtype": "float64",
+    "score_access": "npy memmap per video/lag, per frame-pair reads/writes only",
+    "estimated_CPU_minutes": [
+      2,
+      8
+    ],
+    "estimate_is_not_measurement": true
+  },
+  "feature_names": [
+    "raw_appearance_cosine",
+    "angular_prediction_cosine"
+  ],
+  "parent_support_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1",
+  "parent_module": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_fit_lag_identity_support_20261024.py",
+  "core": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport.py",
+  "preflight_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_independent_preflight_20261024.json",
+  "preflight_pass": "PASS_INDEPENDENT_ANGULAR_APPEARANCE_CONTROL_IMPLEMENTATION_PREFLIGHT",
+  "candidate_set": "Every retained query row x every retained row in the exact previous sampled-step lag 1 or 4 frame. Preserve empty/missing-prefix receipts, unknown and released id=-1; no nearest-nonempty fallback. Candidate selection is GT-free. No ego compensation. Original-frame time gaps, not sampled-step seconds.",
+  "history": "Same exact past unique nonnegative released-ID rule as parent, including current duplicate and next-unique invalidation. Preserve previous locator (image_id,dump_row,original_frame_index) and raw appearance at reference creation; subsequent frames must not mutate it. No ID=-1 history. Source/video reset and empty frames retained. Old IDs locate history only, never truth.",
+  "prediction": "Unit raw previous-to-last shortest great-circle angular velocity, rho=(query original frame index - reference original frame index)/(reference original frame index - previous original frame index). No learned/fixed cue weight, rho clipping, threshold sweep, GT condition, current query appearance or box enters prediction. Core singularity criterion remains exactly pinned. Last raw zero emits zero prediction with explicit reason/count; previous zero/nonexistent or antipodal undefined path falls back to last raw. Coincident normalized history is explicitly static; history validity is separate from identity reliability.",
+  "seal": "Generate ALL GT-free score shards and complete row/history locator/frame pair mapping; globally SHA seal and reverify before supervised helper import or identity payload decoding. Labels affect diagnostics only. All zero-support original sources retained.",
+  "identity_join": "Only audited eligible FIT manual identity fields via immutable observation index (image_id,dump_row). Skip tune before identity projection. No class-heldout target table or GT category/error/soft_risk/posterior_argmax is decoded. All retained candidates include unknown or heldout objects as unknown; unknown is never negative. No-positive in the known subset means missing eligible identity coverage, not a certified unmatched/null target; unknown refs may be the true same identity. Report no-positive coverage only, never generate no-match training labels.",
+  "scopes": [
+    "all_candidates",
+    "same_predicted_category"
+  ],
+  "populations": [
+    "all_known_population",
+    "common_CV_covered_population"
+  ],
+  "baseline_parity": "For every source/lag/scope/population and union, reproduce parent immutable raw known p/n/unknown, all-known/nonempty/hard top1 exact counts with lowest ref dump_row tie. CV population means original available position history, regardless of angular degeneracy. Never shrink to angular successes. Full raw score blocks must equal parent column0 on identical immutable frame pairs.",
+  "reports": "Both fixed lags, all sources including zeros, original role/datasetblock, known p/n/unknown and all nonempty-known and positive+negative queries, paired rawcos correct/wrong and repair/break, source->GTtrajectory->query macro correctness, source and GTtrajectory error concentration, unchanged common-query cross-lag (primary originally1331). Forecast diagnostics: all memory history reasons, directed/coincident/antipodal/zero fallback masks, history angle and rho distributions (predefined boundaries only for reporting). No sampling by score or repairability.",
+  "history_truth_support": "After global seal only, join eligible manual identity at immutable previous locator and reference/query endpoints. All candidate endpoints remain. Report endpoint-known-same and past-known-same/different/unknown, counts of unique(video,previousImage/row,referenceImage/row,queryImage/row) triplets, unique source/video/GTtrajectory support. Known-different history is descriptive; unknown history stays unknown. No training or dustbin targets; triple endpoint consistency alone does not certify dynamics, source independence, or network readiness.",
+  "distribution_boundaries": {
+    "rho": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "history_angle_radians": [
+      0,
+      0.01,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      1,
+      2,
+      3.141592653589793
+    ],
+    "interval_rule": "left-closed bins with final overflow; reporting only, never prediction clipping or gates"
+  },
+  "forbidden": "No training, fitting, parameter/source/query/lag search, tune/test/classheldout target/correctness decoding, causal effect or official assignment claim, GPU, cache or previous result changes. Literature is separate to this producer. No pseudo-positive/negative identities or unknown-as-negative.",
+  "interpretation": "Ordinary dynamic appearance control and support audit only. A negative result is not a theoretical rejection of all learnable dynamics; investigate implementation vs wrong-history/angular-velocity assumption using three rounds with >=2 independent checks.",
+  "synthetic_rounds": {
+    "1": [
+      "irregular angular directions/zero/coincident/antipodal/fallback including empty and prefix allQxM",
+      "unique/double/noID past locator snapshot and future mutation invariance"
+    ],
+    "2": [
+      "paired repair/break source/trajectory oracle and unknown-notnegative",
+      "fixed-common-CV raw baseline parity, crosslag join and known/unknown history triplets"
+    ],
+    "3": [
+      "full temp generation seal label join report end-to-end including zero-support sources",
+      "tampered/missing sealed file blocks supervision, poisoned non-FIT/class/error payload fields not decoded"
+    ]
+  }
+}

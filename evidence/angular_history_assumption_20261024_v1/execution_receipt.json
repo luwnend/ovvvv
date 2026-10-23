@@ -1,0 +1,28 @@
+{
+  "status": "PASS_READ_ONLY_PRIMARY_ANGULAR_HISTORY_DIAGNOSTIC_EXECUTION",
+  "recorded_utc": "2026-10-23T17:52:56.826534+00:00",
+  "actual_tool_execution": {
+    "tool": "exec_command then write_stdin",
+    "session_id": 92916,
+    "launch_chunk": "ab7180",
+    "completion_chunk": "43fd34",
+    "exit_code": 0
+  },
+  "command": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "tmp_analysis/diagnose_angular_history_assumption_20261024.py",
+    "--execute",
+    "--out",
+    "results/angular_appearance_control_20261024_v1",
+    "--diagnostic-out",
+    "results/angular_history_assumption_20261024_v1"
+  ],
+  "summary_sha256": "b8ad568025b910f01cf4bcb7072f6ff175338cfcb7feb916d4a130606050ee19",
+  "script_sha256": "2b48a706035e673527adc6563d2c38338ce3ba77960b24375dbe5d03ffc582f5",
+  "independent_implementation_review_sha256": "441e1da943abb1b7076459078d2ce5e1eb6166d91ec06c56c70b6247b958b4e7",
+  "summary_inputs_and_outputs_reverified": true,
+  "primary_only": true,
+  "training_started": false,
+  "GPU_used": false,
+  "predictions_modified": false
+}

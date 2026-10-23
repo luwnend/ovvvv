@@ -1,0 +1,16 @@
+{
+  "status": "PASS_IDENTITY_SPACETIME_MODULES_SYNTHETIC",
+  "round": 3,
+  "checks": [
+    "GTfree_fullretained_donors_before_knownprojection_own_time_masks_singletons_and_distinct_coverage",
+    "shared_normalizer_before_intervention_G0_allzero_Gmask_time_and_masks_only",
+    "geometry_ninevalues_ninemasks_original_time_static_overlap_never_CV_IoU"
+  ],
+  "script_sha256": "2171db60d075039ba85c8b6b7389adc573793df0c1477e45390733b95b8c0bc3",
+  "contract_sha256": "23a1361129af172e201e10c0fefa82cf3e76c78ce640d824329652785f40f173",
+  "real_cache_or_identity_opened": false,
+  "training_runner_implemented": false,
+  "optimizer_steps": 0,
+  "GPU_used": false,
+  "ordinary_controls_not_novel_method": true
+}

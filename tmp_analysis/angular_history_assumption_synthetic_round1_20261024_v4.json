@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ANGULAR_HISTORY_ASSUMPTION_SYNTHETIC",
+  "round": 1,
+  "checks": [
+    "all_positive_mixed_clean_signature_and_fixed_representative_separate_from_winners",
+    "unknown_endpoint_never_negative_and_unknown_past_never_clean_nonhard_excluded"
+  ],
+  "script_sha256": "2b48a706035e673527adc6563d2c38338ce3ba77960b24375dbe5d03ffc582f5",
+  "real_payload_opened": false,
+  "predictions_modified": false
+}

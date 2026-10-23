@@ -1,0 +1,67 @@
+{
+  "status": "PASS_INDEPENDENT_ANGULAR_APPEARANCE_CONTROL_IMPLEMENTATION_PREFLIGHT",
+  "script_sha256": "1e9fae320d2435a4560ffeeba3bfe441891f9d9db202296b269ba0419096828e",
+  "protocol_sha256": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69",
+  "core_sha256": "8b534c5f133880165e3e46abbd93e49584ebf8e20bec9c58b46ab425fa8f5924",
+  "checker_sha256": "e0e9c565ec606057a7e9ad634bffb47a04c100d34c5d8788e17e7cbfb1b1fbe4",
+  "reviewed_synthetic_round_files_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_synthetic_round1_20261024_v2.json": "4c9899b500cf9ae632731fa353b19b1ca418c38562c4df9ab7e2aa193fca8a21",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_synthetic_round2_20261024_v2.json": "46b19555ab0c9b0556a933297ac3ba758e4d97807b25fb22a1ebb7257d54a7b8",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_synthetic_round3_20261024_v2.json": "e383192e798301b19b93fef55420f3a6f8462475d0b8256e920053c54809bbb9"
+  },
+  "GT_free_metadata_population": {
+    "sealed_fit_source_groups": 341,
+    "allocated_fit_videos": 405,
+    "selected_fit_videos": 403,
+    "selected_frames": 13791,
+    "retained_observations": 613536
+  },
+  "uncollected_allocated_FIT_video_ids": [
+    1720,
+    1974
+  ],
+  "synthetic_full_entry": {
+    "candidates_by_lag": {
+      "1": 69,
+      "4": 46
+    },
+    "SQLite_table_rows": {
+      "query_support": 168
+    },
+    "original_parent_raw_statistics_verified": true,
+    "poisoned_payload_projection_verified": true,
+    "global_seal_tampered_types_rejected_before_identity": [
+      "shards/v1.rows.json",
+      "shards/v1_lag4.scores.npy",
+      "frame_pairs.jsonl"
+    ],
+    "missing_sealed_member_rejected_before_identity": true
+  },
+  "random_angular_oracle_trials": 120,
+  "random_ranking_oracle_trials": 150,
+  "random_ranking_SQLite_table_rows": {
+    "query_support": 244
+  },
+  "hand_math_oracle_checks": 8,
+  "checks": [
+    "complete_GT_free_metadata_original_roles_population_exact_lag_QxM_counts",
+    "independent_shortest_arc_original_time_sign_irregular_gap_reverse_long_wrap_and_all_degeneracies",
+    "zero_last_exact_zero_previous_zero_fallback_common_CV_never_shrunk",
+    "unique_duplicate_next_unique_noID_and_future_invariant_raw_locator_snapshots",
+    "literal_paired_top1_lowest_row_ties_unknown_notnegative_and_all_3x3_pair_orders",
+    "both_nonempty_and_hard_query_source_GTtrajectory_macro_and_error_concentration",
+    "full_temp_float16_NPZ_generation_global_seal_safe_manual_join_output_audit",
+    "legacy_parent_sixcolumn_raw_exact_full_blocks_and_all_corresponding_statistics",
+    "poisoned_class_error_risk_posterior_and_tune_identity_never_decoded",
+    "three_tampered_candidate_member_types_and_missing_file_rejected_before_ID_IO",
+    "source_scopes_lags_populations_crosslag_and_same_different_unknown_threeanchor_support",
+    "all_three_final_v2_synthetic_receipts_bound_to_frozen_script_protocol_core"
+  ],
+  "real_cached_features_opened": false,
+  "real_supervised_payload_opened": false,
+  "real_model_opened": false,
+  "GPU": false,
+  "limits": [
+    "Synthetic implementation and GT-free metadata preflight only; real producer and independent output audit remain unfinished"
+  ]
+}

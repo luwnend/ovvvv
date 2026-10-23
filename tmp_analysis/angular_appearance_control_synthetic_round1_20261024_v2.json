@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ANGULAR_APPEARANCE_CONTROL_SYNTHETIC_ROUND",
+  "round": 1,
+  "checks": [
+    "injected_angular_drift_correct_and_wrong_history_original_time_ratio_query_poison",
+    "antipodal_coincident_zero_previous_last_and_missing_history_fallback",
+    "past_locator_raw_snapshot_future_mutation_duplicate_invalidates_next_unique_then_resumes",
+    "full_lag_QxM_empty_prefix_unassigned_short_all_empty_zero_length_shard"
+  ],
+  "script_sha256": "1e9fae320d2435a4560ffeeba3bfe441891f9d9db202296b269ba0419096828e",
+  "protocol_sha256": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69",
+  "core_sha256": "8b534c5f133880165e3e46abbd93e49584ebf8e20bec9c58b46ab425fa8f5924",
+  "real_cache_or_supervised_payload_opened": false,
+  "training_started": false,
+  "GPU_used": false
+}

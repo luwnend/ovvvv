@@ -1,0 +1,8 @@
+{
+  "status": "FAILED_SYNTHETIC_ROUND_ASSERTION",
+  "round": 3,
+  "exit_code": 1,
+  "script_sha256": "cd2cce1c62a59475ec7452a0bf8629aa523a304961ef2582d39fbd27b889c58b",
+  "reason": "Synthetic oracle expected 4 common-CV shared queries; only query step5 has lag4 reference with past history, so correct count is 2. Implementation unchanged; synthetic expected value corrected.",
+  "real_cache_or_supervised_payload_opened": false
+}

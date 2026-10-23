@@ -1,0 +1,32 @@
+{
+  "status": "PASS_ANGULAR_APPEARANCE_CONTROL_BACKGROUND_SYNTHETIC",
+  "completed_utc": "2026-10-23T17:29:56.801292+00:00",
+  "checks": [
+    "detached launch returns before work and has its own session",
+    "actual producer exit receipt precedes independent verifier",
+    "success final receipt and protected absence preserved",
+    "duplicate launch or existing output rejected",
+    "duplicate run rejected without overwrite",
+    "detached supervisor completes after independent launcher process exits",
+    "PID start ticks binding rejects identity mismatch",
+    "producer_failure lands distinct final receipt",
+    "verifier_failure lands distinct final receipt",
+    "missing_audit lands distinct final receipt",
+    "protected_mutation lands distinct final receipt",
+    "stale producer SHA rejected before execution directory creation",
+    "existing producer output rejected before launch",
+    "existing execution directory rejected before launch",
+    "dangling output symlink rejected before launch",
+    "insufficient free disk rejected before launch",
+    "wrong launch spec SHA rejected before run claim"
+  ],
+  "checks_passed": 17,
+  "supervisor": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_angular_appearance_background_20261024.py",
+    "sha256": "dbfa9eb345493c91c2356fc1154b6d01f53bd55faa194826dcea997be41167a2",
+    "bytes": 28773
+  },
+  "real_support_launched": false,
+  "protected_real_files_opened": false,
+  "training_started": false
+}

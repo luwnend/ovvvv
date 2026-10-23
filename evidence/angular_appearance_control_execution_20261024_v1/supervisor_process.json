@@ -1,0 +1,21 @@
+{
+  "process": {
+    "pid": 321781,
+    "start_ticks": 574002921,
+    "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+    "create_time_unix": 1792777328.21,
+    "cmdline": [
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+      "-u",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_angular_appearance_background_20261024.py",
+      "run",
+      "--execution-dir",
+      "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1",
+      "--launch-spec-sha256",
+      "655bc706e51b9a6178af3082f6bff5242344418be5c6ef926ed31d13fe8fed5d"
+    ],
+    "state": "R",
+    "session_id": 321781
+  },
+  "recorded_utc": "2026-10-23T17:42:08.321914+00:00"
+}

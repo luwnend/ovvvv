@@ -1,0 +1,110 @@
+{
+  "schema": "appearance_transport_literature_sources_v1",
+  "checked_date": "2026-10-24",
+  "scope": "Five closest papers; original method sections where obtainable; no implementation equivalence claim",
+  "candidate": {
+    "path": "tmp_analysis/causal_appearance_transport_candidate_20261024.md",
+    "sha256_at_read": "74a7f07e258805908f2161f890b49ecc566fbd0518e8e01f27144829406a4bb7"
+  },
+  "overall_status": "HOLD_NOVELTY_NOT_ESTABLISHED",
+  "unresolved_gate": "NEEDS_FORMULA_SFP_FULLTEXT",
+  "evidence_type": "Lightweight primary-source URLs, actual read scope and formula locators; no downloaded full-paper archive",
+  "papers": [
+    {
+      "id": "AFPSF_2023",
+      "title": "Multiple object tracking with appearance feature prediction and similarity fusion",
+      "authors": ["Zhiyuan Li", "Jing Chen", "Jieran Bi"],
+      "doi": "10.1109/ACCESS.2023.3279868",
+      "year": 2023,
+      "primary_record": "https://ieeexplore.ieee.org/document/10135072/",
+      "metadata": "https://api.crossref.org/works/10.1109/ACCESS.2023.3279868",
+      "full_author_manuscript": "https://www.researchgate.net/publication/371057618_Multiple_object_tracking_with_appearance_feature_prediction_and_similarity_fusion",
+      "read_status": "FULL_AUTHOR_ACCEPTED_MANUSCRIPT_METHODS_READ_NOT_FINAL_VOR",
+      "locations": ["III-D Appearance Feature Prediction, manuscript pp.4-5, Eqs.2-8", "III-F association, Eqs.9-12"],
+      "web_evidence_refs": ["turn671652view0", "turn569178view0", "turn751270view0"],
+      "overlap_tags": ["last-five-frame appearance prediction", "Transformer", "association similarity fusion"],
+      "verdict": "STOP_NOVELTY_HISTORY_APPEARANCE_PREDICTION",
+      "limits": ["Header contains placeholder DOI; title/authors/footer identify correct paper", "No verified matching official code in this audit", "Exact low-rank skew/path constraints not found in inspected predictor"]
+    },
+    {
+      "id": "TFLF_SFP_2026",
+      "title": "Focusing on temporal feature variations: Improving the adaptability of Re-identification in multi-object tracking",
+      "authors": ["Mengyu He", "Shoudong Han", "Heng Li", "Chaoyue Li"],
+      "doi": "10.1016/j.neucom.2026.133637",
+      "pii": "S0925231226010349",
+      "year": 2026,
+      "volume": "685",
+      "article_number": "133637",
+      "primary_record": "https://www.sciencedirect.com/science/article/pii/S0925231226010349",
+      "metadata": "https://api.crossref.org/works?query.title=Focusing%20on%20temporal%20feature%20variations&rows=1",
+      "read_status": "PUBLISHER_INDEXED_EXTENDED_PREVIEW_ONLY_FULL_METHODS_UNOBTAINED",
+      "access_attempts": ["ScienceDirect direct HTTP and web open: 403", "Elsevier full-text endpoint: no successful full text", "ResearchGate: request-full-text record"],
+      "locations": ["Publisher abstract/introduction/section preview: TFLF, TCDS, GRU-based TMA and SFP"],
+      "web_evidence_refs": ["turn371989search0", "turn371989search4", "turn671652view1"],
+      "overlap_tags": ["historical trajectory feature prediction", "current appearance alignment", "feature drift control"],
+      "verdict": "NEEDS_FORMULA_SFP_FULLTEXT",
+      "blocked_claim": "STOP_NOVELTY_PREDICT_THEN_ALIGN_OR_FEATURE_DRIFT_CONTROL",
+      "limits": ["SFP formula, conditioning, stride semantics, losses and causal deployment not verified", "Cannot rule out orthogonality or path constraints from preview", "No verified official implementation"]
+    },
+    {
+      "id": "NODE_GCN_REID_2021",
+      "title": "Video person reidentification based on neural ordinary differential equations and graph convolution network",
+      "authors": ["Li-qiang Zhang", "Long-yang Huang", "Xiao-li Duan"],
+      "doi": "10.1186/s13634-021-00747-1",
+      "year": 2021,
+      "primary_fulltext": "https://link.springer.com/article/10.1186/s13634-021-00747-1",
+      "read_status": "OFFICIAL_FULLTEXT_METHODS_READ",
+      "locations": ["Sec.2.2, Eqs.4-6", "Sec.2.3, Eq.7 centered temporal graph"],
+      "web_evidence_refs": ["turn671652view2"],
+      "overlap_tags": ["continuous-time latent ReID feature evolution", "ODE encoder/decoder"],
+      "verdict": "STOP_NOVELTY_CONTINUOUS_TIME_LATENT_REID",
+      "limits": ["Centered graph uses future neighbors", "Video ReID is not verified causal online MOT", "No inspected hard skew low-rank history-conditioned operator"]
+    },
+    {
+      "id": "POLAR_PREDICTION_2023",
+      "title": "A polar prediction model for learning to represent visual transformations",
+      "authors": ["Pierre-Etienne H. Fiquet", "Eero P. Simoncelli"],
+      "year": 2023,
+      "venue": "NeurIPS 36",
+      "arxiv_version": "2303.03432v2",
+      "primary_record": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/f8e55d98b0c2569bd0aa25b076e6b3f8-Abstract-Conference.html",
+      "primary_fulltext": "https://arxiv.org/html/2303.03432v2",
+      "author_record": "https://www.cns.nyu.edu/~lcv/pubs/makeAbs.php?loc=Fiquet23b",
+      "read_status": "AUTHOR_FULLTEXT_METHODS_READ_OFFICIAL_VENUE_METADATA_CHECKED",
+      "locations": ["Sec.3.1 prediction objective", "Sec.3.3 Eqs.3-5 phase extrapolation/rotation", "Sec.3.3 Eq.8 learned historical prediction matrix"],
+      "web_evidence_refs": ["turn935032view0", "turn935032view1", "turn609644view1"],
+      "overlap_tags": ["past-conditioned rotation", "latent coefficient groups", "constant angular extrapolation", "learned history-conditioned operator"],
+      "verdict": "STOP_NOVELTY_HISTORY_CONDITIONED_ROTATIONAL_FEATURE_PREDICTION",
+      "limits": ["PP rotates coefficient pairs; learned analysis/synthesis need not be raw-space orthogonal", "QP matrices are not guaranteed orthogonal", "Video prediction; identity discrimination/MOT assignment not established", "No official code equivalence audited"]
+    },
+    {
+      "id": "NEURAL_KOOPMAN_PRIOR_2024",
+      "title": "Neural Koopman prior for data assimilation",
+      "authors": ["Anthony Frion", "Lucas Drumetz", "Mauro Dalla Mura", "Guillaume Tochon", "Abdeldjalil Aissa El Bey"],
+      "year": 2024,
+      "arxiv_version": "2309.05317v3",
+      "primary_fulltext": "https://arxiv.org/html/2309.05317v3",
+      "author_pdf": "https://www.lre.epita.fr/dload/papers/frion.24.itsp.pdf",
+      "read_status": "AUTHOR_FULLTEXT_METHODS_READ",
+      "locations": ["II-B Eq.11 soft orthogonality", "III-A Eqs.14-16 orthogonal/skew discussion", "III-A Eq.21 actual soft orthogonality loss", "III-B Eqs.22-24 arbitrary-time matrix-exponential evolution"],
+      "web_evidence_refs": ["turn770523view1", "turn466566view0", "turn466566view2", "turn609644view0"],
+      "overlap_tags": ["continuous latent matrix-exponential flow", "orthogonality stability prior", "irregular time increments"],
+      "verdict": "STOP_NOVELTY_ORTHOGONAL_CONTINUOUS_LATENT_FLOW",
+      "limits": ["Actual Koopman operator is mainly global with soft orthogonality; not candidate per-history hard skew", "Do not adopt universal strict-periodicity claim for arbitrary multifrequency SO(d) dynamics", "Paper-cited state-dependent/Hamiltonian works are leads, not separately audited papers", "Not a ReID/MOT identity experiment"]
+    }
+  ],
+  "mathematical_scope": {
+    "per_track_orthogonal": "Does not preserve between-track inner products when operators differ",
+    "same_operator_shared_gram": "Exact Gram preservation is a structural identity, not predictive or identity-benefit evidence",
+    "mixed_reference_times": "Different per-reference-time operators invalidate a same-operator Gram guarantee; common-reference alignment itself requires evidence",
+    "cross_updated_path_target": "Different from fixed-generator semigroup identities; empirical support and a matching literature audit remain required",
+    "shared_nuisance_proposal": "Discussion only; not implemented, not novelty-cleared, no protocol change"
+  },
+  "protected_files_at_read": {
+    "tmp_analysis/context_feature_memory_protocol_20261024.json": "535d98eaa96685074ec86d1e6921d9bd1a6798253adce41939ee1e6c8ad6e14e",
+    "tmp_analysis/context_feature_memory_replay_protocol_20261024.json": "740d6c782fdfe8240ddc8c4b924e566cebd2465a6a05233f02197b1e904aaf1b",
+    "tmp_analysis/spacetime_candidate_features_protocol_20261024.json": "d38beac2839a6473ff6a973e41a7c194febb818e40e433df63793e3349f086a1",
+    "tmp_analysis/fit_lag_identity_support_protocol_20261024.json": "dd84da8fd028af36c223f42a30d19f9f23725eb790e60aaa668700c80a0806ad",
+    "tmp_analysis/angular_appearance_control_protocol_20261024.json": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69"
+  }
+}

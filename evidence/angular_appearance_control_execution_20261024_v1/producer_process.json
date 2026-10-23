@@ -1,0 +1,27 @@
+{
+  "stage": "producer",
+  "started_utc": "2026-10-23T17:42:08.818878+00:00",
+  "process": {
+    "pid": 321791,
+    "start_ticks": 574002976,
+    "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+    "create_time_unix": 1792777328.76,
+    "cmdline": [
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+      "-u",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_angular_appearance_control_20261024.py",
+      "--execute"
+    ],
+    "state": "R",
+    "session_id": 321791
+  },
+  "pid": 321791,
+  "command": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+    "-u",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_angular_appearance_control_20261024.py",
+    "--execute"
+  ],
+  "start_new_session": true,
+  "stdin": "DEVNULL"
+}

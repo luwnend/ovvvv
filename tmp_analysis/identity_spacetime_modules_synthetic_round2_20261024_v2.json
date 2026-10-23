@@ -1,0 +1,17 @@
+{
+  "status": "PASS_IDENTITY_SPACETIME_MODULES_SYNTHETIC",
+  "round": 2,
+  "checks": [
+    "exact_source_GTtrajectory_observation_availablelag_weights_PN_marginals_and_short_batch_scaling",
+    "train_original_geometry_exact_PN_valid_marginals_population_std_floor_and_zero_valid",
+    "held_out_source_rejected_by_normalizer",
+    "normalizer_two_pass_values_masks_source_PN_weights_digest_blocks_silent_stream_drift"
+  ],
+  "script_sha256": "2171db60d075039ba85c8b6b7389adc573793df0c1477e45390733b95b8c0bc3",
+  "contract_sha256": "23a1361129af172e201e10c0fefa82cf3e76c78ce640d824329652785f40f173",
+  "real_cache_or_identity_opened": false,
+  "training_runner_implemented": false,
+  "optimizer_steps": 0,
+  "GPU_used": false,
+  "ordinary_controls_not_novel_method": true
+}

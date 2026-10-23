@@ -1,0 +1,125 @@
+{
+  "status": "PASS_INDEPENDENT_PRIMARY_HARD_ANGULAR_HISTORY_ASSUMPTION_REVIEW",
+  "reviewed_script": "tmp_analysis/diagnose_angular_history_assumption_20261024.py",
+  "script_sha256": "2b48a706035e673527adc6563d2c38338ce3ba77960b24375dbe5d03ffc582f5",
+  "producer_synthetic_receipts": {
+    "tmp_analysis/angular_history_assumption_synthetic_round1_20261024_v4.json": {
+      "sha256": "d2b43b6ac03a264d043ee974966f877290411fa6bc290f6717b31d99ebedf75e",
+      "round": 1,
+      "checks": [
+        "all_positive_mixed_clean_signature_and_fixed_representative_separate_from_winners",
+        "unknown_endpoint_never_negative_and_unknown_past_never_clean_nonhard_excluded"
+      ]
+    },
+    "tmp_analysis/angular_history_assumption_synthetic_round2_20261024_v4.json": {
+      "sha256": "b6e7bb44ce9366771e0d429944be4b7723945e5a5f11062ce57a94e54c77deec",
+      "round": 2,
+      "checks": [
+        "predeclared_bin_boundaries_injected_exact_direction_and_unclipped_multiturn",
+        "antipodal_and_missing_history_actual_zero_turn_separate_from_hypothetical_rho_theta",
+        "zero_last_query_residual_invalid_and_missing_angular_history_not_fake_zero_bin",
+        "clean_three_anchor_tangent_direction_original_frame_speed_and_degenerate_denominators"
+      ]
+    },
+    "tmp_analysis/angular_history_assumption_synthetic_round3_20261024_v4.json": {
+      "sha256": "1f8efcb87286f2e3677df7e12567eaf421e9d16659266f5f81e032b58a905aca",
+      "round": 3,
+      "checks": [
+        "tampered_global_seal_blocks_identity_helper_import",
+        "endtoend_query_strata_crosslag_zero_source_allpositive_macro_and_emptybins",
+        "full_temporary_metadata_scores_query_SQLite_stream_exact_support_allpositive_outputs"
+      ]
+    }
+  },
+  "independent_checks": {
+    "checks": [
+      "clean_requires_all_known_positives_unknown_not_negative_fixed_minimum_row_representative",
+      "all_rho_theta_boundaries_underflow_overflow_and_exact_edges_independent_literal_oracle",
+      "antipodal_and_missing_actual_turn_zero_hypothetical_separate_zero_last_na_unclipped_multiturn",
+      "analytic_irregular_original_frame_direction_speed_ratio_reverse_sign_nonunit_vectors_zero_and_singular_rejections",
+      "full_4_by_11_by_11_past_status_rho_theta_cross_empty_cells_missing_and_partition_conservation_both_lags",
+      "strict_clean_direction_macro_excludes_mixed_query_even_if_individual_past_same",
+      "independent_unbalanced_source_trajectory_query_allpositive_hierarchical_residual_macro",
+      "temporary_full_stream_raw_loader_branch_time_locator_binding_allpositive_direction_SQLite_and_zero_sources",
+      "tampered_temporary_seal_rejected_before_identity_helper_import_instrumented"
+    ],
+    "check_count": 9,
+    "all_passed": true,
+    "real_payload_opened": false,
+    "diagnostic_execute_called": false,
+    "predictions_modified": false,
+    "synthetic_scope": "Independent pure functions and temporary generated fixtures only"
+  },
+  "actual_tool_execution": {
+    "exit_code": 0,
+    "pid": 325128,
+    "subprocess": true,
+    "observed_by": "independent parent Popen.communicate() / wait",
+    "interpreter": "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "command_kind": "temporary independent pure-synthetic checker; no --execute",
+    "checker_source_sha256": "05ab9440c6eb93c36426a5cdb13d5d999613f95f81c4198f15560488f5678087",
+    "started_utc": "2026-10-23T17:50:15.259603+00:00",
+    "completed_utc": "2026-10-23T17:50:15.428552+00:00",
+    "stdout_sha256": "4784c7c2707db79067eb1be305aee881bc562156cc6a071a5e6316ed9367b657",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scope": {
+    "scope": "same_predicted_category",
+    "population": "common_CV_covered_population",
+    "query_subset": "positive_and_negative_available_known_queries",
+    "lags": [
+      1,
+      4
+    ],
+    "all_positive_means": "Every known positive inside these fixed primary hard queries; not all endpoints in other populations"
+  },
+  "boundaries": {
+    "rho": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "history_angle_radians": [
+      0,
+      0.01,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      1,
+      2,
+      3.141592653589793
+    ],
+    "rule": "underflow then left-closed/right-open intervals and final overflow; None separate",
+    "full_cross_cells_per_lag": 484,
+    "past_statuses": [
+      "known_same",
+      "known_different",
+      "unknown_with_locator",
+      "missing_locator"
+    ]
+  },
+  "source_review": {
+    "clean_requires_every_known_positive_past_same": true,
+    "representative_is_minimum_immutable_positive_row_not_winner": true,
+    "actual_fallback_turn_and_hypothetical_rho_theta_separate": true,
+    "strict_clean_direction_requires_three_nonzero_vectors_and_two_nondegenerate_tangents": true,
+    "direction_and_speed_use_original_frame_times": true,
+    "seal_verification_precedes_identity_helper_or_decode": true,
+    "unknown_is_negative": false,
+    "scope_and_population_explicit": true
+  },
+  "limits": [
+    "No real label, real prediction shard or real cache was opened in this review",
+    "Not a fresh independent audit of real diagnostic output",
+    "Does not complete the broader two-scope/two-population negative-diagnostic plan",
+    "Descriptive conditional known ranking and shortest-arc direction/speed, not physical motion or causal effect"
+  ],
+  "pinned_script_unchanged": true
+}

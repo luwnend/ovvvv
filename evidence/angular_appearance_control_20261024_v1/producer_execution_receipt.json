@@ -1,0 +1,66 @@
+{
+  "status": "PRODUCER_EXIT_ZERO",
+  "actual_tool_execution": {
+    "exit_code": 0,
+    "pid": 321791,
+    "subprocess": true,
+    "command": [
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+      "-u",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_angular_appearance_control_20261024.py",
+      "--execute"
+    ],
+    "started_utc": "2026-10-23T17:42:08.818878+00:00",
+    "completed_utc": "2026-10-23T17:45:12.106145+00:00",
+    "observed_by": "detached supervisor wait() for its own producer child"
+  },
+  "process": {
+    "pid": 321791,
+    "start_ticks": 574002976,
+    "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+    "create_time_unix": 1792777328.76,
+    "cmdline": [
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+      "-u",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_angular_appearance_control_20261024.py",
+      "--execute"
+    ],
+    "state": "R",
+    "session_id": 321791
+  },
+  "launch_spec_sha256": "655bc706e51b9a6178af3082f6bff5242344418be5c6ef926ed31d13fe8fed5d",
+  "producer_sha256": "1e9fae320d2435a4560ffeeba3bfe441891f9d9db202296b269ba0419096828e",
+  "protocol_sha256": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69",
+  "log_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/producer.log",
+  "file_pins": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/source_roles.json": "afa61df067f392b84ba917e1c536a9b64b869dbda19a2236b0a05b6f5c51cb8b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/independent_pair_context_audit.json": "df7c386a8f01d3dbfce928e58758f9c455f685e8485dbfa8b19a0cd4ac936e81",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/independent_support_audit.json": "92174aaa954f6e66cd0e7f520f2f883f7b9e0017c84fbf9bf4509e734ba714e8",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/support_receipt.json": "e206051d0809b8e20b24529254eacece96f997c72b7155e8264197e7c07aae1e",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_index_manifest.json": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/frame_execution.jsonl": "e0e327a887840fbbdf5acacc374a589f696ad529af62d7a9a535bc2dd6161c07",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump_inventory.json": "5a7f94a531e754aef0cec1c78b82a080ee92d6e451f943a46be8c71c6a7676db",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/relative_track_geometry.py": "c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_fit_identity_edge_support.py": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_factorial_design_20261024.md": "22557c159ad562439852bf054204c2cccfdde0be544e50b379504198af07b907",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_fit_lag_identity_support_20261024.py": "9beb8faf932d13f417d491ddd8f853de001d17a414eac0d59d016b0ffcf3af3b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_protocol_20261024.json": "dd84da8fd028af36c223f42a30d19f9f23725eb790e60aaa668700c80a0806ad",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_independent_preflight_20261024.json": "0344310cdf2ca904ac00cb64dd250db4a0b1b71f7f94904fb56f38d94ed36b0d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport.py": "8b534c5f133880165e3e46abbd93e49584ebf8e20bec9c58b46ab425fa8f5924",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_independent_synthetic_20261024.json": "6f5000ab974130cba931135ebfaedfac0d14669ef1dc746ad6d962fce13b6dc9",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_independent_execution_20261024.json": "8fdd9162bd2d0bc43ff4f8926d4c7b480a6df026c202794d17beeea798a5a04d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/summary.json": "9764e2a6f35e4e0a5ce3ab319d15ca4642afda5383289710a5e9dd66e48974c1",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/GT_free_candidates_sealed.json": "d24932ab0885bd6b902374532770726cf5fcca1f24fbe9ff9b239c7c538a20a3",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/independent_output_audit.json": "99e0d3467529f23c85926591799ae624dfa0802c8d0a597c675b8c89968c6606",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/completion_receipt.json": "5e70740d4940f2a4a7cbf4e94c538b152f277826834ebeb8a58bd70d494f14b8",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_protected_before_20261024.json": "cb32e7704490e70b657b9cd3c7145d19a2f578aad33b9b77e61b951660207297",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_angular_appearance_control_20261024.py": "1e9fae320d2435a4560ffeeba3bfe441891f9d9db202296b269ba0419096828e",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_protocol_20261024.json": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_independent_preflight_20261024.json": "fed48008427ce84c0a0732f9b6de25694cc2d199549dab84b2ad259e68b97824",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_angular_appearance_control_output_20261024.py": "c12bcd2ad7024a559cf0fa5c22ea7af9d3f6d2a18df8641cd379820fd139babd",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_angular_appearance_background_20261024.py": "dbfa9eb345493c91c2356fc1154b6d01f53bd55faa194826dcea997be41167a2",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_angular_appearance_control_implementation_20261024.py": "e0e9c565ec606057a7e9ad634bffb47a04c100d34c5d8788e17e7cbfb1b1fbe4",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_output_verifier_synthetic_20261024.json": "99d6caf4e24322bf196b4135eb69e666817b2165f2c09ea9ac72c0305d1f058f"
+  }
+}

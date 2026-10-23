@@ -1,0 +1,274 @@
+{
+  "status": "PASS_ANGULAR_APPEARANCE_CONTROL_AND_INDEPENDENT_OUTPUT_AUDIT",
+  "recorded_utc": "2026-10-23T17:50:00.947449+00:00",
+  "stage_complete": true,
+  "overall_research_goal_complete": false,
+  "supervisor_execution_status": "PASS_ANGULAR_APPEARANCE_CONTROL_EXECUTION_AND_INDEPENDENT_AUDIT",
+  "stages": {
+    "producer": {
+      "status": "PRODUCER_EXIT_ZERO",
+      "actual_tool_execution": {
+        "exit_code": 0,
+        "pid": 321791,
+        "subprocess": true,
+        "command": [
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+          "-u",
+          "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_angular_appearance_control_20261024.py",
+          "--execute"
+        ],
+        "started_utc": "2026-10-23T17:42:08.818878+00:00",
+        "completed_utc": "2026-10-23T17:45:12.106145+00:00",
+        "observed_by": "detached supervisor wait() for its own producer child"
+      },
+      "process": {
+        "pid": 321791,
+        "start_ticks": 574002976,
+        "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+        "create_time_unix": 1792777328.76,
+        "cmdline": [
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+          "-u",
+          "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_angular_appearance_control_20261024.py",
+          "--execute"
+        ],
+        "state": "R",
+        "session_id": 321791
+      },
+      "launch_spec_sha256": "655bc706e51b9a6178af3082f6bff5242344418be5c6ef926ed31d13fe8fed5d",
+      "producer_sha256": "1e9fae320d2435a4560ffeeba3bfe441891f9d9db202296b269ba0419096828e",
+      "protocol_sha256": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69",
+      "log_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/producer.log",
+      "file_pins": {
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/source_roles.json": "afa61df067f392b84ba917e1c536a9b64b869dbda19a2236b0a05b6f5c51cb8b",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/independent_pair_context_audit.json": "df7c386a8f01d3dbfce928e58758f9c455f685e8485dbfa8b19a0cd4ac936e81",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/independent_support_audit.json": "92174aaa954f6e66cd0e7f520f2f883f7b9e0017c84fbf9bf4509e734ba714e8",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/support_receipt.json": "e206051d0809b8e20b24529254eacece96f997c72b7155e8264197e7c07aae1e",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_index_manifest.json": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/frame_execution.jsonl": "e0e327a887840fbbdf5acacc374a589f696ad529af62d7a9a535bc2dd6161c07",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump_inventory.json": "5a7f94a531e754aef0cec1c78b82a080ee92d6e451f943a46be8c71c6a7676db",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/relative_track_geometry.py": "c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_fit_identity_edge_support.py": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_factorial_design_20261024.md": "22557c159ad562439852bf054204c2cccfdde0be544e50b379504198af07b907",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_fit_lag_identity_support_20261024.py": "9beb8faf932d13f417d491ddd8f853de001d17a414eac0d59d016b0ffcf3af3b",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_protocol_20261024.json": "dd84da8fd028af36c223f42a30d19f9f23725eb790e60aaa668700c80a0806ad",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_independent_preflight_20261024.json": "0344310cdf2ca904ac00cb64dd250db4a0b1b71f7f94904fb56f38d94ed36b0d",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport.py": "8b534c5f133880165e3e46abbd93e49584ebf8e20bec9c58b46ab425fa8f5924",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_independent_synthetic_20261024.json": "6f5000ab974130cba931135ebfaedfac0d14669ef1dc746ad6d962fce13b6dc9",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_independent_execution_20261024.json": "8fdd9162bd2d0bc43ff4f8926d4c7b480a6df026c202794d17beeea798a5a04d",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/summary.json": "9764e2a6f35e4e0a5ce3ab319d15ca4642afda5383289710a5e9dd66e48974c1",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/GT_free_candidates_sealed.json": "d24932ab0885bd6b902374532770726cf5fcca1f24fbe9ff9b239c7c538a20a3",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/independent_output_audit.json": "99e0d3467529f23c85926591799ae624dfa0802c8d0a597c675b8c89968c6606",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/completion_receipt.json": "5e70740d4940f2a4a7cbf4e94c538b152f277826834ebeb8a58bd70d494f14b8",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_protected_before_20261024.json": "cb32e7704490e70b657b9cd3c7145d19a2f578aad33b9b77e61b951660207297",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_angular_appearance_control_20261024.py": "1e9fae320d2435a4560ffeeba3bfe441891f9d9db202296b269ba0419096828e",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_protocol_20261024.json": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_independent_preflight_20261024.json": "fed48008427ce84c0a0732f9b6de25694cc2d199549dab84b2ad259e68b97824",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_angular_appearance_control_output_20261024.py": "c12bcd2ad7024a559cf0fa5c22ea7af9d3f6d2a18df8641cd379820fd139babd",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_angular_appearance_background_20261024.py": "dbfa9eb345493c91c2356fc1154b6d01f53bd55faa194826dcea997be41167a2",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_angular_appearance_control_implementation_20261024.py": "e0e9c565ec606057a7e9ad634bffb47a04c100d34c5d8788e17e7cbfb1b1fbe4",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_output_verifier_synthetic_20261024.json": "99d6caf4e24322bf196b4135eb69e666817b2165f2c09ea9ac72c0305d1f058f"
+      }
+    },
+    "verifier": {
+      "status": "VERIFIER_EXIT_ZERO",
+      "actual_tool_execution": {
+        "exit_code": 0,
+        "pid": 323312,
+        "subprocess": true,
+        "command": [
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+          "-u",
+          "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_angular_appearance_control_output_20261024.py",
+          "--out",
+          "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_20261024_v1"
+        ],
+        "started_utc": "2026-10-23T17:45:12.565317+00:00",
+        "completed_utc": "2026-10-23T17:49:15.920674+00:00",
+        "observed_by": "detached supervisor wait() for its own verifier child"
+      },
+      "process": {
+        "pid": 323312,
+        "start_ticks": 574021351,
+        "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+        "create_time_unix": 1792777512.51,
+        "cmdline": [
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+          "-u",
+          "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_angular_appearance_control_output_20261024.py",
+          "--out",
+          "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_20261024_v1"
+        ],
+        "state": "R",
+        "session_id": 323312
+      },
+      "launch_spec_sha256": "655bc706e51b9a6178af3082f6bff5242344418be5c6ef926ed31d13fe8fed5d",
+      "producer_sha256": "1e9fae320d2435a4560ffeeba3bfe441891f9d9db202296b269ba0419096828e",
+      "protocol_sha256": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69",
+      "log_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/angular_appearance_control_execution_20261024_v1/verifier.log",
+      "file_pins": {
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/source_roles.json": "afa61df067f392b84ba917e1c536a9b64b869dbda19a2236b0a05b6f5c51cb8b",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/independent_pair_context_audit.json": "df7c386a8f01d3dbfce928e58758f9c455f685e8485dbfa8b19a0cd4ac936e81",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/independent_support_audit.json": "92174aaa954f6e66cd0e7f520f2f883f7b9e0017c84fbf9bf4509e734ba714e8",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/support_receipt.json": "e206051d0809b8e20b24529254eacece96f997c72b7155e8264197e7c07aae1e",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_index_manifest.json": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/frame_execution.jsonl": "e0e327a887840fbbdf5acacc374a589f696ad529af62d7a9a535bc2dd6161c07",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump_inventory.json": "5a7f94a531e754aef0cec1c78b82a080ee92d6e451f943a46be8c71c6a7676db",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/relative_track_geometry.py": "c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_fit_identity_edge_support.py": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_factorial_design_20261024.md": "22557c159ad562439852bf054204c2cccfdde0be544e50b379504198af07b907",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_fit_lag_identity_support_20261024.py": "9beb8faf932d13f417d491ddd8f853de001d17a414eac0d59d016b0ffcf3af3b",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_protocol_20261024.json": "dd84da8fd028af36c223f42a30d19f9f23725eb790e60aaa668700c80a0806ad",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_independent_preflight_20261024.json": "0344310cdf2ca904ac00cb64dd250db4a0b1b71f7f94904fb56f38d94ed36b0d",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport.py": "8b534c5f133880165e3e46abbd93e49584ebf8e20bec9c58b46ab425fa8f5924",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_independent_synthetic_20261024.json": "6f5000ab974130cba931135ebfaedfac0d14669ef1dc746ad6d962fce13b6dc9",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_independent_execution_20261024.json": "8fdd9162bd2d0bc43ff4f8926d4c7b480a6df026c202794d17beeea798a5a04d",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/summary.json": "9764e2a6f35e4e0a5ce3ab319d15ca4642afda5383289710a5e9dd66e48974c1",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/GT_free_candidates_sealed.json": "d24932ab0885bd6b902374532770726cf5fcca1f24fbe9ff9b239c7c538a20a3",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/independent_output_audit.json": "99e0d3467529f23c85926591799ae624dfa0802c8d0a597c675b8c89968c6606",
+        "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/completion_receipt.json": "5e70740d4940f2a4a7cbf4e94c538b152f277826834ebeb8a58bd70d494f14b8",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_protected_before_20261024.json": "cb32e7704490e70b657b9cd3c7145d19a2f578aad33b9b77e61b951660207297",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_angular_appearance_control_20261024.py": "1e9fae320d2435a4560ffeeba3bfe441891f9d9db202296b269ba0419096828e",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_protocol_20261024.json": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_independent_preflight_20261024.json": "fed48008427ce84c0a0732f9b6de25694cc2d199549dab84b2ad259e68b97824",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_angular_appearance_control_output_20261024.py": "c12bcd2ad7024a559cf0fa5c22ea7af9d3f6d2a18df8641cd379820fd139babd",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_angular_appearance_background_20261024.py": "dbfa9eb345493c91c2356fc1154b6d01f53bd55faa194826dcea997be41167a2",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_angular_appearance_control_implementation_20261024.py": "e0e9c565ec606057a7e9ad634bffb47a04c100d34c5d8788e17e7cbfb1b1fbe4",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/angular_appearance_control_output_verifier_synthetic_20261024.json": "99d6caf4e24322bf196b4135eb69e666817b2165f2c09ea9ac72c0305d1f058f"
+      }
+    }
+  },
+  "bindings": {
+    "results/angular_appearance_control_20261024_v1/summary.json": {
+      "path": "results/angular_appearance_control_20261024_v1/summary.json",
+      "sha256": "bd3c210c9618ce324135c3a7937ee8e6c025ab51665d681fa7717f5d6f160e18",
+      "bytes": 35436964
+    },
+    "results/angular_appearance_control_20261024_v1/support.sqlite": {
+      "path": "results/angular_appearance_control_20261024_v1/support.sqlite",
+      "sha256": "d10778e742351aa6078b35d73e35e3589360a98ac7dc0820ed103878c979eb0f",
+      "bytes": 28798976
+    },
+    "results/angular_appearance_control_20261024_v1/GT_free_candidates_sealed.json": {
+      "path": "results/angular_appearance_control_20261024_v1/GT_free_candidates_sealed.json",
+      "sha256": "a81303f64bec66b37ed887e8a5040b52a046359b24aa1faccb18a025566f27d8",
+      "bytes": 2777060
+    },
+    "results/angular_appearance_control_20261024_v1/independent_output_audit.json": {
+      "path": "results/angular_appearance_control_20261024_v1/independent_output_audit.json",
+      "sha256": "9b50f800cec308894b6df2259830a96dc3348ef7916e00eb1eb6f88b7b4f2e77",
+      "bytes": 45794
+    },
+    "results/angular_appearance_control_20261024_v1/producer_execution_receipt.json": {
+      "path": "results/angular_appearance_control_20261024_v1/producer_execution_receipt.json",
+      "sha256": "7bad39ca9e4663de7fa185fb741ac1c2a927dbda1665ed7c462e9d0ad26c376e",
+      "bytes": 6451
+    },
+    "results/angular_appearance_control_execution_20261024_v1/launch_spec.json": {
+      "path": "results/angular_appearance_control_execution_20261024_v1/launch_spec.json",
+      "sha256": "655bc706e51b9a6178af3082f6bff5242344418be5c6ef926ed31d13fe8fed5d",
+      "bytes": 8516
+    },
+    "results/angular_appearance_control_execution_20261024_v1/launch_receipt.json": {
+      "path": "results/angular_appearance_control_execution_20261024_v1/launch_receipt.json",
+      "sha256": "5e1a3f369c25924da4fe7dae9ad821fc75ced34dfe3bd9668f3033a68099e70a",
+      "bytes": 1694
+    },
+    "results/angular_appearance_control_execution_20261024_v1/supervisor_ready.json": {
+      "path": "results/angular_appearance_control_execution_20261024_v1/supervisor_ready.json",
+      "sha256": "a0ce1cc1fff6339aed5d67b583c60e61d07b6d21c840f071edc96423d8af1045",
+      "bytes": 7034
+    },
+    "results/angular_appearance_control_execution_20261024_v1/producer_process.json": {
+      "path": "results/angular_appearance_control_execution_20261024_v1/producer_process.json",
+      "sha256": "34090edff137343ad8c58c67b89d0f079ee57968b1500f0254962ad6229a254d",
+      "bytes": 775
+    },
+    "results/angular_appearance_control_execution_20261024_v1/producer_exit.json": {
+      "path": "results/angular_appearance_control_execution_20261024_v1/producer_exit.json",
+      "sha256": "7bad39ca9e4663de7fa185fb741ac1c2a927dbda1665ed7c462e9d0ad26c376e",
+      "bytes": 6451
+    },
+    "results/angular_appearance_control_execution_20261024_v1/verifier_process.json": {
+      "path": "results/angular_appearance_control_execution_20261024_v1/verifier_process.json",
+      "sha256": "6cdd1c6275308eb19b21161912aa947b7f4a16a653ad8a00cc9a945efd08f335",
+      "bytes": 949
+    },
+    "results/angular_appearance_control_execution_20261024_v1/verifier_exit.json": {
+      "path": "results/angular_appearance_control_execution_20261024_v1/verifier_exit.json",
+      "sha256": "e4a0f6b510ac428bac4905fc02be775693b8d039fb2fab3363ca95a25afc28cb",
+      "bytes": 6627
+    },
+    "results/angular_appearance_control_execution_20261024_v1/execution_receipt.json": {
+      "path": "results/angular_appearance_control_execution_20261024_v1/execution_receipt.json",
+      "sha256": "8b7602c6841b6768725a9c4b3de0ea0d7f17803bf74b80e74978cda48f44aacd",
+      "bytes": 15058
+    },
+    "results/angular_appearance_control_execution_20261024_v1/protected_before.json": {
+      "path": "results/angular_appearance_control_execution_20261024_v1/protected_before.json",
+      "sha256": "e2be4f179725271394f132c62f58f8cfabdbe783f52e0cca293c0acb511f6894",
+      "bytes": 1502
+    },
+    "results/angular_appearance_control_execution_20261024_v1/protected_after.json": {
+      "path": "results/angular_appearance_control_execution_20261024_v1/protected_after.json",
+      "sha256": "0d7a908a22f90039bc9f35ab488dcdb8b09fae442bafb0fda3a2c4e8d44ab46f",
+      "bytes": 1501
+    },
+    "tmp_analysis/feature_spacetime_protected_before_20261024.json": {
+      "path": "tmp_analysis/feature_spacetime_protected_before_20261024.json",
+      "sha256": "cb32e7704490e70b657b9cd3c7145d19a2f578aad33b9b77e61b951660207297",
+      "bytes": 1626
+    },
+    "tmp_analysis/finalize_angular_appearance_stage_20261024.py": {
+      "path": "tmp_analysis/finalize_angular_appearance_stage_20261024.py",
+      "sha256": "edb657589066e247ffe90ba9bac315856d68c85d9271e4c74af56ccff2fe687c",
+      "bytes": 13639
+    },
+    "tmp_analysis/diagnose_angular_appearance_control_20261024.py": {
+      "path": "tmp_analysis/diagnose_angular_appearance_control_20261024.py",
+      "sha256": "1e9fae320d2435a4560ffeeba3bfe441891f9d9db202296b269ba0419096828e",
+      "bytes": 53885
+    },
+    "tmp_analysis/angular_appearance_control_protocol_20261024.json": {
+      "path": "tmp_analysis/angular_appearance_control_protocol_20261024.json",
+      "sha256": "44d8bce20de4ed3fd358a083665e6e9d8b2744d29d86dcdc9b2d9efa2f07eb69",
+      "bytes": 11706
+    },
+    "tmp_analysis/angular_appearance_control_independent_preflight_20261024.json": {
+      "path": "tmp_analysis/angular_appearance_control_independent_preflight_20261024.json",
+      "sha256": "fed48008427ce84c0a0732f9b6de25694cc2d199549dab84b2ad259e68b97824",
+      "bytes": 3270
+    },
+    "tmp_analysis/verify_angular_appearance_control_output_20261024.py": {
+      "path": "tmp_analysis/verify_angular_appearance_control_output_20261024.py",
+      "sha256": "c12bcd2ad7024a559cf0fa5c22ea7af9d3f6d2a18df8641cd379820fd139babd",
+      "bytes": 63372
+    }
+  },
+  "control_brief": {
+    "path": "results/angular_appearance_control_20261024_v1/control_brief.json",
+    "sha256": "1cce578853cc479b87b8e97f4cd598ffb7b69dd8115042ff47d49afa733138f9",
+    "bytes": 1040612
+  },
+  "all_bound_file_pins_unchanged": true,
+  "seven_protected_unchanged": true,
+  "all_sealed_member_hashes_reverified": true,
+  "globally_sealed_members": 1210,
+  "candidates_by_lag": {
+    "1": 29096237,
+    "4": 26255927
+  },
+  "independently_reconstructed_SQLite_table_rows": {
+    "query_support": 113719
+  },
+  "feature_maximum_absolute_error": {
+    "raw_appearance_cosine": 0.0,
+    "angular_prediction_cosine": 0.0
+  },
+  "training_started": false,
+  "GPU_used": false,
+  "unknown_is_negative": false,
+  "verification_basis": "Sequential pinned producer and complete sealed hashes; actual child wait receipts owned by detached supervisor; no independent instrumentation of payload read times"
+}
