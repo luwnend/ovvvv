@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SCALAR_DONOROUT_SYNTHETIC_FIXTURES",
+  "checks": [
+    "known_translation_all_fullpool_donors_and_three_arms",
+    "all_h_including_missing_and_in_sample_control_distinction",
+    "match_then_delete_is_not_donorout_rematching",
+    "strict_overlap_proposal_aliases_and_zeroarea_boundary_contact",
+    "fixedmask_only_endpoint_mutation_invariance",
+    "zero_features_strict_ties_nonpositive_cosine_missingmargin_empty_frames",
+    "even_coordinate_medians_MAD_and_endpoint_geometricmean_scale",
+    "same_h_intersection_frame_median_source_frame_mean_source_equal_macro_nozero_padding"
+  ],
+  "fixture_groups": 8,
+  "real_cache_opened": false,
+  "producer_schema_assumed": false,
+  "identity_or_OOF_evaluation_opened": false,
+  "independent_math_uses": "Python scalar arithmetic and full enumeration",
+  "verifier_sha256": "fa6463b8809a0490cfad3fac608cf8ccbd712ef687b69048d672b183393f5d1c"
+}

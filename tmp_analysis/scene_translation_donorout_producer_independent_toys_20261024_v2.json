@@ -1,0 +1,20 @@
+{
+  "status": "PASS_INDEPENDENT_DONOROUT_PRODUCER_TOYS",
+  "cases": 36,
+  "heldout_targets": 139,
+  "max_abs_numeric_difference": 1.7763568394002505e-15,
+  "fullpool_membership_and_two_locator_hashes_exact": true,
+  "scalar_canonical_submatrix_membership_exact": true,
+  "C_F_strided_layout_membership_and_hashes_identical": true,
+  "worst_77x77_all77heldouts_seconds": [
+    0.06115742772817612,
+    0.056601228192448616,
+    0.05745996907353401
+  ],
+  "conservative_27582_frames_seconds": 1686.8441715985537,
+  "producer_sha256": "1b1cb57ad43898b58ad9e54c39444f4bc7953ab5ec91fc2df5cab60bbb120aa7",
+  "cached_sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32",
+  "verifier_sha256": "fa6463b8809a0490cfad3fac608cf8ccbd712ef687b69048d672b183393f5d1c",
+  "real_cache_opened": false,
+  "identity_or_OOF_evaluation_opened": false
+}

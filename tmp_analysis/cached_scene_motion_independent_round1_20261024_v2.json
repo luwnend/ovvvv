@@ -1,0 +1,31 @@
+{
+  "status": "PASS_INDEPENDENT_CACHED_SCENE_MOTION_CANONICAL_MATRIX_SYNTHETIC_AUDIT",
+  "round": 1,
+  "module_sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32",
+  "auditor_sha256": "215c589d8b688599f7247b5c0de665a14fee678f7f00b8de6a72c9f31b26f60a",
+  "checks": [
+    "scalar_extrema_exact_membership_margin_and_missing_fullmatrix_oracle",
+    "exact_ties_zero_negative_and_new_reciprocal_after_competitor_removal",
+    "brute_leaveone_median_rank_parity_odd_even_and_coherent_foreground_counterexample",
+    "fixed_exclusion_admissible_endpoint_mutation_snapshot_and_candidate_scale_sign",
+    "independent_row_permutation_well_separated_membership_and_geometry",
+    "invalid_shape_nonfinite_geometry_ranges_bool_and_duplicate_exclusion_contract"
+  ],
+  "full_output_comparisons": 2027,
+  "discrete_membership_and_margins_compared_exactly": true,
+  "geometry_numeric_rtol": 2e-13,
+  "geometry_numeric_atol": 2e-13,
+  "sliced_reference_universal_bitwise_parity_claimed": false,
+  "real_cache_opened": false,
+  "new_OOF_outputs_opened": false,
+  "GT_or_class_or_track_ids_decoded": false,
+  "python": "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+  "numpy_version": "1.24.4",
+  "thread_environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "elapsed_seconds": 19.90528480615467
+}

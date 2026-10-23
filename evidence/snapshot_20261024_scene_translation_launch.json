@@ -1,0 +1,277 @@
+{
+  "stage": "scene_translation_donorout_launch_20261024",
+  "source_root": "/home/chenhc/ov/OVMOT_RESEARCH",
+  "diagnostic_complete": false,
+  "OOF_complete": false,
+  "identity_tracking_or_novelty_established": false,
+  "files": [
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/项目进度.md",
+      "destination": "report/项目进度.md",
+      "bytes": 21844,
+      "sha256": "46b7c408d1ba0f3d177f6cebe5667153a1c4c6a082d4d50e0b110d826d079b14"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_特征与时空改进_20261024.md",
+      "destination": "report/COVTrack_特征与时空改进_20261024.md",
+      "bytes": 20588,
+      "sha256": "44708f2a1e0de08d568941ab25eaadeb9a723df6c71972ec8d72eb3a8b7497d6"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_外部运动预测诊断_20261024.md",
+      "destination": "report/COVTrack_外部运动预测诊断_20261024.md",
+      "bytes": 5359,
+      "sha256": "257ab3e26981bdb024b8168b43d3d82e757e2b2fed9f604140d185cb5e981ef6"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_handoff_20261024.md",
+      "destination": "tmp_analysis/identity_spacetime_oof_handoff_20261024.md",
+      "bytes": 6417,
+      "sha256": "8e685ebfa9a5c72d7d06b018760029f9d3796b8d26926eaeaea6116493d49ea0"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_handoff_20261024.md",
+      "destination": "tmp_analysis/scene_translation_donorout_handoff_20261024.md",
+      "bytes": 4626,
+      "sha256": "610fa47089a452c852f9f5c05a520031e72426dc18d44807da5eb2675a3d3762"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/sync_scene_translation_stage_20261024.py",
+      "destination": "tmp_analysis/sync_scene_translation_stage_20261024.py",
+      "bytes": 5569,
+      "sha256": "967a9b18f1036ab05497da94b3a5eed11389307900788adf112939dcad31a780"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_endpoint_scene_motion_20261024.py",
+      "destination": "tmp_analysis/cached_endpoint_scene_motion_20261024.py",
+      "bytes": 20061,
+      "sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_cached_scene_motion_independent_20261024.py",
+      "destination": "tmp_analysis/audit_cached_scene_motion_independent_20261024.py",
+      "bytes": 13276,
+      "sha256": "215c589d8b688599f7247b5c0de665a14fee678f7f00b8de6a72c9f31b26f60a"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_cached_scene_motion_layout_20261024.py",
+      "destination": "tmp_analysis/audit_cached_scene_motion_layout_20261024.py",
+      "bytes": 2064,
+      "sha256": "c7460ada403fd6c57fa6ede99786ea6870076e03776131bac6043e06f62a8580"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_scene_motion_independent_layout_20261024_v2.json",
+      "destination": "tmp_analysis/cached_scene_motion_independent_layout_20261024_v2.json",
+      "bytes": 434,
+      "sha256": "5483b9bf4c6c7d54438d8fc7891dd96ccfca461c20eef796c31de97bb327e401"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_20261024.py",
+      "destination": "tmp_analysis/scene_translation_donorout_20261024.py",
+      "bytes": 17922,
+      "sha256": "1b1cb57ad43898b58ad9e54c39444f4bc7953ab5ec91fc2df5cab60bbb120aa7"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/check_scene_translation_donorout_20261024.py",
+      "destination": "tmp_analysis/check_scene_translation_donorout_20261024.py",
+      "bytes": 7011,
+      "sha256": "23495e4687f57e55745b2b4b248d2e2e17825aeb893802da51020bc6af308719"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_scene_translation_producer_synthetic_20261024.py",
+      "destination": "tmp_analysis/audit_scene_translation_producer_synthetic_20261024.py",
+      "bytes": 10660,
+      "sha256": "09d83ea0db2dd26c7a82fbc74ccf97d197ac9f01dbd906112f291f5a23dbbe32"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_producer_independent_synthetic_20261024_v1.json",
+      "destination": "tmp_analysis/scene_translation_producer_independent_synthetic_20261024_v1.json",
+      "bytes": 848,
+      "sha256": "ed74bd296b8bad93b6a2f14e5c42c1f63b17fc975b81ce6c2660e93489ccc151"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_scene_translation_donorout_20261024.py",
+      "destination": "tmp_analysis/run_scene_translation_donorout_20261024.py",
+      "bytes": 11492,
+      "sha256": "686c41b2e80c9e995a9cd45aac466371c5a015223ba351c67762095ce88d09ec"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_scene_translation_runner_independent_20261024.py",
+      "destination": "tmp_analysis/audit_scene_translation_runner_independent_20261024.py",
+      "bytes": 9233,
+      "sha256": "503f76b7dc4d2d3a46c178976dab6d7b7e43ba67fea751672c763838d868733f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_runner_independent_synthetic_20261024_v1.json",
+      "destination": "tmp_analysis/scene_translation_runner_independent_synthetic_20261024_v1.json",
+      "bytes": 2195,
+      "sha256": "3c1e930b3d24dfb63380c7cf60dc75c93569637bd42481e4c49fa3d1952a263c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_scene_translation_donorout_20261024.py",
+      "destination": "tmp_analysis/verify_scene_translation_donorout_20261024.py",
+      "bytes": 68626,
+      "sha256": "fa6463b8809a0490cfad3fac608cf8ccbd712ef687b69048d672b183393f5d1c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_design_20261024.md",
+      "destination": "tmp_analysis/scene_translation_donorout_design_20261024.md",
+      "bytes": 6533,
+      "sha256": "ca07e33356f8d9344d728618170116392b2a5ba50695053776d4f4c0c62402d1"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_protocol_review_20261024.md",
+      "destination": "tmp_analysis/scene_translation_donorout_protocol_review_20261024.md",
+      "bytes": 12359,
+      "sha256": "1f265200f29364f783af6a27d1c76c0a0c28f7e500734fba9775a1daadef7bb9"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_protocol_20261024.json",
+      "destination": "tmp_analysis/scene_translation_donorout_protocol_20261024.json",
+      "bytes": 14782,
+      "sha256": "7ba6cb5a7151dd462ec2abde7cef5c8e2b310d3f9a3f6f1dd16f774217e78220"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_metadata_preparation_20261024.json",
+      "destination": "tmp_analysis/scene_translation_donorout_metadata_preparation_20261024.json",
+      "bytes": 11514,
+      "sha256": "ca518e087d9bfa00a394bab2699c8cae56e063dbb3bfa0f0bd5998b55712672f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_parallel_storage_precheck_20261024_v1.json",
+      "destination": "tmp_analysis/scene_translation_parallel_storage_precheck_20261024_v1.json",
+      "bytes": 23385,
+      "sha256": "c33d9e3f7ffc82fd53afe08ca1f46a40d5b6c2a7b3a990f21e30bc904ebb88e1"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_scene_translation_parallel_storage_20261024.py",
+      "destination": "tmp_analysis/audit_scene_translation_parallel_storage_20261024.py",
+      "bytes": 6714,
+      "sha256": "771432456d22b4fe0a078d1eb3af7519a7ce273c7e2b5398ead4550fab277c34"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_scene_translation_donorout_preflight_20261024.py",
+      "destination": "tmp_analysis/audit_scene_translation_donorout_preflight_20261024.py",
+      "bytes": 16706,
+      "sha256": "117b0eec6144de591b9b09274e84d5ac2d475ead0a1ade4a4bb62b0c6a17bdc3"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_independent_preflight_20261024.json",
+      "destination": "tmp_analysis/scene_translation_donorout_independent_preflight_20261024.json",
+      "bytes": 27450,
+      "sha256": "a18679f7d7fa4f18070d17cc999519ebc0bf16e8875d4c500ff2521eafca1a86"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_scene_translation_donorout_launch_live_20261024.py",
+      "destination": "tmp_analysis/audit_scene_translation_donorout_launch_live_20261024.py",
+      "bytes": 7575,
+      "sha256": "f53a2e450541587c5f2ee10c394af995598dcb3832157961a652a277cc101fdd"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_launch_live_audit_20261024.json",
+      "destination": "tmp_analysis/scene_translation_donorout_launch_live_audit_20261024.json",
+      "bytes": 12923,
+      "sha256": "67798aa5976855226c219db77eae7a1e5a9f3f36a3c0ace601e0e1dfcfd68b38"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_endpoint_scene_motion_synthetic_round1_20261024_v2.json",
+      "destination": "tmp_analysis/cached_endpoint_scene_motion_synthetic_round1_20261024_v2.json",
+      "bytes": 888,
+      "sha256": "dd2e2df2f093eef36c6b467decc3b5a022a2f1236a1629edc22269692fc9ca8a"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_scene_motion_independent_round1_20261024_v2.json",
+      "destination": "tmp_analysis/cached_scene_motion_independent_round1_20261024_v2.json",
+      "bytes": 1401,
+      "sha256": "9cfd2ea11283f9053c5717d573e80cfe585838da7650ba6603c76bf6235c2a24"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_producer_synthetic_round1_20261024_v2.json",
+      "destination": "tmp_analysis/scene_translation_donorout_producer_synthetic_round1_20261024_v2.json",
+      "bytes": 646,
+      "sha256": "77ec5fe1014624bf4b17b9f8afd02d34463b4c08debff0e78687cc010fb6e397"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_endpoint_scene_motion_synthetic_round2_20261024_v2.json",
+      "destination": "tmp_analysis/cached_endpoint_scene_motion_synthetic_round2_20261024_v2.json",
+      "bytes": 888,
+      "sha256": "848c46c85927fa7c67216cd784e5700da14b7c48c98912bc7aa576557a09e784"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_scene_motion_independent_round2_20261024_v2.json",
+      "destination": "tmp_analysis/cached_scene_motion_independent_round2_20261024_v2.json",
+      "bytes": 1402,
+      "sha256": "ec97dda5a9a0a02247865f8bc706e1bd8a75c6eb6eaa02f60eca5df742566efc"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_producer_synthetic_round2_20261024_v2.json",
+      "destination": "tmp_analysis/scene_translation_donorout_producer_synthetic_round2_20261024_v2.json",
+      "bytes": 651,
+      "sha256": "93f8f7aa8263738cce2cd2c4b929bb8e15b79f40eb823716aafae8adc296e579"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_endpoint_scene_motion_synthetic_round3_20261024_v2.json",
+      "destination": "tmp_analysis/cached_endpoint_scene_motion_synthetic_round3_20261024_v2.json",
+      "bytes": 1936,
+      "sha256": "11209062e23184bece583d3953bdeb4809be6ce0dab2b040fe59a2f1128e2ecc"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_scene_motion_independent_round3_20261024_v2.json",
+      "destination": "tmp_analysis/cached_scene_motion_independent_round3_20261024_v2.json",
+      "bytes": 1401,
+      "sha256": "ee2b0a9bb5bc25250f7aac2f845639d6440e3fe5412e835d58be03fc1e3cbd99"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_producer_synthetic_round3_20261024_v2.json",
+      "destination": "tmp_analysis/scene_translation_donorout_producer_synthetic_round3_20261024_v2.json",
+      "bytes": 610,
+      "sha256": "9d782914e67c3920bca49976a3e9bdca3058a6949470cfe3f0b6637623babc8a"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_scalar_fixture_QA_20261024_v2.json",
+      "destination": "tmp_analysis/scene_translation_donorout_scalar_fixture_QA_20261024_v2.json",
+      "bytes": 912,
+      "sha256": "b6613004967f63ecba0c0c3cb281724849cef4854d1ccbfd80c413d5458a0178"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_producer_independent_toys_20261024_v2.json",
+      "destination": "tmp_analysis/scene_translation_donorout_producer_independent_toys_20261024_v2.json",
+      "bytes": 853,
+      "sha256": "406cdd2127e165e1435258d90bd201f0e51401dcb9b5d4a7b8ce5477b6004e57"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_translation_donorout_output_CLI_independent_QA_20261024_v2.json",
+      "destination": "tmp_analysis/scene_translation_donorout_output_CLI_independent_QA_20261024_v2.json",
+      "bytes": 2140,
+      "sha256": "3af262643b61f28f906d1b00cfb785387e76502372e83b3adfc48c12078d4c72"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/scene_translation_donorout_execution_20261024_v1/launch_spec.json",
+      "destination": "evidence/scene_translation_donorout_execution_20261024_v1/launch_spec.json",
+      "bytes": 7347,
+      "sha256": "90c7fb204ad38a28960abaac95b2daae9b5921e98ae936f7b1144c8d39c0de78"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/scene_translation_donorout_execution_20261024_v1/launch_receipt.json",
+      "destination": "evidence/scene_translation_donorout_execution_20261024_v1/launch_receipt.json",
+      "bytes": 931,
+      "sha256": "542bc1f6f2848950ccca3666ac6eac6a6a6f3686abcfbcf8b5c0d19dc60a45da"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/scene_translation_donorout_execution_20261024_v1/supervisor_identity.json",
+      "destination": "evidence/scene_translation_donorout_execution_20261024_v1/supervisor_identity.json",
+      "bytes": 428,
+      "sha256": "f60e3bde46d0fb810b2191c1b1d737a21e2968522c650ad2aeb5173053c9d046"
+    }
+  ],
+  "excludes": [
+    "data",
+    "images",
+    "weights",
+    "cache",
+    "scores",
+    "checkpoints",
+    "JSONL",
+    "logs"
+  ]
+}

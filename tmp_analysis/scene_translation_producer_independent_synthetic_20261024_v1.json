@@ -1,0 +1,17 @@
+{
+  "status": "PASS_INDEPENDENT_DONOROUT_PRODUCER_SYNTHETIC_AUDIT",
+  "producer_sha256": "1b1cb57ad43898b58ad9e54c39444f4bc7953ab5ec91fc2df5cab60bbb120aa7",
+  "cached_module_sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32",
+  "auditor_sha256": "09d83ea0db2dd26c7a82fbc74ccf97d197ac9f01dbd906112f291f5a23dbbe32",
+  "target_arm_schema_comparisons": 75,
+  "checks": [
+    "poisoned_loader_exact_allowlist_Cfloat64_score_unused",
+    "fullpool_targets_every_h_masks_alias_nonoverlap_direct_overlap_touching_and_hashes",
+    "threelevel_hierarchy_common_h_intersections_all_sources_missing_and_crosslag_sources",
+    "finite_components_but_overflowing_L1_fail_closed"
+  ],
+  "real_cache_opened": false,
+  "new_OOF_outputs_opened": false,
+  "GT_or_class_or_track_ids_decoded": false,
+  "elapsed_seconds": 0.09317418280988932
+}

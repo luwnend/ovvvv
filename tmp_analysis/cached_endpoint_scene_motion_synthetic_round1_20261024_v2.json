@@ -1,0 +1,20 @@
+{
+  "status": "PASS_CACHED_ENDPOINT_SCENE_MOTION_SYNTHETIC",
+  "round": 1,
+  "checks": [
+    "full_fit_anchor_margin_missing_LOO_candidate_schema_reference_parity",
+    "strict_ties_zero_empty_singleton_alias_exclusions_preserve_missing",
+    "deleted_competitor_recomputes_MNN_and_creates_new_anchor",
+    "fixed_exclusion_value_mutation_and_caller_input_mutation_invariance",
+    "coherent_majority_outliers_extreme_finite_features_nonfinite_and_invalid_contracts"
+  ],
+  "full_output_comparisons": 1211,
+  "numeric_rtol": 2e-13,
+  "numeric_atol": 2e-13,
+  "structure_anchor_order_tie_missing_keys_compared_exactly": true,
+  "reference_sha256": "4ba1517f42d7b60e109db1675c9c4b1d54948cc3a45aeec5031cf40cf9ed730b",
+  "real_cache_opened": false,
+  "new_oof_readout_opened": false,
+  "trained": false,
+  "module_sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32"
+}

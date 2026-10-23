@@ -73,3 +73,6 @@ IO/hash、几何构建、评价和独立复核。实际worker训练人口预期�
 - supervisor PID358090/start_ticks574364699；coordinator PID358095/start_ticks574364815。这些是启动时绑定，不应单凭旧PID认为仍活着；用上面的只读status命令现场核对。
 - 首个worker为fold0_seed20261024，GT-free preparation已完成；实际训练人口和后续进度以各worker stdout为准。
 - 预计100–240分钟（含未测IO和audit），可关闭对话后续接；不停止、不重新launch。完成必须有execution_receipt、独立audit PASS、completion_receipt及finalization.exit.json实际exit0。
+## 新并行诊断快照（2026-10-24 03:42:51）
+
+主OOF已6/15模型actualexit0，第7个`fold1_seed20261025`身份匹配running；尚无global seal/统一评价，不能读取新指标或改pin。并行的GT-free donor-out位移预测诊断已于03:42:40启动，独立协议`7ba6cb5a…`及preflight`a18679f7…`，37pins/7保护通过，31GiB并行启动门通过。其仅用raw/box/proposal/frame定位，不读本OOF输出；入口`tmp_analysis/scene_translation_donorout_handoff_20261024.md`，输出`results/scene_translation_donorout_20261024_v1`。新诊断不可替代本OOF最终15模型seal、统一评价和fresh output audit。

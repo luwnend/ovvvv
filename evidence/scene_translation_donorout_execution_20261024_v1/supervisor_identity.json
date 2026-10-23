@@ -1,0 +1,13 @@
+{
+  "pid": 387140,
+  "start_ticks": 574726111,
+  "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+  "cmdline": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "-u",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_scene_translation_donorout_20261024.py",
+    "--supervise",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/scene_translation_donorout_execution_20261024_v1/launch_spec.json"
+  ],
+  "state": "R"
+}

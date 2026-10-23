@@ -1,0 +1,68 @@
+{
+  "status": "PASS_TEMPORARY_DONOROUT_OUTPUT_CLI_QA",
+  "real_cache_opened": false,
+  "synthetic_population_override_only_in_temporary_wrapper": true,
+  "verifier_sha256": "fa6463b8809a0490cfad3fac608cf8ccbd712ef687b69048d672b183393f5d1c",
+  "producer_sha256": "1b1cb57ad43898b58ad9e54c39444f4bc7953ab5ec91fc2df5cab60bbb120aa7",
+  "positive_actual_returncode": 0,
+  "positive_audit": {
+    "status": "PASS_INDEPENDENT_SCENE_TRANSLATION_DONOROUT_OUTPUT_AUDIT",
+    "protocol_sha256": "67b42224ed3603fff6aba5db400672bd668775f811ab83cea517e9cb575dccaf",
+    "seal_sha256": "5ce3f430742546a40d828b9d5f2219c70056759c974d630e037dd83135711bb3",
+    "summary_sha256": "1d2af1efdfc51bb15903a4a7cfd88ea90ea63f4d5efc975c685f0eeeaea889d8",
+    "verifier_sha256": "fa6463b8809a0490cfad3fac608cf8ccbd712ef687b69048d672b183393f5d1c",
+    "full_raw_reconstruction": true,
+    "exact_fullpool_h_and_rematched_anchor_exclusion_hashes": true,
+    "all_37_columns_and_hierarchical_common_support_summaries_verified": true,
+    "sources": 3,
+    "videos": 3,
+    "frame_pair_receipts": 20,
+    "prefix_by_lag": {
+      "1": 3,
+      "4": 8
+    },
+    "empty_nonprefix_by_lag": {
+      "1": 2,
+      "4": 0
+    },
+    "total_holdouts": 28,
+    "max_abs_numeric_difference": 0.0,
+    "fixed_hash_selected_scalar_frames": 0,
+    "scalar_dot_max_abs_difference": 0.0,
+    "raw_member_allowlist": [
+      "det_bboxes",
+      "track_feats",
+      "roi_proposal_row",
+      "video_id",
+      "image_id",
+      "frame_id",
+      "frame_index"
+    ],
+    "identity_or_OOF_evaluation_opened": false,
+    "physical_camera_motion_or_identity_or_novelty_established": false,
+    "elapsed_seconds": 0.04976735822856426
+  },
+  "resealed_rejection_cases": [
+    {
+      "case": "numeric_gain",
+      "actual_returncode": 1
+    },
+    {
+      "case": "anchor_hash",
+      "actual_returncode": 1
+    },
+    {
+      "case": "exclusion_hash",
+      "actual_returncode": 1
+    },
+    {
+      "case": "prefix_receipt",
+      "actual_returncode": 1
+    },
+    {
+      "case": "source_summary",
+      "actual_returncode": 1
+    }
+  ],
+  "forbidden_object_NPZ_members_ignored": true
+}

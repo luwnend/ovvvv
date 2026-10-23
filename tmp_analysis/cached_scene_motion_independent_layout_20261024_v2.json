@@ -1,0 +1,10 @@
+{
+  "status": "PASS_INDEPENDENT_CACHED_CANONICAL_LAYOUT_AND_NEARTIE_MEMBERSHIP",
+  "module_sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32",
+  "auditor_sha256": "c7460ada403fd6c57fa6ede99786ea6870076e03776131bac6043e06f62a8580",
+  "near_tie_frame_pairs": 30,
+  "exact_layout_comparisons": 60,
+  "discrete_tie_or_top1_tolerance_used": false,
+  "real_cache_opened": false,
+  "new_OOF_outputs_opened": false
+}

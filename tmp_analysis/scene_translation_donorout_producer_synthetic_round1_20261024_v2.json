@@ -1,0 +1,13 @@
+{
+  "status": "PASS_SCENE_TRANSLATION_DONOROUT_PRODUCER_SYNTHETIC",
+  "round": 1,
+  "checks": [
+    "actual_predict_video_exact_lags_all_prefixes_and_empty_reference_not_skipped",
+    "full_numeric_hash_rowlocator_schema_and_known_shared_translation",
+    "all_sources_and_both_lags_summary_missing_is_not_zero"
+  ],
+  "producer_sha256": "1b1cb57ad43898b58ad9e54c39444f4bc7953ab5ec91fc2df5cab60bbb120aa7",
+  "cached_sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32",
+  "checker_sha256": "23495e4687f57e55745b2b4b248d2e2e17825aeb893802da51020bc6af308719",
+  "real_cache_or_identity_or_new_OOF_evaluation_opened": false
+}
