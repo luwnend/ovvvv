@@ -1,0 +1,2 @@
+# Unified patch context contains significant leading spaces on blank lines.
+evidence/base_error_collection_20261023/schema/*.patch -whitespace

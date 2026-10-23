@@ -1,0 +1,100 @@
+--- /home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2/ovtrack/models/roi_heads/ovtrack_roi_head.py
++++ work/covtrack_base_error_20261023/ovtrack/models/roi_heads/ovtrack_roi_head.py
+@@ -135,7 +135,7 @@
+         print("load:", save_path)
+         if osp.exists(save_path) and not custom_classes:
+             if not self.fix_bg:
+-                self.text_features_for_classes = torch.load(save_path).squeeze()[
++                self.text_features_for_classes = torch.load(save_path, map_location=device).squeeze()[
+                     : self.bbox_head.num_classes
+                 ]
+                 self.text_features_for_classes = self.text_features_for_classes.to(
+@@ -144,7 +144,7 @@
+ 
+             else:
+                 self.text_features_for_classes = (
+-                    torch.load(save_path).to(device).squeeze()
++                    torch.load(save_path, map_location=device).to(device).squeeze()
+                 )
+                 print(self.text_features_for_classes.shape)
+         else:
+@@ -1700,7 +1700,7 @@
+         print("load:", save_path + f" exists: {osp.exists(save_path)}" '\n' + f"custom_classes: {custom_classes}")
+         if osp.exists(save_path) and not custom_classes:
+             if not self.fix_bg:
+-                self.text_features_for_classes = torch.load(save_path).squeeze()[
++                self.text_features_for_classes = torch.load(save_path, map_location=device).squeeze()[
+                                                  : self.bbox_head.num_classes
+                                                  ]
+                 self.text_features_for_classes = self.text_features_for_classes.to(
+@@ -1709,7 +1709,7 @@
+ 
+             else:
+                 self.text_features_for_classes = (
+-                    torch.load(save_path).to(device).squeeze()
++                    torch.load(save_path, map_location=device).to(device).squeeze()
+                 )
+                 print(self.text_features_for_classes.shape)
+         else:
+@@ -1909,6 +1909,16 @@
+                 (0, self.bbox_head.num_classes - self.novel_label_ids.max()),
+             ).bool()
+ 
++        # Explicit full-vocabulary regime for this isolated collection.
++        # The released val/test branches above keep their masks unchanged.
++        if not self.only_validation_categories and not self.only_test_categories and self.num_classes == 1203:
++            _canonical_mask = torch.zeros(self.num_classes + 1, dtype=torch.bool, device=device)
++            _canonical_mask[torch.tensor(lvis_novel_label_ids, dtype=torch.long, device=device)] = True
++            assert not bool(_canonical_mask[-1])
++            assert torch.equal(_canonical_mask, self.novel_index)
++            self.novel_index = _canonical_mask
++            self.base_error_fusion_regime = 'canonical_full_LVIS1203_zero_based_novel_ids_bg_false'
++
+     def print_self_filter_variables(self, type_list = [int, float, bool]):
+         for name, value in self.__dict__.items():
+             if type(value) in type_list:
+@@ -2942,10 +2952,7 @@
+                 x, img_metas, proposal_list, self.test_cfg, rescale=rescale, return_features=True, return_inds=True
+             )
+         except Exception as e:
+-            torch.save([e, x, img_metas, proposal_list, self.test_cfg, rescale, True, True, f'det_bboxes, det_labels, (text_head_feats, img_head_feats, cls_score, det_inds) = self.simple_test_bboxes( x, img_metas, proposal_list, self.test_cfg, rescale=rescale, return_features=True, return_inds=True )'], f'/home/clark/test/ratio_out_of_memory_error.pth')
+-            print(f'Error:{e}\nx:{x}\nimg_metas:{img_metas}\nproposal_list:{proposal_list} in uncertainty_simple_test')
+-            import sys
+-            sys.exit(0)
++            raise RuntimeError('Isolated base-error collection ROI inference failed; no success exit or partial frame receipt') from e
+ 
+         text_head_feats = text_head_feats[det_inds[0]//(cls_score[0].shape[1]-1)]
+         img_head_feats = img_head_feats[det_inds[0]//(cls_score[0].shape[1]-1)]
+@@ -3499,6 +3506,9 @@
+                 p_fused=_p_full,
+                 det_inds=[x.detach().cpu() for x in det_inds],
+             )
++            from ovtrack.base_error_dump import posterior_schema
++            self.tces_frame_probs['schema'] = posterior_schema(self, _p_full.shape[1])
++            self.tces_frame_probs['filename'] = img_metas[0]['filename']
+         if self.only_validation_categories:
+             # recover the indices to the position
+             # det_labels = [torch.tensor([tao_validation_used_cate_ids[index.item()+1-1]-1 for index in det_labels[0]], device=det_labels[0].device)]
+@@ -3647,7 +3657,7 @@
+         print("load:", save_path + f" exists: {osp.exists(save_path)}" '\n' + f"custom_classes: {custom_classes}")
+         if osp.exists(save_path) and not custom_classes:
+             if not self.fix_bg:
+-                self.text_features_for_classes = torch.load(save_path).squeeze()[
++                self.text_features_for_classes = torch.load(save_path, map_location=device).squeeze()[
+                                                  : self.bbox_head.num_classes
+                                                  ]
+                 self.text_features_for_classes = self.text_features_for_classes.to(
+@@ -3656,7 +3666,7 @@
+ 
+             else:
+                 self.text_features_for_classes = (
+-                    torch.load(save_path).to(device).squeeze()
++                    torch.load(save_path, map_location=device).to(device).squeeze()
+                 )
+                 print(self.text_features_for_classes.shape)
+         else:
+@@ -5822,4 +5832,4 @@
+ #     # 计算损失
+ #     loss = -torch.sum(gt_matrix * torch.log(S_ij + 1e-10))
+ #
+-#     return loss+#     return loss

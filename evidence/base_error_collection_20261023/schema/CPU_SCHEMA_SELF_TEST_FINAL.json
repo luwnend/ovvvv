@@ -1,0 +1,18 @@
+{
+  "status": "PASS_CPU_SYNTHETIC_SCHEMA",
+  "full_1203_background": true,
+  "canonical_mask_true_count": 337,
+  "posttracker_negative_id_retained_and_flagged": true,
+  "detector_to_proposal_and_tracker_row_maps": true,
+  "zero_observation_npz_and_receipt": true,
+  "train_filename_supported": true,
+  "fusion_max_abs_error": 1.146031232152761e-10,
+  "malformed_cases_rejected": {
+    "wrong_row_map": "PASS",
+    "wrong_class_ids": "PASS",
+    "nonfinite_features": "PASS",
+    "no_overwrite": "PASS"
+  },
+  "validator_sha256": "43674e77b702e3c783ccc0cc8045688dd65b078e8c7ed8e2c62866d4551b3af1",
+  "schema_utility_sha256": "e0a934285b6966f4bf541a6ef40a7366ce186c608911cee9f1a624e36def2168"
+}

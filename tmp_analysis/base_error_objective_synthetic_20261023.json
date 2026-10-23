@@ -1,0 +1,77 @@
+{
+  "status": "PASS_EXACT_SYNTHETIC_CONSISTENCY_ONLY",
+  "uses_dataset": false,
+  "uses_validation": false,
+  "uses_gpu": false,
+  "training_run": false,
+  "script_sha256": "8205712af17dc0af4523b4e7fc8b5a6775f830f248c494ace43d71edcb0e8d4a",
+  "binary_covariance": {
+    "independent": {
+      "b_i": 0.5,
+      "b_j": 0.5,
+      "product_of_marginal_risks": 0.25,
+      "joint_wrong_probability": 0.25,
+      "binary_error_covariance": 0.0
+    },
+    "positive": {
+      "b_i": 0.5,
+      "b_j": 0.5,
+      "product_of_marginal_risks": 0.25,
+      "joint_wrong_probability": 0.5,
+      "binary_error_covariance": 0.25
+    },
+    "negative": {
+      "b_i": 0.5,
+      "b_j": 0.5,
+      "product_of_marginal_risks": 0.25,
+      "joint_wrong_probability": 0.0,
+      "binary_error_covariance": -0.25
+    }
+  },
+  "wrong_direction": {
+    "same_wrong_class": {
+      "joint_wrong_probability": 0.25,
+      "same_wrong_class_probability": 0.25,
+      "independent_wrong_direction_overlap": 0.25,
+      "diagonal_wrong_vector_excess": 0.0
+    },
+    "different_wrong_class": {
+      "joint_wrong_probability": 0.25,
+      "same_wrong_class_probability": 0.0,
+      "independent_wrong_direction_overlap": 0.0,
+      "diagonal_wrong_vector_excess": 0.0
+    },
+    "cross_class_covariance_hidden_by_diagonal": {
+      "both_wrong_covariance": 0.25,
+      "diagonal_same_wrong_excess": 0.0,
+      "nonzero_off_diagonal_covariance_C12": 0.25
+    }
+  },
+  "quality_mixture_confound": {
+    "within_group_covariance": 0.0,
+    "pooled_marginal_centering_excess": 0.16000000000000003,
+    "meaning": "Uncontrolled quality composition creates excess despite within-group independence."
+  },
+  "same_identity_hard_constraint": {
+    "enumerated_states": 27,
+    "status": "PASS",
+    "meaning": "Hard same-wrong has an exact argmax-agreement gate for a common true label."
+  },
+  "soft_centering": {
+    "expected_centered_trace": 0.08220000000000001,
+    "expected_raw_minus_mean_product": 0.08220000000000002,
+    "single_pair_centered_target": 0.09580000000000001,
+    "incorrect_single_pair_shortcut": 0.1162,
+    "class_permutation_invariance": "PASS",
+    "meaning": "Expectation identity requires correct conditional means; individual targets need both cross terms."
+  },
+  "plugin_sign_trap_and_direct_mean": {
+    "plugin_same_identity_nonnegative_states_checked": 243,
+    "direct_coarsened_mean_residual_trace": {
+      "independent": 0.0,
+      "positive": 0.04,
+      "negative": -0.04
+    },
+    "meaning": "The current-posterior plug-in has a sign degeneracy; direct coarsened means allow positive and negative natural-view residuals."
+  }
+}

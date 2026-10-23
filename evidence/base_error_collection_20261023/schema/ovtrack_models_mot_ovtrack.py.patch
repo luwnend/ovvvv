@@ -1,0 +1,94 @@
+--- /home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2/ovtrack/models/mot/ovtrack.py
++++ work/covtrack_base_error_20261023/ovtrack/models/mot/ovtrack.py
+@@ -170,6 +170,12 @@
+         _tces_dir = os.environ.get("OVMOT_TCES_DUMP_DIR", "")
+         if _tces_dir:
+             self.roi_head.tces_dump_dir = _tces_dir
++            self.roi_head.tces_frame_probs = None
++            assert self.roi_head.ensemble and not self.roi_head.fix_bg
++            assert not self.roi_head.use_special_prompt, 'Collection requires the direct ensemble path'
++            assert not self.roi_head.record_prob_info
++            if not os.environ.get('OVMOT_BASE_ERROR_ANNOTATION'):
++                raise RuntimeError('Set OVMOT_BASE_ERROR_ANNOTATION to the collection image-metadata annotation')
+         img_name = img_metas[0]["filename"]
+         if img_name is not None:
+             pickle_name = img_name.replace("/", "-").replace(".jpg", ".pth")
+@@ -177,6 +183,9 @@
+         frame_id = img_metas[0].get("frame_id", -1)
+         if frame_id == 0:
+             self.init_tracker()
++        if _tces_dir and hasattr(self, 'tracker'):
++            self.tracker.keep_mask = None
++            assert not self.tracker.vis, 'Set tracker.vis=False for GT-free base-error collection'
+         if self.roi_head.custom_classes:
+             # The threshold needs to be adjusted according to the number of test classes in the custom case
+             self.tracker.init_score_thr = 1 / (self.roi_head.num_classes + 1) + 0.1
+@@ -204,6 +213,10 @@
+             det_bboxes, det_labels, track_feats = outputs
+             cem_feats = copy.deepcopy(track_feats)
+ 
++        if _tces_dir:
++            # Preserve detector scores before tracker momentum smoothing.
++            _base_error_pre_boxes = det_bboxes.detach().clone()
++            _base_error_pre_labels = det_labels.detach().clone()
+         if track_feats is not None:
+             # if not hasattr(self, 'motion') and self.motion_cfg is not None:
+             #     self.init_motion()
+@@ -218,7 +231,7 @@
+                 cls_embeds=cem_feats,
+                 frame_id=frame_id,
+                 method=self.method,
+-                filename=img_metas[0]['filename'][img_metas[0]['filename'].index('val'):]
++                filename=img_metas[0]['filename']
+             )
+             # ovtrack slack
+             # else:
+@@ -235,36 +248,18 @@
+ 
+ 
+         _dump_dir = os.environ.get("OVMOT_TCES_DUMP_DIR", "")
+-        if _dump_dir and track_feats is not None:
+-            import numpy as _np
+-            _cache = getattr(self.roi_head, "tces_frame_probs", None)
+-            _mask = getattr(self.tracker, "keep_mask", None)
+-            if (_cache is not None and _cache.get("det_inds") and _mask is not None):
+-                _flat = _cache["det_inds"][0].long()
+-                _p = _cache["p_fused"]
+-                _rows = _flat // int(_p.shape[1] - 1)
+-                if int(_rows.numel()) == int(_mask.numel()):
+-                    _rows = _rows[_mask.cpu()]
+-                    _sel = _mask.cpu()
+-                    _boxes = bboxes.detach().cpu()
+-                    _n = int(_boxes.shape[0])
+-                    if int(_rows.numel()) == _n:
+-                        _key = img_metas[0]["filename"].replace("/", "-").replace(".jpg", "")
+-                        _meta = dict(
+-                            det_bboxes=_boxes.numpy().astype(_np.float32),
+-                            det_labels=labels.detach().cpu().numpy().astype(_np.int64),
+-                            track_ids=ids.detach().cpu().numpy().astype(_np.int64),
+-                            p_text=_cache["p_text"][_rows].numpy().astype(_np.float32),
+-                            p_image=(_cache["p_image"][_rows].numpy().astype(_np.float32)
+-                                     if _cache["p_image"] is not None else _np.zeros((0,), _np.float32)),
+-                            p_fused=_p[_rows].numpy().astype(_np.float32),
+-                            track_feats=track_feats[_sel].detach().cpu().numpy().astype(_np.float16),
+-                            cls_feats=cem_feats[_sel].detach().cpu().numpy().astype(_np.float16),
+-                            frame_id=_np.int64(frame_id),
+-                            filename=_np.array(img_metas[0]["filename"]),
+-                            ori_shape=_np.array(img_metas[0]["ori_shape"], dtype=_np.int64),
+-                        )
+-                        _np.savez_compressed(os.path.join(_dump_dir, _key + ".npz"), **_meta)
++        if _dump_dir:
++            from ovtrack.base_error_dump import build_payload, write_frame_dump
++            _payload = build_payload(
++                cache=getattr(self.roi_head, 'tces_frame_probs', None),
++                frame_meta=img_metas[0], annotation_path=os.environ['OVMOT_BASE_ERROR_ANNOTATION'],
++                pre_boxes=_base_error_pre_boxes, pre_labels=_base_error_pre_labels,
++                post_boxes=bboxes if track_feats is not None else None,
++                post_labels=labels if track_feats is not None else None,
++                track_ids=ids if track_feats is not None else None,
++                track_features=track_feats, class_features=cem_feats,
++                keep_mask=getattr(self.tracker, 'keep_mask', None), tracker_frame_id=frame_id)
++            write_frame_dump(_dump_dir, _payload)
+ 
+         bbox_result = bbox2result(det_bboxes, det_labels, self.roi_head.num_classes)
+ 

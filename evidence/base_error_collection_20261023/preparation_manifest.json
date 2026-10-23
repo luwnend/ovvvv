@@ -1,0 +1,55 @@
+{
+  "status": "PREPARED_NO_INFERENCE_RUN",
+  "plan": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_learning_plan_20261023.json",
+  "plan_sha256": "f37f1ecc52734953ea5269407ab0aa8013e650e97bed4dde3cdd399a11e13ba5",
+  "source": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base/saved_models/ctao_dataset/ctao_base.json",
+  "source_sha256": "4269b1a5f026350cf45fbbf61689894f7d45d9bd2730331e73ab6f841d9b3adc",
+  "script_sha256": "291aa33dc86c66cf7376610f20ffb427351267e8b3130540b9ca8386fe53edd3",
+  "images": 1299,
+  "videos": 41,
+  "manual_targets": 3953,
+  "fit_eligible_manual_targets": 2138,
+  "smoke_videos": [
+    732,
+    1457
+  ],
+  "timeline": {
+    "collection_protocol": "sparse manual-anchor timeline, GT-free predictions on every selected image",
+    "frame_id": "sampled-step index starting at 0 separately for each video",
+    "frame_index": "preserved original frame index; never interpret sample steps as seconds",
+    "vocabulary": "canonical LVIS v1 1203 foreground + background; full-vocabulary rare-column fusion",
+    "gt_annotations_passed_to_model": false,
+    "inference_image_field_allowlist": [
+      "id",
+      "video_id",
+      "file_name",
+      "width",
+      "height",
+      "frame_id",
+      "frame_index",
+      "sample_step",
+      "source_frame_id"
+    ],
+    "inference_video_field_allowlist": [
+      "id",
+      "name",
+      "width",
+      "height",
+      "fps"
+    ],
+    "inference_category_field_allowlist": [
+      "id",
+      "name",
+      "synonyms",
+      "synset",
+      "def",
+      "frequency"
+    ],
+    "frequency_prior": "fixed public LVIS-v1 frequency, not pilot annotation counts"
+  },
+  "files": {
+    "manual_anchor_targets.json": "d8969a7ccb22e8a86644197ef8b6827b1bc18d46ab73a4488283bdfde6b73aed",
+    "smoke_inference.json": "416bf72084b5dc593f73540d6c7fbbbc5edef6f22e3ec70e0f308f9c9ad837e9",
+    "pilot_inference.json": "1e25f735da0912b3fbdb7c4100120b3b3e371765920f37ec7d9053fa13a2797d"
+  }
+}

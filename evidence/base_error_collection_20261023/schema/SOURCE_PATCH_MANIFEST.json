@@ -1,0 +1,32 @@
+{
+  "status": "PASS_ISOLATED_SCHEMA_SOURCE_AUDIT",
+  "source": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2",
+  "isolated_copy": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023",
+  "protected_original_files_checked": 101,
+  "original_files_unchanged": true,
+  "copied_source_files_unchanged": 99,
+  "modified_isolated_files": {
+    "ovtrack/models/roi_heads/ovtrack_roi_head.py": {
+      "original_sha256": "c02f1ab692608d1992d749778211b38194828edb487b93dd5c6b995e69d693cd",
+      "isolated_sha256": "955d03011368fba48efde974b73bc4224e63a0d3add1028c17b97da54a2940d7"
+    },
+    "ovtrack/models/mot/ovtrack.py": {
+      "original_sha256": "6699314acf97acc82909cb11ebe8cfe115e057ae3e9d1b10881f46426b8f141a",
+      "isolated_sha256": "5c410e560a2db91f28d1267bcba65c126f54f9ce73922098558a1ba25d4406b6"
+    }
+  },
+  "new_files_sha256": {
+    "ovtrack/base_error_dump.py": "e0a934285b6966f4bf541a6ef40a7366ce186c608911cee9f1a624e36def2168",
+    "CPU_SCHEMA_SELF_TEST_FINAL.json": "7a9e2ef3b082bed5c45fa8e9d622006f52e882b9c97cf949dc6e9933b9df6cac",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_base_error_dump.py": "43674e77b702e3c783ccc0cc8045688dd65b078e8c7ed8e2c62866d4551b3af1"
+  },
+  "model_inference_smoke": "Not run by schema agent. CPU synthetic contracts and py_compile passed; root owns model smoke.",
+  "source_facts": {
+    "track_feats": "raw track-head appearance before tracker fusion; shared backbone/training/selection",
+    "cls_feats": "(text_head_features+image_head_features)/2 in active uncertainty static-fusion path",
+    "posterior_rows": "Full proposal posterior -> flattened NMS class index // foreground C -> selected tracker keep mask; all rows including ID=-1 recorded",
+    "full_vocab": "1203 positive category IDs (1..1203), background sentinel -1 at final column; canonical LVIS 0-based novel list mask has 337 true, background false; released subset masks unchanged",
+    "filename_argument": "Used only by tracker debug/GT visualisation branches, which collection requires vis=False; full filename supports train paths",
+    "model_cpu_load": "All prompt torch.load(save_path) calls in isolated ROI file now use map_location=device. Training/GPU-only operations are untouched."
+  }
+}

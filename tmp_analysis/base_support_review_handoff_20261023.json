@@ -1,0 +1,26 @@
+{
+  "status": "SUPPORT_SCRIPT_REVIEW_NOT_COMPLETED",
+  "created_utc": "2026-10-23T05:37:13.525781+00:00",
+  "reason": "Root requested immediate pause handoff. The script landed at handoff but was not read or independently reviewed; do not infer a review pass.",
+  "support_script_exists_at_handoff": true,
+  "support_script_sha256_at_handoff": "0fc8a797319f6bbeafd9eb717edb53973804bed3d1c87f709b9461628198c186",
+  "completed": [
+    "Independent collection verifier implemented and actual v3/smoke_v2 audit exited 0",
+    "Protocol review saved",
+    "Image/video/category GT-sidechannel rejection checks passed"
+  ],
+  "artifacts": {
+    "verifier": "tmp_analysis/verify_base_error_collection.py",
+    "protocol_review": "tmp_analysis/base_collection_protocol_review_20261023.md",
+    "smoke_audit": "results/base_error_collection_20261023_v3/smoke_v2/independent_collection_audit.json",
+    "rejection_checks": "tmp_analysis/base_collection_verifier_rejection_checks_20261023.json"
+  },
+  "support_review_pending": [
+    "All original TAO GT participates in class-blind matching before eligibility filtering",
+    "Old 1230 categories mapped only by unique synset bridge to canonical1203; numeric IDs never joined directly",
+    "Only exact original manual anchors supervise fit/tune; non-anchor/ambiguous/unmatched remain unknown",
+    "GT-free all-emitted aggregation sealed before opening supervision; id=-1 never a track; video-local IDs",
+    "Test outcomes unopened; holdout labels excluded from fitting/tuning including mixed-track and pair endpoint leakage"
+  ],
+  "pilot_audit": "Not executed by evaluator_audit at pause; root owns background completion and audit. No pilot-complete claim."
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS_BASE_ERROR_DUMP",
+  "frames": 4,
+  "expected_frames": 4,
+  "missing_images": [],
+  "observations": 150,
+  "emitted_track_observations": 150,
+  "unassigned_id_observations": 0,
+  "zero_observation_frames": 0,
+  "posterior_foreground_classes": 1203,
+  "actual_fusion_mask_true_count": 337,
+  "fusion_max_abs_error": 1.8621592845491364e-07,
+  "annotation_sha256": "416bf72084b5dc593f73540d6c7fbbbc5edef6f22e3ec70e0f308f9c9ad837e9",
+  "dump_files": [
+    {
+      "file": "v1457_i232124_f0.npz",
+      "sha256": "f56ea6936125a111a61b85f8cbc7818913fe17415276112bbcd7b1f77bfea50d",
+      "image_id": 232124
+    },
+    {
+      "file": "v1457_i232149_f1.npz",
+      "sha256": "f838cc730e6e81036c93bce81c8c3ad0c4163c57d29941a40b865d33f9ef12a6",
+      "image_id": 232149
+    },
+    {
+      "file": "v732_i137495_f0.npz",
+      "sha256": "7b8119aa7479fd627445020f294dedf3899c5bcbdcb9b1787afe7ca65e318541",
+      "image_id": 137495
+    },
+    {
+      "file": "v732_i137555_f1.npz",
+      "sha256": "581d637496aa20d6175e145671e9a0629910bc40840d94cf54b0356d3ac66243",
+      "image_id": 137555
+    }
+  ],
+  "validator_sha256": "43674e77b702e3c783ccc0cc8045688dd65b078e8c7ed8e2c62866d4551b3af1",
+  "schema_utility_sha256": "e0a934285b6966f4bf541a6ef40a7366ce186c608911cee9f1a624e36def2168"
+}

@@ -1,0 +1,110 @@
+{
+  "status": "PASS_CPU_REAL_FOUR_FRAME_PIPELINE",
+  "cuda_visible_devices": "",
+  "cuda_available": false,
+  "model_built": false,
+  "model_forward_called": false,
+  "used_exact_runner_bridge_AST": true,
+  "frames": [
+    {
+      "image_id": 137495,
+      "video_id": 732,
+      "expected_frame_id": 0,
+      "recovered_frame_id": 0,
+      "input_tensor_shape": [
+        1,
+        3,
+        768,
+        1344
+      ],
+      "meta_keys": [
+        "filename",
+        "flip",
+        "flip_direction",
+        "frame_id",
+        "img_norm_cfg",
+        "img_shape",
+        "ori_filename",
+        "ori_shape",
+        "pad_shape",
+        "scale_factor"
+      ]
+    },
+    {
+      "image_id": 137555,
+      "video_id": 732,
+      "expected_frame_id": 1,
+      "recovered_frame_id": 1,
+      "input_tensor_shape": [
+        1,
+        3,
+        768,
+        1344
+      ],
+      "meta_keys": [
+        "filename",
+        "flip",
+        "flip_direction",
+        "frame_id",
+        "img_norm_cfg",
+        "img_shape",
+        "ori_filename",
+        "ori_shape",
+        "pad_shape",
+        "scale_factor"
+      ]
+    },
+    {
+      "image_id": 232124,
+      "video_id": 1457,
+      "expected_frame_id": 0,
+      "recovered_frame_id": 0,
+      "input_tensor_shape": [
+        1,
+        3,
+        768,
+        1344
+      ],
+      "meta_keys": [
+        "filename",
+        "flip",
+        "flip_direction",
+        "frame_id",
+        "img_norm_cfg",
+        "img_shape",
+        "ori_filename",
+        "ori_shape",
+        "pad_shape",
+        "scale_factor"
+      ]
+    },
+    {
+      "image_id": 232149,
+      "video_id": 1457,
+      "expected_frame_id": 1,
+      "recovered_frame_id": 1,
+      "input_tensor_shape": [
+        1,
+        3,
+        768,
+        1344
+      ],
+      "meta_keys": [
+        "filename",
+        "flip",
+        "flip_direction",
+        "frame_id",
+        "img_norm_cfg",
+        "img_shape",
+        "ori_filename",
+        "ori_shape",
+        "pad_shape",
+        "scale_factor"
+      ]
+    }
+  ],
+  "original_pipeline_failure": "'frame_id'",
+  "VideoCollect_source": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/datasets/pipelines/formatting.py",
+  "runner_sha256": "49cf8b3f43355287054bbad52cf44acc58aca20019da2bcfdbad295d979a5ce5",
+  "annotation_sha256": "416bf72084b5dc593f73540d6c7fbbbc5edef6f22e3ec70e0f308f9c9ad837e9"
+}

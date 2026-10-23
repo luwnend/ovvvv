@@ -1,0 +1,63 @@
+{
+  "status": "IMPLEMENTATION_DEVIATIONS_DISCLOSED_AND_SMOKE_CORRECTED",
+  "not_a_mechanism_failure": true,
+  "invalid_preparations": [
+    {
+      "path": "results/base_error_collection_20261023",
+      "manifest_sha256": "4b737cb6549921949cb9156c8ea3213faf9cc2b8703060af605723ed008141b7",
+      "reason": "copied image/video metadata included neg_category_ids and not_exhaustive_category_ids",
+      "inference_run": false
+    },
+    {
+      "path": "results/base_error_collection_20261023_v2",
+      "manifest_sha256": "b4f3f8245ed3e7e6a6cf94c7263f3a2fa23d17aac747162bf3d731b3e8160afd",
+      "reason": "image/video fixed but public category aggregate counts retained; rejected for inference metadata contract",
+      "successful_observations": 0
+    }
+  ],
+  "failed_smoke": {
+    "path": "results/base_error_collection_20261023_v2/smoke_v1",
+    "terminal_exit_code": 1,
+    "terminal_exit_observed": true,
+    "observed_tool": "tools.write_stdin session18701",
+    "failure": "KeyError: frame_id in VideoCollect before model forward",
+    "log_sha256": "4364bacd7652dfe29966597c4c1183c287b4e814ee2f148383911e021c1d4eee"
+  },
+  "correction": {
+    "stage": "results/base_error_collection_20261023_v3",
+    "manifest_sha256": "79c85747b2e7919206ba9e9c75cb820276ce298eb37659e537cdac080d47f61a",
+    "metadata_contract": "explicit image,video,category field whitelist; no negative/exhaustiveness/GT counts",
+    "pipeline_contract": "CollectionFrameStep bridges img_info.frame_id to top-level before VideoCollect",
+    "successful_smoke": "results/base_error_collection_20261023_v3/smoke_v2",
+    "terminal_exit_code": 0,
+    "terminal_exit_observed": true,
+    "observed_tool": "tools.write_stdin session48574",
+    "independent_status": "PASS_INDEPENDENT_GT_FREE_COLLECTION_AUDIT",
+    "independent_audit_sha256": "ab7a8eeb522afaa107c8593d175e6463dee3cdce844964867c3a332803b5db69"
+  },
+  "checks_by_round": [
+    {
+      "round": 1,
+      "checks": [
+        "independent image/video sidechannel review plus explicit whitelist regeneration",
+        "independent category aggregate count review plus v3 whitelist rejection contracts"
+      ]
+    },
+    {
+      "round": 2,
+      "checks": [
+        "exact four-image CPU pipeline reproduces old KeyError and corrected frame IDs0,1,0,1",
+        "CPU schema synthetic1204 columns,337mask,empty,-1,rowmap and invalid input refusal"
+      ]
+    },
+    {
+      "round": 3,
+      "checks": [
+        "real4frame frozen-model smoke validates actual emitted outputs and object reset",
+        "independent NPZ/receipt/fusion/category/protected hashes audit passed"
+      ]
+    }
+  ],
+  "scope": "Interface correction and collection validity only; no claim of trained mechanism or accuracy improvement",
+  "prior_wrong_TCES_failure_analysis": "Removed from formal documents in prior sealed stage; archived provenance remains retracted"
+}

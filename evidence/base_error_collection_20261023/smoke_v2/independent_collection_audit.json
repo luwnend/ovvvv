@@ -1,0 +1,63 @@
+{
+  "stage": {
+    "status": "PASS_METADATA_ONLY_COLLECTION_STAGE",
+    "images": 1299,
+    "videos": 41,
+    "smoke_images": 4,
+    "manual_targets": 3953,
+    "fit_eligible_manual_targets": 2138,
+    "image_video_category_sidechannels_absent": true,
+    "source_group_splits_disjoint": true,
+    "fit_holdout_categories_disjoint": true,
+    "stage_manifest_sha256": "79c85747b2e7919206ba9e9c75cb820276ce298eb37659e537cdac080d47f61a"
+  },
+  "status": "PASS_INDEPENDENT_GT_FREE_COLLECTION_AUDIT",
+  "frames": 4,
+  "videos": 2,
+  "real_tracker_object_resets_verified": 2,
+  "actual_emitted_outputs_exact": true,
+  "retained_observations": 150,
+  "emitted_observations": 150,
+  "unassigned_observations_retained": 0,
+  "zero_observation_frames": 0,
+  "posterior_columns": 1204,
+  "canonical_fusion_mask_true_count": 337,
+  "fusion_max_abs_error": 1.8621592845491364e-07,
+  "all_npz_and_receipt_hashes_verified": true,
+  "protected_files_verified": 7,
+  "isolated_code_hashes_verified": 71,
+  "annotation": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/smoke_inference.json",
+  "annotation_sha256": "416bf72084b5dc593f73540d6c7fbbbc5edef6f22e3ec70e0f308f9c9ad837e9",
+  "run_manifest_sha256": "c6fca3813816725265627a73e00913883a522607829458c65a3dd6f3bd0a0088",
+  "collection_receipt_sha256": "84c0e8256d092eef21a626da08b5b1f5491d502534fcd133503f845187c3eeed",
+  "frame_files": [
+    {
+      "file": "v732_i137495_f0.npz",
+      "sha256": "7b8119aa7479fd627445020f294dedf3899c5bcbdcb9b1787afe7ca65e318541",
+      "observations": 55
+    },
+    {
+      "file": "v732_i137555_f1.npz",
+      "sha256": "581d637496aa20d6175e145671e9a0629910bc40840d94cf54b0356d3ac66243",
+      "observations": 56
+    },
+    {
+      "file": "v1457_i232124_f0.npz",
+      "sha256": "f56ea6936125a111a61b85f8cbc7818913fe17415276112bbcd7b1f77bfea50d",
+      "observations": 19
+    },
+    {
+      "file": "v1457_i232149_f1.npz",
+      "sha256": "f838cc730e6e81036c93bce81c8c3ad0c4163c57d29941a40b865d33f9ef12a6",
+      "observations": 20
+    }
+  ],
+  "limitations": [
+    "Sparse selected-anchor timeline; memo50 counts selected steps, not dense raw frames",
+    "Unmatched targets remain unknown",
+    "Readout class holdout is not detector class/video independence",
+    "No learner, target matcher, calibration or efficacy is validated by this collection audit"
+  ],
+  "independent_validator_sha256": "872d9ade3f416025fff07cfbcc0efc63334379093f4c066cf6fad9e84258ca5c",
+  "shared_schema_validator_sha256": "e0a934285b6966f4bf541a6ef40a7366ce186c608911cee9f1a624e36def2168"
+}

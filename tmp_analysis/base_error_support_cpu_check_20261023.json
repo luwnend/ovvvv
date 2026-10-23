@@ -1,0 +1,13 @@
+{
+  "status": "PASS_CPU_SUPPORT_MATCHING_CONSISTENCY",
+  "full_gt_before_eligibility": true,
+  "category_independent_geometry": true,
+  "multi_gt_ambiguity_excluded": true,
+  "inclusive_iou_half": true,
+  "unmatched_unknown": true,
+  "repeated_local_id_across_videos_separate": true,
+  "negative_id_not_aggregated": true,
+  "test_outcome_split_closed": true,
+  "no_dataset_or_model_loaded": true,
+  "script_sha256": "0fc8a797319f6bbeafd9eb717edb53973804bed3d1c87f709b9461628198c186"
+}

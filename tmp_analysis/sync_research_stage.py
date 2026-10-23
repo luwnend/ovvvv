@@ -32,6 +32,20 @@ DEPENDENCE_JSON = ["design.json", "manifest.json", "completion_receipt.json", "p
                    "readouts/corrected_mask_sumlog/receipt.json", "readouts/corrected_mask_sumlog/metrics.json",
                    "readouts/released.dep_inverse_density/receipt.json", "readouts/released.dep_inverse_density/metrics.json",
                    "readouts/corrected.dep_inverse_density/receipt.json", "readouts/corrected.dep_inverse_density/metrics.json"]
+BASE_SCRIPTS = ["prepare_base_error_collection.py", "collect_base_error_pilot.py",
+                "verify_base_error_dump.py", "verify_base_error_collection.py",
+                "base_error_learning_objective_20261023.md", "check_base_error_objective_synthetic.py",
+                "base_error_objective_synthetic_20261023.json", "base_error_pipeline_cpu_validation_20261023.json",
+                "base_collection_protocol_review_20261023.md", "base_collection_verifier_rejection_checks_20261023.json",
+                "build_base_error_support.py", "base_error_collection_deviations_20261023.json",
+                "finish_base_error_collection.py", "base_support_review_handoff_20261023.json"]
+BASE_SCRIPTS += ["base_error_support_cpu_check_20261023.json", "base_error_support_handoff_20261023.md"]
+BASE_JSON = ["preparation_manifest.json", "smoke_v2/collection_receipt.json",
+             "smoke_v2/run_manifest.json", "smoke_v2/dump_verification.json", "smoke_v2/independent_collection_audit.json",
+             "pilot_collect_v1/collection_receipt.json", "pilot_collect_v1/run_manifest.json",
+             "pilot_collect_v1/protected_after.json", "pilot_collect_v1/dump_verification.json",
+             "pilot_collect_v1/independent_collection_audit.json", "execution_receipt.json",
+             "support_v1/support_receipt.json", "support_v1/support_summary.json"]
 
 
 def sha256(data):
@@ -41,7 +55,7 @@ def sha256(data):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--repo", type=Path, default=ROOT.parent / "ovvvv")
-    ap.add_argument("--stage", choices=["dependence_20261023"], required=True)
+    ap.add_argument("--stage", choices=["dependence_20261023", "base_error_interface_20261023", "base_error_20261023"], required=True)
     ap.add_argument("--diagnostic-json", nargs="*", default=[],
                     help="Exact relative JSON paths under dependence_audit_20261023; no glob")
     args = ap.parse_args()
@@ -58,13 +72,24 @@ def main():
     mapping += [(ROOT / "tmp_analysis/covtrackpp_live_sources_20261023" / name,
                  Path("evidence/covtrackpp_code_audit_20261023") / name)
                 for name in ("manifest.json", "audit_verification.json")]
+    if args.stage in ("base_error_interface_20261023", "base_error_20261023"):
+        mapping.append((ROOT / "report/COVTrack_base观测采集_20261023.md", Path("report/COVTrack_base观测采集_20261023.md")))
+        mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name) for name in BASE_SCRIPTS]
+        base = ROOT / "results/base_error_collection_20261023_v3"
+        selected_base = BASE_JSON[:5] if args.stage == "base_error_interface_20261023" else BASE_JSON
+        mapping += [(base / name, Path("evidence/base_error_collection_20261023") / name) for name in selected_base]
+        copy = ROOT / "work/covtrack_base_error_20261023"
+        mapping += [(copy / name, Path("evidence/base_error_collection_20261023/schema") / name)
+                    for name in ("SOURCE_COPY_MANIFEST.json", "SOURCE_PATCH_MANIFEST.json", "CPU_SCHEMA_SELF_TEST_FINAL.json",
+                                 "ovtrack_models_mot_ovtrack.py.patch", "ovtrack_models_roi_heads_ovtrack_roi_head.py.patch")]
+        mapping.append((copy / "ovtrack/base_error_dump.py", Path("evidence/base_error_collection_20261023/schema/base_error_dump.py")))
     # Read and validate the entire allowlist before writing any destination.
     payloads = []
     for source, rel in mapping:
         assert source.is_file() and not source.is_symlink(), str(source)
         data = source.read_bytes()
         assert len(data) <= 2_000_000, "Only lightweight stage files: " + str(source)
-        assert rel.suffix in (".md", ".py", ".json")
+        assert rel.suffix in (".md", ".py", ".json", ".patch")
         if rel.suffix == ".json":
             obj = json.loads(data)
             assert isinstance(obj, dict), "Evidence must be a summary/receipt object"

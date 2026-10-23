@@ -1,0 +1,10 @@
+{
+  "status": "PASS_INDEPENDENT_METADATA_REJECTION_CHECKS",
+  "checks": {
+    "correct_strict_metadata": "PASS",
+    "image_negative_categories": "REJECTED_AS_REQUIRED",
+    "video_exhaustiveness": "REJECTED_AS_REQUIRED",
+    "category_gt_count": "REJECTED_AS_REQUIRED"
+  },
+  "verifier_sha256": "872d9ade3f416025fff07cfbcc0efc63334379093f4c066cf6fad9e84258ca5c"
+}
