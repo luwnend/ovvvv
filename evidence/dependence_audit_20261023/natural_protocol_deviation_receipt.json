@@ -1,0 +1,82 @@
+{
+  "status": "DEVIATION_DISCLOSED_AND_INDEPENDENT_CORRECTION_COMPLETE",
+  "original_script": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_natural_dependence.py",
+    "sha256": "c3eb25b4123fdeab49bc407996df0fbc8f69e6c6590f2ce78b910fdbafa50045",
+    "bytes": 45582
+  },
+  "original_full_artifact": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_error_dependence.json",
+    "sha256": "73b535dfb64cbbca047ef3bf5f98cc4e76e260e4e846efa99a4cacfcb73280bc",
+    "bytes": 8433989
+  },
+  "original_execution_receipt": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_execution_receipt.json",
+    "sha256": "abeb19c8c9a757f9a01c7d0b96b85caf5a1fee9ffc91591e8e599db042ace9db",
+    "bytes": 4842
+  },
+  "original_confidence_control": {
+    "mean_edges": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "difference_cutpoint": 0.25
+  },
+  "approved_confidence_control": {
+    "mean_edges": [
+      0,
+      0.1,
+      0.3,
+      0.6,
+      1
+    ],
+    "difference_cutpoint": 0.1
+  },
+  "cause": "Recovered handoff summary omitted numerical posterior-confidence bins; the agent implemented equal-width quartiles/.25 despite earlier approved different boundaries.",
+  "fixed_before_original_results_evidence": {
+    "natural_numerical_preflight.json": {
+      "script_sha256": "c3eb25b4123fdeab49bc407996df0fbc8f69e6c6590f2ce78b910fdbafa50045",
+      "file_mtime_utc": "2026-10-23T04:54:29.655501+00:00"
+    },
+    "natural_mapping_preflight.json": {
+      "script_sha256": "c3eb25b4123fdeab49bc407996df0fbc8f69e6c6590f2ce78b910fdbafa50045",
+      "file_mtime_utc": "2026-10-23T04:54:52.403222+00:00"
+    }
+  },
+  "original_result_file_mtime_utc": "2026-10-23T04:59:05.644147+00:00",
+  "correction_script": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_natural_dependence_posterior01.py",
+    "sha256": "f1edad4dc9ae7373eb9c004b1bd37abff8ac0836738f3851eeb355fbcd7f2820",
+    "bytes": 45973
+  },
+  "correction_full_artifact": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_error_dependence.json",
+    "sha256": "31b4e4f640dbe58f7dedf5d23ec08c2e9d9608e91d091c787612cc772c093a29",
+    "bytes": 8448689
+  },
+  "correction_receipt": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_execution_receipt.json",
+    "sha256": "6d55b469bb19a6afa3b28e6754028626e9433090e3fae2a0cb65e8974c9c6197",
+    "bytes": 5368
+  },
+  "main_summary": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_error_dependence_summary.json",
+    "sha256": "eee2ae255a0007c56e8e8f2c5382a69c9844d9e2ebf8d890d0bba7887efe634e",
+    "bytes": 718104
+  },
+  "corrective_summary": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_error_dependence_summary.json",
+    "sha256": "19f0693732563c8c9e578a353452bcaa312e4848d88dbbd21b90defec00f3e51",
+    "bytes": 609316
+  },
+  "primary_exact_lag_affected": false,
+  "primary_and_lag_only_reproduction_check": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/primary_reproduction_check.json",
+    "sha256": "a9fe1e9480522acc2b8609cd05b14790fa2d342c0ea1dc7f6ebdeda32b605154",
+    "bytes": 2584
+  },
+  "not_a_post_result_replacement_of_original": true
+}

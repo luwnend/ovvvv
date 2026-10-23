@@ -1,0 +1,161 @@
+{
+  "verified_at_utc": "2026-10-23T04:46:17.184951+00:00",
+  "repository": "https://github.com/zekunqian/COVTrack",
+  "head": "9b0ced5779ee36f5dd73dbe39b5ae5d57abb4b3b",
+  "remote_blobs_equal_local_HEAD": true,
+  "public_branches": [
+    "main"
+  ],
+  "files": [
+    {
+      "file": "S4.SS2.txt",
+      "bytes": 15766,
+      "sha256": "cd2a069850982e9c5f14b225deec6e4d9af2d33a8c9c478891e7f3f28d5546f0"
+    },
+    {
+      "file": "S4.SS3.txt",
+      "bytes": 8833,
+      "sha256": "f4aa2637848a383af8f421a8bfe0fe7d4bce41bd4e162ca462430d92c3e3733c"
+    },
+    {
+      "file": "S4.SS4.txt",
+      "bytes": 12071,
+      "sha256": "d646f4519cfc9fdb2e2e214e0183c761dbd55f36c2e2185e2caaf20415746cbe"
+    },
+    {
+      "file": "arxiv_abstract.html",
+      "bytes": 43623,
+      "sha256": "0ef98db559b4fc12f9deba9bbb2ac61ef876f3998cbe0f4a975af78c726ce778"
+    },
+    {
+      "file": "arxiv_html.html",
+      "bytes": 604673,
+      "sha256": "492f27d870e521ea7cdcf4b7768517c29396f0f4bfa81c9356981f3c59cba708"
+    },
+    {
+      "file": "bayesian_correlated_fusion_aistats2022.pdf",
+      "bytes": 1608531,
+      "sha256": "c975f4276225b9382d13eca23a5164fd28db61e8b084ca9a7edc0f9a872099f6"
+    },
+    {
+      "file": "bayesian_correlated_fusion_aistats2022.txt",
+      "bytes": 171074,
+      "sha256": "964d7aeace29b7425b6cea4d6b5e154ea6035fe7fc8512c17309d19b4d90d88c"
+    },
+    {
+      "file": "clipvis_arxiv2403.12455.pdf",
+      "bytes": 22059963,
+      "sha256": "f963f07fb370197a40f424d6fd87abc45a27093726a663ce8afc874a074ed731"
+    },
+    {
+      "file": "clipvis_arxiv2403.12455.txt",
+      "bytes": 117264,
+      "sha256": "bedf60953fdfed8714e66cd5228662cd6d638419bb13f8aec2ed230db7ae25e0"
+    },
+    {
+      "file": "github_author_repositories.json",
+      "bytes": 39921,
+      "sha256": "cc832067d36dbe0b70b9ea8788fcc1d4c0eedecc1f1818732bac6e4a535bc42a"
+    },
+    {
+      "file": "github_branches.json",
+      "bytes": 247,
+      "sha256": "74b0247c63623278564eae086b0a25ae43f8f233405e327ae38247b32b55705c"
+    },
+    {
+      "file": "github_commits.json",
+      "bytes": 24957,
+      "sha256": "f64e84068ace0c2a4c78867742e94747800e9a9f20085621c7983506a832ded8"
+    },
+    {
+      "file": "github_repository.json",
+      "bytes": 5708,
+      "sha256": "0451b06bf765489ab992cdba7900aa5b33bc4366bb9ff9408a68a1e83b8c2b96"
+    },
+    {
+      "file": "github_tree.json",
+      "bytes": 93292,
+      "sha256": "587814752d7c882ca048022fab61299daf0730d53e9bc49a51c3b4fab214006d"
+    },
+    {
+      "file": "nan_cvpr2017.pdf",
+      "bytes": 2988010,
+      "sha256": "73a7a5872d949e15a80ccf03100cd907c0009566652b414ce717faed1b44b749"
+    },
+    {
+      "file": "nan_cvpr2017.txt",
+      "bytes": 68295,
+      "sha256": "14c5666b6883f40048bd80c4fbac3474dc59b80da4e9a76bb30044575a505ac0"
+    },
+    {
+      "file": "pfe_iccv2019.pdf",
+      "bytes": 967135,
+      "sha256": "112658413f6f6611347542cbe69d0b1c1dce479699b29b28d9c589262e8819ab"
+    },
+    {
+      "file": "pfe_iccv2019.txt",
+      "bytes": 70391,
+      "sha256": "4128cb5f08e126298132708cb8d524b9b7537ebfdc9b6f35fc13deeddaf0615b"
+    },
+    {
+      "file": "qan_cvpr2017.pdf",
+      "bytes": 1361428,
+      "sha256": "236f77e7309245566a847c279876280ca7c5c986089b45cc2c15ffde75354ecb"
+    },
+    {
+      "file": "qan_cvpr2017.txt",
+      "bytes": 67915,
+      "sha256": "de677b0a4b837908c531d18d5f7f77037f3dfc0cc137a494a407f7bc88034312"
+    },
+    {
+      "file": "rra_eccv2018.pdf",
+      "bytes": 2164374,
+      "sha256": "70b586cfb9890bd6f9daaa82e2e5b840f2491e556a2aa932946bc11d7260f266"
+    },
+    {
+      "file": "rra_eccv2018.txt",
+      "bytes": 73708,
+      "sha256": "aa191b75d41325d1b0dcc3285142b9f539ec553c63a06c8dd2a912474663dae1"
+    },
+    {
+      "file": "temporal_covariance_neurips2021.pdf",
+      "bytes": 414044,
+      "sha256": "e9b26802b2a16417a93557252708bce27ce7c71d1d331f69476ac1292a22ed22"
+    },
+    {
+      "file": "temporal_covariance_neurips2021.txt",
+      "bytes": 58190,
+      "sha256": "a950a8064530aaa27c68f64e1b2cabf99052dcbd013e201c18acbc810ec4fafc"
+    },
+    {
+      "file": "ugg_iccv2019.pdf",
+      "bytes": 3636379,
+      "sha256": "52a2e2da74e7f3577943eab2ab5f2fec90bd4bb0e02082e2a8c37fabbff6cb0d"
+    },
+    {
+      "file": "ugg_iccv2019.txt",
+      "bytes": 78156,
+      "sha256": "c19cb954d79c0fd87af12e3b93ce36c23a9200c74310765a1ec0dcf8415575d4"
+    },
+    {
+      "file": "upstream_README.md",
+      "bytes": 9973,
+      "sha256": "f816db21e12f2bc770d9c912a82e631d2b3e6a4b7c27b1d2a1daffe928410d89"
+    },
+    {
+      "file": "upstream_ovtrack__models__losses__cyc_loss.py",
+      "bytes": 13749,
+      "sha256": "0074cfee8db66dddb45fe59f80cb7e0e6ee22f5bf51f70e38eb052c9a8aeee8e"
+    },
+    {
+      "file": "upstream_ovtrack__models__roi_heads__ovtrack_roi_head.py",
+      "bytes": 274525,
+      "sha256": "a35cf3ff2a5470955eb2638d3b80891dc44f8e26aff98938a74544ded2b32708"
+    },
+    {
+      "file": "upstream_ovtrack__models__trackers__ovtracker.py",
+      "bytes": 68817,
+      "sha256": "4f58f82cb7906b3e28c61b3ea9fe1ff217146d4eae5872a2507ec6e4d579e113"
+    }
+  ]
+}

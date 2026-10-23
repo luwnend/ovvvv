@@ -1,0 +1,4837 @@
+{
+  "status": "PASS_20_FIXED_GEOMETRY_CLASSIFICATION_REPLAYS",
+  "script_sha256": "5e36843ad56e9cf79a8381d19af045d8dd969171ddf967c0a2e378cae2f48952",
+  "inputs_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/manifest.json": "8dd3eafbf200bc70b7820ad90fdabeac501cc9c69a1aeaa49d2e703e16d0b67c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/teta_events/receipt.json": "6e89388fbb060edffbcb86733800c9276d5d0fd2dc2cb088d0a7fe4a436ea980",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readout_cache.npz": "3c764166e42740b4d9df00272044129c55dab6cd7909a2e7b0c6e6e00d484149",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/teta_events/classification_events.npz": "fc11440c3ce750ee4918e1290e32cc5b6a20c4fde20aca1ae70f19fee6e0e996",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/track_cache.npz": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+    "results/tces_audit_20261023/track_cache.npz": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+    "results/tces_audit_20261023/manifest.json": "e99246961113f62515fafdcfa99635bac854a033abf46674b33d0f2cf1beda73",
+    "/raid/datasets/ring_data/data/tao/annotations/validation_ours_v1.json": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/annotations/validation_ours_v1.json": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/eval.py": "8219b9a2858faf0c166bff2fa1d25eb96a96578329916d2e0196f84e5aadbbcc",
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/metrics/teta.py": "47a132d92b2e9c92fd47f9e36140278e7ac263418539b606bf58ceead20d97d4",
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/datasets/tao.py": "c174d9cd3df6962474db588eff7cb3e82736d9a5b387f8653cefa603b9a7a6ab",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/receipt.json": "65660c8fe8590796d2a7c8930224ba113c931bc6b7b195b1c6e9d8a5d42ba87b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/classification_counts.npz": "ccf49aa564a10def1d5140517630b130ac4b095b2729151596a781c5dc8ab022",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/metrics.json": "58ce4060e886b1572ddd7b0f29d3847955b083aa56af5aaadb9b5faef6c697c0",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/receipt.json": "719106e4be00b09aacdb910e1c4bdf50ba5a1bcfc146d953e71342d0491f7b5f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/classification_counts.npz": "f3b62da7498c8bd45a643d6bb3272bcb1b6150c36549907a737629bb7de829ef",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/metrics.json": "e7b363f10307edd98826697be1e00beef9f32ea95b853334756f0768c64bc140",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/receipt.json": "d8e4bed654e13357feafcf91cdeaaa2dea2849f83d6d526e6cf9f1920f675c03",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/classification_counts.npz": "d8f5972136b36b3664e44796a5f5aeaed4b150515a97d7157392fbddee232c36",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/metrics.json": "7738a37a198786673aae5f1b4dc2033b2d159e7c263c298d5317e83cd6494d2f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/receipt.json": "9379a2ac15c8683a49ac06f5560c66002c5e5b4c59fe7b238759c0f4ead5c10c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/classification_counts.npz": "e27097a021fdd0055d217cfb986cc7bd268e04f2529b6f7e83459725e79c9754",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/metrics.json": "eb1c186e0604c3c7cf33e3cf41d708713b5c659beddf710ceac470cfe33a0894",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/receipt.json": "f617675dfd315c679851284481b1f9b030ef12a64ef5b9004afcd174e7bbba4f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/classification_counts.npz": "983cc4a6e135a0a172bcd822d1d591d6671050d43c4579e5dd725e97ac83cd41",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/metrics.json": "275415eba381d268a9d2c0becafc4b92fb16abe9bea96ffd011b99da5a5c6859",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected_mask_sumlog/receipt.json": "517257eb5f9b5b50939e3856ba5a5cdc6de7a54c4420311885852b5760d28abd",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected_mask_sumlog/classification_counts.npz": "e007205ebc096ea2988a8701e14865b855eb6c6ba8bea36d8bb4b22e497f4440",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected_mask_sumlog/metrics.json": "56595cf8c7437f34897f93d7235fd7f4377b466e2588f58f5bbbbb85229a6771"
+  },
+  "elapsed_seconds": 40.42229738924652,
+  "source": "Exact frozen-geometry non-exhaustive TETA50 classification event replay, six independent official controls with bitwise count parity",
+  "main_candidate_full_official_validation": "Separate receipts required; this replay is not twenty independent full evaluator runs",
+  "methods": {
+    "released.tcc": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.92147142823501,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.649941019591324,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 28.237613760865965,
+          "ClsPr": 24.9765303806675
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.55391490686021,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.546524661030595,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 31.22761393259313,
+          "ClsPr": 27.487062922211496
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 34.205250059058706,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 3.506845864858532,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 5.94075533741485,
+          "ClsPr": 6.255130570868022
+        }
+      },
+      "counts_sha256": "f52b1830b3614ed2aa93379d7fa8a91f6469ca042659d4dc1d523f5d56eaea93",
+      "changed_tracks_vs_released_tcc": 0,
+      "changed_tracks_vs_own_full_sumlog": 50108,
+      "changed_observations_vs_own_full_sumlog": 224861
+    },
+    "released.full_sumlog": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 39.30096118941482,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 18.788410303130714,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 28.635010322177575,
+          "ClsPr": 26.630900258402256
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.7742958173984,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 20.207667392645174,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 30.982636382131332,
+          "ClsPr": 28.113344675805184
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 35.77123724930875,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 8.204807435608624,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 11.12842741795098,
+          "ClsPr": 15.576100460054755
+        }
+      },
+      "counts_sha256": "f49f51777ddf0a01d4d3626717566c4b5398c22c45ee82942803656e7b26fa13",
+      "changed_tracks_vs_released_tcc": 50108,
+      "changed_tracks_vs_own_full_sumlog": 0,
+      "changed_observations_vs_own_full_sumlog": 0
+    },
+    "released.score_weighted_log": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 39.42673734047421,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 19.165738756308944,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 29.294505393332607,
+          "ClsPr": 27.23826476030175
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.89239269996169,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 20.561958040335075,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 31.65522681519597,
+          "ClsPr": 28.746482545641005
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 35.95427880258201,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 8.753932095428418,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 11.690268504580075,
+          "ClsPr": 15.991269275343283
+        }
+      },
+      "counts_sha256": "0f783a475c3260fd7a532657ccbda290b5e1508c2248fb3dabcaa316c995b596",
+      "changed_tracks_vs_released_tcc": 49942,
+      "changed_tracks_vs_own_full_sumlog": 1303,
+      "changed_observations_vs_own_full_sumlog": 8300
+    },
+    "released.entropy_weighted_log": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 39.400829014399804,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 19.088013778085678,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 29.13448877965322,
+          "ClsPr": 27.401466763032406
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.88959984169822,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 20.553579465544622,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 31.60222495404069,
+          "ClsPr": 29.011371484802076
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 35.75599513083171,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 8.159081080177522,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 10.732227593506682,
+          "ClsPr": 15.396177266407175
+        }
+      },
+      "counts_sha256": "e56c37416a0a522a888e587bf8c12e11e272da121bc3032d3d147e37c148dd6b",
+      "changed_tracks_vs_released_tcc": 49239,
+      "changed_tracks_vs_own_full_sumlog": 10737,
+      "changed_observations_vs_own_full_sumlog": 51051
+    },
+    "released.budget_random_seed0": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.999197838850286,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.883120251437134,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 27.69115396420145,
+          "ClsPr": 26.697183695924785
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.47606131543181,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.312963886745383,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 30.121487430713245,
+          "ClsPr": 28.27622883511563
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 35.4431587706282,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 7.220571999567009,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 9.567810113927814,
+          "ClsPr": 14.92201851510164
+        }
+      },
+      "counts_sha256": "15e3022481c8072e60f0c5a4bfbfb61cb9bdbe1543bcde60d7da2b40495d5b19",
+      "changed_tracks_vs_released_tcc": 53511,
+      "changed_tracks_vs_own_full_sumlog": 12244,
+      "changed_observations_vs_own_full_sumlog": 139614
+    },
+    "released.budget_random_seed1": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.68145032186292,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 16.929877700475053,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 26.86311782369353,
+          "ClsPr": 25.819565812477745
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.097215067937164,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 18.176425144261497,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 28.974924151992617,
+          "ClsPr": 27.279269976007964
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 35.581033215423645,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 7.634195333953305,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 11.115076346948852,
+          "ClsPr": 14.93434333586668
+        }
+      },
+      "counts_sha256": "dab275244f3d640f4c2ee2d909dda90da23c2fd7643b7195874209bbcb176ab4",
+      "changed_tracks_vs_released_tcc": 53687,
+      "changed_tracks_vs_own_full_sumlog": 12210,
+      "changed_observations_vs_own_full_sumlog": 138477
+    },
+    "released.budget_random_seed2": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.78566487412832,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.2425213572713,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 27.12792175640319,
+          "ClsPr": 25.361219734207545
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.19748952483118,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 18.477248514943565,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 29.313551332345593,
+          "ClsPr": 26.874627484785883
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 35.714629621744294,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 8.03498455291528,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 10.829369775804105,
+          "ClsPr": 14.07552193703764
+        }
+      },
+      "counts_sha256": "d101ad93481cc7d92ebc57265e17bdf6745cc2c2730f53dc3ce85fdd22130c99",
+      "changed_tracks_vs_released_tcc": 53647,
+      "changed_tracks_vs_own_full_sumlog": 12054,
+      "changed_observations_vs_own_full_sumlog": 138107
+    },
+    "released.budget_topscore": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 39.165695960407966,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 18.382614616110263,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 29.00448739840973,
+          "ClsPr": 26.51605578801698
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.79829975891454,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 20.27967921719372,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 32.01181460197088,
+          "ClsPr": 29.08894493914843
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 34.44827906297327,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 4.235932876602196,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 6.578418823282228,
+          "ClsPr": 7.329653832436744
+        }
+      },
+      "counts_sha256": "1f802ab1d31be49339d87d584520a235bf288353dfe29a736f575160465a9af8",
+      "changed_tracks_vs_released_tcc": 52415,
+      "changed_tracks_vs_own_full_sumlog": 13623,
+      "changed_observations_vs_own_full_sumlog": 165774
+    },
+    "released.budget_fps_track": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.95693806654251,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.75634093451381,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 27.545942872433454,
+          "ClsPr": 26.40123083759966
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.37381305540865,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.00621910667592,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 29.758936586602783,
+          "ClsPr": 27.952419175942207
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 35.848241720998,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 8.435820850676379,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 11.043332603913562,
+          "ClsPr": 14.833797800245332
+        }
+      },
+      "counts_sha256": "0a3988a07e78a4aafe51a5f3ffdc1b57c4b9a166a5df192f296176a06da6c0cd",
+      "changed_tracks_vs_released_tcc": 56949,
+      "changed_tracks_vs_own_full_sumlog": 13481,
+      "changed_observations_vs_own_full_sumlog": 166025
+    },
+    "released.dep_inverse_density": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.974767448410034,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.80982908011636,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 27.781415140859274,
+          "ClsPr": 25.833186623214804
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.38197612713869,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.030708321866054,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 29.955688819140672,
+          "ClsPr": 27.219446275240436
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 35.938154158462076,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 8.70555816306864,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 11.567545711389444,
+          "ClsPr": 15.495650360966504
+        }
+      },
+      "counts_sha256": "995f5965a686d736612155f143640d23777a5a2b53137523034db3ba3bc7961b",
+      "changed_tracks_vs_released_tcc": 52426,
+      "changed_tracks_vs_own_full_sumlog": 5087,
+      "changed_observations_vs_own_full_sumlog": 42964
+    },
+    "corrected.tcc": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.83676243980245,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.395814054293666,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 27.706913719029554,
+          "ClsPr": 24.874767730909163
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.433258253553426,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.18455470111032,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 30.385452109096217,
+          "ClsPr": 27.327578183315886
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 34.388607942973785,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 4.056919516603742,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 7.73267029596102,
+          "ClsPr": 6.583809785819009
+        }
+      },
+      "counts_sha256": "30c80a21bbc6f131beb91141f331d8514758b4d8c53600ffb83234b7bb4414eb",
+      "changed_tracks_vs_released_tcc": 64760,
+      "changed_tracks_vs_own_full_sumlog": 56188,
+      "changed_observations_vs_own_full_sumlog": 255708
+    },
+    "corrected.full_sumlog": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 39.42064338352355,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 19.147456885456904,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 29.100964447848963,
+          "ClsPr": 27.084381743333154
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.83762860261596,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 20.397665748297833,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 30.622174047195305,
+          "ClsPr": 28.708405537652816
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 36.311125035434515,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 9.82447079398596,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 17.75708714986624,
+          "ClsPr": 14.973804305692296
+        }
+      },
+      "counts_sha256": "f0291bcea9040550a8aa5e6aa9cf36487efb877f96b29ddd7a4a029366e4a8cd",
+      "changed_tracks_vs_released_tcc": 97479,
+      "changed_tracks_vs_own_full_sumlog": 0,
+      "changed_observations_vs_own_full_sumlog": 0
+    },
+    "corrected.score_weighted_log": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 39.3261147300758,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 18.863870925113687,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 28.900554529540486,
+          "ClsPr": 26.751925750973317
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.700663327025154,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.986769921525468,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 30.310354456945685,
+          "ClsPr": 28.26896205626068
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 36.53305233568211,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 10.490252694728735,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 18.387475070890293,
+          "ClsPr": 15.439169302973317
+        }
+      },
+      "counts_sha256": "7444d4fc19f3caf344a84bbebf11f27e59394100da2e05dd1598466a6bbe96fb",
+      "changed_tracks_vs_released_tcc": 97298,
+      "changed_tracks_vs_own_full_sumlog": 1319,
+      "changed_observations_vs_own_full_sumlog": 8334
+    },
+    "corrected.entropy_weighted_log": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 39.410920849807134,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 19.118289284307707,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 29.216065876901826,
+          "ClsPr": 27.380180136945782
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.8066079639737,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 20.304603832371136,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 30.815775821248216,
+          "ClsPr": 28.928554556947944
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 36.46022551273649,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 10.271772225891874,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 17.28680029191872,
+          "ClsPr": 15.833730890643944
+        }
+      },
+      "counts_sha256": "027c583caa5a888b5881fff21bcf72b019f12d129f480919fa2f2598c4ae5999",
+      "changed_tracks_vs_released_tcc": 95500,
+      "changed_tracks_vs_own_full_sumlog": 11002,
+      "changed_observations_vs_own_full_sumlog": 53506
+    },
+    "corrected.budget_random_seed0": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.785439810311516,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.241846165820892,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 26.882186663173144,
+          "ClsPr": 25.518746827053658
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.25248929124788,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 18.64224781419368,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 28.7374321072666,
+          "ClsPr": 27.215240310528472
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 35.302585109614746,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 6.7988510165266485,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 13.047356351504787,
+          "ClsPr": 12.867752564570017
+        }
+      },
+      "counts_sha256": "06026d581bd2a4b93e2d18d56716b0eaf85050a20d6e518ff263bdbdac333abf",
+      "changed_tracks_vs_released_tcc": 99895,
+      "changed_tracks_vs_own_full_sumlog": 13746,
+      "changed_observations_vs_own_full_sumlog": 156654
+    },
+    "corrected.budget_random_seed1": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.92843917649501,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.670844264371343,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 27.692704318130076,
+          "ClsPr": 26.417585819313175
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.372136477144146,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.00118937188246,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 29.331063355413903,
+          "ClsPr": 28.135601933653174
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 35.61972502022582,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 7.750270748359838,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 15.475226925813452,
+          "ClsPr": 13.606094223806414
+        }
+      },
+      "counts_sha256": "16cb03369dd989a07ba92abb4e45d800fc82ec4d1f04a0dee536bcb5c434d4fc",
+      "changed_tracks_vs_released_tcc": 99833,
+      "changed_tracks_vs_own_full_sumlog": 13547,
+      "changed_observations_vs_own_full_sumlog": 153617
+    },
+    "corrected.budget_random_seed2": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.93846604471948,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.70092486904474,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 27.50312157620825,
+          "ClsPr": 26.144306321317238
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.32887003057102,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 18.871390032163053,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 29.261025189682037,
+          "ClsPr": 27.895268414889
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 36.02716775022668,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 8.972598938362431,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 14.394183201446575,
+          "ClsPr": 13.08713185211062
+        }
+      },
+      "counts_sha256": "d9284beac9d9266b14c49e1690703daa2d74cba8c7b339e992c00770659a0e19",
+      "changed_tracks_vs_released_tcc": 99922,
+      "changed_tracks_vs_own_full_sumlog": 13496,
+      "changed_observations_vs_own_full_sumlog": 154159
+    },
+    "corrected.budget_topscore": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.99480775537112,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.869950000999708,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 28.51694027361514,
+          "ClsPr": 26.060971521829636
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.59744128540614,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.67710379666848,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 31.13619630217494,
+          "ClsPr": 28.591914779334733
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 34.50088343139578,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 4.393745981869717,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 8.984773889211983,
+          "ClsPr": 7.187366087291607
+        }
+      },
+      "counts_sha256": "6affc84dcbd158f1a7ac0b5c6075acbf493d8f0575eca889b8f1b1d333a4a85b",
+      "changed_tracks_vs_released_tcc": 96524,
+      "changed_tracks_vs_own_full_sumlog": 15096,
+      "changed_observations_vs_own_full_sumlog": 182390
+    },
+    "corrected.budget_fps_track": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 39.014541669171756,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.929151742401494,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 27.121199308265265,
+          "ClsPr": 27.070840536273078
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.395001010777186,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.069782972781518,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 28.54535226268851,
+          "ClsPr": 28.679393474490844
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 36.17740200748556,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 9.423301710139086,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 16.50108727670908,
+          "ClsPr": 15.075631482706289
+        }
+      },
+      "counts_sha256": "6df8eab97127e61d7aebe1ff90ed2eda3d748d3ae82e50b0f94c44c0cb57dbe0",
+      "changed_tracks_vs_released_tcc": 102577,
+      "changed_tracks_vs_own_full_sumlog": 14677,
+      "changed_observations_vs_own_full_sumlog": 180740
+    },
+    "corrected.dep_inverse_density": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 39.191436362566726,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 18.45983582258637,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 28.11102285983696,
+          "ClsPr": 26.841652321766794
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.572691088990524,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.602853207421497,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 29.496488073736664,
+          "ClsPr": 28.584359590577428
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 36.34836540266354,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 9.936191895673007,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 17.779410836184923,
+          "ClsPr": 13.846035260064594
+        }
+      },
+      "counts_sha256": "ee4590e16db6e76fe9d36ad3b0a1200bb01c16de52da945dd4e71996bae39b35",
+      "changed_tracks_vs_released_tcc": 99624,
+      "changed_tracks_vs_own_full_sumlog": 5527,
+      "changed_observations_vs_own_full_sumlog": 47715
+    }
+  },
+  "comparisons_vs_own_sumlog": {
+    "released.tcc - released.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.37948976117979755,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.1384692835393924,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.3973965613116045,
+        "ClsPr": -1.6543698777347526
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.2203809105381953,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.6611427316145853,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.24497755046179998,
+        "ClsPr": -0.6262817535936819
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": -1.5659871902500309,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -4.697961570750092,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -5.187672080536133,
+        "ClsPr": -9.320969889186735
+      }
+    },
+    "released.full_sumlog - released.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": 0.0,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.0,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.0,
+        "ClsPr": 0.0
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": 0.0,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.0,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.0,
+        "ClsPr": 0.0
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": 0.0,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.0,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.0,
+        "ClsPr": 0.0
+      }
+    },
+    "released.score_weighted_log - released.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": 0.12577615105940748,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.37732845317822183,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.6594950711550261,
+        "ClsPr": 0.607364501899483
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": 0.11809688256329641,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.3542906476898884,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.672590433064634,
+        "ClsPr": 0.6331378698358183
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": 0.1830415532732644,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.5491246598197937,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.5618410866290938,
+        "ClsPr": 0.41516881528852656
+      }
+    },
+    "released.entropy_weighted_log - released.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": 0.09986782498498847,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.299603474954965,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.4994784574756508,
+        "ClsPr": 0.7705665046301459
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": 0.11530402429981901,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.3459120728994564,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.6195885719093602,
+        "ClsPr": 0.8980268089968906
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": -0.015242118477033781,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.045726355431101214,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.39619982444429797,
+        "ClsPr": -0.17992319364757875
+      }
+    },
+    "released.budget_random_seed0 - released.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.3017633505645259,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.9052900516935782,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.9438563579761239,
+        "ClsPr": 0.06628343752252279
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.2982345019665932,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.8947035058997801,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.86114895141809,
+        "ClsPr": 0.16288415931044392
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": -0.3280784786805383,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.9842354360416148,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.5606173040231677,
+        "ClsPr": -0.6540819449531184
+      }
+    },
+    "released.budget_random_seed1 - released.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.61951086755189,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.8585326026556694,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.7718924984840603,
+        "ClsPr": -0.8113344459245198
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.677080749461229,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -2.0312422483836867,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -2.0077122301387247,
+        "ClsPr": -0.834074699797223
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": -0.19020403388510598,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.5706121016553182,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.013351071002130663,
+        "ClsPr": -0.6417571241880765
+      }
+    },
+    "released.budget_random_seed2 - released.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.5152963152864718,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.5458889458594152,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.5070885657743887,
+        "ClsPr": -1.269680524194703
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.576806292567203,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.7304188777016087,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.6690850497857406,
+        "ClsPr": -1.2387171910192838
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": -0.056607627564448086,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.16982288269334517,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.2990576421468776,
+        "ClsPr": -1.5005785230171163
+      }
+    },
+    "released.budget_topscore - released.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.13526522900682406,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.40579568702047214,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.3694770762321388,
+        "ClsPr": -0.11484447038528586
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": 0.02400394151617541,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.07201182454852639,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 1.0291782198395385,
+        "ClsPr": 0.9756002633432405
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": -1.322958186335476,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -3.968874559006426,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -4.550008594668754,
+        "ClsPr": -8.24644662761801
+      }
+    },
+    "released.budget_fps_track - released.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.3440231228723002,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.032069368616901,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.0890674497441173,
+        "ClsPr": -0.22966942080260216
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.4004827619897498,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.2014482859692497,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.2236997955285402,
+        "ClsPr": -0.16092549986299015
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": 0.07700447168925224,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.23101341506775488,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.08509481403742128,
+        "ClsPr": -0.7423026598094246
+      }
+    },
+    "released.dep_inverse_density - released.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.32619374100478693,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.9785812230143612,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.853595181318303,
+        "ClsPr": -0.7977136351874411
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.39231969025970803,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.176959070779124,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.0269475629906661,
+        "ClsPr": -0.8938984005647277
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": 0.16691690915333857,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.5007507274600164,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.4391182934384625,
+        "ClsPr": -0.08045009908824784
+      }
+    },
+    "corrected.tcc - corrected.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.5838809437210801,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.7516428311632402,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.3940507288193869,
+        "ClsPr": -2.209614012423982
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.4043703490625051,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.2131110471875153,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.23672193809906436,
+        "ClsPr": -1.380827354336911
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": -1.9225170924607389,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -5.767551277382218,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -10.024416853905223,
+        "ClsPr": -8.389994519873287
+      }
+    },
+    "corrected.full_sumlog - corrected.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": 0.0,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.0,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.0,
+        "ClsPr": 0.0
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": 0.0,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.0,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.0,
+        "ClsPr": 0.0
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": 0.0,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.0,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.0,
+        "ClsPr": 0.0
+      }
+    },
+    "corrected.score_weighted_log - corrected.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.0945286534477361,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.28358596034320854,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.2004099183084733,
+        "ClsPr": -0.332455992359831
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.1369652755907878,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.4108958267723637,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.3118195902496168,
+        "ClsPr": -0.43944348139212863
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": 0.22192730024759233,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.6657819007427767,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.6303879210240544,
+        "ClsPr": 0.46536499728101816
+      }
+    },
+    "corrected.entropy_weighted_log - corrected.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.009722533716399643,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.029167601149199703,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.1151014290528715,
+        "ClsPr": 0.29579839361263566
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.031020638642234966,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.09306191592670562,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.1936017740529246,
+        "ClsPr": 0.22014901929514363
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": 0.14910047730197235,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.44730143190591587,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.4702868579475246,
+        "ClsPr": 0.8599265849516486
+      }
+    },
+    "corrected.budget_random_seed0 - corrected.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.6352035732120066,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.9056107196360208,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -2.218777784675811,
+        "ClsPr": -1.5656349162795096
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.585139311368054,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.7554179341041645,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.8847419399286953,
+        "ClsPr": -1.4931652271243485
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": -1.0085399258197698,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -3.02561977745931,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -4.709730798361456,
+        "ClsPr": -2.106051741122281
+      }
+    },
+    "corrected.budget_random_seed1 - corrected.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.4922042070285251,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.476612621085575,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.4082601297188928,
+        "ClsPr": -0.6667959240199627
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.4654921254717958,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.3964763764153865,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.2911106917813973,
+        "ClsPr": -0.5728036039996283
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": -0.6914000152087068,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -2.074200045626121,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -2.281860224052791,
+        "ClsPr": -1.3677100818858856
+      }
+    },
+    "corrected.budget_random_seed2 - corrected.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.4821773388040548,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.4465320164121651,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.5978428716406998,
+        "ClsPr": -0.9400754220159211
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.5087585720449261,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.5262757161347793,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.3611488575132522,
+        "ClsPr": -0.8131371227638085
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": -0.2839572852078417,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.8518718556235275,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -3.362903948419666,
+        "ClsPr": -1.8866724535816755
+      }
+    },
+    "corrected.budget_topscore - corrected.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.42583562815240195,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.277506884457207,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.5840241742338127,
+        "ClsPr": -1.023410221503525
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.24018731720978867,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.7205619516293669,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.5140222549796563,
+        "ClsPr": -0.1164907583180831
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": -1.8102416040387475,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -5.4307248121162415,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -8.772313260654258,
+        "ClsPr": -7.78643821840069
+      }
+    },
+    "corrected.budget_fps_track - corrected.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.4061017143518021,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.2183051430554068,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.9797651395836815,
+        "ClsPr": -0.013541207060091777
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.4426275918387739,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -1.3278827755163214,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -2.0768217845067767,
+        "ClsPr": -0.02901206316198014
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": -0.13372302794895716,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.4011690838468721,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.2559998731571655,
+        "ClsPr": 0.10182717701399334
+      }
+    },
+    "corrected.dep_inverse_density - corrected.full_sumlog": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": -0.2292070209568414,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.6876210628705247,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -0.9899415880119962,
+        "ClsPr": -0.24272942156638022
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": -0.264937513625443,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": -0.7948125408763294,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": -1.1256859734586384,
+        "ClsPr": -0.12404594707539819
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": 0.03724036722901621,
+        "LocA": 0.0,
+        "AssocA": 0.0,
+        "ClsA": 0.11172110168704777,
+        "LocRe": 0.0,
+        "LocPr": 0.0,
+        "AssocRe": 0.0,
+        "AssocPr": 0.0,
+        "ClsRe": 0.022323686318678933,
+        "ClsPr": -1.1277690456277025
+      }
+    }
+  },
+  "independent_control_parity": {
+    "tcc": {
+      "all_class_video_alpha_counts_exact": true,
+      "per_class_metric_max_abs_error": 3.552713678800501e-14
+    },
+    "fused_sumprob": {
+      "all_class_video_alpha_counts_exact": true,
+      "per_class_metric_max_abs_error": 3.552713678800501e-14
+    },
+    "fused_sumlog": {
+      "all_class_video_alpha_counts_exact": true,
+      "per_class_metric_max_abs_error": 3.552713678800501e-14
+    },
+    "corrected_mask_tcc": {
+      "all_class_video_alpha_counts_exact": true,
+      "per_class_metric_max_abs_error": 3.552713678800501e-14
+    },
+    "corrected_mask_sumprob": {
+      "all_class_video_alpha_counts_exact": true,
+      "per_class_metric_max_abs_error": 3.552713678800501e-14
+    },
+    "corrected_mask_sumlog": {
+      "all_class_video_alpha_counts_exact": true,
+      "per_class_metric_max_abs_error": 3.552713678800501e-14
+    }
+  },
+  "class_support": [
+    {
+      "category_id": 1,
+      "name": "aerosol_can",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 4
+    },
+    {
+      "category_id": 3,
+      "name": "airplane",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 7,
+      "gt_boxes": 273
+    },
+    {
+      "category_id": 19,
+      "name": "armchair",
+      "novel": false,
+      "gt_videos": 5,
+      "gt_tracks": 5,
+      "gt_boxes": 129
+    },
+    {
+      "category_id": 26,
+      "name": "atomizer",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 24
+    },
+    {
+      "category_id": 30,
+      "name": "ax",
+      "novel": true,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 97
+    },
+    {
+      "category_id": 32,
+      "name": "baby_buggy",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 34
+    },
+    {
+      "category_id": 34,
+      "name": "backpack",
+      "novel": false,
+      "gt_videos": 14,
+      "gt_tracks": 15,
+      "gt_boxes": 305
+    },
+    {
+      "category_id": 35,
+      "name": "handbag",
+      "novel": false,
+      "gt_videos": 17,
+      "gt_tracks": 18,
+      "gt_boxes": 348
+    },
+    {
+      "category_id": 36,
+      "name": "suitcase",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 14
+    },
+    {
+      "category_id": 41,
+      "name": "ball",
+      "novel": false,
+      "gt_videos": 24,
+      "gt_tracks": 51,
+      "gt_boxes": 1104
+    },
+    {
+      "category_id": 43,
+      "name": "balloon",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 18
+    },
+    {
+      "category_id": 45,
+      "name": "banana",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 3,
+      "gt_boxes": 43
+    },
+    {
+      "category_id": 51,
+      "name": "barbell",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 58,
+      "name": "baseball_bat",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 25
+    },
+    {
+      "category_id": 61,
+      "name": "basket",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 25
+    },
+    {
+      "category_id": 62,
+      "name": "basketball",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 3,
+      "gt_boxes": 113
+    },
+    {
+      "category_id": 75,
+      "name": "beanie",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 10
+    },
+    {
+      "category_id": 76,
+      "name": "bear",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 3,
+      "gt_boxes": 120
+    },
+    {
+      "category_id": 77,
+      "name": "bed",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 31
+    },
+    {
+      "category_id": 79,
+      "name": "bedspread",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 3,
+      "gt_boxes": 51
+    },
+    {
+      "category_id": 80,
+      "name": "cow",
+      "novel": false,
+      "gt_videos": 8,
+      "gt_tracks": 19,
+      "gt_boxes": 689
+    },
+    {
+      "category_id": 82,
+      "name": "beeper",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 4
+    },
+    {
+      "category_id": 86,
+      "name": "bell",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 36
+    },
+    {
+      "category_id": 94,
+      "name": "bicycle",
+      "novel": false,
+      "gt_videos": 17,
+      "gt_tracks": 27,
+      "gt_boxes": 473
+    },
+    {
+      "category_id": 97,
+      "name": "binder",
+      "novel": false,
+      "gt_videos": 4,
+      "gt_tracks": 4,
+      "gt_boxes": 67
+    },
+    {
+      "category_id": 98,
+      "name": "binoculars",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 1
+    },
+    {
+      "category_id": 99,
+      "name": "bird",
+      "novel": false,
+      "gt_videos": 7,
+      "gt_tracks": 26,
+      "gt_boxes": 561
+    },
+    {
+      "category_id": 100,
+      "name": "birdfeeder",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 102,
+      "name": "birdcage",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 38
+    },
+    {
+      "category_id": 103,
+      "name": "birdhouse",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 107,
+      "name": "black_sheep",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 110,
+      "name": "blanket",
+      "novel": false,
+      "gt_videos": 19,
+      "gt_tracks": 21,
+      "gt_boxes": 564
+    },
+    {
+      "category_id": 118,
+      "name": "boat",
+      "novel": false,
+      "gt_videos": 6,
+      "gt_tracks": 8,
+      "gt_boxes": 144
+    },
+    {
+      "category_id": 127,
+      "name": "book",
+      "novel": false,
+      "gt_videos": 26,
+      "gt_tracks": 36,
+      "gt_boxes": 953
+    },
+    {
+      "category_id": 129,
+      "name": "booklet",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 36
+    },
+    {
+      "category_id": 133,
+      "name": "bottle",
+      "novel": false,
+      "gt_videos": 42,
+      "gt_tracks": 52,
+      "gt_boxes": 1399
+    },
+    {
+      "category_id": 136,
+      "name": "bow_(weapon)",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 4,
+      "gt_boxes": 159
+    },
+    {
+      "category_id": 139,
+      "name": "bowl",
+      "novel": false,
+      "gt_videos": 11,
+      "gt_tracks": 11,
+      "gt_boxes": 330
+    },
+    {
+      "category_id": 153,
+      "name": "briefcase",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 46
+    },
+    {
+      "category_id": 156,
+      "name": "broom",
+      "novel": false,
+      "gt_videos": 17,
+      "gt_tracks": 17,
+      "gt_boxes": 399
+    },
+    {
+      "category_id": 160,
+      "name": "bucket",
+      "novel": false,
+      "gt_videos": 6,
+      "gt_tracks": 8,
+      "gt_boxes": 190
+    },
+    {
+      "category_id": 162,
+      "name": "bull",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 169,
+      "name": "bun",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 77
+    },
+    {
+      "category_id": 171,
+      "name": "buoy",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 5,
+      "gt_boxes": 18
+    },
+    {
+      "category_id": 173,
+      "name": "bus_(vehicle)",
+      "novel": false,
+      "gt_videos": 13,
+      "gt_tracks": 17,
+      "gt_boxes": 229
+    },
+    {
+      "category_id": 174,
+      "name": "business_card",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 10
+    },
+    {
+      "category_id": 178,
+      "name": "cab_(taxi)",
+      "novel": false,
+      "gt_videos": 19,
+      "gt_tracks": 31,
+      "gt_boxes": 537
+    },
+    {
+      "category_id": 186,
+      "name": "calf",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 11,
+      "gt_boxes": 284
+    },
+    {
+      "category_id": 188,
+      "name": "camel",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 97
+    },
+    {
+      "category_id": 189,
+      "name": "camera",
+      "novel": false,
+      "gt_videos": 15,
+      "gt_tracks": 18,
+      "gt_boxes": 377
+    },
+    {
+      "category_id": 192,
+      "name": "can",
+      "novel": false,
+      "gt_videos": 5,
+      "gt_tracks": 6,
+      "gt_boxes": 55
+    },
+    {
+      "category_id": 194,
+      "name": "candle",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 32
+    },
+    {
+      "category_id": 199,
+      "name": "canister",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 4,
+      "gt_boxes": 93
+    },
+    {
+      "category_id": 200,
+      "name": "canoe",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 13
+    },
+    {
+      "category_id": 204,
+      "name": "bottle_cap",
+      "novel": false,
+      "gt_videos": 7,
+      "gt_tracks": 7,
+      "gt_boxes": 80
+    },
+    {
+      "category_id": 205,
+      "name": "cape",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 39
+    },
+    {
+      "category_id": 207,
+      "name": "car_(automobile)",
+      "novel": false,
+      "gt_videos": 210,
+      "gt_tracks": 863,
+      "gt_boxes": 9685
+    },
+    {
+      "category_id": 208,
+      "name": "railcar_(part_of_a_train)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 5,
+      "gt_boxes": 20
+    },
+    {
+      "category_id": 210,
+      "name": "car_battery",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 5
+    },
+    {
+      "category_id": 220,
+      "name": "carton",
+      "novel": false,
+      "gt_videos": 18,
+      "gt_tracks": 19,
+      "gt_boxes": 551
+    },
+    {
+      "category_id": 225,
+      "name": "cat",
+      "novel": false,
+      "gt_videos": 11,
+      "gt_tracks": 14,
+      "gt_boxes": 503
+    },
+    {
+      "category_id": 230,
+      "name": "cellular_telephone",
+      "novel": false,
+      "gt_videos": 64,
+      "gt_tracks": 76,
+      "gt_boxes": 1459
+    },
+    {
+      "category_id": 231,
+      "name": "chain_mail",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 3,
+      "gt_boxes": 28
+    },
+    {
+      "category_id": 232,
+      "name": "chair",
+      "novel": false,
+      "gt_videos": 9,
+      "gt_tracks": 10,
+      "gt_boxes": 294
+    },
+    {
+      "category_id": 241,
+      "name": "chicken_(animal)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 12
+    },
+    {
+      "category_id": 246,
+      "name": "crisp_(potato_chip)",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 17
+    },
+    {
+      "category_id": 259,
+      "name": "cigarette",
+      "novel": false,
+      "gt_videos": 11,
+      "gt_tracks": 13,
+      "gt_boxes": 152
+    },
+    {
+      "category_id": 260,
+      "name": "cigarette_case",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 3
+    },
+    {
+      "category_id": 267,
+      "name": "clip",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 16
+    },
+    {
+      "category_id": 268,
+      "name": "clipboard",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 4,
+      "gt_boxes": 66
+    },
+    {
+      "category_id": 275,
+      "name": "clutch_bag",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 5
+    },
+    {
+      "category_id": 277,
+      "name": "coat",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 55
+    },
+    {
+      "category_id": 278,
+      "name": "coat_hanger",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 4
+    },
+    {
+      "category_id": 285,
+      "name": "coffee_table",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 46
+    },
+    {
+      "category_id": 288,
+      "name": "coin",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 5,
+      "gt_boxes": 189
+    },
+    {
+      "category_id": 293,
+      "name": "pacifier",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 33
+    },
+    {
+      "category_id": 296,
+      "name": "computer_keyboard",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 69
+    },
+    {
+      "category_id": 298,
+      "name": "cone",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 299,
+      "name": "control",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 9
+    },
+    {
+      "category_id": 300,
+      "name": "convertible_(automobile)",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 3
+    },
+    {
+      "category_id": 305,
+      "name": "cooler_(for_food)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 30
+    },
+    {
+      "category_id": 311,
+      "name": "cornet",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 11
+    },
+    {
+      "category_id": 320,
+      "name": "crab_(animal)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 341,
+      "name": "cube",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 344,
+      "name": "cup",
+      "novel": false,
+      "gt_videos": 45,
+      "gt_tracks": 55,
+      "gt_boxes": 1340
+    },
+    {
+      "category_id": 350,
+      "name": "curtain",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 109
+    },
+    {
+      "category_id": 351,
+      "name": "cushion",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 44
+    },
+    {
+      "category_id": 352,
+      "name": "cylinder",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 32
+    },
+    {
+      "category_id": 353,
+      "name": "cymbal",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 359,
+      "name": "deer",
+      "novel": false,
+      "gt_videos": 5,
+      "gt_tracks": 15,
+      "gt_boxes": 463
+    },
+    {
+      "category_id": 365,
+      "name": "die",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 15
+    },
+    {
+      "category_id": 369,
+      "name": "dish",
+      "novel": false,
+      "gt_videos": 4,
+      "gt_tracks": 4,
+      "gt_boxes": 66
+    },
+    {
+      "category_id": 378,
+      "name": "dog",
+      "novel": false,
+      "gt_videos": 37,
+      "gt_tracks": 58,
+      "gt_boxes": 1450
+    },
+    {
+      "category_id": 386,
+      "name": "doormat",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 30
+    },
+    {
+      "category_id": 390,
+      "name": "drawer",
+      "novel": false,
+      "gt_videos": 6,
+      "gt_tracks": 10,
+      "gt_boxes": 282
+    },
+    {
+      "category_id": 393,
+      "name": "dress_hat",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 77
+    },
+    {
+      "category_id": 397,
+      "name": "drone",
+      "novel": true,
+      "gt_videos": 4,
+      "gt_tracks": 4,
+      "gt_boxes": 152
+    },
+    {
+      "category_id": 399,
+      "name": "drum_(musical_instrument)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 49
+    },
+    {
+      "category_id": 400,
+      "name": "drumstick",
+      "novel": true,
+      "gt_videos": 2,
+      "gt_tracks": 8,
+      "gt_boxes": 185
+    },
+    {
+      "category_id": 401,
+      "name": "duck",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 404,
+      "name": "duffel_bag",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 24
+    },
+    {
+      "category_id": 407,
+      "name": "dustpan",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 30
+    },
+    {
+      "category_id": 408,
+      "name": "eagle",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 38
+    },
+    {
+      "category_id": 409,
+      "name": "earphone",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 38
+    },
+    {
+      "category_id": 418,
+      "name": "eggbeater",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 36
+    },
+    {
+      "category_id": 421,
+      "name": "refrigerator",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 38
+    },
+    {
+      "category_id": 422,
+      "name": "elephant",
+      "novel": false,
+      "gt_videos": 4,
+      "gt_tracks": 19,
+      "gt_boxes": 466
+    },
+    {
+      "category_id": 424,
+      "name": "envelope",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 24
+    },
+    {
+      "category_id": 430,
+      "name": "faucet",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 69
+    },
+    {
+      "category_id": 447,
+      "name": "fish",
+      "novel": false,
+      "gt_videos": 17,
+      "gt_tracks": 59,
+      "gt_boxes": 1274
+    },
+    {
+      "category_id": 450,
+      "name": "fishing_rod",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 30
+    },
+    {
+      "category_id": 451,
+      "name": "flag",
+      "novel": false,
+      "gt_videos": 10,
+      "gt_tracks": 17,
+      "gt_boxes": 413
+    },
+    {
+      "category_id": 462,
+      "name": "flute_glass",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 80
+    },
+    {
+      "category_id": 467,
+      "name": "football_helmet",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 39
+    },
+    {
+      "category_id": 469,
+      "name": "fork",
+      "novel": false,
+      "gt_videos": 5,
+      "gt_tracks": 5,
+      "gt_boxes": 139
+    },
+    {
+      "category_id": 474,
+      "name": "frisbee",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 23
+    },
+    {
+      "category_id": 475,
+      "name": "frog",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 37
+    },
+    {
+      "category_id": 482,
+      "name": "garbage",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 2
+    },
+    {
+      "category_id": 483,
+      "name": "garbage_truck",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 6
+    },
+    {
+      "category_id": 493,
+      "name": "giant_panda",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 494,
+      "name": "gift_wrap",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 29
+    },
+    {
+      "category_id": 496,
+      "name": "giraffe",
+      "novel": false,
+      "gt_videos": 8,
+      "gt_tracks": 15,
+      "gt_boxes": 483
+    },
+    {
+      "category_id": 501,
+      "name": "goat",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 80
+    },
+    {
+      "category_id": 507,
+      "name": "goose",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 70
+    },
+    {
+      "category_id": 508,
+      "name": "gorilla",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 3,
+      "gt_boxes": 62
+    },
+    {
+      "category_id": 520,
+      "name": "grocery_bag",
+      "novel": false,
+      "gt_videos": 30,
+      "gt_tracks": 38,
+      "gt_boxes": 661
+    },
+    {
+      "category_id": 521,
+      "name": "guitar",
+      "novel": false,
+      "gt_videos": 6,
+      "gt_tracks": 8,
+      "gt_boxes": 275
+    },
+    {
+      "category_id": 523,
+      "name": "gun",
+      "novel": false,
+      "gt_videos": 7,
+      "gt_tracks": 9,
+      "gt_boxes": 125
+    },
+    {
+      "category_id": 524,
+      "name": "hairbrush",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 36
+    },
+    {
+      "category_id": 530,
+      "name": "hammer",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 8
+    },
+    {
+      "category_id": 534,
+      "name": "hair_dryer",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 54
+    },
+    {
+      "category_id": 538,
+      "name": "handcuff",
+      "novel": true,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 21
+    },
+    {
+      "category_id": 543,
+      "name": "harmonium",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 544,
+      "name": "hat",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 4,
+      "gt_boxes": 132
+    },
+    {
+      "category_id": 555,
+      "name": "helicopter",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 80
+    },
+    {
+      "category_id": 556,
+      "name": "helmet",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 7
+    },
+    {
+      "category_id": 557,
+      "name": "heron",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 560,
+      "name": "hippopotamus",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 76
+    },
+    {
+      "category_id": 561,
+      "name": "hockey_stick",
+      "novel": true,
+      "gt_videos": 5,
+      "gt_tracks": 14,
+      "gt_boxes": 288
+    },
+    {
+      "category_id": 562,
+      "name": "hog",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 7,
+      "gt_boxes": 271
+    },
+    {
+      "category_id": 569,
+      "name": "horse",
+      "novel": false,
+      "gt_videos": 16,
+      "gt_tracks": 33,
+      "gt_boxes": 922
+    },
+    {
+      "category_id": 570,
+      "name": "hose",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 19
+    },
+    {
+      "category_id": 578,
+      "name": "polar_bear",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 78
+    },
+    {
+      "category_id": 579,
+      "name": "icecream",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 3,
+      "gt_boxes": 99
+    },
+    {
+      "category_id": 584,
+      "name": "igniter",
+      "novel": false,
+      "gt_videos": 4,
+      "gt_tracks": 4,
+      "gt_boxes": 28
+    },
+    {
+      "category_id": 587,
+      "name": "iron_(for_clothing)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 589,
+      "name": "jacket",
+      "novel": false,
+      "gt_videos": 8,
+      "gt_tracks": 9,
+      "gt_boxes": 182
+    },
+    {
+      "category_id": 592,
+      "name": "jean",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 41
+    },
+    {
+      "category_id": 595,
+      "name": "jersey",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 28
+    },
+    {
+      "category_id": 601,
+      "name": "kayak",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 5,
+      "gt_boxes": 156
+    },
+    {
+      "category_id": 604,
+      "name": "kettle",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 2
+    },
+    {
+      "category_id": 611,
+      "name": "kite",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 116
+    },
+    {
+      "category_id": 615,
+      "name": "knife",
+      "novel": false,
+      "gt_videos": 5,
+      "gt_tracks": 7,
+      "gt_boxes": 256
+    },
+    {
+      "category_id": 616,
+      "name": "knitting_needle",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 80
+    },
+    {
+      "category_id": 617,
+      "name": "knob",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 42
+    },
+    {
+      "category_id": 622,
+      "name": "ladle",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 6,
+      "gt_boxes": 236
+    },
+    {
+      "category_id": 626,
+      "name": "lamp",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 31
+    },
+    {
+      "category_id": 630,
+      "name": "lanyard",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 15
+    },
+    {
+      "category_id": 631,
+      "name": "laptop_computer",
+      "novel": false,
+      "gt_videos": 10,
+      "gt_tracks": 10,
+      "gt_boxes": 274
+    },
+    {
+      "category_id": 634,
+      "name": "lawn_mower",
+      "novel": true,
+      "gt_videos": 6,
+      "gt_tracks": 7,
+      "gt_boxes": 256
+    },
+    {
+      "category_id": 639,
+      "name": "lemon",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 39
+    },
+    {
+      "category_id": 643,
+      "name": "life_buoy",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 26
+    },
+    {
+      "category_id": 649,
+      "name": "lion",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 9,
+      "gt_boxes": 269
+    },
+    {
+      "category_id": 652,
+      "name": "lizard",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 4,
+      "gt_boxes": 153
+    },
+    {
+      "category_id": 653,
+      "name": "log",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 78
+    },
+    {
+      "category_id": 658,
+      "name": "magazine",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 4,
+      "gt_boxes": 78
+    },
+    {
+      "category_id": 663,
+      "name": "mallet",
+      "novel": true,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 53
+    },
+    {
+      "category_id": 670,
+      "name": "marker",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 85
+    },
+    {
+      "category_id": 678,
+      "name": "matchbox",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 7
+    },
+    {
+      "category_id": 679,
+      "name": "mattress",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 56
+    },
+    {
+      "category_id": 680,
+      "name": "measuring_cup",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 683,
+      "name": "medicine",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 6
+    },
+    {
+      "category_id": 685,
+      "name": "microphone",
+      "novel": false,
+      "gt_videos": 8,
+      "gt_tracks": 9,
+      "gt_boxes": 270
+    },
+    {
+      "category_id": 692,
+      "name": "minivan",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 2
+    },
+    {
+      "category_id": 694,
+      "name": "mirror",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 54
+    },
+    {
+      "category_id": 696,
+      "name": "mixer_(kitchen_tool)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 697,
+      "name": "money",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 16
+    },
+    {
+      "category_id": 698,
+      "name": "monitor_(computer_equipment) computer_monitor",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 39
+    },
+    {
+      "category_id": 699,
+      "name": "monkey",
+      "novel": false,
+      "gt_videos": 7,
+      "gt_tracks": 13,
+      "gt_boxes": 483
+    },
+    {
+      "category_id": 701,
+      "name": "motor_scooter",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 7
+    },
+    {
+      "category_id": 703,
+      "name": "motorcycle",
+      "novel": false,
+      "gt_videos": 10,
+      "gt_tracks": 10,
+      "gt_boxes": 279
+    },
+    {
+      "category_id": 705,
+      "name": "mouse_(computer_equipment)",
+      "novel": false,
+      "gt_videos": 4,
+      "gt_tracks": 4,
+      "gt_boxes": 61
+    },
+    {
+      "category_id": 711,
+      "name": "musical_instrument",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 7
+    },
+    {
+      "category_id": 713,
+      "name": "napkin",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 20
+    },
+    {
+      "category_id": 715,
+      "name": "necklace",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 31
+    },
+    {
+      "category_id": 724,
+      "name": "notebook",
+      "novel": false,
+      "gt_videos": 10,
+      "gt_tracks": 10,
+      "gt_boxes": 241
+    },
+    {
+      "category_id": 725,
+      "name": "notepad",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 15
+    },
+    {
+      "category_id": 726,
+      "name": "nut",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 3
+    },
+    {
+      "category_id": 728,
+      "name": "oar",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 735,
+      "name": "orange_(fruit)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 18
+    },
+    {
+      "category_id": 742,
+      "name": "packet",
+      "novel": false,
+      "gt_videos": 12,
+      "gt_tracks": 17,
+      "gt_boxes": 380
+    },
+    {
+      "category_id": 745,
+      "name": "paddle",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 5,
+      "gt_boxes": 140
+    },
+    {
+      "category_id": 747,
+      "name": "paintbrush",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 3,
+      "gt_boxes": 77
+    },
+    {
+      "category_id": 751,
+      "name": "pan_(for_cooking)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 30
+    },
+    {
+      "category_id": 757,
+      "name": "paper_towel",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 29
+    },
+    {
+      "category_id": 760,
+      "name": "parachute",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 4,
+      "gt_boxes": 110
+    },
+    {
+      "category_id": 777,
+      "name": "peeler_(tool_for_fruit_and_vegetables)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 781,
+      "name": "pen",
+      "novel": false,
+      "gt_videos": 12,
+      "gt_tracks": 12,
+      "gt_boxes": 235
+    },
+    {
+      "category_id": 782,
+      "name": "pencil",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 3,
+      "gt_boxes": 43
+    },
+    {
+      "category_id": 786,
+      "name": "penguin",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 80
+    },
+    {
+      "category_id": 793,
+      "name": "person",
+      "novel": false,
+      "gt_videos": 826,
+      "gt_tracks": 2717,
+      "gt_boxes": 57556
+    },
+    {
+      "category_id": 798,
+      "name": "piano",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 36
+    },
+    {
+      "category_id": 800,
+      "name": "pickup_truck",
+      "novel": false,
+      "gt_videos": 24,
+      "gt_tracks": 31,
+      "gt_boxes": 285
+    },
+    {
+      "category_id": 802,
+      "name": "pigeon",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 5,
+      "gt_boxes": 99
+    },
+    {
+      "category_id": 804,
+      "name": "pillow",
+      "novel": false,
+      "gt_videos": 21,
+      "gt_tracks": 27,
+      "gt_boxes": 688
+    },
+    {
+      "category_id": 812,
+      "name": "pistol",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 37
+    },
+    {
+      "category_id": 814,
+      "name": "pitcher_(vessel_for_liquid)",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 108
+    },
+    {
+      "category_id": 816,
+      "name": "pizza",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 17
+    },
+    {
+      "category_id": 818,
+      "name": "plate",
+      "novel": false,
+      "gt_videos": 11,
+      "gt_tracks": 13,
+      "gt_boxes": 247
+    },
+    {
+      "category_id": 821,
+      "name": "pliers",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 22
+    },
+    {
+      "category_id": 827,
+      "name": "pole",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 836,
+      "name": "pot",
+      "novel": false,
+      "gt_videos": 5,
+      "gt_tracks": 5,
+      "gt_boxes": 123
+    },
+    {
+      "category_id": 838,
+      "name": "potato",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 3,
+      "gt_boxes": 26
+    },
+    {
+      "category_id": 861,
+      "name": "rabbit",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 6,
+      "gt_boxes": 240
+    },
+    {
+      "category_id": 863,
+      "name": "racket",
+      "novel": false,
+      "gt_videos": 11,
+      "gt_tracks": 18,
+      "gt_boxes": 529
+    },
+    {
+      "category_id": 869,
+      "name": "rag_doll",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 32
+    },
+    {
+      "category_id": 873,
+      "name": "rat",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 39
+    },
+    {
+      "category_id": 879,
+      "name": "record_player",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 34
+    },
+    {
+      "category_id": 881,
+      "name": "remote_control",
+      "novel": false,
+      "gt_videos": 9,
+      "gt_tracks": 9,
+      "gt_boxes": 172
+    },
+    {
+      "category_id": 884,
+      "name": "rifle",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 80
+    },
+    {
+      "category_id": 911,
+      "name": "sandal_(type_of_shoe)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 60
+    },
+    {
+      "category_id": 912,
+      "name": "sandwich",
+      "novel": false,
+      "gt_videos": 10,
+      "gt_tracks": 10,
+      "gt_boxes": 228
+    },
+    {
+      "category_id": 918,
+      "name": "saxophone",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 37
+    },
+    {
+      "category_id": 923,
+      "name": "scissors",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 58
+    },
+    {
+      "category_id": 925,
+      "name": "scraper",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 60
+    },
+    {
+      "category_id": 927,
+      "name": "scrubbing_brush",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 5,
+      "gt_boxes": 120
+    },
+    {
+      "category_id": 928,
+      "name": "sculpture",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 70
+    },
+    {
+      "category_id": 934,
+      "name": "shaker",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 3,
+      "gt_boxes": 75
+    },
+    {
+      "category_id": 936,
+      "name": "shark",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 941,
+      "name": "shawl",
+      "novel": true,
+      "gt_videos": 3,
+      "gt_tracks": 4,
+      "gt_boxes": 135
+    },
+    {
+      "category_id": 943,
+      "name": "sheep",
+      "novel": false,
+      "gt_videos": 8,
+      "gt_tracks": 37,
+      "gt_boxes": 1348
+    },
+    {
+      "category_id": 947,
+      "name": "shirt",
+      "novel": false,
+      "gt_videos": 6,
+      "gt_tracks": 9,
+      "gt_boxes": 238
+    },
+    {
+      "category_id": 948,
+      "name": "shoe",
+      "novel": false,
+      "gt_videos": 6,
+      "gt_tracks": 9,
+      "gt_boxes": 230
+    },
+    {
+      "category_id": 953,
+      "name": "shoulder_bag",
+      "novel": false,
+      "gt_videos": 4,
+      "gt_tracks": 5,
+      "gt_boxes": 60
+    },
+    {
+      "category_id": 962,
+      "name": "skateboard",
+      "novel": false,
+      "gt_videos": 8,
+      "gt_tracks": 9,
+      "gt_boxes": 315
+    },
+    {
+      "category_id": 967,
+      "name": "ski_pole",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 22
+    },
+    {
+      "category_id": 968,
+      "name": "skirt",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 973,
+      "name": "slipper_(footwear)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 36
+    },
+    {
+      "category_id": 993,
+      "name": "spatula",
+      "novel": false,
+      "gt_videos": 4,
+      "gt_tracks": 5,
+      "gt_boxes": 183
+    },
+    {
+      "category_id": 995,
+      "name": "spectacles",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 66
+    },
+    {
+      "category_id": 997,
+      "name": "spider",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 80
+    },
+    {
+      "category_id": 999,
+      "name": "sponge",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 33
+    },
+    {
+      "category_id": 1000,
+      "name": "spoon",
+      "novel": false,
+      "gt_videos": 6,
+      "gt_tracks": 6,
+      "gt_boxes": 126
+    },
+    {
+      "category_id": 1004,
+      "name": "squirrel",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 120
+    },
+    {
+      "category_id": 1008,
+      "name": "statue_(sculpture)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 15
+    },
+    {
+      "category_id": 1011,
+      "name": "steering_wheel",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 1013,
+      "name": "step_stool",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 11,
+      "gt_boxes": 409
+    },
+    {
+      "category_id": 1018,
+      "name": "stool",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 60
+    },
+    {
+      "category_id": 1024,
+      "name": "straw_(for_drinking)",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 24
+    },
+    {
+      "category_id": 1031,
+      "name": "sugar_bowl",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 16
+    },
+    {
+      "category_id": 1035,
+      "name": "sunglasses",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 74
+    },
+    {
+      "category_id": 1037,
+      "name": "surfboard",
+      "novel": false,
+      "gt_videos": 6,
+      "gt_tracks": 6,
+      "gt_boxes": 239
+    },
+    {
+      "category_id": 1039,
+      "name": "mop",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 61
+    },
+    {
+      "category_id": 1042,
+      "name": "sweater",
+      "novel": false,
+      "gt_videos": 4,
+      "gt_tracks": 5,
+      "gt_boxes": 125
+    },
+    {
+      "category_id": 1046,
+      "name": "sword",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 4,
+      "gt_boxes": 159
+    },
+    {
+      "category_id": 1058,
+      "name": "army_tank",
+      "novel": true,
+      "gt_videos": 8,
+      "gt_tracks": 19,
+      "gt_boxes": 640
+    },
+    {
+      "category_id": 1061,
+      "name": "tape_(sticky_cloth_or_paper)",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 75
+    },
+    {
+      "category_id": 1064,
+      "name": "tarp",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 31
+    },
+    {
+      "category_id": 1068,
+      "name": "teacup",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 16
+    },
+    {
+      "category_id": 1069,
+      "name": "teakettle",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 5
+    },
+    {
+      "category_id": 1070,
+      "name": "teapot",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 32
+    },
+    {
+      "category_id": 1072,
+      "name": "telephone",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 28
+    },
+    {
+      "category_id": 1079,
+      "name": "tennis_racket",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 3,
+      "gt_boxes": 65
+    },
+    {
+      "category_id": 1081,
+      "name": "thermometer",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 23
+    },
+    {
+      "category_id": 1085,
+      "name": "thread",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 40
+    },
+    {
+      "category_id": 1093,
+      "name": "tissue_paper",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 31
+    },
+    {
+      "category_id": 1094,
+      "name": "toast_(food)",
+      "novel": false,
+      "gt_videos": 3,
+      "gt_tracks": 3,
+      "gt_boxes": 47
+    },
+    {
+      "category_id": 1101,
+      "name": "toolbox",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 35
+    },
+    {
+      "category_id": 1102,
+      "name": "toothbrush",
+      "novel": false,
+      "gt_videos": 4,
+      "gt_tracks": 4,
+      "gt_boxes": 91
+    },
+    {
+      "category_id": 1103,
+      "name": "toothpaste",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 6
+    },
+    {
+      "category_id": 1105,
+      "name": "cover",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 33
+    },
+    {
+      "category_id": 1108,
+      "name": "towel",
+      "novel": false,
+      "gt_videos": 43,
+      "gt_tracks": 52,
+      "gt_boxes": 1128
+    },
+    {
+      "category_id": 1110,
+      "name": "toy",
+      "novel": false,
+      "gt_videos": 14,
+      "gt_tracks": 18,
+      "gt_boxes": 498
+    },
+    {
+      "category_id": 1113,
+      "name": "dirt_bike",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 80
+    },
+    {
+      "category_id": 1114,
+      "name": "trailer_truck",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 26
+    },
+    {
+      "category_id": 1117,
+      "name": "tray",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 44
+    },
+    {
+      "category_id": 1121,
+      "name": "tripod",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 56
+    },
+    {
+      "category_id": 1122,
+      "name": "trousers",
+      "novel": false,
+      "gt_videos": 4,
+      "gt_tracks": 4,
+      "gt_boxes": 134
+    },
+    {
+      "category_id": 1123,
+      "name": "truck",
+      "novel": false,
+      "gt_videos": 51,
+      "gt_tracks": 73,
+      "gt_boxes": 1032
+    },
+    {
+      "category_id": 1130,
+      "name": "turtle",
+      "novel": false,
+      "gt_videos": 5,
+      "gt_tracks": 8,
+      "gt_boxes": 277
+    },
+    {
+      "category_id": 1133,
+      "name": "umbrella",
+      "novel": false,
+      "gt_videos": 5,
+      "gt_tracks": 9,
+      "gt_boxes": 335
+    },
+    {
+      "category_id": 1134,
+      "name": "underwear",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 21
+    },
+    {
+      "category_id": 1138,
+      "name": "vacuum_cleaner",
+      "novel": false,
+      "gt_videos": 6,
+      "gt_tracks": 6,
+      "gt_boxes": 201
+    },
+    {
+      "category_id": 1147,
+      "name": "volleyball",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 58
+    },
+    {
+      "category_id": 1153,
+      "name": "walking_stick",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 43
+    },
+    {
+      "category_id": 1156,
+      "name": "wallet",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 12
+    },
+    {
+      "category_id": 1157,
+      "name": "walrus",
+      "novel": true,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 80
+    },
+    {
+      "category_id": 1160,
+      "name": "automatic_washer",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 83
+    },
+    {
+      "category_id": 1162,
+      "name": "water_bottle",
+      "novel": false,
+      "gt_videos": 7,
+      "gt_tracks": 9,
+      "gt_boxes": 137
+    },
+    {
+      "category_id": 1166,
+      "name": "water_jug",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 3
+    },
+    {
+      "category_id": 1168,
+      "name": "water_scooter",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 2,
+      "gt_boxes": 34
+    },
+    {
+      "category_id": 1169,
+      "name": "water_ski",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 33
+    },
+    {
+      "category_id": 1186,
+      "name": "windshield_wiper",
+      "novel": false,
+      "gt_videos": 1,
+      "gt_tracks": 1,
+      "gt_boxes": 9
+    },
+    {
+      "category_id": 1190,
+      "name": "wineglass",
+      "novel": false,
+      "gt_videos": 6,
+      "gt_tracks": 6,
+      "gt_boxes": 142
+    },
+    {
+      "category_id": 1194,
+      "name": "wooden_spoon",
+      "novel": false,
+      "gt_videos": 2,
+      "gt_tracks": 2,
+      "gt_boxes": 36
+    },
+    {
+      "category_id": 1202,
+      "name": "zebra",
+      "novel": false,
+      "gt_videos": 7,
+      "gt_tracks": 32,
+      "gt_boxes": 664
+    }
+  ],
+  "primary_influence": {
+    "released": {
+      "improved_base": 44,
+      "worsened_base": 49,
+      "improved_novel": 4,
+      "worsened_novel": 2,
+      "per_class_delta_ClsA": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.03672544532687283,
+        -21.45289226410508,
+        0.018599820519632493,
+        0.31975645592641655,
+        0.1752150653807365,
+        -0.15301907537211434,
+        0.0,
+        0.0511367338073363,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.3553902438490049,
+        -0.6380848805012498,
+        0.0,
+        -4.362572058172184,
+        0.0,
+        0.0,
+        0.44890526266749475,
+        0.0,
+        0.0,
+        -0.0551590240352553,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.09297042999519256,
+        -7.682920458989166,
+        0.055093321667349926,
+        0.0,
+        0.19367054038763598,
+        0.0,
+        -0.9864566953242431,
+        0.0,
+        0.0,
+        -0.13602075834396032,
+        -100.0,
+        0.0,
+        1.757657267727545,
+        3.321093130615509,
+        0.0,
+        -6.467775157603718,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -19.687213886904292,
+        -11.966444615646331,
+        0.0,
+        0.03758124140232155,
+        0.7689772919933056,
+        0.0,
+        0.0,
+        -5.646783370085551,
+        -1.8490729202511318,
+        0.0,
+        -0.1142595382772491,
+        0.0,
+        0.0,
+        0.9318244449424178,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0006056067262780185,
+        0.0,
+        0.0,
+        0.0,
+        0.16516516516516333,
+        0.0,
+        0.2687338501291947,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3.1431784052023204,
+        -3.100984815257135,
+        -0.05568568411940955,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.06410851082122093,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.40699432720291107,
+        0.0,
+        -5.545215321888634,
+        0.13557366186891784,
+        0.0,
+        0.09591154096104759,
+        0.047516233487710835,
+        0.0,
+        -15.723843596592296,
+        0.0,
+        0.0,
+        0.0,
+        3.1581201306578857,
+        0.0,
+        0.0,
+        0.0,
+        -73.55293540109801,
+        0.0,
+        0.0,
+        1.804206107898601,
+        0.10332692399493748,
+        23.24137554934896,
+        0.0,
+        -41.016614187427884,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.000644259810013148,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.016136806663122477,
+        0.0,
+        -0.6595736912248924,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0011783543285064368,
+        0.0,
+        0.0,
+        -2.2668146182485103,
+        0.0,
+        -5.2570017902783945,
+        -0.2884128614298884,
+        0.0,
+        -0.005322467161662958,
+        3.2188987040327675,
+        8.188308615053678,
+        0.0,
+        -0.4460415288309818,
+        2.263052990711998,
+        -1.2762263013045576,
+        0.0,
+        0.0,
+        0.0,
+        1.3078324088244173,
+        0.0,
+        0.0,
+        0.19392350835015293,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.9828229339853962,
+        0.0,
+        -0.13253729632377098,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.03069273354820723,
+        0.0,
+        0.0,
+        -0.01162144763344497,
+        0.0,
+        -1.2902177890827247,
+        0.0,
+        0.0,
+        -1.922162100434484,
+        0.0,
+        0.6171749870235033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -3.729574300437717,
+        0.8597725606834725,
+        0.0,
+        -0.4443731479770605,
+        0.0,
+        0.0,
+        -0.010432350170408888,
+        -1.1572539869315683,
+        0.0,
+        0.0,
+        0.0,
+        0.23005467135035929,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.23278372189004415,
+        0.0,
+        15.835428737034768,
+        0.13206090047914465,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -5.631876127126762,
+        -1.5971305621030183,
+        0.11758946938548664,
+        1.0734236818996337,
+        0.0,
+        0.0,
+        0.0,
+        -0.033644056052969384,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.3753844480187922,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -13.472376288419468,
+        0.0,
+        0.0,
+        0.27726380108686755,
+        0.0,
+        0.0,
+        0.0,
+        -3.663071877243162,
+        -2.3991392038236192,
+        -0.00445632798573975,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.4231998494607403,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.032351619692233546,
+        0.0,
+        0.0,
+        0.4863080200492087,
+        0.7879562639331077,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3.218943435455138,
+        0.0,
+        -0.6433728692303617,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -4.73059834272742,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.4774250768945194,
+        0.0,
+        0.0
+      ]
+    },
+    "corrected": {
+      "improved_base": 43,
+      "worsened_base": 45,
+      "improved_novel": 2,
+      "worsened_novel": 12,
+      "per_class_delta_ClsA": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.02251932548807556,
+        9.899988119498413,
+        0.012726669363244403,
+        1.9365097087581589,
+        0.06673346872648223,
+        0.4628884505669504,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        23.414396755019887,
+        0.0,
+        0.0,
+        0.11107170564679336,
+        0.0,
+        0.0,
+        -1.265886068874174,
+        0.0,
+        0.0,
+        0.05407013026133711,
+        0.0,
+        0.0,
+        -3.544559118917718,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.5324508516560744,
+        -3.509794685230702,
+        0.09967602503246553,
+        0.0,
+        -0.509005222037608,
+        -3.055632063797012,
+        -0.09657681830466913,
+        0.0,
+        0.0,
+        0.01797637390856721,
+        -100.0,
+        0.0,
+        0.0,
+        -0.22190482145600043,
+        0.0,
+        -6.7206045119043765,
+        0.0,
+        0.0,
+        -0.8689114706661201,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -8.648201229666125,
+        0.0,
+        0.18319593386821964,
+        0.0,
+        0.0,
+        0.0,
+        -3.726971331850798,
+        1.024327564930907,
+        0.0,
+        -2.1093530230150606,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.07866086941314593,
+        -7.019256278809838,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.8938422734216331,
+        0.36111111111111427,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.757868251211228,
+        -2.7610964252842507,
+        -0.12450413589080345,
+        0.0,
+        0.0,
+        -0.8956761383965528,
+        0.0,
+        0.0,
+        -0.21001245917292977,
+        0.0,
+        2.1496961789583793,
+        0.0,
+        -9.539933280999932,
+        0.0,
+        0.0,
+        -99.74358974358975,
+        0.0,
+        0.0,
+        0.0,
+        -0.15420697101005243,
+        0.0,
+        -5.534448213554633,
+        0.13557366186891784,
+        0.0,
+        -1.572544003511588,
+        0.24157584762679285,
+        0.0,
+        -15.603598402332217,
+        0.0,
+        0.0,
+        1.406024531024542,
+        2.0564116971318542,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.7088034118694964,
+        -0.029897817705695218,
+        -1.5280801776429755,
+        21.92902028422032,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.4115798220860425,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.09797442932596923,
+        0.0,
+        -0.3862997893250508,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.00536930604908914,
+        0.0,
+        0.0,
+        4.562837513234157,
+        0.0,
+        -5.176037877468453,
+        -1.3085460180343915,
+        0.0,
+        0.009895733043740584,
+        3.218898704032764,
+        0.13743255380536112,
+        0.0,
+        0.1483268959644377,
+        6.260844723509109,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.8824906255669376,
+        0.0,
+        0.0,
+        -0.4394683840932565,
+        -0.7480948397306011,
+        0.0,
+        0.0,
+        0.0,
+        0.04444561934203506,
+        0.0,
+        -0.20714557769233632,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.04907809204254221,
+        -11.70011900133769,
+        0.0,
+        -0.0633170282651977,
+        0.0,
+        1.2293787134914886,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -2.8023520050979407,
+        0.0,
+        0.0,
+        0.01907944841808984,
+        0.0,
+        0.0,
+        0.0,
+        -3.258674300531574,
+        0.0,
+        0.0,
+        -3.757496674292348,
+        -12.58439224685176,
+        0.0,
+        0.0,
+        1.3026080645139118,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.006489276200783545,
+        0.0,
+        0.0,
+        0.0,
+        15.71757296122187,
+        5.109020615316713,
+        -3.625922547200325,
+        3.095120742128259,
+        -0.6421471643874561,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -2.3667966027354,
+        0.5361476675586374,
+        0.2544663764185371,
+        3.6990655635110983,
+        0.0,
+        0.0,
+        0.0,
+        -0.5090827994770999,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.8632761928355137,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -2.843945872758482,
+        0.0,
+        0.0,
+        0.0,
+        -3.6838762273180166,
+        0.0,
+        18.138547112254386,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.1420923775942582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -3.0036736616799824,
+        0.0,
+        0.0,
+        0.3479914344127515,
+        -1.846966079841227,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.1392953209060863,
+        0.0,
+        -2.074008408062184,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -4.23678621572628,
+        0.0,
+        7.412175023830315,
+        0.0,
+        0.0,
+        -0.5125743997854073,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "per_class_metrics_sha256": "750c814d16d9868f43db176c1fc01c4cbf5ac7af29f4072a97b796195b8a8221",
+  "fields": [
+    "TETA",
+    "LocA",
+    "AssocA",
+    "ClsA",
+    "LocRe",
+    "LocPr",
+    "AssocRe",
+    "AssocPr",
+    "ClsRe",
+    "ClsPr"
+  ],
+  "gt_in_method": false,
+  "unchanged_geometry_fields": [
+    "bbox",
+    "track_id",
+    "video_id",
+    "image_id",
+    "score",
+    "order"
+  ],
+  "limitations": [
+    "All observations retained in method aggregation; GT events used only after readout cache was sealed",
+    "Random seeds are sampling variation, not independent data replicates",
+    "Density, quality weighting and ordinary pooling are controls, not novelty",
+    "Sparse novel-class video support does not establish independent generalization"
+  ]
+}

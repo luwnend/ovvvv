@@ -1,0 +1,115 @@
+{
+  "status": "COMPLETE_APPROVED_POSTERIOR_BOUNDARY_CORRECTION_WITH_OBSERVED_TERMINAL_EXITS",
+  "created_at_utc": "2026-10-23T05:09:31.398078+00:00",
+  "script": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_natural_dependence_posterior01.py",
+    "sha256": "f1edad4dc9ae7373eb9c004b1bd37abff8ac0836738f3851eeb355fbcd7f2820"
+  },
+  "python": "/home/chenhc/miniconda3/envs/covtrack/bin/python",
+  "stages": {
+    "numerical": {
+      "terminal_exit_code": 0,
+      "terminal_exit_observed": true,
+      "exec_session_id": null,
+      "artifact_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_numerical_preflight.json",
+      "artifact_sha256": "6cf7e0713d1f906a04658ba6cc4aaf80a6fae5953a7a0a4b742779a044b8f499",
+      "status_observed": "PASS_INDEPENDENT_HAND_WORKED_NUMERICAL_PREFLIGHT"
+    },
+    "mapping": {
+      "terminal_exit_code": 0,
+      "terminal_exit_observed": true,
+      "exec_session_id": 76473,
+      "artifact_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_mapping_preflight.json",
+      "artifact_sha256": "e8d90d70b19d0185bd64c9b3dbe82fb8e8569eeaf50fba43ad72b32834390db3",
+      "status_observed": "PASS_INDEPENDENT_OBSERVATION_GT_MAPPING_PREFLIGHT"
+    },
+    "full": {
+      "terminal_exit_code": 0,
+      "terminal_exit_observed": true,
+      "exec_session_id": 33159,
+      "artifact_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_error_dependence.json",
+      "artifact_sha256": "31b4e4f640dbe58f7dedf5d23ec08c2e9d9608e91d091c787612cc772c093a29",
+      "status_observed": "PASS_FULL_NATURAL_ERROR_DEPENDENCE_DESCRIPTIVE_AUDIT"
+    }
+  },
+  "terminal_exit_evidence": "Numerical stage returned exit_code 0 directly. Mapping session 76473 and full session 33159 each polled with write_stdin until actual exit_code 0.",
+  "approved_posterior_control": {
+    "mean_edges": [
+      0,
+      0.1,
+      0.3,
+      0.6,
+      1
+    ],
+    "absolute_difference_cutpoint": 0.1
+  },
+  "deviation_corrected": {
+    "original_mean_edges": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "original_absolute_difference_cutpoint": 0.25,
+    "reason": "The recovered agent summary omitted earlier approved numerical posterior boundaries; choosing quartile/.25 was an implementation deviation. Choices were fixed in original code before original numerical/mapping preflights and before the first full result.",
+    "original_artifacts_preserved": true,
+    "primary_exact_lag_analysis_affected": false
+  },
+  "post_result_verification": {
+    "terminal_exit_code": 0,
+    "n_combinations_checked": 24,
+    "boundary_contract_terminal_exit_code": 0,
+    "boundary_contract": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/boundary_contract.json",
+      "sha256": "9f4fbc102f23f8a1cebdb0041cc65444e44ab12df212385a5d5a0816eb84624c",
+      "bytes": 946
+    },
+    "primary_and_lag_only_exact_reproduction": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/primary_reproduction_check.json",
+      "sha256": "a9fe1e9480522acc2b8609cd05b14790fa2d342c0ea1dc7f6ebdeda32b605154",
+      "bytes": 2584
+    },
+    "source_hashes_refreshed_after_completion": {
+      "annotation": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+      "baseline": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+      "track_cache": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+      "scoreinput": "3b7bbf8d89370849b7beffe92b1c0e98cccca2da153c9d390f81903cb4492c04"
+    },
+    "protected_sources_unchanged": true,
+    "unsupported_novel_comparisons_null": true,
+    "per_class_endpoint_weights_and_group_pair_partitions_verified": true,
+    "all_eligible_flat_or_boundary_tied_strata": 0
+  },
+  "summary_artifact": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_error_dependence_summary.json",
+    "sha256": "19f0693732563c8c9e578a353452bcaa312e4848d88dbbd21b90defec00f3e51",
+    "bytes": 609316
+  },
+  "support": {
+    "total_tracks": 10219,
+    "total_observations": 65711,
+    "single_gt_identity_tracks": 8573,
+    "single_gt_identity_observations": 48851,
+    "mixed_gt_identity_tracks": 1646,
+    "mixed_gt_identity_observations": 16860,
+    "scope_tracks_with_at_least_one_pair": {
+      "single_gt_identity_track": 4757,
+      "mixed_track_same_gt_identity": 1373,
+      "mixed_track_different_gt_identity_same_gt_class": 1390,
+      "mixed_track_different_gt_identity_different_gt_class": 316
+    },
+    "scope_all_pair_counts": {
+      "single_gt_identity_track": 425198,
+      "mixed_track_same_gt_identity": 95849,
+      "mixed_track_different_gt_identity_same_gt_class": 40420,
+      "mixed_track_different_gt_identity_different_gt_class": 8856
+    }
+  },
+  "elapsed_seconds_full": 233.76311448216438,
+  "limitations": [
+    "Single-GT-ID means one GT identity among matched observations only; purity of unmatched trajectory segments is not established.",
+    "Descriptive repeated wrong-category association; not centered conditional residual covariance, a causal effect, or candidate efficacy.",
+    "Mixed-track scopes retain actual GT-identity-pair difficulty composition confounding."
+  ]
+}

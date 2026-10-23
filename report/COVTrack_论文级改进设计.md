@@ -2,8 +2,9 @@
 
 > 日期：2026-10-23；本版替换已撤回的旧分析与推断。
 > 目标：从 COVTrack 出发，找到有明确机制、可消融、可证伪的方法改进。
-> 当前状态：官方完整 val 读出已完成；sumlog 有推理侧信号；新机制方法尚未成立。
+> 当前状态：完整val读出与自然误判诊断已推进到20项控制；固定inverse-density读出未超过普通quality控制，新机制方法尚未成立。
 > 完整结果：`report/COVTrack_完整val轨迹读出_20261023.md`。普通聚合增益不等于 TCES 方法已成立。
+> 后续机制阶段：`report/COVTrack_自然依赖核验_20261023.md`；主官方复核以独立completion receipt为准。
 > 另一个会话的训练目录 `results/covtrack_ctao_train20_bs24_20261022` 受保护，不停止、不覆盖、不修改。
 
 ## 1. 研究目标与固定对照
@@ -96,8 +97,10 @@ m(c)=false: p(c) ∝ p_text(c)^(2/3) × p_image(c)^(1/3)
 TCP 的恢复检测可继续作为后续帧 source；不能把它说成完全不能跨多帧传播。
 OVTR 的本地 CIP 传递的是 learned feature/query，不是直接上一帧后验 EMA。
 TRACT 本地缺少 TraCLIP 模型主体与实际 tracker 文件；边界来自公开原文及现有入口，不能声称完成其全部代码排除。
-COVTrack++ 此处以本地论文核验，未完成其代码复现。
-与这些方法有区别只是必要条件；仍需查一般 attention pooling、GLS、robust aggregation、mixture tracking 的先例。
+COVTrack++ 已实时核验论文官方链接、公开分支与代码树：目前仅main，HEAD `9b0ced5779ee36f5dd73dbe39b5ae5d57abb4b3b`，248个blob均与冻结COVTrack一致，尚未识别可核验的MGA/TCP新增实现。不另外克隆同一旧树并冒充++复现；MCF代码与++论文公式也不能直接声称逐式一致。
+完整源码和原始论文边界见`tmp_analysis/covtrackpp_code_boundary_20261023.md`及其live-sources证据。
+
+一般领域的边界也已补查：NAN/QAN（2017）已有attention/quality pooling，PFE（ICCV2019）明确讨论视频冗余破坏条件独立，Trick & Rothkopf（AISTATS2022）已有显式相关Dirichlet分类器融合；redundancy attention、temporal covariance pooling、UGG也分别占据互补聚合、二阶统计和不确定身份传播。相关性、GLS、attention或mixture本身不能作为新贡献。
 
 ## 5. 主研究候选：依赖感知的双路类别证据
 
@@ -121,6 +124,20 @@ K 只能由推理可见特征估计；appearance 相似度不自动等于类别�
 一般的 sumlog 还可能重复累计类别先验，但普通全局 prior correction 已做过，不能重新包装。
 log clipping、缓存精度和核尺度需要固定并记录敏感性，不用 novel GT 挑最优后声称独立泛化。
 
+### 5.1 已执行的固定核控制：停止此具体读出
+
+完整val以`K=((1+cos(raw track-head))/2)^4`、exact-evidence去重、inverse row-density权重读出；不使用GT选择观测。双mask各10项控制已做精确固定几何TETA分类回放，六个已有官方控制逐class/video/alpha计数完全一致，两主density另做完整官方复核。
+
+| 相对各自full sumlog | ΔBase TETA | ΔNovel TETA |
+|---|---:|---:|
+| 发布mask inverse density | -0.392320 | +0.166917 |
+| corrected mask inverse density | -0.264938 | +0.037240 |
+
+普通score-weighted log在两个mask下都同时超过density的Base与Novel，因此当前固定核读出没有增量价值；不继续用val搜索核尺度包装贡献。
+同身份的已匹配观测内，控制精确采样lag和score rank，外观相近组同错类别率+5.4955 pp、端点错误率反而-1.7486 pp，支持“错误方向更集中”的描述，但不能直接视为条件残差协方差或可用的风险权重。主分析仅795条受支持轨迹，novel只有13/35类有对比支持。
+
+下一步候选必须把**单帧平均偏差/质量**与**自然共同误判过程**分开：可变长、类别共享网络输出低秩PSD残差关系只是候选结构，QP/GLS仍是下游控制。要在base训练的类/视频留出上证明对共同误差的预测增量，并胜过同容量quality/attention与简单相关融合；不能从本次pair关联直接启动完整训练或宣称技术成立。
+
 ## 6. 必须同时区分的竞争解释：身份混合
 
 **实验候选 B，尚未成立。** 同一轨迹内的语义冲突可能来自类别噪声，也可能来自多个身份被关联混合。
@@ -137,8 +154,8 @@ log clipping、缓存精度和核尺度需要固定并记录敏感性，不用 n
 | 轮次 | 检查一 | 检查二 | 当前证据状态 |
 |---|---|---|---|
 | 1：实现与评测 | video/track key、全部观测、类别列、TCC tie-break、框/ID/score 哈希一致；原 TCC 必须对齐 | GT 只进入独立评分/oracle；无 GT 帧筛选、GT 分支选择、二次 TCC | 已通过全量缓存、TCC、官方 raw/count 与保护字段核验；见阶段报告 |
-| 2：机制干预 | 仅在证据流诊断副本重复精确/近似重复帧；不向主表增加框、ID、帧；检验信息与排序变化 | 对比等预算随机/分数采样、普通池化、confidence 权重、简单成分池化；检查对角 K/单帧/复制极限 | 设计已明确，尚未执行依赖机制干预 |
-| 3：理论与范围 | 高纯重复视角、高纯多样视角、混合身份分层；控制类、长度、置信度后检验依赖解释 | 完整 val 固定输入评测；看逐类变化与 paired 视频敏感性，确认自然轨迹收益超过对照 | 4 个候选读出与 1 个发布基线已完成；候选 A/B 尚无方法结果 |
+| 2：机制与控制 | 精确复制/单帧极限、自然同错率与错误基率；主exact-lag/score控制、另列置信敏感性 | 三seed等预算random、score/FPS、full sumlog、score/entropy weighting | 当前固定核已执行，density未胜过普通score weighting；近似复制干预和可学习error-kernel仍未执行 |
+| 3：理论与范围 | single-matched-ID与三类mixed scope分开，逐类支持与mask内差值；不把unmatched身份判为已知 | 六项官方控制回放，主输出完整官方count/raw parity及保护核验 | 具体density的停止结论由本阶段独立completion receipt封存；可学习A与身份B均仍未成立 |
 
 每轮失败先核验原因；版本号 `v3` 或 `dbg11` 不等于完成三轮科学审查。
 实现错误会使依赖它的结论失效；不能把修复过程算作理论被证伪。
@@ -158,17 +175,17 @@ top-1 改善而 top-10/50 不变可以是有效排序修复，不能据此自动
 纯排序方法的 top-k 变化应解释其收益与代价；新增证据的主张需要额外证据，不能由排名变化直接推出。
 Base/Novel 权衡与最小有意义改进应在看新候选结果前明确；不靠事后挑类或全局 bias 掩盖退化。
 若原 TCC 不对齐、GT 泄漏或保护字段变化，停止解释结果并先修实现。
-若依赖效应在纯轨迹不成立、核不反映错误相关性、或收益被等预算控制完全解释，停止候选 A。
+若一个具体核/结构不能预测目标误差关系、或没有超过质量/预算控制，停止该具体实现；当前固定inverse-density已满足停止条件。不能据一个相似度核失败，将整个可学习共同误判过程候选判为理论不可能。
 若身份净化上界小或无 GT 成分选择无法保留收益，停止候选 B。
 若只有子集收益而完整 val 不成立，记录范围限制，不能据此启动新训练。
 
 ## 9. 执行顺序与训练门槛
 
-1. 已完成完整缓存、发布 TCC 对齐及4 个候选读出与 1 个发布基线的官方 TETA；下一步以普通 sumlog 作为额外直接对照。
-2. 分开发布 mask、corrected-mask 校准、普通聚合读出；若在 corrected mask 上研究 log pooling，先补该 mask 的 sumlog 官方控制。
-3. 完成候选 A/B 的三轮证伪及对照；优先轻量 CPU 缓存诊断，不启动阈值海选。
-4. 只有自然轨迹上有可解释、超过对照的完整 val 信号，才设计独立的新训练目录及明确监督目标。
-5. 新训练只用允许的 base 监督；所有 val 选择仍标为探索性，独立泛化需另行验证。
+1. corrected-mask sumlog官方控制已补齐：Base/Novel TETA=39.837629/36.311125。20项分类回放、自然pair诊断及主官方独立复核见本阶段报告，不把mask修正归入新方法。
+2. 终止当前固定appearance-density读出；保留普通sumlog、score/entropy weighting和各预算控制，后续方法必须直接比较。
+3. 先完成base-training可观测性与类别/视频留出方案：核验真实原始GT与C-TAO补帧标签、训练/val元数据去重、完整词表映射和已有缓存覆盖。不能直接把val的296维词表移作全部base训练词表。
+4. 对可学习共同误判过程，先以独立base训练缓存检验质量条件化的增量预测能力；如果可用监督、类别迁移或oracle headroom不成立，不投入完整readout训练。身份B则先测净化上界与class-blind污染可辨识性。
+5. 有超过简单质量/依赖控制的可信信号之后，才进入独立训练目录；新训练只用允许base监督、只用空闲A100，保护现有会话。base类留出是readout的pseudo-novel检验，不能称为detector未见类别；当前val选择始终标为探索性，独立泛化另验。
 
 冻结 baseline、上游仓库、既有训练与归档报告；新读出和新候选产物使用独立路径及 receipt。
 完成状态要求退出标记、完整指标、输入输出哈希与受保护文件检查通过；启动任务不等于完成实验。

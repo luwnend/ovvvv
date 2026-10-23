@@ -1,0 +1,52 @@
+{
+  "status": "PASS_EXACT_FIXED_GEOMETRY_CLASSIFICATION_EVENT_REPLAY",
+  "scope": "Scoring-only fixed-geometry non-exhaustive TETA50",
+  "script_sha256": "c390794cf8e3e743158840e399f923dbbbef66bae354f2bcc60b3593604939e6",
+  "baseline_receipt": {
+    "rule": "tcc",
+    "status": "COMPLETE",
+    "baseline": "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json",
+    "baseline_sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+    "result": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/tao_track.json",
+    "result_sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+    "modified_fields": [],
+    "second_tcc": false,
+    "aggregation_uses_gt": false,
+    "ann": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/annotations/validation_ours_v1.json",
+    "ann_sha256": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+    "evaluator_files": {
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/eval.py": "8219b9a2858faf0c166bff2fa1d25eb96a96578329916d2e0196f84e5aadbbcc",
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/metrics/teta.py": "47a132d92b2e9c92fd47f9e36140278e7ac263418539b606bf58ceead20d97d4",
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/datasets/tao.py": "c174d9cd3df6962474db588eff7cb3e82736d9a5b387f8653cefa603b9a7a6ab"
+    },
+    "metrics_sha256": "58ce4060e886b1572ddd7b0f29d3847955b083aa56af5aaadb9b5faef6c697c0",
+    "summary_sha256": "dd891b2a7e1d98243c18ed3b54cb33ac65055ce2c709a29839de0e0cd03795e6",
+    "counts_sha256": "ccf49aa564a10def1d5140517630b130ac4b095b2729151596a781c5dc8ab022",
+    "aggregate_raw_sha256": "a88b99bdd6cbd5f0ffa65cbdd52dc718347efa6fcd659da305b05e63e4de33b7",
+    "receipt_extension": "Bound existing raw/count files after independent baseline reconstruction verified exact ClsA; metrics and predictions unchanged."
+  },
+  "matching_proof": "TAO preprocessing selects overlap sets and global assignments using geometry and identities; predicted category affects only classification counts in non-exhaustive mode.",
+  "event_count": 383115,
+  "sequences": 988,
+  "classes": 296,
+  "parity": {
+    "tcc": {
+      "all_class_video_alpha_TP_FN_FP_bitwise_equal": true
+    },
+    "fused_sumprob": {
+      "all_class_video_alpha_TP_FN_FP_bitwise_equal": true
+    },
+    "fused_sumlog": {
+      "all_class_video_alpha_TP_FN_FP_bitwise_equal": true
+    },
+    "corrected_mask_tcc": {
+      "all_class_video_alpha_TP_FN_FP_bitwise_equal": true
+    },
+    "corrected_mask_sumprob": {
+      "all_class_video_alpha_TP_FN_FP_bitwise_equal": true
+    }
+  },
+  "output_sha256": "fc11440c3ce750ee4918e1290e32cc5b6a20c4fde20aca1ae70f19fee6e0e996",
+  "elapsed_seconds": 139.58947221562266,
+  "limitation": "Only unchanged box/score/order/IDs and constant per-track labels under this exact evaluator; not an evaluation of changed detection or association. New main readouts still receive separate full evaluator checks."
+}

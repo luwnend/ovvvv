@@ -1,0 +1,91 @@
+{
+  "status": "COMPLETE_FULL_NATURAL_DEPENDENCE_DIAGNOSTIC_WITH_OBSERVED_TERMINAL_EXITS",
+  "created_at_utc": "2026-10-23T05:00:55.341492+00:00",
+  "script": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_natural_dependence.py",
+    "sha256": "c3eb25b4123fdeab49bc407996df0fbc8f69e6c6590f2ce78b910fdbafa50045"
+  },
+  "python": "/home/chenhc/miniconda3/envs/covtrack/bin/python",
+  "stages": {
+    "numerical": {
+      "terminal_exit_code": 0,
+      "terminal_exit_observed": true,
+      "exec_session_id": null,
+      "artifact_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_numerical_preflight.json",
+      "artifact_sha256": "4db4dbf8021ad3f0d0525df37a5c58b42ef80c492b0e29dbf3b01da1842ccb72",
+      "status_observed": "PASS_INDEPENDENT_HAND_WORKED_NUMERICAL_PREFLIGHT"
+    },
+    "mapping": {
+      "terminal_exit_code": 0,
+      "terminal_exit_observed": true,
+      "exec_session_id": 37186,
+      "artifact_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_mapping_preflight.json",
+      "artifact_sha256": "853a5decac35e7c25582bdc015f151675d6c777de8db7ff5b795f2eef8ffc2b9",
+      "status_observed": "PASS_INDEPENDENT_OBSERVATION_GT_MAPPING_PREFLIGHT"
+    },
+    "full": {
+      "terminal_exit_code": 0,
+      "terminal_exit_observed": true,
+      "exec_session_id": 75302,
+      "artifact_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_error_dependence.json",
+      "artifact_sha256": "73b535dfb64cbbca047ef3bf5f98cc4e76e260e4e846efa99a4cacfcb73280bc",
+      "status_observed": "PASS_FULL_NATURAL_ERROR_DEPENDENCE_DESCRIPTIVE_AUDIT"
+    }
+  },
+  "terminal_exit_evidence": "Numerical exec returned exit_code 0 directly. Mapping exec session 37186 and full exec session 75302 were each polled with write_stdin until returned exit_code 0; these are observed terminal codes, not inferred from PASS text.",
+  "post_result_verification": {
+    "terminal_exit_code": 0,
+    "scope_control_feature_combinations_checked": 24,
+    "all_near_far_denominators_equal": true,
+    "base_novel_pair_partitions_sum_to_all": true,
+    "per_class_half_endpoint_weights_sum_to_pair_denominators": true,
+    "unsupported_novel_null_checks": true,
+    "independent_scope_all_pair_counts": {
+      "single_gt_identity_track": 425198,
+      "mixed_track_same_gt_identity": 95849,
+      "mixed_track_different_gt_identity_same_gt_class": 40420,
+      "mixed_track_different_gt_identity_different_gt_class": 8856
+    },
+    "flat_or_boundary_tied_eligible_strata": 0,
+    "sources_rehashed_after_completion": {
+      "annotation": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+      "baseline": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+      "track_cache": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+      "scoreinput": "3b7bbf8d89370849b7beffe92b1c0e98cccca2da153c9d390f81903cb4492c04"
+    },
+    "script_unchanged_after_preflights": true,
+    "protected_source_checks_equal_before_after": true
+  },
+  "support": {
+    "total_tracks": 10219,
+    "total_observations": 65711,
+    "single_gt_identity_tracks": 8573,
+    "single_gt_identity_observations": 48851,
+    "mixed_gt_identity_tracks": 1646,
+    "mixed_gt_identity_observations": 16860,
+    "scope_tracks_with_at_least_one_pair": {
+      "single_gt_identity_track": 4757,
+      "mixed_track_same_gt_identity": 1373,
+      "mixed_track_different_gt_identity_same_gt_class": 1390,
+      "mixed_track_different_gt_identity_different_gt_class": 316
+    },
+    "scope_all_pair_counts": {
+      "single_gt_identity_track": 425198,
+      "mixed_track_same_gt_identity": 95849,
+      "mixed_track_different_gt_identity_same_gt_class": 40420,
+      "mixed_track_different_gt_identity_different_gt_class": 8856
+    }
+  },
+  "elapsed_seconds_full": 232.49052873812616,
+  "logs": {
+    "mapping": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_mapping_preflight.log",
+    "full": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_error_dependence.log"
+  },
+  "limitations": [
+    "Nonofficial matched classification diagnosis; not TETA/ClsA.",
+    "GT is diagnostic-only and generates no candidate labels.",
+    "Natural same-wrong-category association is descriptive, not centered conditional residual covariance, a causal effect, or candidate efficacy.",
+    "Mixed-track results retain actual GT-identity-pair difficulty composition as a competing explanation; primary single-identity scope avoids that mixture.",
+    "Original dump continuity is checked by exact filename/size inventory, metadata/counts, feature/posterior numerical validation, and full matched geometry; this receipt does not claim a per-dump full-content hash against a historical inventory."
+  ]
+}

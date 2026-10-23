@@ -1,0 +1,48 @@
+{
+  "status": "PASS_ACTUAL_SOURCE_POSTERIOR_BOUNDARY_CONTRACT",
+  "script_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_natural_dependence_posterior01.py",
+  "script_sha256": "f1edad4dc9ae7373eb9c004b1bd37abff8ac0836738f3851eeb355fbcd7f2820",
+  "mean_inputs": [
+    0,
+    0.099,
+    0.1,
+    0.299,
+    0.3,
+    0.599,
+    0.6,
+    1
+  ],
+  "difference_inputs": [
+    0,
+    0.099,
+    0.1,
+    0.10000000000000002,
+    0.2,
+    0.5,
+    0.9,
+    1
+  ],
+  "actual_assignment_expression_outputs": {
+    "confidence_mean_bin": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3
+    ],
+    "confidence_difference_bin": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "method": "Parse the executed fixed source with ast, evaluate the actual two assignment expressions on independent hand-selected boundary values, and compare to hand-prescribed bins. No source mutation."
+}

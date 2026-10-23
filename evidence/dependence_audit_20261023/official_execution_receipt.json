@@ -1,0 +1,151 @@
+{
+  "status": "PASS_FULL_OFFICIAL_EXECUTION",
+  "recorded_at": "2026-10-23T13:12:12.414443+08:00",
+  "observed_execution_steps": [
+    {
+      "name": "build_all_readouts",
+      "exec_session_id": 39920,
+      "observed_by": "tools.write_stdin",
+      "observed_exit_code": 0,
+      "log": "build.log",
+      "log_sha256": "702dfb09714e08b23472bdf4ae6ec8508cb155b22129633f12b23767c340d96b",
+      "manifest": "manifest.json",
+      "manifest_sha256": "8dd3eafbf200bc70b7820ad90fdabeac501cc9c69a1aeaa49d2e703e16d0b67c",
+      "cache": "readout_cache.npz",
+      "cache_sha256": "3c764166e42740b4d9df00272044129c55dab6cd7909a2e7b0c6e6e00d484149",
+      "builder_script_sha256": "dba93592ec8ff507c7decb062bc0d1d11cadba67142bca5f7534702e15c9af04"
+    },
+    {
+      "name": "released.dep_inverse_density",
+      "exec_session_id": 79653,
+      "observed_by": "tools.write_stdin",
+      "observed_exit_code": 0,
+      "cores": 8,
+      "receipt": "readouts/released.dep_inverse_density/receipt.json",
+      "receipt_sha256": "97c240a107beb5a812aca0d7d03300f8c7dbb0f928664681f1f54ebd76e6e574",
+      "log": "eval_released_dep.log",
+      "log_sha256": "ddf11fa94957d33db1bb88e6eb7629702e706f4d1c19bc690cf74eca47b27848",
+      "result_sha256": "8b225f2c27f8107722e01d3f185670566398d26cbaaf2f9de107d7e9411ef247",
+      "metrics_sha256": "a1c19a47151343a03336215f0f26355fb7809d50cad1977d15aadb460cc02fcb",
+      "counts_sha256": "c9a9a9639b57b2226bd512412a9fe15d4dad2c5d72dc83a870d73236ec079e13",
+      "aggregate_raw_sha256": "db5fb1578eb600e9bb606985b4c1a877e71ed7cd451a519f1f877e9afe75d3c3",
+      "summary_sha256": "256068f06869ac2c90e4876582678e99794954e5940d2d81954cc7d53a20fafc",
+      "wrapper_script_sha256": "b098593094fdac1a07b4fcbf6ad8bd5e620f73df2a06e45c78930f7905bc2fd8",
+      "shared_evaluator_script_sha256": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9",
+      "protected_sources_unchanged_after_evaluation": true,
+      "all_noncategorical_fields_and_row_order_equal": true,
+      "noncategory_ordered_rows_sha256": "d8661256a1616efbd43130fde66f2d817c7779f2c09df37bb1d74dbbea39450e"
+    },
+    {
+      "name": "corrected.dep_inverse_density",
+      "exec_session_id": 53457,
+      "observed_by": "tools.write_stdin",
+      "observed_exit_code": 0,
+      "cores": 8,
+      "receipt": "readouts/corrected.dep_inverse_density/receipt.json",
+      "receipt_sha256": "07636d8f465411ad8c2e120532610459809eabaedf67b2cc93cd015dbeef7fe7",
+      "log": "eval_corrected_dep.log",
+      "log_sha256": "5ff51ec651f349d4f82355ba7a602d0d189b99953b87a0ad73f7fe2ab8178a31",
+      "result_sha256": "bd14dc4ff37a8aa689938ebf6a2b58d618b178c606ad57b6e52a6a5b56130aeb",
+      "metrics_sha256": "5e3b435fa71a13e0ce6853986f11bdc682ef8432a56a7e3631d5a5067e6e7abf",
+      "counts_sha256": "ef8103d362944ef28204efaf4fc5ad0cbf56b60c1a68bd2f219af70b6a83398c",
+      "aggregate_raw_sha256": "468b6807cc4f9cc84d8944ab49728f1095429472c53152eaac8856351c7a40d6",
+      "summary_sha256": "a5d75992419de8bd580312b742fdae9473c24022723b220e26c663373aae4ad7",
+      "wrapper_script_sha256": "b098593094fdac1a07b4fcbf6ad8bd5e620f73df2a06e45c78930f7905bc2fd8",
+      "shared_evaluator_script_sha256": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9",
+      "protected_sources_unchanged_after_evaluation": true,
+      "all_noncategorical_fields_and_row_order_equal": true,
+      "noncategory_ordered_rows_sha256": "d8661256a1616efbd43130fde66f2d817c7779f2c09df37bb1d74dbbea39450e"
+    }
+  ],
+  "execution_order": "build 39920 exit0; released official 79653 exit0; corrected official 53457 exit0; two official jobs ran serially",
+  "wrapper_script": "tmp_analysis/evaluate_dependence_readout.py",
+  "wrapper_script_sha256": "b098593094fdac1a07b4fcbf6ad8bd5e620f73df2a06e45c78930f7905bc2fd8",
+  "shared_evaluator_script_sha256": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9",
+  "full_geometry_score_identity_order_parity_verified_observations_per_rule": 1529908,
+  "metrics": {
+    "released.dep_inverse_density": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": 38.974767448410034,
+        "LocA": 57.27530465128391,
+        "AssocA": 41.83916861382982,
+        "ClsA": 17.80982908011636,
+        "LocRe": 59.73337888250619,
+        "LocPr": 79.65758899966852,
+        "AssocRe": 46.76477544694931,
+        "AssocPr": 67.1313431605742,
+        "ClsRe": 27.781415140859274,
+        "ClsPr": 25.833186623214804
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": 39.381976127138685,
+        "LocA": 57.15495890000262,
+        "AssocA": 41.96026115954742,
+        "ClsA": 19.030708321866054,
+        "LocRe": 59.654620938336805,
+        "LocPr": 79.62129104570528,
+        "AssocRe": 46.8247016121858,
+        "AssocPr": 67.32891904628137,
+        "ClsRe": 29.955688819140672,
+        "ClsPr": 27.219446275240436
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": 35.93815415846208,
+        "LocA": 58.17274011083888,
+        "AssocA": 40.93616420147874,
+        "ClsA": 8.70555816306864,
+        "LocRe": 60.320688123312294,
+        "LocPr": 79.92826802779427,
+        "AssocRe": 46.31789747190006,
+        "AssocPr": 65.65799155573018,
+        "ClsRe": 11.567545711389444,
+        "ClsPr": 15.495650360966504
+      }
+    },
+    "corrected.dep_inverse_density": {
+      "combined": {
+        "n_classes": 296,
+        "TETA": 39.19143636256672,
+        "LocA": 57.27530465128391,
+        "AssocA": 41.83916861382982,
+        "ClsA": 18.45983582258637,
+        "LocRe": 59.73337888250619,
+        "LocPr": 79.65758899966852,
+        "AssocRe": 46.76477544694931,
+        "AssocPr": 67.1313431605742,
+        "ClsRe": 28.11102285983696,
+        "ClsPr": 26.841652321766794
+      },
+      "base": {
+        "n_classes": 261,
+        "TETA": 39.57269108899052,
+        "LocA": 57.15495890000262,
+        "AssocA": 41.96026115954742,
+        "ClsA": 19.602853207421497,
+        "LocRe": 59.654620938336805,
+        "LocPr": 79.62129104570528,
+        "AssocRe": 46.8247016121858,
+        "AssocPr": 67.32891904628137,
+        "ClsRe": 29.496488073736664,
+        "ClsPr": 28.584359590577428
+      },
+      "novel": {
+        "n_classes": 35,
+        "TETA": 36.34836540266354,
+        "LocA": 58.17274011083888,
+        "AssocA": 40.93616420147874,
+        "ClsA": 9.936191895673007,
+        "LocRe": 60.320688123312294,
+        "LocPr": 79.92826802779427,
+        "AssocRe": 46.31789747190006,
+        "AssocPr": 65.65799155573018,
+        "ClsRe": 17.779410836184923,
+        "ClsPr": 13.846035260064594
+      }
+    }
+  },
+  "scope": "Only new dependence_audit_20261023 outputs; no baseline/cache/training modifications. This receipt records process completion and artifact hashes; independent replay-count and raw Loc/Assoc parity are performed by the parent audit."
+}

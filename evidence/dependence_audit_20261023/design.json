@@ -1,0 +1,64 @@
+{
+  "stage": "Natural evidence-dependence falsification, zero new training",
+  "design_frozen_at": "2026-10-23T12:45:52.212035+08:00",
+  "scope": "Exploratory continuation after observing prior full-validation pooling results; not a prospectively independent confirmatory trial",
+  "unit": "All conditions applied to the same emitted track; repeated observations and sampling seeds are not independent replicates",
+  "pair_diagnostic": {
+    "primary_feature": "L2-normalized raw track-head appearance before tracker fusion; shared backbone/training and selection, not independent noise",
+    "secondary_feature": "normalized cls_feats, explicitly shares category pathway",
+    "score_control": "within-track rank of all observations, bins fixed before new error-pair outcomes",
+    "lag": "exact lag primary; prespecified [1-2,3-5,6-10,11+] support sensitivity",
+    "scoring": "Existing class-agnostic Hungarian GT matches only for separate scoring, with single/mixed identity and per-class support",
+    "limits": "Natural correlation alone neither identifies a causal dependence failure nor proves an implementable benefit"
+  },
+  "readouts": {
+    "masks": [
+      "released",
+      "corrected"
+    ],
+    "kernel": "((1+cos(normalized raw track-head appearance))/2)^4, one fixed scale",
+    "deduplication": "Collapse exact identical feature and posterior evidence; score, box and time excluded from exact signature",
+    "weight": "inverse kernel density, nonnegative normalized over unique evidence rows",
+    "controls": [
+      "all-observation sumlog",
+      "score-weighted log",
+      "entropy-weighted log",
+      "random budget min(n,4), seeds 0/1/2",
+      "highest-score budget min(n,4)",
+      "feature FPS budget min(n,4)"
+    ],
+    "GT_in_method": false,
+    "all_observations_preserved_in_prediction_output": true,
+    "classification_only": true
+  },
+  "falsification": [
+    {
+      "round": 1,
+      "checks": [
+        "Synthetic single-frame/exact-duplication limits and small real-video readout parity",
+        "Full source/key/observation inventory and GT isolation"
+      ]
+    },
+    {
+      "round": 2,
+      "checks": [
+        "Natural same-error dependence under time/score/identity controls",
+        "Equal-budget random/score/FPS controls; full pooling and reliability weighting"
+      ]
+    },
+    {
+      "round": 3,
+      "checks": [
+        "Per-class and pure/mixed support, mask-specific residual benefits",
+        "Official TETA for main controls and exact frozen-geometry replay with independent count parity if used"
+      ]
+    }
+  ],
+  "primary_comparisons": [
+    "released dependence minus released full sumlog",
+    "corrected dependence minus corrected full sumlog"
+  ],
+  "adoption": "No new training based solely on a named kernel, attention weight or video-bootstrap interval; benefit beyond controls, mechanism support and distinct novelty are still required",
+  "protected": "Existing training, upstream repository, released baseline, old audit artifacts remain unchanged",
+  "source_clarification": "Confirmed active OVTrackRoIHeadUncertainty ROI track-head output and non-inplace tracker fusion; source description corrected without changing numerical feature arrays or analysis settings"
+}

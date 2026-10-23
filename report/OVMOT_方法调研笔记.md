@@ -3,13 +3,14 @@
 > 记录方式：每篇 **一句话定位 → 用了什么模块解决什么问题 → 代码怎么跑 → 实现/数据坑 → 相对基线提升**
 > 代码位置：`/home/chenhc/ov/OVMOT_RESEARCH/repos/`
 > 数据：`/raid/datasets/ring_data/data/tao`（TAO 原始 + OVTrack 转换标注 + C-TAO 连续标注）
+> 2026-10-23 补核：COVTrack++ 公开树、OVTR CIP、TRACT 及一般概率融合/冗余聚合的边界见 `tmp_analysis/covtrackpp_code_boundary_20261023.md`。下表文献数字与本地控制实验分别报告。
 
 ---
 
 ## 0. 任务与评测口径（先统一，否则数字没法比）
 
 - **OV-TAO 设定**：TAO 的 1203 个 LVIS 类别里，866 个 base（frequent）参与训练，337 个 novel（rare）只在测试出现。评测用 **TETA**，拆成 `TETA / LocA / AssocA / ClsA`，并分别报 base / novel。
-- **TETA = (LocA + AssocA + ClsA)/3**，其中 LocA 是定位（检测+轨迹框质量）、AssocA 是关联、ClsA 是分类。**novel 的 ClsA 普遍只有 2~7**，这是 OVMOT 最真实的痛点：检测器能框出来，但分类几乎全靠 CLIP 文本对齐。
+- **TETA = (LocA + AssocA + ClsA)/3**，其中 LocA 是定位（检测+轨迹框质量）、AssocA 是关联、ClsA 是分类。部分 R50 文献行的 novel ClsA 较低，但不能外推为所有检测器/方法都落在 2–7；本地普通读出控制也可改变该数值。
 - **数据坑（影响所有方法）**：TAO 原始标注是**稀疏**的（每 30 帧标一次），OVTrack 的 `validation_ours_v1.json` 只有 36k 帧 / 988 视频，但视频有 ~1171 帧，中间大量帧无 GT → 评测只在这些稀疏帧上算，训练时"相邻帧"其实跨度很大。C-TAO 把训练集补成 490k 帧连续标注，这正是 COVTrack/VOVTrack 的出发点。
 - **实现坑**：OVTrack 系代码是 mmdet 2.23 + mmcv 1.4.4 + torch1.10，现代环境直接跑会连环报错（`np.int`、`bdd100k` 可选依赖、`tools/test.py` 缺 `--work-dir`、CLIP 缺 `ftfy`、`lvis` 包）。我已在本机修复并归档，见 `work/ovtrack_base`。
 
@@ -58,7 +59,7 @@
 ## 4. OVTR (ICLR 2025) — 第一个端到端 Transformer 开放词表跟踪器
 
 - **论文**: OVTR: End-to-End Open-Vocabulary Multiple Object Tracking with Transformer ｜ **代码**: https://github.com/jinyanglii/OVTR ｜ 本地 `repos/OVTR`
-- **核心网络**：DINO 式 **dual-branch deformable DETR**（检测分支 + 跟踪分支），**900 个 track query** 在帧间传播；引入 **CIP（Category Information Propagation）** 把上一帧类别概率传给下一帧 query，**attention isolation** 把"开放词表感知"与"跟踪"解耦，避免文本 cross-attention 污染跟踪特征。
+- **核心网络**：DINO 式 **dual-branch deformable DETR**（检测分支 + 跟踪分支），**900 个 track query** 在帧间传播；**CIP（Category Information Propagation）** 用 category-related image embedding、attention/MLP 更新可跨帧传递的 query 状态；本地 `updater.py:220–243` 不是直接上一帧 posterior EMA。**attention isolation** 将开放词表感知与跟踪路径分开。
 - **模块→问题**：track query 传播 → 解决"检测-关联两阶段"的误差累积与后处理；CIP → 解决 novel 类逐帧分类抖动；isolation mask → 解决文本分支与视觉分支互相干扰。
 - **怎么跑**：
   ```bash
@@ -102,8 +103,8 @@
   python TraCLIP/tools/transfer_tracklets_to_teta.py
   ```
 - **官方数字**：用 YOLO-World 检测时，base/novel TETA = **39.4 / 33.7**（val）、**35.7 / 33.1**（test）；比 MASA 再 +1.9/+1.5（val）。
-- **坑**：① **两段式**，轨迹分类器只能用"已跟踪出的轨迹"，**关联错误无法挽回**；② 代码里大量硬编码绝对路径（`/data3/InsCap/imgs`、`/data2/...`），迁移成本高；③ 依赖 `clip_len=10`，短轨迹（<10 帧）要 padding，TAO 稀疏标注下轨迹很短。
-- **启示（对我最重要）**：**"离线轨迹重分类"是低风险高收益的改进**——不动检测/关联，只把每条轨迹的类别重新投票。我的方案会在**在线**版本里做类似的事（轨迹级 EMA 语义 + 置信度门控），从而同时改善 ClsA 和 AssocA。
+- **实现范围**：本地 TraCLIP 的 `models.track_classifier.TraCLIP` 主体缺失，不能把以上入口命令写成已完整复现。只改最终类别的读出保留原关联错误，但 TRACT 整体还包含关联侧 TCR。
+- **新颖性边界**：TCR 已有 appearance/category banks 与置信分段投票；TFA 已有按分数采样、self-attention+MLP 和聚合。轨迹 EMA、普通可学习时序聚合及置信度门控本身不足以支持新的论文贡献，也不能预先声称改善 AssocA。
 
 ## 7. VOVTrack (ICCV 2025) — 用原始视频做自监督
 
@@ -177,8 +178,9 @@
 - **论文**: COVTrack++: Learning Open-Vocabulary Multi-Object Tracking from Continuous Videos via a Synergistic Paradigm (arXiv 2603.24016)
 - **核心**：针对"缺连续标注"和"检测与关联割裂"两大痛点，提出**协同范式**：检测端与关联端共享/互相增强（而不是先检测再关联），并用连续视频监督训练。
 - **数字**：稀疏 TAO val/test 上 novel TETA **35.4 / 30.5**；另报 Dense C-TAO-val 上 COVTrack **33.0 / 38.4**、COVTrack++ **34.6 / 39.7**（novel/base TETA）。**Dense C-TAO-val 与官方主表的稀疏 TAO val 不是同一口径，不能混比。**
-- **坑**：① 2026 年新工作，**代码未见公开**；② 协同训练需要检测器可微/可联合训练，与 OVTrack 的 `freeze_detector=True` 范式冲突，迁移成本极高；③ Dense C-TAO-val 标注未随官方仓库发布，目前无法本地复现该表。
-- **启示**：**联合优化是终局**，但短期最可行的是"冻结检测器 + 改进关联/分类"——这也是我选择的路线（算力可控、可解释、可快速迭代）。
+- **公开实现核验（2026-10-23）**：论文官方链接指向 `zekunqian/COVTrack`；当前只见 main，HEAD `9b0ced5779ee36f5dd73dbe39b5ae5d57abb4b3b`，248个公开blob均与本地冻结COVTrack一致。尚未识别可核验的 ++ MGA/TCP 新模块，不能说没有官方仓库，也不能把同一旧代码另命名为 ++ 实现。证据见实时源码审计。
+- **模块边界**：MCF 联合多线索门控，MGA 用 parent/child 空间关系与cross-attention，TCP 传播同预测类别的标量confidence并恢复检测；恢复的检测可继续向后传播。Dense C-TAO-val 与稀疏官方val分开，当前本地仍缺独立dense val验证条件。
+- **研究约束**：新 cue gate、部件 attention、普通跨帧 confidence propagation 已位于已有方法邻域；冻结检测器的诊断收益不能外推为完整检测/关联系统的结果。
 
 ---
 
@@ -195,28 +197,19 @@
 | VOVTrack | ICCV25 | R50 | 39.6 | 40.9 | 19.1 | 35.3 | 40.9 | 6.5 | ✅ |
 | COVTrack | ICCV25 | R50 | 39.6 | 42.0 | — | 34.3 | 41.3 | — | ✅ |
 | OVTrack+ | NeurIPS24 | — | 38.4 | 41.0 | 18.9 | 32.5 | 38.7 | 1.8 | ❌ |
-| COVTrack++ | arXiv26 | — | — | — | — | 35.4 | — | — | ❌ |
+| COVTrack++ | arXiv26 | — | — | — | — | 35.4 | — | — | 官方链接已有；新增模块实现未核验到 |
 
 > 注：MASA 用了更强的开放词表检测器（Detic-SwinB），与 R50-FPN 的方法**不完全公平**；但即使只看关联，MASA 的 AssocA 也明显更高。
 
 ---
 
-## 12. 我从中提炼的"可改进点"（技术深度版）
+## 12. 当前研究边界与下一步
 
-### 观察 1：所有方法的 **novel ClsA 都极低（1.5~6.5）**，而 LocA 已 50~59
-→ 瓶颈不在"看见"，在"说对名字"和"别跟丢"。分类噪声又会污染外观匹配（同一物体不同帧被分到不同类，若关联用类别约束就会断轨）。
+早期 RAMS 的普通 motion/gate/EMA/rank 组合已退出主方案；其中“类别词表规模必然压低 association bisoftmax”“跨数据集落差由分数尺度造成”等解释没有同条件因果证据，不再沿用。
 
-### 观察 2：**运动线索被系统性低估**
-OVTrack 完全无运动；SLAck/OVTrack+/COVTrack 加了运动后 AssocA 普遍 +3~5。但大词表场景下**相机在动**（TAO 含大量手持/车载/YFCC），全局运动补偿比简单 IoU 更重要。
+1. **分类读出确有空间，但普通池化是控制。** 完整TAO val中发布TCC与sumlog的Base/Novel TETA分别为39.554/34.205与39.774/35.771。先固定框/ID与全部观测，避免把检测器或mask差异算成新方法收益。
+2. **时序聚合、质量权重与相关概率融合都有先例。** NAN/QAN（2017）、PFE（2019）、Redundancy Reduction Attention（2018）、Temporal-attentive Covariance Pooling（2021）、Trick & Rothkopf相关Dirichlet融合（AISTATS2022）均缩小了新颖性空间；具体原始来源见独立边界审计。
+3. **可继续验证的网络假说。** 用类别共享、可变长模型区分单帧平均偏差与自然共同误判过程；另一个候选是把class-blind身份归属与语义可靠性分开。两者尚无完成的方法与训练结果，必须超过普通quality/density/attention对照并在base训练类/视频留出上验证。
+4. **自然相似度关联不等于可用协方差。** 当前相似帧更集中错到同类别，但固定inverse-density读出未超过普通分数加权。停止该具体读出，不把负结果外推成所有可学习相关模型都不可能。
 
-### 观察 3：**关联阈值与类别数强耦合**
-OVTrack 的 `bisoftmax` 在 1203 类下分数被压到 1e-3，靠 `init_score_thr=1e-4` 这种魔法数。**分数尺度不稳定**导致跨数据集迁移极差（OVT-B 上掉到 11.5）。
-
-### 我的方案（下一节详述）
-**RAMS（Reliability-Aware Multi-cue Association with Semantic Momentum）**：
-1. **运动补偿**：估计帧间全局仿射（稀疏光流/RANSAC 或相位相关），把 tracklet 预测框变换到当前帧再做 GIoU；
-2. **可靠性门控**：用"分类置信度 p1、p1-p2 margin、熵、novel 概率质量"估计每条检测的语义可靠性，动态决定外观/运动/语义的权重（不训练大网络，轻量 MLP/规则）；
-3. **语义动量**：轨迹级类别概率 EMA + 一致性约束，抑制单帧抖动（在线版 TraCLIP）；
-4. **尺度无关的匹配分数**：用 sigmoid/rank-normalize 替代 softmax，消除类别数耦合。
-
-这三条都能在**冻结检测器**的前提下实现，算力可控，且每一条都有清晰的 ablation。
+当前阶段的完整指标、支持量与三轮核验以 [项目进度](项目进度.md) 和 [方法设计](COVTrack_论文级改进设计.md) 为准。

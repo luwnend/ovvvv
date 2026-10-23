@@ -1,0 +1,97 @@
+{
+  "status": "PASS_ALL_PRIMARY_AND_LAG_ONLY_RESULTS_EXACTLY_REPRODUCED",
+  "original_full_artifact": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_error_dependence.json",
+    "sha256": "73b535dfb64cbbca047ef3bf5f98cc4e76e260e4e846efa99a4cacfcb73280bc",
+    "bytes": 8433989
+  },
+  "corrective_full_artifact": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_error_dependence.json",
+    "sha256": "31b4e4f640dbe58f7dedf5d23ec08c2e9d9608e91d091c787612cc772c093a29",
+    "bytes": 8448689
+  },
+  "n_exact_json_equal_combinations": 16,
+  "compared_combinations": [
+    [
+      "single_gt_identity_track",
+      "exact_lag_score_rank",
+      "track_feats"
+    ],
+    [
+      "single_gt_identity_track",
+      "exact_lag_score_rank",
+      "cls_feats"
+    ],
+    [
+      "single_gt_identity_track",
+      "binned_lag_score_rank",
+      "track_feats"
+    ],
+    [
+      "single_gt_identity_track",
+      "binned_lag_score_rank",
+      "cls_feats"
+    ],
+    [
+      "mixed_track_same_gt_identity",
+      "exact_lag_score_rank",
+      "track_feats"
+    ],
+    [
+      "mixed_track_same_gt_identity",
+      "exact_lag_score_rank",
+      "cls_feats"
+    ],
+    [
+      "mixed_track_same_gt_identity",
+      "binned_lag_score_rank",
+      "track_feats"
+    ],
+    [
+      "mixed_track_same_gt_identity",
+      "binned_lag_score_rank",
+      "cls_feats"
+    ],
+    [
+      "mixed_track_different_gt_identity_same_gt_class",
+      "exact_lag_score_rank",
+      "track_feats"
+    ],
+    [
+      "mixed_track_different_gt_identity_same_gt_class",
+      "exact_lag_score_rank",
+      "cls_feats"
+    ],
+    [
+      "mixed_track_different_gt_identity_same_gt_class",
+      "binned_lag_score_rank",
+      "track_feats"
+    ],
+    [
+      "mixed_track_different_gt_identity_same_gt_class",
+      "binned_lag_score_rank",
+      "cls_feats"
+    ],
+    [
+      "mixed_track_different_gt_identity_different_gt_class",
+      "exact_lag_score_rank",
+      "track_feats"
+    ],
+    [
+      "mixed_track_different_gt_identity_different_gt_class",
+      "exact_lag_score_rank",
+      "cls_feats"
+    ],
+    [
+      "mixed_track_different_gt_identity_different_gt_class",
+      "binned_lag_score_rank",
+      "track_feats"
+    ],
+    [
+      "mixed_track_different_gt_identity_different_gt_class",
+      "binned_lag_score_rank",
+      "cls_feats"
+    ]
+  ],
+  "method": "Deep equality of complete result dictionaries, including all groups, supports, per-class values, counters and nulls, for each unchanged analysis."
+}

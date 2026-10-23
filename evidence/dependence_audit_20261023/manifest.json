@@ -1,0 +1,183 @@
+{
+  "status": "PASS_DEPENDENCE_READOUTS_FULL",
+  "elapsed_seconds": 566.3683660030365,
+  "inputs_sha256": {
+    "results/tces_audit_20261023/track_cache.npz": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+    "results/tces_audit_20261023/manifest.json": "e99246961113f62515fafdcfa99635bac854a033abf46674b33d0f2cf1beda73",
+    "/raid/datasets/ring_data/data/tao/annotations/validation_ours_v1.json": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d"
+  },
+  "output_sha256": "3c764166e42740b4d9df00272044129c55dab6cd7909a2e7b0c6e6e00d484149",
+  "script_sha256": "dba93592ec8ff507c7decb062bc0d1d11cadba67142bca5f7534702e15c9af04",
+  "fixed_configuration": {
+    "log_clip": 1e-12,
+    "budget": 4,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "kernel": "((1+L2_normalized_track_feats_cosine)/2)**4",
+    "kernel_power": 4,
+    "dependence_weights": "Exact evidence collapse, then w_u=(1/sum_v K_uv)/sum_u(1/sum_v K_uv)",
+    "exact_evidence": "Equality of stored float16 track_feats and float32 p_text/p_image/p_fused; detection score, timestamp and box excluded",
+    "fps": "Start highest-score observation; repeatedly maximize minimum cosine distance; temporal-order ties",
+    "random": "SeedSequence([seed,video_id,local_track_id]), uniform without replacement",
+    "score_weight": "Ordinary control only: normalize nonnegative detection scores; uniform if total<=1e-12. Scores are not calibrated reliability probabilities; their observed raw scale is reported in audit.",
+    "entropy_weight": "Normalize max(0,1-H(foreground_renormalized_p)/log(296)); uniform if total<=1e-12"
+  },
+  "masks": "released uses original p_fused; corrected uses fixed public-vocabulary frequency_rare_mask, not per-sample GT",
+  "labels": "20 rows: mask-major, method-family-minor. tcc released uses det_labels; corrected uses corrected-posterior foreground argmax mode; minimum category ID resolves ties.",
+  "frozen_geometry": "Only labels and track diagnostics are cached. Original boxes, identities, observations and detection scores are unchanged.",
+  "interpretation": "track_feats is raw track-head appearance before tracker fusion; shared backbone/training and selection mean it is not independent noise. cls_feats, not used here, is (text_head+img_head)/2. Similarity is an inference-visible dependence proxy, not an estimate of independent covariance. Strict duplicate invariance applies only to exact-evidence rows under the stated signature and dependence method. The three random seeds control sampling variation, not independent data replicates.",
+  "audit": {
+    "observations": 1529908,
+    "dump_files": 36371,
+    "tracks": 324639,
+    "missing_dump_images": 4,
+    "released_tcc_mismatches": 0,
+    "corrected_tcc_mismatches": 0,
+    "released_full_sumlog_label_mismatches": 0,
+    "corrected_full_sumlog_label_mismatches": 0,
+    "full_sumlog_vs_reference_max_abs_error": [
+      6.094782725085679e-05,
+      6.1008503053017193e-05
+    ],
+    "original_fusion_max_abs_error": 3.4708499230262646e-07,
+    "all_methods_single_observation_mismatches": 0,
+    "exact_collapsed_observations": 0,
+    "detection_score_min": 0.0033703709486871958,
+    "detection_score_max": 0.009095219895243645
+  },
+  "self_tests": {
+    "single_observation_all_methods": "PASS",
+    "exact_evidence_duplicate_invariance_with_nuisance_score_changes": "PASS",
+    "exact_duplicate_score_max_abs_error": 0.0
+  },
+  "fields": {
+    "key": {
+      "shape": [
+        324639,
+        2
+      ],
+      "dtype": "int64"
+    },
+    "global_track_id": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "n_obs": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "category_ids": {
+      "shape": [
+        296
+      ],
+      "dtype": "int64"
+    },
+    "method_names": {
+      "shape": [
+        20
+      ],
+      "dtype": "<U30"
+    },
+    "mask_names": {
+      "shape": [
+        2
+      ],
+      "dtype": "<U9"
+    },
+    "method_families": {
+      "shape": [
+        10
+      ],
+      "dtype": "<U20"
+    },
+    "pred_category_id": {
+      "shape": [
+        20,
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "reference_row": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "budget_selection_names": {
+      "shape": [
+        5
+      ],
+      "dtype": "<U19"
+    },
+    "budget_selection_positions": {
+      "shape": [
+        324639,
+        5,
+        4
+      ],
+      "dtype": "int16"
+    },
+    "dep_unique_count": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "dep_ess": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "dep_maxweight": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "dep_weight_entropy": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "score_weight_ess": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "entropy_weight_ess": {
+      "shape": [
+        324639,
+        2
+      ],
+      "dtype": "float64"
+    },
+    "feature_norm_min": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "feature_norm_max": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    }
+  },
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "provenance_correction": "Manifest-only correction after active ROI-head and non-in-place tracker-fusion source audit; no algorithm or cached labels changed."
+}

@@ -1,0 +1,12 @@
+{
+  "checked_at_utc": "2026-10-23T04:50:44.472020+00:00",
+  "report": "tmp_analysis/covtrackpp_code_boundary_20261023.md",
+  "report_sha256": "fb9e3b5e4e0ae07a58dd747bf1609deecffbf62e22ab87990bf5fd5e81c04c7a",
+  "upstream_head": "9b0ced5779ee36f5dd73dbe39b5ae5d57abb4b3b",
+  "all_248_remote_blobs_equal_local_HEAD": true,
+  "frozen_COVTrack_tracked_diff_empty": true,
+  "COVTrackpp_directory_created": false,
+  "TRACT_classifier_implementation_available": false,
+  "work_scope": "tmp_analysis only; no training or report mutation",
+  "wording_revision": "Training is authorized once evidence is sufficient; current evidence conditions are not yet met."
+}

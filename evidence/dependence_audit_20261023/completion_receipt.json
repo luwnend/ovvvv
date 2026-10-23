@@ -1,0 +1,492 @@
+{
+  "status": "PASS_DEPENDENCE_DIAGNOSTIC_STAGE",
+  "research_goal_complete": false,
+  "input_output_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/manifest.json": "8dd3eafbf200bc70b7820ad90fdabeac501cc9c69a1aeaa49d2e703e16d0b67c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/score_summary.json": "42e3db16b9dd57c801b31656a9feedc52c3e8ac053eb2586f12489e7ab1801ff",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_error_dependence.json": "73b535dfb64cbbca047ef3bf5f98cc4e76e260e4e846efa99a4cacfcb73280bc",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_error_dependence_summary.json": "eee2ae255a0007c56e8e8f2c5382a69c9844d9e2ebf8d890d0bba7887efe634e",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_execution_receipt.json": "abeb19c8c9a757f9a01c7d0b96b85caf5a1fee9ffc91591e8e599db042ace9db",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_error_dependence.json": "31b4e4f640dbe58f7dedf5d23ec08c2e9d9608e91d091c787612cc772c093a29",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_error_dependence_summary.json": "19f0693732563c8c9e578a353452bcaa312e4848d88dbbd21b90defec00f3e51",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_execution_receipt.json": "6d55b469bb19a6afa3b28e6754028626e9433090e3fae2a0cb65e8974c9c6197",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_protocol_deviation_receipt.json": "7575822c62e8feb4c74f55bbb43a1ffc8b3dbdc33cb10ddc6ec14284675ad966",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/official_execution_receipt.json": "549bb7a152720580f83703f3707def64f303cf8ce3fc264a01b9562025a855ed",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/build.log": "702dfb09714e08b23472bdf4ae6ec8508cb155b22129633f12b23767c340d96b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/released.dep_inverse_density/receipt.json": "97c240a107beb5a812aca0d7d03300f8c7dbb0f928664681f1f54ebd76e6e574",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/eval_released_dep.log": "ddf11fa94957d33db1bb88e6eb7629702e706f4d1c19bc690cf74eca47b27848",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected.dep_inverse_density/receipt.json": "07636d8f465411ad8c2e120532610459809eabaedf67b2cc93cd015dbeef7fe7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/eval_corrected_dep.log": "5ff51ec651f349d4f82355ba7a602d0d189b99953b87a0ad73f7fe2ab8178a31",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/evaluate_dependence_readout.py": "b098593094fdac1a07b4fcbf6ad8bd5e620f73df2a06e45c78930f7905bc2fd8",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/evaluate_track_readouts.py": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_numerical_preflight.json": "4db4dbf8021ad3f0d0525df37a5c58b42ef80c492b0e29dbf3b01da1842ccb72",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_mapping_preflight.json": "853a5decac35e7c25582bdc015f151675d6c777de8db7ff5b795f2eef8ffc2b9",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_numerical_preflight.json": "6cf7e0713d1f906a04658ba6cc4aaf80a6fae5953a7a0a4b742779a044b8f499",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_mapping_preflight.json": "e8d90d70b19d0185bd64c9b3dbe82fb8e8569eeaf50fba43ad72b32834390db3",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_natural_dependence.py": "c3eb25b4123fdeab49bc407996df0fbc8f69e6c6590f2ce78b910fdbafa50045",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_natural_dependence_posterior01.py": "f1edad4dc9ae7373eb9c004b1bd37abff8ac0836738f3851eeb355fbcd7f2820",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/primary_reproduction_check.json": "a9fe1e9480522acc2b8609cd05b14790fa2d342c0ea1dc7f6ebdeda32b605154",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_dependence_readouts.py": "dba93592ec8ff507c7decb062bc0d1d11cadba67142bca5f7534702e15c9af04",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/teta_events/receipt.json": "6e89388fbb060edffbcb86733800c9276d5d0fd2dc2cb088d0a7fe4a436ea980",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_teta_classification_events.py": "c390794cf8e3e743158840e399f923dbbbef66bae354f2bcc60b3593604939e6",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readout_cache.npz": "3c764166e42740b4d9df00272044129c55dab6cd7909a2e7b0c6e6e00d484149",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/per_class_metrics.npz": "750c814d16d9868f43db176c1fc01c4cbf5ac7af29f4072a97b796195b8a8221",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/teta_events/classification_events.npz": "fc11440c3ce750ee4918e1290e32cc5b6a20c4fde20aca1ae70f19fee6e0e996",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/track_cache.npz": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/manifest.json": "e99246961113f62515fafdcfa99635bac854a033abf46674b33d0f2cf1beda73",
+    "/raid/datasets/ring_data/data/tao/annotations/validation_ours_v1.json": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/annotations/validation_ours_v1.json": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/eval.py": "8219b9a2858faf0c166bff2fa1d25eb96a96578329916d2e0196f84e5aadbbcc",
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/metrics/teta.py": "47a132d92b2e9c92fd47f9e36140278e7ac263418539b606bf58ceead20d97d4",
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/datasets/tao.py": "c174d9cd3df6962474db588eff7cb3e82736d9a5b387f8653cefa603b9a7a6ab",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/receipt.json": "65660c8fe8590796d2a7c8930224ba113c931bc6b7b195b1c6e9d8a5d42ba87b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/classification_counts.npz": "ccf49aa564a10def1d5140517630b130ac4b095b2729151596a781c5dc8ab022",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/metrics.json": "58ce4060e886b1572ddd7b0f29d3847955b083aa56af5aaadb9b5faef6c697c0",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/receipt.json": "719106e4be00b09aacdb910e1c4bdf50ba5a1bcfc146d953e71342d0491f7b5f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/classification_counts.npz": "f3b62da7498c8bd45a643d6bb3272bcb1b6150c36549907a737629bb7de829ef",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/metrics.json": "e7b363f10307edd98826697be1e00beef9f32ea95b853334756f0768c64bc140",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/receipt.json": "d8e4bed654e13357feafcf91cdeaaa2dea2849f83d6d526e6cf9f1920f675c03",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/classification_counts.npz": "d8f5972136b36b3664e44796a5f5aeaed4b150515a97d7157392fbddee232c36",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/metrics.json": "7738a37a198786673aae5f1b4dc2033b2d159e7c263c298d5317e83cd6494d2f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/receipt.json": "9379a2ac15c8683a49ac06f5560c66002c5e5b4c59fe7b238759c0f4ead5c10c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/classification_counts.npz": "e27097a021fdd0055d217cfb986cc7bd268e04f2529b6f7e83459725e79c9754",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/metrics.json": "eb1c186e0604c3c7cf33e3cf41d708713b5c659beddf710ceac470cfe33a0894",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/receipt.json": "f617675dfd315c679851284481b1f9b030ef12a64ef5b9004afcd174e7bbba4f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/classification_counts.npz": "983cc4a6e135a0a172bcd822d1d591d6671050d43c4579e5dd725e97ac83cd41",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/metrics.json": "275415eba381d268a9d2c0becafc4b92fb16abe9bea96ffd011b99da5a5c6859",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected_mask_sumlog/receipt.json": "517257eb5f9b5b50939e3856ba5a5cdc6de7a54c4420311885852b5760d28abd",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected_mask_sumlog/classification_counts.npz": "e007205ebc096ea2988a8701e14865b855eb6c6ba8bea36d8bb4b22e497f4440",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected_mask_sumlog/metrics.json": "56595cf8c7437f34897f93d7235fd7f4377b466e2588f58f5bbbbb85229a6771",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/score_dependence_readouts.py": "5e36843ad56e9cf79a8381d19af045d8dd969171ddf967c0a2e378cae2f48952",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/scoreinput.npz": "3b7bbf8d89370849b7beffe92b1c0e98cccca2da153c9d390f81903cb4492c04",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/aggregate_raw.pkl": "a88b99bdd6cbd5f0ffa65cbdd52dc718347efa6fcd659da305b05e63e4de33b7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected_mask_sumlog/tao_track.json": "e9ac7de3b75951d45802c2b9cda5c6cc7e1e03e58a190d4a99f5131e231e0c79",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected_mask_sumlog/aggregate_raw.pkl": "09a9f59679cae3b2393fe49fd124db7b26f70b66b6c6f9f8a993380661f9f605",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected_mask_sumlog/OVTrack/teta_summary_results.pth": "cac3d41482f27e985dbe49eb5c147efb615c858ba4ccd7e6e2351823aee1851f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/corrected.full_sumlog.counts.npz": "f0291bcea9040550a8aa5e6aa9cf36487efb877f96b29ddd7a4a029366e4a8cd",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/released.dep_inverse_density/metrics.json": "a1c19a47151343a03336215f0f26355fb7809d50cad1977d15aadb460cc02fcb",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/released.dep_inverse_density/tao_track.json": "8b225f2c27f8107722e01d3f185670566398d26cbaaf2f9de107d7e9411ef247",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/released.dep_inverse_density/classification_counts.npz": "c9a9a9639b57b2226bd512412a9fe15d4dad2c5d72dc83a870d73236ec079e13",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/released.dep_inverse_density/aggregate_raw.pkl": "db5fb1578eb600e9bb606985b4c1a877e71ed7cd451a519f1f877e9afe75d3c3",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/released.dep_inverse_density/OVTrack/teta_summary_results.pth": "256068f06869ac2c90e4876582678e99794954e5940d2d81954cc7d53a20fafc",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/released.dep_inverse_density.counts.npz": "995f5965a686d736612155f143640d23777a5a2b53137523034db3ba3bc7961b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected.dep_inverse_density/metrics.json": "5e3b435fa71a13e0ce6853986f11bdc682ef8432a56a7e3631d5a5067e6e7abf",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected.dep_inverse_density/tao_track.json": "bd14dc4ff37a8aa689938ebf6a2b58d618b178c606ad57b6e52a6a5b56130aeb",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected.dep_inverse_density/classification_counts.npz": "ef8103d362944ef28204efaf4fc5ad0cbf56b60c1a68bd2f219af70b6a83398c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected.dep_inverse_density/aggregate_raw.pkl": "468b6807cc4f9cc84d8944ab49728f1095429472c53152eaac8856351c7a40d6",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected.dep_inverse_density/OVTrack/teta_summary_results.pth": "a5d75992419de8bd580312b742fdae9473c24022723b220e26c663373aae4ad7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/corrected.dep_inverse_density.counts.npz": "ee4590e16db6e76fe9d36ad3b0a1200bb01c16de52da945dd4e71996bae39b35",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/released.tcc.counts.npz": "f52b1830b3614ed2aa93379d7fa8a91f6469ca042659d4dc1d523f5d56eaea93",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/released.full_sumlog.counts.npz": "f49f51777ddf0a01d4d3626717566c4b5398c22c45ee82942803656e7b26fa13",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/released.score_weighted_log.counts.npz": "0f783a475c3260fd7a532657ccbda290b5e1508c2248fb3dabcaa316c995b596",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/released.entropy_weighted_log.counts.npz": "e56c37416a0a522a888e587bf8c12e11e272da121bc3032d3d147e37c148dd6b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/released.budget_random_seed0.counts.npz": "15e3022481c8072e60f0c5a4bfbfb61cb9bdbe1543bcde60d7da2b40495d5b19",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/released.budget_random_seed1.counts.npz": "dab275244f3d640f4c2ee2d909dda90da23c2fd7643b7195874209bbcb176ab4",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/released.budget_random_seed2.counts.npz": "d101ad93481cc7d92ebc57265e17bdf6745cc2c2730f53dc3ce85fdd22130c99",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/released.budget_topscore.counts.npz": "1f802ab1d31be49339d87d584520a235bf288353dfe29a736f575160465a9af8",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/released.budget_fps_track.counts.npz": "0a3988a07e78a4aafe51a5f3ffdc1b57c4b9a166a5df192f296176a06da6c0cd",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/corrected.tcc.counts.npz": "30c80a21bbc6f131beb91141f331d8514758b4d8c53600ffb83234b7bb4414eb",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/corrected.score_weighted_log.counts.npz": "7444d4fc19f3caf344a84bbebf11f27e59394100da2e05dd1598466a6bbe96fb",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/corrected.entropy_weighted_log.counts.npz": "027c583caa5a888b5881fff21bcf72b019f12d129f480919fa2f2598c4ae5999",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/corrected.budget_random_seed0.counts.npz": "06026d581bd2a4b93e2d18d56716b0eaf85050a20d6e518ff263bdbdac333abf",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/corrected.budget_random_seed1.counts.npz": "16cb03369dd989a07ba92abb4e45d800fc82ec4d1f04a0dee536bcb5c434d4fc",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/corrected.budget_random_seed2.counts.npz": "d9284beac9d9266b14c49e1690703daa2d74cba8c7b339e992c00770659a0e19",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/corrected.budget_topscore.counts.npz": "6affc84dcbd158f1a7ac0b5c6075acbf493d8f0575eca889b8f1b1d333a4a85b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/corrected.budget_fps_track.counts.npz": "6df8eab97127e61d7aebe1ff90ed2eda3d748d3ae82e50b0f94c44c0cb57dbe0",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/protected_before.json": "b4920b978473c3f49f78ee8c54bd16b3f6d8000a405fd4a0508d3d770e31b2ea",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/OVTrack/teta_summary_results.pth": "621b769b60f88816be02c9cb79339b493ef60f17717a135cf663e3599a8a1d62",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base/configs/uncertainty-ovtrack-teta/ovtrack_r50_ctao_train.py": "d8ae926e540c327d4baa2ced8cb1338f70d6a67eb73d2fb02de4d79893cecc08",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/covtrack_ctao_train20_bs24_20261022/ovtrack_r50_ctao_train.py": "b907b90fe73d6c515d3487efeb7d921dbbc874b4ef4a840cecebb50a1e9a169d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/scripts/train_covtrack20.py": "0beeac07b81caa5c1be3ee2232adee2d4d78a554bbac310b233e2d567395312c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/repos/COVTrack/ovtrack/models/roi_heads/class_name.py": "6f50d7b3f16eef96e15b6cfbf97a53b195e26dbc34df51e7679645c99e6937d9",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/checkpoint_receipt.json": "b9ac214ce1e09f43f6dc225104d3c5d36aaafb6abde4fd0b5d3b1a2c2aaee4a4",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2/saved_models/ctao_public_res/ctao_public.pth": "e4d0b65798844280ea13943e580ce6233ae5d331c4aa1d38eb226c3208dd567c"
+  },
+  "official_vs_replay": {
+    "corrected_mask_sumlog": {
+      "all_class_video_alpha_TP_FN_FP_exact": true,
+      "raw_geometry_association_arrays_exact": true,
+      "all_replayed_split_metrics_abs_error_below": 1e-10
+    },
+    "released.dep_inverse_density": {
+      "all_class_video_alpha_TP_FN_FP_exact": true,
+      "raw_geometry_association_arrays_exact": true,
+      "all_replayed_split_metrics_abs_error_below": 1e-10
+    },
+    "corrected.dep_inverse_density": {
+      "all_class_video_alpha_TP_FN_FP_exact": true,
+      "raw_geometry_association_arrays_exact": true,
+      "all_replayed_split_metrics_abs_error_below": 1e-10
+    }
+  },
+  "actual_execution_receipts": {
+    "natural": {
+      "status": "COMPLETE_FULL_NATURAL_DEPENDENCE_DIAGNOSTIC_WITH_OBSERVED_TERMINAL_EXITS",
+      "created_at_utc": "2026-10-23T05:00:55.341492+00:00",
+      "script": {
+        "path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_natural_dependence.py",
+        "sha256": "c3eb25b4123fdeab49bc407996df0fbc8f69e6c6590f2ce78b910fdbafa50045"
+      },
+      "python": "/home/chenhc/miniconda3/envs/covtrack/bin/python",
+      "stages": {
+        "numerical": {
+          "terminal_exit_code": 0,
+          "terminal_exit_observed": true,
+          "exec_session_id": null,
+          "artifact_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_numerical_preflight.json",
+          "artifact_sha256": "4db4dbf8021ad3f0d0525df37a5c58b42ef80c492b0e29dbf3b01da1842ccb72",
+          "status_observed": "PASS_INDEPENDENT_HAND_WORKED_NUMERICAL_PREFLIGHT"
+        },
+        "mapping": {
+          "terminal_exit_code": 0,
+          "terminal_exit_observed": true,
+          "exec_session_id": 37186,
+          "artifact_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_mapping_preflight.json",
+          "artifact_sha256": "853a5decac35e7c25582bdc015f151675d6c777de8db7ff5b795f2eef8ffc2b9",
+          "status_observed": "PASS_INDEPENDENT_OBSERVATION_GT_MAPPING_PREFLIGHT"
+        },
+        "full": {
+          "terminal_exit_code": 0,
+          "terminal_exit_observed": true,
+          "exec_session_id": 75302,
+          "artifact_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_error_dependence.json",
+          "artifact_sha256": "73b535dfb64cbbca047ef3bf5f98cc4e76e260e4e846efa99a4cacfcb73280bc",
+          "status_observed": "PASS_FULL_NATURAL_ERROR_DEPENDENCE_DESCRIPTIVE_AUDIT"
+        }
+      },
+      "terminal_exit_evidence": "Numerical exec returned exit_code 0 directly. Mapping exec session 37186 and full exec session 75302 were each polled with write_stdin until returned exit_code 0; these are observed terminal codes, not inferred from PASS text.",
+      "post_result_verification": {
+        "terminal_exit_code": 0,
+        "scope_control_feature_combinations_checked": 24,
+        "all_near_far_denominators_equal": true,
+        "base_novel_pair_partitions_sum_to_all": true,
+        "per_class_half_endpoint_weights_sum_to_pair_denominators": true,
+        "unsupported_novel_null_checks": true,
+        "independent_scope_all_pair_counts": {
+          "single_gt_identity_track": 425198,
+          "mixed_track_same_gt_identity": 95849,
+          "mixed_track_different_gt_identity_same_gt_class": 40420,
+          "mixed_track_different_gt_identity_different_gt_class": 8856
+        },
+        "flat_or_boundary_tied_eligible_strata": 0,
+        "sources_rehashed_after_completion": {
+          "annotation": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+          "baseline": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+          "track_cache": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+          "scoreinput": "3b7bbf8d89370849b7beffe92b1c0e98cccca2da153c9d390f81903cb4492c04"
+        },
+        "script_unchanged_after_preflights": true,
+        "protected_source_checks_equal_before_after": true
+      },
+      "support": {
+        "total_tracks": 10219,
+        "total_observations": 65711,
+        "single_gt_identity_tracks": 8573,
+        "single_gt_identity_observations": 48851,
+        "mixed_gt_identity_tracks": 1646,
+        "mixed_gt_identity_observations": 16860,
+        "scope_tracks_with_at_least_one_pair": {
+          "single_gt_identity_track": 4757,
+          "mixed_track_same_gt_identity": 1373,
+          "mixed_track_different_gt_identity_same_gt_class": 1390,
+          "mixed_track_different_gt_identity_different_gt_class": 316
+        },
+        "scope_all_pair_counts": {
+          "single_gt_identity_track": 425198,
+          "mixed_track_same_gt_identity": 95849,
+          "mixed_track_different_gt_identity_same_gt_class": 40420,
+          "mixed_track_different_gt_identity_different_gt_class": 8856
+        }
+      },
+      "elapsed_seconds_full": 232.49052873812616,
+      "logs": {
+        "mapping": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_mapping_preflight.log",
+        "full": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_error_dependence.log"
+      },
+      "limitations": [
+        "Nonofficial matched classification diagnosis; not TETA/ClsA.",
+        "GT is diagnostic-only and generates no candidate labels.",
+        "Natural same-wrong-category association is descriptive, not centered conditional residual covariance, a causal effect, or candidate efficacy.",
+        "Mixed-track results retain actual GT-identity-pair difficulty composition as a competing explanation; primary single-identity scope avoids that mixture.",
+        "Original dump continuity is checked by exact filename/size inventory, metadata/counts, feature/posterior numerical validation, and full matched geometry; this receipt does not claim a per-dump full-content hash against a historical inventory."
+      ]
+    },
+    "posterior_boundary_correction": {
+      "status": "COMPLETE_APPROVED_POSTERIOR_BOUNDARY_CORRECTION_WITH_OBSERVED_TERMINAL_EXITS",
+      "created_at_utc": "2026-10-23T05:09:31.398078+00:00",
+      "script": {
+        "path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_natural_dependence_posterior01.py",
+        "sha256": "f1edad4dc9ae7373eb9c004b1bd37abff8ac0836738f3851eeb355fbcd7f2820"
+      },
+      "python": "/home/chenhc/miniconda3/envs/covtrack/bin/python",
+      "stages": {
+        "numerical": {
+          "terminal_exit_code": 0,
+          "terminal_exit_observed": true,
+          "exec_session_id": null,
+          "artifact_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_numerical_preflight.json",
+          "artifact_sha256": "6cf7e0713d1f906a04658ba6cc4aaf80a6fae5953a7a0a4b742779a044b8f499",
+          "status_observed": "PASS_INDEPENDENT_HAND_WORKED_NUMERICAL_PREFLIGHT"
+        },
+        "mapping": {
+          "terminal_exit_code": 0,
+          "terminal_exit_observed": true,
+          "exec_session_id": 76473,
+          "artifact_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_mapping_preflight.json",
+          "artifact_sha256": "e8d90d70b19d0185bd64c9b3dbe82fb8e8569eeaf50fba43ad72b32834390db3",
+          "status_observed": "PASS_INDEPENDENT_OBSERVATION_GT_MAPPING_PREFLIGHT"
+        },
+        "full": {
+          "terminal_exit_code": 0,
+          "terminal_exit_observed": true,
+          "exec_session_id": 33159,
+          "artifact_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_error_dependence.json",
+          "artifact_sha256": "31b4e4f640dbe58f7dedf5d23ec08c2e9d9608e91d091c787612cc772c093a29",
+          "status_observed": "PASS_FULL_NATURAL_ERROR_DEPENDENCE_DESCRIPTIVE_AUDIT"
+        }
+      },
+      "terminal_exit_evidence": "Numerical stage returned exit_code 0 directly. Mapping session 76473 and full session 33159 each polled with write_stdin until actual exit_code 0.",
+      "approved_posterior_control": {
+        "mean_edges": [
+          0,
+          0.1,
+          0.3,
+          0.6,
+          1
+        ],
+        "absolute_difference_cutpoint": 0.1
+      },
+      "deviation_corrected": {
+        "original_mean_edges": [
+          0,
+          0.25,
+          0.5,
+          0.75,
+          1
+        ],
+        "original_absolute_difference_cutpoint": 0.25,
+        "reason": "The recovered agent summary omitted earlier approved numerical posterior boundaries; choosing quartile/.25 was an implementation deviation. Choices were fixed in original code before original numerical/mapping preflights and before the first full result.",
+        "original_artifacts_preserved": true,
+        "primary_exact_lag_analysis_affected": false
+      },
+      "post_result_verification": {
+        "terminal_exit_code": 0,
+        "n_combinations_checked": 24,
+        "boundary_contract_terminal_exit_code": 0,
+        "boundary_contract": {
+          "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/boundary_contract.json",
+          "sha256": "9f4fbc102f23f8a1cebdb0041cc65444e44ab12df212385a5d5a0816eb84624c",
+          "bytes": 946
+        },
+        "primary_and_lag_only_exact_reproduction": {
+          "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/primary_reproduction_check.json",
+          "sha256": "a9fe1e9480522acc2b8609cd05b14790fa2d342c0ea1dc7f6ebdeda32b605154",
+          "bytes": 2584
+        },
+        "source_hashes_refreshed_after_completion": {
+          "annotation": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+          "baseline": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+          "track_cache": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+          "scoreinput": "3b7bbf8d89370849b7beffe92b1c0e98cccca2da153c9d390f81903cb4492c04"
+        },
+        "protected_sources_unchanged": true,
+        "unsupported_novel_comparisons_null": true,
+        "per_class_endpoint_weights_and_group_pair_partitions_verified": true,
+        "all_eligible_flat_or_boundary_tied_strata": 0
+      },
+      "summary_artifact": {
+        "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_error_dependence_summary.json",
+        "sha256": "19f0693732563c8c9e578a353452bcaa312e4848d88dbbd21b90defec00f3e51",
+        "bytes": 609316
+      },
+      "support": {
+        "total_tracks": 10219,
+        "total_observations": 65711,
+        "single_gt_identity_tracks": 8573,
+        "single_gt_identity_observations": 48851,
+        "mixed_gt_identity_tracks": 1646,
+        "mixed_gt_identity_observations": 16860,
+        "scope_tracks_with_at_least_one_pair": {
+          "single_gt_identity_track": 4757,
+          "mixed_track_same_gt_identity": 1373,
+          "mixed_track_different_gt_identity_same_gt_class": 1390,
+          "mixed_track_different_gt_identity_different_gt_class": 316
+        },
+        "scope_all_pair_counts": {
+          "single_gt_identity_track": 425198,
+          "mixed_track_same_gt_identity": 95849,
+          "mixed_track_different_gt_identity_same_gt_class": 40420,
+          "mixed_track_different_gt_identity_different_gt_class": 8856
+        }
+      },
+      "elapsed_seconds_full": 233.76311448216438,
+      "limitations": [
+        "Single-GT-ID means one GT identity among matched observations only; purity of unmatched trajectory segments is not established.",
+        "Descriptive repeated wrong-category association; not centered conditional residual covariance, a causal effect, or candidate efficacy.",
+        "Mixed-track scopes retain actual GT-identity-pair difficulty composition confounding."
+      ]
+    },
+    "official": {
+      "status": "PASS_FULL_OFFICIAL_EXECUTION",
+      "recorded_at": "2026-10-23T13:12:12.414443+08:00",
+      "observed_execution_steps": [
+        {
+          "name": "build_all_readouts",
+          "exec_session_id": 39920,
+          "observed_by": "tools.write_stdin",
+          "observed_exit_code": 0,
+          "log": "build.log",
+          "log_sha256": "702dfb09714e08b23472bdf4ae6ec8508cb155b22129633f12b23767c340d96b",
+          "manifest": "manifest.json",
+          "manifest_sha256": "8dd3eafbf200bc70b7820ad90fdabeac501cc9c69a1aeaa49d2e703e16d0b67c",
+          "cache": "readout_cache.npz",
+          "cache_sha256": "3c764166e42740b4d9df00272044129c55dab6cd7909a2e7b0c6e6e00d484149",
+          "builder_script_sha256": "dba93592ec8ff507c7decb062bc0d1d11cadba67142bca5f7534702e15c9af04"
+        },
+        {
+          "name": "released.dep_inverse_density",
+          "exec_session_id": 79653,
+          "observed_by": "tools.write_stdin",
+          "observed_exit_code": 0,
+          "cores": 8,
+          "receipt": "readouts/released.dep_inverse_density/receipt.json",
+          "receipt_sha256": "97c240a107beb5a812aca0d7d03300f8c7dbb0f928664681f1f54ebd76e6e574",
+          "log": "eval_released_dep.log",
+          "log_sha256": "ddf11fa94957d33db1bb88e6eb7629702e706f4d1c19bc690cf74eca47b27848",
+          "result_sha256": "8b225f2c27f8107722e01d3f185670566398d26cbaaf2f9de107d7e9411ef247",
+          "metrics_sha256": "a1c19a47151343a03336215f0f26355fb7809d50cad1977d15aadb460cc02fcb",
+          "counts_sha256": "c9a9a9639b57b2226bd512412a9fe15d4dad2c5d72dc83a870d73236ec079e13",
+          "aggregate_raw_sha256": "db5fb1578eb600e9bb606985b4c1a877e71ed7cd451a519f1f877e9afe75d3c3",
+          "summary_sha256": "256068f06869ac2c90e4876582678e99794954e5940d2d81954cc7d53a20fafc",
+          "wrapper_script_sha256": "b098593094fdac1a07b4fcbf6ad8bd5e620f73df2a06e45c78930f7905bc2fd8",
+          "shared_evaluator_script_sha256": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9",
+          "protected_sources_unchanged_after_evaluation": true,
+          "all_noncategorical_fields_and_row_order_equal": true,
+          "noncategory_ordered_rows_sha256": "d8661256a1616efbd43130fde66f2d817c7779f2c09df37bb1d74dbbea39450e"
+        },
+        {
+          "name": "corrected.dep_inverse_density",
+          "exec_session_id": 53457,
+          "observed_by": "tools.write_stdin",
+          "observed_exit_code": 0,
+          "cores": 8,
+          "receipt": "readouts/corrected.dep_inverse_density/receipt.json",
+          "receipt_sha256": "07636d8f465411ad8c2e120532610459809eabaedf67b2cc93cd015dbeef7fe7",
+          "log": "eval_corrected_dep.log",
+          "log_sha256": "5ff51ec651f349d4f82355ba7a602d0d189b99953b87a0ad73f7fe2ab8178a31",
+          "result_sha256": "bd14dc4ff37a8aa689938ebf6a2b58d618b178c606ad57b6e52a6a5b56130aeb",
+          "metrics_sha256": "5e3b435fa71a13e0ce6853986f11bdc682ef8432a56a7e3631d5a5067e6e7abf",
+          "counts_sha256": "ef8103d362944ef28204efaf4fc5ad0cbf56b60c1a68bd2f219af70b6a83398c",
+          "aggregate_raw_sha256": "468b6807cc4f9cc84d8944ab49728f1095429472c53152eaac8856351c7a40d6",
+          "summary_sha256": "a5d75992419de8bd580312b742fdae9473c24022723b220e26c663373aae4ad7",
+          "wrapper_script_sha256": "b098593094fdac1a07b4fcbf6ad8bd5e620f73df2a06e45c78930f7905bc2fd8",
+          "shared_evaluator_script_sha256": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9",
+          "protected_sources_unchanged_after_evaluation": true,
+          "all_noncategorical_fields_and_row_order_equal": true,
+          "noncategory_ordered_rows_sha256": "d8661256a1616efbd43130fde66f2d817c7779f2c09df37bb1d74dbbea39450e"
+        }
+      ],
+      "execution_order": "build 39920 exit0; released official 79653 exit0; corrected official 53457 exit0; two official jobs ran serially",
+      "wrapper_script": "tmp_analysis/evaluate_dependence_readout.py",
+      "wrapper_script_sha256": "b098593094fdac1a07b4fcbf6ad8bd5e620f73df2a06e45c78930f7905bc2fd8",
+      "shared_evaluator_script_sha256": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9",
+      "full_geometry_score_identity_order_parity_verified_observations_per_rule": 1529908,
+      "metrics": {
+        "released.dep_inverse_density": {
+          "combined": {
+            "n_classes": 296,
+            "TETA": 38.974767448410034,
+            "LocA": 57.27530465128391,
+            "AssocA": 41.83916861382982,
+            "ClsA": 17.80982908011636,
+            "LocRe": 59.73337888250619,
+            "LocPr": 79.65758899966852,
+            "AssocRe": 46.76477544694931,
+            "AssocPr": 67.1313431605742,
+            "ClsRe": 27.781415140859274,
+            "ClsPr": 25.833186623214804
+          },
+          "base": {
+            "n_classes": 261,
+            "TETA": 39.381976127138685,
+            "LocA": 57.15495890000262,
+            "AssocA": 41.96026115954742,
+            "ClsA": 19.030708321866054,
+            "LocRe": 59.654620938336805,
+            "LocPr": 79.62129104570528,
+            "AssocRe": 46.8247016121858,
+            "AssocPr": 67.32891904628137,
+            "ClsRe": 29.955688819140672,
+            "ClsPr": 27.219446275240436
+          },
+          "novel": {
+            "n_classes": 35,
+            "TETA": 35.93815415846208,
+            "LocA": 58.17274011083888,
+            "AssocA": 40.93616420147874,
+            "ClsA": 8.70555816306864,
+            "LocRe": 60.320688123312294,
+            "LocPr": 79.92826802779427,
+            "AssocRe": 46.31789747190006,
+            "AssocPr": 65.65799155573018,
+            "ClsRe": 11.567545711389444,
+            "ClsPr": 15.495650360966504
+          }
+        },
+        "corrected.dep_inverse_density": {
+          "combined": {
+            "n_classes": 296,
+            "TETA": 39.19143636256672,
+            "LocA": 57.27530465128391,
+            "AssocA": 41.83916861382982,
+            "ClsA": 18.45983582258637,
+            "LocRe": 59.73337888250619,
+            "LocPr": 79.65758899966852,
+            "AssocRe": 46.76477544694931,
+            "AssocPr": 67.1313431605742,
+            "ClsRe": 28.11102285983696,
+            "ClsPr": 26.841652321766794
+          },
+          "base": {
+            "n_classes": 261,
+            "TETA": 39.57269108899052,
+            "LocA": 57.15495890000262,
+            "AssocA": 41.96026115954742,
+            "ClsA": 19.602853207421497,
+            "LocRe": 59.654620938336805,
+            "LocPr": 79.62129104570528,
+            "AssocRe": 46.8247016121858,
+            "AssocPr": 67.32891904628137,
+            "ClsRe": 29.496488073736664,
+            "ClsPr": 28.584359590577428
+          },
+          "novel": {
+            "n_classes": 35,
+            "TETA": 36.34836540266354,
+            "LocA": 58.17274011083888,
+            "AssocA": 40.93616420147874,
+            "ClsA": 9.936191895673007,
+            "LocRe": 60.320688123312294,
+            "LocPr": 79.92826802779427,
+            "AssocRe": 46.31789747190006,
+            "AssocPr": 65.65799155573018,
+            "ClsRe": 17.779410836184923,
+            "ClsPr": 13.846035260064594
+          }
+        }
+      },
+      "scope": "Only new dependence_audit_20261023 outputs; no baseline/cache/training modifications. This receipt records process completion and artifact hashes; independent replay-count and raw Loc/Assoc parity are performed by the parent audit."
+    }
+  },
+  "root_actual_terminal_polls": {
+    "classification_event_cache_session_1308_exit": 0,
+    "twenty_readouts_scoring_session_56085_exit": 0
+  },
+  "natural_summary_sha256": "eee2ae255a0007c56e8e8f2c5382a69c9844d9e2ebf8d890d0bba7887efe634e",
+  "protected_after_sha256": "a8d8c1ef9cc8ce4ac374df4883a135c992695112b3497b9d1afc8e0d477663a2",
+  "verifier_sha256": "c2ddfb397072d8f090a9c951c67a474675e5a0eaa24298610890a6924509cb6d",
+  "elapsed_seconds": 14.648850781843066,
+  "conclusion_scope": "Current fixed appearance inverse-density readout is dominated by ordinary score weighting in both masks; natural same-error concentration is descriptive and leaves learned conditional error-process hypothesis unproven",
+  "no_new_training_this_stage": true
+}
