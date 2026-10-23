@@ -1,0 +1,194 @@
+{
+  "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_COORDINATOR_SEAL_SYNTHETIC",
+  "checks": [
+    "actual_seal_models_verify_models_verify_model_and_global_seal_complete_15model_positive_control",
+    "actual_evaluator_positive_gate_reaches_only_the_explicit_postseal_data_import_boundary",
+    "actual_evaluator_entry_rejection_matrix_before_data_or_identity_import",
+    "existing_global_seal_preserved_by_nonreplacing_publication"
+  ],
+  "rejection_matrix": [
+    {
+      "case": "missing_global_seal",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "FileNotFoundError",
+      "reason": "[Errno 2] No such file or directory: '<temporary>/missing_global_seal/GT_free_OOF_predictions_sealed.json'"
+    },
+    {
+      "case": "global_14models",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Global OOF seal absent"
+    },
+    {
+      "case": "global_missing_seed",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Global dimensions differ"
+    },
+    {
+      "case": "missing_fold_directory",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "All fifteen model directories are required before supervision"
+    },
+    {
+      "case": "missing_entire_seed",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "All fifteen model directories are required before supervision"
+    },
+    {
+      "case": "unexpected_model_directory",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "All fifteen model directories are required before supervision"
+    },
+    {
+      "case": "missing_score_member",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Sealed model member changed: shards/v1_lag1.scores.npy"
+    },
+    {
+      "case": "missing_checkpoint",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Sealed model member changed: checkpoint.json"
+    },
+    {
+      "case": "unexpected_model_file",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Unexpected or missing single model members"
+    },
+    {
+      "case": "unrepinned_score_tamper",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Sealed model member changed: shards/v1_lag1.scores.npy"
+    },
+    {
+      "case": "nine_score_columns_rehashed_model",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Full score shape/dtype differs"
+    },
+    {
+      "case": "float32_scores_rehashed_model",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Full score shape/dtype differs"
+    },
+    {
+      "case": "missing_arm_metadata",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Incomplete arms or epochs"
+    },
+    {
+      "case": "wrong_fold_metadata",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Fold lineage differs"
+    },
+    {
+      "case": "incomplete_head_epoch",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Incomplete arms or epochs"
+    },
+    {
+      "case": "missing_heldout_source",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Fold lineage differs"
+    },
+    {
+      "case": "incomplete_frame_receipts",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Model frame coverage/raw parent parity absent"
+    },
+    {
+      "case": "unknown_candidates_filtered",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Full retained population not sealed"
+    },
+    {
+      "case": "raw_parent_parity_absent",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Model frame coverage/raw parent parity absent"
+    },
+    {
+      "case": "wrong_candidate_totals",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "OOF candidate totals differ"
+    },
+    {
+      "case": "single_model_pending_status",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Incomplete single model"
+    },
+    {
+      "case": "global_columns_tamper",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Global dimensions differ"
+    },
+    {
+      "case": "missing_receipt_member_hash_selfconsistent",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Missing held-out prefix/empty/full pair receipts"
+    },
+    {
+      "case": "pair_offset_member_hash_selfconsistent",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Missing/nonexact held-out candidate block or offset"
+    },
+    {
+      "case": "adapter_trace_49epochs_member_hash_selfconsistent",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Actual adapter schedule incomplete"
+    },
+    {
+      "case": "head_trace_19epochs_member_hash_selfconsistent",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Actual adapter schedule incomplete"
+    },
+    {
+      "case": "head_actual_steps_incomplete",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Actual head schedule incomplete"
+    },
+    {
+      "case": "final_short_batch_coverage_wrong",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Actual epoch/batch coverage incomplete"
+    },
+    {
+      "case": "changed_input_pin",
+      "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+      "exception": "RuntimeError",
+      "reason": "Pinned bytes changed: <temporary>/pins/input.txt"
+    }
+  ],
+  "rejected_cases": 29,
+  "coordinator_sha256": "b291c36aeb3ff92ae375954fb6033b35ecdba46c7a88728cc4b91c8048558133",
+  "evaluator_sha256": "49c3393c44c5f8eb002fa61f28174293552af6eec859175740f3e4d75b858ae6",
+  "script_sha256": "be8017542893aefbfa47f84e33b726ec848bbe495326046d90dfa6de0c5cc3eb",
+  "real_cache_or_identity_opened": false,
+  "real_training_executed": false,
+  "generated_models": 15,
+  "score_fixture_only": true,
+  "limits": "Structural complete-model publication and pre-identity gate audit only; independent numerical output audit validates tensor state and learned values."
+}

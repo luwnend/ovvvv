@@ -1,0 +1,13 @@
+{
+  "status": "PASS_IDENTITY_SPACETIME_OOF_EVALUATOR_SYNTHETIC",
+  "round": 2,
+  "checks": [
+    "full_temporary_OOF_shards_receipts_two_scopes_two_populations_union_zero_sources_role_block_and_source_deletion",
+    "every_candidate_parent_raw_exact_source_union_counts_top1_and_changed_score_count_rejection",
+    "Gperm_actual_change_query_membership_uses_complete_GTfree_pool_including_unknown"
+  ],
+  "script_sha256": "49c3393c44c5f8eb002fa61f28174293552af6eec859175740f3e4d75b858ae6",
+  "real_cache_or_identity_opened": false,
+  "training_started": false,
+  "GPU_used": false
+}

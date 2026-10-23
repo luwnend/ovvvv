@@ -1,0 +1,71 @@
+{
+  "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_DATA_ONLY_SYNTHETIC",
+  "checker_sha256": "3fae10ee90830feb1e78b9624dfb145b82d8d92f97a4f335d4b0df516bf25696",
+  "data_module_sha256": "54c57aee5cba1153ae18205a451b44eecc2fd6ae196d435b8e5f9c3fb8cdcbee",
+  "reviewed_synthetic_round_files_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_data_synthetic_round1_20261024.json": "2b8375678b8e0d79cfbef6e5536c98e91ddd17fc931658f5fb6dbaecee832bce",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_data_synthetic_round2_20261024.json": "d1c587b5dd07e66d0463d77333d151923e290653a0cb1b4bb193ce3a48bc4250",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_data_synthetic_round3_20261024.json": "10d575262d2c9fa7c23921ca826ea91855dbc57e20cbb5b00cf200d2e94d709e"
+  },
+  "independent_checks": {
+    "source_fold_manifest_metadata_only": true,
+    "identity_boundary": {
+      "split_source_eligibility_before_identity": true,
+      "actual_decoder_poison_guard": true,
+      "whole_FIT_loader_forbidden": true,
+      "heldout_mutation_updates_authority_but_preserves_train_projection": true,
+      "allowed_train_identity_mutation_changes_projection": true,
+      "decoded_value_fragments": 408
+    },
+    "frame_and_training_projection": {
+      "frames": 14,
+      "frame_pair_receipts": 28,
+      "candidates_by_lag": {
+        "1": 72,
+        "4": 36
+      },
+      "independent_geometry_history_receipts_all_blocks": true,
+      "train_query_lags": 36,
+      "complete_unknown_refs_and_GTfree_donors_preserved": true,
+      "training_no_CV_or_score_filter": true,
+      "coverage": {
+        "frame_pair_receipts": 28,
+        "retained_candidate_pairs": 108,
+        "missing_prefix_receipts": 13,
+        "query_lag_rows": 39,
+        "same_category_unknown_reference_exposures": 12,
+        "hard_query_lags": 36,
+        "positive_negative_comparisons": 60,
+        "known_query_no_positive_coverage_only": 3,
+        "nonhard_known_queries": 3
+      }
+    },
+    "numerical_primitives": {
+      "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_NUMERICAL_PRIMITIVES_SYNTHETIC_ONLY",
+      "verifier_sha256": "effb38f8c978118672549e89e57796afd421fab63016396b424409aeb5a04342",
+      "score_columns": [
+        "rawcos",
+        "adaptercos",
+        "A0G0",
+        "A0G1",
+        "A0Gmask",
+        "A0Gperm",
+        "A1G0",
+        "A1G1",
+        "A1Gmask",
+        "A1Gperm"
+      ],
+      "score_atol": 1e-10,
+      "score_rtol": 1e-10,
+      "nonzero_synthetic_checkpoint_weights": true,
+      "maximum_absolute_score_error": 9.769962616701378e-15,
+      "independent_linear_GELU_erf_adapter_zero_mask_head_interventions_geometry": true,
+      "real_cache_or_labels_or_checkpoint_opened": false,
+      "complete_runner_or_output_audit": false
+    }
+  },
+  "real_cache_or_identity_opened": false,
+  "trainer_audited": false,
+  "runner_or_global_seal_audited": false,
+  "complete_OOF_preflight": false
+}

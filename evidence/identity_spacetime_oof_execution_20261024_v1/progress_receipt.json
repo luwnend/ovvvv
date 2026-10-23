@@ -1,0 +1,55 @@
+{
+  "status": "VERIFIED_RUNNING_NOT_COMPLETE",
+  "recorded_utc": "2026-10-23T18:44:18.992894+00:00",
+  "live_status": {
+    "execution_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_execution_20261024_v1",
+    "output_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1",
+    "status": "RUNNING_OR_INTERRUPTED",
+    "completed_models": [],
+    "active_workers": [
+      {
+        "model": "fold0_seed20261024",
+        "identity_matches": true,
+        "running": true,
+        "latest_log_lines": [
+          "[fold=0 seed=20261024] GT-free preparation complete; elapsed_seconds=0.681"
+        ]
+      }
+    ],
+    "supervisor_identity_matches": true,
+    "supervisor_running": true,
+    "global_seal_exists": false,
+    "evaluation_summary_exists": false
+  },
+  "first_worker_identity": {
+    "pid": 358097,
+    "start_ticks": 574364903,
+    "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+    "cmdline": [
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+      "-u",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/train_identity_spacetime_oof_model_20261024.py",
+      "--execute",
+      "--protocol",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_protocol_20261024.json",
+      "--fold",
+      "0",
+      "--seed",
+      "20261024",
+      "--out",
+      "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold0_seed20261024"
+    ],
+    "state": "R"
+  },
+  "first_worker_selected_environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "formal_protocol_sha256": "a7169f8674d8e019782820bc7b4a99ff4b2082bdeaa0a731e60352a488ed9be1",
+  "preflight_sha256": "9fb4633e125a6f646a9de55642ad376da4642df220ff3a87673fe0c9b2dc100c",
+  "launch_receipt_sha256": "e1ab50fb945035e280994bbc38e6a67c87532a3b2f3c4912e7eb58328487ef46",
+  "protected_and_all_input_pins_reverified": true,
+  "new_OOF_metrics_read": false
+}

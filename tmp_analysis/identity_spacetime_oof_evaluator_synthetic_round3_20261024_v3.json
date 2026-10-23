@@ -1,0 +1,12 @@
+{
+  "status": "PASS_IDENTITY_SPACETIME_OOF_EVALUATOR_SYNTHETIC",
+  "round": 3,
+  "checks": [
+    "actual_evaluator_entry_global_seal_failure_precedes_data_identity_module_import",
+    "unequal_source_trajectory_query_macro_exact_oracle_and_source_deletion_population"
+  ],
+  "script_sha256": "49c3393c44c5f8eb002fa61f28174293552af6eec859175740f3e4d75b858ae6",
+  "real_cache_or_identity_opened": false,
+  "training_started": false,
+  "GPU_used": false
+}

@@ -1,0 +1,17 @@
+{
+  "identity": {
+    "pid": 358090,
+    "start_ticks": 574364699,
+    "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+    "cmdline": [
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+      "-u",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_identity_spacetime_oof_20261024.py",
+      "--supervise",
+      "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_execution_20261024_v1/launch_spec.json"
+    ],
+    "state": "R"
+  },
+  "started_utc": "2026-10-23T18:42:26.143282+00:00",
+  "launch_sha256": "818cecdd0c35249aaf1e91d1ef58b2bb0782d4e3675b4a07cd1cb4266d7a62b1"
+}

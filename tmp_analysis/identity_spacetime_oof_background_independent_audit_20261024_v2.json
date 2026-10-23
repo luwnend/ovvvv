@@ -1,0 +1,529 @@
+{
+  "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_BACKGROUND_PROCESS_AUDIT",
+  "checks": [
+    "actual_frozen_launch_supervise_child_functions_in_new_detached_Python_processes",
+    "start_new_session_kernel_supervisor_PID_startticks_boot_cmdline_binding_and_live_status",
+    "actual_parent_wait_for_detached_supervisor_and_all_three_child_stages_success",
+    "coordinator_nonzero_exit3_rejected_and_auditor_finalizer_not_started",
+    "independent_auditor_nonzero_exit5_rejected_and_execution_PASS_not_written",
+    "finalizer_nonzero_exit7_preserves_prior_wait_chain_but_never_reports_complete",
+    "success_auditor_finalizer_wiring_actual_exit_records_and_completed_status",
+    "all_launch_pinned_bytes_and_frozen_real_runner_unchanged"
+  ],
+  "cases": [
+    {
+      "mode": "success",
+      "supervisor_actual_wait_exit_code": 0,
+      "supervisor_identity": {
+        "pid": 349054,
+        "start_ticks": 574297926,
+        "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+        "cmdline": [
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+          "-u",
+          "/tmp/identity_oof_detached_audit_3in6d1hm/success/wrapper.py",
+          "--supervise",
+          "/tmp/identity_oof_detached_audit_3in6d1hm/success/execution/launch_spec.json"
+        ],
+        "state": "R"
+      },
+      "supervisor_session_id": 349054,
+      "final_status": "COMPLETE",
+      "actual_child_exit_records": {
+        "coordinator.exit.json": {
+          "command": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/success/wrapper.py",
+            "--execute",
+            "--protocol",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/success/protocol.json",
+            "--execution",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/success/execution"
+          ],
+          "pid": 349056,
+          "identity": {
+            "pid": 349056,
+            "start_ticks": 574297935,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/success/wrapper.py",
+              "--execute",
+              "--protocol",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/success/protocol.json",
+              "--execution",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/success/execution"
+            ],
+            "state": "R"
+          },
+          "started_utc": "2026-10-23T18:31:18.407593+00:00",
+          "finished_utc": "2026-10-23T18:31:18.809932+00:00",
+          "elapsed_seconds": 0.4023537449538708,
+          "actual_exit_code": 0,
+          "waited_by_parent_pid": 349054
+        },
+        "finalization.exit.json": {
+          "command": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/success/finalizer.py",
+            "--out",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/success/out",
+            "--execution",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/success/execution"
+          ],
+          "pid": 349059,
+          "identity": {
+            "pid": 349059,
+            "start_ticks": 574297978,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/success/finalizer.py",
+              "--out",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/success/out",
+              "--execution",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/success/execution"
+            ],
+            "state": "R"
+          },
+          "started_utc": "2026-10-23T18:31:18.842041+00:00",
+          "finished_utc": "2026-10-23T18:31:18.875313+00:00",
+          "elapsed_seconds": 0.03328625671565533,
+          "actual_exit_code": 0,
+          "waited_by_parent_pid": 349054
+        },
+        "independent_output_audit.exit.json": {
+          "command": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/success/verifier.py",
+            "--out",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/success/out",
+            "--protocol",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/success/protocol.json"
+          ],
+          "pid": 349058,
+          "identity": {
+            "pid": 349058,
+            "start_ticks": 574297975,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/success/verifier.py",
+              "--out",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/success/out",
+              "--protocol",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/success/protocol.json"
+            ],
+            "state": "R"
+          },
+          "started_utc": "2026-10-23T18:31:18.810722+00:00",
+          "finished_utc": "2026-10-23T18:31:18.840713+00:00",
+          "elapsed_seconds": 0.030005255714058876,
+          "actual_exit_code": 0,
+          "waited_by_parent_pid": 349054
+        }
+      },
+      "launch_receipt": {
+        "status": "LAUNCHED_NOT_COMPLETE",
+        "launcher_pid": 349046,
+        "supervisor_identity": {
+          "pid": 349054,
+          "start_ticks": 574297926,
+          "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+          "cmdline": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/success/wrapper.py",
+            "--supervise",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/success/execution/launch_spec.json"
+          ],
+          "state": "R"
+        },
+        "launch_spec_sha256": "266b17996f440f419603b1fb5e06c66d8d90a2ef8f115be91d00291438d5f884",
+        "execution_directory": "/tmp/identity_oof_detached_audit_3in6d1hm/success/execution",
+        "output_directory": "/tmp/identity_oof_detached_audit_3in6d1hm/success/out"
+      },
+      "evidence_files_sha256": {
+        "execution/coordinator.exit.json": "3c42d206fcfafc5ab8b61dcafb634ef47150daa9a4c7c48eb414e951a9bb5491",
+        "execution/coordinator.started.json": "84334c432158bc1cf06bc087bf765f3e93199766eec9eddea6469857aba0414a",
+        "execution/execution_receipt.json": "bc796c156ba94ffdcc59fb772e0ac6e27fb7e9ffe9c685f14f629c8c9e3b1d0a",
+        "execution/finalization.exit.json": "0d6482dffc5ddababecab2de45fb28e53f0be24bda55edd999868a91c461927c",
+        "execution/finalization.started.json": "767d67c5aa860342dc19df8f57341b987269a75073aa863bd3bc717d3d460c47",
+        "execution/independent_output_audit.exit.json": "4a678c5577a1f18320aa8c98355ea2805b8a017020c494a5e13c563bfd31e953",
+        "execution/independent_output_audit.started.json": "32a1f2949a70092e7258201de2633e706229983184e22539148a1208aba2f80c",
+        "execution/launch_receipt.json": "a41587634cdb6f672692d827677e5364cd23b244926cac3cf40ac58e923b6cff",
+        "execution/launch_spec.json": "266b17996f440f419603b1fb5e06c66d8d90a2ef8f115be91d00291438d5f884",
+        "execution/supervisor_identity.json": "2ac852f9c89f5fddec83902e0fc75716e55c24f66093973e43306791dd9ce218"
+      },
+      "numerical_authentication_and_global_model_gates_are_explicit_stubs": true
+    },
+    {
+      "mode": "coordinator_fail",
+      "supervisor_actual_wait_exit_code": 1,
+      "supervisor_identity": {
+        "pid": 349060,
+        "start_ticks": 574297985,
+        "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+        "cmdline": [
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+          "-u",
+          "/tmp/identity_oof_detached_audit_3in6d1hm/coordinator_fail/wrapper.py",
+          "--supervise",
+          "/tmp/identity_oof_detached_audit_3in6d1hm/coordinator_fail/execution/launch_spec.json"
+        ],
+        "state": "R"
+      },
+      "supervisor_session_id": 349060,
+      "final_status": "FAILED",
+      "actual_child_exit_records": {
+        "coordinator.exit.json": {
+          "command": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/coordinator_fail/wrapper.py",
+            "--execute",
+            "--protocol",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/coordinator_fail/protocol.json",
+            "--execution",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/coordinator_fail/execution"
+          ],
+          "pid": 349062,
+          "identity": {
+            "pid": 349062,
+            "start_ticks": 574297994,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/coordinator_fail/wrapper.py",
+              "--execute",
+              "--protocol",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/coordinator_fail/protocol.json",
+              "--execution",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/coordinator_fail/execution"
+            ],
+            "state": "R"
+          },
+          "started_utc": "2026-10-23T18:31:18.998263+00:00",
+          "finished_utc": "2026-10-23T18:31:19.408081+00:00",
+          "elapsed_seconds": 0.4098384464159608,
+          "actual_exit_code": 3,
+          "waited_by_parent_pid": 349060
+        }
+      },
+      "launch_receipt": {
+        "status": "LAUNCHED_NOT_COMPLETE",
+        "launcher_pid": 349046,
+        "supervisor_identity": {
+          "pid": 349060,
+          "start_ticks": 574297985,
+          "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+          "cmdline": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/coordinator_fail/wrapper.py",
+            "--supervise",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/coordinator_fail/execution/launch_spec.json"
+          ],
+          "state": "R"
+        },
+        "launch_spec_sha256": "8fa34adf86da4bb1c6bfe7c3e50699608b21afbc76a0f69804fcd4ca014edf96",
+        "execution_directory": "/tmp/identity_oof_detached_audit_3in6d1hm/coordinator_fail/execution",
+        "output_directory": "/tmp/identity_oof_detached_audit_3in6d1hm/coordinator_fail/out"
+      },
+      "evidence_files_sha256": {
+        "execution/coordinator.exit.json": "a2ca400e08722e24f3129948c1bbfb5ca578c5b34a339d5a02ae0057fed70360",
+        "execution/coordinator.started.json": "eaffb15493ea1677252f16282f9bbea712b71f82d7b703174f6edf8b6ab3337a",
+        "execution/execution_failure.json": "3939a7281b163808a70ac8fd358dfc31ce3a1c8e6d9379a7fff9e4537ec884fd",
+        "execution/launch_receipt.json": "e715d59b62ee66352550998a78197a91ee19ef8972fdf4d1ce661e17a317b0ea",
+        "execution/launch_spec.json": "8fa34adf86da4bb1c6bfe7c3e50699608b21afbc76a0f69804fcd4ca014edf96",
+        "execution/supervisor_identity.json": "6899c0f742f20836a4a8bb1cd955c2c99874046f640050ae8e5d80421e0a27ea"
+      },
+      "numerical_authentication_and_global_model_gates_are_explicit_stubs": true
+    },
+    {
+      "mode": "auditor_fail",
+      "supervisor_actual_wait_exit_code": 1,
+      "supervisor_identity": {
+        "pid": 349066,
+        "start_ticks": 574298037,
+        "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+        "cmdline": [
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+          "-u",
+          "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/wrapper.py",
+          "--supervise",
+          "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/execution/launch_spec.json"
+        ],
+        "state": "R"
+      },
+      "supervisor_session_id": 349066,
+      "final_status": "FAILED",
+      "actual_child_exit_records": {
+        "coordinator.exit.json": {
+          "command": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/wrapper.py",
+            "--execute",
+            "--protocol",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/protocol.json",
+            "--execution",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/execution"
+          ],
+          "pid": 349068,
+          "identity": {
+            "pid": 349068,
+            "start_ticks": 574298046,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/wrapper.py",
+              "--execute",
+              "--protocol",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/protocol.json",
+              "--execution",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/execution"
+            ],
+            "state": "R"
+          },
+          "started_utc": "2026-10-23T18:31:19.521383+00:00",
+          "finished_utc": "2026-10-23T18:31:19.938778+00:00",
+          "elapsed_seconds": 0.41741946805268526,
+          "actual_exit_code": 0,
+          "waited_by_parent_pid": 349066
+        },
+        "independent_output_audit.exit.json": {
+          "command": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/verifier.py",
+            "--out",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/out",
+            "--protocol",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/protocol.json"
+          ],
+          "pid": 349070,
+          "identity": {
+            "pid": 349070,
+            "start_ticks": 574298088,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/verifier.py",
+              "--out",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/out",
+              "--protocol",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/protocol.json"
+            ],
+            "state": "R"
+          },
+          "started_utc": "2026-10-23T18:31:19.939499+00:00",
+          "finished_utc": "2026-10-23T18:31:19.972570+00:00",
+          "elapsed_seconds": 0.03308485075831413,
+          "actual_exit_code": 5,
+          "waited_by_parent_pid": 349066
+        }
+      },
+      "launch_receipt": {
+        "status": "LAUNCHED_NOT_COMPLETE",
+        "launcher_pid": 349046,
+        "supervisor_identity": {
+          "pid": 349066,
+          "start_ticks": 574298037,
+          "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+          "cmdline": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/wrapper.py",
+            "--supervise",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/execution/launch_spec.json"
+          ],
+          "state": "R"
+        },
+        "launch_spec_sha256": "b2ca9760d9dee30dceb71ebf1115634ee45652b2fba6978c9c2f99ef4587ad9a",
+        "execution_directory": "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/execution",
+        "output_directory": "/tmp/identity_oof_detached_audit_3in6d1hm/auditor_fail/out"
+      },
+      "evidence_files_sha256": {
+        "execution/coordinator.exit.json": "3bc979fc7c6415e3685f693e51181f2c2e1b15801b14e4e04c759acb08f3c690",
+        "execution/coordinator.started.json": "5cd4f82c67050dba8a76579e4e2fa3910509daf19bc6e2f559d45a3ecc80508c",
+        "execution/execution_failure.json": "355315c8678d6c88a5a0af0c11a84c761f4536fc9cc05532b390aeacbcea5f64",
+        "execution/independent_output_audit.exit.json": "c2e64a97aabdc7e6f6294875bca016d3255774b7947c95e559ae28e786fd3a0e",
+        "execution/independent_output_audit.started.json": "1fe35272320199af15af087c9c2f783869a03fe7dbbbb4af0063b94235436c3f",
+        "execution/launch_receipt.json": "76edd2b8ab753291a9ff142a8975e59a88dc4964472cb1b0ed5555a3aa5c14d2",
+        "execution/launch_spec.json": "b2ca9760d9dee30dceb71ebf1115634ee45652b2fba6978c9c2f99ef4587ad9a",
+        "execution/supervisor_identity.json": "9833e6407c916b2f80f7dca325f9dfed98821587627c9daf4b1aaa46077ef359"
+      },
+      "numerical_authentication_and_global_model_gates_are_explicit_stubs": true
+    },
+    {
+      "mode": "finalizer_fail",
+      "supervisor_actual_wait_exit_code": 1,
+      "supervisor_identity": {
+        "pid": 349071,
+        "start_ticks": 574298095,
+        "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+        "cmdline": [
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+          "-u",
+          "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/wrapper.py",
+          "--supervise",
+          "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/execution/launch_spec.json"
+        ],
+        "state": "R"
+      },
+      "supervisor_session_id": 349071,
+      "final_status": "FAILED",
+      "actual_child_exit_records": {
+        "coordinator.exit.json": {
+          "command": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/wrapper.py",
+            "--execute",
+            "--protocol",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/protocol.json",
+            "--execution",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/execution"
+          ],
+          "pid": 349073,
+          "identity": {
+            "pid": 349073,
+            "start_ticks": 574298104,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/wrapper.py",
+              "--execute",
+              "--protocol",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/protocol.json",
+              "--execution",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/execution"
+            ],
+            "state": "R"
+          },
+          "started_utc": "2026-10-23T18:31:20.102520+00:00",
+          "finished_utc": "2026-10-23T18:31:20.523114+00:00",
+          "elapsed_seconds": 0.4206224335357547,
+          "actual_exit_code": 0,
+          "waited_by_parent_pid": 349071
+        },
+        "finalization.exit.json": {
+          "command": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/finalizer.py",
+            "--out",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/out",
+            "--execution",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/execution"
+          ],
+          "pid": 349077,
+          "identity": {
+            "pid": 349077,
+            "start_ticks": 574298150,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/finalizer.py",
+              "--out",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/out",
+              "--execution",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/execution"
+            ],
+            "state": "R"
+          },
+          "started_utc": "2026-10-23T18:31:20.554915+00:00",
+          "finished_utc": "2026-10-23T18:31:20.583066+00:00",
+          "elapsed_seconds": 0.028163351118564606,
+          "actual_exit_code": 7,
+          "waited_by_parent_pid": 349071
+        },
+        "independent_output_audit.exit.json": {
+          "command": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/verifier.py",
+            "--out",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/out",
+            "--protocol",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/protocol.json"
+          ],
+          "pid": 349076,
+          "identity": {
+            "pid": 349076,
+            "start_ticks": 574298147,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/verifier.py",
+              "--out",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/out",
+              "--protocol",
+              "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/protocol.json"
+            ],
+            "state": "R"
+          },
+          "started_utc": "2026-10-23T18:31:20.524002+00:00",
+          "finished_utc": "2026-10-23T18:31:20.553518+00:00",
+          "elapsed_seconds": 0.029538745991885662,
+          "actual_exit_code": 0,
+          "waited_by_parent_pid": 349071
+        }
+      },
+      "launch_receipt": {
+        "status": "LAUNCHED_NOT_COMPLETE",
+        "launcher_pid": 349046,
+        "supervisor_identity": {
+          "pid": 349071,
+          "start_ticks": 574298095,
+          "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+          "cmdline": [
+            "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+            "-u",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/wrapper.py",
+            "--supervise",
+            "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/execution/launch_spec.json"
+          ],
+          "state": "R"
+        },
+        "launch_spec_sha256": "a997ee28c854ed03bc63460b15cf2c404d5846b793d9b7046bbfd8f01c32b77f",
+        "execution_directory": "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/execution",
+        "output_directory": "/tmp/identity_oof_detached_audit_3in6d1hm/finalizer_fail/out"
+      },
+      "evidence_files_sha256": {
+        "execution/coordinator.exit.json": "61a7de2b57bf23b4c65373f7c89a7dbafb6fe5ad4a1830aeb8961d0f8143d64a",
+        "execution/coordinator.started.json": "0f3eec8824f269f0085151a66b1db009f7403d15082e679de9d29ba316459002",
+        "execution/execution_failure.json": "68f74c4add8278c5d9dcda618544b3896ed2e7c8cdafddcec769efc6e35dfded",
+        "execution/execution_receipt.json": "962571e1d93ae1ca7d49c433a0b0f6d99463a137771ffbb3c26c9a78eb294b28",
+        "execution/finalization.exit.json": "c9c4d268bc8ada5c7de1fdfe25c4fcbc3d557b78be8d14ed0f7dc5def5681018",
+        "execution/finalization.started.json": "317ca2fa33f2abffc58c822905f74d4d2bae6a7b8558536418ca2040739508d5",
+        "execution/independent_output_audit.exit.json": "8d448c050912c0b10f27f6aade34d7964c6e6c9cbd8c6ce6a14d3bbfbe7011bf",
+        "execution/independent_output_audit.started.json": "ba0b7a226e1ca2ba68605a0e298856cf5c39d05ae42ca9ef68ffbff861423748",
+        "execution/launch_receipt.json": "7bd58d1ea3ba4d164b64a4bde2a3b87e43e219875979557cab5ace54e3e4fc4b",
+        "execution/launch_spec.json": "a997ee28c854ed03bc63460b15cf2c404d5846b793d9b7046bbfd8f01c32b77f",
+        "execution/supervisor_identity.json": "8463973a6c1b2b15c456a3de1f988d695af635b528e42c83211d834d04d20317"
+      },
+      "numerical_authentication_and_global_model_gates_are_explicit_stubs": true
+    }
+  ],
+  "script_sha256": "5ea2aad4cb861ad4fa0246afe4cbf629afd8cf395094698f219f5870c7def878",
+  "coordinator_sha256": "b291c36aeb3ff92ae375954fb6033b35ecdba46c7a88728cc4b91c8048558133",
+  "elapsed_seconds": 2.3554133120924234,
+  "scope": "Process supervision only; synthetic authenticate/model/global/numerical gates are stubs, not fifteen-model mathematical or data validation.",
+  "real_data_or_identity_opened": false,
+  "training_started": false,
+  "GPU_used": false
+}

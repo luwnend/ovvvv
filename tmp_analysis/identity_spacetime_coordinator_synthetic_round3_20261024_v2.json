@@ -1,0 +1,10 @@
+{
+  "status": "PASS_IDENTITY_SPACETIME_OOF_COORDINATOR_SYNTHETIC",
+  "round": 3,
+  "checks": [
+    "missing_global_seal_and_incomplete_fifteen_models_rejected",
+    "process_identity_binds_boot_startticks_cmdline"
+  ],
+  "script_sha256": "b291c36aeb3ff92ae375954fb6033b35ecdba46c7a88728cc4b91c8048558133",
+  "real_data_opened": false
+}

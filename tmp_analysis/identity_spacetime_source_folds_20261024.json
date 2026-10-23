@@ -1,0 +1,5182 @@
+{
+  "seed": "identity_spacetime_source_oof_v1",
+  "number_of_folds": 5,
+  "groups": {
+    "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "pair_role"
+      ]
+    },
+    "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "mean_role"
+      ]
+    },
+    "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "pair_role"
+      ]
+    },
+    "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "mean_role"
+      ]
+    },
+    "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "mean_role"
+      ]
+    },
+    "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "pair_role"
+      ]
+    },
+    "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "mean_role"
+      ]
+    },
+    "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "pair_role"
+      ]
+    },
+    "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "mean_role"
+      ]
+    },
+    "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "mean_role"
+      ]
+    },
+    "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "mean_role"
+      ]
+    },
+    "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "pair_role"
+      ]
+    },
+    "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "mean_role"
+      ]
+    },
+    "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "pair_role"
+      ]
+    },
+    "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "ArgoVerse",
+      "stratum": [
+        "ArgoVerse",
+        "pair_role"
+      ]
+    },
+    "BDD/b1d0a191-03dcecc2": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b20b69d2-e31380a7": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b20b9c19-91e01a50": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b21c68e6-65674a17": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b21d5efb-5e2cd743": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b22a4d9f-73cc8810": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b232c7c9-d251d9ee": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b249e7f2-92d2efad": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b262f576-b0373824": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b27098c3-c443b6e3": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b27127df-eac9b95e": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b27369f3-9b9598f4": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b27688b6-cd521517": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b28ec521-898e11bd": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b2bee3e1-80c787bd": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b2d502aa-64d3e228": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b2d502aa-f0b28e3e": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b2dbb793-9f0b2bec": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b2de938e-84eab379": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b2e2b2be-4142962b": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b2fc7cb5-1635d64b": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b2ff6aba-fa4ac7d7": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b3079ec6-df7b2d92": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b30b460d-73d12a29": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b3159650-1ba75f9b": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b3378e5e-b7593301": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b33ea6cb-3464fb13": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b34b1b88-5bfe3b85": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b368ee71-cf27b7fa": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b36e0178-2037ca44": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b39fe3cd-227ff7a8": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b3a9281a-e8ba5d66": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b3b9ee6e-6d2617d1": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b3be4113-1fb56ec4": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b3ce9f98-2dc52573": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b3da33d5-a64e7657": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b40b0ea3-b242efc9": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b422ec08-d42660b6": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b4235ab3-b305d3e9": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "BDD/b4278d1f-dbd0295c": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b4301c7b-da5261f0": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b4466011-05cbc315": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "mean_role"
+      ]
+    },
+    "BDD/b4536117-bc85ba28": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "BDD",
+      "stratum": [
+        "BDD",
+        "pair_role"
+      ]
+    },
+    "Charades/0LHWF": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/35LUV": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/3N1I2": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/48BUM": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/4H61U": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/4K0BP": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/50E06": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/5HPZ1": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/6EU06": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/6FV5P": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/7177T": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/735W9": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/7P0JX": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/8Q0EY": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/9M48H": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/9UU4W": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/A2EY4": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/AIOTI": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/AVSN8": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/BI6Y4": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/CF9QP": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/E8468": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/E9FY2": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/EIKUN": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/FHAV0": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/FZAEP": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/G2DIN": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/G8NEV": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/GL2JW": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/GQ341": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/HOYUT": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/HSKVH": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/HYD3N": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/IIL9C": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/IULK6": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/JMPKP": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/KA3ER": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/KPHP5": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/LHTSI": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/M6ERH": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/MZ9X7": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/NPEA3": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/O87OF": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/O8DER": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/PC7H2": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/PEWH4": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/PJUM0": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/QBUAT": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/QCPXJ": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/QHU9R": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/QZZPS": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/S7OTQ": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/SROEU": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/SVA4D": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/TQO6O": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/U08M9": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/U4J2Q": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/UDGP2": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/V7YEJ": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/W97NR": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/X9LP4": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/Y3M3W": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/YE6UZ": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/YK49T": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "Charades/YXQWH": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "pair_role"
+      ]
+    },
+    "Charades/Z6HEA": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "Charades",
+      "stratum": [
+        "Charades",
+        "mean_role"
+      ]
+    },
+    "LaSOT/airplane-4": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/basketball-11": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/basketball-4": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/basketball-6": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/bicycle-4": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/bicycle-7": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/bicycle-9": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/bird-11": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/bird-12": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/bird-17": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/boat-4": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/boat-9": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/book-11": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/book-15": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/book-2": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/book-3": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/bottle-12": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/bus-19": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/bus-8": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/car-17": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/cat-1": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/cat-13": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/cat-4": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/cat-7": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/cattle-14": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/cattle-9": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/cup-9": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/deer-15": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/deer-4": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/dog-13": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/electricfan-13": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/elephant-14": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/elephant-6": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/flag-5": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/giraffe-19": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/goldfish-17": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/guitar-9": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/hat-18": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/helmet-1": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/helmet-3": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/kite-18": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/lion-12": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/lion-15": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/lion-9": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/lizard-16": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/microphone-12": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/microphone-13": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/microphone-3": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/monkey-16": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/monkey-19": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/motorcycle-19": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/person-2": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/person-3": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/person-7": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/pool-17": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/rabbit-17": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/racing-14": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/racing-20": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/shark-20": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/sheep-15": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/skateboard-1": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/skateboard-18": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/skateboard-8": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/spider-5": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/surfboard-8": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/swing-18": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/tank-12": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/tank-2": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/tiger-13": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/truck-10": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/truck-5": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/umbrella-18": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/volleyball-18": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/volleyball-19": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/volleyball-20": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "LaSOT/zebra-14": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/zebra-18": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "mean_role"
+      ]
+    },
+    "LaSOT/zebra-19": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "LaSOT",
+      "stratum": [
+        "LaSOT",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_23584c2660351f12cffe1399c47ce870": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_6f90a13c795ef37404d95983341df": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_72252bc9435f88bbfb28aac25484f30": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_82e9bb97b1a1fdde489511e69126644": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_9018a07931e02026b3bd6e82489d4624": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_df4744928b9b4199b5c73344efdce65": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_e16e325327dd0974bda9bbd7a35118c": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_e2d3c540737396bebd0a4b53b3174e": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_ea33c680e1f18d71543b8f80815beec": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "pair_role"
+      ]
+    },
+    "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_f729d4f362aea24236153ffc589adac": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_f93e2640ce4cf8b1195c94764803414": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YFCC100M",
+      "stratum": [
+        "YFCC100M",
+        "mean_role"
+      ]
+    },
+    "YouTube/-6quA485tw8": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/-dQIXiV6gk0": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/1cU81_rjt7s": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/1mPd_3N5gNQ": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/25eIK85JWi4": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/313tbNN4J3o": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/4ltcNlAq1wI": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/5BDj0ow5hnA": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/7SFkVnnp_eE": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/7XQoDEQGqaw": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/7YULkl7Xm04": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/7_xkhnbnI7M": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/87ksUt7mO3o": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/9sZI9IdgXZY": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/AjH8TFfZIGY": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/C48cXamb2B0": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/Ce7YdX2cido": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/D8Vhxbho1fY": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/EOSzItLkZQQ": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/Fu0b-YbpPak": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/H8g9ZBuQmrE": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/HtaNMyVa260": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/I7Q-x9MorO0": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/IS3OtsJFP7Y": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/IUbQjSiZL-Y": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/JMzNLlatrys": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/JX1uj-YRiYo": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/JvtJRvTKzvw": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/KUdBvuRaAbk": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/LFPYYYZstjg": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/Or8dXBSS_LM": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/PQkE02amSDY": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/Q5SutMM8H4I": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/QEFmA2nj12w": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/Q_701AtuEbE": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/QlXEyPOUMUg": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/Rf1XKstMa4E": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/SA-if-DMT7E": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/TcB0IFBwk-k": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/VTEcwSCLwLg": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/Vl9zODoJMIU": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/WKqbLbU68wU": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/WwmfBwEMP6s": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/XOe9GeojzCs": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/XV_FF3WC7kA": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/Y0DKz3JCq3I": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/YAAUPjq-L-Q": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/YD5C5LX7j4k": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/Z11ALGaUmH0": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/ZbeMNLwASVo": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/Zyo70ZiXmYY": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/aboKQqtoowA": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/bFTTE4TV-ek": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/bLoWh2xbm6o": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/blDEcY6HZUU": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/c0FxOPxBaac": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/cB83GjrvoeE": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/cLiJgvrDlWw": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/d-orB-PokJw": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/dYAA0JLFrTc": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/dZZqaYgPrY0": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/dtlXB2kt09k": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/eXklJqhFx8E": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/ef5NncrTQu4": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/f9U2VDJTIhg": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/h3-lxgAoXwI": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/hL-ePuEk4_M": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/hg9scj8FyjY": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/iSjk42F0rvM": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/jO3vuJ4xhns": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/kM1naurrexk": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/lC0HkItqIqA": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/mThUfYcea3I": {
+      "fold": 1,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/mkcDANJjDcM": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/mq7Wv-5qJwc": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/nKsIbi_R02U": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/na6zkG7dl3A": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/od2IpoFxeMI": {
+      "fold": 2,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/owDp3KOHmu8": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/pI8tpZLBcFk": {
+      "fold": 1,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/qlPC7oMm93g": {
+      "fold": 3,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/rin4oz7Fego": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/s54UiLm7JLU": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/sRd38UFfp6c": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/tvzrxfgWSc4": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/u40AQIBH_Gs": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/uqUfP7ugJp0": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/uwW0ejeosmk": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/v0N4o4Px8jQ": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/vbQwxMme5yk": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/vrWYdPeIUqw": {
+      "fold": 4,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/yZGRVcIKU6Q": {
+      "fold": 3,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/yb7EbSnIAqM": {
+      "fold": 2,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/z-fsLpGHq6o": {
+      "fold": 0,
+      "role": "pair_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "pair_role"
+      ]
+    },
+    "YouTube/zVN1SBxfR40": {
+      "fold": 0,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    },
+    "YouTube/zhdNNmwnYMI": {
+      "fold": 4,
+      "role": "mean_role",
+      "dataset_block": "YouTube",
+      "stratum": [
+        "YouTube",
+        "mean_role"
+      ]
+    }
+  },
+  "folds": {
+    "0": {
+      "held_out_sources": [
+        "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e",
+        "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2",
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072",
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0",
+        "BDD/b249e7f2-92d2efad",
+        "BDD/b27098c3-c443b6e3",
+        "BDD/b27369f3-9b9598f4",
+        "BDD/b2de938e-84eab379",
+        "BDD/b36e0178-2037ca44",
+        "BDD/b3ce9f98-2dc52573",
+        "BDD/b40b0ea3-b242efc9",
+        "BDD/b4235ab3-b305d3e9",
+        "BDD/b4278d1f-dbd0295c",
+        "BDD/b4536117-bc85ba28",
+        "Charades/50E06",
+        "Charades/7177T",
+        "Charades/8Q0EY",
+        "Charades/9M48H",
+        "Charades/AVSN8",
+        "Charades/E9FY2",
+        "Charades/LHTSI",
+        "Charades/O8DER",
+        "Charades/PJUM0",
+        "Charades/QCPXJ",
+        "Charades/SROEU",
+        "Charades/SVA4D",
+        "Charades/U4J2Q",
+        "Charades/V7YEJ",
+        "LaSOT/airplane-4",
+        "LaSOT/basketball-6",
+        "LaSOT/bird-11",
+        "LaSOT/boat-4",
+        "LaSOT/bus-8",
+        "LaSOT/deer-15",
+        "LaSOT/elephant-14",
+        "LaSOT/helmet-3",
+        "LaSOT/kite-18",
+        "LaSOT/person-7",
+        "LaSOT/pool-17",
+        "LaSOT/racing-20",
+        "LaSOT/skateboard-18",
+        "LaSOT/truck-5",
+        "LaSOT/volleyball-19",
+        "LaSOT/zebra-19",
+        "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3",
+        "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3",
+        "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf",
+        "YFCC100M/v_72252bc9435f88bbfb28aac25484f30",
+        "YFCC100M/v_82e9bb97b1a1fdde489511e69126644",
+        "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5",
+        "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a",
+        "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46",
+        "YFCC100M/v_df4744928b9b4199b5c73344efdce65",
+        "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e",
+        "YouTube/-6quA485tw8",
+        "YouTube/4ltcNlAq1wI",
+        "YouTube/5BDj0ow5hnA",
+        "YouTube/7SFkVnnp_eE",
+        "YouTube/87ksUt7mO3o",
+        "YouTube/AjH8TFfZIGY",
+        "YouTube/Fu0b-YbpPak",
+        "YouTube/JvtJRvTKzvw",
+        "YouTube/Rf1XKstMa4E",
+        "YouTube/d-orB-PokJw",
+        "YouTube/ef5NncrTQu4",
+        "YouTube/lC0HkItqIqA",
+        "YouTube/na6zkG7dl3A",
+        "YouTube/rin4oz7Fego",
+        "YouTube/s54UiLm7JLU",
+        "YouTube/sRd38UFfp6c",
+        "YouTube/uwW0ejeosmk",
+        "YouTube/v0N4o4Px8jQ",
+        "YouTube/z-fsLpGHq6o",
+        "YouTube/zVN1SBxfR40"
+      ],
+      "train_sources": [
+        "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2",
+        "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929",
+        "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818",
+        "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec",
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68",
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48",
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a",
+        "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8",
+        "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0",
+        "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2",
+        "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7",
+        "BDD/b1d0a191-03dcecc2",
+        "BDD/b20b69d2-e31380a7",
+        "BDD/b20b9c19-91e01a50",
+        "BDD/b21c68e6-65674a17",
+        "BDD/b21d5efb-5e2cd743",
+        "BDD/b22a4d9f-73cc8810",
+        "BDD/b232c7c9-d251d9ee",
+        "BDD/b262f576-b0373824",
+        "BDD/b27127df-eac9b95e",
+        "BDD/b27688b6-cd521517",
+        "BDD/b28ec521-898e11bd",
+        "BDD/b2bee3e1-80c787bd",
+        "BDD/b2d502aa-64d3e228",
+        "BDD/b2d502aa-f0b28e3e",
+        "BDD/b2dbb793-9f0b2bec",
+        "BDD/b2e2b2be-4142962b",
+        "BDD/b2fc7cb5-1635d64b",
+        "BDD/b2ff6aba-fa4ac7d7",
+        "BDD/b3079ec6-df7b2d92",
+        "BDD/b30b460d-73d12a29",
+        "BDD/b3159650-1ba75f9b",
+        "BDD/b3378e5e-b7593301",
+        "BDD/b33ea6cb-3464fb13",
+        "BDD/b34b1b88-5bfe3b85",
+        "BDD/b368ee71-cf27b7fa",
+        "BDD/b39fe3cd-227ff7a8",
+        "BDD/b3a9281a-e8ba5d66",
+        "BDD/b3b9ee6e-6d2617d1",
+        "BDD/b3be4113-1fb56ec4",
+        "BDD/b3da33d5-a64e7657",
+        "BDD/b422ec08-d42660b6",
+        "BDD/b4301c7b-da5261f0",
+        "BDD/b4466011-05cbc315",
+        "Charades/0LHWF",
+        "Charades/35LUV",
+        "Charades/3N1I2",
+        "Charades/48BUM",
+        "Charades/4H61U",
+        "Charades/4K0BP",
+        "Charades/5HPZ1",
+        "Charades/6EU06",
+        "Charades/6FV5P",
+        "Charades/735W9",
+        "Charades/7P0JX",
+        "Charades/9UU4W",
+        "Charades/A2EY4",
+        "Charades/AIOTI",
+        "Charades/BI6Y4",
+        "Charades/CF9QP",
+        "Charades/E8468",
+        "Charades/EIKUN",
+        "Charades/FHAV0",
+        "Charades/FZAEP",
+        "Charades/G2DIN",
+        "Charades/G8NEV",
+        "Charades/GL2JW",
+        "Charades/GQ341",
+        "Charades/HOYUT",
+        "Charades/HSKVH",
+        "Charades/HYD3N",
+        "Charades/IIL9C",
+        "Charades/IULK6",
+        "Charades/JMPKP",
+        "Charades/KA3ER",
+        "Charades/KPHP5",
+        "Charades/M6ERH",
+        "Charades/MZ9X7",
+        "Charades/NPEA3",
+        "Charades/O87OF",
+        "Charades/PC7H2",
+        "Charades/PEWH4",
+        "Charades/QBUAT",
+        "Charades/QHU9R",
+        "Charades/QZZPS",
+        "Charades/S7OTQ",
+        "Charades/TQO6O",
+        "Charades/U08M9",
+        "Charades/UDGP2",
+        "Charades/W97NR",
+        "Charades/X9LP4",
+        "Charades/Y3M3W",
+        "Charades/YE6UZ",
+        "Charades/YK49T",
+        "Charades/YXQWH",
+        "Charades/Z6HEA",
+        "LaSOT/basketball-11",
+        "LaSOT/basketball-4",
+        "LaSOT/bicycle-4",
+        "LaSOT/bicycle-7",
+        "LaSOT/bicycle-9",
+        "LaSOT/bird-12",
+        "LaSOT/bird-17",
+        "LaSOT/boat-9",
+        "LaSOT/book-11",
+        "LaSOT/book-15",
+        "LaSOT/book-2",
+        "LaSOT/book-3",
+        "LaSOT/bottle-12",
+        "LaSOT/bus-19",
+        "LaSOT/car-17",
+        "LaSOT/cat-1",
+        "LaSOT/cat-13",
+        "LaSOT/cat-4",
+        "LaSOT/cat-7",
+        "LaSOT/cattle-14",
+        "LaSOT/cattle-9",
+        "LaSOT/cup-9",
+        "LaSOT/deer-4",
+        "LaSOT/dog-13",
+        "LaSOT/electricfan-13",
+        "LaSOT/elephant-6",
+        "LaSOT/flag-5",
+        "LaSOT/giraffe-19",
+        "LaSOT/goldfish-17",
+        "LaSOT/guitar-9",
+        "LaSOT/hat-18",
+        "LaSOT/helmet-1",
+        "LaSOT/lion-12",
+        "LaSOT/lion-15",
+        "LaSOT/lion-9",
+        "LaSOT/lizard-16",
+        "LaSOT/microphone-12",
+        "LaSOT/microphone-13",
+        "LaSOT/microphone-3",
+        "LaSOT/monkey-16",
+        "LaSOT/monkey-19",
+        "LaSOT/motorcycle-19",
+        "LaSOT/person-2",
+        "LaSOT/person-3",
+        "LaSOT/rabbit-17",
+        "LaSOT/racing-14",
+        "LaSOT/shark-20",
+        "LaSOT/sheep-15",
+        "LaSOT/skateboard-1",
+        "LaSOT/skateboard-8",
+        "LaSOT/spider-5",
+        "LaSOT/surfboard-8",
+        "LaSOT/swing-18",
+        "LaSOT/tank-12",
+        "LaSOT/tank-2",
+        "LaSOT/tiger-13",
+        "LaSOT/truck-10",
+        "LaSOT/umbrella-18",
+        "LaSOT/volleyball-18",
+        "LaSOT/volleyball-20",
+        "LaSOT/zebra-14",
+        "LaSOT/zebra-18",
+        "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11",
+        "YFCC100M/v_23584c2660351f12cffe1399c47ce870",
+        "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5",
+        "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b",
+        "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461",
+        "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d",
+        "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3",
+        "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215",
+        "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0",
+        "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629",
+        "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b",
+        "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d",
+        "YFCC100M/v_6f90a13c795ef37404d95983341df",
+        "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a",
+        "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30",
+        "YFCC100M/v_9018a07931e02026b3bd6e82489d4624",
+        "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c",
+        "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3",
+        "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c",
+        "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20",
+        "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33",
+        "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4",
+        "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452",
+        "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e",
+        "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150",
+        "YFCC100M/v_e16e325327dd0974bda9bbd7a35118c",
+        "YFCC100M/v_e2d3c540737396bebd0a4b53b3174e",
+        "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40",
+        "YFCC100M/v_ea33c680e1f18d71543b8f80815beec",
+        "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5",
+        "YFCC100M/v_f729d4f362aea24236153ffc589adac",
+        "YFCC100M/v_f93e2640ce4cf8b1195c94764803414",
+        "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c",
+        "YouTube/-dQIXiV6gk0",
+        "YouTube/1cU81_rjt7s",
+        "YouTube/1mPd_3N5gNQ",
+        "YouTube/25eIK85JWi4",
+        "YouTube/313tbNN4J3o",
+        "YouTube/7XQoDEQGqaw",
+        "YouTube/7YULkl7Xm04",
+        "YouTube/7_xkhnbnI7M",
+        "YouTube/9sZI9IdgXZY",
+        "YouTube/C48cXamb2B0",
+        "YouTube/Ce7YdX2cido",
+        "YouTube/D8Vhxbho1fY",
+        "YouTube/EOSzItLkZQQ",
+        "YouTube/H8g9ZBuQmrE",
+        "YouTube/HtaNMyVa260",
+        "YouTube/I7Q-x9MorO0",
+        "YouTube/IS3OtsJFP7Y",
+        "YouTube/IUbQjSiZL-Y",
+        "YouTube/JMzNLlatrys",
+        "YouTube/JX1uj-YRiYo",
+        "YouTube/KUdBvuRaAbk",
+        "YouTube/LFPYYYZstjg",
+        "YouTube/Or8dXBSS_LM",
+        "YouTube/PQkE02amSDY",
+        "YouTube/Q5SutMM8H4I",
+        "YouTube/QEFmA2nj12w",
+        "YouTube/Q_701AtuEbE",
+        "YouTube/QlXEyPOUMUg",
+        "YouTube/SA-if-DMT7E",
+        "YouTube/TcB0IFBwk-k",
+        "YouTube/VTEcwSCLwLg",
+        "YouTube/Vl9zODoJMIU",
+        "YouTube/WKqbLbU68wU",
+        "YouTube/WwmfBwEMP6s",
+        "YouTube/XOe9GeojzCs",
+        "YouTube/XV_FF3WC7kA",
+        "YouTube/Y0DKz3JCq3I",
+        "YouTube/YAAUPjq-L-Q",
+        "YouTube/YD5C5LX7j4k",
+        "YouTube/Z11ALGaUmH0",
+        "YouTube/ZbeMNLwASVo",
+        "YouTube/Zyo70ZiXmYY",
+        "YouTube/aboKQqtoowA",
+        "YouTube/bFTTE4TV-ek",
+        "YouTube/bLoWh2xbm6o",
+        "YouTube/blDEcY6HZUU",
+        "YouTube/c0FxOPxBaac",
+        "YouTube/cB83GjrvoeE",
+        "YouTube/cLiJgvrDlWw",
+        "YouTube/dYAA0JLFrTc",
+        "YouTube/dZZqaYgPrY0",
+        "YouTube/dtlXB2kt09k",
+        "YouTube/eXklJqhFx8E",
+        "YouTube/f9U2VDJTIhg",
+        "YouTube/h3-lxgAoXwI",
+        "YouTube/hL-ePuEk4_M",
+        "YouTube/hg9scj8FyjY",
+        "YouTube/iSjk42F0rvM",
+        "YouTube/jO3vuJ4xhns",
+        "YouTube/kM1naurrexk",
+        "YouTube/mThUfYcea3I",
+        "YouTube/mkcDANJjDcM",
+        "YouTube/mq7Wv-5qJwc",
+        "YouTube/nKsIbi_R02U",
+        "YouTube/od2IpoFxeMI",
+        "YouTube/owDp3KOHmu8",
+        "YouTube/pI8tpZLBcFk",
+        "YouTube/qlPC7oMm93g",
+        "YouTube/tvzrxfgWSc4",
+        "YouTube/u40AQIBH_Gs",
+        "YouTube/uqUfP7ugJp0",
+        "YouTube/vbQwxMme5yk",
+        "YouTube/vrWYdPeIUqw",
+        "YouTube/yZGRVcIKU6Q",
+        "YouTube/yb7EbSnIAqM",
+        "YouTube/zhdNNmwnYMI"
+      ]
+    },
+    "1": {
+      "held_out_sources": [
+        "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929",
+        "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0",
+        "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2",
+        "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7",
+        "BDD/b20b9c19-91e01a50",
+        "BDD/b232c7c9-d251d9ee",
+        "BDD/b2d502aa-f0b28e3e",
+        "BDD/b2e2b2be-4142962b",
+        "BDD/b3378e5e-b7593301",
+        "BDD/b33ea6cb-3464fb13",
+        "BDD/b39fe3cd-227ff7a8",
+        "BDD/b3da33d5-a64e7657",
+        "BDD/b4301c7b-da5261f0",
+        "Charades/35LUV",
+        "Charades/4K0BP",
+        "Charades/5HPZ1",
+        "Charades/735W9",
+        "Charades/7P0JX",
+        "Charades/E8468",
+        "Charades/FHAV0",
+        "Charades/GL2JW",
+        "Charades/HSKVH",
+        "Charades/IULK6",
+        "Charades/JMPKP",
+        "Charades/KA3ER",
+        "Charades/MZ9X7",
+        "Charades/S7OTQ",
+        "LaSOT/bicycle-4",
+        "LaSOT/bicycle-9",
+        "LaSOT/book-11",
+        "LaSOT/bottle-12",
+        "LaSOT/cup-9",
+        "LaSOT/goldfish-17",
+        "LaSOT/guitar-9",
+        "LaSOT/helmet-1",
+        "LaSOT/lion-12",
+        "LaSOT/monkey-19",
+        "LaSOT/shark-20",
+        "LaSOT/sheep-15",
+        "LaSOT/skateboard-8",
+        "LaSOT/umbrella-18",
+        "LaSOT/volleyball-18",
+        "LaSOT/volleyball-20",
+        "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5",
+        "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b",
+        "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461",
+        "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215",
+        "YFCC100M/v_6f90a13c795ef37404d95983341df",
+        "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c",
+        "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452",
+        "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e",
+        "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150",
+        "YouTube/-dQIXiV6gk0",
+        "YouTube/1cU81_rjt7s",
+        "YouTube/25eIK85JWi4",
+        "YouTube/7YULkl7Xm04",
+        "YouTube/EOSzItLkZQQ",
+        "YouTube/I7Q-x9MorO0",
+        "YouTube/IUbQjSiZL-Y",
+        "YouTube/KUdBvuRaAbk",
+        "YouTube/QEFmA2nj12w",
+        "YouTube/TcB0IFBwk-k",
+        "YouTube/VTEcwSCLwLg",
+        "YouTube/WwmfBwEMP6s",
+        "YouTube/XOe9GeojzCs",
+        "YouTube/YAAUPjq-L-Q",
+        "YouTube/cLiJgvrDlWw",
+        "YouTube/dtlXB2kt09k",
+        "YouTube/h3-lxgAoXwI",
+        "YouTube/hg9scj8FyjY",
+        "YouTube/mThUfYcea3I",
+        "YouTube/pI8tpZLBcFk"
+      ],
+      "train_sources": [
+        "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2",
+        "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e",
+        "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818",
+        "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec",
+        "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2",
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072",
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68",
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0",
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48",
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a",
+        "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8",
+        "BDD/b1d0a191-03dcecc2",
+        "BDD/b20b69d2-e31380a7",
+        "BDD/b21c68e6-65674a17",
+        "BDD/b21d5efb-5e2cd743",
+        "BDD/b22a4d9f-73cc8810",
+        "BDD/b249e7f2-92d2efad",
+        "BDD/b262f576-b0373824",
+        "BDD/b27098c3-c443b6e3",
+        "BDD/b27127df-eac9b95e",
+        "BDD/b27369f3-9b9598f4",
+        "BDD/b27688b6-cd521517",
+        "BDD/b28ec521-898e11bd",
+        "BDD/b2bee3e1-80c787bd",
+        "BDD/b2d502aa-64d3e228",
+        "BDD/b2dbb793-9f0b2bec",
+        "BDD/b2de938e-84eab379",
+        "BDD/b2fc7cb5-1635d64b",
+        "BDD/b2ff6aba-fa4ac7d7",
+        "BDD/b3079ec6-df7b2d92",
+        "BDD/b30b460d-73d12a29",
+        "BDD/b3159650-1ba75f9b",
+        "BDD/b34b1b88-5bfe3b85",
+        "BDD/b368ee71-cf27b7fa",
+        "BDD/b36e0178-2037ca44",
+        "BDD/b3a9281a-e8ba5d66",
+        "BDD/b3b9ee6e-6d2617d1",
+        "BDD/b3be4113-1fb56ec4",
+        "BDD/b3ce9f98-2dc52573",
+        "BDD/b40b0ea3-b242efc9",
+        "BDD/b422ec08-d42660b6",
+        "BDD/b4235ab3-b305d3e9",
+        "BDD/b4278d1f-dbd0295c",
+        "BDD/b4466011-05cbc315",
+        "BDD/b4536117-bc85ba28",
+        "Charades/0LHWF",
+        "Charades/3N1I2",
+        "Charades/48BUM",
+        "Charades/4H61U",
+        "Charades/50E06",
+        "Charades/6EU06",
+        "Charades/6FV5P",
+        "Charades/7177T",
+        "Charades/8Q0EY",
+        "Charades/9M48H",
+        "Charades/9UU4W",
+        "Charades/A2EY4",
+        "Charades/AIOTI",
+        "Charades/AVSN8",
+        "Charades/BI6Y4",
+        "Charades/CF9QP",
+        "Charades/E9FY2",
+        "Charades/EIKUN",
+        "Charades/FZAEP",
+        "Charades/G2DIN",
+        "Charades/G8NEV",
+        "Charades/GQ341",
+        "Charades/HOYUT",
+        "Charades/HYD3N",
+        "Charades/IIL9C",
+        "Charades/KPHP5",
+        "Charades/LHTSI",
+        "Charades/M6ERH",
+        "Charades/NPEA3",
+        "Charades/O87OF",
+        "Charades/O8DER",
+        "Charades/PC7H2",
+        "Charades/PEWH4",
+        "Charades/PJUM0",
+        "Charades/QBUAT",
+        "Charades/QCPXJ",
+        "Charades/QHU9R",
+        "Charades/QZZPS",
+        "Charades/SROEU",
+        "Charades/SVA4D",
+        "Charades/TQO6O",
+        "Charades/U08M9",
+        "Charades/U4J2Q",
+        "Charades/UDGP2",
+        "Charades/V7YEJ",
+        "Charades/W97NR",
+        "Charades/X9LP4",
+        "Charades/Y3M3W",
+        "Charades/YE6UZ",
+        "Charades/YK49T",
+        "Charades/YXQWH",
+        "Charades/Z6HEA",
+        "LaSOT/airplane-4",
+        "LaSOT/basketball-11",
+        "LaSOT/basketball-4",
+        "LaSOT/basketball-6",
+        "LaSOT/bicycle-7",
+        "LaSOT/bird-11",
+        "LaSOT/bird-12",
+        "LaSOT/bird-17",
+        "LaSOT/boat-4",
+        "LaSOT/boat-9",
+        "LaSOT/book-15",
+        "LaSOT/book-2",
+        "LaSOT/book-3",
+        "LaSOT/bus-19",
+        "LaSOT/bus-8",
+        "LaSOT/car-17",
+        "LaSOT/cat-1",
+        "LaSOT/cat-13",
+        "LaSOT/cat-4",
+        "LaSOT/cat-7",
+        "LaSOT/cattle-14",
+        "LaSOT/cattle-9",
+        "LaSOT/deer-15",
+        "LaSOT/deer-4",
+        "LaSOT/dog-13",
+        "LaSOT/electricfan-13",
+        "LaSOT/elephant-14",
+        "LaSOT/elephant-6",
+        "LaSOT/flag-5",
+        "LaSOT/giraffe-19",
+        "LaSOT/hat-18",
+        "LaSOT/helmet-3",
+        "LaSOT/kite-18",
+        "LaSOT/lion-15",
+        "LaSOT/lion-9",
+        "LaSOT/lizard-16",
+        "LaSOT/microphone-12",
+        "LaSOT/microphone-13",
+        "LaSOT/microphone-3",
+        "LaSOT/monkey-16",
+        "LaSOT/motorcycle-19",
+        "LaSOT/person-2",
+        "LaSOT/person-3",
+        "LaSOT/person-7",
+        "LaSOT/pool-17",
+        "LaSOT/rabbit-17",
+        "LaSOT/racing-14",
+        "LaSOT/racing-20",
+        "LaSOT/skateboard-1",
+        "LaSOT/skateboard-18",
+        "LaSOT/spider-5",
+        "LaSOT/surfboard-8",
+        "LaSOT/swing-18",
+        "LaSOT/tank-12",
+        "LaSOT/tank-2",
+        "LaSOT/tiger-13",
+        "LaSOT/truck-10",
+        "LaSOT/truck-5",
+        "LaSOT/volleyball-19",
+        "LaSOT/zebra-14",
+        "LaSOT/zebra-18",
+        "LaSOT/zebra-19",
+        "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11",
+        "YFCC100M/v_23584c2660351f12cffe1399c47ce870",
+        "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d",
+        "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3",
+        "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3",
+        "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0",
+        "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629",
+        "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3",
+        "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b",
+        "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf",
+        "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d",
+        "YFCC100M/v_72252bc9435f88bbfb28aac25484f30",
+        "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a",
+        "YFCC100M/v_82e9bb97b1a1fdde489511e69126644",
+        "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30",
+        "YFCC100M/v_9018a07931e02026b3bd6e82489d4624",
+        "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c",
+        "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3",
+        "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5",
+        "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20",
+        "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a",
+        "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46",
+        "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33",
+        "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4",
+        "YFCC100M/v_df4744928b9b4199b5c73344efdce65",
+        "YFCC100M/v_e16e325327dd0974bda9bbd7a35118c",
+        "YFCC100M/v_e2d3c540737396bebd0a4b53b3174e",
+        "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40",
+        "YFCC100M/v_ea33c680e1f18d71543b8f80815beec",
+        "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5",
+        "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e",
+        "YFCC100M/v_f729d4f362aea24236153ffc589adac",
+        "YFCC100M/v_f93e2640ce4cf8b1195c94764803414",
+        "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c",
+        "YouTube/-6quA485tw8",
+        "YouTube/1mPd_3N5gNQ",
+        "YouTube/313tbNN4J3o",
+        "YouTube/4ltcNlAq1wI",
+        "YouTube/5BDj0ow5hnA",
+        "YouTube/7SFkVnnp_eE",
+        "YouTube/7XQoDEQGqaw",
+        "YouTube/7_xkhnbnI7M",
+        "YouTube/87ksUt7mO3o",
+        "YouTube/9sZI9IdgXZY",
+        "YouTube/AjH8TFfZIGY",
+        "YouTube/C48cXamb2B0",
+        "YouTube/Ce7YdX2cido",
+        "YouTube/D8Vhxbho1fY",
+        "YouTube/Fu0b-YbpPak",
+        "YouTube/H8g9ZBuQmrE",
+        "YouTube/HtaNMyVa260",
+        "YouTube/IS3OtsJFP7Y",
+        "YouTube/JMzNLlatrys",
+        "YouTube/JX1uj-YRiYo",
+        "YouTube/JvtJRvTKzvw",
+        "YouTube/LFPYYYZstjg",
+        "YouTube/Or8dXBSS_LM",
+        "YouTube/PQkE02amSDY",
+        "YouTube/Q5SutMM8H4I",
+        "YouTube/Q_701AtuEbE",
+        "YouTube/QlXEyPOUMUg",
+        "YouTube/Rf1XKstMa4E",
+        "YouTube/SA-if-DMT7E",
+        "YouTube/Vl9zODoJMIU",
+        "YouTube/WKqbLbU68wU",
+        "YouTube/XV_FF3WC7kA",
+        "YouTube/Y0DKz3JCq3I",
+        "YouTube/YD5C5LX7j4k",
+        "YouTube/Z11ALGaUmH0",
+        "YouTube/ZbeMNLwASVo",
+        "YouTube/Zyo70ZiXmYY",
+        "YouTube/aboKQqtoowA",
+        "YouTube/bFTTE4TV-ek",
+        "YouTube/bLoWh2xbm6o",
+        "YouTube/blDEcY6HZUU",
+        "YouTube/c0FxOPxBaac",
+        "YouTube/cB83GjrvoeE",
+        "YouTube/d-orB-PokJw",
+        "YouTube/dYAA0JLFrTc",
+        "YouTube/dZZqaYgPrY0",
+        "YouTube/eXklJqhFx8E",
+        "YouTube/ef5NncrTQu4",
+        "YouTube/f9U2VDJTIhg",
+        "YouTube/hL-ePuEk4_M",
+        "YouTube/iSjk42F0rvM",
+        "YouTube/jO3vuJ4xhns",
+        "YouTube/kM1naurrexk",
+        "YouTube/lC0HkItqIqA",
+        "YouTube/mkcDANJjDcM",
+        "YouTube/mq7Wv-5qJwc",
+        "YouTube/nKsIbi_R02U",
+        "YouTube/na6zkG7dl3A",
+        "YouTube/od2IpoFxeMI",
+        "YouTube/owDp3KOHmu8",
+        "YouTube/qlPC7oMm93g",
+        "YouTube/rin4oz7Fego",
+        "YouTube/s54UiLm7JLU",
+        "YouTube/sRd38UFfp6c",
+        "YouTube/tvzrxfgWSc4",
+        "YouTube/u40AQIBH_Gs",
+        "YouTube/uqUfP7ugJp0",
+        "YouTube/uwW0ejeosmk",
+        "YouTube/v0N4o4Px8jQ",
+        "YouTube/vbQwxMme5yk",
+        "YouTube/vrWYdPeIUqw",
+        "YouTube/yZGRVcIKU6Q",
+        "YouTube/yb7EbSnIAqM",
+        "YouTube/z-fsLpGHq6o",
+        "YouTube/zVN1SBxfR40",
+        "YouTube/zhdNNmwnYMI"
+      ]
+    },
+    "2": {
+      "held_out_sources": [
+        "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2",
+        "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec",
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a",
+        "BDD/b1d0a191-03dcecc2",
+        "BDD/b262f576-b0373824",
+        "BDD/b28ec521-898e11bd",
+        "BDD/b2d502aa-64d3e228",
+        "BDD/b2fc7cb5-1635d64b",
+        "BDD/b368ee71-cf27b7fa",
+        "BDD/b422ec08-d42660b6",
+        "BDD/b4466011-05cbc315",
+        "Charades/0LHWF",
+        "Charades/4H61U",
+        "Charades/6EU06",
+        "Charades/A2EY4",
+        "Charades/FZAEP",
+        "Charades/IIL9C",
+        "Charades/KPHP5",
+        "Charades/QBUAT",
+        "Charades/U08M9",
+        "Charades/UDGP2",
+        "Charades/X9LP4",
+        "Charades/YE6UZ",
+        "Charades/YK49T",
+        "Charades/Z6HEA",
+        "LaSOT/boat-9",
+        "LaSOT/book-15",
+        "LaSOT/cat-13",
+        "LaSOT/cat-7",
+        "LaSOT/cattle-14",
+        "LaSOT/deer-4",
+        "LaSOT/dog-13",
+        "LaSOT/electricfan-13",
+        "LaSOT/hat-18",
+        "LaSOT/lion-9",
+        "LaSOT/lizard-16",
+        "LaSOT/monkey-16",
+        "LaSOT/motorcycle-19",
+        "LaSOT/rabbit-17",
+        "LaSOT/swing-18",
+        "LaSOT/tiger-13",
+        "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3",
+        "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b",
+        "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a",
+        "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33",
+        "YFCC100M/v_e16e325327dd0974bda9bbd7a35118c",
+        "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5",
+        "YFCC100M/v_f93e2640ce4cf8b1195c94764803414",
+        "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c",
+        "YouTube/7_xkhnbnI7M",
+        "YouTube/IS3OtsJFP7Y",
+        "YouTube/JX1uj-YRiYo",
+        "YouTube/Q_701AtuEbE",
+        "YouTube/QlXEyPOUMUg",
+        "YouTube/SA-if-DMT7E",
+        "YouTube/WKqbLbU68wU",
+        "YouTube/XV_FF3WC7kA",
+        "YouTube/YD5C5LX7j4k",
+        "YouTube/Z11ALGaUmH0",
+        "YouTube/aboKQqtoowA",
+        "YouTube/bLoWh2xbm6o",
+        "YouTube/blDEcY6HZUU",
+        "YouTube/c0FxOPxBaac",
+        "YouTube/hL-ePuEk4_M",
+        "YouTube/jO3vuJ4xhns",
+        "YouTube/kM1naurrexk",
+        "YouTube/mkcDANJjDcM",
+        "YouTube/od2IpoFxeMI",
+        "YouTube/yb7EbSnIAqM"
+      ],
+      "train_sources": [
+        "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929",
+        "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e",
+        "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818",
+        "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2",
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072",
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68",
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0",
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48",
+        "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8",
+        "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0",
+        "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2",
+        "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7",
+        "BDD/b20b69d2-e31380a7",
+        "BDD/b20b9c19-91e01a50",
+        "BDD/b21c68e6-65674a17",
+        "BDD/b21d5efb-5e2cd743",
+        "BDD/b22a4d9f-73cc8810",
+        "BDD/b232c7c9-d251d9ee",
+        "BDD/b249e7f2-92d2efad",
+        "BDD/b27098c3-c443b6e3",
+        "BDD/b27127df-eac9b95e",
+        "BDD/b27369f3-9b9598f4",
+        "BDD/b27688b6-cd521517",
+        "BDD/b2bee3e1-80c787bd",
+        "BDD/b2d502aa-f0b28e3e",
+        "BDD/b2dbb793-9f0b2bec",
+        "BDD/b2de938e-84eab379",
+        "BDD/b2e2b2be-4142962b",
+        "BDD/b2ff6aba-fa4ac7d7",
+        "BDD/b3079ec6-df7b2d92",
+        "BDD/b30b460d-73d12a29",
+        "BDD/b3159650-1ba75f9b",
+        "BDD/b3378e5e-b7593301",
+        "BDD/b33ea6cb-3464fb13",
+        "BDD/b34b1b88-5bfe3b85",
+        "BDD/b36e0178-2037ca44",
+        "BDD/b39fe3cd-227ff7a8",
+        "BDD/b3a9281a-e8ba5d66",
+        "BDD/b3b9ee6e-6d2617d1",
+        "BDD/b3be4113-1fb56ec4",
+        "BDD/b3ce9f98-2dc52573",
+        "BDD/b3da33d5-a64e7657",
+        "BDD/b40b0ea3-b242efc9",
+        "BDD/b4235ab3-b305d3e9",
+        "BDD/b4278d1f-dbd0295c",
+        "BDD/b4301c7b-da5261f0",
+        "BDD/b4536117-bc85ba28",
+        "Charades/35LUV",
+        "Charades/3N1I2",
+        "Charades/48BUM",
+        "Charades/4K0BP",
+        "Charades/50E06",
+        "Charades/5HPZ1",
+        "Charades/6FV5P",
+        "Charades/7177T",
+        "Charades/735W9",
+        "Charades/7P0JX",
+        "Charades/8Q0EY",
+        "Charades/9M48H",
+        "Charades/9UU4W",
+        "Charades/AIOTI",
+        "Charades/AVSN8",
+        "Charades/BI6Y4",
+        "Charades/CF9QP",
+        "Charades/E8468",
+        "Charades/E9FY2",
+        "Charades/EIKUN",
+        "Charades/FHAV0",
+        "Charades/G2DIN",
+        "Charades/G8NEV",
+        "Charades/GL2JW",
+        "Charades/GQ341",
+        "Charades/HOYUT",
+        "Charades/HSKVH",
+        "Charades/HYD3N",
+        "Charades/IULK6",
+        "Charades/JMPKP",
+        "Charades/KA3ER",
+        "Charades/LHTSI",
+        "Charades/M6ERH",
+        "Charades/MZ9X7",
+        "Charades/NPEA3",
+        "Charades/O87OF",
+        "Charades/O8DER",
+        "Charades/PC7H2",
+        "Charades/PEWH4",
+        "Charades/PJUM0",
+        "Charades/QCPXJ",
+        "Charades/QHU9R",
+        "Charades/QZZPS",
+        "Charades/S7OTQ",
+        "Charades/SROEU",
+        "Charades/SVA4D",
+        "Charades/TQO6O",
+        "Charades/U4J2Q",
+        "Charades/V7YEJ",
+        "Charades/W97NR",
+        "Charades/Y3M3W",
+        "Charades/YXQWH",
+        "LaSOT/airplane-4",
+        "LaSOT/basketball-11",
+        "LaSOT/basketball-4",
+        "LaSOT/basketball-6",
+        "LaSOT/bicycle-4",
+        "LaSOT/bicycle-7",
+        "LaSOT/bicycle-9",
+        "LaSOT/bird-11",
+        "LaSOT/bird-12",
+        "LaSOT/bird-17",
+        "LaSOT/boat-4",
+        "LaSOT/book-11",
+        "LaSOT/book-2",
+        "LaSOT/book-3",
+        "LaSOT/bottle-12",
+        "LaSOT/bus-19",
+        "LaSOT/bus-8",
+        "LaSOT/car-17",
+        "LaSOT/cat-1",
+        "LaSOT/cat-4",
+        "LaSOT/cattle-9",
+        "LaSOT/cup-9",
+        "LaSOT/deer-15",
+        "LaSOT/elephant-14",
+        "LaSOT/elephant-6",
+        "LaSOT/flag-5",
+        "LaSOT/giraffe-19",
+        "LaSOT/goldfish-17",
+        "LaSOT/guitar-9",
+        "LaSOT/helmet-1",
+        "LaSOT/helmet-3",
+        "LaSOT/kite-18",
+        "LaSOT/lion-12",
+        "LaSOT/lion-15",
+        "LaSOT/microphone-12",
+        "LaSOT/microphone-13",
+        "LaSOT/microphone-3",
+        "LaSOT/monkey-19",
+        "LaSOT/person-2",
+        "LaSOT/person-3",
+        "LaSOT/person-7",
+        "LaSOT/pool-17",
+        "LaSOT/racing-14",
+        "LaSOT/racing-20",
+        "LaSOT/shark-20",
+        "LaSOT/sheep-15",
+        "LaSOT/skateboard-1",
+        "LaSOT/skateboard-18",
+        "LaSOT/skateboard-8",
+        "LaSOT/spider-5",
+        "LaSOT/surfboard-8",
+        "LaSOT/tank-12",
+        "LaSOT/tank-2",
+        "LaSOT/truck-10",
+        "LaSOT/truck-5",
+        "LaSOT/umbrella-18",
+        "LaSOT/volleyball-18",
+        "LaSOT/volleyball-19",
+        "LaSOT/volleyball-20",
+        "LaSOT/zebra-14",
+        "LaSOT/zebra-18",
+        "LaSOT/zebra-19",
+        "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11",
+        "YFCC100M/v_23584c2660351f12cffe1399c47ce870",
+        "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5",
+        "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b",
+        "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461",
+        "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d",
+        "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3",
+        "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215",
+        "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0",
+        "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629",
+        "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3",
+        "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf",
+        "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d",
+        "YFCC100M/v_6f90a13c795ef37404d95983341df",
+        "YFCC100M/v_72252bc9435f88bbfb28aac25484f30",
+        "YFCC100M/v_82e9bb97b1a1fdde489511e69126644",
+        "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30",
+        "YFCC100M/v_9018a07931e02026b3bd6e82489d4624",
+        "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c",
+        "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3",
+        "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5",
+        "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c",
+        "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20",
+        "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a",
+        "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46",
+        "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4",
+        "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452",
+        "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e",
+        "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150",
+        "YFCC100M/v_df4744928b9b4199b5c73344efdce65",
+        "YFCC100M/v_e2d3c540737396bebd0a4b53b3174e",
+        "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40",
+        "YFCC100M/v_ea33c680e1f18d71543b8f80815beec",
+        "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e",
+        "YFCC100M/v_f729d4f362aea24236153ffc589adac",
+        "YouTube/-6quA485tw8",
+        "YouTube/-dQIXiV6gk0",
+        "YouTube/1cU81_rjt7s",
+        "YouTube/1mPd_3N5gNQ",
+        "YouTube/25eIK85JWi4",
+        "YouTube/313tbNN4J3o",
+        "YouTube/4ltcNlAq1wI",
+        "YouTube/5BDj0ow5hnA",
+        "YouTube/7SFkVnnp_eE",
+        "YouTube/7XQoDEQGqaw",
+        "YouTube/7YULkl7Xm04",
+        "YouTube/87ksUt7mO3o",
+        "YouTube/9sZI9IdgXZY",
+        "YouTube/AjH8TFfZIGY",
+        "YouTube/C48cXamb2B0",
+        "YouTube/Ce7YdX2cido",
+        "YouTube/D8Vhxbho1fY",
+        "YouTube/EOSzItLkZQQ",
+        "YouTube/Fu0b-YbpPak",
+        "YouTube/H8g9ZBuQmrE",
+        "YouTube/HtaNMyVa260",
+        "YouTube/I7Q-x9MorO0",
+        "YouTube/IUbQjSiZL-Y",
+        "YouTube/JMzNLlatrys",
+        "YouTube/JvtJRvTKzvw",
+        "YouTube/KUdBvuRaAbk",
+        "YouTube/LFPYYYZstjg",
+        "YouTube/Or8dXBSS_LM",
+        "YouTube/PQkE02amSDY",
+        "YouTube/Q5SutMM8H4I",
+        "YouTube/QEFmA2nj12w",
+        "YouTube/Rf1XKstMa4E",
+        "YouTube/TcB0IFBwk-k",
+        "YouTube/VTEcwSCLwLg",
+        "YouTube/Vl9zODoJMIU",
+        "YouTube/WwmfBwEMP6s",
+        "YouTube/XOe9GeojzCs",
+        "YouTube/Y0DKz3JCq3I",
+        "YouTube/YAAUPjq-L-Q",
+        "YouTube/ZbeMNLwASVo",
+        "YouTube/Zyo70ZiXmYY",
+        "YouTube/bFTTE4TV-ek",
+        "YouTube/cB83GjrvoeE",
+        "YouTube/cLiJgvrDlWw",
+        "YouTube/d-orB-PokJw",
+        "YouTube/dYAA0JLFrTc",
+        "YouTube/dZZqaYgPrY0",
+        "YouTube/dtlXB2kt09k",
+        "YouTube/eXklJqhFx8E",
+        "YouTube/ef5NncrTQu4",
+        "YouTube/f9U2VDJTIhg",
+        "YouTube/h3-lxgAoXwI",
+        "YouTube/hg9scj8FyjY",
+        "YouTube/iSjk42F0rvM",
+        "YouTube/lC0HkItqIqA",
+        "YouTube/mThUfYcea3I",
+        "YouTube/mq7Wv-5qJwc",
+        "YouTube/nKsIbi_R02U",
+        "YouTube/na6zkG7dl3A",
+        "YouTube/owDp3KOHmu8",
+        "YouTube/pI8tpZLBcFk",
+        "YouTube/qlPC7oMm93g",
+        "YouTube/rin4oz7Fego",
+        "YouTube/s54UiLm7JLU",
+        "YouTube/sRd38UFfp6c",
+        "YouTube/tvzrxfgWSc4",
+        "YouTube/u40AQIBH_Gs",
+        "YouTube/uqUfP7ugJp0",
+        "YouTube/uwW0ejeosmk",
+        "YouTube/v0N4o4Px8jQ",
+        "YouTube/vbQwxMme5yk",
+        "YouTube/vrWYdPeIUqw",
+        "YouTube/yZGRVcIKU6Q",
+        "YouTube/z-fsLpGHq6o",
+        "YouTube/zVN1SBxfR40",
+        "YouTube/zhdNNmwnYMI"
+      ]
+    },
+    "3": {
+      "held_out_sources": [
+        "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818",
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68",
+        "BDD/b21c68e6-65674a17",
+        "BDD/b21d5efb-5e2cd743",
+        "BDD/b27688b6-cd521517",
+        "BDD/b2bee3e1-80c787bd",
+        "BDD/b2ff6aba-fa4ac7d7",
+        "BDD/b30b460d-73d12a29",
+        "BDD/b3159650-1ba75f9b",
+        "BDD/b34b1b88-5bfe3b85",
+        "Charades/3N1I2",
+        "Charades/6FV5P",
+        "Charades/9UU4W",
+        "Charades/BI6Y4",
+        "Charades/CF9QP",
+        "Charades/NPEA3",
+        "Charades/O87OF",
+        "Charades/QHU9R",
+        "Charades/TQO6O",
+        "Charades/W97NR",
+        "Charades/Y3M3W",
+        "Charades/YXQWH",
+        "LaSOT/basketball-11",
+        "LaSOT/basketball-4",
+        "LaSOT/bicycle-7",
+        "LaSOT/book-3",
+        "LaSOT/car-17",
+        "LaSOT/cat-4",
+        "LaSOT/cattle-9",
+        "LaSOT/elephant-6",
+        "LaSOT/flag-5",
+        "LaSOT/lion-15",
+        "LaSOT/microphone-13",
+        "LaSOT/microphone-3",
+        "LaSOT/tank-12",
+        "LaSOT/tank-2",
+        "LaSOT/zebra-14",
+        "LaSOT/zebra-18",
+        "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d",
+        "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629",
+        "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d",
+        "YFCC100M/v_9018a07931e02026b3bd6e82489d4624",
+        "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c",
+        "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20",
+        "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4",
+        "YFCC100M/v_ea33c680e1f18d71543b8f80815beec",
+        "YouTube/313tbNN4J3o",
+        "YouTube/C48cXamb2B0",
+        "YouTube/Ce7YdX2cido",
+        "YouTube/H8g9ZBuQmrE",
+        "YouTube/HtaNMyVa260",
+        "YouTube/Or8dXBSS_LM",
+        "YouTube/PQkE02amSDY",
+        "YouTube/Q5SutMM8H4I",
+        "YouTube/Vl9zODoJMIU",
+        "YouTube/bFTTE4TV-ek",
+        "YouTube/cB83GjrvoeE",
+        "YouTube/eXklJqhFx8E",
+        "YouTube/iSjk42F0rvM",
+        "YouTube/nKsIbi_R02U",
+        "YouTube/qlPC7oMm93g",
+        "YouTube/u40AQIBH_Gs",
+        "YouTube/vbQwxMme5yk",
+        "YouTube/yZGRVcIKU6Q"
+      ],
+      "train_sources": [
+        "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2",
+        "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929",
+        "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e",
+        "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec",
+        "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2",
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072",
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0",
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48",
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a",
+        "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8",
+        "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0",
+        "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2",
+        "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7",
+        "BDD/b1d0a191-03dcecc2",
+        "BDD/b20b69d2-e31380a7",
+        "BDD/b20b9c19-91e01a50",
+        "BDD/b22a4d9f-73cc8810",
+        "BDD/b232c7c9-d251d9ee",
+        "BDD/b249e7f2-92d2efad",
+        "BDD/b262f576-b0373824",
+        "BDD/b27098c3-c443b6e3",
+        "BDD/b27127df-eac9b95e",
+        "BDD/b27369f3-9b9598f4",
+        "BDD/b28ec521-898e11bd",
+        "BDD/b2d502aa-64d3e228",
+        "BDD/b2d502aa-f0b28e3e",
+        "BDD/b2dbb793-9f0b2bec",
+        "BDD/b2de938e-84eab379",
+        "BDD/b2e2b2be-4142962b",
+        "BDD/b2fc7cb5-1635d64b",
+        "BDD/b3079ec6-df7b2d92",
+        "BDD/b3378e5e-b7593301",
+        "BDD/b33ea6cb-3464fb13",
+        "BDD/b368ee71-cf27b7fa",
+        "BDD/b36e0178-2037ca44",
+        "BDD/b39fe3cd-227ff7a8",
+        "BDD/b3a9281a-e8ba5d66",
+        "BDD/b3b9ee6e-6d2617d1",
+        "BDD/b3be4113-1fb56ec4",
+        "BDD/b3ce9f98-2dc52573",
+        "BDD/b3da33d5-a64e7657",
+        "BDD/b40b0ea3-b242efc9",
+        "BDD/b422ec08-d42660b6",
+        "BDD/b4235ab3-b305d3e9",
+        "BDD/b4278d1f-dbd0295c",
+        "BDD/b4301c7b-da5261f0",
+        "BDD/b4466011-05cbc315",
+        "BDD/b4536117-bc85ba28",
+        "Charades/0LHWF",
+        "Charades/35LUV",
+        "Charades/48BUM",
+        "Charades/4H61U",
+        "Charades/4K0BP",
+        "Charades/50E06",
+        "Charades/5HPZ1",
+        "Charades/6EU06",
+        "Charades/7177T",
+        "Charades/735W9",
+        "Charades/7P0JX",
+        "Charades/8Q0EY",
+        "Charades/9M48H",
+        "Charades/A2EY4",
+        "Charades/AIOTI",
+        "Charades/AVSN8",
+        "Charades/E8468",
+        "Charades/E9FY2",
+        "Charades/EIKUN",
+        "Charades/FHAV0",
+        "Charades/FZAEP",
+        "Charades/G2DIN",
+        "Charades/G8NEV",
+        "Charades/GL2JW",
+        "Charades/GQ341",
+        "Charades/HOYUT",
+        "Charades/HSKVH",
+        "Charades/HYD3N",
+        "Charades/IIL9C",
+        "Charades/IULK6",
+        "Charades/JMPKP",
+        "Charades/KA3ER",
+        "Charades/KPHP5",
+        "Charades/LHTSI",
+        "Charades/M6ERH",
+        "Charades/MZ9X7",
+        "Charades/O8DER",
+        "Charades/PC7H2",
+        "Charades/PEWH4",
+        "Charades/PJUM0",
+        "Charades/QBUAT",
+        "Charades/QCPXJ",
+        "Charades/QZZPS",
+        "Charades/S7OTQ",
+        "Charades/SROEU",
+        "Charades/SVA4D",
+        "Charades/U08M9",
+        "Charades/U4J2Q",
+        "Charades/UDGP2",
+        "Charades/V7YEJ",
+        "Charades/X9LP4",
+        "Charades/YE6UZ",
+        "Charades/YK49T",
+        "Charades/Z6HEA",
+        "LaSOT/airplane-4",
+        "LaSOT/basketball-6",
+        "LaSOT/bicycle-4",
+        "LaSOT/bicycle-9",
+        "LaSOT/bird-11",
+        "LaSOT/bird-12",
+        "LaSOT/bird-17",
+        "LaSOT/boat-4",
+        "LaSOT/boat-9",
+        "LaSOT/book-11",
+        "LaSOT/book-15",
+        "LaSOT/book-2",
+        "LaSOT/bottle-12",
+        "LaSOT/bus-19",
+        "LaSOT/bus-8",
+        "LaSOT/cat-1",
+        "LaSOT/cat-13",
+        "LaSOT/cat-7",
+        "LaSOT/cattle-14",
+        "LaSOT/cup-9",
+        "LaSOT/deer-15",
+        "LaSOT/deer-4",
+        "LaSOT/dog-13",
+        "LaSOT/electricfan-13",
+        "LaSOT/elephant-14",
+        "LaSOT/giraffe-19",
+        "LaSOT/goldfish-17",
+        "LaSOT/guitar-9",
+        "LaSOT/hat-18",
+        "LaSOT/helmet-1",
+        "LaSOT/helmet-3",
+        "LaSOT/kite-18",
+        "LaSOT/lion-12",
+        "LaSOT/lion-9",
+        "LaSOT/lizard-16",
+        "LaSOT/microphone-12",
+        "LaSOT/monkey-16",
+        "LaSOT/monkey-19",
+        "LaSOT/motorcycle-19",
+        "LaSOT/person-2",
+        "LaSOT/person-3",
+        "LaSOT/person-7",
+        "LaSOT/pool-17",
+        "LaSOT/rabbit-17",
+        "LaSOT/racing-14",
+        "LaSOT/racing-20",
+        "LaSOT/shark-20",
+        "LaSOT/sheep-15",
+        "LaSOT/skateboard-1",
+        "LaSOT/skateboard-18",
+        "LaSOT/skateboard-8",
+        "LaSOT/spider-5",
+        "LaSOT/surfboard-8",
+        "LaSOT/swing-18",
+        "LaSOT/tiger-13",
+        "LaSOT/truck-10",
+        "LaSOT/truck-5",
+        "LaSOT/umbrella-18",
+        "LaSOT/volleyball-18",
+        "LaSOT/volleyball-19",
+        "LaSOT/volleyball-20",
+        "LaSOT/zebra-19",
+        "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11",
+        "YFCC100M/v_23584c2660351f12cffe1399c47ce870",
+        "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5",
+        "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b",
+        "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461",
+        "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3",
+        "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3",
+        "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215",
+        "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0",
+        "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3",
+        "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b",
+        "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf",
+        "YFCC100M/v_6f90a13c795ef37404d95983341df",
+        "YFCC100M/v_72252bc9435f88bbfb28aac25484f30",
+        "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a",
+        "YFCC100M/v_82e9bb97b1a1fdde489511e69126644",
+        "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30",
+        "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3",
+        "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5",
+        "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c",
+        "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a",
+        "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46",
+        "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33",
+        "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452",
+        "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e",
+        "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150",
+        "YFCC100M/v_df4744928b9b4199b5c73344efdce65",
+        "YFCC100M/v_e16e325327dd0974bda9bbd7a35118c",
+        "YFCC100M/v_e2d3c540737396bebd0a4b53b3174e",
+        "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40",
+        "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5",
+        "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e",
+        "YFCC100M/v_f729d4f362aea24236153ffc589adac",
+        "YFCC100M/v_f93e2640ce4cf8b1195c94764803414",
+        "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c",
+        "YouTube/-6quA485tw8",
+        "YouTube/-dQIXiV6gk0",
+        "YouTube/1cU81_rjt7s",
+        "YouTube/1mPd_3N5gNQ",
+        "YouTube/25eIK85JWi4",
+        "YouTube/4ltcNlAq1wI",
+        "YouTube/5BDj0ow5hnA",
+        "YouTube/7SFkVnnp_eE",
+        "YouTube/7XQoDEQGqaw",
+        "YouTube/7YULkl7Xm04",
+        "YouTube/7_xkhnbnI7M",
+        "YouTube/87ksUt7mO3o",
+        "YouTube/9sZI9IdgXZY",
+        "YouTube/AjH8TFfZIGY",
+        "YouTube/D8Vhxbho1fY",
+        "YouTube/EOSzItLkZQQ",
+        "YouTube/Fu0b-YbpPak",
+        "YouTube/I7Q-x9MorO0",
+        "YouTube/IS3OtsJFP7Y",
+        "YouTube/IUbQjSiZL-Y",
+        "YouTube/JMzNLlatrys",
+        "YouTube/JX1uj-YRiYo",
+        "YouTube/JvtJRvTKzvw",
+        "YouTube/KUdBvuRaAbk",
+        "YouTube/LFPYYYZstjg",
+        "YouTube/QEFmA2nj12w",
+        "YouTube/Q_701AtuEbE",
+        "YouTube/QlXEyPOUMUg",
+        "YouTube/Rf1XKstMa4E",
+        "YouTube/SA-if-DMT7E",
+        "YouTube/TcB0IFBwk-k",
+        "YouTube/VTEcwSCLwLg",
+        "YouTube/WKqbLbU68wU",
+        "YouTube/WwmfBwEMP6s",
+        "YouTube/XOe9GeojzCs",
+        "YouTube/XV_FF3WC7kA",
+        "YouTube/Y0DKz3JCq3I",
+        "YouTube/YAAUPjq-L-Q",
+        "YouTube/YD5C5LX7j4k",
+        "YouTube/Z11ALGaUmH0",
+        "YouTube/ZbeMNLwASVo",
+        "YouTube/Zyo70ZiXmYY",
+        "YouTube/aboKQqtoowA",
+        "YouTube/bLoWh2xbm6o",
+        "YouTube/blDEcY6HZUU",
+        "YouTube/c0FxOPxBaac",
+        "YouTube/cLiJgvrDlWw",
+        "YouTube/d-orB-PokJw",
+        "YouTube/dYAA0JLFrTc",
+        "YouTube/dZZqaYgPrY0",
+        "YouTube/dtlXB2kt09k",
+        "YouTube/ef5NncrTQu4",
+        "YouTube/f9U2VDJTIhg",
+        "YouTube/h3-lxgAoXwI",
+        "YouTube/hL-ePuEk4_M",
+        "YouTube/hg9scj8FyjY",
+        "YouTube/jO3vuJ4xhns",
+        "YouTube/kM1naurrexk",
+        "YouTube/lC0HkItqIqA",
+        "YouTube/mThUfYcea3I",
+        "YouTube/mkcDANJjDcM",
+        "YouTube/mq7Wv-5qJwc",
+        "YouTube/na6zkG7dl3A",
+        "YouTube/od2IpoFxeMI",
+        "YouTube/owDp3KOHmu8",
+        "YouTube/pI8tpZLBcFk",
+        "YouTube/rin4oz7Fego",
+        "YouTube/s54UiLm7JLU",
+        "YouTube/sRd38UFfp6c",
+        "YouTube/tvzrxfgWSc4",
+        "YouTube/uqUfP7ugJp0",
+        "YouTube/uwW0ejeosmk",
+        "YouTube/v0N4o4Px8jQ",
+        "YouTube/vrWYdPeIUqw",
+        "YouTube/yb7EbSnIAqM",
+        "YouTube/z-fsLpGHq6o",
+        "YouTube/zVN1SBxfR40",
+        "YouTube/zhdNNmwnYMI"
+      ]
+    },
+    "4": {
+      "held_out_sources": [
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48",
+        "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8",
+        "BDD/b20b69d2-e31380a7",
+        "BDD/b22a4d9f-73cc8810",
+        "BDD/b27127df-eac9b95e",
+        "BDD/b2dbb793-9f0b2bec",
+        "BDD/b3079ec6-df7b2d92",
+        "BDD/b3a9281a-e8ba5d66",
+        "BDD/b3b9ee6e-6d2617d1",
+        "BDD/b3be4113-1fb56ec4",
+        "Charades/48BUM",
+        "Charades/AIOTI",
+        "Charades/EIKUN",
+        "Charades/G2DIN",
+        "Charades/G8NEV",
+        "Charades/GQ341",
+        "Charades/HOYUT",
+        "Charades/HYD3N",
+        "Charades/M6ERH",
+        "Charades/PC7H2",
+        "Charades/PEWH4",
+        "Charades/QZZPS",
+        "LaSOT/bird-12",
+        "LaSOT/bird-17",
+        "LaSOT/book-2",
+        "LaSOT/bus-19",
+        "LaSOT/cat-1",
+        "LaSOT/giraffe-19",
+        "LaSOT/microphone-12",
+        "LaSOT/person-2",
+        "LaSOT/person-3",
+        "LaSOT/racing-14",
+        "LaSOT/skateboard-1",
+        "LaSOT/spider-5",
+        "LaSOT/surfboard-8",
+        "LaSOT/truck-10",
+        "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11",
+        "YFCC100M/v_23584c2660351f12cffe1399c47ce870",
+        "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0",
+        "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30",
+        "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3",
+        "YFCC100M/v_e2d3c540737396bebd0a4b53b3174e",
+        "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40",
+        "YFCC100M/v_f729d4f362aea24236153ffc589adac",
+        "YouTube/1mPd_3N5gNQ",
+        "YouTube/7XQoDEQGqaw",
+        "YouTube/9sZI9IdgXZY",
+        "YouTube/D8Vhxbho1fY",
+        "YouTube/JMzNLlatrys",
+        "YouTube/LFPYYYZstjg",
+        "YouTube/Y0DKz3JCq3I",
+        "YouTube/ZbeMNLwASVo",
+        "YouTube/Zyo70ZiXmYY",
+        "YouTube/dYAA0JLFrTc",
+        "YouTube/dZZqaYgPrY0",
+        "YouTube/f9U2VDJTIhg",
+        "YouTube/mq7Wv-5qJwc",
+        "YouTube/owDp3KOHmu8",
+        "YouTube/tvzrxfgWSc4",
+        "YouTube/uqUfP7ugJp0",
+        "YouTube/vrWYdPeIUqw",
+        "YouTube/zhdNNmwnYMI"
+      ],
+      "train_sources": [
+        "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2",
+        "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929",
+        "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e",
+        "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818",
+        "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec",
+        "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2",
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072",
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68",
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0",
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a",
+        "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0",
+        "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2",
+        "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7",
+        "BDD/b1d0a191-03dcecc2",
+        "BDD/b20b9c19-91e01a50",
+        "BDD/b21c68e6-65674a17",
+        "BDD/b21d5efb-5e2cd743",
+        "BDD/b232c7c9-d251d9ee",
+        "BDD/b249e7f2-92d2efad",
+        "BDD/b262f576-b0373824",
+        "BDD/b27098c3-c443b6e3",
+        "BDD/b27369f3-9b9598f4",
+        "BDD/b27688b6-cd521517",
+        "BDD/b28ec521-898e11bd",
+        "BDD/b2bee3e1-80c787bd",
+        "BDD/b2d502aa-64d3e228",
+        "BDD/b2d502aa-f0b28e3e",
+        "BDD/b2de938e-84eab379",
+        "BDD/b2e2b2be-4142962b",
+        "BDD/b2fc7cb5-1635d64b",
+        "BDD/b2ff6aba-fa4ac7d7",
+        "BDD/b30b460d-73d12a29",
+        "BDD/b3159650-1ba75f9b",
+        "BDD/b3378e5e-b7593301",
+        "BDD/b33ea6cb-3464fb13",
+        "BDD/b34b1b88-5bfe3b85",
+        "BDD/b368ee71-cf27b7fa",
+        "BDD/b36e0178-2037ca44",
+        "BDD/b39fe3cd-227ff7a8",
+        "BDD/b3ce9f98-2dc52573",
+        "BDD/b3da33d5-a64e7657",
+        "BDD/b40b0ea3-b242efc9",
+        "BDD/b422ec08-d42660b6",
+        "BDD/b4235ab3-b305d3e9",
+        "BDD/b4278d1f-dbd0295c",
+        "BDD/b4301c7b-da5261f0",
+        "BDD/b4466011-05cbc315",
+        "BDD/b4536117-bc85ba28",
+        "Charades/0LHWF",
+        "Charades/35LUV",
+        "Charades/3N1I2",
+        "Charades/4H61U",
+        "Charades/4K0BP",
+        "Charades/50E06",
+        "Charades/5HPZ1",
+        "Charades/6EU06",
+        "Charades/6FV5P",
+        "Charades/7177T",
+        "Charades/735W9",
+        "Charades/7P0JX",
+        "Charades/8Q0EY",
+        "Charades/9M48H",
+        "Charades/9UU4W",
+        "Charades/A2EY4",
+        "Charades/AVSN8",
+        "Charades/BI6Y4",
+        "Charades/CF9QP",
+        "Charades/E8468",
+        "Charades/E9FY2",
+        "Charades/FHAV0",
+        "Charades/FZAEP",
+        "Charades/GL2JW",
+        "Charades/HSKVH",
+        "Charades/IIL9C",
+        "Charades/IULK6",
+        "Charades/JMPKP",
+        "Charades/KA3ER",
+        "Charades/KPHP5",
+        "Charades/LHTSI",
+        "Charades/MZ9X7",
+        "Charades/NPEA3",
+        "Charades/O87OF",
+        "Charades/O8DER",
+        "Charades/PJUM0",
+        "Charades/QBUAT",
+        "Charades/QCPXJ",
+        "Charades/QHU9R",
+        "Charades/S7OTQ",
+        "Charades/SROEU",
+        "Charades/SVA4D",
+        "Charades/TQO6O",
+        "Charades/U08M9",
+        "Charades/U4J2Q",
+        "Charades/UDGP2",
+        "Charades/V7YEJ",
+        "Charades/W97NR",
+        "Charades/X9LP4",
+        "Charades/Y3M3W",
+        "Charades/YE6UZ",
+        "Charades/YK49T",
+        "Charades/YXQWH",
+        "Charades/Z6HEA",
+        "LaSOT/airplane-4",
+        "LaSOT/basketball-11",
+        "LaSOT/basketball-4",
+        "LaSOT/basketball-6",
+        "LaSOT/bicycle-4",
+        "LaSOT/bicycle-7",
+        "LaSOT/bicycle-9",
+        "LaSOT/bird-11",
+        "LaSOT/boat-4",
+        "LaSOT/boat-9",
+        "LaSOT/book-11",
+        "LaSOT/book-15",
+        "LaSOT/book-3",
+        "LaSOT/bottle-12",
+        "LaSOT/bus-8",
+        "LaSOT/car-17",
+        "LaSOT/cat-13",
+        "LaSOT/cat-4",
+        "LaSOT/cat-7",
+        "LaSOT/cattle-14",
+        "LaSOT/cattle-9",
+        "LaSOT/cup-9",
+        "LaSOT/deer-15",
+        "LaSOT/deer-4",
+        "LaSOT/dog-13",
+        "LaSOT/electricfan-13",
+        "LaSOT/elephant-14",
+        "LaSOT/elephant-6",
+        "LaSOT/flag-5",
+        "LaSOT/goldfish-17",
+        "LaSOT/guitar-9",
+        "LaSOT/hat-18",
+        "LaSOT/helmet-1",
+        "LaSOT/helmet-3",
+        "LaSOT/kite-18",
+        "LaSOT/lion-12",
+        "LaSOT/lion-15",
+        "LaSOT/lion-9",
+        "LaSOT/lizard-16",
+        "LaSOT/microphone-13",
+        "LaSOT/microphone-3",
+        "LaSOT/monkey-16",
+        "LaSOT/monkey-19",
+        "LaSOT/motorcycle-19",
+        "LaSOT/person-7",
+        "LaSOT/pool-17",
+        "LaSOT/rabbit-17",
+        "LaSOT/racing-20",
+        "LaSOT/shark-20",
+        "LaSOT/sheep-15",
+        "LaSOT/skateboard-18",
+        "LaSOT/skateboard-8",
+        "LaSOT/swing-18",
+        "LaSOT/tank-12",
+        "LaSOT/tank-2",
+        "LaSOT/tiger-13",
+        "LaSOT/truck-5",
+        "LaSOT/umbrella-18",
+        "LaSOT/volleyball-18",
+        "LaSOT/volleyball-19",
+        "LaSOT/volleyball-20",
+        "LaSOT/zebra-14",
+        "LaSOT/zebra-18",
+        "LaSOT/zebra-19",
+        "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5",
+        "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b",
+        "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461",
+        "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d",
+        "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3",
+        "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3",
+        "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215",
+        "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629",
+        "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3",
+        "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b",
+        "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf",
+        "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d",
+        "YFCC100M/v_6f90a13c795ef37404d95983341df",
+        "YFCC100M/v_72252bc9435f88bbfb28aac25484f30",
+        "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a",
+        "YFCC100M/v_82e9bb97b1a1fdde489511e69126644",
+        "YFCC100M/v_9018a07931e02026b3bd6e82489d4624",
+        "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c",
+        "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5",
+        "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c",
+        "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20",
+        "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a",
+        "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46",
+        "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33",
+        "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4",
+        "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452",
+        "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e",
+        "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150",
+        "YFCC100M/v_df4744928b9b4199b5c73344efdce65",
+        "YFCC100M/v_e16e325327dd0974bda9bbd7a35118c",
+        "YFCC100M/v_ea33c680e1f18d71543b8f80815beec",
+        "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5",
+        "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e",
+        "YFCC100M/v_f93e2640ce4cf8b1195c94764803414",
+        "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c",
+        "YouTube/-6quA485tw8",
+        "YouTube/-dQIXiV6gk0",
+        "YouTube/1cU81_rjt7s",
+        "YouTube/25eIK85JWi4",
+        "YouTube/313tbNN4J3o",
+        "YouTube/4ltcNlAq1wI",
+        "YouTube/5BDj0ow5hnA",
+        "YouTube/7SFkVnnp_eE",
+        "YouTube/7YULkl7Xm04",
+        "YouTube/7_xkhnbnI7M",
+        "YouTube/87ksUt7mO3o",
+        "YouTube/AjH8TFfZIGY",
+        "YouTube/C48cXamb2B0",
+        "YouTube/Ce7YdX2cido",
+        "YouTube/EOSzItLkZQQ",
+        "YouTube/Fu0b-YbpPak",
+        "YouTube/H8g9ZBuQmrE",
+        "YouTube/HtaNMyVa260",
+        "YouTube/I7Q-x9MorO0",
+        "YouTube/IS3OtsJFP7Y",
+        "YouTube/IUbQjSiZL-Y",
+        "YouTube/JX1uj-YRiYo",
+        "YouTube/JvtJRvTKzvw",
+        "YouTube/KUdBvuRaAbk",
+        "YouTube/Or8dXBSS_LM",
+        "YouTube/PQkE02amSDY",
+        "YouTube/Q5SutMM8H4I",
+        "YouTube/QEFmA2nj12w",
+        "YouTube/Q_701AtuEbE",
+        "YouTube/QlXEyPOUMUg",
+        "YouTube/Rf1XKstMa4E",
+        "YouTube/SA-if-DMT7E",
+        "YouTube/TcB0IFBwk-k",
+        "YouTube/VTEcwSCLwLg",
+        "YouTube/Vl9zODoJMIU",
+        "YouTube/WKqbLbU68wU",
+        "YouTube/WwmfBwEMP6s",
+        "YouTube/XOe9GeojzCs",
+        "YouTube/XV_FF3WC7kA",
+        "YouTube/YAAUPjq-L-Q",
+        "YouTube/YD5C5LX7j4k",
+        "YouTube/Z11ALGaUmH0",
+        "YouTube/aboKQqtoowA",
+        "YouTube/bFTTE4TV-ek",
+        "YouTube/bLoWh2xbm6o",
+        "YouTube/blDEcY6HZUU",
+        "YouTube/c0FxOPxBaac",
+        "YouTube/cB83GjrvoeE",
+        "YouTube/cLiJgvrDlWw",
+        "YouTube/d-orB-PokJw",
+        "YouTube/dtlXB2kt09k",
+        "YouTube/eXklJqhFx8E",
+        "YouTube/ef5NncrTQu4",
+        "YouTube/h3-lxgAoXwI",
+        "YouTube/hL-ePuEk4_M",
+        "YouTube/hg9scj8FyjY",
+        "YouTube/iSjk42F0rvM",
+        "YouTube/jO3vuJ4xhns",
+        "YouTube/kM1naurrexk",
+        "YouTube/lC0HkItqIqA",
+        "YouTube/mThUfYcea3I",
+        "YouTube/mkcDANJjDcM",
+        "YouTube/nKsIbi_R02U",
+        "YouTube/na6zkG7dl3A",
+        "YouTube/od2IpoFxeMI",
+        "YouTube/pI8tpZLBcFk",
+        "YouTube/qlPC7oMm93g",
+        "YouTube/rin4oz7Fego",
+        "YouTube/s54UiLm7JLU",
+        "YouTube/sRd38UFfp6c",
+        "YouTube/u40AQIBH_Gs",
+        "YouTube/uwW0ejeosmk",
+        "YouTube/v0N4o4Px8jQ",
+        "YouTube/vbQwxMme5yk",
+        "YouTube/yZGRVcIKU6Q",
+        "YouTube/yb7EbSnIAqM",
+        "YouTube/z-fsLpGHq6o",
+        "YouTube/zVN1SBxfR40"
+      ]
+    }
+  },
+  "strata_order": {
+    "ArgoVerse/mean_role": [
+      "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0",
+      "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929",
+      "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec",
+      "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818",
+      "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48",
+      "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072",
+      "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0",
+      "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+    ],
+    "ArgoVerse/pair_role": [
+      "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e",
+      "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7",
+      "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2",
+      "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68",
+      "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8",
+      "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2",
+      "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2"
+    ],
+    "BDD/mean_role": [
+      "BDD/b27369f3-9b9598f4",
+      "BDD/b2e2b2be-4142962b",
+      "BDD/b4466011-05cbc315",
+      "BDD/b3159650-1ba75f9b",
+      "BDD/b3a9281a-e8ba5d66",
+      "BDD/b36e0178-2037ca44",
+      "BDD/b39fe3cd-227ff7a8",
+      "BDD/b2d502aa-64d3e228",
+      "BDD/b27688b6-cd521517",
+      "BDD/b2dbb793-9f0b2bec",
+      "BDD/b249e7f2-92d2efad",
+      "BDD/b232c7c9-d251d9ee",
+      "BDD/b28ec521-898e11bd",
+      "BDD/b2ff6aba-fa4ac7d7",
+      "BDD/b3be4113-1fb56ec4",
+      "BDD/b4278d1f-dbd0295c",
+      "BDD/b20b9c19-91e01a50",
+      "BDD/b2fc7cb5-1635d64b",
+      "BDD/b34b1b88-5bfe3b85",
+      "BDD/b3079ec6-df7b2d92",
+      "BDD/b40b0ea3-b242efc9",
+      "BDD/b4301c7b-da5261f0"
+    ],
+    "BDD/pair_role": [
+      "BDD/b27098c3-c443b6e3",
+      "BDD/b3378e5e-b7593301",
+      "BDD/b1d0a191-03dcecc2",
+      "BDD/b30b460d-73d12a29",
+      "BDD/b27127df-eac9b95e",
+      "BDD/b2de938e-84eab379",
+      "BDD/b3da33d5-a64e7657",
+      "BDD/b368ee71-cf27b7fa",
+      "BDD/b21d5efb-5e2cd743",
+      "BDD/b22a4d9f-73cc8810",
+      "BDD/b3ce9f98-2dc52573",
+      "BDD/b2d502aa-f0b28e3e",
+      "BDD/b262f576-b0373824",
+      "BDD/b2bee3e1-80c787bd",
+      "BDD/b20b69d2-e31380a7",
+      "BDD/b4235ab3-b305d3e9",
+      "BDD/b33ea6cb-3464fb13",
+      "BDD/b422ec08-d42660b6",
+      "BDD/b21c68e6-65674a17",
+      "BDD/b3b9ee6e-6d2617d1",
+      "BDD/b4536117-bc85ba28"
+    ],
+    "Charades/mean_role": [
+      "Charades/LHTSI",
+      "Charades/KA3ER",
+      "Charades/6EU06",
+      "Charades/O87OF",
+      "Charades/G2DIN",
+      "Charades/QCPXJ",
+      "Charades/HSKVH",
+      "Charades/FZAEP",
+      "Charades/QHU9R",
+      "Charades/G8NEV",
+      "Charades/7177T",
+      "Charades/FHAV0",
+      "Charades/A2EY4",
+      "Charades/9UU4W",
+      "Charades/PEWH4",
+      "Charades/50E06",
+      "Charades/MZ9X7",
+      "Charades/Z6HEA",
+      "Charades/BI6Y4",
+      "Charades/EIKUN",
+      "Charades/9M48H",
+      "Charades/JMPKP",
+      "Charades/0LHWF",
+      "Charades/Y3M3W",
+      "Charades/GQ341",
+      "Charades/PJUM0",
+      "Charades/7P0JX",
+      "Charades/YK49T",
+      "Charades/CF9QP",
+      "Charades/48BUM",
+      "Charades/AVSN8",
+      "Charades/735W9",
+      "Charades/4H61U"
+    ],
+    "Charades/pair_role": [
+      "Charades/E9FY2",
+      "Charades/GL2JW",
+      "Charades/X9LP4",
+      "Charades/YXQWH",
+      "Charades/PC7H2",
+      "Charades/SROEU",
+      "Charades/35LUV",
+      "Charades/U08M9",
+      "Charades/W97NR",
+      "Charades/HOYUT",
+      "Charades/8Q0EY",
+      "Charades/E8468",
+      "Charades/YE6UZ",
+      "Charades/6FV5P",
+      "Charades/M6ERH",
+      "Charades/U4J2Q",
+      "Charades/S7OTQ",
+      "Charades/UDGP2",
+      "Charades/TQO6O",
+      "Charades/HYD3N",
+      "Charades/SVA4D",
+      "Charades/5HPZ1",
+      "Charades/QBUAT",
+      "Charades/NPEA3",
+      "Charades/QZZPS",
+      "Charades/O8DER",
+      "Charades/IULK6",
+      "Charades/IIL9C",
+      "Charades/3N1I2",
+      "Charades/AIOTI",
+      "Charades/V7YEJ",
+      "Charades/4K0BP",
+      "Charades/KPHP5"
+    ],
+    "LaSOT/mean_role": [
+      "LaSOT/boat-4",
+      "LaSOT/cup-9",
+      "LaSOT/lion-9",
+      "LaSOT/flag-5",
+      "LaSOT/racing-14",
+      "LaSOT/truck-5",
+      "LaSOT/book-11",
+      "LaSOT/swing-18",
+      "LaSOT/bicycle-7",
+      "LaSOT/cat-1",
+      "LaSOT/elephant-14",
+      "LaSOT/skateboard-8",
+      "LaSOT/lizard-16",
+      "LaSOT/cat-4",
+      "LaSOT/giraffe-19",
+      "LaSOT/person-7",
+      "LaSOT/sheep-15",
+      "LaSOT/hat-18",
+      "LaSOT/book-3",
+      "LaSOT/surfboard-8",
+      "LaSOT/bus-8",
+      "LaSOT/monkey-19",
+      "LaSOT/boat-9",
+      "LaSOT/basketball-11",
+      "LaSOT/spider-5",
+      "LaSOT/pool-17",
+      "LaSOT/lion-12",
+      "LaSOT/electricfan-13",
+      "LaSOT/microphone-3",
+      "LaSOT/truck-10",
+      "LaSOT/racing-20",
+      "LaSOT/shark-20",
+      "LaSOT/tiger-13",
+      "LaSOT/zebra-14",
+      "LaSOT/book-2",
+      "LaSOT/deer-15",
+      "LaSOT/guitar-9",
+      "LaSOT/dog-13",
+      "LaSOT/zebra-18"
+    ],
+    "LaSOT/pair_role": [
+      "LaSOT/basketball-6",
+      "LaSOT/bicycle-4",
+      "LaSOT/rabbit-17",
+      "LaSOT/tank-12",
+      "LaSOT/person-3",
+      "LaSOT/kite-18",
+      "LaSOT/bottle-12",
+      "LaSOT/cat-7",
+      "LaSOT/cattle-9",
+      "LaSOT/bus-19",
+      "LaSOT/helmet-3",
+      "LaSOT/volleyball-18",
+      "LaSOT/motorcycle-19",
+      "LaSOT/car-17",
+      "LaSOT/skateboard-1",
+      "LaSOT/zebra-19",
+      "LaSOT/volleyball-20",
+      "LaSOT/deer-4",
+      "LaSOT/lion-15",
+      "LaSOT/bird-12",
+      "LaSOT/airplane-4",
+      "LaSOT/goldfish-17",
+      "LaSOT/cat-13",
+      "LaSOT/basketball-4",
+      "LaSOT/microphone-12",
+      "LaSOT/volleyball-19",
+      "LaSOT/helmet-1",
+      "LaSOT/monkey-16",
+      "LaSOT/tank-2",
+      "LaSOT/person-2",
+      "LaSOT/skateboard-18",
+      "LaSOT/umbrella-18",
+      "LaSOT/cattle-14",
+      "LaSOT/microphone-13",
+      "LaSOT/bird-17",
+      "LaSOT/bird-11",
+      "LaSOT/bicycle-9",
+      "LaSOT/book-15",
+      "LaSOT/elephant-6"
+    ],
+    "YFCC100M/mean_role": [
+      "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf",
+      "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461",
+      "YFCC100M/v_f93e2640ce4cf8b1195c94764803414",
+      "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d",
+      "YFCC100M/v_f729d4f362aea24236153ffc589adac",
+      "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e",
+      "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e",
+      "YFCC100M/v_e16e325327dd0974bda9bbd7a35118c",
+      "YFCC100M/v_9018a07931e02026b3bd6e82489d4624",
+      "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11",
+      "YFCC100M/v_72252bc9435f88bbfb28aac25484f30",
+      "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150",
+      "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c",
+      "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c",
+      "YFCC100M/v_23584c2660351f12cffe1399c47ce870",
+      "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a",
+      "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452",
+      "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33",
+      "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4",
+      "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30",
+      "YFCC100M/v_df4744928b9b4199b5c73344efdce65",
+      "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b"
+    ],
+    "YFCC100M/pair_role": [
+      "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3",
+      "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5",
+      "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5",
+      "YFCC100M/v_ea33c680e1f18d71543b8f80815beec",
+      "YFCC100M/v_e2d3c540737396bebd0a4b53b3174e",
+      "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3",
+      "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c",
+      "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b",
+      "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d",
+      "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3",
+      "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5",
+      "YFCC100M/v_6f90a13c795ef37404d95983341df",
+      "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a",
+      "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629",
+      "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40",
+      "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46",
+      "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215",
+      "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3",
+      "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20",
+      "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0",
+      "YFCC100M/v_82e9bb97b1a1fdde489511e69126644"
+    ],
+    "YouTube/mean_role": [
+      "YouTube/Fu0b-YbpPak",
+      "YouTube/1cU81_rjt7s",
+      "YouTube/7_xkhnbnI7M",
+      "YouTube/PQkE02amSDY",
+      "YouTube/JMzNLlatrys",
+      "YouTube/Rf1XKstMa4E",
+      "YouTube/hg9scj8FyjY",
+      "YouTube/WKqbLbU68wU",
+      "YouTube/Or8dXBSS_LM",
+      "YouTube/ZbeMNLwASVo",
+      "YouTube/d-orB-PokJw",
+      "YouTube/EOSzItLkZQQ",
+      "YouTube/IS3OtsJFP7Y",
+      "YouTube/u40AQIBH_Gs",
+      "YouTube/D8Vhxbho1fY",
+      "YouTube/AjH8TFfZIGY",
+      "YouTube/YAAUPjq-L-Q",
+      "YouTube/XV_FF3WC7kA",
+      "YouTube/iSjk42F0rvM",
+      "YouTube/f9U2VDJTIhg",
+      "YouTube/uwW0ejeosmk",
+      "YouTube/XOe9GeojzCs",
+      "YouTube/QlXEyPOUMUg",
+      "YouTube/vbQwxMme5yk",
+      "YouTube/zhdNNmwnYMI",
+      "YouTube/7SFkVnnp_eE",
+      "YouTube/KUdBvuRaAbk",
+      "YouTube/bLoWh2xbm6o",
+      "YouTube/313tbNN4J3o",
+      "YouTube/Zyo70ZiXmYY",
+      "YouTube/zVN1SBxfR40",
+      "YouTube/7YULkl7Xm04",
+      "YouTube/JX1uj-YRiYo",
+      "YouTube/yZGRVcIKU6Q",
+      "YouTube/owDp3KOHmu8",
+      "YouTube/v0N4o4Px8jQ",
+      "YouTube/pI8tpZLBcFk",
+      "YouTube/blDEcY6HZUU",
+      "YouTube/Ce7YdX2cido",
+      "YouTube/9sZI9IdgXZY",
+      "YouTube/sRd38UFfp6c",
+      "YouTube/h3-lxgAoXwI",
+      "YouTube/yb7EbSnIAqM",
+      "YouTube/C48cXamb2B0",
+      "YouTube/LFPYYYZstjg",
+      "YouTube/4ltcNlAq1wI",
+      "YouTube/25eIK85JWi4",
+      "YouTube/Z11ALGaUmH0"
+    ],
+    "YouTube/pair_role": [
+      "YouTube/5BDj0ow5hnA",
+      "YouTube/cLiJgvrDlWw",
+      "YouTube/mkcDANJjDcM",
+      "YouTube/qlPC7oMm93g",
+      "YouTube/dZZqaYgPrY0",
+      "YouTube/lC0HkItqIqA",
+      "YouTube/IUbQjSiZL-Y",
+      "YouTube/jO3vuJ4xhns",
+      "YouTube/nKsIbi_R02U",
+      "YouTube/Y0DKz3JCq3I",
+      "YouTube/ef5NncrTQu4",
+      "YouTube/VTEcwSCLwLg",
+      "YouTube/c0FxOPxBaac",
+      "YouTube/HtaNMyVa260",
+      "YouTube/tvzrxfgWSc4",
+      "YouTube/-6quA485tw8",
+      "YouTube/mThUfYcea3I",
+      "YouTube/kM1naurrexk",
+      "YouTube/Q5SutMM8H4I",
+      "YouTube/vrWYdPeIUqw",
+      "YouTube/JvtJRvTKzvw",
+      "YouTube/TcB0IFBwk-k",
+      "YouTube/SA-if-DMT7E",
+      "YouTube/cB83GjrvoeE",
+      "YouTube/1mPd_3N5gNQ",
+      "YouTube/na6zkG7dl3A",
+      "YouTube/-dQIXiV6gk0",
+      "YouTube/hL-ePuEk4_M",
+      "YouTube/H8g9ZBuQmrE",
+      "YouTube/mq7Wv-5qJwc",
+      "YouTube/s54UiLm7JLU",
+      "YouTube/QEFmA2nj12w",
+      "YouTube/od2IpoFxeMI",
+      "YouTube/bFTTE4TV-ek",
+      "YouTube/uqUfP7ugJp0",
+      "YouTube/87ksUt7mO3o",
+      "YouTube/I7Q-x9MorO0",
+      "YouTube/Q_701AtuEbE",
+      "YouTube/Vl9zODoJMIU",
+      "YouTube/7XQoDEQGqaw",
+      "YouTube/z-fsLpGHq6o",
+      "YouTube/WwmfBwEMP6s",
+      "YouTube/YD5C5LX7j4k",
+      "YouTube/eXklJqhFx8E",
+      "YouTube/dYAA0JLFrTc",
+      "YouTube/rin4oz7Fego",
+      "YouTube/dtlXB2kt09k",
+      "YouTube/aboKQqtoowA"
+    ]
+  },
+  "source_count": 341,
+  "roles_are_metadata_only": true,
+  "labels_used": false
+}

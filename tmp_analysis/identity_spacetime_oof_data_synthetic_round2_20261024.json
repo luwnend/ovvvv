@@ -1,0 +1,17 @@
+{
+  "status": "PASS_IDENTITY_SPACETIME_OOF_DATA_SYNTHETIC",
+  "round": 2,
+  "checks": [
+    "full_lag1_lag4_QxM_prefix_empty_unknown_original_time_ringfive_and_CVmask",
+    "history_duplicate_invalidates_next_unique_unassigned_snapshots_and_video_reset"
+  ],
+  "script_sha256": "54c57aee5cba1153ae18205a451b44eecc2fd6ae196d435b8e5f9c3fb8cdcbee",
+  "component_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_fit_identity_edge_support.py": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/relative_track_geometry.py": "c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_modules_20261024.py": "2171db60d075039ba85c8b6b7389adc573793df0c1477e45390733b95b8c0bc3"
+  },
+  "real_supervision_or_cache_opened": false,
+  "training_started": false,
+  "GPU_used": false
+}

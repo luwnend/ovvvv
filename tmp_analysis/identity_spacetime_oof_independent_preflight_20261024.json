@@ -1,0 +1,990 @@
+{
+  "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_IMPLEMENTATION_PREFLIGHT",
+  "protocol_sha256": "a7169f8674d8e019782820bc7b4a99ff4b2082bdeaa0a731e60352a488ed9be1",
+  "trainer_sha256": "46be289030b99ef450d38cdc313f2a2d7ca3db97e0d0b5ac0a1101ff84e3d4c7",
+  "data_sha256": "54c57aee5cba1153ae18205a451b44eecc2fd6ae196d435b8e5f9c3fb8cdcbee",
+  "modules_sha256": "2171db60d075039ba85c8b6b7389adc573793df0c1477e45390733b95b8c0bc3",
+  "coordinator_sha256": "b291c36aeb3ff92ae375954fb6033b35ecdba46c7a88728cc4b91c8048558133",
+  "evaluator_sha256": "49c3393c44c5f8eb002fa61f28174293552af6eec859175740f3e4d75b858ae6",
+  "verifier_sha256": "c81ab9fdb510ed50d81082a806da33e70a4212f49f50dc10a53539a3f65c351d",
+  "finalizer_sha256": "3f424e3eb80657d481af26dabcc9cfff526589da1f09a2148a9c33cdde9e6766",
+  "checker_sha256": "fb5170c2cc38b2c199c8ae1fd364fa649a5f0ef669a3ac1cde8177e9f3d4fd9a",
+  "reviewed_synthetic_receipt_files_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_data_synthetic_round1_20261024.json": "2b8375678b8e0d79cfbef6e5536c98e91ddd17fc931658f5fb6dbaecee832bce",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_data_synthetic_round2_20261024.json": "d1c587b5dd07e66d0463d77333d151923e290653a0cb1b4bb193ce3a48bc4250",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_data_synthetic_round3_20261024.json": "10d575262d2c9fa7c23921ca826ea91855dbc57e20cbb5b00cf200d2e94d709e",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_trainer_synthetic_round1_20261024_v4.json": "efe07628cd0be73531682ba44d20944e4df6e2066f5d33cf906bff96de43711c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_trainer_synthetic_round2_20261024_v4.json": "e4d57080810a63ad323d698f00815bc8acfe3611da23f306429810653db41f84",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_trainer_synthetic_round3_20261024_v4.json": "53cfcb23548348bf2aeb3a1b5794661004f086f5fe83f32aaf0d0d482c543381",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_coordinator_synthetic_round1_20261024_v2.json": "4c515e0aac5cabd0754898e5be1653c01ea1db933c3d3210dcd91da67a19b9d0",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_coordinator_synthetic_round2_20261024_v2.json": "535ba5a64083fb18ed34cd8fd552aa739f5d0687ab414d8886790804c7a7d023",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_coordinator_synthetic_round3_20261024_v2.json": "8109cd8c332ab77e15ca5435936c3db1d66ba641fcf43e277eeeee5999ead086",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_evaluator_synthetic_round1_20261024_v3.json": "95fd765ecada4ad9d18091e758b2fc1d21f0f380d337ae7fb804f14da6a106b7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_evaluator_synthetic_round2_20261024_v3.json": "e237669f5be3d4a8cd754e7d752bed7c62d00dbd3428e22b20e3fcd76d044be7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_evaluator_synthetic_round3_20261024_v3.json": "48a349e4fc0743ac2f62d0b983d52c08954fbb065c4fe458e75b1496d7c6f833",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_finalizer_synthetic_round1_20261024_v2.json": "de38ec018ab9f703f08e4008ab7316bb490b0b65609e869b87c5bbb9b59f4f6d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_finalizer_synthetic_round2_20261024_v2.json": "23c0642174cae73a3ce96a3b4adf443dd4651ae954a9368cdaf7f302daa9ffd0",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_finalizer_synthetic_round3_20261024_v2.json": "c620c49cb609728548ac37390f1ce7f553160bd25a1619690f569e167998fdd7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_complete_output_synthetic_20261024_v2.json": "b6afa0639d17eaa05b8885b5eba9f8bb37d30ff469ab6e0003436ddd43a1d1f4",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_trainer_cpu_benchmark_20261024_v4.json": "5097d7f9d67c6934feab5964a7f52cc0f4cb2f0943f5ef69b43933bcb1860785"
+  },
+  "independent_checker_files_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_identity_spacetime_oof_coordinator_20261024.py": "be8017542893aefbfa47f84e33b726ec848bbe495326046d90dfa6de0c5cc3eb",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_identity_spacetime_oof_background_20261024.py": "5ea2aad4cb861ad4fa0246afe4cbf629afd8cf395094698f219f5870c7def878",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/qa_identity_spacetime_output_verifier_20261024.py": "da328ec01df64464b691a264848ebeba084b887ea470ebe2e654e690e823fd7c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_identity_spacetime_oof_output_synthetic_20261024.py": "33464d0c2c7f0da9e6836f28fda5ae9513cfbceee3c858fb1701ab3e439a5aa0"
+  },
+  "independent_checks": {
+    "data_boundary_and_projection": {
+      "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_DATA_ONLY_SYNTHETIC",
+      "checker_sha256": "fb5170c2cc38b2c199c8ae1fd364fa649a5f0ef669a3ac1cde8177e9f3d4fd9a",
+      "data_module_sha256": "54c57aee5cba1153ae18205a451b44eecc2fd6ae196d435b8e5f9c3fb8cdcbee",
+      "reviewed_synthetic_round_files_sha256": {
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_data_synthetic_round1_20261024.json": "2b8375678b8e0d79cfbef6e5536c98e91ddd17fc931658f5fb6dbaecee832bce",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_data_synthetic_round2_20261024.json": "d1c587b5dd07e66d0463d77333d151923e290653a0cb1b4bb193ce3a48bc4250",
+        "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_data_synthetic_round3_20261024.json": "10d575262d2c9fa7c23921ca826ea91855dbc57e20cbb5b00cf200d2e94d709e"
+      },
+      "independent_checks": {
+        "source_fold_manifest_metadata_only": true,
+        "identity_boundary": {
+          "split_source_eligibility_before_identity": true,
+          "actual_decoder_poison_guard": true,
+          "whole_FIT_loader_forbidden": true,
+          "heldout_mutation_updates_authority_but_preserves_train_projection": true,
+          "allowed_train_identity_mutation_changes_projection": true,
+          "decoded_value_fragments": 408
+        },
+        "frame_and_training_projection": {
+          "frames": 14,
+          "frame_pair_receipts": 28,
+          "candidates_by_lag": {
+            "1": 72,
+            "4": 36
+          },
+          "independent_geometry_history_receipts_all_blocks": true,
+          "train_query_lags": 36,
+          "complete_unknown_refs_and_GTfree_donors_preserved": true,
+          "training_no_CV_or_score_filter": true,
+          "coverage": {
+            "frame_pair_receipts": 28,
+            "retained_candidate_pairs": 108,
+            "missing_prefix_receipts": 13,
+            "query_lag_rows": 39,
+            "same_category_unknown_reference_exposures": 12,
+            "hard_query_lags": 36,
+            "positive_negative_comparisons": 60,
+            "known_query_no_positive_coverage_only": 3,
+            "nonhard_known_queries": 3
+          }
+        },
+        "numerical_primitives": {
+          "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_NUMERICAL_PRIMITIVES_SYNTHETIC_ONLY",
+          "verifier_sha256": "c81ab9fdb510ed50d81082a806da33e70a4212f49f50dc10a53539a3f65c351d",
+          "score_columns": [
+            "raw_appearance_cosine",
+            "adapter_appearance_cosine",
+            "A0G0",
+            "A0G1",
+            "A0Gmask",
+            "A0Gperm",
+            "A1G0",
+            "A1G1",
+            "A1Gmask",
+            "A1Gperm"
+          ],
+          "score_atol": 1e-10,
+          "score_rtol": 1e-10,
+          "nonzero_synthetic_checkpoint_weights": true,
+          "maximum_absolute_score_error": 9.769962616701378e-15,
+          "independent_linear_GELU_erf_adapter_zero_mask_head_interventions_geometry": true,
+          "real_cache_or_labels_or_checkpoint_opened": false,
+          "complete_runner_or_output_audit": false
+        }
+      },
+      "real_cache_or_identity_opened": false,
+      "trainer_audited": false,
+      "runner_or_global_seal_audited": false,
+      "complete_OOF_preflight": false
+    },
+    "pure_trainer_losses_gradients_and_numerics": {
+      "training_examples": 36,
+      "independent_PxN_batched_loss_and_parameter_gradients": true,
+      "compact_unknown_raw_excluded_fullpool_unknown_geometry_donor_retained": true,
+      "actual_optimizer_steps_per_stage": 24,
+      "all_seeded_epoch_permutations_and_short_batches_verified": true,
+      "all_models_parameter_movement_nonzero": true,
+      "shared_adapter_frozen_after_head_training": true,
+      "compact_head_inputs_match_fullpool_normalize_then_intervene": true,
+      "all_synthetic_candidate_columns_independent_recomputation_maximum_absolute_error": 1.7763568394002505e-15
+    },
+    "actual_default_worker_heldout_mutation_invariance": {
+      "actual_gated_worker_entry": true,
+      "temporary_float16_cache_and_label_authorities_only": true,
+      "model_fold": 0,
+      "model_seed": 20261024,
+      "held_out_source_count": 1,
+      "train_source_count": 4,
+      "heldout_label_mutation_changes_authority_preserves_all_functional_model_files": true,
+      "permitted_train_label_mutation_changes_checkpoint": true,
+      "actual_decoder_poison_guard": true,
+      "default_adapter_epochs": 50,
+      "default_head_epochs": 20,
+      "all_eight_heads_trained": true,
+      "checked_functional_file_count": 8,
+      "synthetic_authority_overrides": [
+        "temporary source roles/folds/cache/authorities/protocol",
+        "temporary independent gate status only; actual train_and_predict and default 50/20 config unmodified"
+      ]
+    },
+    "complete_fifteen_model_global_seal_negative_challenges": {
+      "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_COORDINATOR_SEAL_SYNTHETIC",
+      "checks": [
+        "actual_seal_models_verify_models_verify_model_and_global_seal_complete_15model_positive_control",
+        "actual_evaluator_positive_gate_reaches_only_the_explicit_postseal_data_import_boundary",
+        "actual_evaluator_entry_rejection_matrix_before_data_or_identity_import",
+        "existing_global_seal_preserved_by_nonreplacing_publication"
+      ],
+      "rejection_matrix": [
+        {
+          "case": "missing_global_seal",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "FileNotFoundError",
+          "reason": "[Errno 2] No such file or directory: '<temporary>/missing_global_seal/GT_free_OOF_predictions_sealed.json'"
+        },
+        {
+          "case": "global_14models",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Global OOF seal absent"
+        },
+        {
+          "case": "global_missing_seed",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Global dimensions differ"
+        },
+        {
+          "case": "missing_fold_directory",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "All fifteen model directories are required before supervision"
+        },
+        {
+          "case": "missing_entire_seed",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "All fifteen model directories are required before supervision"
+        },
+        {
+          "case": "unexpected_model_directory",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "All fifteen model directories are required before supervision"
+        },
+        {
+          "case": "missing_score_member",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Sealed model member changed: shards/v1_lag1.scores.npy"
+        },
+        {
+          "case": "missing_checkpoint",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Sealed model member changed: checkpoint.json"
+        },
+        {
+          "case": "unexpected_model_file",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Unexpected or missing single model members"
+        },
+        {
+          "case": "unrepinned_score_tamper",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Sealed model member changed: shards/v1_lag1.scores.npy"
+        },
+        {
+          "case": "nine_score_columns_rehashed_model",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Full score shape/dtype differs"
+        },
+        {
+          "case": "float32_scores_rehashed_model",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Full score shape/dtype differs"
+        },
+        {
+          "case": "missing_arm_metadata",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Incomplete arms or epochs"
+        },
+        {
+          "case": "wrong_fold_metadata",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Fold lineage differs"
+        },
+        {
+          "case": "incomplete_head_epoch",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Incomplete arms or epochs"
+        },
+        {
+          "case": "missing_heldout_source",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Fold lineage differs"
+        },
+        {
+          "case": "incomplete_frame_receipts",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Model frame coverage/raw parent parity absent"
+        },
+        {
+          "case": "unknown_candidates_filtered",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Full retained population not sealed"
+        },
+        {
+          "case": "raw_parent_parity_absent",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Model frame coverage/raw parent parity absent"
+        },
+        {
+          "case": "wrong_candidate_totals",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "OOF candidate totals differ"
+        },
+        {
+          "case": "single_model_pending_status",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Incomplete single model"
+        },
+        {
+          "case": "global_columns_tamper",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Global dimensions differ"
+        },
+        {
+          "case": "missing_receipt_member_hash_selfconsistent",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Missing held-out prefix/empty/full pair receipts"
+        },
+        {
+          "case": "pair_offset_member_hash_selfconsistent",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Missing/nonexact held-out candidate block or offset"
+        },
+        {
+          "case": "adapter_trace_49epochs_member_hash_selfconsistent",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Actual adapter schedule incomplete"
+        },
+        {
+          "case": "head_trace_19epochs_member_hash_selfconsistent",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Actual adapter schedule incomplete"
+        },
+        {
+          "case": "head_actual_steps_incomplete",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Actual head schedule incomplete"
+        },
+        {
+          "case": "final_short_batch_coverage_wrong",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Actual epoch/batch coverage incomplete"
+        },
+        {
+          "case": "changed_input_pin",
+          "status": "REJECTED_BEFORE_IDENTITY_IMPORT",
+          "exception": "RuntimeError",
+          "reason": "Pinned bytes changed: <temporary>/pins/input.txt"
+        }
+      ],
+      "rejected_cases": 29,
+      "coordinator_sha256": "b291c36aeb3ff92ae375954fb6033b35ecdba46c7a88728cc4b91c8048558133",
+      "evaluator_sha256": "49c3393c44c5f8eb002fa61f28174293552af6eec859175740f3e4d75b858ae6",
+      "script_sha256": "be8017542893aefbfa47f84e33b726ec848bbe495326046d90dfa6de0c5cc3eb",
+      "real_cache_or_identity_opened": false,
+      "real_training_executed": false,
+      "generated_models": 15,
+      "score_fixture_only": true,
+      "limits": "Structural complete-model publication and pre-identity gate audit only; independent numerical output audit validates tensor state and learned values."
+    },
+    "actual_detached_process_success_and_failure_chain": {
+      "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_BACKGROUND_PROCESS_AUDIT",
+      "checks": [
+        "actual_frozen_launch_supervise_child_functions_in_new_detached_Python_processes",
+        "start_new_session_kernel_supervisor_PID_startticks_boot_cmdline_binding_and_live_status",
+        "actual_parent_wait_for_detached_supervisor_and_all_three_child_stages_success",
+        "coordinator_nonzero_exit3_rejected_and_auditor_finalizer_not_started",
+        "independent_auditor_nonzero_exit5_rejected_and_execution_PASS_not_written",
+        "finalizer_nonzero_exit7_preserves_prior_wait_chain_but_never_reports_complete",
+        "success_auditor_finalizer_wiring_actual_exit_records_and_completed_status",
+        "all_launch_pinned_bytes_and_frozen_real_runner_unchanged"
+      ],
+      "cases": [
+        {
+          "mode": "success",
+          "supervisor_actual_wait_exit_code": 0,
+          "supervisor_identity": {
+            "pid": 357815,
+            "start_ticks": 574360687,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_u6c0z_zx/success/wrapper.py",
+              "--supervise",
+              "/tmp/identity_oof_detached_audit_u6c0z_zx/success/execution/launch_spec.json"
+            ],
+            "state": "R"
+          },
+          "supervisor_session_id": 357815,
+          "final_status": "COMPLETE",
+          "actual_child_exit_records": {
+            "coordinator.exit.json": {
+              "command": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/success/wrapper.py",
+                "--execute",
+                "--protocol",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/success/protocol.json",
+                "--execution",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/success/execution"
+              ],
+              "pid": 357817,
+              "identity": {
+                "pid": 357817,
+                "start_ticks": 574360697,
+                "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+                "cmdline": [
+                  "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                  "-u",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/success/wrapper.py",
+                  "--execute",
+                  "--protocol",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/success/protocol.json",
+                  "--execution",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/success/execution"
+                ],
+                "state": "R"
+              },
+              "started_utc": "2026-10-23T18:41:46.026789+00:00",
+              "finished_utc": "2026-10-23T18:41:46.434180+00:00",
+              "elapsed_seconds": 0.40740842651575804,
+              "actual_exit_code": 0,
+              "waited_by_parent_pid": 357815
+            },
+            "finalization.exit.json": {
+              "command": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/success/finalizer.py",
+                "--out",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/success/out",
+                "--execution",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/success/execution"
+              ],
+              "pid": 357820,
+              "identity": {
+                "pid": 357820,
+                "start_ticks": 574360741,
+                "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+                "cmdline": [
+                  "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                  "-u",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/success/finalizer.py",
+                  "--out",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/success/out",
+                  "--execution",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/success/execution"
+                ],
+                "state": "R"
+              },
+              "started_utc": "2026-10-23T18:41:46.470150+00:00",
+              "finished_utc": "2026-10-23T18:41:46.503643+00:00",
+              "elapsed_seconds": 0.03350680787116289,
+              "actual_exit_code": 0,
+              "waited_by_parent_pid": 357815
+            },
+            "independent_output_audit.exit.json": {
+              "command": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/success/verifier.py",
+                "--out",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/success/out",
+                "--protocol",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/success/protocol.json"
+              ],
+              "pid": 357819,
+              "identity": {
+                "pid": 357819,
+                "start_ticks": 574360738,
+                "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+                "cmdline": [
+                  "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                  "-u",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/success/verifier.py",
+                  "--out",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/success/out",
+                  "--protocol",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/success/protocol.json"
+                ],
+                "state": "R"
+              },
+              "started_utc": "2026-10-23T18:41:46.434873+00:00",
+              "finished_utc": "2026-10-23T18:41:46.468539+00:00",
+              "elapsed_seconds": 0.03368617407977581,
+              "actual_exit_code": 0,
+              "waited_by_parent_pid": 357815
+            }
+          },
+          "launch_receipt": {
+            "status": "LAUNCHED_NOT_COMPLETE",
+            "launcher_pid": 357588,
+            "supervisor_identity": {
+              "pid": 357815,
+              "start_ticks": 574360687,
+              "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+              "cmdline": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/success/wrapper.py",
+                "--supervise",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/success/execution/launch_spec.json"
+              ],
+              "state": "R"
+            },
+            "launch_spec_sha256": "ad0f6107b6f4101c3f38b6bad1c4da32a8e3f82d103ab7170351df07f44c05f9",
+            "execution_directory": "/tmp/identity_oof_detached_audit_u6c0z_zx/success/execution",
+            "output_directory": "/tmp/identity_oof_detached_audit_u6c0z_zx/success/out"
+          },
+          "evidence_files_sha256": {
+            "execution/coordinator.exit.json": "08967c1ed384b5a7073a8ada7ca7fab3d67cbd70fa98295331ee162004f70199",
+            "execution/coordinator.started.json": "b1fd0733fc5817986b27c8924b77477b1bafa8db9b8f968b203eef9a1b5f49da",
+            "execution/execution_receipt.json": "82c389600328c0caa2526fcc06b7bd691a0641589aa32d2e334172302704a2e3",
+            "execution/finalization.exit.json": "2fcfc89db1dfb5bb0cdac9cf8172f026f3e92c12e2b8508843dbb0b26a5a11ec",
+            "execution/finalization.started.json": "c0e2728f03343bb7b67716b598b216f8c2f5a9d5ce2651d1f4475ecbcc866605",
+            "execution/independent_output_audit.exit.json": "2b6aebe7e165126591ac10355b21b33ef27730c88cc47109914a9ff61d88130d",
+            "execution/independent_output_audit.started.json": "60c65b62f678a1f87ed1bc395b9acb4c7e64c5ad360ad378388d8bee115ee51b",
+            "execution/launch_receipt.json": "3d91948088800cd350939248d2c474938aff43c93ec3e9f5adcd6508e3fa819b",
+            "execution/launch_spec.json": "ad0f6107b6f4101c3f38b6bad1c4da32a8e3f82d103ab7170351df07f44c05f9",
+            "execution/supervisor_identity.json": "b533785266a753b78108301c9df01da6654b3bc87cf7e586840f4d0ec1b82ef3"
+          },
+          "numerical_authentication_and_global_model_gates_are_explicit_stubs": true
+        },
+        {
+          "mode": "coordinator_fail",
+          "supervisor_actual_wait_exit_code": 1,
+          "supervisor_identity": {
+            "pid": 357821,
+            "start_ticks": 574360748,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_u6c0z_zx/coordinator_fail/wrapper.py",
+              "--supervise",
+              "/tmp/identity_oof_detached_audit_u6c0z_zx/coordinator_fail/execution/launch_spec.json"
+            ],
+            "state": "R"
+          },
+          "supervisor_session_id": 357821,
+          "final_status": "FAILED",
+          "actual_child_exit_records": {
+            "coordinator.exit.json": {
+              "command": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/coordinator_fail/wrapper.py",
+                "--execute",
+                "--protocol",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/coordinator_fail/protocol.json",
+                "--execution",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/coordinator_fail/execution"
+              ],
+              "pid": 357823,
+              "identity": {
+                "pid": 357823,
+                "start_ticks": 574360758,
+                "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+                "cmdline": [
+                  "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                  "-u",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/coordinator_fail/wrapper.py",
+                  "--execute",
+                  "--protocol",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/coordinator_fail/protocol.json",
+                  "--execution",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/coordinator_fail/execution"
+                ],
+                "state": "R"
+              },
+              "started_utc": "2026-10-23T18:41:46.637321+00:00",
+              "finished_utc": "2026-10-23T18:41:47.048596+00:00",
+              "elapsed_seconds": 0.41129114758223295,
+              "actual_exit_code": 3,
+              "waited_by_parent_pid": 357821
+            }
+          },
+          "launch_receipt": {
+            "status": "LAUNCHED_NOT_COMPLETE",
+            "launcher_pid": 357588,
+            "supervisor_identity": {
+              "pid": 357821,
+              "start_ticks": 574360748,
+              "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+              "cmdline": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/coordinator_fail/wrapper.py",
+                "--supervise",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/coordinator_fail/execution/launch_spec.json"
+              ],
+              "state": "R"
+            },
+            "launch_spec_sha256": "152201a5422aa355fa8e0c15d39ab747f4ec8776e888868fcf20d85b5bc63c7d",
+            "execution_directory": "/tmp/identity_oof_detached_audit_u6c0z_zx/coordinator_fail/execution",
+            "output_directory": "/tmp/identity_oof_detached_audit_u6c0z_zx/coordinator_fail/out"
+          },
+          "evidence_files_sha256": {
+            "execution/coordinator.exit.json": "f21190063a1f8cba15571d9a41c106b627eb007d01902a8e92e72f75728d0702",
+            "execution/coordinator.started.json": "5223f665455139fa971f42686a9ae80349895b3d7646a2b15a9267af21b8ef02",
+            "execution/execution_failure.json": "673a1d0c80c0747a4df687c87a5255342c97e208f895ce8278d40ba9d8d4b197",
+            "execution/launch_receipt.json": "6931e0a7a594c914f1fadb1375f8169abb124ea603a10d8d85b6d93f0f5a0786",
+            "execution/launch_spec.json": "152201a5422aa355fa8e0c15d39ab747f4ec8776e888868fcf20d85b5bc63c7d",
+            "execution/supervisor_identity.json": "f836ef01de398c6fd7c5130e96e150880ecded048181c266c52e6d6b996183ea"
+          },
+          "numerical_authentication_and_global_model_gates_are_explicit_stubs": true
+        },
+        {
+          "mode": "auditor_fail",
+          "supervisor_actual_wait_exit_code": 1,
+          "supervisor_identity": {
+            "pid": 357825,
+            "start_ticks": 574360802,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/wrapper.py",
+              "--supervise",
+              "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/execution/launch_spec.json"
+            ],
+            "state": "R"
+          },
+          "supervisor_session_id": 357825,
+          "final_status": "FAILED",
+          "actual_child_exit_records": {
+            "coordinator.exit.json": {
+              "command": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/wrapper.py",
+                "--execute",
+                "--protocol",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/protocol.json",
+                "--execution",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/execution"
+              ],
+              "pid": 357827,
+              "identity": {
+                "pid": 357827,
+                "start_ticks": 574360812,
+                "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+                "cmdline": [
+                  "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                  "-u",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/wrapper.py",
+                  "--execute",
+                  "--protocol",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/protocol.json",
+                  "--execution",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/execution"
+                ],
+                "state": "R"
+              },
+              "started_utc": "2026-10-23T18:41:47.179936+00:00",
+              "finished_utc": "2026-10-23T18:41:47.587903+00:00",
+              "elapsed_seconds": 0.40798059571534395,
+              "actual_exit_code": 0,
+              "waited_by_parent_pid": 357825
+            },
+            "independent_output_audit.exit.json": {
+              "command": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/verifier.py",
+                "--out",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/out",
+                "--protocol",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/protocol.json"
+              ],
+              "pid": 357829,
+              "identity": {
+                "pid": 357829,
+                "start_ticks": 574360853,
+                "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+                "cmdline": [
+                  "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                  "-u",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/verifier.py",
+                  "--out",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/out",
+                  "--protocol",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/protocol.json"
+                ],
+                "state": "R"
+              },
+              "started_utc": "2026-10-23T18:41:47.588650+00:00",
+              "finished_utc": "2026-10-23T18:41:47.616620+00:00",
+              "elapsed_seconds": 0.02798589877784252,
+              "actual_exit_code": 5,
+              "waited_by_parent_pid": 357825
+            }
+          },
+          "launch_receipt": {
+            "status": "LAUNCHED_NOT_COMPLETE",
+            "launcher_pid": 357588,
+            "supervisor_identity": {
+              "pid": 357825,
+              "start_ticks": 574360802,
+              "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+              "cmdline": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/wrapper.py",
+                "--supervise",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/execution/launch_spec.json"
+              ],
+              "state": "R"
+            },
+            "launch_spec_sha256": "e1cc7dbacffb62e2e456b556427a9c6ad9cbb72364aa3ab1117043590c0930ec",
+            "execution_directory": "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/execution",
+            "output_directory": "/tmp/identity_oof_detached_audit_u6c0z_zx/auditor_fail/out"
+          },
+          "evidence_files_sha256": {
+            "execution/coordinator.exit.json": "574dd7dc7ce9a47c9cfdb20b0ede2b9140f9c7f31d78daff17242574bb70289c",
+            "execution/coordinator.started.json": "b74ef3a2abd2681c4e8e334b2369df8e2cc057b8d3e1d8635a87ec65395c4587",
+            "execution/execution_failure.json": "90e9abde9ecfa10d23a63a06aed94253eb2c328cabc2347e9df3428afb400e57",
+            "execution/independent_output_audit.exit.json": "96aaf707517ac48d3e1e9cc8edec50f84545ea864e42f6a049f0dbaec07a51cc",
+            "execution/independent_output_audit.started.json": "28c70ed35954f56b89daa466bf4fa212698a40076449c742c214327114264e03",
+            "execution/launch_receipt.json": "02401f05059be80d9ffa51609a2c777ba0a9ace5f20092d36ad452622277ad9e",
+            "execution/launch_spec.json": "e1cc7dbacffb62e2e456b556427a9c6ad9cbb72364aa3ab1117043590c0930ec",
+            "execution/supervisor_identity.json": "66dde51da8763d66ac9d947860a4a9f1aed14c96cf42565727e8858159c7cad3"
+          },
+          "numerical_authentication_and_global_model_gates_are_explicit_stubs": true
+        },
+        {
+          "mode": "finalizer_fail",
+          "supervisor_actual_wait_exit_code": 1,
+          "supervisor_identity": {
+            "pid": 357830,
+            "start_ticks": 574360859,
+            "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+            "cmdline": [
+              "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+              "-u",
+              "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/wrapper.py",
+              "--supervise",
+              "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/execution/launch_spec.json"
+            ],
+            "state": "R"
+          },
+          "supervisor_session_id": 357830,
+          "final_status": "FAILED",
+          "actual_child_exit_records": {
+            "coordinator.exit.json": {
+              "command": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/wrapper.py",
+                "--execute",
+                "--protocol",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/protocol.json",
+                "--execution",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/execution"
+              ],
+              "pid": 357841,
+              "identity": {
+                "pid": 357841,
+                "start_ticks": 574360868,
+                "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+                "cmdline": [
+                  "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                  "-u",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/wrapper.py",
+                  "--execute",
+                  "--protocol",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/protocol.json",
+                  "--execution",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/execution"
+                ],
+                "state": "R"
+              },
+              "started_utc": "2026-10-23T18:41:47.740061+00:00",
+              "finished_utc": "2026-10-23T18:41:48.140881+00:00",
+              "elapsed_seconds": 0.40084072947502136,
+              "actual_exit_code": 0,
+              "waited_by_parent_pid": 357830
+            },
+            "finalization.exit.json": {
+              "command": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/finalizer.py",
+                "--out",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/out",
+                "--execution",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/execution"
+              ],
+              "pid": 357846,
+              "identity": {
+                "pid": 357846,
+                "start_ticks": 574360911,
+                "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+                "cmdline": [
+                  "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                  "-u",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/finalizer.py",
+                  "--out",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/out",
+                  "--execution",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/execution"
+                ],
+                "state": "R"
+              },
+              "started_utc": "2026-10-23T18:41:48.171066+00:00",
+              "finished_utc": "2026-10-23T18:41:48.203817+00:00",
+              "elapsed_seconds": 0.032780773006379604,
+              "actual_exit_code": 7,
+              "waited_by_parent_pid": 357830
+            },
+            "independent_output_audit.exit.json": {
+              "command": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/verifier.py",
+                "--out",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/out",
+                "--protocol",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/protocol.json"
+              ],
+              "pid": 357845,
+              "identity": {
+                "pid": 357845,
+                "start_ticks": 574360908,
+                "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+                "cmdline": [
+                  "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                  "-u",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/verifier.py",
+                  "--out",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/out",
+                  "--protocol",
+                  "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/protocol.json"
+                ],
+                "state": "R"
+              },
+              "started_utc": "2026-10-23T18:41:48.141604+00:00",
+              "finished_utc": "2026-10-23T18:41:48.169536+00:00",
+              "elapsed_seconds": 0.02794758602976799,
+              "actual_exit_code": 0,
+              "waited_by_parent_pid": 357830
+            }
+          },
+          "launch_receipt": {
+            "status": "LAUNCHED_NOT_COMPLETE",
+            "launcher_pid": 357588,
+            "supervisor_identity": {
+              "pid": 357830,
+              "start_ticks": 574360859,
+              "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+              "cmdline": [
+                "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+                "-u",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/wrapper.py",
+                "--supervise",
+                "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/execution/launch_spec.json"
+              ],
+              "state": "R"
+            },
+            "launch_spec_sha256": "0eedb84fa839d56bf0e7254502fe8bba80e6c4d2bcb212af5c5f286364ff7243",
+            "execution_directory": "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/execution",
+            "output_directory": "/tmp/identity_oof_detached_audit_u6c0z_zx/finalizer_fail/out"
+          },
+          "evidence_files_sha256": {
+            "execution/coordinator.exit.json": "6c06211c48cc8b26b6a8ad2d5fa77dc079f6cc9e125395a944f0d1584ac822f1",
+            "execution/coordinator.started.json": "81149d050aaf19499427376ca4114df89174966b86863b928e8c6272c207f67f",
+            "execution/execution_failure.json": "2650d2c4af47c50cf3cb1c4df666824fd5ef2f6e0fcb304a0acfd87a56a183dd",
+            "execution/execution_receipt.json": "4a5d0d01708f7f0c208250b6e986f3379ce205e9b5da4ceab1a2ca7db5f06b5e",
+            "execution/finalization.exit.json": "84b82fe00e0ff06ade49539d69eebdf5bda52c495809d7dda26d2743d0a93381",
+            "execution/finalization.started.json": "f074698f8f27511ca7a79bac7d7f14497c0e58fc23283f2ccc37b098f2a856b5",
+            "execution/independent_output_audit.exit.json": "a76edd8d7fef03c171ed932ac17c77d48642faf31970f46dcb6f26582fb5e1bb",
+            "execution/independent_output_audit.started.json": "c836c4f8fd4d55740a45ffb3cf443025668456300585952c2c8f2e0937abd4f4",
+            "execution/launch_receipt.json": "b8ad8cc6ebb7bd9cced6f9c5771dcecc45d1b5826a0e69a9b5f842f541aac15b",
+            "execution/launch_spec.json": "0eedb84fa839d56bf0e7254502fe8bba80e6c4d2bcb212af5c5f286364ff7243",
+            "execution/supervisor_identity.json": "4caaaff46a2a6106aa2bc298f522590f62ac9551a101c7dc0faabf618bd5577d"
+          },
+          "numerical_authentication_and_global_model_gates_are_explicit_stubs": true
+        }
+      ],
+      "script_sha256": "5ea2aad4cb861ad4fa0246afe4cbf629afd8cf395094698f219f5870c7def878",
+      "coordinator_sha256": "b291c36aeb3ff92ae375954fb6033b35ecdba46c7a88728cc4b91c8048558133",
+      "elapsed_seconds": 2.323690270073712,
+      "scope": "Process supervision only; synthetic authenticate/model/global/numerical gates are stubs, not fifteen-model mathematical or data validation.",
+      "real_data_or_identity_opened": false,
+      "training_started": false,
+      "GPU_used": false
+    },
+    "independent_verifier_numerical_normalizer_all_statistical_QA": {
+      "status": "PASS_INDEPENDENT_OUTPUT_VERIFIER_GENERATED_DATA_QA",
+      "audited_code_sha256": {
+        "verify_identity_spacetime_oof_output_20261024": "c81ab9fdb510ed50d81082a806da33e70a4212f49f50dc10a53539a3f65c351d",
+        "evaluate_identity_spacetime_oof_20261024": "49c3393c44c5f8eb002fa61f28174293552af6eec859175740f3e4d75b858ae6",
+        "train_identity_spacetime_oof_model_20261024": "46be289030b99ef450d38cdc313f2a2d7ca3db97e0d0b5ac0a1101ff84e3d4c7",
+        "identity_spacetime_modules_20261024": "2171db60d075039ba85c8b6b7389adc573793df0c1477e45390733b95b8c0bc3",
+        "identity_spacetime_oof_data_20261024": "54c57aee5cba1153ae18205a451b44eecc2fd6ae196d435b8e5f9c3fb8cdcbee",
+        "relative_track_geometry": "c5a085f8c56da990bc7f1cb2bedc7116c7ba32223e279f4ef678ed7447c4064a",
+        "verify_angular_appearance_control_output_20261024": "c12bcd2ad7024a559cf0fa5c22ea7af9d3f6d2a18df8641cd379820fd139babd"
+      },
+      "script_sha256": "da328ec01df64464b691a264848ebeba084b887ea470ebe2e654e690e823fd7c",
+      "numerical": {
+        "randomized_forward_blocks": 18,
+        "maximum_absolute_error": 1.0658141036401503e-14,
+        "raw_bitwise_exact": true,
+        "zero_query_zero_reference_zero_raw_nonzero_checkpoint": true,
+        "Gperm_category_history_time_and_mask_preservation": true
+      },
+      "normalization": {
+        "folds": 5,
+        "hard_population_and_P2_N1_edge_marginal_geometry_moments_match": true,
+        "unknown_reference_excluded_from_normalizer": true,
+        "zero_support_source_and_empty_sampled_frame_retained": true
+      },
+      "statistics": {
+        "independently_rebuilt_query_SQLite_rows": 956,
+        "tied_scores_multi_positive_unknown_and_empty_population": true,
+        "full_source_role_block_union_macro_paired_2x2_crosslag_source_deletion_and_seed_statistics_match": true
+      },
+      "real_cache_or_identity_opened": false,
+      "real_training_executed": false,
+      "limits": "Generated-data formula/statistic QA; full actual-worker/output-chain synthetic audit and real-output audit remain separate evidence."
+    },
+    "actual_15_worker_complete_output_audit": {
+      "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_COMPLETE_OUTPUT_SYNTHETIC",
+      "script_sha256": "33464d0c2c7f0da9e6836f28fda5ae9513cfbceee3c858fb1701ab3e439a5aa0",
+      "verifier_sha256": "c81ab9fdb510ed50d81082a806da33e70a4212f49f50dc10a53539a3f65c351d",
+      "trainer_sha256": "46be289030b99ef450d38cdc313f2a2d7ca3db97e0d0b5ac0a1101ff84e3d4c7",
+      "data_sha256": "54c57aee5cba1153ae18205a451b44eecc2fd6ae196d435b8e5f9c3fb8cdcbee",
+      "coordinator_sha256": "b291c36aeb3ff92ae375954fb6033b35ecdba46c7a88728cc4b91c8048558133",
+      "evaluator_sha256": "49c3393c44c5f8eb002fa61f28174293552af6eec859175740f3e4d75b858ae6",
+      "actual_worker_processes": 15,
+      "actual_worker_exit_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_evaluator_exit_code": 0,
+      "complete_audit_status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_OUTPUT_AUDIT",
+      "all_ten_scores_full_stream_and_independent_SQLite_all_reports_verified": true,
+      "training_lineage": {
+        "per_fold_training_query_lags": {
+          "0": 78,
+          "1": 78,
+          "2": 78,
+          "3": 78,
+          "4": 84
+        },
+        "all_15_allowed_label_projections_original_geometry_normalizers_global_hierarchy_and_fixed_epoch_traces": true,
+        "optimizer_replay_performed": false
+      },
+      "maximum_absolute_score_error": 2.6645352591003757e-15,
+      "tampered_score_independent_global_gate_rejected": true,
+      "temporary_shared_query_population": 15,
+      "synthetic_authority_overrides": [
+        "all cache/labels/roles/folds/protocol/protected/parent files temporary",
+        "temporary preflight gate for actual default 50/20 workers",
+        "real-data parent shared count1331 replaced by temporary independently derived count in evaluator baseline check and verifier parent check only"
+      ],
+      "real_cache_or_manual_labels_opened": false,
+      "elapsed_seconds": 87.97039216384292
+    },
+    "finalizer_all_three_rounds": [
+      {
+        "status": "PASS_IDENTITY_SPACETIME_OOF_FINALIZER_SYNTHETIC",
+        "round": 1,
+        "checks": [
+          "complete_success_exit_chain_exact_hashes_seven_protections_primary_brief_tenfeatures_zero_sources",
+          "exclusive_completion_no_overwrite_and_no_claim_of_finalizer_future_actual_exit"
+        ],
+        "script_sha256": "3f424e3eb80657d481af26dabcc9cfff526589da1f09a2148a9c33cdde9e6766",
+        "real_payload_opened": false,
+        "training_started": false
+      },
+      {
+        "status": "PASS_IDENTITY_SPACETIME_OOF_FINALIZER_SYNTHETIC",
+        "round": 2,
+        "checks": [
+          "exit137_signal_and_nonzero_actual_child_rejected_despite_PASS_status",
+          "independent_output_audit_requires_PASS_before_artifact_publication"
+        ],
+        "script_sha256": "3f424e3eb80657d481af26dabcc9cfff526589da1f09a2148a9c33cdde9e6766",
+        "real_payload_opened": false,
+        "training_started": false
+      },
+      {
+        "status": "PASS_IDENTITY_SPACETIME_OOF_FINALIZER_SYNTHETIC",
+        "round": 3,
+        "checks": [
+          "independent_audit_exact_summary_global_query_SQLite_hash_chain_rejects_mutation",
+          "all_seven_protected_file_existence_and_SHA_verified_before_completion"
+        ],
+        "script_sha256": "3f424e3eb80657d481af26dabcc9cfff526589da1f09a2148a9c33cdde9e6766",
+        "real_payload_opened": false,
+        "training_started": false
+      }
+    ]
+  },
+  "CPU_only": true,
+  "GPU_used": false,
+  "real_training_or_prediction_launched": false,
+  "real_cache_or_identity_values_decoded": false,
+  "complete_OOF_preflight": true,
+  "elapsed_seconds": 20.26696446724236,
+  "limitations": "Implementation preflight only. Formal FIT execution and complete real-output independent audit remain required. Runtime planning is synthetic and descriptive; exploratory source OOF is not independent generalization or official tracking evidence."
+}

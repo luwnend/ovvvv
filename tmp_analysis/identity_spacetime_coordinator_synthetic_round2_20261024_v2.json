@@ -1,0 +1,10 @@
+{
+  "status": "PASS_IDENTITY_SPACETIME_OOF_COORDINATOR_SYNTHETIC",
+  "round": 2,
+  "checks": [
+    "actual_child_wait_success_and_identity",
+    "actual_child_wait_failure_receipt_and_stop"
+  ],
+  "script_sha256": "b291c36aeb3ff92ae375954fb6033b35ecdba46c7a88728cc4b91c8048558133",
+  "real_data_opened": false
+}

@@ -1,0 +1,51 @@
+{
+  "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_COMPLETE_OUTPUT_SYNTHETIC",
+  "script_sha256": "33464d0c2c7f0da9e6836f28fda5ae9513cfbceee3c858fb1701ab3e439a5aa0",
+  "verifier_sha256": "c81ab9fdb510ed50d81082a806da33e70a4212f49f50dc10a53539a3f65c351d",
+  "trainer_sha256": "46be289030b99ef450d38cdc313f2a2d7ca3db97e0d0b5ac0a1101ff84e3d4c7",
+  "data_sha256": "54c57aee5cba1153ae18205a451b44eecc2fd6ae196d435b8e5f9c3fb8cdcbee",
+  "coordinator_sha256": "b291c36aeb3ff92ae375954fb6033b35ecdba46c7a88728cc4b91c8048558133",
+  "evaluator_sha256": "49c3393c44c5f8eb002fa61f28174293552af6eec859175740f3e4d75b858ae6",
+  "actual_worker_processes": 15,
+  "actual_worker_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "actual_evaluator_exit_code": 0,
+  "complete_audit_status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_OUTPUT_AUDIT",
+  "all_ten_scores_full_stream_and_independent_SQLite_all_reports_verified": true,
+  "training_lineage": {
+    "per_fold_training_query_lags": {
+      "0": 78,
+      "1": 78,
+      "2": 78,
+      "3": 78,
+      "4": 84
+    },
+    "all_15_allowed_label_projections_original_geometry_normalizers_global_hierarchy_and_fixed_epoch_traces": true,
+    "optimizer_replay_performed": false
+  },
+  "maximum_absolute_score_error": 2.6645352591003757e-15,
+  "tampered_score_independent_global_gate_rejected": true,
+  "temporary_shared_query_population": 15,
+  "synthetic_authority_overrides": [
+    "all cache/labels/roles/folds/protocol/protected/parent files temporary",
+    "temporary preflight gate for actual default 50/20 workers",
+    "real-data parent shared count1331 replaced by temporary independently derived count in evaluator baseline check and verifier parent check only"
+  ],
+  "real_cache_or_manual_labels_opened": false,
+  "elapsed_seconds": 87.97039216384292
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_IDENTITY_SPACETIME_OOF_FINALIZER_SYNTHETIC",
+  "round": 1,
+  "checks": [
+    "complete_success_exit_chain_exact_hashes_seven_protections_primary_brief_tenfeatures_zero_sources",
+    "exclusive_completion_no_overwrite_and_no_claim_of_finalizer_future_actual_exit"
+  ],
+  "script_sha256": "3f424e3eb80657d481af26dabcc9cfff526589da1f09a2148a9c33cdde9e6766",
+  "real_payload_opened": false,
+  "training_started": false
+}

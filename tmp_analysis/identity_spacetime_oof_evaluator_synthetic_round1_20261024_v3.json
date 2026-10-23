@@ -1,0 +1,12 @@
+{
+  "status": "PASS_IDENTITY_SPACETIME_OOF_EVALUATOR_SYNTHETIC",
+  "round": 1,
+  "checks": [
+    "ten_column_bitsets_three_seed_isolation_unknown_notnegative_query_macro_crosslag_and_paired_interaction",
+    "lowest_immutable_reference_row_tie_for_all_ten_columns"
+  ],
+  "script_sha256": "49c3393c44c5f8eb002fa61f28174293552af6eec859175740f3e4d75b858ae6",
+  "real_cache_or_identity_opened": false,
+  "training_started": false,
+  "GPU_used": false
+}

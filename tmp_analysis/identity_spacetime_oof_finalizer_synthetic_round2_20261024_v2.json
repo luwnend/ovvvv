@@ -1,0 +1,11 @@
+{
+  "status": "PASS_IDENTITY_SPACETIME_OOF_FINALIZER_SYNTHETIC",
+  "round": 2,
+  "checks": [
+    "exit137_signal_and_nonzero_actual_child_rejected_despite_PASS_status",
+    "independent_output_audit_requires_PASS_before_artifact_publication"
+  ],
+  "script_sha256": "3f424e3eb80657d481af26dabcc9cfff526589da1f09a2148a9c33cdde9e6766",
+  "real_payload_opened": false,
+  "training_started": false
+}

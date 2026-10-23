@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OOF_PREPARATION",
+  "data_module_sha256": "54c57aee5cba1153ae18205a451b44eecc2fd6ae196d435b8e5f9c3fb8cdcbee",
+  "fold_manifest_sha256": "dd287d064c04cedc1a261b6e7588853e750aec67c2098ab522ab9c26a93006a7",
+  "folds": {
+    "0": {
+      "sources": 74,
+      "cached_videos": 90,
+      "frames": 3050,
+      "candidates_by_lag": {
+        "1": 7000967,
+        "4": 6303699
+      }
+    },
+    "1": {
+      "sources": 72,
+      "cached_videos": 94,
+      "frames": 3117,
+      "candidates_by_lag": {
+        "1": 6308527,
+        "4": 5661591
+      }
+    },
+    "2": {
+      "sources": 69,
+      "cached_videos": 84,
+      "frames": 2865,
+      "candidates_by_lag": {
+        "1": 5781528,
+        "4": 5215908
+      }
+    },
+    "3": {
+      "sources": 64,
+      "cached_videos": 66,
+      "frames": 2323,
+      "candidates_by_lag": {
+        "1": 4873993,
+        "4": 4421776
+      }
+    },
+    "4": {
+      "sources": 62,
+      "cached_videos": 69,
+      "frames": 2436,
+      "candidates_by_lag": {
+        "1": 5131222,
+        "4": 4652953
+      }
+    }
+  },
+  "identity_authority_sha256_checked": true,
+  "identity_payload_decoded": false,
+  "feature_caches_opened": false,
+  "draft_protocol_sha256": "1acd88ce14e5a1447ff80bde31ca053b4820dc1475020caabc8384e5195b9e22"
+}

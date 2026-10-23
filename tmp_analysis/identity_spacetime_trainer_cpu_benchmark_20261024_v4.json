@@ -1,0 +1,61 @@
+{
+  "status": "MEASURED_PURE_SYNTHETIC_CPU_TRAINER_BENCHMARK",
+  "script_sha256": "46be289030b99ef450d38cdc313f2a2d7ca3db97e0d0b5ac0a1101ff84e3d4c7",
+  "device": "cpu",
+  "num_threads": 1,
+  "dtype": "float64",
+  "synthetic_query_lags": 1024,
+  "known_references_per_query": 3,
+  "positive_references_per_query": 1,
+  "negative_references_per_query": 2,
+  "batch_size": 64,
+  "adapter_only_epochs": 5,
+  "head_only_epochs_each": 5,
+  "head_arms": 8,
+  "stage_seconds_including_prepare": {
+    "adapter": 2.0700364680960774,
+    "eight_heads": 8.674736686982214
+  },
+  "max_candidate_block": 5929,
+  "ten_column_block_seconds_mean_12": 0.04102544439956546,
+  "full_three_seed_prediction_seconds_linear_estimate": 1149.0203035474594,
+  "historical_support_reference": {
+    "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/summary.json",
+    "source_sha256": "9764e2a6f35e4e0a5ce3ab319d15ca4642afda5383289710a5e9dd66e48974c1",
+    "fold_manifest": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_source_folds_20261024.json",
+    "fold_manifest_sha256": "dd287d064c04cedc1a261b6e7588853e750aec67c2098ab522ab9c26a93006a7",
+    "scope": "same_predicted_category",
+    "population": "all_known_population",
+    "hard_query_lags_by_lag": {
+      "1": 3278,
+      "4": 2396
+    },
+    "all_source_hard_query_lags": 5674,
+    "expected_train_query_lags_by_fold": {
+      "0": 4184,
+      "1": 4619,
+      "2": 4831,
+      "3": 4342,
+      "4": 4720
+    },
+    "actual_current_worker_count_not_yet_measured": true
+  },
+  "historical_support_linear_train_seconds_15_models_at_three_refs_per_query": 3683.6214029006223,
+  "historical_support_linear_train_seconds_per_model_by_fold_at_three_refs_per_query": {
+    "0": 226.35812404147873,
+    "1": 249.89201122074337,
+    "2": 261.3613999150057,
+    "3": 234.9060646721082,
+    "4": 255.35620111753815
+  },
+  "broad_train_query_lag_bounds": {
+    "lower": 0,
+    "upper": 43322,
+    "source": "old summary eligible_FIT_manual_anchors 21661 x 2 lags; broad all-FIT anchor bound, not hard training count or tight per-fold bound"
+  },
+  "broad_N_upper_linear_train_seconds_15_models_at_three_refs_per_query": 35156.38139241733,
+  "score_storage_bytes_3seed": 13284519360,
+  "real_label_or_cache_opened": false,
+  "estimate_limits": "Synthetic timing uses three known references and two P-by-N comparisons per query-lag. Historical hard-support counts are old sealed summary references, not current allowed worker decoding or measured new training counts. Real known-ref/PxN distributions, geometry building, cache IO/hash, JSON serialization, CPU contention and independent audits change runtime; extrapolations are not strict compute bounds or guarantees. Broad N bound is distinct from historical supported population.",
+  "supersedes_benchmark_receipt_sha256": "eee1520863fcd8d0a54241c6943cceca0797c253973729311edee069fda3316d"
+}
