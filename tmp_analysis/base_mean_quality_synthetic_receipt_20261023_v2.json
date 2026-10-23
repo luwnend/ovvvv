@@ -1,0 +1,36 @@
+{
+  "status": "PASS_CPU_SYNTHETIC_MEAN_QUALITY_EXECUTION",
+  "command": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_base_mean_quality.py",
+    "--self-test"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "started_utc": "2026-10-23T05:55:08.975867+00:00",
+  "finished_utc": "2026-10-23T05:55:09.350821+00:00",
+  "exit_code": 0,
+  "stderr": "",
+  "script_sha256": "2458c403d4f7938ef0f649f9be419027aa5ce8168d011af1572675f5bdd4a84b",
+  "specification_file": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_mean_quality_predeclared_spec_20261023_v2.json",
+  "specification_sha256": "f60fe0585b8e8ab12cad145a8ba87cb3d0f98cc8f50553870afdbce16f6161a9",
+  "specification_unchanged": true,
+  "stdout_sha256": "7f21e6416c9578d299938a0daf9f792337c885956422ba80317d19c0c791593f",
+  "real_support_opened": false,
+  "real_data_fitting_started": false,
+  "test_dumps_opened": false,
+  "test_correctness_outcomes_opened": false,
+  "class_holdout_correctness_outcomes_opened": false,
+  "access_scope": "Fit/tune frame NPZs can contain heldout-object predictions; features are extracted only for eligible supervised rows. Test dumps and test/class-holdout correctness outcomes are not read or fitted.",
+  "control_capacity": "Fixed lambda=1, class-shared ridge-logistic, low-capacity mean-quality sanity control only",
+  "limitations": [
+    "No gain cannot establish quality unpredictability.",
+    "This control does not qualify a pair model.",
+    "Stronger quality controls with inner source-group CV remain missing.",
+    "Bootstrap intervals are descriptive and conditional on fitted predictions."
+  ]
+}

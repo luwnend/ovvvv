@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-10-23T05:37:49.279046+00:00",
+  "supervisor_pid": 4168626,
+  "collection_pid": 4166653,
+  "run": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/pilot_collect_v1",
+  "launches_gpu_job": false,
+  "training_started": false,
+  "stages": [
+    {
+      "name": "dump_verification.json",
+      "observed_exit_code": 0,
+      "sha256": "3e5a92c73a7544ee640e0b6f616e80a720dca99045c01fcde917be792529e69a"
+    },
+    {
+      "name": "independent_collection_audit.json",
+      "observed_exit_code": 0,
+      "sha256": "dab5715ec7bd7ad551ab2c125bb4e722b552f6c1105a8fcfdd19724005ba5eeb"
+    }
+  ],
+  "status": "PASS_BACKGROUND_COLLECTION_AUDITS_PENDING_ROOT_REVIEW",
+  "collection_receipt_sha256": "47b156052c5f4e853a1a8a8e2b1e4a2cb94fc017a28c9141c1ed6584d6d1e4f7",
+  "completed_utc": "2026-10-23T05:41:13.929195+00:00",
+  "original_collection_terminal_exit_code": null,
+  "original_exit_limitation": "Original runner is not a child of this detached supervisor; do not invent its exit code. Root tool session91862 can provide it."
+}

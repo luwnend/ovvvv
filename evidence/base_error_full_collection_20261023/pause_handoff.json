@@ -1,0 +1,50 @@
+{
+  "status": "USER_PAUSED_BEFORE_FULL_COLLECTION_LAUNCH",
+  "created_utc": "2026-10-23T06:11:47.464744+00:00",
+  "user_request": "那我可以暂停codex对话吗？过会儿再打开",
+  "research_goal_complete": false,
+  "full_collection_launched": false,
+  "background_launch_receipt_present": false,
+  "background_execution_receipt_present": false,
+  "full_run_directory_present": false,
+  "active_collection_support_quality_processes": [],
+  "completed_evidence": [
+    {
+      "path": "results/base_error_collection_20261023_v3/execution_receipt.json",
+      "status": "COMPLETE_PILOT_COLLECTION_WITH_OBSERVED_TERMINAL_EXIT_AND_DUAL_AUDITS",
+      "sha256": "f537d8947afbf0d292b5ed9f9a7c3127c216bb855953e8eb579cf7575213f01d"
+    },
+    {
+      "path": "results/base_error_collection_20261023_v3/fit_tune_execution_receipt.json",
+      "status": "COMPLETE_SUPPORT_AND_FIXED_MEAN_QUALITY_EXECUTION",
+      "sha256": "5ad0569b56034d27fafe8bdef60e68520b17b39144032a9211384b87ae78a817"
+    },
+    {
+      "path": "results/base_error_collection_20261023_v3/support_v1/independent_support_audit.json",
+      "status": "PASS_INDEPENDENT_REAL_SUPPORT_OUTPUT_AUDIT",
+      "sha256": "e07f67793cd1ba06b857a584d70f798985002b911df115e70e442a7a93697b67"
+    },
+    {
+      "path": "results/base_error_collection_20261023_v3/mean_quality_v1/independent_mean_quality_audit.json",
+      "status": "PASS_INDEPENDENT_MEAN_QUALITY_DIAGNOSTIC_AUDIT",
+      "sha256": "bdd48ed7a4f1de27212852fd1e84174d6db2d513725fc231a973ec80af294c6b"
+    },
+    {
+      "path": "results/base_error_full_collection_20261023/preparation_manifest.json",
+      "status": "PREPARED_NO_INFERENCE_RUN",
+      "sha256": "ac803c90555fa9fb2774affe8c63d5a3747b8454a7528ccf4592a80c539584b1"
+    },
+    {
+      "path": "results/base_error_full_collection_20261023/independent_metadata_audit.json",
+      "status": "PASS_INDEPENDENT_FULL_COLLECTION_METADATA_AUDIT",
+      "sha256": "a6e0d957a517106461af23d73be96d288e93ed9eed58956374b4083c8b1f1548"
+    }
+  ],
+  "resume_handoff": "tmp_analysis/base_error_pause_handoff_20261023.md",
+  "expected_full_collection_hours": [
+    1,
+    2
+  ],
+  "test_and_heldout_correctness_opened": false,
+  "existing_training_action": "unchanged; do not stop or modify"
+}

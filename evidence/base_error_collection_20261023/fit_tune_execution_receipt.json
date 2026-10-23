@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE_SUPPORT_AND_FIXED_MEAN_QUALITY_EXECUTION",
+  "created_utc": "2026-10-23T06:01:30.182277+00:00",
+  "stages": [
+    {
+      "name": "support",
+      "terminal_exit_code": 0,
+      "terminal_exit_observed": true,
+      "observed_by": "tools.write_stdin",
+      "session_id": 18302,
+      "artifact": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/support_v1/support_receipt.json",
+      "artifact_sha256": "f0a0624f597086183a6638ddb1bd8a090fcd2c2acb1a25777114eb10a04df1f6",
+      "log_sha256": "3528b1335eadb65239056dd989952f5fff8506ffb49d8ce9e7c0b63ba29732b7"
+    },
+    {
+      "name": "mean_quality",
+      "terminal_exit_code": 0,
+      "terminal_exit_observed": true,
+      "observed_by": "tools.write_stdin",
+      "session_id": 26996,
+      "artifact": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/mean_quality_v1/diagnostic.json",
+      "artifact_sha256": "6569406555f3c112f0bb06ed4528676c0c747a928033b3cec512d63b54cf034f",
+      "log_sha256": "1ffa44df47bcce28393068ef563d4849a49f3ed327270be599b0d6c90e071fcf"
+    }
+  ],
+  "tracker_training_started": false,
+  "test_outcomes_computed": false,
+  "pair_training_readiness": false
+}

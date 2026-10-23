@@ -1,0 +1,45 @@
+{
+  "status": "COMPLETE_PILOT_COLLECTION_WITH_OBSERVED_TERMINAL_EXIT_AND_DUAL_AUDITS",
+  "created_utc": "2026-10-23T05:47:16.946104+00:00",
+  "collection": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/pilot_collect_v1",
+    "terminal_exit_code": 0,
+    "terminal_exit_observed": true,
+    "observed_by": "tools.write_stdin",
+    "session_id": 91862,
+    "receipt_sha256": "47b156052c5f4e853a1a8a8e2b1e4a2cb94fc017a28c9141c1ed6584d6d1e4f7",
+    "log_sha256": "16c49702682de07f14e34245b9e2531b35ab5621af86a3d0dcdb5e15ab2627d1"
+  },
+  "observed_cpu_audits": [
+    {
+      "name": "dump_verification.json",
+      "observed_exit_code": 0,
+      "sha256": "3e5a92c73a7544ee640e0b6f616e80a720dca99045c01fcde917be792529e69a"
+    },
+    {
+      "name": "independent_collection_audit.json",
+      "observed_exit_code": 0,
+      "sha256": "dab5715ec7bd7ad551ab2c125bb4e722b552f6c1105a8fcfdd19724005ba5eeb"
+    }
+  ],
+  "background_supervisor_sha256": "e35201ab488dca45bac228c8795bd7cf66a3ecafa944c32faa9cb9903507865b",
+  "completion": {
+    "completed_images": 1299,
+    "completed_videos": 41,
+    "retained_observations": 54924,
+    "emitted_observations": 54924,
+    "elapsed_seconds": 394.5950180031359,
+    "protected_sources_unchanged": true,
+    "source_code_unchanged": true
+  },
+  "smoke": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/smoke_v2",
+    "terminal_exit_code": 0,
+    "terminal_exit_observed": true,
+    "observed_by": "tools.write_stdin",
+    "session_id": 48574
+  },
+  "support_evaluation_complete": false,
+  "new_method_training_started": false,
+  "research_goal_complete": false
+}

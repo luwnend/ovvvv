@@ -1,0 +1,519 @@
+{
+  "status": "AUDITED_MEAN_QUALITY_DIAGNOSTIC_SUMMARY",
+  "provenance": {
+    "diagnostic_sha256": "6569406555f3c112f0bb06ed4528676c0c747a928033b3cec512d63b54cf034f",
+    "predictions_sha256": "c0f730f399ff602b6e3fd752d2fe61f659d8a6c609232949fa3010b7533d3f62",
+    "diagnostic_script_sha256": "2458c403d4f7938ef0f649f9be419027aa5ce8168d011af1572675f5bdd4a84b",
+    "audit_script_sha256": "e4355092fd2d0a64834b9ae333716b67d03ac24cce9ab365d619b3f30042694f",
+    "input_hash_count": 760,
+    "eligible_fit_tune_dump_files": 756,
+    "support_receipt_sha256": "f0a0624f597086183a6638ddb1bd8a090fcd2c2acb1a25777114eb10a04df1f6"
+  },
+  "independent_audit_sha256": "bdd48ed7a4f1de27212852fd1e84174d6db2d513725fc231a973ec80af294c6b",
+  "support_counts": {
+    "fit": {
+      "observations": 1067,
+      "source_groups": 14,
+      "eligible_GT_trajectories": 113,
+      "errors": 615,
+      "correct": 452,
+      "micro_mean_error": 0.5763823805060918,
+      "hierarchical_mean_error": 0.5499121277760733,
+      "emitted_label_vs_posterior_argmax_disagreements": 0,
+      "primary_error_vs_argmax_error_disagreements": 0,
+      "single_outcome_class": false,
+      "weighting": {
+        "source_groups": 14,
+        "eligible_GT_trajectories": 113,
+        "Kish_effective_source_groups": 14.000000000000007,
+        "Kish_effective_trajectories": 67.31977353742936,
+        "Kish_effective_observations": 228.94879565700194,
+        "interpretation": "Weight concentration summaries only; these are not counts of statistically independent samples"
+      }
+    },
+    "tune": {
+      "observations": 315,
+      "source_groups": 7,
+      "eligible_GT_trajectories": 41,
+      "errors": 228,
+      "correct": 87,
+      "micro_mean_error": 0.7238095238095238,
+      "hierarchical_mean_error": 0.6879614183263248,
+      "emitted_label_vs_posterior_argmax_disagreements": 0,
+      "primary_error_vs_argmax_error_disagreements": 0,
+      "single_outcome_class": false,
+      "weighting": {
+        "source_groups": 7,
+        "eligible_GT_trajectories": 41,
+        "Kish_effective_source_groups": 7.0,
+        "Kish_effective_trajectories": 26.300319488817912,
+        "Kish_effective_observations": 168.69827950945034,
+        "interpretation": "Weight concentration summaries only; these are not counts of statistically independent samples"
+      }
+    }
+  },
+  "results": {
+    "fit_source_group_crossfit": {
+      "point": {
+        "micro": {
+          "B0_global_mean": {
+            "observed_mean_error": 0.576382380506092,
+            "predicted_mean_error": 0.5550968336185129,
+            "Brier": 0.25348894670447075,
+            "BCE": 0.7002031160583685,
+            "calibration_in_the_large_intercept": 0.08703208455418568,
+            "calibration_intercept": 1.3501203544818101,
+            "calibration_slope": -4.481151652783055,
+            "calibration_status": "OK"
+          },
+          "B1_shared_quality": {
+            "observed_mean_error": 0.576382380506092,
+            "predicted_mean_error": 0.533444680520306,
+            "Brier": 0.2240201467316211,
+            "BCE": 0.646313281330197,
+            "calibration_in_the_large_intercept": 0.18806220124941292,
+            "calibration_intercept": 0.18788051118094917,
+            "calibration_slope": 1.00171231857123,
+            "calibration_status": "OK"
+          },
+          "B1_minus_B0": {
+            "Brier": -0.029468799972849652,
+            "BCE": -0.05388983472817144
+          }
+        },
+        "source_trajectory_observation_weighted": {
+          "B0_global_mean": {
+            "observed_mean_error": 0.5499121277760733,
+            "predicted_mean_error": 0.5489228988078447,
+            "Brier": 0.2588815410518238,
+            "BCE": 0.7110282637468047,
+            "calibration_in_the_large_intercept": 0.004017926782269685,
+            "calibration_intercept": 1.069751128226881,
+            "calibration_slope": -4.206202377073161,
+            "calibration_status": "OK"
+          },
+          "B1_shared_quality": {
+            "observed_mean_error": 0.5499121277760733,
+            "predicted_mean_error": 0.553515555565349,
+            "Brier": 0.20813718257295313,
+            "BCE": 0.6046563821836927,
+            "calibration_in_the_large_intercept": -0.01583555465005322,
+            "calibration_intercept": -0.1395862431729431,
+            "calibration_slope": 1.6805721651993883,
+            "calibration_status": "OK"
+          },
+          "B1_minus_B0": {
+            "Brier": -0.05074435847887068,
+            "BCE": -0.10637188156311206
+          }
+        }
+      },
+      "source_group_bootstrap_95_percentile": {
+        "micro": {
+          "B0_global_mean": {
+            "observed_mean_error": {
+              "low": 0.3861487883549748,
+              "high": 0.7042520963288673,
+              "valid_draws": 1000
+            },
+            "predicted_mean_error": {
+              "low": 0.5276417277265302,
+              "high": 0.570578406875266,
+              "valid_draws": 1000
+            },
+            "Brier": {
+              "low": 0.23543716676877274,
+              "high": 0.27890236575471317,
+              "valid_draws": 1000
+            },
+            "BCE": {
+              "low": 0.6638936098325363,
+              "high": 0.7513367527401729,
+              "valid_draws": 1000
+            },
+            "calibration_in_the_large_intercept": {
+              "low": -0.7340118810196549,
+              "high": 0.7048312783740114,
+              "valid_draws": 1000
+            },
+            "calibration_intercept": {
+              "low": -0.3574932342920973,
+              "high": 4.797615110923689,
+              "valid_draws": 1000
+            },
+            "calibration_slope": {
+              "low": -17.132632889437403,
+              "high": 2.4850815336163894,
+              "valid_draws": 1000
+            }
+          },
+          "B1_shared_quality": {
+            "observed_mean_error": {
+              "low": 0.3861487883549748,
+              "high": 0.7042520963288673,
+              "valid_draws": 1000
+            },
+            "predicted_mean_error": {
+              "low": 0.4932094307835372,
+              "high": 0.5651643492527902,
+              "valid_draws": 1000
+            },
+            "Brier": {
+              "low": 0.19607482162823256,
+              "high": 0.2598022863949284,
+              "valid_draws": 1000
+            },
+            "BCE": {
+              "low": 0.5801528307864043,
+              "high": 0.7386288536083309,
+              "valid_draws": 1000
+            },
+            "calibration_in_the_large_intercept": {
+              "low": -0.5216197645977049,
+              "high": 0.6759900750985096,
+              "valid_draws": 1000
+            },
+            "calibration_intercept": {
+              "low": -0.5982857284310235,
+              "high": 0.7065456029810596,
+              "valid_draws": 1000
+            },
+            "calibration_slope": {
+              "low": 0.1025039713244364,
+              "high": 2.6361844075945076,
+              "valid_draws": 1000
+            }
+          },
+          "B1_minus_B0": {
+            "Brier": {
+              "low": -0.07681318756274792,
+              "high": 0.009644936302044058,
+              "valid_draws": 1000
+            },
+            "BCE": {
+              "low": -0.15756645589893578,
+              "high": 0.04243880323641646,
+              "valid_draws": 1000
+            }
+          }
+        },
+        "source_trajectory_observation_weighted": {
+          "B0_global_mean": {
+            "observed_mean_error": {
+              "low": 0.3836310947658676,
+              "high": 0.7170368569379281,
+              "valid_draws": 1000
+            },
+            "predicted_mean_error": {
+              "low": 0.5281171236650846,
+              "high": 0.5657750240627928,
+              "valid_draws": 1000
+            },
+            "Brier": {
+              "low": 0.2368851289542393,
+              "high": 0.2787433618511746,
+              "valid_draws": 1000
+            },
+            "BCE": {
+              "low": 0.6667588045130336,
+              "high": 0.7510025237219093,
+              "valid_draws": 1000
+            },
+            "calibration_in_the_large_intercept": {
+              "low": -0.7066239960580719,
+              "high": 0.7682547107269888,
+              "valid_draws": 1000
+            },
+            "calibration_intercept": {
+              "low": -0.006385189984845545,
+              "high": 4.24073806231663,
+              "valid_draws": 1000
+            },
+            "calibration_slope": {
+              "low": -15.931406251986349,
+              "high": 0.5325905762619101,
+              "valid_draws": 1000
+            }
+          },
+          "B1_shared_quality": {
+            "observed_mean_error": {
+              "low": 0.3836310947658676,
+              "high": 0.7170368569379281,
+              "valid_draws": 1000
+            },
+            "predicted_mean_error": {
+              "low": 0.5170577206712648,
+              "high": 0.59210268199075,
+              "valid_draws": 1000
+            },
+            "Brier": {
+              "low": 0.18270275049711487,
+              "high": 0.23335547004381604,
+              "valid_draws": 1000
+            },
+            "BCE": {
+              "low": 0.5478099841946977,
+              "high": 0.662832171479474,
+              "valid_draws": 1000
+            },
+            "calibration_in_the_large_intercept": {
+              "low": -0.6494384977667489,
+              "high": 0.6665601575042568,
+              "valid_draws": 1000
+            },
+            "calibration_intercept": {
+              "low": -0.8051677454405836,
+              "high": 0.6247309758541811,
+              "valid_draws": 1000
+            },
+            "calibration_slope": {
+              "low": 0.9220491060901302,
+              "high": 2.6897770771104788,
+              "valid_draws": 1000
+            }
+          },
+          "B1_minus_B0": {
+            "Brier": {
+              "low": -0.0775688626171785,
+              "high": -0.022694871114802166,
+              "valid_draws": 1000
+            },
+            "BCE": {
+              "low": -0.16425137355817884,
+              "high": -0.04616779237814434,
+              "valid_draws": 1000
+            }
+          }
+        }
+      },
+      "bootstrap_replicates": 1000,
+      "bootstrap_source_groups": 14,
+      "bootstrap_interpretation": "Descriptive percentile intervals conditional on already fitted predictions; no baseline refitting, no training uncertainty or independence claim"
+    },
+    "tune_evaluation_only": {
+      "point": {
+        "micro": {
+          "B0_global_mean": {
+            "observed_mean_error": 0.7238095238095238,
+            "predicted_mean_error": 0.5499121277760737,
+            "Brier": 0.23014960139936885,
+            "BCE": 0.6533220594063549,
+            "calibration_in_the_large_intercept": 0.7631218478274959,
+            "calibration_intercept": null,
+            "calibration_slope": null,
+            "calibration_status": "CONSTANT_LOGIT_JOINT_CALIBRATION_NOT_IDENTIFIABLE"
+          },
+          "B1_shared_quality": {
+            "observed_mean_error": 0.7238095238095242,
+            "predicted_mean_error": 0.6054981802282894,
+            "Brier": 0.19122607081151127,
+            "BCE": 0.5674298421018097,
+            "calibration_in_the_large_intercept": 0.5824800072119889,
+            "calibration_intercept": 0.5046249491490048,
+            "calibration_slope": 1.2719740676197038,
+            "calibration_status": "OK"
+          },
+          "B1_minus_B0": {
+            "Brier": -0.03892353058785758,
+            "BCE": -0.08589221730454522
+          }
+        },
+        "source_trajectory_observation_weighted": {
+          "B0_global_mean": {
+            "observed_mean_error": 0.6879614183263248,
+            "predicted_mean_error": 0.5499121277760735,
+            "Brier": 0.23372811184218398,
+            "BCE": 0.6605029964046015,
+            "calibration_in_the_large_intercept": 0.5902902564996777,
+            "calibration_intercept": null,
+            "calibration_slope": null,
+            "calibration_status": "CONSTANT_LOGIT_JOINT_CALIBRATION_NOT_IDENTIFIABLE"
+          },
+          "B1_shared_quality": {
+            "observed_mean_error": 0.6879614183263248,
+            "predicted_mean_error": 0.5983459627025758,
+            "Brier": 0.19155885478659396,
+            "BCE": 0.5685266598418425,
+            "calibration_in_the_large_intercept": 0.4212051619253885,
+            "calibration_intercept": 0.2209131728759576,
+            "calibration_slope": 1.7124817483709902,
+            "calibration_status": "OK"
+          },
+          "B1_minus_B0": {
+            "Brier": -0.04216925705559002,
+            "BCE": -0.09197633656275905
+          }
+        }
+      },
+      "source_group_bootstrap_95_percentile": {
+        "micro": {
+          "B0_global_mean": {
+            "observed_mean_error": {
+              "low": 0.5033333333333334,
+              "high": 0.9075938192866718,
+              "valid_draws": 1000
+            },
+            "predicted_mean_error": {
+              "low": 0.5499121277760728,
+              "high": 0.549912127776074,
+              "valid_draws": 1000
+            },
+            "Brier": {
+              "low": 0.2118034709211868,
+              "high": 0.25215847298062793,
+              "valid_draws": 1000
+            },
+            "BCE": {
+              "low": 0.6165071865058336,
+              "high": 0.6974868935609755,
+              "valid_draws": 1000
+            },
+            "calibration_in_the_large_intercept": {
+              "low": -0.1869821316028959,
+              "high": 2.084289574786487,
+              "valid_draws": 1000
+            }
+          },
+          "B1_shared_quality": {
+            "observed_mean_error": {
+              "low": 0.5033333333333334,
+              "high": 0.9075938192866718,
+              "valid_draws": 1000
+            },
+            "predicted_mean_error": {
+              "low": 0.5300683084279137,
+              "high": 0.6687594882793529,
+              "valid_draws": 1000
+            },
+            "Brier": {
+              "low": 0.14914334766675413,
+              "high": 0.2359281306081162,
+              "valid_draws": 1000
+            },
+            "BCE": {
+              "low": 0.4759729809846096,
+              "high": 0.6645316023266962,
+              "valid_draws": 1000
+            },
+            "calibration_in_the_large_intercept": {
+              "low": -0.15866542843917736,
+              "high": 1.7185362967995674,
+              "valid_draws": 1000
+            },
+            "calibration_intercept": {
+              "low": -0.1478426427040571,
+              "high": 2.03085589795319,
+              "valid_draws": 1000
+            },
+            "calibration_slope": {
+              "low": 0.14912975680321972,
+              "high": 1.7195385599285211,
+              "valid_draws": 1000
+            }
+          },
+          "B1_minus_B0": {
+            "Brier": {
+              "low": -0.0637965549723371,
+              "high": -0.013864636911088522,
+              "valid_draws": 1000
+            },
+            "BCE": {
+              "low": -0.14279302642909544,
+              "high": -0.030105019813884908,
+              "valid_draws": 1000
+            }
+          }
+        },
+        "source_trajectory_observation_weighted": {
+          "B0_global_mean": {
+            "observed_mean_error": {
+              "low": 0.4544283172184958,
+              "high": 0.8843196987622454,
+              "valid_draws": 1000
+            },
+            "predicted_mean_error": {
+              "low": 0.549912127776073,
+              "high": 0.5499121277760739,
+              "valid_draws": 1000
+            },
+            "Brier": {
+              "low": 0.21412679267616863,
+              "high": 0.25704037980705735,
+              "valid_draws": 1000
+            },
+            "BCE": {
+              "low": 0.6211693573771456,
+              "high": 0.7072833342622413,
+              "valid_draws": 1000
+            },
+            "calibration_in_the_large_intercept": {
+              "low": -0.3831098748688007,
+              "high": 1.8336904749551195,
+              "valid_draws": 1000
+            }
+          },
+          "B1_shared_quality": {
+            "observed_mean_error": {
+              "low": 0.4544283172184958,
+              "high": 0.8843196987622454,
+              "valid_draws": 1000
+            },
+            "predicted_mean_error": {
+              "low": 0.5385646890050781,
+              "high": 0.6454983412192962,
+              "valid_draws": 1000
+            },
+            "Brier": {
+              "low": 0.1621025834990644,
+              "high": 0.22189690455683314,
+              "valid_draws": 1000
+            },
+            "BCE": {
+              "low": 0.5040312886854517,
+              "high": 0.6351049127897144,
+              "valid_draws": 1000
+            },
+            "calibration_in_the_large_intercept": {
+              "low": -0.41876220111869944,
+              "high": 1.5595549117727097,
+              "valid_draws": 1000
+            },
+            "calibration_intercept": {
+              "low": -0.6415616574381195,
+              "high": 1.7490589494066069,
+              "valid_draws": 1000
+            },
+            "calibration_slope": {
+              "low": 0.345620766520614,
+              "high": 2.292144553395417,
+              "valid_draws": 1000
+            }
+          },
+          "B1_minus_B0": {
+            "Brier": {
+              "low": -0.05675230595687436,
+              "high": -0.027272983821446994,
+              "valid_draws": 1000
+            },
+            "BCE": {
+              "low": -0.12585020130418356,
+              "high": -0.05847233449087995,
+              "valid_draws": 1000
+            }
+          }
+        }
+      },
+      "bootstrap_replicates": 1000,
+      "bootstrap_source_groups": 7,
+      "bootstrap_interpretation": "Descriptive percentile intervals conditional on already fitted predictions; no baseline refitting, no training uncertainty or independence claim"
+    }
+  },
+  "limitations": {
+    "low_capacity_control_only": true,
+    "pair_model_gate_satisfied": false,
+    "no_gain_does_not_establish_quality_unpredictability": true,
+    "stronger_quality_control_with_inner_source_group_CV_still_missing": true,
+    "bootstrap_intervals_descriptive_only": true
+  },
+  "interpretation": "Mean-quality has descriptive signal under current support. Fixed lambda=1 B1 remains a low-capacity sanity control; predictions are uncalibrated. Stronger controls with inner source-group CV remain missing; this is not a pair-model gate."
+}

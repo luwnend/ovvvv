@@ -8,6 +8,7 @@ base/fit-category eligibility filtering. No model import, GPU, or fitting.
 
 import argparse
 from collections import Counter, defaultdict
+import copy
 import datetime
 import hashlib
 import itertools
@@ -103,6 +104,37 @@ def track_key(video, local):
     return (int(video), int(local))
 
 
+def canonical_frame_name(value):
+    """Normalize harmless prefixes/separators, never discard split identity."""
+    parts = str(value).replace("\\", "/").split("/")
+    require(".." not in parts, "Parent traversal in frame filename")
+    starts = [k for k, part in enumerate(parts) if part in ("train", "val", "test")]
+    require(len(starts) == 1, "Frame filename needs one unambiguous dataset split")
+    return "/".join(parts[starts[0]:])
+
+
+def image_indices(rows, description):
+    by_id, by_coordinate = {}, {}
+    for image in rows:
+        iid = int(image["id"])
+        coordinate = (int(image["video_id"]), int(image["frame_index"]))
+        require(iid not in by_id, "Duplicate %s image ID" % description)
+        require(coordinate not in by_coordinate, "Duplicate %s (video_id,frame_index)" % description)
+        canonical_frame_name(image["file_name"])
+        by_id[iid] = image; by_coordinate[coordinate] = image
+    return by_id, by_coordinate
+
+
+def require_same_frame(left, right, description):
+    require((int(left["video_id"]), int(left["frame_index"])) ==
+            (int(right["video_id"]), int(right["frame_index"])), description+" coordinate mismatch")
+    require(canonical_frame_name(left["file_name"]) == canonical_frame_name(right["file_name"]),
+            description+" canonical filename mismatch")
+    for field in ("width", "height"):
+        if field in left and field in right:
+            require(int(left[field]) == int(right[field]), description+" image dimensions mismatch")
+
+
 def fixed_lag_bin(lag, kind):
     if kind == "sample_step":
         return "1" if lag == 1 else "2-3" if lag <= 3 else "4-7" if lag <= 7 else "8+"
@@ -145,6 +177,8 @@ class PairStats:
         self.counts = Counter()
         self.groups, self.videos, self.gt_tracks, self.pred_tracks, self.categories = (set() for _ in range(5))
         self.soft_product = self.iou_sum = 0.0
+        self.by_source = defaultdict(Counter)
+        self.by_trajectory = defaultdict(Counter)
 
     def add(self, a, b):
         require(a["image_id"] != b["image_id"], "Pairs must use distinct frames")
@@ -166,16 +200,27 @@ class PairStats:
         self.gt_tracks.add((a["video_id"], a["gt_track_id"]))
         self.pred_tracks.add(track_key(a["video_id"], a["local_track_id"]))
         self.categories.add(a["gt_category_id"])
+        for counter in (self.by_source[a["source_group"]], self.by_trajectory[(a["video_id"], a["gt_track_id"])]):
+            counter["pairs"] += 1
+            counter["both_wrong"] += int(both)
+            counter["same_wrong_class"] += int(agree and both)
 
     def result(self):
         n = self.counts["pairs"]
         counts = {k: int(self.counts[k]) for k in ("pairs", "agreement_pairs", "both_correct", "exactly_one_wrong", "both_wrong", "same_wrong_class", "different_wrong_class")}
+        concentration = {}
+        for event in ("pairs", "both_wrong", "same_wrong_class"):
+            total = counts[event]
+            concentration["max_source_"+event+"_share"] = max((v[event] for v in self.by_source.values()), default=0)/total if total else None
+            concentration["max_gt_trajectory_"+event+"_share"] = max((v[event] for v in self.by_trajectory.values()), default=0)/total if total else None
         return dict(**counts, both_wrong_rate=counts["both_wrong"]/n if n else None,
                     same_wrong_class_rate=counts["same_wrong_class"]/n if n else None,
                     mean_endpoint_soft_risk_product=self.soft_product/n if n else None,
                     source_groups=len(self.groups), videos=len(self.videos), gt_trajectories=len(self.gt_tracks),
                     predicted_tracks=len(self.pred_tracks), target_categories=len(self.categories),
-                    target_category_ids=sorted(self.categories))
+                    target_category_ids=sorted(self.categories), concentration=concentration,
+                    per_source_event_counts={group: {event: counter[event] for event in ("pairs", "both_wrong", "same_wrong_class")}
+                                             for group, counter in sorted(self.by_source.items())})
 
 
 def verified_inputs(stage, run):
@@ -278,26 +323,63 @@ def seal_gt_free_index(out, run, metadata, records, inventory):
     return frames, tracks, sealed
 
 
-def full_gt_and_manual(plan, stage, metadata, records):
-    """Only build official-GT frame maps for fit/tune. Test errors stay closed."""
-    truth_path = Path(plan["inputs"]["tao_train"]["path"])
-    require(sha(truth_path) == plan["inputs"]["tao_train"]["sha256"], "Official TAO train changed")
-    truth = load(truth_path)
-    targets = load(stage / "manual_anchor_targets.json")
+def validate_target_provenance(plan, metadata, records, truth, targets, source):
+    """Pure annotation-contract check: no predictions or test outcomes accepted.
+
+    Source JSONs contain the original training benchmark's complete annotations;
+    only fit/tune pilot coordinates enter GT maps or manual category/box joins.
+    Test metadata and target IDs can be checked without evaluating test outcomes.
+    """
     require(targets["status"] == "TARGETS_ONLY_NOT_MODEL_INPUT", "Invalid target provenance")
     fit_categories = set(targets["readout_fit_category_ids"])
     require(fit_categories == set(plan["vocabulary"]["readout_fit_category_ids"]), "Fit-class split changed")
-    images = {int(i["id"]): i for i in metadata["images"]}
-    open_coordinates = {(i["video_id"], i["frame_index"]): i["id"] for i in metadata["images"] if records[i["video_id"]]["split"] in OPEN_SPLITS}
-    require(len(open_coordinates) == sum(records[i["video_id"]]["split"] in OPEN_SPLITS for i in metadata["images"]), "Duplicate original frame coordinates")
+    images, _ = image_indices(metadata["images"], "pilot")
+    official_images, official_coordinates = image_indices(truth["images"], "official TAO")
+    source_images, _ = image_indices(source["images"], "C-TAO")
+    planned_images, _ = image_indices([dict(row, id=row["image_id"]) for row in plan["minimal_pilot"]["images"]], "planned pilot")
+    require(set(images) == set(planned_images), "Pilot image IDs differ from sealed plan")
+    planned_target_ids = set(plan["minimal_pilot"]["manual_anchor_ctao_annotation_ids"])
+    target_ids = [int(a["id"]) for a in targets["annotations"]]
+    require(len(target_ids) == len(set(target_ids)) and set(target_ids) == planned_target_ids,
+            "Manual target IDs do not uniquely equal sealed C-TAO annotation IDs")
+    source_targets = {}
+    for annotation in source["annotations"]:
+        aid = int(annotation["id"])
+        if aid in planned_target_ids:
+            require(aid not in source_targets, "Duplicate selected C-TAO annotation ID")
+            source_targets[aid] = annotation
+    require(set(source_targets) == planned_target_ids, "Planned manual ID absent from C-TAO source")
+    open_coordinates = {}
+    for iid, image in images.items():
+        vid = int(image["video_id"])
+        require(vid in records and records[vid]["split"] in ("fit", "tune", "test"), "Unknown pilot split")
+        if records[vid]["split"] not in OPEN_SPLITS:
+            continue
+        require(iid in source_images, "Pilot image ID absent from C-TAO")
+        original = source_images[iid]
+        require_same_frame(image, planned_images[iid], "Pilot/plan")
+        require_same_frame(image, original, "Pilot/C-TAO")
+        require(original.get("is_ori") is True, "Manual target frame is not C-TAO is_ori=True")
+        require(int(image["source_frame_id"]) == int(original["frame_id"]), "Original C-TAO frame_id provenance mismatch")
+        coordinate = (vid, int(image["frame_index"]))
+        require(coordinate in official_coordinates, "Manual frame lacks official TAO coordinate")
+        require_same_frame(image, official_coordinates[coordinate], "Pilot/official TAO")
+        open_coordinates[coordinate] = iid
     canonical = {c["id"]: c for c in targets["categories"]}
+    source_categories = {c["id"]: c for c in source["categories"]}
+    require(len(canonical) == len(targets["categories"]) and set(canonical) == set(source_categories), "Canonical category IDs changed")
+    for cid, category in canonical.items():
+        require(category.get("synset") == source_categories[cid].get("synset") and
+                category.get("frequency") == source_categories[cid].get("frequency"), "C-TAO category metadata bridge changed")
     synsets = defaultdict(list)
     for category in canonical.values():
-        synsets[category.get("synset")].append(category["id"])
+        if category.get("synset"):
+            synsets[category["synset"]].append(category["id"])
     old_categories = {c["id"]: c for c in truth["categories"]}
-    category_mapping = {cid: synsets.get(c.get("synset"), []) for cid, c in old_categories.items()}
-    official_images = {im["id"]: im for im in truth["images"]}
+    require(len(old_categories) == len(truth["categories"]), "Duplicate official TAO category ID")
+    category_mapping = {cid: synsets.get(c.get("synset"), []) if c.get("synset") else [] for cid, c in old_categories.items()}
     by_image = defaultdict(list)
+    official_anchor_keys = set()
     for annotation in truth["annotations"]:
         # No predicted category, posterior, or test outcome is inspected here.
         image = official_images[annotation["image_id"]]
@@ -305,6 +387,10 @@ def full_gt_and_manual(plan, stage, metadata, records):
         if coordinate not in open_coordinates:
             continue
         stage_id = open_coordinates[coordinate]
+        require(int(annotation["video_id"]) == int(image["video_id"]), "Official annotation/image video mismatch")
+        key = (stage_id, int(annotation["track_id"]))
+        require(key not in official_anchor_keys, "Duplicate official identity/frame annotation")
+        official_anchor_keys.add(key)
         mapped = category_mapping[annotation["category_id"]]
         by_image[stage_id].append(dict(official_annotation_id=annotation["id"],
                                       gt_track_id=annotation["track_id"], old_category_id=annotation["category_id"],
@@ -319,11 +405,17 @@ def full_gt_and_manual(plan, stage, metadata, records):
         require(anchor["readout_split"] == split, "Target split mismatch")
         if split not in OPEN_SPLITS:
             continue
+        aid = int(anchor["id"])
+        original = source_targets[aid]
+        for field in ("id", "image_id", "video_id", "track_id", "category_id"):
+            require(int(anchor[field]) == int(original[field]), "Manual C-TAO source annotation field mismatch: "+field)
+        require(np.allclose(anchor["bbox"], original["bbox"], rtol=0, atol=1e-6), "Manual/C-TAO source bbox mismatch")
         require(anchor["video_id"] == image["video_id"], "Manual video mismatch")
         require(anchor["supervision_source"] == "exact original-TAO manual anchor intersection", "Nonmanual target")
         key = (iid, int(anchor["track_id"]))
         require(key not in manual, "Duplicate manual track/frame anchor")
         eligible = anchor["category_id"] in fit_categories
+        require(canonical[anchor["category_id"]]["frequency"] in ("f", "c"), "Nonbase manual target entered open supervision")
         require(anchor["readout_class_holdout"] == (not eligible), "Class holdout metadata mismatch")
         require(anchor["eligible_for_parameter_fit"] == (split == "fit" and eligible), "Parameter eligibility mismatch")
         matching = [gt for gt in by_image[iid] if gt["gt_track_id"] == anchor["track_id"]]
@@ -332,11 +424,37 @@ def full_gt_and_manual(plan, stage, metadata, records):
         require(gt["category_id"] == anchor["category_id"] and np.allclose(gt["bbox"], anchor["bbox"], rtol=0, atol=1e-6), "Manual/official category or box mismatch")
         manual[key] = dict(anchor_id=int(anchor["id"]), category_id=int(anchor["category_id"]), eligible=eligible)
     require(not any(records[images[iid]["video_id"]]["split"] == "test" for iid in by_image), "Test GT was prepared for matching")
-    return by_image, manual, fit_categories
+    provenance = dict(status="PASS_FIT_TUNE_MANUAL_SOURCE_CHAIN", open_frames=len(open_coordinates),
+                      checked_manual_anchors=len(manual), official_coordinates_unique=True,
+                      canonical_filenames_and_dimensions_equal=True, ctao_is_ori_true=True,
+                      source_frame_ids_preserved=True, sealed_manual_annotation_ids_equal=True,
+                      old_to_new_unique_synset_bridge=True, manual_source_and_official_boxes_equal_atol=1e-6,
+                      test_gt_frame_maps_built=False, test_outcomes_evaluated=False,
+                      source_files_contain_test_partition_labels=True,
+                      interpretation="Full source JSONs were parsed; test prediction/GT joins and outcomes remain closed.")
+    return by_image, manual, fit_categories, provenance
+
+
+def full_gt_and_manual(plan, stage, metadata, records):
+    """Only build official-GT frame maps for fit/tune. Test errors stay closed."""
+    truth_path = Path(plan["inputs"]["tao_train"]["path"])
+    source_path = Path(plan["inputs"]["ctao_base"]["path"])
+    require(sha(truth_path) == plan["inputs"]["tao_train"]["sha256"], "Official TAO train changed")
+    require(sha(source_path) == plan["inputs"]["ctao_base"]["sha256"], "C-TAO source changed")
+    truth = load(truth_path)
+    source = load(source_path)
+    targets = load(stage / "manual_anchor_targets.json")
+    return validate_target_provenance(plan, metadata, records, truth, targets, source)
 
 
 def build_support(stage, run, out):
     preparation, plan, manifest, metadata, collection, inventory = verified_inputs(stage, run)
+    input_paths = [stage / "preparation_manifest.json", stage / "manual_anchor_targets.json", run / "run_manifest.json",
+                   run / "collection_receipt.json", run / "dump_inventory.json", run / "dump_verification.json",
+                   run / "independent_collection_audit.json", Path(preparation["plan"]),
+                   Path(plan["inputs"]["tao_train"]["path"]), Path(plan["inputs"]["ctao_base"]["path"]),
+                   Path(__file__).resolve()]
+    input_snapshot = {str(p): sha(p) for p in input_paths}
     require(not out.exists(), "Refuse to overwrite existing support directory")
     out.mkdir(parents=True)
     records = {v["video_id"]: v for v in plan["full_metadata_split"]["videos"]}
@@ -345,7 +463,7 @@ def build_support(stage, run, out):
     index_manifest_sha = sha(out / "gt_free_index_manifest.json")
     print(json.dumps(dict(status="SEALED_GT_FREE_INDEX", observations=gt_free["observations"], tracks=gt_free["tracks"], sha256=index_manifest_sha)), flush=True)
     # Supervision is opened only below this seal, after BOTH collection audits.
-    by_image, manual, fit_categories = full_gt_and_manual(plan, stage, metadata, records)
+    by_image, manual, fit_categories, target_provenance = full_gt_and_manual(plan, stage, metadata, records)
     counts = {part: Counter() for part in sorted(OPEN_SPLITS)}
     eligible_rows = []
     matched_identities = defaultdict(set)
@@ -436,7 +554,7 @@ def build_support(stage, run, out):
                 agree = a["pred_category_id"] == b["pred_category_id"]
                 scopes = ["all_same_identity_subpairs"]
                 if observed_single:
-                    scopes.append("observed_single_matched_identity_tracks")
+                    scopes.append("diagnostic_oracle_observed_single_matched_identity_tracks")
                 for scope in scopes:
                     for suffix in ("all", "agreement/"+str(agree).lower(),
                                    "sample_step_lag/"+fixed_lag_bin(step_lag, "sample_step"),
@@ -446,7 +564,6 @@ def build_support(stage, run, out):
                 line(pair_file, dict(split=split, video_id=vid, local_track_id=tid, gt_track_id=gt_id,
                                      observation_i=a["observation_id"], observation_j=b["observation_id"],
                                      sample_step_lag=step_lag, original_frame_lag=raw_lag,
-                                     observed_single_matched_identity=observed_single,
                                      agreement=agree, both_wrong=bool(a["error"] and b["error"]),
                                      same_wrong_class=bool(agree and a["error"] and b["error"])))
                 pair_count += 1
@@ -457,17 +574,18 @@ def build_support(stage, run, out):
     for part in sorted(OPEN_SPLITS):
         predtracks = {track_key(r["video_id"], r["local_track_id"]) for r in eligible_rows if r["split"] == part}
         by_split[part] = dict(matching_counts=dict(counts[part]), observations=observation_stats[part].result(),
-                              observed_multi_identity_predicted_tracks=sum(len(matched_identities[k]) > 1 for k in predtracks),
-                              observed_single_identity_predicted_tracks=sum(len(matched_identities[k]) == 1 for k in predtracks),
+                              diagnostic_oracle_identity=dict(
+                                  observed_multi_identity_predicted_tracks=sum(len(matched_identities[k]) > 1 for k in predtracks),
+                                  observed_single_identity_predicted_tracks=sum(len(matched_identities[k]) == 1 for k in predtracks),
+                                  labels_used="All unambiguous official matched identities, including heldout/nonmanual targets",
+                                  training_or_tuning_use_permitted=False),
                               pair_scopes={name: stats.result() for name, stats in sorted(pair_stats[part].items())},
                               observation_strata={name: stats.result() for name, stats in sorted(strata[part].items())})
     output_files = {p.name: sha(p) for p in sorted(out.iterdir()) if p.is_file()}
-    input_paths = [stage / "preparation_manifest.json", stage / "manual_anchor_targets.json", run / "run_manifest.json",
-                   run / "collection_receipt.json", run / "dump_inventory.json", run / "dump_verification.json",
-                   run / "independent_collection_audit.json", Path(preparation["plan"]), Path(__file__).resolve()]
     receipt = dict(status="PASS_FIT_TUNE_SIGNAL_SUPPORT_AUDIT", completed_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
-                   stage=str(stage), run=str(run), out=str(out), inputs={str(p): sha(p) for p in input_paths},
+                   stage=str(stage), run=str(run), out=str(out), inputs=input_snapshot,
                    gt_free_index_manifest_sha256=index_manifest_sha, output_files=output_files,
+                   target_provenance=target_provenance,
                    supervised_observations=len(eligible_rows), supervised_pairs=pair_count,
                    fit_tune=by_split,
                    test=dict(status="CLOSED_NO_GT_MATCHING_NO_ERROR_OUTCOMES", **gt_free["split_structure"].get("test", {})),
@@ -478,9 +596,12 @@ def build_support(stage, run, out):
                                correctness="Primary emitted det_labels+1 vs GT; posterior argmax correctness separately recorded",
                                soft_risk="1-p_fused[GT] after foreground-only row normalization",
                                pairs="Same predicted (video,local_id) AND same official GT identity; distinct images; both endpoints independently eligible",
+                               pair_weighting="Exhaustive pairs are descriptive diagnostics, not independent samples or training weights; report source/GT-trajectory concentration",
+                               oracle_identity_diagnostic="Secondary oracle scope uses heldout/nonmanual identity state; never a training/selection mask, weight or feature; omitted from supervised pair rows",
                                readout="All emitted observations remain in sealed GT-free index; supervised subsets never replace readout indices",
                                lag="Ordinal sampled steps and preserved original frame indices separately; no elapsed seconds inferred"),
                    unmatched_is_unknown=True, class_holdout_outcomes_computed=False, test_outcomes_computed=False,
+                   oracle_identity_diagnostics_used_for_training=False,
                    training_started=False, model_imported=False, gpu_used=False, training_readiness_established=False,
                    limitations=["Counts/pairs are descriptive support, not independent sample counts, covariance or efficacy evidence",
                                 "Observed single matched identity does not establish whole-track purity",
@@ -495,15 +616,84 @@ def build_support(stage, run, out):
                    gt_free_index_manifest_sha256=index_manifest_sha, supervised_observations=len(eligible_rows),
                    supervised_pairs=pair_count,
                    fit_tune={part: {"matching_counts": value["matching_counts"], "observations": value["observations"],
-                                    "observed_multi_identity_predicted_tracks": value["observed_multi_identity_predicted_tracks"],
+                                    "diagnostic_oracle_identity": value["diagnostic_oracle_identity"],
                                     "pair_scopes": {name: stats for name, stats in value["pair_scopes"].items() if name.endswith("/all")}}
                              for part, value in by_split.items()}, test=receipt["test"],
                    training_started=False, training_readiness_established=False,
+                   oracle_identity_diagnostics_used_for_training=False,
                    raw_indices_and_supervision_rows="Local-only artifacts; do not Git-sync raw matched rows or indices",
                    interpretations=receipt["limitations"])
     write(out / "support_summary.json", summary)
     print(json.dumps(summary, indent=2), flush=True)
     return receipt
+
+
+def provenance_self_test():
+    """Exercise source identity failures and test-label noninterference."""
+    fit_image = dict(id=501, video_id=7, frame_index=10, frame_id=0, source_frame_id=11,
+                     width=20, height=20, file_name="train/demo/frame0011.jpg")
+    closed_image = dict(id=502, video_id=8, frame_index=20, frame_id=0, source_frame_id=21,
+                        width=20, height=20, file_name="train/closed/frame0021.jpg")
+    metadata = dict(images=[fit_image, closed_image])
+    records = {7: dict(split="fit"), 8: dict(split="test")}
+    categories = [dict(id=3, synset="demo.n.01", frequency="f")]
+    original_anchor = dict(id=700, image_id=501, video_id=7, track_id=9, category_id=3, bbox=[1., 2., 5., 6.])
+    source = dict(categories=copy.deepcopy(categories),
+                  images=[dict(fit_image, frame_id=11, is_ori=True), dict(closed_image, frame_id=21, is_ori=True)],
+                  annotations=[original_anchor, dict(id=701)])
+    targets = dict(status="TARGETS_ONLY_NOT_MODEL_INPUT", categories=copy.deepcopy(categories),
+                   readout_fit_category_ids=[3],
+                   annotations=[dict(original_anchor, readout_split="fit", readout_class_holdout=False,
+                                     eligible_for_parameter_fit=True, supervision_source="exact original-TAO manual anchor intersection"),
+                                dict(id=701, image_id=502, readout_split="test")])
+    plan = dict(vocabulary=dict(readout_fit_category_ids=[3]), minimal_pilot=dict(
+        images=[dict(image_id=x["id"], video_id=x["video_id"], frame_index=x["frame_index"], file_name=x["file_name"])
+                for x in metadata["images"]], manual_anchor_ctao_annotation_ids=[700, 701]))
+    truth = dict(categories=[dict(id=999, synset="demo.n.01"), dict(id=888, synset="unmapped.n.01")],
+                 images=[dict(fit_image, id=101), dict(closed_image, id=102)],
+                 annotations=[dict(id=1, image_id=101, video_id=7, track_id=9, category_id=999, bbox=[1, 2, 5, 6]),
+                              dict(id=2, image_id=101, video_id=7, track_id=10, category_id=888, bbox=[11, 2, 5, 6]),
+                              # Test outcome labels deliberately cannot be interpreted as GT.
+                              dict(id=3, image_id=102, category_id="CLOSED_INVALID_SENTINEL")])
+    arguments = dict(plan=plan, metadata=metadata, records=records, truth=truth, targets=targets, source=source)
+    result = validate_target_provenance(**arguments)
+    require(set(result[0]) == {501} and len(result[0][501]) == 2, "Full official GT or test closure failed")
+    require(result[0][501][0]["category_id"] == 3 and result[0][501][1]["category_id"] is None,
+            "Unique synset bridge or unmapped-GT retention failed")
+    require(set(result[1]) == {(501, 9)}, "Test manual target was interpreted")
+    aliases = copy.deepcopy(arguments)
+    aliases["truth"]["images"][0]["file_name"] = "/data/tao/frames/train/demo/frame0011.jpg"
+    validate_target_provenance(**aliases)
+    rejected = {}
+
+    def reject(name, mutate):
+        altered = copy.deepcopy(arguments)
+        mutate(altered)
+        try:
+            validate_target_provenance(**altered)
+        except (AssertionError, KeyError, ValueError):
+            rejected[name] = "PASS_REJECTED"
+        else:
+            raise AssertionError("Provenance accepted corrupt case: "+name)
+
+    reject("duplicate_official_coordinate", lambda a: a["truth"]["images"].append(dict(a["truth"]["images"][0], id=999)))
+    reject("duplicate_official_image_id", lambda a: a["truth"]["images"].append(dict(a["truth"]["images"][0], frame_index=999)))
+    reject("official_filename_mismatch", lambda a: a["truth"]["images"][0].update(file_name="train/demo/WRONG.jpg"))
+    reject("official_split_prefix_mismatch", lambda a: a["truth"]["images"][0].update(file_name="val/demo/frame0011.jpg"))
+    reject("ctao_is_ori_false", lambda a: a["source"]["images"][0].update(is_ori=False))
+    reject("ctao_source_frame_id_mismatch", lambda a: a["source"]["images"][0].update(frame_id=77))
+    reject("ctao_filename_mismatch", lambda a: a["source"]["images"][0].update(file_name="train/demo/WRONG.jpg"))
+    reject("manual_source_id_missing", lambda a: a["source"]["annotations"][0].update(id=999))
+    reject("manual_source_bbox_changed", lambda a: a["source"]["annotations"][0].update(bbox=[2., 2., 5., 6.]))
+    reject("manual_source_track_id_changed", lambda a: a["source"]["annotations"][0].update(track_id=999))
+    reject("plan_manual_ids_changed", lambda a: a["plan"]["minimal_pilot"].update(manual_anchor_ctao_annotation_ids=[700]))
+    reject("official_bbox_changed", lambda a: a["truth"]["annotations"][0].update(bbox=[2, 2, 5, 6]))
+    reject("official_category_bridge_changed", lambda a: a["truth"]["categories"][0].update(synset="unmapped.n.01"))
+    reject("duplicate_official_identity_at_frame", lambda a: a["truth"]["annotations"].append(dict(a["truth"]["annotations"][0], id=999)))
+    return dict(status="PASS_SYNTHETIC_MANUAL_SOURCE_CHAIN", planned_image_id_schema_supported=True,
+                old_999_to_new_3_by_synset_not_numeric_id=True, unmapped_official_gt_retained=True,
+                canonical_prefix_alias_supported=True, invalid_test_labels_not_evaluated=True,
+                rejected_mutations=rejected)
 
 
 def self_test():
@@ -527,11 +717,28 @@ def self_test():
     else:
         raise AssertionError("Unassigned ID formed a track")
     require("test" not in OPEN_SPLITS, "Test outcomes opened")
+    support = PairStats()
+    shared = dict(split="fit", source_group="A", video_id=1, local_track_id=7, gt_track_id=9,
+                  gt_category_id=3, pred_category_id=8, error=1, soft_risk=.8, match_iou=.9)
+    rows_a = [dict(shared, image_id=i) for i in (1, 2, 3)]
+    for a, b in itertools.combinations(rows_a, 2):
+        support.add(a, b)
+    correct = dict(shared, source_group="B", video_id=2, pred_category_id=3, error=0, soft_risk=.1)
+    support.add(dict(correct, image_id=4), dict(correct, image_id=5))
+    measured = support.result()
+    require(measured["pairs"] == 4 and measured["both_wrong"] == measured["same_wrong_class"] == 3,
+            "Pair concentration fixture event counts failed")
+    require(measured["concentration"]["max_source_pairs_share"] == .75 and
+            measured["concentration"]["max_gt_trajectory_pairs_share"] == .75 and
+            measured["concentration"]["max_source_both_wrong_share"] == 1.,
+            "Source/trajectory pair concentration failed")
     return dict(status="PASS_CPU_SUPPORT_MATCHING_CONSISTENCY", full_gt_before_eligibility=True,
                 category_independent_geometry=True, multi_gt_ambiguity_excluded=True,
                 inclusive_iou_half=True, unmatched_unknown=True,
                 repeated_local_id_across_videos_separate=True, negative_id_not_aggregated=True,
                 test_outcome_split_closed=True, no_dataset_or_model_loaded=True,
+                pair_source_and_gt_trajectory_concentration=True,
+                manual_source_provenance=provenance_self_test(),
                 script_sha256=sha(__file__))
 
 

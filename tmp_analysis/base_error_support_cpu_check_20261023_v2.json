@@ -1,0 +1,38 @@
+{
+  "status": "PASS_CPU_SUPPORT_MATCHING_CONSISTENCY",
+  "full_gt_before_eligibility": true,
+  "category_independent_geometry": true,
+  "multi_gt_ambiguity_excluded": true,
+  "inclusive_iou_half": true,
+  "unmatched_unknown": true,
+  "repeated_local_id_across_videos_separate": true,
+  "negative_id_not_aggregated": true,
+  "test_outcome_split_closed": true,
+  "no_dataset_or_model_loaded": true,
+  "pair_source_and_gt_trajectory_concentration": true,
+  "manual_source_provenance": {
+    "status": "PASS_SYNTHETIC_MANUAL_SOURCE_CHAIN",
+    "planned_image_id_schema_supported": true,
+    "old_999_to_new_3_by_synset_not_numeric_id": true,
+    "unmapped_official_gt_retained": true,
+    "canonical_prefix_alias_supported": true,
+    "invalid_test_labels_not_evaluated": true,
+    "rejected_mutations": {
+      "duplicate_official_coordinate": "PASS_REJECTED",
+      "duplicate_official_image_id": "PASS_REJECTED",
+      "official_filename_mismatch": "PASS_REJECTED",
+      "official_split_prefix_mismatch": "PASS_REJECTED",
+      "ctao_is_ori_false": "PASS_REJECTED",
+      "ctao_source_frame_id_mismatch": "PASS_REJECTED",
+      "ctao_filename_mismatch": "PASS_REJECTED",
+      "manual_source_id_missing": "PASS_REJECTED",
+      "manual_source_bbox_changed": "PASS_REJECTED",
+      "manual_source_track_id_changed": "PASS_REJECTED",
+      "plan_manual_ids_changed": "PASS_REJECTED",
+      "official_bbox_changed": "PASS_REJECTED",
+      "official_category_bridge_changed": "PASS_REJECTED",
+      "duplicate_official_identity_at_frame": "PASS_REJECTED"
+    }
+  },
+  "script_sha256": "64e702efa4e0956b19e9f9a0991ecfff8022c527e3e8bfb3a50710bbf4090186"
+}

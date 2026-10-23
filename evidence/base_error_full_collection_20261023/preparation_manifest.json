@@ -1,0 +1,78 @@
+{
+  "status": "PREPARED_NO_INFERENCE_RUN",
+  "collection_scope": "FULL_FIT_TUNE_EXACT_MANUAL_ANCHOR_FRAMES",
+  "plan": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_learning_plan_20261023.json",
+  "plan_sha256": "f37f1ecc52734953ea5269407ab0aa8013e650e97bed4dde3cdd399a11e13ba5",
+  "full_collection_plan": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json",
+  "full_collection_plan_sha256": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+  "source": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base/saved_models/ctao_dataset/ctao_base.json",
+  "source_sha256": "4269b1a5f026350cf45fbbf61689894f7d45d9bd2730331e73ab6f841d9b3adc",
+  "official_source": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/annotations/train.json",
+  "official_source_sha256": "7eb551fdeeeebc76b876ae255f91dc5662c7270a125955c5f1be2d9bd30921d0",
+  "script": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/prepare_base_error_full_collection.py",
+  "script_sha256": "6effccf38b142428fca9dbfe826fe580af1f2136fe34ed3f5d5aa079fb034601",
+  "allocation_videos": 450,
+  "images": 15283,
+  "videos": 448,
+  "source_groups": 383,
+  "manual_targets": 46908,
+  "fit_eligible_manual_targets": 39903,
+  "tune_eligible_manual_targets": 4557,
+  "smoke_videos": [
+    114,
+    1219
+  ],
+  "timeline": {
+    "collection_protocol": "sparse manual-anchor timeline, GT-free predictions on every selected fit/tune image",
+    "frame_id": "sampled-step index starting at 0 separately for each video",
+    "frame_index": "preserved original frame index; never interpret sample steps as seconds",
+    "vocabulary": "canonical LVIS v1 1203 foreground + background; full-vocabulary rare-column fusion",
+    "gt_annotations_passed_to_model": false,
+    "inference_image_field_allowlist": [
+      "id",
+      "video_id",
+      "file_name",
+      "width",
+      "height",
+      "frame_id",
+      "frame_index",
+      "sample_step",
+      "source_frame_id"
+    ],
+    "inference_video_field_allowlist": [
+      "id",
+      "name",
+      "width",
+      "height",
+      "fps"
+    ],
+    "inference_category_field_allowlist": [
+      "id",
+      "name",
+      "synonyms",
+      "synset",
+      "def",
+      "frequency"
+    ],
+    "frequency_prior": "fixed public LVIS-v1 frequency, not collection annotation counts"
+  },
+  "files": {
+    "README.md": "8555aaa7b39aa92ec5ea239d62d62b890a54852846afa3a41de8e780e2565334",
+    "full_collection_plan.json": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+    "full_inference.json": "375fa82b7ec603cb8781a63abf47c3c64f03f1f4c8b0e242cb7403fa0786abf2",
+    "manual_anchor_targets.json": "129c3a7cd3e4f5cb1ea5d0d3c62f817931768805bebce7e98477f765f0b27a7a",
+    "preparation_self_check.json": "bc3c1a3c9ca7f5bac874f658d357d188607bf2e4984085fe7be7386b0e11529a",
+    "smoke_inference.json": "c6416b4cc3218174665d6a418907d1ad015b9359e3ca69e7127f2849f7ea9971"
+  },
+  "independent_full_stage_audit": "PENDING_SEPARATE_REVIEWER",
+  "inference_started": false,
+  "training_started": false,
+  "collection_command_argv": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/collect_base_error_pilot.py",
+    "--annotation",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_inference.json",
+    "--out",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1"
+  ]
+}

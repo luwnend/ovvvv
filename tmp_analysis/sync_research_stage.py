@@ -40,12 +40,22 @@ BASE_SCRIPTS = ["prepare_base_error_collection.py", "collect_base_error_pilot.py
                 "build_base_error_support.py", "base_error_collection_deviations_20261023.json",
                 "finish_base_error_collection.py", "base_support_review_handoff_20261023.json"]
 BASE_SCRIPTS += ["base_error_support_cpu_check_20261023.json", "base_error_support_handoff_20261023.md"]
+BASE_FINAL_SCRIPTS = ["base_error_support_cpu_check_20261023_v2.json",
+                      "base_support_independent_metadata_provenance_20261023.json", "base_support_contract_audit_20261023.json",
+                      "base_support_independent_review_20261023.md", "base_pilot_support_interpretation_20261023.md",
+                      "diagnose_base_mean_quality.py", "base_mean_quality_predeclared_spec_20261023_v2.json",
+                      "base_mean_quality_synthetic_receipt_20261023_v2.json",
+                      "prepare_base_error_full_collection.py", "verify_base_error_full_collection.py",
+                      "run_full_collection_background.py", "base_error_pause_handoff_20261023.md"]
 BASE_JSON = ["preparation_manifest.json", "smoke_v2/collection_receipt.json",
              "smoke_v2/run_manifest.json", "smoke_v2/dump_verification.json", "smoke_v2/independent_collection_audit.json",
              "pilot_collect_v1/collection_receipt.json", "pilot_collect_v1/run_manifest.json",
              "pilot_collect_v1/protected_after.json", "pilot_collect_v1/dump_verification.json",
              "pilot_collect_v1/independent_collection_audit.json", "execution_receipt.json",
              "support_v1/support_receipt.json", "support_v1/support_summary.json"]
+BASE_JSON += ["pilot_collect_v1/background_completion_audit.json", "support_v1/independent_support_audit.json",
+              "mean_quality_v1/diagnostic_summary.json", "mean_quality_v1/independent_mean_quality_audit.json",
+              "fit_tune_execution_receipt.json"]
 
 
 def sha256(data):
@@ -83,6 +93,19 @@ def main():
                     for name in ("SOURCE_COPY_MANIFEST.json", "SOURCE_PATCH_MANIFEST.json", "CPU_SCHEMA_SELF_TEST_FINAL.json",
                                  "ovtrack_models_mot_ovtrack.py.patch", "ovtrack_models_roi_heads_ovtrack_roi_head.py.patch")]
         mapping.append((copy / "ovtrack/base_error_dump.py", Path("evidence/base_error_collection_20261023/schema/base_error_dump.py")))
+        if args.stage == "base_error_20261023":
+            mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name) for name in BASE_FINAL_SCRIPTS]
+            full = ROOT / "results/base_error_full_collection_20261023"
+            full_names = ["preparation_manifest.json", "independent_metadata_audit.json"]
+            if (full / "background_launch_receipt.json").is_file():
+                full_names.append("background_launch_receipt.json")
+            else:
+                pause = json.loads((full / "pause_handoff.json").read_text())
+                assert pause["status"] == "USER_PAUSED_BEFORE_FULL_COLLECTION_LAUNCH"
+                assert pause["full_collection_launched"] is False
+                full_names.append("pause_handoff.json")
+            mapping += [(full / name, Path("evidence/base_error_full_collection_20261023") / name)
+                        for name in full_names]
     # Read and validate the entire allowlist before writing any destination.
     payloads = []
     for source, rel in mapping:

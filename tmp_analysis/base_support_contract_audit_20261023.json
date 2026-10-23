@@ -1,0 +1,54 @@
+{
+  "status": "PASS_INDEPENDENT_SUPPORT_CONTRACT_AUDIT",
+  "script": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_base_error_support.py",
+  "script_sha256": "64e702efa4e0956b19e9f9a0991ecfff8022c527e3e8bfb3a50710bbf4090186",
+  "checks": {
+    "full_gt_includes_heldout_and_unmapped_before_fit_gate": "PASS",
+    "numeric_category_collision_resolved_by_synset": "PASS",
+    "planned_image_id_schema_accepted": "PASS",
+    "duplicate_official_frame_coordinate": "REJECTED_AS_REQUIRED",
+    "wrong_official_filename": "REJECTED_AS_REQUIRED",
+    "nonoriginal_ctao_frame": "REJECTED_AS_REQUIRED",
+    "changed_manual_annotation_id": "REJECTED_AS_REQUIRED",
+    "changed_ctao_source_box": "REJECTED_AS_REQUIRED",
+    "changed_source_frame_id": "REJECTED_AS_REQUIRED",
+    "test_annotation_values_not_joined_or_scored": "PASS",
+    "geometry_max_cardinality_before_iou_sum": "PASS",
+    "matching_accepts_no_class_or_posterior_arguments": "PASS",
+    "unassigned_id_rejected_as_track": "PASS"
+  },
+  "max_cardinality_counterexample_iou": [
+    [
+      1.0,
+      0.5
+    ],
+    [
+      0.5,
+      0.2
+    ]
+  ],
+  "real_metadata_provenance": {
+    "status": "PASS_FIT_TUNE_MANUAL_SOURCE_CHAIN",
+    "open_frames": 1025,
+    "checked_manual_anchors": 2969,
+    "official_coordinates_unique": true,
+    "canonical_filenames_and_dimensions_equal": true,
+    "ctao_is_ori_true": true,
+    "source_frame_ids_preserved": true,
+    "sealed_manual_annotation_ids_equal": true,
+    "old_to_new_unique_synset_bridge": true,
+    "manual_source_and_official_boxes_equal_atol": 1e-06,
+    "test_gt_frame_maps_built": false,
+    "test_outcomes_evaluated": false,
+    "source_files_contain_test_partition_labels": true,
+    "interpretation": "Full source JSONs were parsed; test prediction/GT joins and outcomes remain closed."
+  },
+  "prediction_dumps_opened": false,
+  "test_prediction_gt_joins": false,
+  "model_imported": false,
+  "gpu_used": false,
+  "limitations": [
+    "This audits executable contracts and metadata, not a completed real support-cache build",
+    "Oracle identity diagnostic scopes are forbidden as training/tuning masks, weights or features"
+  ]
+}

@@ -1,5 +1,19 @@
 # Support-audit handoff: paused before real execution
 
+## Resumed implementation update
+
+The source-chain implementation is now complete; current status is **CPU_CHECKS_PASSED_PENDING_FINAL_INDEPENDENT_REVIEW**. The historical pause-state section below is retained for provenance and no longer lists current implementation blockers.
+
+Current script SHA256: `64e702efa4e0956b19e9f9a0991ecfff8022c527e3e8bfb3a50710bbf4090186`. Current pure-CPU receipt: `tmp_analysis/base_error_support_cpu_check_20261023_v2.json` (SHA256 `91c6a768430dddf23451527b6d768d591a6c41287c89457424308fc51de1426b`). Tests cover14 corrupt provenance mutations, exact old-to-new synset mapping, unmapped GT retention, deliberately unusable test labels not joined, video-local IDs, geometry ambiguity and source/GT-trajectory pair concentration.
+
+New checks establish official and C-TAO image-ID/coordinate uniqueness, canonical filename and dimensions, source `is_ori=True`, preserved original `frame_id`, exact source annotation ID and key fields, sealed-plan target IDs, and official bbox/category bridge. The original TAO and C-TAO files enter the before/after input-hash snapshot directly. Whole-source JSONs contain labels from the metadata test partition; test prediction/GT joins and outcomes remain closed.
+
+The all-GT matched-identity purity scope is now **diagnostic oracle only**, because it can use heldout/nonmanual identity labels. Its flag is absent from main `supervised_pairs.jsonl`; it cannot choose training masks, weights, features or hyperparameters. Main pair eligibility uses only the two independently eligible endpoints. Exhaustive pair counts are diagnostics, not independent samples or training weights; per-source event counts and max source/GT-trajectory shares are reported.
+
+No real support run was started by this subagent. Root will execute into a fresh support directory only after independent review GO. Mean fitting and training remain absent.
+
+## Historical pause snapshot
+
 Status: **IMPLEMENTED_CPU_SELF_TESTED_PENDING_INDEPENDENT_REVIEW_AND_SEALED_CACHE**.
 
 `tmp_analysis/build_base_error_support.py` is on disk. Pinned interpreter:

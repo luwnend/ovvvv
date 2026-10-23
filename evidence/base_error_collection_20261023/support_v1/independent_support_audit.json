@@ -1,0 +1,174 @@
+{
+  "status": "PASS_INDEPENDENT_REAL_SUPPORT_OUTPUT_AUDIT",
+  "support": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/support_v1",
+  "support_receipt_sha256": "f0a0624f597086183a6638ddb1bd8a090fcd2c2acb1a25777114eb10a04df1f6",
+  "support_builder_sha256": "64e702efa4e0956b19e9f9a0991ecfff8022c527e3e8bfb3a50710bbf4090186",
+  "gt_free_index_manifest_sha256": "7624294223367eceae164c1b1e1bed3b39c9d68b26a117d0c26b9a225e7772db",
+  "all_emitted_observations": 54924,
+  "all_emitted_tracks": 12876,
+  "all_frame_dump_hashes_and_index_rows_verified": 1299,
+  "input_hashes_verified": 11,
+  "output_hashes_verified": 6,
+  "supervised_observations_verified": 1382,
+  "primary_pairs_verified": 8457,
+  "exact_manual_source_and_posterior_mapping_verified": true,
+  "primary_pairs_equal_all_eligible_endpoint_combinations": true,
+  "oracle_fields_absent_from_primary_pairs": true,
+  "test_prediction_gt_joins_or_outcomes": false,
+  "fit_tune": {
+    "fit": {
+      "observations": 1067,
+      "pairs": 6876,
+      "target_categories": 15,
+      "errors": 615,
+      "source_groups": 14
+    },
+    "tune": {
+      "observations": 315,
+      "pairs": 1581,
+      "target_categories": 12,
+      "errors": 228,
+      "source_groups": 7
+    }
+  },
+  "test_structure_only": {
+    "frames": 274,
+    "retained_rows": 11950,
+    "unassigned_rows": 0,
+    "emitted_rows": 11950,
+    "zero_emitted_frames": 0,
+    "duplicate_local_id_frame_extra_rows": 0
+  },
+  "independently_recomputed_full_gt_matching_frames": 15,
+  "sampled_matching_results": [
+    {
+      "image_id": 6568,
+      "split": "fit",
+      "predictions": 51,
+      "all_official_gt": 4,
+      "matched": 3,
+      "supervised": 0
+    },
+    {
+      "image_id": 40940,
+      "split": "tune",
+      "predictions": 52,
+      "all_official_gt": 4,
+      "matched": 2,
+      "supervised": 1
+    },
+    {
+      "image_id": 41360,
+      "split": "tune",
+      "predictions": 40,
+      "all_official_gt": 4,
+      "matched": 1,
+      "supervised": 1
+    },
+    {
+      "image_id": 41600,
+      "split": "tune",
+      "predictions": 27,
+      "all_official_gt": 2,
+      "matched": 1,
+      "supervised": 0
+    },
+    {
+      "image_id": 84300,
+      "split": "tune",
+      "predictions": 61,
+      "all_official_gt": 3,
+      "matched": 2,
+      "supervised": 2
+    },
+    {
+      "image_id": 223305,
+      "split": "tune",
+      "predictions": 23,
+      "all_official_gt": 2,
+      "matched": 1,
+      "supervised": 0
+    },
+    {
+      "image_id": 223555,
+      "split": "tune",
+      "predictions": 17,
+      "all_official_gt": 2,
+      "matched": 1,
+      "supervised": 1
+    },
+    {
+      "image_id": 245014,
+      "split": "fit",
+      "predictions": 24,
+      "all_official_gt": 3,
+      "matched": 1,
+      "supervised": 0
+    },
+    {
+      "image_id": 246165,
+      "split": "fit",
+      "predictions": 38,
+      "all_official_gt": 4,
+      "matched": 2,
+      "supervised": 2
+    },
+    {
+      "image_id": 278065,
+      "split": "fit",
+      "predictions": 39,
+      "all_official_gt": 1,
+      "matched": 0,
+      "supervised": 0
+    },
+    {
+      "image_id": 330251,
+      "split": "fit",
+      "predictions": 43,
+      "all_official_gt": 2,
+      "matched": 2,
+      "supervised": 2
+    },
+    {
+      "image_id": 330301,
+      "split": "fit",
+      "predictions": 35,
+      "all_official_gt": 2,
+      "matched": 2,
+      "supervised": 1
+    },
+    {
+      "image_id": 393814,
+      "split": "fit",
+      "predictions": 25,
+      "all_official_gt": 3,
+      "matched": 1,
+      "supervised": 1
+    },
+    {
+      "image_id": 401334,
+      "split": "tune",
+      "predictions": 20,
+      "all_official_gt": 2,
+      "matched": 2,
+      "supervised": 2
+    },
+    {
+      "image_id": 401454,
+      "split": "tune",
+      "predictions": 25,
+      "all_official_gt": 2,
+      "matched": 1,
+      "supervised": 1
+    }
+  ],
+  "allowed_next_step": "Fixed B0/B1 CPU quality-mean diagnostics on the sealed all-emitted index with fit/tune-only scoring; no tracker training or test opening",
+  "training_readiness_established": false,
+  "method_efficacy_established": false,
+  "limitations": [
+    "Global Hungarian matching independently recomputed on a fixed stratified sample, not all1025 open frames",
+    "Whole-track identity oracle scopes remain diagnostics only",
+    "No detector-unseen class/video, centered covariance or efficacy claim"
+  ],
+  "independent_verifier_sha256": "3b2c7e193976ef31f3c492b9fbc7361ad0dba20805a7bfdbd8d6ff63998298ac"
+}

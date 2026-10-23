@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE_GT_FREE_COLLECTION_PENDING_INDEPENDENT_AUDIT",
+  "completed_utc": "2026-10-23T05:40:20.100298+00:00",
+  "elapsed_seconds": 394.5950180031359,
+  "completed_images": 1299,
+  "completed_videos": 41,
+  "retained_observations": 54924,
+  "emitted_observations": 54924,
+  "run_manifest_sha256": "551079adc784d3adb5248dd52d5e4162c8bc7cf85f6115aba0d2b3a60a9d88b3",
+  "events_sha256": "d1ce333cb1a0997bd21e6c0e774725e843823e0ae771b0eceac25c597caf4ac3",
+  "dump_inventory_sha256": "a21aa82cfd6a029cf25b7c385656aa10e794d874a5d67a51305c0d91ed2b7fda",
+  "protected_sources_unchanged": true,
+  "source_code_unchanged": true,
+  "research_goal_complete": false,
+  "training_started": false
+}

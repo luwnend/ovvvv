@@ -1,0 +1,528 @@
+{
+  "status": "PASS_FIT_TUNE_SIGNAL_SUPPORT_AUDIT",
+  "stage": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3",
+  "run": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/pilot_collect_v1",
+  "support_receipt_sha256": "f0a0624f597086183a6638ddb1bd8a090fcd2c2acb1a25777114eb10a04df1f6",
+  "gt_free_index_manifest_sha256": "7624294223367eceae164c1b1e1bed3b39c9d68b26a117d0c26b9a225e7772db",
+  "supervised_observations": 1382,
+  "supervised_pairs": 8457,
+  "fit_tune": {
+    "fit": {
+      "matching_counts": {
+        "frames": 767,
+        "emitted_predictions": 32774,
+        "full_official_gt": 2444,
+        "official_gt_unmapped_category": 0,
+        "geometry_matched": 1290,
+        "geometry_unmatched_unknown": 31484,
+        "ambiguous_multi_gt_predictions": 30,
+        "official_gt_not_assigned": 1154,
+        "class_holdout_match_closed": 124,
+        "eligible_fit_category_supervised": 1067,
+        "eligible_manual_anchors": 2138,
+        "eligible_manual_anchors_without_supervision": 1071,
+        "nonmanual_intersection_match_excluded": 69,
+        "ambiguous_matched_excluded": 30
+      },
+      "observations": {
+        "observations": 1067,
+        "correct": 452,
+        "errors": 615,
+        "error_rate": 0.5763823805060918,
+        "posterior_argmax_correct": 452,
+        "emitted_label_argmax_disagreements": 0,
+        "soft_risk": {
+          "mean": 0.6784463483748405,
+          "min": 0.0031039726713222304,
+          "max": 0.999998680166076,
+          "q10": 0.15694428810984917,
+          "median": 0.8981551979497845,
+          "q90": 0.9994728593569246
+        },
+        "source_groups": 14,
+        "videos": 24,
+        "gt_trajectories": 113,
+        "predicted_tracks": 204,
+        "target_categories": 15,
+        "target_category_ids": [
+          110,
+          162,
+          173,
+          207,
+          520,
+          703,
+          724,
+          781,
+          793,
+          863,
+          982,
+          1000,
+          1088,
+          1110,
+          1123
+        ]
+      },
+      "diagnostic_oracle_identity": {
+        "observed_multi_identity_predicted_tracks": 27,
+        "observed_single_identity_predicted_tracks": 177,
+        "labels_used": "All unambiguous official matched identities, including heldout/nonmanual targets",
+        "training_or_tuning_use_permitted": false
+      },
+      "pair_scopes": {
+        "all_same_identity_subpairs/all": {
+          "pairs": 6876,
+          "agreement_pairs": 3634,
+          "both_correct": 1681,
+          "exactly_one_wrong": 1117,
+          "both_wrong": 4078,
+          "same_wrong_class": 1953,
+          "different_wrong_class": 2125,
+          "both_wrong_rate": 0.5930773705642816,
+          "same_wrong_class_rate": 0.28403141361256545,
+          "mean_endpoint_soft_risk_product": 0.6471554203195176,
+          "source_groups": 14,
+          "videos": 24,
+          "gt_trajectories": 93,
+          "predicted_tracks": 128,
+          "target_categories": 13,
+          "target_category_ids": [
+            110,
+            162,
+            207,
+            703,
+            724,
+            781,
+            793,
+            863,
+            982,
+            1000,
+            1088,
+            1110,
+            1123
+          ],
+          "concentration": {
+            "max_source_pairs_share": 0.22062245491564864,
+            "max_gt_trajectory_pairs_share": 0.10776614310645724,
+            "max_source_both_wrong_share": 0.28371750858263856,
+            "max_gt_trajectory_both_wrong_share": 0.1817067189798921,
+            "max_source_same_wrong_class_share": 0.2677931387608807,
+            "max_gt_trajectory_same_wrong_class_share": 0.19406041986687148
+          },
+          "per_source_event_counts": {
+            "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2": {
+              "pairs": 337,
+              "both_wrong": 58,
+              "same_wrong_class": 35
+            },
+            "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
+              "pairs": 45,
+              "both_wrong": 6,
+              "same_wrong_class": 6
+            },
+            "BDD/b2dbb793-9f0b2bec": {
+              "pairs": 400,
+              "both_wrong": 37,
+              "same_wrong_class": 37
+            },
+            "BDD/b4536117-bc85ba28": {
+              "pairs": 32,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "Charades/TQO6O": {
+              "pairs": 287,
+              "both_wrong": 283,
+              "same_wrong_class": 211
+            },
+            "Charades/V7YEJ": {
+              "pairs": 17,
+              "both_wrong": 17,
+              "same_wrong_class": 6
+            },
+            "LaSOT/motorcycle-19": {
+              "pairs": 28,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/tiger-13": {
+              "pairs": 1507,
+              "both_wrong": 802,
+              "same_wrong_class": 430
+            },
+            "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b": {
+              "pairs": 137,
+              "both_wrong": 137,
+              "same_wrong_class": 82
+            },
+            "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a": {
+              "pairs": 3,
+              "both_wrong": 3,
+              "same_wrong_class": 0
+            },
+            "YouTube/313tbNN4J3o": {
+              "pairs": 888,
+              "both_wrong": 672,
+              "same_wrong_class": 270
+            },
+            "YouTube/D8Vhxbho1fY": {
+              "pairs": 1517,
+              "both_wrong": 1157,
+              "same_wrong_class": 326
+            },
+            "YouTube/XV_FF3WC7kA": {
+              "pairs": 1113,
+              "both_wrong": 818,
+              "same_wrong_class": 523
+            },
+            "YouTube/v0N4o4Px8jQ": {
+              "pairs": 565,
+              "both_wrong": 88,
+              "same_wrong_class": 27
+            }
+          }
+        },
+        "diagnostic_oracle_observed_single_matched_identity_tracks/all": {
+          "pairs": 5630,
+          "agreement_pairs": 2996,
+          "both_correct": 1519,
+          "exactly_one_wrong": 961,
+          "both_wrong": 3150,
+          "same_wrong_class": 1477,
+          "different_wrong_class": 1673,
+          "both_wrong_rate": 0.5595026642984015,
+          "same_wrong_class_rate": 0.26234458259325044,
+          "mean_endpoint_soft_risk_product": 0.6224718226729219,
+          "source_groups": 14,
+          "videos": 23,
+          "gt_trajectories": 79,
+          "predicted_tracks": 109,
+          "target_categories": 12,
+          "target_category_ids": [
+            110,
+            162,
+            207,
+            703,
+            781,
+            793,
+            863,
+            982,
+            1000,
+            1088,
+            1110,
+            1123
+          ],
+          "concentration": {
+            "max_source_pairs_share": 0.26767317939609236,
+            "max_gt_trajectory_pairs_share": 0.13161634103019537,
+            "max_source_both_wrong_share": 0.2546031746031746,
+            "max_gt_trajectory_both_wrong_share": 0.23523809523809525,
+            "max_source_same_wrong_class_share": 0.3378469871360867,
+            "max_gt_trajectory_same_wrong_class_share": 0.25660121868652674
+          },
+          "per_source_event_counts": {
+            "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2": {
+              "pairs": 232,
+              "both_wrong": 21,
+              "same_wrong_class": 13
+            },
+            "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
+              "pairs": 42,
+              "both_wrong": 6,
+              "same_wrong_class": 6
+            },
+            "BDD/b2dbb793-9f0b2bec": {
+              "pairs": 305,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b4536117-bc85ba28": {
+              "pairs": 24,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "Charades/TQO6O": {
+              "pairs": 20,
+              "both_wrong": 16,
+              "same_wrong_class": 0
+            },
+            "Charades/V7YEJ": {
+              "pairs": 17,
+              "both_wrong": 17,
+              "same_wrong_class": 6
+            },
+            "LaSOT/motorcycle-19": {
+              "pairs": 28,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/tiger-13": {
+              "pairs": 1507,
+              "both_wrong": 802,
+              "same_wrong_class": 430
+            },
+            "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b": {
+              "pairs": 137,
+              "both_wrong": 137,
+              "same_wrong_class": 82
+            },
+            "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a": {
+              "pairs": 3,
+              "both_wrong": 3,
+              "same_wrong_class": 0
+            },
+            "YouTube/313tbNN4J3o": {
+              "pairs": 822,
+              "both_wrong": 636,
+              "same_wrong_class": 234
+            },
+            "YouTube/D8Vhxbho1fY": {
+              "pairs": 986,
+              "both_wrong": 658,
+              "same_wrong_class": 180
+            },
+            "YouTube/XV_FF3WC7kA": {
+              "pairs": 942,
+              "both_wrong": 766,
+              "same_wrong_class": 499
+            },
+            "YouTube/v0N4o4Px8jQ": {
+              "pairs": 565,
+              "both_wrong": 88,
+              "same_wrong_class": 27
+            }
+          }
+        }
+      }
+    },
+    "tune": {
+      "matching_counts": {
+        "frames": 258,
+        "emitted_predictions": 10200,
+        "full_official_gt": 716,
+        "official_gt_unmapped_category": 0,
+        "geometry_matched": 379,
+        "geometry_unmatched_unknown": 9821,
+        "ambiguous_multi_gt_predictions": 10,
+        "official_gt_not_assigned": 337,
+        "nonmanual_intersection_match_excluded": 32,
+        "eligible_fit_category_supervised": 315,
+        "eligible_manual_anchors": 647,
+        "eligible_manual_anchors_without_supervision": 332,
+        "ambiguous_matched_excluded": 10,
+        "class_holdout_match_closed": 22
+      },
+      "observations": {
+        "observations": 315,
+        "correct": 87,
+        "errors": 228,
+        "error_rate": 0.7238095238095238,
+        "posterior_argmax_correct": 87,
+        "emitted_label_argmax_disagreements": 0,
+        "soft_risk": {
+          "mean": 0.8024283446000322,
+          "min": 0.028933099084765157,
+          "max": 0.999998846144507,
+          "q10": 0.30730572683912094,
+          "median": 0.9793138271206734,
+          "q90": 0.9998438984438386
+        },
+        "source_groups": 7,
+        "videos": 9,
+        "gt_trajectories": 41,
+        "predicted_tracks": 65,
+        "target_categories": 12,
+        "target_category_ids": [
+          1,
+          41,
+          127,
+          173,
+          207,
+          220,
+          344,
+          447,
+          793,
+          800,
+          804,
+          811
+        ]
+      },
+      "diagnostic_oracle_identity": {
+        "observed_multi_identity_predicted_tracks": 14,
+        "observed_single_identity_predicted_tracks": 51,
+        "labels_used": "All unambiguous official matched identities, including heldout/nonmanual targets",
+        "training_or_tuning_use_permitted": false
+      },
+      "pair_scopes": {
+        "all_same_identity_subpairs/all": {
+          "pairs": 1581,
+          "agreement_pairs": 547,
+          "both_correct": 213,
+          "exactly_one_wrong": 216,
+          "both_wrong": 1152,
+          "same_wrong_class": 334,
+          "different_wrong_class": 818,
+          "both_wrong_rate": 0.7286527514231499,
+          "same_wrong_class_rate": 0.211258697027198,
+          "mean_endpoint_soft_risk_product": 0.7655671581496326,
+          "source_groups": 7,
+          "videos": 9,
+          "gt_trajectories": 25,
+          "predicted_tracks": 35,
+          "target_categories": 12,
+          "target_category_ids": [
+            1,
+            41,
+            127,
+            173,
+            207,
+            220,
+            344,
+            447,
+            793,
+            800,
+            804,
+            811
+          ],
+          "concentration": {
+            "max_source_pairs_share": 0.3080328905755851,
+            "max_gt_trajectory_pairs_share": 0.20556609740670462,
+            "max_source_both_wrong_share": 0.3663194444444444,
+            "max_gt_trajectory_both_wrong_share": 0.2821180555555556,
+            "max_source_same_wrong_class_share": 0.3203592814371258,
+            "max_gt_trajectory_same_wrong_class_share": 0.26646706586826346
+          },
+          "per_source_event_counts": {
+            "ArgoVerse/2c07fcda-6671-3ac0-ac23-4a232e0e031e": {
+              "pairs": 5,
+              "both_wrong": 4,
+              "same_wrong_class": 4
+            },
+            "BDD/b1f85377-44885085": {
+              "pairs": 422,
+              "both_wrong": 123,
+              "same_wrong_class": 93
+            },
+            "Charades/1410C": {
+              "pairs": 346,
+              "both_wrong": 346,
+              "same_wrong_class": 107
+            },
+            "LaSOT/shark-18": {
+              "pairs": 487,
+              "both_wrong": 422,
+              "same_wrong_class": 58
+            },
+            "YFCC100M/v_ca3710d4f4cd8b4316974b641d37ba3": {
+              "pairs": 37,
+              "both_wrong": 10,
+              "same_wrong_class": 2
+            },
+            "YouTube/tt0t_a1EDCE": {
+              "pairs": 209,
+              "both_wrong": 194,
+              "same_wrong_class": 41
+            },
+            "YouTube/xNxxM-OOMfw": {
+              "pairs": 75,
+              "both_wrong": 53,
+              "same_wrong_class": 29
+            }
+          }
+        },
+        "diagnostic_oracle_observed_single_matched_identity_tracks/all": {
+          "pairs": 1153,
+          "agreement_pairs": 309,
+          "both_correct": 31,
+          "exactly_one_wrong": 156,
+          "both_wrong": 966,
+          "same_wrong_class": 278,
+          "different_wrong_class": 688,
+          "both_wrong_rate": 0.8378143972246314,
+          "same_wrong_class_rate": 0.24111014744145706,
+          "mean_endpoint_soft_risk_product": 0.8558124981842437,
+          "source_groups": 7,
+          "videos": 9,
+          "gt_trajectories": 20,
+          "predicted_tracks": 26,
+          "target_categories": 10,
+          "target_category_ids": [
+            1,
+            127,
+            173,
+            207,
+            220,
+            344,
+            447,
+            793,
+            800,
+            804
+          ],
+          "concentration": {
+            "max_source_pairs_share": 0.42237640936686904,
+            "max_gt_trajectory_pairs_share": 0.2818733738074588,
+            "max_source_both_wrong_share": 0.43685300207039335,
+            "max_gt_trajectory_both_wrong_share": 0.3364389233954451,
+            "max_source_same_wrong_class_share": 0.38489208633093525,
+            "max_gt_trajectory_same_wrong_class_share": 0.30935251798561153
+          },
+          "per_source_event_counts": {
+            "ArgoVerse/2c07fcda-6671-3ac0-ac23-4a232e0e031e": {
+              "pairs": 5,
+              "both_wrong": 4,
+              "same_wrong_class": 4
+            },
+            "BDD/b1f85377-44885085": {
+              "pairs": 179,
+              "both_wrong": 110,
+              "same_wrong_class": 82
+            },
+            "Charades/1410C": {
+              "pairs": 346,
+              "both_wrong": 346,
+              "same_wrong_class": 107
+            },
+            "LaSOT/shark-18": {
+              "pairs": 487,
+              "both_wrong": 422,
+              "same_wrong_class": 58
+            },
+            "YFCC100M/v_ca3710d4f4cd8b4316974b641d37ba3": {
+              "pairs": 36,
+              "both_wrong": 9,
+              "same_wrong_class": 2
+            },
+            "YouTube/tt0t_a1EDCE": {
+              "pairs": 53,
+              "both_wrong": 50,
+              "same_wrong_class": 24
+            },
+            "YouTube/xNxxM-OOMfw": {
+              "pairs": 47,
+              "both_wrong": 25,
+              "same_wrong_class": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "test": {
+    "status": "CLOSED_NO_GT_MATCHING_NO_ERROR_OUTCOMES",
+    "frames": 274,
+    "retained_rows": 11950,
+    "unassigned_rows": 0,
+    "emitted_rows": 11950,
+    "zero_emitted_frames": 0,
+    "duplicate_local_id_frame_extra_rows": 0
+  },
+  "training_started": false,
+  "training_readiness_established": false,
+  "oracle_identity_diagnostics_used_for_training": false,
+  "raw_indices_and_supervision_rows": "Local-only artifacts; do not Git-sync raw matched rows or indices",
+  "interpretations": [
+    "Counts/pairs are descriptive support, not independent sample counts, covariance or efficacy evidence",
+    "Observed single matched identity does not establish whole-track purity",
+    "Sparse manual-anchor timeline and current full1203 vocabulary regime",
+    "Frozen detector may have seen base classes/videos; class holdout is readout pseudo-novel only"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS_INDEPENDENT_FIT_TUNE_METADATA_PROVENANCE",
+  "open_fit_tune_frames": 1025,
+  "checked_exact_manual_anchors": 2969,
+  "official_frame_coordinate_and_filename_unique": true,
+  "ctao_is_ori_and_annotation_id_box_category_verified": true,
+  "old1230_unique_synset_bridge_verified": true,
+  "old_categories": 1230,
+  "canonical_categories": 1203,
+  "old_category_ids_whose_unique_synset_maps_to_different_numeric_id": 1068,
+  "old_categories_without_unique_canonical_mapping": 79,
+  "prediction_dumps_read": false,
+  "test_prediction_gt_matching_or_outcomes": false,
+  "source_hashes": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/annotations/train.json": "7eb551fdeeeebc76b876ae255f91dc5662c7270a125955c5f1be2d9bd30921d0",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base/saved_models/ctao_dataset/ctao_base.json": "4269b1a5f026350cf45fbbf61689894f7d45d9bd2730331e73ab6f841d9b3adc"
+  }
+}

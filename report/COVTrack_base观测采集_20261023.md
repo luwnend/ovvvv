@@ -1,6 +1,6 @@
 # COVTrack base观测采集与暂停续接 — 2026-10-23
 
-当前已完成独立full-vocabulary导出接口、CPU合约和4帧真实smoke；1,299帧pilot正在采集。**尚未完成pilot封存、自然错误支持或新模型训练，研究目标继续。** 本报告记录接口阶段边界，后续结果须以实际回执更新。
+当前已完成独立full-vocabulary导出接口、1,299帧pilot封存、fit/tune自然错误支持及固定均值质量诊断。**可学习依赖方法尚未成立，没有新tracker训练；已按用户要求暂停，等待续接。** 全部fit/tune扩采元数据已通过独立审计，暂停时尚未启动；保持test关闭。最新恢复入口为`tmp_analysis/base_error_pause_handoff_20261023.md`，下文pilot暂停段落仅为历史记录。
 
 ## 已完成的可核验接口
 
@@ -22,7 +22,7 @@
 
 smoke融合重建最大绝对误差`1.8621592845491364e-7`。真实smoke没有空帧或负ID，这两项当前仅有CPU合成证据。完整谱系：`tmp_analysis/base_error_collection_deviations_20261023.json`、`base_collection_protocol_review_20261023.md`、`smoke_v2/independent_collection_audit.json`。
 
-## pilot范围及暂停续接
+## pilot范围与历史暂停交接
 
 pilot为41视频/28源组/1,299稀疏人工anchor帧，另存3,953精确人工anchor目标，fit可用标签上限2,138。选择这些帧依据标签可用性；每个选中帧保留全部GT-free模型输出，不能称密集自然错误总体。视频/源组切分不代表released detector从未见过这些数据；class holdout是readout的pseudo-novel。
 
@@ -38,10 +38,48 @@ cat results/base_error_collection_20261023_v3/pilot_collect_v1/collection_receip
 cat results/base_error_collection_20261023_v3/pilot_collect_v1/background_completion_audit.json
 ```
 
-只有raw缓存封存及独立核验通过，才独立审查并运行`tmp_analysis/build_base_error_support.py`。该脚本尚未独立审查/运行，状态见`base_support_review_handoff_20261023.json`。匹配必须由所有原始TAO GT参与且不使用预测类别，再仅用精确manual-anchor交集生成fit/tune监督；未匹配为unknown，test自然错误不计算。先完成全emitted GT-free轨迹聚合，再打开监督，不能用GT选择读出观测。
+该次暂停时`tmp_analysis/build_base_error_support.py`尚未独立审查/运行，历史记录见`base_support_review_handoff_20261023.json`。恢复后已补强来源链、通过独立审查并完成真实support；当前结果见后文。匹配由所有原始TAO GT参与且不使用预测类别，再仅用精确manual-anchor交集生成fit/tune监督；未匹配为unknown，test自然错误不计算。全emitted GT-free轨迹聚合先于监督打开，不能用GT选择读出观测。
 
 ## 学习目标边界
 
 已写`tmp_analysis/base_error_learning_objective_20261023.md`和精确合成检查。hard同错受agreement平凡约束；`p*(1-pi)`中心化还会导致同身份每坐标乘积恒非负。两者不能直接声称学到共同错误协方差。候选是参考条件均值直接回归与out-of-source-group soft residual；仍需平均错误、quality+agreement、校准、同容量attention/相关融合控制。当前未训练，也未证明其新颖性或指标收益。
 
 旧TCES错误失败结论已从正式文档移除，历史来源保持撤回标记。当前接口修复与合成检查不能替代真实机制证据。
+
+## 完整pilot封存与真实支持结果
+
+原采集工具session91862已实际退出0，耗时394.595秒。41视频/1,299帧/54,924输出均有NPZ与receipt，41次真实tracker重置通过，最大融合重建误差`3.2515110459652163e-7`。独立双validator均实际退出0，既有训练、baseline及源码保护项不变。此批没有真实空帧或`id=-1`，不能将CPU合成证据改称真实覆盖。回执`execution_receipt.json`与`pilot_collect_v1/independent_collection_audit.json`。
+
+支持层先在打开监督前封存全部54,924观测和12,876个`(video_id,local_track_id)`，再对fit/tune做不使用类别的全GT Hungarian匹配（IoU>=.5，先最大有效匹配数，再总IoU）。原始TAO旧1230词表按唯一synset映射；1,068个可映射旧ID与新数值ID不同，绝不能直接拼接数值。1,025个fit/tune帧及2,969个人工anchor的原图/原身份/C-TAO `is_ori`、annotation ID和框来源链复核通过。
+
+| 范围 | 可监督观测 | 分类正确/错误 | 源组/GT轨迹 | 目标类别 | 同pred-track同GT pairs |
+|---|---:|---:|---:|---:|---:|
+| Fit | 1,067 | 452 / 615 | 14 / 113 | 15 | 6,876 |
+| Tune | 315 | 87 / 228 | 7 / 41 | 12 | 1,581 |
+
+这些监督只来自fit目标类别的精确人工anchor；fit/tune的可监督anchor覆盖为49.91%/48.69%。预测未匹配的31,484/9,821行保持unknown，既不能算负样本，也不能据此算误检率。训练身份诊断与可训练pair字段已分离：oracle单身份scope只作描述，禁止作训练/调参mask；主pairs只要求两端独立合法，不用全轨迹GT纯度选样。
+
+fit/tune实际有监督的目标类仅重叠`{173,207,793}`。fit主pair中单源组最多占22.06%、单GT轨迹10.78%；tune为30.80%/20.56%。pairs为穷举重复观测，不能当独立样本数。14/7源组和15/12类不足以宣称共同残差过程可迁移；不能把tune高错误率归因为类迁移本身。
+
+test的274帧/11,950输出仅保留GT-free结构，没有prediction-GT匹配或错误结果；预留类别也未计算正确率。真实support实际退出0，独立审计逐行核验全部索引、1,382监督行与8,457pairs，并对15个固定分层帧独立复算匹配。回执`support_v1/support_summary.json`、`independent_support_audit.json`。
+
+## 固定均值质量控制
+
+这是CPU统计校准控制，不是新tracker训练。B0为fit子集的平均错误；B1为固定`lambda=1`、14维GT-free摘要的类别共享ridge-logistic。按源组→GT轨迹→观测等权；fit内5折源组交叉拟合，标准化只使用每折训练部分。tune仅评估，未用于选特征、正则、校准或checkpoint。输入不含类别/身份ID、GT IoU或轨迹纯度。
+
+| 同层级等权指标 | B0 Brier | B1 Brier | B0 BCE | B1 BCE |
+|---|---:|---:|---:|---:|
+| Fit 源组留出预测 | 0.258882 | 0.208137 | 0.711028 | 0.604656 |
+| Tune（全部fit拟合） | 0.233728 | 0.191559 | 0.660503 | 0.568527 |
+
+普通质量信息可解释部分错误，后续pair网络必须超过它。tune等权真实错误率0.687961，B1平均预测仅0.598346，校准截距/斜率0.220913/1.712482，不能视为已得到可靠中心化均值。条件于已有预测的1,000次源组bootstrap中，tune Brier差区间为[-0.056752,-0.027273]；没有重拟合模型，只有7个源组，不作训练不确定性或独立泛化结论。fit micro Brier差区间仍包含0，权重口径会改变结论。
+
+该B1仅是低容量sanity控制；仍缺更强、内层source-CV的质量模型。它既不能证明quality已被充分控制，也不能让pair方法通过训练门槛。真实诊断退出0，输出`mean_quality_v1/diagnostic.json`；轻量摘要和独立复核另存同目录。
+
+## 扩采决策
+
+扩采只复用原sealed源组与类别split，选择全部fit/tune人工anchor帧，不根据tune错误挑类别/视频，不采test。计划15,283帧/46,908精确anchor框；allocation450视频中2个没有精确anchor，实际为448非空视频、383源组，用于缓解当前独立源组和类别覆盖不足。新stage为`results/base_error_full_collection_20261023`，与pilot完全隔离；full词表/稀疏步序协议保持一致。独立元数据审计状态为`PASS_INDEPENDENT_FULL_COLLECTION_METADATA_AUDIT`。
+
+扩采预计1–2小时，仅冻结公开权重推理，完成后由独立后台程序记录真实子进程exit并做CPU校验，不自动训练或用test调参。最终状态应检查新stage的`background_execution_receipt.json`，启动回执不等于采集成功；若进程仍运行，下一会话先现场核验PID及日志，不能重复启动。
+
+本次用户暂停发生在full启动之前；没有`background_launch_receipt.json`或`background_execution_receipt.json`，也没有full推理进程。`pause_handoff.json`记录本次状态及已完成证据的hash；它不是full完成回执。既有另一会话训练保持运行。恢复时按最新交接先检查再启动，不要重跑已封存pilot/support/固定质量诊断；full support builder仍需独立适配及审计，不能直接强套pilot guard。
