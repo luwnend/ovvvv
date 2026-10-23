@@ -1,0 +1,60 @@
+{
+  "status": "USER_THRESHOLD_PAUSED_CODEX_WITH_FULL_COLLECTION_RUNNING",
+  "observed_utc": "2026-10-23T06:22:06.715507+00:00",
+  "user_rule": "预计GPU用时大于20分钟，就暂停codex对话",
+  "pause_gpu_threshold_minutes": 20,
+  "estimated_gpu_hours": [
+    1,
+    2
+  ],
+  "research_goal_complete": false,
+  "background_collection_continues": true,
+  "supervisor_pid": 4190240,
+  "collector_pid": 4190241,
+  "process_snapshot": [
+    "4190240       1 4190240 Ss         02:51 /usr/bin/python3 -u /home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_full_collection_background.py --stage /home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023 --run /home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1",
+    "4190241 4190240 4190240 Rl         02:51 /home/chenhc/.conda/envs/ovtrack_ovmot/bin/python -u /home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/collect_base_error_pilot.py --annotation /home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_inference.json --out /home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1"
+  ],
+  "launch_receipt_sha256": "d336906fe228cd79d04d64b053115cab79f471bfbff116e47378b414f70e04d4",
+  "run_manifest_sha256": "8a99676a2a45a61d3c76d423480f59381cfe4ab80e0a54df671417a5599198ab",
+  "model_ready": {
+    "ready_utc": "2026-10-23T06:19:38.329877+00:00",
+    "load_seconds": 14.709698433987796,
+    "actual_novel_mask_count": 337,
+    "text_features_shape": [
+      1203,
+      512
+    ]
+  },
+  "observed_complete_frame_events": 326,
+  "expected_frames": 15283,
+  "latest_complete_frame_event": {
+    "index": 325,
+    "image_id": 10460,
+    "video_id": 40,
+    "frame_id": 27,
+    "frame_index": 1320,
+    "tracker_reset_observed": false,
+    "previous_tracker_total": 503,
+    "tracker_num_tracklets": 507,
+    "seconds": 0.3602458229288459,
+    "elapsed_seconds": 162.9487611921504,
+    "emitted_output_exact": true,
+    "observations": 27,
+    "emitted_observations": 27,
+    "posterior_columns": 1204,
+    "fusion_max_abs_error": 1.0868377320338851e-07,
+    "empty_frame": false,
+    "npz": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v40_i10460_f27.npz",
+    "npz_sha256": "fa2548910731fd0ae0243804cae4e78b9cd1f8ef2aba0db7e09c9af9efafe61a"
+  },
+  "first_four_npz_hashes_rechecked": true,
+  "terminal_exit_observed": false,
+  "full_runtime_audits_complete": false,
+  "new_tracker_training": false,
+  "test_and_heldout_correctness_opened": false,
+  "resume_handoff": "tmp_analysis/base_error_pause_handoff_20261023.md",
+  "completion_receipt_to_check": "results/base_error_full_collection_20261023/background_execution_receipt.json",
+  "historical_prelaunch_pause": "pause_handoff.json; superseded for current runtime state; retained unchanged",
+  "resume_rule": "Check existing run and process/terminal receipts; do not launch a duplicate or overwrite partial outputs."
+}

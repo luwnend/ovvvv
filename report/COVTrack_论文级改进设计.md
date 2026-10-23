@@ -144,7 +144,7 @@ log clipping、缓存精度和核尺度需要固定并记录敏感性，不用 n
 
 新目标规范先以平均错误、单帧质量及shared calibrator为控制；主假说为在不含双方当前候选概率的共同参考条件下，直接估计wrong-evidence条件均值，再对out-of-source-group残差的对角乘积/trace做预测。参考只由预测轨迹中双方之外的观测构建，不用GT挑参考。它仍可能包含共享真实标签不确定性和语义难度，称为**中心化wrong-evidence surrogate**；既不是完整协方差，也不预先许诺PSD、GLS或attention方法创新。
 
-具体输入、交叉项、loss、交叉拟合、同容量quality+agreement/attention/相关融合控制及支持门槛见`tmp_analysis/base_error_learning_objective_20261023.md`。精确合成检查只证明代数与退化案例。1,299帧真实pilot及fit/tune支持已独立通过；固定单帧quality控制的层级等权tune Brier由0.2337降至0.1916，但仍低估错误率，实际监督类只重叠3类。由此先扩采全部fit/tune，不能直接进入pair方法训练。扩采元数据独立PASS，用户暂停时尚未启动；完整数值及限定见`report/COVTrack_base观测采集_20261023.md`。未匹配观测保持unknown；test和class holdout不用于选择目标或超参。
+具体输入、交叉项、loss、交叉拟合、同容量quality+agreement/attention/相关融合控制及支持门槛见`tmp_analysis/base_error_learning_objective_20261023.md`。精确合成检查只证明代数与退化案例。1,299帧真实pilot及fit/tune支持已独立通过；固定单帧quality控制的层级等权tune Brier由0.2337降至0.1916，但仍低估错误率，实际监督类只重叠3类。由此先扩采全部fit/tune，不能直接进入pair方法训练。扩采元数据独立PASS，已启动冻结模型的后台采集，仍待完整验收；完整数值及限定见`report/COVTrack_base观测采集_20261023.md`。未匹配观测保持unknown；test和class holdout不用于选择目标或超参。
 
 ## 6. 必须同时区分的竞争解释：身份混合
 

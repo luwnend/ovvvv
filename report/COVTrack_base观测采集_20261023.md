@@ -1,6 +1,6 @@
 # COVTrack base观测采集与暂停续接 — 2026-10-23
 
-当前已完成独立full-vocabulary导出接口、1,299帧pilot封存、fit/tune自然错误支持及固定均值质量诊断。**可学习依赖方法尚未成立，没有新tracker训练；已按用户要求暂停，等待续接。** 全部fit/tune扩采元数据已通过独立审计，暂停时尚未启动；保持test关闭。最新恢复入口为`tmp_analysis/base_error_pause_handoff_20261023.md`，下文pilot暂停段落仅为历史记录。
+当前已完成独立full-vocabulary导出接口、1,299帧pilot封存、fit/tune自然错误支持及固定均值质量诊断。**全部fit/tune扩采已在独立后台启动；预计1–2小时，按用户超过20分钟暂停Codex对话的规则交接，后台继续。可学习依赖方法尚未成立，没有新tracker训练。** 保持test关闭。最新恢复入口为`tmp_analysis/base_error_pause_handoff_20261023.md`及full stage的`background_pause_handoff.json`，下文pilot暂停段落仅为历史记录。
 
 ## 已完成的可核验接口
 
@@ -82,4 +82,4 @@ test的274帧/11,950输出仅保留GT-free结构，没有prediction-GT匹配或�
 
 扩采预计1–2小时，仅冻结公开权重推理，完成后由独立后台程序记录真实子进程exit并做CPU校验，不自动训练或用test调参。最终状态应检查新stage的`background_execution_receipt.json`，启动回执不等于采集成功；若进程仍运行，下一会话先现场核验PID及日志，不能重复启动。
 
-本次用户暂停发生在full启动之前；没有`background_launch_receipt.json`或`background_execution_receipt.json`，也没有full推理进程。`pause_handoff.json`记录本次状态及已完成证据的hash；它不是full完成回执。既有另一会话训练保持运行。恢复时按最新交接先检查再启动，不要重跑已封存pilot/support/固定质量诊断；full support builder仍需独立适配及审计，不能直接强套pilot guard。
+上次用户暂停发生在full启动之前；历史`pause_handoff.json`保留该时刻及已完成证据的hash。恢复后已于14:19（Asia/Shanghai）由supervisor4190240启动collector4190241，run=`full_collect_v1`，日志=`execution_logs/full_collect_v1.log`。`background_launch_receipt.json`已生成，新的`background_pause_handoff.json`记录暂停Codex时的真实进程与帧进度。准备manifest的未启动/PENDING字段是生成时快照，当前以独立metadata audit及运行回执为准。预计超过20分钟故依最新用户规则暂停对话；后台继续并自动执行双CPU验收。既有另一会话训练保持运行。恢复时先核查`background_execution_receipt.json`和进程日志，**不得重复启动已有run**；不要重跑已封存pilot/support/固定质量诊断。full support builder仍需独立适配及审计，不能直接强套pilot guard。

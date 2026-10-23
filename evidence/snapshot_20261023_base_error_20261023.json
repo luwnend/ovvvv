@@ -5,8 +5,8 @@
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/项目进度.md",
       "destination": "report/项目进度.md",
-      "bytes": 12129,
-      "sha256": "2a9d460f350dbfee4a0d1b907a06810cdaf38e0a40921651d907ce3db79f08a9"
+      "bytes": 12385,
+      "sha256": "b465f80a9d15f9f51469e508905ddd9d2ee97e936b31d161294e9e8345015da9"
     },
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/OVTrack_收尾总结.md",
@@ -29,8 +29,8 @@
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_论文级改进设计.md",
       "destination": "report/COVTrack_论文级改进设计.md",
-      "bytes": 18042,
-      "sha256": "2b6f3723d20f1a25029e7c84a4e0d37288bbc1fb5e623dd52ddf8e001e681603"
+      "bytes": 18072,
+      "sha256": "bbb4fda7572001de086e3c5c15688e3fba23119d3598dd4cf9db6a665850c3ef"
     },
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_完整val轨迹读出_20261023.md",
@@ -113,8 +113,8 @@
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/sync_research_stage.py",
       "destination": "tmp_analysis/sync_research_stage.py",
-      "bytes": 10254,
-      "sha256": "995581549dc982ebb1c6070913eb2143be1c19206be46a863438dbee877762ac"
+      "bytes": 10284,
+      "sha256": "babf8ca733ca1561f1596f3afe05be42c51ad8a5b842227347b722a611961636"
     },
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/novelty_audit_20261023.md",
@@ -317,8 +317,8 @@
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_base观测采集_20261023.md",
       "destination": "report/COVTrack_base观测采集_20261023.md",
-      "bytes": 10709,
-      "sha256": "98c8c86156c6dc392006d493181f3e37448d5498a7ec99a6e210f842ab3d7ded"
+      "bytes": 11205,
+      "sha256": "856ecd40e979d83a933b74cba95b0931ad90bdf4c0ddb908d75565c4f65b00ff"
     },
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/prepare_base_error_collection.py",
@@ -629,8 +629,8 @@
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_pause_handoff_20261023.md",
       "destination": "tmp_analysis/base_error_pause_handoff_20261023.md",
-      "bytes": 3082,
-      "sha256": "a90b67a00e532bf9c049d10a9b06e7f84d9743e8607713750000e85fe4decf66"
+      "bytes": 3671,
+      "sha256": "a317054bd848e8b777e71c6ce4dd749b3d0bb5c6c7730987346a55b6ba902287"
     },
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/preparation_manifest.json",
@@ -645,10 +645,16 @@
       "sha256": "a6e0d957a517106461af23d73be96d288e93ed9eed58956374b4083c8b1f1548"
     },
     {
-      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pause_handoff.json",
-      "destination": "evidence/base_error_full_collection_20261023/pause_handoff.json",
-      "bytes": 2259,
-      "sha256": "6f092d276caebfbe403b30239d9150bafd5879e2d5ca1113345d8162e9de0423"
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/background_launch_receipt.json",
+      "destination": "evidence/base_error_full_collection_20261023/background_launch_receipt.json",
+      "bytes": 872,
+      "sha256": "d336906fe228cd79d04d64b053115cab79f471bfbff116e47378b414f70e04d4"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/background_pause_handoff.json",
+      "destination": "evidence/base_error_full_collection_20261023/background_pause_handoff.json",
+      "bytes": 2983,
+      "sha256": "c59b8dcfa5ad01e433e5f8f953e0dfa9122238162dc44fa7c9500b805d585cd6"
     }
   ],
   "excludes": [

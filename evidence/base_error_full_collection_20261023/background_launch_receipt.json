@@ -1,0 +1,14 @@
+{
+  "status": "STARTING_FROZEN_FULL_FIT_TUNE_COLLECTION",
+  "started_utc": "2026-10-23T06:19:15.241777+00:00",
+  "supervisor_pid": 4190240,
+  "stage": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023",
+  "run": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1",
+  "annotation_sha256": "375fa82b7ec603cb8781a63abf47c3c64f03f1f4c8b0e242cb7403fa0786abf2",
+  "independent_metadata_audit_sha256": "a6e0d957a517106461af23d73be96d288e93ed9eed58956374b4083c8b1f1548",
+  "collector_sha256": "49cf8b3f43355287054bbad52cf44acc58aca20019da2bcfdbad295d979a5ce5",
+  "full_validator_sha256": "32f0dad4ef6ed4e761293252e5703ee31f99f9c66aab0d1e43f8f4daa092cb88",
+  "supervisor_sha256": "b18f72a20fde9ae5c361824bb2e4814223a01dcd390acfa99960019c3b996266",
+  "new_method_training": false,
+  "test_images_selected": false
+}

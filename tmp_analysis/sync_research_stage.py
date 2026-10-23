@@ -98,7 +98,7 @@ def main():
             full = ROOT / "results/base_error_full_collection_20261023"
             full_names = ["preparation_manifest.json", "independent_metadata_audit.json"]
             if (full / "background_launch_receipt.json").is_file():
-                full_names.append("background_launch_receipt.json")
+                full_names += ["background_launch_receipt.json", "background_pause_handoff.json"]
             else:
                 pause = json.loads((full / "pause_handoff.json").read_text())
                 assert pause["status"] == "USER_PAUSED_BEFORE_FULL_COLLECTION_LAUNCH"
