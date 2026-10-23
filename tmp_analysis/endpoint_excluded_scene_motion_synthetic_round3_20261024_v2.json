@@ -1,0 +1,18 @@
+{
+  "status": "PASS_ENDPOINT_EXCLUDED_SCENE_MOTION_SYNTHETIC",
+  "round": 3,
+  "checks": [
+    "coordinate_origin_and_axis_scale_equivariance",
+    "support_permutation_does_not_change_estimated_motion",
+    "one_arbitrary_displacement_outlier_does_not_move_median",
+    "perfect_support_is_not_camera_or_identity_verification",
+    "finite_large_features_normalize_without_overflow",
+    "extreme_finite_geometry_remains_finite_or_explicitly_rejected"
+  ],
+  "module_sha256": "4ba1517f42d7b60e109db1675c9c4b1d54948cc3a45aeec5031cf40cf9ed730b",
+  "checker_sha256": "09303058f5a621fde5969414e0dfc6f13445ef0054f116f1a5d444b14c593d06",
+  "real_cache_opened": false,
+  "identity_values_opened": false,
+  "training_or_tracker_replay": false,
+  "efficacy_or_novelty_established": false
+}

@@ -1,0 +1,171 @@
+{
+  "audit_date": "2026-10-24",
+  "scope": "Original-method novelty and identifiability audit only; no new held-out OOF evaluations read; no OOF pins modified; no real experiments/training",
+  "sources": [
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/botsort.md",
+      "bytes": 56846,
+      "sha256": "b316311596d5ba79f08ea4aae60a2169f6fa7450c4cd88e747317fb0c2eaa395",
+      "url": "https://huggingface.co/papers/2206.14651.md",
+      "method_read": "BoT-SORT Sec.3.2 Eqs.(5)-(9); Sec.3.3 Eqs.(10)-(13)"
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/botsort_gmc.py",
+      "bytes": 11753,
+      "sha256": "508c3a4ea0e9a72478ce2d1d29aa1eb8892b3804c76b524a16a34dca23dba9ba",
+      "url": "https://raw.githubusercontent.com/NirAharon/BoT-SORT/main/tracker/gmc.py",
+      "method_read": "applyFeaures masking/matching/estimateAffinePartial2D and applySparseOptFlow mask=None/fitting/fallback; branch-specific code"
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/ocsort.md",
+      "bytes": 106656,
+      "sha256": "c272423ff3d2ec2240fbe8d885a5336c46d6fd7126d296356877bb8e9ff63006",
+      "url": "https://huggingface.co/papers/2203.14360.md",
+      "method_read": "Sec.4.1-4.2 Eqs.(6)-(8), implementation settings, appendix noise discussion"
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/deepocsort.md",
+      "bytes": 26325,
+      "sha256": "0d23d9010315d03af0d9a9e3d5db6f3ffa00f118830c16af9f4c49d7b38cdd4b",
+      "url": "https://huggingface.co/papers/2302.11813.md",
+      "method_read": "Sec.3.2 CMC Eq.(1), Sec.3.3 dynamic appearance, Sec.3.4 adaptive weighting, implementation CMC estimation"
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/rmot.pdf",
+      "bytes": 8257304,
+      "sha256": "f50c915e856d30f772acb5530fed0dbacb466ce64478a3adb6cfe531eed41265",
+      "url": "https://faculty.ucmerced.edu/mhyang/papers/wacv15_mot.pdf",
+      "method_read": "Secs.3-5 Eqs.(1)-(15), Algorithm 1; method rendered PDF p.3"
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/transmot.pdf",
+      "bytes": 1500593,
+      "sha256": "a7f4ad952c16797dfe92c83ae35d73e624881191e29cef5daeb2404596b34464",
+      "url": "https://openaccess.thecvf.com/content/WACV2023/papers/Chu_TransMOT_Spatial-Temporal_Graph_Transformer_for_Multiple_Object_Tracking_WACV_2023_paper.pdf",
+      "method_read": "Secs.4.1-4.4 spatial graph weights Eq.(3), temporal encoder, candidate decoder and association; rendered PDF p.4"
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/ransac1981.pdf",
+      "bytes": 1211739,
+      "sha256": "f2a57af068c45f34431810bba3e450cb56a914027bd54c035c9d7e8e0c5200b0",
+      "url": "https://www.sri.com/wp-content/uploads/2021/12/ransac-publication.pdf",
+      "method_read": "Sec.II consensus procedure and II-A datum/model error and compatibility tolerance; rendered PDF p.3"
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/conneau2018.md",
+      "bytes": 62977,
+      "sha256": "d09e1a505649071b7be475640c976ef5bba324ac6c6d586004371af4361d25b3",
+      "url": "https://huggingface.co/papers/1710.04087.md",
+      "method_read": "Sec.2 Eq.(2), Sec.2.2 mutual nearest-neighbor refinement, Sec.3.3 orthogonality, Sec.3.4 CSLS mutual selection"
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/grave2019.pdf",
+      "bytes": 894819,
+      "sha256": "058e1deaeafb58a387ca91aba844f480bab2b2eae641dcf4f4a70e884ccb8229",
+      "url": "https://proceedings.mlr.press/v89/grave19a/grave19a.pdf",
+      "method_read": "Secs.2.1-2.4 Eqs.(1)-(2), orthogonal fit and joint correspondence, initialization limitation; rendered PDF p.3"
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/rmot.txt",
+      "bytes": 67118,
+      "sha256": "b90325f615937b10ff01fef46f11936925e1dc024fc252d488b7c937f7da2273",
+      "derived": true
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/transmot.txt",
+      "bytes": 72136,
+      "sha256": "29896dc1ad4a8652198e987e2de4a6e16a1aaca21907ef1df907a42e2bf682ff",
+      "derived": true
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/ransac1981.txt",
+      "bytes": 107817,
+      "sha256": "21297df87c3cf61f28e8f6aedeb6dc1e8607c8c35f7ebb0d20dacaa145f81d6a",
+      "derived": true
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/grave2019.txt",
+      "bytes": 65139,
+      "sha256": "8ea2c9f35754dc12d0e7ca07ea9bd7f9bc242930685b1dbaf54cc3d0fa79c552",
+      "derived": true
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/rmot_method.png",
+      "bytes": 411440,
+      "sha256": "43270ad5bc76d69d824f45ca8c1493a818cc7306966a95ebad8f1dbe57e034f7",
+      "derived": true
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/transmot_method.png",
+      "bytes": 440582,
+      "sha256": "37c15d29de25301128bc32153ab70f51802b7c9a637258828cda762d5f6e4f42",
+      "derived": true
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/ransac1981_method.png",
+      "bytes": 322662,
+      "sha256": "7f3eca192872a77dfb6a81cbdf413780b1d6463a095e53100bcbf76968dd577b",
+      "derived": true
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/grave2019_method.png",
+      "bytes": 524778,
+      "sha256": "0b4f712fb75a60c09ba22bab998016440ae5102fae80426fb3c9865c6529aba4",
+      "derived": true
+    },
+    {
+      "path": "tmp_analysis/scene_motion_sources_20261024/methods_contact_sheet.png",
+      "bytes": 1777682,
+      "sha256": "811c10fae732f469db410c93d5564dc40d975ea28df0263c000cf6030eb19700",
+      "derived": true
+    },
+    {
+      "path": "tmp_analysis/covtrackpp_live_sources_20261023/S4.SS2.txt",
+      "bytes": 15766,
+      "sha256": "cd2a069850982e9c5f14b225deec6e4d9af2d33a8c9c478891e7f3f28d5546f0",
+      "source_snapshot": true,
+      "method_read": "MCF IV-B Eqs.(1)-(9), MGA IV-C Eqs.(10)-(17), original-source and official-tree boundary snapshot"
+    },
+    {
+      "path": "tmp_analysis/covtrackpp_live_sources_20261023/S4.SS3.txt",
+      "bytes": 8833,
+      "sha256": "f4aa2637848a383af8f421a8bfe0fe7d4bce41bd4e162ca462430d92c3e3733c",
+      "source_snapshot": true,
+      "method_read": "MCF IV-B Eqs.(1)-(9), MGA IV-C Eqs.(10)-(17), original-source and official-tree boundary snapshot"
+    },
+    {
+      "path": "tmp_analysis/covtrackpp_code_boundary_20261023.md",
+      "bytes": 19891,
+      "sha256": "fb9e3b5e4e0ae07a58dd747bf1609deecffbf62e22ab87990bf5fd5e81c04c7a",
+      "source_snapshot": true,
+      "method_read": "MCF IV-B Eqs.(1)-(9), MGA IV-C Eqs.(10)-(17), original-source and official-tree boundary snapshot"
+    }
+  ],
+  "cook1977": {
+    "doi": "https://doi.org/10.1080/00401706.1977.10489493",
+    "original_text_mirror": "https://www.scribd.com/document/249357207/Cooks",
+    "read_scope": "Original article Sec.2 prose and Sec.4 prediction influence prose via browser transcript; equations incompletely extracted so no exact formula claim",
+    "unavailable_pdf_urls": [
+      "https://www.ime.usp.br/~abe/lista/pdfWiH1zqnMHo.pdf",
+      "https://www.stat.ucla.edu/~nchristo/statistics100C/1268249.pdf"
+    ],
+    "failure": "University PDF retrieval TLS/EOF or timeout; DOI browser retrieval 403"
+  },
+  "other_unavailable": [
+    {
+      "url": "https://huggingface.co/papers/2104.00194.md",
+      "status": 404,
+      "fallback": "Official CVF PDF downloaded and method read"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GerardMaggiolino/Deep-OC-SORT/main/trackers/cmc.py",
+      "status": 404,
+      "interpretation": "A failed path is not evidence implementation absent; CMC characterization uses full paper"
+    }
+  ],
+  "report": {
+    "path": "tmp_analysis/scene_motion_novelty_audit_20261024.md",
+    "bytes": 14751,
+    "sha256": "4c2d459486b175f3b2d6551c2ddff165165322ce98e512e9b42fdae45ba266ee"
+  }
+}

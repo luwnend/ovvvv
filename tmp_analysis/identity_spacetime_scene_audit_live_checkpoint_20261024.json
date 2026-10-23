@@ -1,0 +1,48 @@
+{
+  "status": "LIVE_OOF_RUNNING_CHECKPOINT_NO_NEW_EVALUATION",
+  "checked_utc": "2026-10-23T19:03:57.832530+00:00",
+  "live_status": {
+    "execution_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_execution_20261024_v1",
+    "output_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1",
+    "status": "RUNNING_OR_INTERRUPTED",
+    "completed_models": [
+      "fold0_seed20261024",
+      "fold1_seed20261024"
+    ],
+    "active_workers": [
+      {
+        "model": "fold2_seed20261024",
+        "identity_matches": true,
+        "running": true,
+        "latest_log_lines": [
+          "[fold=2 seed=20261024] GT-free preparation complete; elapsed_seconds=0.612"
+        ]
+      }
+    ],
+    "supervisor_identity_matches": true,
+    "supervisor_running": true,
+    "global_seal_exists": false,
+    "evaluation_summary_exists": false
+  },
+  "actual_completed_worker_exits": [
+    {
+      "file": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_execution_20261024_v1/model_processes/fold0_seed20261024.exit.json",
+      "sha256": "878fa90512a64683fe46de509eeb8c853763309de92608cf02cf71f1503905d9",
+      "actual_exit_code": 0,
+      "elapsed_seconds": 578.9331434974447
+    },
+    {
+      "file": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_execution_20261024_v1/model_processes/fold1_seed20261024.exit.json",
+      "sha256": "c38bfc61143bae5442fd85184470d930f40f726d170adfe2e5de0fafda2692e9",
+      "actual_exit_code": 0,
+      "elapsed_seconds": 592.7377655785531
+    }
+  ],
+  "launch_file_pins_checked": 70,
+  "protected_files_checked": 7,
+  "pinned_files_unchanged": true,
+  "new_OOF_metrics_decoded": false,
+  "launch_sha256": "818cecdd0c35249aaf1e91d1ef58b2bb0782d4e3675b4a07cd1cb4266d7a62b1",
+  "protocol_sha256": "a7169f8674d8e019782820bc7b4a99ff4b2082bdeaa0a731e60352a488ed9be1",
+  "separate_scene_motion_control_not_in_this_protocol": true
+}

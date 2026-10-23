@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_ENDPOINT_EXCLUDED_SCENE_MOTION_SYNTHETIC_AUDIT",
+  "round": 1,
+  "checks": [
+    "24_legal_endpoint_value_mutations_preserve_fit_support_matches_but_change_candidate_residual",
+    "fixed_extra_alias_exclusion_mutation_invariance_and_nonexcluded_physical_alias_limitation",
+    "explicit_competition_counterexample_proves_match_then_delete_is_different"
+  ],
+  "module_sha256": "4ba1517f42d7b60e109db1675c9c4b1d54948cc3a45aeec5031cf40cf9ed730b",
+  "script_sha256": "81089a0e2ae359ab4c9d3c4cf341c33e0b56e3ca36e09c0c84a40c1a09bed689",
+  "real_cache_or_identity_or_new_OOF_evaluation_opened": false,
+  "physical_camera_identification_established": false,
+  "full_population_compute_or_tracking_effectiveness_audited": false
+}

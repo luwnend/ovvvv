@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ENDPOINT_EXCLUDED_SCENE_MOTION_SYNTHETIC",
+  "round": 1,
+  "checks": [
+    "heldout_endpoint_known_common_translation",
+    "endpoint_feature_and_geometry_mutation_cannot_change_fit",
+    "other_object_motion_changes_estimate",
+    "match_then_delete_counterexample"
+  ],
+  "module_sha256": "4ba1517f42d7b60e109db1675c9c4b1d54948cc3a45aeec5031cf40cf9ed730b",
+  "checker_sha256": "09303058f5a621fde5969414e0dfc6f13445ef0054f116f1a5d444b14c593d06",
+  "real_cache_opened": false,
+  "identity_values_opened": false,
+  "training_or_tracker_replay": false,
+  "efficacy_or_novelty_established": false
+}

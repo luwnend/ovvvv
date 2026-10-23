@@ -4,6 +4,8 @@
 正式protocol SHA `a7169f8674d8e019782820bc7b4a99ff4b2082bdeaa0a731e60352a488ed9be1`；preflight SHA `9fb4633e125a6f646a9de55642ad376da4642df220ff3a87673fe0c9b2dc100c`。
 启动不是完成；后续状态以实际 execution receipts 和最终fresh audit为准。
 
+阶段补充（2026-10-24 03:03:57 Asia/Shanghai快照）：前两个worker均完成训练/完整评分并actual exit0（578.933/592.738秒），第三个运行；70 launch pins及7保护现场重核未变，尚无全局seal或新OOF评价。另已完成共同运动观测/文献/参考模块独审，入口`report/COVTrack_共同运动与独立几何参照_20261024.md`；此模块未接入当前OOF，不能改变本协议或把其普通控制计为新方法。快照凭据`identity_spacetime_scene_audit_live_checkpoint_20261024.json`，当前状态仍用下述只读命令，不重启。
+
 ## 固定目标与边界
 
 - 工作目录 `/home/chenhc/ov/OVMOT_RESEARCH`；托管副本 `/home/chenhc/ov/ovvvv`。

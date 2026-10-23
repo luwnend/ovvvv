@@ -1,0 +1,42 @@
+{
+  "command": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+    "-u",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/train_identity_spacetime_oof_model_20261024.py",
+    "--execute",
+    "--protocol",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_protocol_20261024.json",
+    "--fold",
+    "0",
+    "--seed",
+    "20261024",
+    "--out",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold0_seed20261024"
+  ],
+  "pid": 358097,
+  "identity": {
+    "pid": 358097,
+    "start_ticks": 574364903,
+    "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+    "cmdline": [
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+      "-u",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/train_identity_spacetime_oof_model_20261024.py",
+      "--execute",
+      "--protocol",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_protocol_20261024.json",
+      "--fold",
+      "0",
+      "--seed",
+      "20261024",
+      "--out",
+      "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold0_seed20261024"
+    ],
+    "state": "R"
+  },
+  "started_utc": "2026-10-23T18:42:28.093362+00:00",
+  "finished_utc": "2026-10-23T18:52:07.026471+00:00",
+  "elapsed_seconds": 578.9331434974447,
+  "actual_exit_code": 0,
+  "waited_by_parent_pid": 358095
+}

@@ -1,0 +1,153 @@
+{
+  "stage": "scene_motion_reference_and_audits_20261024",
+  "OOF_is_complete": false,
+  "new_method_effectiveness_established": false,
+  "scene_motion_is_ordinary_control": true,
+  "source_root": "/home/chenhc/ov/OVMOT_RESEARCH",
+  "files": [
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/项目进度.md",
+      "destination": "report/项目进度.md",
+      "bytes": 20828,
+      "sha256": "7b669a1528d0aede9a4de85b0078f48faf33b7c6a84595b136c417faa4cb10fe"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_特征与时空改进_20261024.md",
+      "destination": "report/COVTrack_特征与时空改进_20261024.md",
+      "bytes": 19844,
+      "sha256": "92175f586a4d195a518ed83e52a819b76c1ab8013779a00203deefa67a98f6ac"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_共同运动与独立几何参照_20261024.md",
+      "destination": "report/COVTrack_共同运动与独立几何参照_20261024.md",
+      "bytes": 5877,
+      "sha256": "b725182af140f966091c5d92d739c98c1c8d6d8ca813c3db1842600651f6897c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_handoff_20261024.md",
+      "destination": "tmp_analysis/identity_spacetime_oof_handoff_20261024.md",
+      "bytes": 5773,
+      "sha256": "4fd16102faeb31fb364b02b653fbdb137dc5bdd178a62ef35a8c2c012bbda305"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_scene_audit_live_checkpoint_20261024.json",
+      "destination": "tmp_analysis/identity_spacetime_scene_audit_live_checkpoint_20261024.json",
+      "bytes": 1946,
+      "sha256": "9b09dd6a31ceab05f4e86589050e1ac4e757af97ea8ca7743add0953fcd708d1"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/sync_scene_motion_stage_20261024.py",
+      "destination": "tmp_analysis/sync_scene_motion_stage_20261024.py",
+      "bytes": 4348,
+      "sha256": "ed3ea2ce00491ac2e86cecd09d1bf7d7a1a8f3f729dc8c897a571b53c926969f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/endpoint_excluded_scene_motion.py",
+      "destination": "tmp_analysis/endpoint_excluded_scene_motion.py",
+      "bytes": 8598,
+      "sha256": "4ba1517f42d7b60e109db1675c9c4b1d54948cc3a45aeec5031cf40cf9ed730b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/check_endpoint_excluded_scene_motion_20261024.py",
+      "destination": "tmp_analysis/check_endpoint_excluded_scene_motion_20261024.py",
+      "bytes": 7323,
+      "sha256": "09303058f5a621fde5969414e0dfc6f13445ef0054f116f1a5d444b14c593d06"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_endpoint_excluded_scene_motion_20261024.py",
+      "destination": "tmp_analysis/audit_endpoint_excluded_scene_motion_20261024.py",
+      "bytes": 11425,
+      "sha256": "81089a0e2ae359ab4c9d3c4cf341c33e0b56e3ca36e09c0c84a40c1a09bed689"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/endpoint_excluded_scene_motion_runtime_20261024.json",
+      "destination": "tmp_analysis/endpoint_excluded_scene_motion_runtime_20261024.json",
+      "bytes": 670,
+      "sha256": "36d3115aabb1f980066d135a071ca37d5cac4cf7897df8cf690b1e1b77c2214b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_motion_observability_audit_20261024.md",
+      "destination": "tmp_analysis/scene_motion_observability_audit_20261024.md",
+      "bytes": 18746,
+      "sha256": "edc9ccb88cd93e79443c00aadb0d31990ed9eaa0920ad869d55c987da83b529a"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_motion_novelty_audit_20261024.md",
+      "destination": "tmp_analysis/scene_motion_novelty_audit_20261024.md",
+      "bytes": 14751,
+      "sha256": "4c2d459486b175f3b2d6551c2ddff165165322ce98e512e9b42fdae45ba266ee"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/scene_motion_sources_20261024/manifest.json",
+      "destination": "tmp_analysis/scene_motion_sources_20261024/manifest.json",
+      "bytes": 7948,
+      "sha256": "177fbfa11b1ba54576b68e6f7a147508b177fffe1f77ab267ca9f7aa593deaba"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/spacetime_next_mechanism_design_audit_20261024.md",
+      "destination": "tmp_analysis/spacetime_next_mechanism_design_audit_20261024.md",
+      "bytes": 19632,
+      "sha256": "7d9b24896c9fb1b6e67c879c14da7848b9c2c22746a233cdb0591dfa9b35c390"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/endpoint_excluded_scene_motion_synthetic_round1_20261024_v2.json",
+      "destination": "tmp_analysis/endpoint_excluded_scene_motion_synthetic_round1_20261024_v2.json",
+      "bytes": 616,
+      "sha256": "d51c84a95f9852e61e787bd25fcae9bbbcadb9598e6906e7ce3ad3faf232559f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/endpoint_excluded_scene_motion_synthetic_round2_20261024_v2.json",
+      "destination": "tmp_analysis/endpoint_excluded_scene_motion_synthetic_round2_20261024_v2.json",
+      "bytes": 630,
+      "sha256": "823ce59798813131caae7bbc544f53424d665f94a6cce72bbb8a66307092fb7d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/endpoint_excluded_scene_motion_synthetic_round3_20261024_v2.json",
+      "destination": "tmp_analysis/endpoint_excluded_scene_motion_synthetic_round3_20261024_v2.json",
+      "bytes": 782,
+      "sha256": "5a791ee2c6ea2d471d01f1166bd20618777715026decef556c86220f149bdd08"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/endpoint_excluded_scene_motion_independent_round1_20261024.json",
+      "destination": "tmp_analysis/endpoint_excluded_scene_motion_independent_round1_20261024.json",
+      "bytes": 755,
+      "sha256": "d4b88c8c559c4bc21069bbec981722fdabbf9ec60c4622585c6f0f17f035d2d5"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/endpoint_excluded_scene_motion_independent_round2_20261024.json",
+      "destination": "tmp_analysis/endpoint_excluded_scene_motion_independent_round2_20261024.json",
+      "bytes": 769,
+      "sha256": "2627f43e63b63c6fd9d4b553bf4d6b29e89edcd7c41b66c6db232466b776a242"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/endpoint_excluded_scene_motion_independent_round3_20261024.json",
+      "destination": "tmp_analysis/endpoint_excluded_scene_motion_independent_round3_20261024.json",
+      "bytes": 750,
+      "sha256": "328720b9f78b81ddd6977923b361ca8386f0e34f40b364faa5fba78070af7a73"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_execution_20261024_v1/model_processes/fold0_seed20261024.exit.json",
+      "destination": "evidence/identity_spacetime_oof_execution_20261024_v1/model_processes/fold0_seed20261024.exit.json",
+      "bytes": 1380,
+      "sha256": "878fa90512a64683fe46de509eeb8c853763309de92608cf02cf71f1503905d9"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_execution_20261024_v1/model_processes/fold1_seed20261024.exit.json",
+      "destination": "evidence/identity_spacetime_oof_execution_20261024_v1/model_processes/fold1_seed20261024.exit.json",
+      "bytes": 1380,
+      "sha256": "c38bfc61143bae5442fd85184470d930f40f726d170adfe2e5de0fafda2692e9"
+    }
+  ],
+  "excludes": [
+    "dataset",
+    "images",
+    "weights",
+    "score shards",
+    "SQLite",
+    "JSONL",
+    "model checkpoints",
+    "logs",
+    "full paper PDFs",
+    "paper renderings"
+  ]
+}

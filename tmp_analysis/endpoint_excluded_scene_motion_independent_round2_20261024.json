@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_ENDPOINT_EXCLUDED_SCENE_MOTION_SYNTHETIC_AUDIT",
+  "round": 2,
+  "checks": [
+    "27_empty_zero_raw_and_random_frames_match_independent_scalar_cosine_median_MAD_leaveone_oracle",
+    "strict_ties_zero_rows_empty_support_and_missing_competitor_margin_remain_explicit",
+    "independent_query_reference_permutations_preserve_translation_MAD_leaveone_and_mapped_anchors"
+  ],
+  "module_sha256": "4ba1517f42d7b60e109db1675c9c4b1d54948cc3a45aeec5031cf40cf9ed730b",
+  "script_sha256": "81089a0e2ae359ab4c9d3c4cf341c33e0b56e3ca36e09c0c84a40c1a09bed689",
+  "real_cache_or_identity_or_new_OOF_evaluation_opened": false,
+  "physical_camera_identification_established": false,
+  "full_population_compute_or_tracking_effectiveness_audited": false
+}
