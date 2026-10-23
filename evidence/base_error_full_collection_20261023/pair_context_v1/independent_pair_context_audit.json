@@ -1,0 +1,58 @@
+{
+  "status": "PASS_INDEPENDENT_FULL_GT_FREE_PAIR_CONTEXT_AUDIT",
+  "pair_context": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1",
+  "pair_context_receipt_sha256": "ae9b5fd9a122533733e14208e81b0c875ca7bbb41ed1397ff4b804b25901dd2c",
+  "producer_sha256": "70ac6b7e844cbff3802ced02db732d04d32f72173e32e684ece0befdf9ddb654",
+  "independent_verifier_sha256": "0b65685a6da1fe758527af4f9c9ea07e4801a536b5c882ac13df33066d73f590",
+  "implementation_preflight_sha256": "6c0a6045370b5561ef367d4b3848d7715d1eb1e2ec430d1de5df8f6147e5ce0f",
+  "protocol_sha256": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718",
+  "accepted_manifest_sha256": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+  "full_plan_sha256": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+  "output_files_sha256": {
+    "edges.jsonl": "1d4b7df64db28600d08bd3689c1f1af23d58f9e16bcff98acc33cd7f698f9c01",
+    "source_roles.json": "afa61df067f392b84ba917e1c536a9b64b869dbda19a2236b0a05b6f5c51cb8b",
+    "track_contexts.jsonl": "35f3b6f7a2e9dda26656b56693ea173fd5039472146ce1eb1179470956bf3faf"
+  },
+  "all_emitted_observations_verified": 681602,
+  "all_emitted_tracks_verified": 144930,
+  "source_groups_roles_verified": 383,
+  "supported_tracks_verified": 52303,
+  "candidate_hashes_independently_recomputed": 3947118,
+  "retained_edges_verified": 623878,
+  "every_real_supported_track_minimum_hash_fully_verified": true,
+  "every_edge_complete_reference_complement_hash_verified": true,
+  "all_endpoint_membership_times_source_roles_and_caps_verified": true,
+  "counters_recomputed": {
+    "all_emitted_tracks": 144930,
+    "all_emitted_observations": 681602,
+    "supported_tracks": 52303,
+    "candidate_edges_lag_bin_0": 606278,
+    "retained_edges": 623878,
+    "retained_edges_lag_bin_0": 171039,
+    "edges_with_disjoint_reference_support": 497958,
+    "candidate_edges_lag_bin_1": 714133,
+    "candidate_edges_lag_bin_2": 895490,
+    "candidate_edges_lag_bin_3": 1731217,
+    "retained_edges_lag_bin_3": 147325,
+    "retained_edges_lag_bin_1": 158499,
+    "retained_edges_lag_bin_2": 147015,
+    "tracks_below_reference_support": 92627
+  },
+  "source_role_counts": {
+    "pair_role": 169,
+    "mean_role": 172,
+    "tune_evaluation": 42
+  },
+  "max_track_observations": 40,
+  "elapsed_seconds": 54.17477420065552,
+  "real_NPZ_opened": false,
+  "supervision_or_correctness_opened": false,
+  "model_imported_or_trained": false,
+  "GPU_used": false,
+  "scope": "All real upstream index/track rows and all output roles/contexts/edges; every candidate hash recomputed, not sampled.",
+  "limitations": [
+    "This audits the compact GT-free reference index, not posterior pooling, split-reference assignments or feature values.",
+    "Endpoint supervision eligibility and same-official-identity joins remain unopened; no pair learner, efficacy or novelty is established.",
+    "Producer historical IO claims rely on the reviewed exact script hash; this verifier itself opens only listed JSON/JSONL and source/hash files."
+  ]
+}

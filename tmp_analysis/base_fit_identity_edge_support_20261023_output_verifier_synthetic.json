@@ -1,0 +1,8 @@
+{
+  "status": "PASS_INDEPENDENT_FIT_IDENTITY_OUTPUT_VERIFIER_SYNTHETIC",
+  "outcome_and_tune_identity_decoder_poison_passed": true,
+  "concentration_verified": true,
+  "producer_imported": false,
+  "real_data_opened": false,
+  "verifier_sha256": "862d31f63331a288804d808fb303e6704d6f4fdfa80f97daf13971f44c0f795d"
+}

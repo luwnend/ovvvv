@@ -1,0 +1,1886 @@
+{
+  "status": "SEALED_METADATA_ONLY_SOURCE_ROLES",
+  "role_seed": "pair_role_v1",
+  "rule": "Block by source-group prefix; hash order; alternate mean_role/pair_role; tune fixed evaluation",
+  "groups": {
+    "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/2c07fcda-6671-3ac0-ac23-4a232e0e031e": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/84c35ea7-1a99-3a0c-a3ea-c5915d68acbc": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "ArgoVerse"
+    },
+    "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "ArgoVerse"
+    },
+    "BDD/b1d0a191-03dcecc2": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b1f85377-44885085": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "BDD/b20b69d2-e31380a7": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b20b9c19-91e01a50": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b21c68e6-65674a17": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b21d5efb-5e2cd743": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b22a4d9f-73cc8810": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b232c7c9-d251d9ee": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b249e7f2-92d2efad": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b262f576-b0373824": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b27098c3-c443b6e3": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b27127df-eac9b95e": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b27369f3-9b9598f4": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b27688b6-cd521517": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b28ec521-898e11bd": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b2bee3e1-80c787bd": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b2d502aa-64d3e228": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b2d502aa-f0b28e3e": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b2dbb793-9f0b2bec": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b2de938e-84eab379": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b2e2b2be-4142962b": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b2fc7cb5-1635d64b": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b2ff6aba-fa4ac7d7": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b3079ec6-df7b2d92": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b30b460d-73d12a29": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b3159650-1ba75f9b": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b3378e5e-b7593301": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b33ea6cb-3464fb13": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b34b1b88-5bfe3b85": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b368ee71-cf27b7fa": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b36e0178-2037ca44": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b39fe3cd-227ff7a8": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b3a9281a-e8ba5d66": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b3b9ee6e-6d2617d1": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b3be4113-1fb56ec4": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b3c939e3-3fb7622a": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "BDD/b3ce9f98-2b3d06d6": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "BDD/b3ce9f98-2dc52573": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b3da33d5-a64e7657": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b3e0345b-69069f01": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "BDD/b3e08585-5cf240fb": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "BDD/b40b0ea3-b242efc9": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b422ec08-d42660b6": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b4235ab3-b305d3e9": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "BDD/b4278d1f-dbd0295c": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b4301c7b-da5261f0": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b4466011-05cbc315": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "BDD"
+    },
+    "BDD/b4536117-bc85ba28": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "BDD"
+    },
+    "Charades/0LHWF": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/1410C": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "Charades/35LUV": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/38TF8": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "Charades/3N1I2": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/48BUM": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/4H61U": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/4K0BP": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/4U8WV": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "Charades/50E06": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/5HPZ1": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/6EU06": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/6FV5P": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/7177T": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/735W9": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/7P0JX": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/8Q0EY": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/9M48H": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/9UU4W": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/A2EY4": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/AIOTI": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/AVSN8": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/BI6Y4": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/CF9QP": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/CYLQ0": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "Charades/E8468": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/E9FY2": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/EIKUN": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/FHAV0": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/FZAEP": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/G2DIN": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/G8NEV": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/GL2JW": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/GQ341": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/HOYUT": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/HSKVH": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/HYD3N": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/IIL9C": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/IULK6": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/JLGLU": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "Charades/JMPKP": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/JOUM7": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "Charades/KA3ER": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/KPHP5": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/LHTSI": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/M6ERH": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/MZ9X7": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/NPEA3": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/O87OF": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/O8DER": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/PC7H2": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/PEWH4": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/PJUM0": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/QBUAT": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/QCPXJ": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/QHU9R": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/QZZPS": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/S7OTQ": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/SM5WL": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "Charades/SROEU": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/SVA4D": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/TQO6O": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/U08M9": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/U4J2Q": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/UDGP2": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/V7YEJ": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/W97NR": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/WJ1GN": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "Charades/X9LP4": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/Y3M3W": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/YE6UZ": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/YK49T": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "Charades/YXQWH": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "Charades"
+    },
+    "Charades/Z6HEA": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "Charades"
+    },
+    "LaSOT/airplane-4": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/basketball-11": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/basketball-4": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/basketball-6": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/bicycle-18": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "LaSOT/bicycle-4": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/bicycle-7": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/bicycle-9": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/bird-11": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/bird-12": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/bird-17": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/boat-4": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/boat-7": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "LaSOT/boat-9": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/book-11": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/book-15": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/book-2": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/book-3": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/bottle-12": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/bus-19": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/bus-8": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/car-17": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/cat-1": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/cat-13": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/cat-4": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/cat-7": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/cattle-14": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/cattle-9": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/cup-9": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/deer-15": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/deer-4": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/dog-13": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/electricfan-13": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/elephant-14": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/elephant-19": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "LaSOT/elephant-6": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/flag-5": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/giraffe-19": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/goldfish-17": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/guitar-6": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "LaSOT/guitar-9": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/hat-18": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/helmet-1": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/helmet-3": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/horse-11": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "LaSOT/kite-18": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/lion-12": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/lion-15": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/lion-9": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/lizard-16": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/microphone-12": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/microphone-13": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/microphone-3": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/monkey-16": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/monkey-19": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/motorcycle-1": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "LaSOT/motorcycle-19": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/person-2": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/person-3": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/person-7": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/pool-17": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/rabbit-17": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/racing-14": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/racing-20": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/shark-18": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "LaSOT/shark-20": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/sheep-15": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/skateboard-1": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/skateboard-18": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/skateboard-8": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/spider-5": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/surfboard-19": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "LaSOT/surfboard-8": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/swing-18": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/tank-12": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/tank-2": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/tiger-13": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/truck-10": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/truck-5": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/turtle-16": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "LaSOT/umbrella-18": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/volleyball-15": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "LaSOT/volleyball-18": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/volleyball-19": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/volleyball-20": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/zebra-14": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/zebra-18": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "LaSOT"
+    },
+    "LaSOT/zebra-19": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "LaSOT"
+    },
+    "YFCC100M/v_10e0d0b52a44a1ab398d4dac2947e6e": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_23584c2660351f12cffe1399c47ce870": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_6f90a13c795ef37404d95983341df": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_72252bc9435f88bbfb28aac25484f30": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_82e9bb97b1a1fdde489511e69126644": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_8d2127ed36a7e7d486ac8bf45dba0d2": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YFCC100M/v_9018a07931e02026b3bd6e82489d4624": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_b0b899f491f5d4c6fb47f89564034d1": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_ca3710d4f4cd8b4316974b641d37ba3": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_df4744928b9b4199b5c73344efdce65": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_e16e325327dd0974bda9bbd7a35118c": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_e2d3c540737396bebd0a4b53b3174e": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_ea33c680e1f18d71543b8f80815beec": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_f1a914ab56b365013c9101083423370": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_f729d4f362aea24236153ffc589adac": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_f93e2640ce4cf8b1195c94764803414": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YFCC100M"
+    },
+    "YouTube/-6quA485tw8": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/-dQIXiV6gk0": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/0_gLCCZHzPs": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YouTube/1cU81_rjt7s": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/1mPd_3N5gNQ": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/25eIK85JWi4": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/313tbNN4J3o": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/4KBTeNdE66U": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YouTube/4ltcNlAq1wI": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/5BDj0ow5hnA": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/7SFkVnnp_eE": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/7XQoDEQGqaw": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/7YULkl7Xm04": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/7_xkhnbnI7M": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/87ksUt7mO3o": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/8Zb-jZoObrk": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YouTube/9sZI9IdgXZY": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/AjH8TFfZIGY": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/C48cXamb2B0": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/Ce7YdX2cido": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/D8Vhxbho1fY": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/EOSzItLkZQQ": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/Fu0b-YbpPak": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/G5hzcxkcAvM": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YouTube/H8g9ZBuQmrE": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/HtaNMyVa260": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/I7Q-x9MorO0": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/IS3OtsJFP7Y": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/IUbQjSiZL-Y": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/J4ms6F6jgEk": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YouTube/JMzNLlatrys": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/JX1uj-YRiYo": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/JvtJRvTKzvw": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/KUdBvuRaAbk": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/LFPYYYZstjg": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/Or8dXBSS_LM": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/PQkE02amSDY": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/Q5SutMM8H4I": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/QEFmA2nj12w": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/Q_701AtuEbE": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/QlXEyPOUMUg": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/Rf1XKstMa4E": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/SA-if-DMT7E": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/TcB0IFBwk-k": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/VTEcwSCLwLg": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/Vl9zODoJMIU": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/WKqbLbU68wU": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/WwmfBwEMP6s": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/XOe9GeojzCs": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/XV_FF3WC7kA": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/Y0DKz3JCq3I": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/YAAUPjq-L-Q": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/YD5C5LX7j4k": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/Z11ALGaUmH0": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/ZbeMNLwASVo": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/Zyo70ZiXmYY": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/_cQZ-vtuFwQ": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YouTube/aboKQqtoowA": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/bFTTE4TV-ek": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/bLoWh2xbm6o": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/blDEcY6HZUU": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/c0FxOPxBaac": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/cB83GjrvoeE": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/cLiJgvrDlWw": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/d-orB-PokJw": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/dBXvpdoalr8": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YouTube/dYAA0JLFrTc": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/dZZqaYgPrY0": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/dtlXB2kt09k": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/eXklJqhFx8E": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/ef5NncrTQu4": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/f9U2VDJTIhg": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/h3-lxgAoXwI": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/hL-ePuEk4_M": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/hg9scj8FyjY": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/iSjk42F0rvM": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/jO3vuJ4xhns": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/k2-d6fLeMSo": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YouTube/kM1naurrexk": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/lC0HkItqIqA": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/mThUfYcea3I": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/mkcDANJjDcM": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/mq7Wv-5qJwc": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/nKsIbi_R02U": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/na6zkG7dl3A": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/oXNm2E97N9c": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YouTube/od2IpoFxeMI": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/owDp3KOHmu8": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/pI8tpZLBcFk": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/qGbvHecNfEo": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YouTube/qlPC7oMm93g": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/rin4oz7Fego": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/s54UiLm7JLU": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/sRd38UFfp6c": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/tt0t_a1EDCE": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YouTube/tvzrxfgWSc4": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/u40AQIBH_Gs": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/uqUfP7ugJp0": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/uwW0ejeosmk": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/v0N4o4Px8jQ": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/vbQwxMme5yk": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/vrWYdPeIUqw": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/xNxxM-OOMfw": {
+      "split": "tune",
+      "role": "tune_evaluation"
+    },
+    "YouTube/yZGRVcIKU6Q": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/yb7EbSnIAqM": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/z-fsLpGHq6o": {
+      "split": "fit",
+      "role": "pair_role",
+      "block": "YouTube"
+    },
+    "YouTube/zVN1SBxfR40": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    },
+    "YouTube/zhdNNmwnYMI": {
+      "split": "fit",
+      "role": "mean_role",
+      "block": "YouTube"
+    }
+  },
+  "counts": {
+    "pair_role": 169,
+    "mean_role": 172,
+    "tune_evaluation": 42
+  },
+  "outcomes_used": false
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PASS_INDEPENDENT_GT_FREE_PAIR_CONTEXT_SEALER_IMPLEMENTATION_PREFLIGHT",
+  "script_sha256": "70ac6b7e844cbff3802ced02db732d04d32f72173e32e684ece0befdf9ddb654",
+  "protocol_sha256": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718",
+  "accepted_manifest_sha256": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+  "full_plan_sha256": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+  "rounds": [
+    {
+      "round": 1,
+      "checks": [
+        "Fixed accepted path rejects a self-consistent replacement before any IO/output",
+        "Fixed hash rejects changed bytes; imports contain no model/array loader"
+      ],
+      "status": "PASS"
+    },
+    {
+      "round": 2,
+      "checks": [
+        "Independent brute-force SHA oracle, all boundaries, complement references and order/label invariance",
+        "Independent blocked source hash roles, poisoned extras/order and cross-split rejection"
+      ],
+      "randomized_track_cases": 53,
+      "status": "PASS"
+    },
+    {
+      "round": 3,
+      "checks": [
+        "Strict loader rejects supervision/type/membership mutations, opens only two synthetic JSONLs and retains unsupported-group roles",
+        "Invalid original timelines/repeated images reject; pure selection and roles perform no IO"
+      ],
+      "rejected_mutations": [
+        "error",
+        "gt_track_id",
+        "sampled_step",
+        "original_frame_index",
+        "dump_row",
+        "duplicate_track_membership",
+        "reverse_original_time",
+        "equal_original_time",
+        "repeated_image"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "real_full_index_rows_opened": false,
+  "real_NPZ_opened": false,
+  "real_supervision_opened": false,
+  "real_full_build_executed": false,
+  "model_fitting": false,
+  "GPU_used": false,
+  "scope": "Implementation and synthetic preflight only; no real pair-context artifact audited, no pair efficacy/mechanism claim.",
+  "limitations": [
+    "Source roles and references use all emitted metadata; later eligible endpoints/GT joins require separate frozen tables and independent audits.",
+    "The current fixed accepted path/hash deliberately forbids a CLI override; changing upstream selection requires independent re-review.",
+    "Reference posterior pooling and disjoint reference splitting are not implemented at this index-only stage."
+  ],
+  "created_utc": "2026-10-23T15:30:16.874021+00:00",
+  "independent_challenge_script_sha256": "e88688935c0ee7446070fea766d037cc97f890861a55b9192447e4cde5d7c2a4",
+  "actual_execution_exit_codes": {
+    "producer_self_test": 0,
+    "independent_three_round_challenges": 0,
+    "self_consistent_upstream_replacement_challenge": 0
+  },
+  "fixed_findings": [
+    {
+      "problem": "Upstream manifest was only self-consistent, not authenticated to the independently accepted artifact",
+      "repair": "Bind exact accepted full manifest path and SHA before parsing index rows; no CLI override"
+    },
+    {
+      "problem": "A malformed original timeline could emit zero or negative original-frame lag; bool integer aliases were not uniformly rejected",
+      "repair": "Require integer nonboolean identities/times, distinct images and strictly increasing original frame indices before edge selection"
+    }
+  ],
+  "second_reader": "posterior_cache independently read final auth/GT-free IO/roles/edge paths; no blocking issue found",
+  "runtime_note": "Edge scan enumerates all combinations: O(sum track_length**2). Per-bin cap bounds retained output, not computation.",
+  "upstream_self_consistent_replacement_rejected": true
+}

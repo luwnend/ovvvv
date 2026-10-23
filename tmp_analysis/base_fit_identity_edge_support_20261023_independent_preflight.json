@@ -1,0 +1,53 @@
+{
+  "status": "PASS_INDEPENDENT_FIT_IDENTITY_EDGE_SUPPORT_IMPLEMENTATION_PREFLIGHT",
+  "script_sha256": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+  "created_utc": "2026-10-23T15:43:32.848663+00:00",
+  "rounds": [
+    {
+      "round": 1,
+      "checks": [
+        "Decoder poison confirms fit split projection precedes identity and tune identity/outcome values never reach decoder",
+        "Escaped duplicate key, invalid literal, trailing data and forbidden projection fail closed; valid extreme skipped outcome is not interpreted"
+      ],
+      "status": "PASS",
+      "decoder_calls": 142
+    },
+    {
+      "round": 2,
+      "checks": [
+        "Independent four-state endpoint oracle preserves unknowns, all selected edges and reference hashes; unrelated track identities do not affect local join",
+        "Role/cross-video/local/time/reference mutations reject; fixed24cells, empty-role sources and independent concentration arithmetic hold"
+      ],
+      "status": "PASS"
+    },
+    {
+      "round": 3,
+      "checks": [
+        "Synthetic full gate/build preserves every fit selected edge and skips tune edge/identity, with IO restricted to temporary fixtures plus source hash",
+        "Changed sealed roles or supervised-row bytes reject against independent upstream hash bindings before joining"
+      ],
+      "status": "PASS",
+      "opened_fixture_paths": 13
+    }
+  ],
+  "actual_independent_challenge_exit_code": 0,
+  "fit_filter_precedes_identity_projection": true,
+  "classification_correctness_values_not_decoded": true,
+  "tune_identity_values_not_decoded": true,
+  "unknown_not_negative": true,
+  "all_fit_selected_edges_preserved": true,
+  "all_emitted_reference_hashes_preserved": true,
+  "roles_not_reassigned_by_support": true,
+  "upstream_audit_receipt_output_hashes_fail_closed": true,
+  "real_full_join_executed": false,
+  "real_supervision_rows_opened": false,
+  "real_NPZ_opened": false,
+  "model_imported_or_fitted": false,
+  "GPU_used": false,
+  "scope": "Implementation and synthetic preflight for a descriptive fit-only endpoint identity support table; no mechanism or learning gate.",
+  "limitations": [
+    "Mixed support bytes are hashed and lexically scanned; only requested fit fields are decoded. Do not claim the mixed file was never read.",
+    "Manual provenance is inherited from fixed-hash independently audited eligible support rows; this stage does not rematch raw GT.",
+    "A different-GT edge labels its observed endpoints only, not references or whole-track purity."
+  ]
+}

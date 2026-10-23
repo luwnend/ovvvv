@@ -1,0 +1,28 @@
+{
+  "status": "PASS_INDEPENDENT_PAIR_CONTEXT_OUTPUT_AUDIT_EXECUTION",
+  "completed_utc": "2026-10-23T15:37:15.116026+00:00",
+  "actual_observed_exit_code": 0,
+  "tool_session_id": 90413,
+  "argv": [
+    "python3",
+    "tmp_analysis/verify_full_pair_context_output.py",
+    "--pair-context",
+    "results/base_error_full_collection_20261023/pair_context_v1"
+  ],
+  "log": "results/base_error_full_collection_20261023/execution_logs/pair_context_v1_independent_audit.log",
+  "log_sha256": "76609b2e63731a1b07ecbd96bab1a3cbf01f12c1e5c2da06b024144566f32275",
+  "independent_audit_sha256": "df7c386a8f01d3dbfce928e58758f9c455f685e8485dbfa8b19a0cd4ac936e81",
+  "pair_context_receipt_sha256": "ae9b5fd9a122533733e14208e81b0c875ca7bbb41ed1397ff4b804b25901dd2c",
+  "verifier_sha256": "0b65685a6da1fe758527af4f9c9ea07e4801a536b5c882ac13df33066d73f590",
+  "synthetic_actual_observed_exit_code": 0,
+  "synthetic_receipt_sha256": "5b815b8febd4149947e5731cee4442ecff0e0fa8f559c0873f9eb780c2d18e2b",
+  "real_verification": "All681602 observations/all144930 tracks/all383 source roles; all52303 supported track contexts; ALL3947118 candidate SHA256 hashes and ALL623878 retained edge fields/complement references. No sampling.",
+  "producer_imported": false,
+  "NPZ_opened": false,
+  "supervision_or_correctness_opened": false,
+  "model_imported_or_fitted": false,
+  "GPU_used": false,
+  "limitations": [
+    "This is a GT-free compact index audit only; no posterior pooling, identity join or statistical/mechanism result is established."
+  ]
+}

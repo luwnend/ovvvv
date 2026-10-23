@@ -1,0 +1,36 @@
+{
+  "status": "PASS_SYNTHETIC_FIT_IDENTITY_EDGE_STRUCTURE_SUPPORT",
+  "script_sha256": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+  "synthetic_selected_edges": 6,
+  "identity_counts": {
+    "same_gt": 1,
+    "different_gt": 3,
+    "one_endpoint_unknown": 1,
+    "both_endpoints_unknown": 1
+  },
+  "tune_poison_skipped_before_identity_projection": true,
+  "classification_outcome_values_not_decoded": true,
+  "unknown_not_negative": true,
+  "whole_track_purity_not_used": true,
+  "reference_hashes_unchanged": true,
+  "empty_sources_and_fixed_cells_preserved": true,
+  "source_concentration_verified": true,
+  "rejected_mutations": [
+    "test_edge",
+    "role_changed",
+    "endpoint_video_changed",
+    "endpoint_local_changed",
+    "lag_changed",
+    "references_changed",
+    "duplicate_split",
+    "forbidden_projection",
+    "trailing_data",
+    "invalid_literal",
+    "test_support_row",
+    "duplicate_supervision"
+  ],
+  "real_support_opened": false,
+  "real_pair_edges_opened": false,
+  "training_started": false,
+  "GPU_used": false
+}

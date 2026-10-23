@@ -1,0 +1,27 @@
+{
+  "status": "PASS_INDEPENDENT_FIT_IDENTITY_SUPPORT_AUDIT_EXECUTION",
+  "completed_utc": "2026-10-23T15:51:19.010619+00:00",
+  "actual_observed_exit_code": 0,
+  "tool_session_id": 70485,
+  "argv": [
+    "python3",
+    "tmp_analysis/verify_fit_identity_edge_support_output.py"
+  ],
+  "log": "results/base_error_full_collection_20261023/execution_logs/fit_identity_edge_support_independent_audit_20261023.log",
+  "log_sha256": "7cc5789661cc435c6075c00bc07c4412ab5aa9c6001e636c461f643b82fc19c6",
+  "independent_audit_sha256": "8e0cafbb0dea4c9120119e62ff0bb9d5a5a3bd06855d5140117aa2481372beaf",
+  "summary_sha256": "125ee4641362b0d3068804dea961fb3c002739f4ee7c54fd33515d56f217e4fb",
+  "fit_edge_identity_rows_sha256": "42e04f50bedcf9bfcbcc4b2390d5c5e42e4468ca6c996d4e2afcaff7d2cab91b",
+  "verifier_sha256": "862d31f63331a288804d808fb303e6704d6f4fdfa80f97daf13971f44c0f795d",
+  "producer_sha256": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+  "synthetic_actual_observed_exit_code": 0,
+  "synthetic_receipt_sha256": "c213d9dd3e24cd3b9740db986034e7ba9821796d26df8e3418206669fa8fd4ff",
+  "all_fit_identity_observations_verified": 21661,
+  "all_fit_selected_edges_verified": 560371,
+  "all_fixed_cells_and_source_cells_and_concentrations_recomputed": true,
+  "classification_outcome_values_decoded": false,
+  "tune_identity_values_decoded": false,
+  "NPZ_opened": false,
+  "model_imported_or_fitted": false,
+  "GPU_used": false
+}

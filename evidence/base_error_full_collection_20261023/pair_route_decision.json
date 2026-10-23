@@ -1,0 +1,55 @@
+{
+  "status": "STOP_CURRENT_G_MIXED_CONDITIONING_DEPLOYMENT_AND_INTRINSIC_COVARIANCE_ATTRIBUTION",
+  "decided_utc": "2026-10-23T15:45:00.368039+00:00",
+  "frozen_protocol_sha256": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718",
+  "frozen_protocol_modified": false,
+  "root_independently_read_full_audits_and_synthetic": true,
+  "rounds": [
+    {
+      "round": 1,
+      "checks": [
+        "strict_same_A_fixed_Y_counterexample_exact_rational",
+        "unknown_Y_counterexample_with_exact_mu_d_pi"
+      ]
+    },
+    {
+      "round": 2,
+      "checks": [
+        "risk_projection_identity_and_strict_positive_K1203",
+        "joint_class_permutation_and_nonidentical_endpoint_exchange"
+      ]
+    },
+    {
+      "round": 3,
+      "checks": [
+        "coarse_pi_and_h_recover_coarse_mean_but_richer_pi_does_not_recover_full_conditional",
+        "matched_conditioning_oracle_pi_reconstructs_G_and_coarse_relation_can_still_help"
+      ]
+    }
+  ],
+  "checks_total": 6,
+  "fixed_Y_ideal_mean_excess_MSE": {
+    "exact": "729/40000",
+    "float": 0.018225
+  },
+  "unknown_Y_ideal_mean_excess_MSE": {
+    "exact": "3969/4000000",
+    "float": 0.00099225
+  },
+  "reason": "E[G|A,Y] integrated with P(Y|current full p,A) does not generally estimate E[G|current full p,A]; conditional optimum for this G is already fixed by full p and the common-label posterior. A finite C129 win cannot identify additional intrinsic covariance.",
+  "scope": "Stop this frozen operational/novelty route before real pair fitting; do not infer universal impossibility of coarse relational prediction or attention.",
+  "six_basis_capacity_issue_separate": true,
+  "real_pair_fitting_started": false,
+  "full_support_or_mean_diagnostic_invalidated": false,
+  "test_or_heldout_correctness_opened": false,
+  "full_tune_used_for_decision": false,
+  "GPU_used": false,
+  "next_direction": "Fit-only identity contamination observability/support first; no network training readiness yet",
+  "evidence": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/pair_conditioning_identifiability_audit_20261023.md": "aa029adc8b105cc1b454dcec0e41ce5921de2a7d1e1cb7ba48cf79a688124ac3",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/check_pair_conditioning_mismatch_20261023.py": "ddb935b4bc0e0d8f11cf3e37da0f984a1b746cf78c2cf40e8a0d383451cae113",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/pair_conditioning_mismatch_synthetic_20261023.json": "e57b191449a5d7ece669a5b111e15ecb709ff340eff14eeaebb3df87fd37723f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/semantic_uncertainty_2609_22351_fulltext_audit_20261023.md": "a6b69f6b9d8d5d75a1b3d7a42407dbf13c3e10d6c506eb03c75246f38f60b1e0",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/semantic_uncertainty_2609_22351_source_receipt_20261023.json": "f930459176f86d5b50449ce7d144bc177b193092baabcd06481b32702ae4eba8"
+  }
+}

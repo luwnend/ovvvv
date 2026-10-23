@@ -1,0 +1,125 @@
+{
+  "status": "PASS_FULL_COLLECTION_SUPPORT_AND_NESTED_MEAN_QUALITY_STAGE",
+  "completed_utc": "2026-10-23T15:35:35.413523+00:00",
+  "research_goal_complete": false,
+  "full_collection_status": "PASS_INDEPENDENT_FULL_COLLECTION_COMPLETION_REVIEW",
+  "support_builder_actual_exit": {
+    "tool_session": 51211,
+    "exit_code": 0,
+    "observed_by": "root direct poll in previous turn"
+  },
+  "support_auditor_actual_exit": {
+    "tool_session": 68926,
+    "exit_code": 0,
+    "observed_by": "evaluator_audit direct poll in previous turn"
+  },
+  "full_mean_actual_exit": {
+    "tool_session": 21525,
+    "exit_code": 0,
+    "observed_by": "root direct write_stdin poll"
+  },
+  "full_mean_independent_actual_exit": {
+    "tool_session": 96818,
+    "exit_code": 0,
+    "observed_by": "posterior_cache independent agent direct tool poll"
+  },
+  "mean_elapsed_seconds": 265.5232603549957,
+  "independent_mean_elapsed_seconds": 139.85172033309937,
+  "primary_model": "B3_nested_Platt",
+  "all_models_reported": true,
+  "tune_used_for_selection": false,
+  "test_or_class_holdout_correctness_opened": false,
+  "protected_live_files_rechecked": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json": {
+      "exists": true,
+      "sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/OVTrack/teta_summary_results.pth": {
+      "exists": true,
+      "sha256": "621b769b60f88816be02c9cb79339b493ef60f17717a135cf663e3599a8a1d62"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/weights/ctao_public.pth": {
+      "exists": false,
+      "sha256": null
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base/configs/uncertainty-ovtrack-teta/ovtrack_r50_ctao_train.py": {
+      "exists": true,
+      "sha256": "d8ae926e540c327d4baa2ced8cb1338f70d6a67eb73d2fb02de4d79893cecc08"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/covtrack_ctao_train20_bs24_20261022/ovtrack_r50_ctao_train.py": {
+      "exists": true,
+      "sha256": "b907b90fe73d6c515d3487efeb7d921dbbc874b4ef4a840cecebb50a1e9a169d"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/scripts/train_covtrack20.py": {
+      "exists": true,
+      "sha256": "0beeac07b81caa5c1be3ee2232adee2d4d78a554bbac310b233e2d567395312c"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/repos/COVTrack/ovtrack/models/roi_heads/class_name.py": {
+      "exists": true,
+      "sha256": "6f50d7b3f16eef96e15b6cfbf97a53b195e26dbc34df51e7679645c99e6937d9"
+    }
+  },
+  "evidence": [
+    {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/background_execution_receipt.json",
+      "sha256": "dadf20598a0a9fec6a6ce8a29dfd1a78bc0ea5e42c476f47e3d6a7a56125e838",
+      "bytes": 1476
+    },
+    {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/independent_completion_review.json",
+      "sha256": "fe0297db9761b8282e941112907bd6f20f347c92d1beb649c950e94158ae55b2",
+      "bytes": 4755
+    },
+    {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/support_receipt.json",
+      "sha256": "e206051d0809b8e20b24529254eacece96f997c72b7155e8264197e7c07aae1e",
+      "bytes": 2632597
+    },
+    {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/support_summary.json",
+      "sha256": "52d42d95d6c08fb61ee6e146b77af9935bfb012d3000c49576781868f220608a",
+      "bytes": 131082
+    },
+    {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/independent_support_audit.json",
+      "sha256": "92174aaa954f6e66cd0e7f520f2f883f7b9e0017c84fbf9bf4509e734ba714e8",
+      "bytes": 4846
+    },
+    {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/independent_support_audit_execution_receipt.json",
+      "sha256": "f2ca7e2bae64f4e9bcb68b81339f546ce4c8bbbad8357e9ab8172b831f70beea",
+      "bytes": 1395
+    },
+    {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/mean_quality_v1/diagnostic_summary.json",
+      "sha256": "cbfc95c2b54b53348d233624374be6212971a8542cdd9834cc59e311812ef65a",
+      "bytes": 196081
+    },
+    {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/mean_quality_v1/independent_mean_quality_audit.json",
+      "sha256": "f1f1241a0adc6c9d922373769bb3b535cb920a70661c0476363cb719ab8b2721",
+      "bytes": 12075
+    },
+    {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/mean_quality_v1/input_hashes.json",
+      "sha256": "6386d8bf81251ad68243c94278489f601857d5d2758091c06a2c7f94857ccf85",
+      "bytes": 2414875
+    }
+  ],
+  "scripts": {
+    "diagnose_full_mean_quality.py": "464b9ad6dd551a6f813de1eded509d0fd0d00f26336cf90ee2cd54fb14e84e17",
+    "diagnose_base_mean_quality.py": "2458c403d4f7938ef0f649f9be419027aa5ce8168d011af1572675f5bdd4a84b",
+    "audit_full_mean_quality.py": "4f8480425eedd702c8763da68b60f4b70ab2b0622b9be362034a9ea87f261582",
+    "full_mean_pair_gate_protocol_20261023.json": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718",
+    "full_mean_independent_preflight_20261023.json": "43ff8f53bfb1db22aa501459c34b073f6b7235ad9996b7c07b1f470e0a1a04be"
+  },
+  "unrelated_existing_training_touched": false,
+  "new_detector_or_tracker_training": false,
+  "GPU_used_this_stage_continuation": false,
+  "pair_training_readiness_established": false,
+  "limitations": [
+    "Hard emitted-label mean-error prediction only; no vector calibration, pair mechanism or novelty claim",
+    "Bootstrap conditional on fitted predictions; no refit",
+    "Full support receipt and large indices/model objects stay local, hash-bound here"
+  ]
+}

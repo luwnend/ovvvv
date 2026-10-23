@@ -1,0 +1,87 @@
+{
+  "status": "PASS_FIT_IDENTITY_EDGE_STRUCTURE_SUPPORT_AND_FULL_INDEPENDENT_AUDIT",
+  "recorded_utc": "2026-10-23T15:51:31.184042+00:00",
+  "producer": {
+    "tool_session": 21762,
+    "actual_exit_code": 0,
+    "observed_by": "root direct tool poll before context compaction",
+    "elapsed_seconds": 33.54272316209972
+  },
+  "independent_audit": {
+    "tool_session": 70485,
+    "actual_exit_code": 0,
+    "observed_by": "evaluator_audit direct tool poll and reported to root",
+    "elapsed_seconds": 80.09907440841198
+  },
+  "evidence": {
+    "results/base_error_full_collection_20261023/base_fit_identity_edge_support_20261023/identity_support_summary.json": {
+      "sha256": "125ee4641362b0d3068804dea961fb3c002739f4ee7c54fd33515d56f217e4fb",
+      "bytes": 22964510
+    },
+    "results/base_error_full_collection_20261023/base_fit_identity_edge_support_20261023/fit_edge_identity_rows.jsonl": {
+      "sha256": "42e04f50bedcf9bfcbcc4b2390d5c5e42e4468ca6c996d4e2afcaff7d2cab91b",
+      "bytes": 352431266
+    },
+    "results/base_error_full_collection_20261023/base_fit_identity_edge_support_20261023/independent_identity_support_audit.json": {
+      "sha256": "8e0cafbb0dea4c9120119e62ff0bb9d5a5a3bd06855d5140117aa2481372beaf",
+      "bytes": 20434
+    },
+    "tmp_analysis/build_fit_identity_edge_support.py": {
+      "sha256": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+      "bytes": 32246
+    },
+    "tmp_analysis/verify_fit_identity_edge_support_output.py": {
+      "sha256": "862d31f63331a288804d808fb303e6704d6f4fdfa80f97daf13971f44c0f795d",
+      "bytes": 20045
+    },
+    "tmp_analysis/base_fit_identity_edge_support_20261023_independent_preflight.json": {
+      "sha256": "9aad788b2ce02b34daf920de4222578d4150149e7630894af0a73b5f860b3588",
+      "bytes": 2552
+    }
+  },
+  "derived_brief": {
+    "path": "results/base_error_full_collection_20261023/base_fit_identity_edge_support_20261023/identity_support_brief.json",
+    "sha256": "b818247c12d4bd37f10c21b713dd4de5ee459d6ab7a8fd5443fa1a02caa0e689",
+    "bytes": 170138
+  },
+  "protected_files_rechecked": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json": {
+      "exists": true,
+      "sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/OVTrack/teta_summary_results.pth": {
+      "exists": true,
+      "sha256": "621b769b60f88816be02c9cb79339b493ef60f17717a135cf663e3599a8a1d62"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/weights/ctao_public.pth": {
+      "exists": false,
+      "sha256": null
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base/configs/uncertainty-ovtrack-teta/ovtrack_r50_ctao_train.py": {
+      "exists": true,
+      "sha256": "d8ae926e540c327d4baa2ced8cb1338f70d6a67eb73d2fb02de4d79893cecc08"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/covtrack_ctao_train20_bs24_20261022/ovtrack_r50_ctao_train.py": {
+      "exists": true,
+      "sha256": "b907b90fe73d6c515d3487efeb7d921dbbc874b4ef4a840cecebb50a1e9a169d"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/scripts/train_covtrack20.py": {
+      "exists": true,
+      "sha256": "0beeac07b81caa5c1be3ee2232adee2d4d78a554bbac310b233e2d567395312c"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/repos/COVTrack/ovtrack/models/roi_heads/class_name.py": {
+      "exists": true,
+      "sha256": "6f50d7b3f16eef96e15b6cfbf97a53b195e26dbc34df51e7679645c99e6937d9"
+    }
+  },
+  "classification_outcome_values_decoded": false,
+  "tune_identity_values_decoded": false,
+  "test_or_class_holdout_correctness_opened": false,
+  "references_or_selected_edges_changed": false,
+  "NPZ_opened": false,
+  "GPU_used": false,
+  "model_training_started": false,
+  "training_readiness_established": false,
+  "research_goal_complete": false,
+  "scope": "560371 fixed fit edges and 21661 eligible fit manual identity observations; all rows audited, no sampling. The mixed supervision bytes were scanned/hashed, only fit identity fields decoded."
+}

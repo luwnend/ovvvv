@@ -93,8 +93,21 @@ test的274帧/11,950输出仅保留GT-free结构，没有prediction-GT匹配或�
 这封存的是冻结模型、完整词表、稀疏人工anchor时序下的观察流；没有新方法训练、full自然错误支持或新颖性结论。下一步使用独立full support适配器并审计，再做fit-only nested source-group强质量控制；test/留出类正确性仍关闭。
 
 
-## Full支持完成与本次用户暂停
+## Full支持完成与上次用户暂停（历史断点）
 
 Full support builder工具session51211由root直接poll确认actual exit0。独立输出审计session68926由evaluator agent直接poll确认actual exit0（95.71秒），状态`PASS_INDEPENDENT_FULL_SUPPORT_OUTPUT_AUDIT`；receipt SHA绑定一致。审计覆盖全部681,602观测、144,930轨迹、15,283帧Hungarian与排除计数、46,908人工anchor来源、23,887监督观测及193,405重复观测对。fit为21,661观测/12,694错误/338实际有监督源组/131类；tune为2,226/1,081/42组/38类。这些是描述性支持，不等同独立样本数、条件协方差或方法有效性。
 
-用户要求可暂停后再开，当前停在完整support审计通过、强mean真实拟合未启动的断点。mean实现/独立预审和合成审计已封存；pair sealer仍为WIP待独立审查，未实跑。完整恢复次序见`tmp_analysis/full_stage_handoff_20261023.md`，当前状态/hash见`results/base_error_full_collection_20261023/dialogue_pause_receipt.json`。早先1–2小时估计、采集运行中及旧pause记录只表示历史时刻。
+上次用户暂停时，断点为完整support审计通过、强mean真实拟合未启动。该时刻mean实现/独立预审和合成审计已封存，pair sealer仍为WIP；历史状态/hash见`results/base_error_full_collection_20261023/dialogue_pause_receipt.json`。用户已恢复，下面记录后续实际完成结果；当前入口为`tmp_analysis/full_stage_handoff_20261023.md`。早先1–2小时估计、采集运行中及旧pause记录只表示历史时刻。
+
+
+## 恢复后强mean与GT-free索引完成
+
+用户恢复后，full mean真实运行265.523秒/exit0，独立审计139.852秒/exit0；完整指标与范围见[Full质量控制报告](COVTrack_full质量控制_20261023.md)。主B3等权Brier fit/tune=0.147018/0.136580；tune B1=0.203912，B3−B1 bootstrap区间[-0.083776,-0.052271]。它是强普通质量控制，不是新机制方法或TETA结果。
+
+GT-free上下文索引独立预审先修复了上游manifest只自洽、未绑定accepted来源及时间/整数边界；三轮每轮两check实际通过后才实跑。Producer45.802秒/exit0，独立54.17秒/exit0；52,303条长度至少4的预测轨迹、623,878边。独立重算全部3,947,118候选SHA及全部边的reference补集hash、source role、时间/cap/计数；未读取NPZ或监督。源组角色172 mean/169 pair/42 tune，依据全部预选元数据，不能因合法标签缺少而重分组。reference只是完整emitted轨迹减去两端的索引，不是GT筛过的reference，也尚未做posterior pooling/分裂reference。
+
+## Fit身份支持与路线收敛
+
+Fit-only身份join实际33.543秒/exit0，fresh独立全量审计80.099秒/exit0。全部560,371条固定fit边中12,158同GT、819不同GT、9,388单端unknown、538,006双端unknown；不同GT涉及135源组/280条预测轨迹。只解码fit合法身份，不解码分类正确性/tune身份，不改原参考池。只有12,977边两端已知，不能算总体污染率或认定身份净化一定有分类收益。详见[身份支持报告](COVTrack_fit身份混入支持_20261023.md)。
+
+冻结共同错误G公式已因conditioning不一致停止部署/协方差归因路线，三轮每轮两项精确检查通过；没有启动真实pair拟合。该决定不否定所有关系网络，也不影响已完成质量控制/索引/支持。下一步为独立fit-only稀疏observed-label oracle对照及class-blind可辨识性；GT快照不进入真实readout，尚无新方法TETA或训练就绪结论。

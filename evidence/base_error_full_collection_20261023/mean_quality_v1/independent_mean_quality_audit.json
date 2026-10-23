@@ -1,0 +1,355 @@
+{
+  "status": "PASS_INDEPENDENT_FULL_MEAN_QUALITY_DIAGNOSTIC_AUDIT",
+  "completed_utc": "2026-10-23T15:31:46.933996+00:00",
+  "diagnostic_summary_sha256": "cbfc95c2b54b53348d233624374be6212971a8542cdd9834cc59e311812ef65a",
+  "producer_script_sha256": "464b9ad6dd551a6f813de1eded509d0fd0d00f26336cf90ee2cd54fb14e84e17",
+  "audit_script_sha256": "4f8480425eedd702c8763da68b60f4b70ab2b0622b9be362034a9ea87f261582",
+  "protocol_sha256": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718",
+  "input_hash_count": 12571,
+  "eligible_raw_dump_files": 12567,
+  "all_input_and_output_hashes_verified_before_after": true,
+  "all_eligible_features_rebuilt_from_raw": true,
+  "actual_emitted_error_targets_reverified": true,
+  "test_dumps_opened": false,
+  "test_or_class_holdout_correctness_opened": false,
+  "full_source_folds_disjoint": true,
+  "inner_and_outer_predictions_reconstructed": true,
+  "fit_only_weights_and_ridge_standardization_verified": true,
+  "nested_candidate_selection_and_Platt_recomputed": true,
+  "all_persisted_model_objects_checked": 216,
+  "prediction_max_absolute_difference": 0.0,
+  "pipeline_checks": [
+    {
+      "outer_fold": 0,
+      "selection": {
+        "selected_candidate": {
+          "name": "HGB_leaf15_l210",
+          "kind": "HGB",
+          "leaves": 15,
+          "l2": 10
+        },
+        "inner_candidate_models_checked": 33,
+        "ridge_max_gradient": 5.271784812820035e-07,
+        "single_class_inner_models": 0,
+        "inner_source_fold_disjoint": true,
+        "inner_OOF_predictions_reconstructed": true,
+        "selection_scores_and_tie_rule_recomputed": true,
+        "calibrator": {
+          "loss": 0.4614958308462445,
+          "projected_gradient_max_abs": 2.612312462861542e-10,
+          "boundary": false
+        }
+      },
+      "outer_training_model_checks": [
+        {
+          "kind": "constant",
+          "train_rows": 17018,
+          "train_sources": 270,
+          "train_trajectories": 1411,
+          "single_outcome_class": false
+        },
+        {
+          "kind": "ridge",
+          "train_rows": 17018,
+          "train_sources": 270,
+          "train_trajectories": 1411,
+          "single_outcome_class": false,
+          "gradient_max_abs": 2.902367346457879e-09,
+          "constant_features": [
+            "fused_background_probability"
+          ]
+        },
+        {
+          "kind": "HGB",
+          "train_rows": 17018,
+          "train_sources": 270,
+          "train_trajectories": 1411,
+          "single_outcome_class": false,
+          "HGB_sample_weight_verification": "Producer code contract audited; persisted estimator does not expose historical sample weights. No HGB refit performed."
+        }
+      ],
+      "train_sources": 270,
+      "validation_sources": 68,
+      "source_disjoint": true
+    },
+    {
+      "outer_fold": 1,
+      "selection": {
+        "selected_candidate": {
+          "name": "HGB_leaf15_l210",
+          "kind": "HGB",
+          "leaves": 15,
+          "l2": 10
+        },
+        "inner_candidate_models_checked": 33,
+        "ridge_max_gradient": 4.993021678532624e-07,
+        "single_class_inner_models": 0,
+        "inner_source_fold_disjoint": true,
+        "inner_OOF_predictions_reconstructed": true,
+        "selection_scores_and_tie_rule_recomputed": true,
+        "calibrator": {
+          "loss": 0.46430802740832205,
+          "projected_gradient_max_abs": 3.017946548663365e-12,
+          "boundary": false
+        }
+      },
+      "outer_training_model_checks": [
+        {
+          "kind": "constant",
+          "train_rows": 17554,
+          "train_sources": 270,
+          "train_trajectories": 1469,
+          "single_outcome_class": false
+        },
+        {
+          "kind": "ridge",
+          "train_rows": 17554,
+          "train_sources": 270,
+          "train_trajectories": 1469,
+          "single_outcome_class": false,
+          "gradient_max_abs": 5.549612033806106e-09,
+          "constant_features": [
+            "fused_background_probability"
+          ]
+        },
+        {
+          "kind": "HGB",
+          "train_rows": 17554,
+          "train_sources": 270,
+          "train_trajectories": 1469,
+          "single_outcome_class": false,
+          "HGB_sample_weight_verification": "Producer code contract audited; persisted estimator does not expose historical sample weights. No HGB refit performed."
+        }
+      ],
+      "train_sources": 270,
+      "validation_sources": 68,
+      "source_disjoint": true
+    },
+    {
+      "outer_fold": 2,
+      "selection": {
+        "selected_candidate": {
+          "name": "HGB_leaf15_l21",
+          "kind": "HGB",
+          "leaves": 15,
+          "l2": 1
+        },
+        "inner_candidate_models_checked": 33,
+        "ridge_max_gradient": 7.108748997267474e-07,
+        "single_class_inner_models": 0,
+        "inner_source_fold_disjoint": true,
+        "inner_OOF_predictions_reconstructed": true,
+        "selection_scores_and_tie_rule_recomputed": true,
+        "calibrator": {
+          "loss": 0.45335117669969793,
+          "projected_gradient_max_abs": 8.912120509803249e-10,
+          "boundary": false
+        }
+      },
+      "outer_training_model_checks": [
+        {
+          "kind": "constant",
+          "train_rows": 17809,
+          "train_sources": 270,
+          "train_trajectories": 1472,
+          "single_outcome_class": false
+        },
+        {
+          "kind": "ridge",
+          "train_rows": 17809,
+          "train_sources": 270,
+          "train_trajectories": 1472,
+          "single_outcome_class": false,
+          "gradient_max_abs": 9.855889144746999e-09,
+          "constant_features": [
+            "fused_background_probability"
+          ]
+        },
+        {
+          "kind": "HGB",
+          "train_rows": 17809,
+          "train_sources": 270,
+          "train_trajectories": 1472,
+          "single_outcome_class": false,
+          "HGB_sample_weight_verification": "Producer code contract audited; persisted estimator does not expose historical sample weights. No HGB refit performed."
+        }
+      ],
+      "train_sources": 270,
+      "validation_sources": 68,
+      "source_disjoint": true
+    },
+    {
+      "outer_fold": 3,
+      "selection": {
+        "selected_candidate": {
+          "name": "HGB_leaf15_l21",
+          "kind": "HGB",
+          "leaves": 15,
+          "l2": 1
+        },
+        "inner_candidate_models_checked": 33,
+        "ridge_max_gradient": 3.0141746903619704e-07,
+        "single_class_inner_models": 0,
+        "inner_source_fold_disjoint": true,
+        "inner_OOF_predictions_reconstructed": true,
+        "selection_scores_and_tie_rule_recomputed": true,
+        "calibrator": {
+          "loss": 0.46485035585739043,
+          "projected_gradient_max_abs": 2.4357735944369557e-09,
+          "boundary": false
+        }
+      },
+      "outer_training_model_checks": [
+        {
+          "kind": "constant",
+          "train_rows": 16051,
+          "train_sources": 271,
+          "train_trajectories": 1385,
+          "single_outcome_class": false
+        },
+        {
+          "kind": "ridge",
+          "train_rows": 16051,
+          "train_sources": 271,
+          "train_trajectories": 1385,
+          "single_outcome_class": false,
+          "gradient_max_abs": 3.1007122008874788e-09,
+          "constant_features": [
+            "fused_background_probability"
+          ]
+        },
+        {
+          "kind": "HGB",
+          "train_rows": 16051,
+          "train_sources": 271,
+          "train_trajectories": 1385,
+          "single_outcome_class": false,
+          "HGB_sample_weight_verification": "Producer code contract audited; persisted estimator does not expose historical sample weights. No HGB refit performed."
+        }
+      ],
+      "train_sources": 271,
+      "validation_sources": 67,
+      "source_disjoint": true
+    },
+    {
+      "outer_fold": 4,
+      "selection": {
+        "selected_candidate": {
+          "name": "HGB_leaf15_l21",
+          "kind": "HGB",
+          "leaves": 15,
+          "l2": 1
+        },
+        "inner_candidate_models_checked": 33,
+        "ridge_max_gradient": 4.239199535334691e-07,
+        "single_class_inner_models": 0,
+        "inner_source_fold_disjoint": true,
+        "inner_OOF_predictions_reconstructed": true,
+        "selection_scores_and_tie_rule_recomputed": true,
+        "calibrator": {
+          "loss": 0.46822505394393,
+          "projected_gradient_max_abs": 1.86795491216845e-09,
+          "boundary": false
+        }
+      },
+      "outer_training_model_checks": [
+        {
+          "kind": "constant",
+          "train_rows": 18212,
+          "train_sources": 271,
+          "train_trajectories": 1519,
+          "single_outcome_class": false
+        },
+        {
+          "kind": "ridge",
+          "train_rows": 18212,
+          "train_sources": 271,
+          "train_trajectories": 1519,
+          "single_outcome_class": false,
+          "gradient_max_abs": 1.9507986753763973e-09,
+          "constant_features": [
+            "fused_background_probability"
+          ]
+        },
+        {
+          "kind": "HGB",
+          "train_rows": 18212,
+          "train_sources": 271,
+          "train_trajectories": 1519,
+          "single_outcome_class": false,
+          "HGB_sample_weight_verification": "Producer code contract audited; persisted estimator does not expose historical sample weights. No HGB refit performed."
+        }
+      ],
+      "train_sources": 271,
+      "validation_sources": 67,
+      "source_disjoint": true
+    }
+  ],
+  "final_selection": {
+    "selected_candidate": {
+      "name": "HGB_leaf15_l21",
+      "kind": "HGB",
+      "leaves": 15,
+      "l2": 1
+    },
+    "inner_candidate_models_checked": 33,
+    "ridge_max_gradient": 2.978834688001894e-07,
+    "single_class_inner_models": 0,
+    "inner_source_fold_disjoint": true,
+    "inner_OOF_predictions_reconstructed": true,
+    "selection_scores_and_tie_rule_recomputed": true,
+    "calibrator": {
+      "loss": 0.4597462589858294,
+      "projected_gradient_max_abs": 3.340960173095382e-09,
+      "boundary": false
+    }
+  },
+  "final_training_model_checks": [
+    {
+      "kind": "constant",
+      "train_rows": 21661,
+      "train_sources": 338,
+      "train_trajectories": 1814,
+      "single_outcome_class": false
+    },
+    {
+      "kind": "ridge",
+      "train_rows": 21661,
+      "train_sources": 338,
+      "train_trajectories": 1814,
+      "single_outcome_class": false,
+      "gradient_max_abs": 3.827387795585224e-09,
+      "constant_features": [
+        "fused_background_probability"
+      ]
+    },
+    {
+      "kind": "HGB",
+      "train_rows": 21661,
+      "train_sources": 338,
+      "train_trajectories": 1814,
+      "single_outcome_class": false,
+      "HGB_sample_weight_verification": "Producer code contract audited; persisted estimator does not expose historical sample weights. No HGB refit performed."
+    }
+  ],
+  "metric_checks": {
+    "fit_nested_source_group_crossfit": {
+      "point_metrics_max_absolute_difference": 9.175784843051815e-07,
+      "bootstrap_1000_loss_CI_max_absolute_difference": 4.912520043531821e-16,
+      "fixed_probability_reliability_bins_recomputed": true
+    },
+    "tune_evaluation_only": {
+      "point_metrics_max_absolute_difference": 9.007186685394686e-08,
+      "bootstrap_1000_loss_CI_max_absolute_difference": 4.440892098500626e-16,
+      "fixed_probability_reliability_bins_recomputed": true
+    }
+  },
+  "baseline_or_HGB_models_refitted": false,
+  "bootstrap_loss_intervals_independently_regenerated": true,
+  "limitations": [
+    "Persisted HGB model parameters and initial weighted prevalence checked; historical sample weights are established by reviewed producer code and independent synthetic tests, not by full model refitting.",
+    "Bootstrap intervals are conditional on fitted predictions; no training uncertainty or independent-observation claim.",
+    "Hard mean-error control only; no wrong-evidence-vector calibration, pair dependence or novelty gate."
+  ],
+  "elapsed_seconds": 139.85172033309937
+}

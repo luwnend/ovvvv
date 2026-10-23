@@ -6,8 +6,10 @@ COVTrack 上的开放词汇多目标跟踪研究：先核验机制和完整验�
 - [方法设计与新颖性边界](report/COVTrack_论文级改进设计.md)。
 - [完整 val 轨迹读出报告](report/COVTrack_完整val轨迹读出_20261023.md)。
 - [自然误判与依赖读出阶段](report/COVTrack_自然依赖核验_20261023.md)。
-- [base完整词表采集与暂停续接](report/COVTrack_base观测采集_20261023.md)：全量15,283帧/681,602输出已完成（实际2.91小时），full support及独立全输出审计实际exit0；强mean真实拟合尚未启动。
-- [本次暂停恢复入口](tmp_analysis/full_stage_handoff_20261023.md)：按用户要求暂停；恢复先核对采集/support回执，再执行已预审的CPU强mean诊断。pair sealer仍为WIP，无真实pair训练；勿重复采集或重建support。
+- [base完整词表采集](report/COVTrack_base观测采集_20261023.md)：全量15,283帧/681,602输出已完成（实际2.91小时），full support及独立全输出审计通过。
+- [强质量控制](report/COVTrack_full质量控制_20261023.md)：nested source-CV主模型fit/tune Brier=0.147018/0.136580，独立审计通过；普通控制，不是新方法TETA收益。
+- [fit身份混入支持](report/COVTrack_fit身份混入支持_20261023.md)：560,371条固定fit边中819条已知不同身份，涉及135源组；大量unknown保持未知。真实执行与独立全查通过，尚不构成训练条件。
+- [当前续接入口](tmp_analysis/full_stage_handoff_20261023.md)：用户已恢复；强mean、GT-free上下文索引及身份支持均已完成，勿重跑。下一步为fit-only身份净化诊断与观测可辨识性。
 - [方法调研笔记](report/OVMOT_方法调研笔记.md)。
 
 冻结对照：发布 COVTrack R50 / ctao_public.pth / 官方完整 TAO validation / A 参数 .37 / 80 / 50 / .4。
@@ -15,6 +17,8 @@ COVTrack 上的开放词汇多目标跟踪研究：先核验机制和完整验�
 普通池化是控制实验，尚未构成新的机制方法；26/35 novel 类只有一个 GT 视频，完整 val 结果仍需范围与泛化核验。
 
 后续20项固定几何分类回放与自然误判诊断显示：同身份匹配观测内存在重复同错类别集中，但当前固定appearance inverse-density读出在两mask下均被普通分数加权同时超过Base与Novel。停止该具体读出，继续核验base训练监督、词表和类别/视频留出，验证可学习共同误判过程。两主候选另做完整官方评估，计数/原始LocA与AssocA/输入输出哈希以阶段完成回执为准。
+
+当前G条件矩候选在真实pair拟合前被精确反例证伪其混合conditioning部署公式，停止该具体公式及“内在协方差”新颖性归因；不外推所有关系网络失败。冻结协议、三轮每轮两项检查与决定回执保留。GT-free索引623,878边及全部3,947,118候选已独立复算；索引与身份支持均不等于方法有效。整体研究继续，尚无新方法TETA或新训练结果。
 
 本仓库保存经过核验的研究脚本、设计文档及轻量指标/哈希回执。大型数据、权重、逐帧后验和预测保留在本地研究目录，不上传。
 `evidence/` 是对应阶段 `results/` 中 JSON 回执的副本；其中绝对路径记录原始执行机器，不能据此假定这些文件已在仓库中。

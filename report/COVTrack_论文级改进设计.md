@@ -144,16 +144,25 @@ log clipping、缓存精度和核尺度需要固定并记录敏感性，不用 n
 
 新目标规范先以平均错误、单帧质量及shared calibrator为控制；主假说为在不含双方当前候选概率的共同参考条件下，直接估计wrong-evidence条件均值，再对out-of-source-group残差的对角乘积/trace做预测。参考只由预测轨迹中双方之外的观测构建，不用GT挑参考。它仍可能包含共享真实标签不确定性和语义难度，称为**中心化wrong-evidence surrogate**；既不是完整协方差，也不预先许诺PSD、GLS或attention方法创新。
 
-具体输入、交叉项、loss、交叉拟合、同容量quality+agreement/attention/相关融合控制及支持门槛见`tmp_analysis/base_error_learning_objective_20261023.md`。精确合成检查只证明代数与退化案例。1,299帧真实pilot及fit/tune支持已独立通过；固定单帧quality控制的层级等权tune Brier由0.2337降至0.1916，但仍低估错误率，实际监督类只重叠3类。由此先扩采全部fit/tune，不能直接进入pair方法训练。扩采元数据独立PASS，已启动冻结模型的后台采集，仍待完整验收；完整数值及限定见`report/COVTrack_base观测采集_20261023.md`。未匹配观测保持unknown；test和class holdout不用于选择目标或超参。
+上述是历史候选规范。全量15,283帧/681,602输出、full support与强质量控制现已实际完成并独立通过。预定B3主控制在fit/tune的层级等权Brier为0.147018/0.136580，B1为0.200349/0.203912；普通质量信号显著强于最初pilot低容量控制。完整协议、区间与局限见[full质量控制报告](COVTrack_full质量控制_20261023.md)。未匹配观测保持unknown；test和class holdout正确性关闭。
+
+### 5.3 当前G条件矩部署路线停止（非全部关系网络）
+
+真实pair拟合之前的精确有限分布核验发现：`h_y(A)=E[G|A,Y=y]`用更丰富的`pi(Y|p_i,p_j,A)`积分，一般不等于`E[G|p_i,p_j,A]`。即使条件均值、残差矩和pi全为oracle精确值，仍存在非零偏差。将conditioning统一后，该目标的最优预测恰为`dot(p_i,p_j)-sum_y pi_y*p_i,y*p_j,y`；击败有限C129不能单独识别额外随机协方差机制。冻结协议保留溯源，不事后覆盖。
+
+**停止这条“当前G残差协方差→新依赖机制”的部署/论文归因路线，不启动其真实pair训练。** 这是估计目标与推理条件不一致的问题，不是已实现pair代码失败，也不证明所有coarse关系预测/attention都无用。精确反例、1203严格正维度/对称性/一致条件下参照与三轮每轮两check见`tmp_analysis/pair_conditioning_identifiability_audit_20261023.md`及synthetic凭据。
+
+新全文一级文献`Hierarchical Aggregation of Semantic Uncertainty in 3D Scene Graphs`（arXiv2609.22351）已明确用max-dependence聚合处理共享模型/词表重复错误，覆盖宽泛动机；并未实现本候选的learned covariance。全文方法/实验/控制缺口与具体碰撞范围见`tmp_analysis/semantic_uncertainty_2609_22351_fulltext_audit_20261023.md`。不以该论文自身局限挽救本候选的条件错误，也不把任务迁移算新颖性。
 
 ## 6. 必须同时区分的竞争解释：身份混合
 
 **实验候选 B，尚未成立。** 同一轨迹内的语义冲突可能来自类别噪声，也可能来自多个身份被关联混合。
 不能用类别一致性定义轨迹纯度，再以同一个一致性证明该轨迹可靠，这会循环强化错误主类。
-先用只读 GT 诊断划分高纯轨迹与混合轨迹，量化 GT 净化的上界，但不让 GT 净化进入方法输入。
-再比较无 GT 的 appearance component/medoid 选择是否保留上界的一部分。
+不按whole-track GT纯度筛选实际边或参考。先在固定预测轨迹/context内，用fit合法人工anchor身份作独立诊断；unknown不判异身份。
+身份支持现已实跑并独立全查通过：560,371条固定fit边中12,158同GT、819不同GT，其余单/双端unknown分别9,388/538,006；不同GT涉及135源组/280预测轨迹。它只确认结构支持，不证明污染是分类瓶颈。
+下一步在相同covered端点上比较全部原参考、manual-known参考、同GT参考与固定数量匹配控制，分开稀疏标签覆盖、数量和身份净化影响。固定pooling、完整词表、源组→GT轨迹→唯一端点权重；GT快照仅作诊断，不进入实际readout或训练特征。这是observed-label oracle contrast，不是所有方法的数学上界。再核验无GT的appearance成分能否保留其中收益。
 若候选 A 只改善混合轨迹，类别证据相关性的解释不充分，应转向身份污染模型。
-若净化上界本来很小，停止候选 B；不直接训练复杂混合状态。
+若固定净化诊断空间很小，只能限制该规则与覆盖范围；若后续多项可辨识性及控制也无支持，再停止候选B，不将稀疏oracle直接外推。当前不训练复杂混合状态。
 候选 B 后续可能维护竞争身份成分及各自类别后验，但需区别于已有 mixture tracking 与 tracklet splitting。
 先测固定 ID 的分类读出，再单独讨论改 ID；不得把两类收益混在一个消融里。
 
@@ -184,7 +193,7 @@ top-1 改善而 top-10/50 不变可以是有效排序修复，不能据此自动
 Base/Novel 权衡与最小有意义改进应在看新候选结果前明确；不靠事后挑类或全局 bias 掩盖退化。
 若原 TCC 不对齐、GT 泄漏或保护字段变化，停止解释结果并先修实现。
 若一个具体核/结构不能预测目标误差关系、或没有超过质量/预算控制，停止该具体实现；当前固定inverse-density已满足停止条件。不能据一个相似度核失败，将整个可学习共同误判过程候选判为理论不可能。
-若身份净化上界小或无 GT 成分选择无法保留收益，停止候选 B。
+若身份净化诊断与覆盖检查、无GT可辨识性在三轮核验后均不支持有用机制，停止该具体候选B；稀疏已知端点不能充当全轨迹身份真值。
 若只有子集收益而完整 val 不成立，记录范围限制，不能据此启动新训练。
 
 ## 9. 执行顺序与训练门槛

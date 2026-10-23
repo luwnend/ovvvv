@@ -62,16 +62,37 @@ FULL_SCRIPTS = ["build_base_error_full_support.py", "base_error_full_support_ada
                 "diagnose_full_mean_quality.py", "full_mean_implementation_spec_20261023.json",
                 "full_mean_synthetic_receipt_20261023_v2.json", "full_mean_independent_synthetic_audit_20261023.json",
                 "full_mean_independent_preflight_20261023.json", "full_mean_pair_gate_protocol_20261023.json",
-                "full_mean_pair_gate_protocol_20261023.md", "full_stage_handoff_20261023.md"]
+                "full_mean_pair_gate_protocol_20261023.md", "full_stage_handoff_20261023.md",
+                "audit_full_mean_quality.py", "full_mean_output_auditor_synthetic_receipt_20261023.json"]
+FULL_CONTEXT_SCRIPTS = ["build_full_pair_context_cache.py", "verify_full_pair_context_output.py",
+                       "full_pair_context_sealer_independent_preflight_20261023.json",
+                       "full_pair_context_sealer_independent_preflight_20261023.md",
+                       "pair_conditioning_identifiability_audit_20261023.md",
+                       "check_pair_conditioning_mismatch_20261023.py", "pair_conditioning_mismatch_synthetic_20261023.json",
+                       "semantic_uncertainty_2609_22351_fulltext_audit_20261023.md",
+                       "semantic_uncertainty_2609_22351_source_receipt_20261023.json"]
+FULL_CONTEXT_JSON = ["pair_context_execution_receipt.json", "independent_pair_context_audit_execution_receipt.json",
+                     "pair_context_v1/pair_context_receipt.json", "pair_context_v1/source_roles.json",
+                     "pair_context_v1/independent_pair_context_audit.json", "pair_route_decision.json"]
+FULL_IDENTITY_SCRIPTS = ["build_fit_identity_edge_support.py", "verify_fit_identity_edge_support_output.py",
+                         "base_fit_identity_edge_support_20261023_synthetic_v2.json",
+                         "base_fit_identity_edge_support_20261023_independent_preflight.json",
+                         "base_fit_identity_edge_support_20261023_independent_preflight.md",
+                         "base_fit_identity_edge_support_20261023_output_verifier_synthetic.json",
+                         "base_fit_identity_edge_support_20261023_oracle_design.md"]
+FULL_IDENTITY_JSON = ["fit_identity_execution_receipt.json",
+                      "independent_fit_identity_edge_support_audit_execution_receipt.json",
+                      "base_fit_identity_edge_support_20261023/identity_support_brief.json",
+                      "base_fit_identity_edge_support_20261023/independent_identity_support_audit.json"]
 FULL_JSON = ["background_execution_receipt.json", "independent_completion_review.json",
              "full_collect_v1/collection_receipt.json", "full_collect_v1/run_manifest.json",
              "full_collect_v1/model_ready.json", "full_collect_v1/protected_before.json", "full_collect_v1/protected_after.json",
-             "support_v1/support_receipt.json", "support_v1/support_summary.json", "support_v1/independent_support_audit.json",
+             "support_v1/support_summary.json", "support_v1/independent_support_audit.json",
+             "independent_support_audit_execution_receipt.json",
              "mean_quality_v1/diagnostic_summary.json", "mean_quality_v1/independent_mean_quality_audit.json",
              "fit_tune_execution_receipt.json"]
-FULL_PAUSE_SCRIPTS = FULL_SCRIPTS + ["audit_full_mean_quality.py",
+FULL_PAUSE_SCRIPTS = FULL_SCRIPTS + [
                 "evaluator_audit_handoff_20261023.json",
-                "full_mean_output_auditor_synthetic_receipt_20261023.json",
                 "check_full_mean_pair_gate_synthetic.py", "full_mean_pair_gate_synthetic_20261023.json",
                 "build_full_pair_context_cache.py", "full_pair_context_cache_synthetic_20261023.json"]
 # This checkpoint records incomplete work explicitly; it never substitutes for final audits.
@@ -134,8 +155,14 @@ def main():
             mapping += [(full / name, Path("evidence/base_error_full_collection_20261023") / name)
                         for name in full_names]
             if args.stage == "base_full_20261023":
+                mapping.append((ROOT / "report/COVTrack_full质量控制_20261023.md", Path("report/COVTrack_full质量控制_20261023.md")))
+                mapping.append((ROOT / "report/COVTrack_fit身份混入支持_20261023.md", Path("report/COVTrack_fit身份混入支持_20261023.md")))
                 mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name) for name in FULL_SCRIPTS]
                 mapping += [(full / name, Path("evidence/base_error_full_collection_20261023") / name) for name in FULL_JSON]
+                mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name) for name in FULL_CONTEXT_SCRIPTS]
+                mapping += [(full / name, Path("evidence/base_error_full_collection_20261023") / name) for name in FULL_CONTEXT_JSON]
+                mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name) for name in FULL_IDENTITY_SCRIPTS]
+                mapping += [(full / name, Path("evidence/base_error_full_collection_20261023") / name) for name in FULL_IDENTITY_JSON]
             if args.stage == "base_full_pause_20261023":
                 mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name) for name in FULL_PAUSE_SCRIPTS]
                 mapping += [(full / name, Path("evidence/base_error_full_collection_20261023") / name) for name in FULL_PAUSE_JSON]

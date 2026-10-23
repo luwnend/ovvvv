@@ -1,0 +1,537 @@
+{
+  "status": "PASS_INDEPENDENT_FIT_IDENTITY_EDGE_SUPPORT_OUTPUT_AUDIT",
+  "output_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/base_fit_identity_edge_support_20261023",
+  "summary_sha256": "125ee4641362b0d3068804dea961fb3c002739f4ee7c54fd33515d56f217e4fb",
+  "identity_support_summary_sha256": "125ee4641362b0d3068804dea961fb3c002739f4ee7c54fd33515d56f217e4fb",
+  "fit_edge_identity_rows_sha256": "42e04f50bedcf9bfcbcc4b2390d5c5e42e4468ca6c996d4e2afcaff7d2cab91b",
+  "output_files_sha256": {
+    "fit_edge_identity_rows.jsonl": "42e04f50bedcf9bfcbcc4b2390d5c5e42e4468ca6c996d4e2afcaff7d2cab91b"
+  },
+  "producer_sha256": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+  "independent_verifier_sha256": "862d31f63331a288804d808fb303e6704d6f4fdfa80f97daf13971f44c0f795d",
+  "implementation_preflight_sha256": "9aad788b2ce02b34daf920de4222578d4150149e7630894af0a73b5f860b3588",
+  "fit_eligible_identity_observations_verified": 21661,
+  "all_fit_selected_edges_verified": 560371,
+  "tune_rows_split_only_decoded": 2226,
+  "tune_GT_free_edges_skipped": 63507,
+  "all_fit_endpoint_manual_identity_status_and_reference_hashes_verified": true,
+  "all_global_role_source_fixed24cells_sourcecells_and_concentrations_recomputed": true,
+  "global_support": {
+    "retained_fit_edges": 560371,
+    "identity_counts": {
+      "same_gt": 12158,
+      "different_gt": 819,
+      "one_endpoint_unknown": 9388,
+      "both_endpoints_unknown": 538006
+    },
+    "both_identity_known": 12977,
+    "sources_with_same_gt": 335,
+    "sources_with_different_gt": 135,
+    "sources_with_both_identity_statuses": 134,
+    "tracks_with_both_identity_statuses": 232,
+    "per_identity_concentration": {
+      "same_gt": {
+        "source": {
+          "events": 12158,
+          "nonempty_units": 335,
+          "max_unit_events": 589,
+          "max_unit_share": 0.04844546800460602,
+          "top5_share": 0.12000329001480507,
+          "top10_share": 0.16614574765586446,
+          "hhi": 0.0072012167696801025,
+          "effective_units": 138.86542121747888,
+          "events_after_deleting_largest_unit": 11569
+        },
+        "predicted_track": {
+          "events": 12158,
+          "nonempty_units": 1624,
+          "max_unit_events": 16,
+          "max_unit_share": 0.0013160059220266491,
+          "top5_share": 0.006580029610133245,
+          "top10_share": 0.01316005922026649,
+          "hhi": 0.0009133998990805954,
+          "effective_units": 1094.810718729632,
+          "events_after_deleting_largest_unit": 12142
+        },
+        "official_gt_identity_pair": {
+          "events": 12158,
+          "nonempty_units": 1287,
+          "max_unit_events": 33,
+          "max_unit_share": 0.002714262214179964,
+          "top5_share": 0.01225530514887317,
+          "top10_share": 0.02344135548609969,
+          "hhi": 0.001100225546507639,
+          "effective_units": 908.9045452309508,
+          "events_after_deleting_largest_unit": 12125
+        },
+        "official_gt_trajectories": 1287,
+        "sources_with_ge_5_edges": 320,
+        "sources_with_ge_10_edges": 296
+      },
+      "different_gt": {
+        "source": {
+          "events": 819,
+          "nonempty_units": 135,
+          "max_unit_events": 28,
+          "max_unit_share": 0.03418803418803419,
+          "top5_share": 0.14407814407814407,
+          "top10_share": 0.25396825396825395,
+          "hhi": 0.014060149591285123,
+          "effective_units": 71.12299862156718,
+          "events_after_deleting_largest_unit": 791
+        },
+        "predicted_track": {
+          "events": 819,
+          "nonempty_units": 280,
+          "max_unit_events": 11,
+          "max_unit_share": 0.013431013431013432,
+          "top5_share": 0.05860805860805861,
+          "top10_share": 0.10744810744810745,
+          "hhi": 0.005404309433613463,
+          "effective_units": 185.0375172413793,
+          "events_after_deleting_largest_unit": 808
+        },
+        "official_gt_identity_pair": {
+          "events": 819,
+          "nonempty_units": 332,
+          "max_unit_events": 22,
+          "max_unit_share": 0.026862026862026864,
+          "top5_share": 0.06837606837606838,
+          "top10_share": 0.11477411477411477,
+          "hhi": 0.004939166111327283,
+          "effective_units": 202.46332629037127,
+          "events_after_deleting_largest_unit": 797
+        },
+        "official_gt_trajectories": 479,
+        "sources_with_ge_5_edges": 57,
+        "sources_with_ge_10_edges": 28
+      },
+      "one_endpoint_unknown": {
+        "source": {
+          "events": 9388,
+          "nonempty_units": 327,
+          "max_unit_events": 463,
+          "max_unit_share": 0.04931827865360034,
+          "top5_share": 0.14933958244567533,
+          "top10_share": 0.19365146996165317,
+          "hhi": 0.008433696553759897,
+          "effective_units": 118.57196824969729,
+          "events_after_deleting_largest_unit": 8925
+        },
+        "predicted_track": {
+          "events": 9388,
+          "nonempty_units": 2055,
+          "max_unit_events": 13,
+          "max_unit_share": 0.0013847464848743077,
+          "top5_share": 0.006497656582871751,
+          "top10_share": 0.012675756284618662,
+          "hhi": 0.0006078660825657644,
+          "effective_units": 1645.0991899055512,
+          "events_after_deleting_largest_unit": 9375
+        },
+        "official_gt_identity_pair": {
+          "events": 0,
+          "nonempty_units": 0,
+          "max_unit_events": 0,
+          "max_unit_share": null,
+          "top5_share": null,
+          "top10_share": null,
+          "hhi": null,
+          "effective_units": null,
+          "events_after_deleting_largest_unit": 0
+        },
+        "official_gt_trajectories": 0,
+        "sources_with_ge_5_edges": 313,
+        "sources_with_ge_10_edges": 264
+      },
+      "both_endpoints_unknown": {
+        "source": {
+          "events": 538006,
+          "nonempty_units": 340,
+          "max_unit_events": 22490,
+          "max_unit_share": 0.04180250777872366,
+          "top5_share": 0.10800623041378721,
+          "top10_share": 0.14438128942799894,
+          "hhi": 0.005683680718732008,
+          "effective_units": 175.9423249628092,
+          "events_after_deleting_largest_unit": 515516
+        },
+        "predicted_track": {
+          "events": 538006,
+          "nonempty_units": 46126,
+          "max_unit_events": 16,
+          "max_unit_share": 2.973944528499682e-05,
+          "top5_share": 0.0001486972264249841,
+          "top10_share": 0.0002973944528499682,
+          "hhi": 2.4478351483815867e-05,
+          "effective_units": 40852.424259908235,
+          "events_after_deleting_largest_unit": 537990
+        },
+        "official_gt_identity_pair": {
+          "events": 0,
+          "nonempty_units": 0,
+          "max_unit_events": 0,
+          "max_unit_share": null,
+          "top5_share": null,
+          "top10_share": null,
+          "hhi": null,
+          "effective_units": null,
+          "events_after_deleting_largest_unit": 0
+        },
+        "official_gt_trajectories": 0,
+        "sources_with_ge_5_edges": 340,
+        "sources_with_ge_10_edges": 340
+      }
+    }
+  },
+  "per_role_support": {
+    "mean_role": {
+      "retained_fit_edges": 297409,
+      "identity_counts": {
+        "same_gt": 6516,
+        "different_gt": 428,
+        "one_endpoint_unknown": 4984,
+        "both_endpoints_unknown": 285481
+      },
+      "both_identity_known": 6944,
+      "sources_with_same_gt": 168,
+      "sources_with_different_gt": 65,
+      "sources_with_both_identity_statuses": 65,
+      "tracks_with_both_identity_statuses": 120,
+      "per_identity_concentration": {
+        "same_gt": {
+          "source": {
+            "events": 6516,
+            "nonempty_units": 168,
+            "max_unit_events": 589,
+            "max_unit_share": 0.09039287906691222,
+            "top5_share": 0.1930632289748312,
+            "top10_share": 0.26243093922651933,
+            "hhi": 0.01650308010767093,
+            "effective_units": 60.59474919079995,
+            "events_after_deleting_largest_unit": 5927
+          },
+          "predicted_track": {
+            "events": 6516,
+            "nonempty_units": 858,
+            "max_unit_events": 16,
+            "max_unit_share": 0.0024554941682013503,
+            "top5_share": 0.012277470841006752,
+            "top10_share": 0.024554941682013505,
+            "hhi": 0.0017124113623508228,
+            "effective_units": 583.97183176079,
+            "events_after_deleting_largest_unit": 6500
+          },
+          "official_gt_identity_pair": {
+            "events": 6516,
+            "nonempty_units": 667,
+            "max_unit_events": 33,
+            "max_unit_share": 0.0050644567219152855,
+            "top5_share": 0.022713321055862493,
+            "top10_share": 0.04266421117249847,
+            "hhi": 0.0021142177860532002,
+            "effective_units": 472.98816924002404,
+            "events_after_deleting_largest_unit": 6483
+          },
+          "official_gt_trajectories": 667,
+          "sources_with_ge_5_edges": 161,
+          "sources_with_ge_10_edges": 152
+        },
+        "different_gt": {
+          "source": {
+            "events": 428,
+            "nonempty_units": 65,
+            "max_unit_events": 28,
+            "max_unit_share": 0.06542056074766354,
+            "top5_share": 0.26401869158878505,
+            "top10_share": 0.45560747663551404,
+            "hhi": 0.03057035548956241,
+            "effective_units": 32.71142857142857,
+            "events_after_deleting_largest_unit": 400
+          },
+          "predicted_track": {
+            "events": 428,
+            "nonempty_units": 149,
+            "max_unit_events": 9,
+            "max_unit_share": 0.02102803738317757,
+            "top5_share": 0.09813084112149532,
+            "top10_share": 0.18691588785046728,
+            "hhi": 0.010033627391038519,
+            "effective_units": 99.66485310119695,
+            "events_after_deleting_largest_unit": 419
+          },
+          "official_gt_identity_pair": {
+            "events": 428,
+            "nonempty_units": 168,
+            "max_unit_events": 10,
+            "max_unit_share": 0.02336448598130841,
+            "top5_share": 0.09813084112149532,
+            "top10_share": 0.17757009345794392,
+            "hhi": 0.008963664948903834,
+            "effective_units": 111.56151035322777,
+            "events_after_deleting_largest_unit": 418
+          },
+          "official_gt_trajectories": 246,
+          "sources_with_ge_5_edges": 30,
+          "sources_with_ge_10_edges": 17
+        },
+        "one_endpoint_unknown": {
+          "source": {
+            "events": 4984,
+            "nonempty_units": 166,
+            "max_unit_events": 463,
+            "max_unit_share": 0.09289727126805779,
+            "top5_share": 0.2401685393258427,
+            "top10_share": 0.3136035313001605,
+            "hhi": 0.020029825779573285,
+            "effective_units": 49.92554658262753,
+            "events_after_deleting_largest_unit": 4521
+          },
+          "predicted_track": {
+            "events": 4984,
+            "nonempty_units": 1081,
+            "max_unit_events": 13,
+            "max_unit_share": 0.002608346709470305,
+            "top5_share": 0.012038523274478331,
+            "top10_share": 0.023073836276083465,
+            "hhi": 0.0011582006240193337,
+            "effective_units": 863.4082725060828,
+            "events_after_deleting_largest_unit": 4971
+          },
+          "official_gt_identity_pair": {
+            "events": 0,
+            "nonempty_units": 0,
+            "max_unit_events": 0,
+            "max_unit_share": null,
+            "top5_share": null,
+            "top10_share": null,
+            "hhi": null,
+            "effective_units": null,
+            "events_after_deleting_largest_unit": 0
+          },
+          "official_gt_trajectories": 0,
+          "sources_with_ge_5_edges": 160,
+          "sources_with_ge_10_edges": 137
+        },
+        "both_endpoints_unknown": {
+          "source": {
+            "events": 285481,
+            "nonempty_units": 171,
+            "max_unit_events": 22490,
+            "max_unit_share": 0.07877932331748873,
+            "top5_share": 0.17757749202223616,
+            "top10_share": 0.2222179409487847,
+            "hhi": 0.013455642798436187,
+            "effective_units": 74.31826297560603,
+            "events_after_deleting_largest_unit": 262991
+          },
+          "predicted_track": {
+            "events": 285481,
+            "nonempty_units": 24634,
+            "max_unit_events": 16,
+            "max_unit_share": 5.6045761364153834e-05,
+            "top5_share": 0.00028022880682076914,
+            "top10_share": 0.0005604576136415383,
+            "hhi": 4.59075887370922e-05,
+            "effective_units": 21782.890966608855,
+            "events_after_deleting_largest_unit": 285465
+          },
+          "official_gt_identity_pair": {
+            "events": 0,
+            "nonempty_units": 0,
+            "max_unit_events": 0,
+            "max_unit_share": null,
+            "top5_share": null,
+            "top10_share": null,
+            "hhi": null,
+            "effective_units": null,
+            "events_after_deleting_largest_unit": 0
+          },
+          "official_gt_trajectories": 0,
+          "sources_with_ge_5_edges": 171,
+          "sources_with_ge_10_edges": 171
+        }
+      }
+    },
+    "pair_role": {
+      "retained_fit_edges": 262962,
+      "identity_counts": {
+        "same_gt": 5642,
+        "different_gt": 391,
+        "one_endpoint_unknown": 4404,
+        "both_endpoints_unknown": 252525
+      },
+      "both_identity_known": 6033,
+      "sources_with_same_gt": 167,
+      "sources_with_different_gt": 70,
+      "sources_with_both_identity_statuses": 69,
+      "tracks_with_both_identity_statuses": 112,
+      "per_identity_concentration": {
+        "same_gt": {
+          "source": {
+            "events": 5642,
+            "nonempty_units": 167,
+            "max_unit_events": 333,
+            "max_unit_share": 0.05902162353775257,
+            "top5_share": 0.13222261609358382,
+            "top10_share": 0.20241049273307338,
+            "hhi": 0.011427749618279172,
+            "effective_units": 87.50629243752921,
+            "events_after_deleting_largest_unit": 5309
+          },
+          "predicted_track": {
+            "events": 5642,
+            "nonempty_units": 766,
+            "max_unit_events": 16,
+            "max_unit_share": 0.002835873803615739,
+            "top5_share": 0.014179369018078695,
+            "top10_share": 0.02835873803615739,
+            "hhi": 0.001957454102083666,
+            "effective_units": 510.8676616915423,
+            "events_after_deleting_largest_unit": 5626
+          },
+          "official_gt_identity_pair": {
+            "events": 5642,
+            "nonempty_units": 620,
+            "max_unit_events": 29,
+            "max_unit_share": 0.0051400212690535275,
+            "top5_share": 0.024104927330733782,
+            "top10_share": 0.04501949663239986,
+            "hhi": 0.0022890683775064744,
+            "effective_units": 436.85894655943787,
+            "events_after_deleting_largest_unit": 5613
+          },
+          "official_gt_trajectories": 620,
+          "sources_with_ge_5_edges": 159,
+          "sources_with_ge_10_edges": 144
+        },
+        "different_gt": {
+          "source": {
+            "events": 391,
+            "nonempty_units": 70,
+            "max_unit_events": 23,
+            "max_unit_share": 0.058823529411764705,
+            "top5_share": 0.23273657289002558,
+            "top10_share": 0.3938618925831202,
+            "hhi": 0.02505870579077845,
+            "effective_units": 39.90629078569564,
+            "events_after_deleting_largest_unit": 368
+          },
+          "predicted_track": {
+            "events": 391,
+            "nonempty_units": 131,
+            "max_unit_events": 11,
+            "max_unit_share": 0.028132992327365727,
+            "top5_share": 0.11764705882352941,
+            "top10_share": 0.20971867007672634,
+            "hhi": 0.011688829874215894,
+            "effective_units": 85.5517627308338,
+            "events_after_deleting_largest_unit": 380
+          },
+          "official_gt_identity_pair": {
+            "events": 391,
+            "nonempty_units": 164,
+            "max_unit_events": 22,
+            "max_unit_share": 0.056265984654731455,
+            "top5_share": 0.13043478260869565,
+            "top10_share": 0.2020460358056266,
+            "hhi": 0.010930069792845415,
+            "effective_units": 91.49072411729503,
+            "events_after_deleting_largest_unit": 369
+          },
+          "official_gt_trajectories": 233,
+          "sources_with_ge_5_edges": 27,
+          "sources_with_ge_10_edges": 11
+        },
+        "one_endpoint_unknown": {
+          "source": {
+            "events": 4404,
+            "nonempty_units": 161,
+            "max_unit_events": 300,
+            "max_unit_share": 0.0681198910081744,
+            "top5_share": 0.13578564940962762,
+            "top10_share": 0.20844686648501362,
+            "hhi": 0.012670856565866551,
+            "effective_units": 78.92126272614078,
+            "events_after_deleting_largest_unit": 4104
+          },
+          "predicted_track": {
+            "events": 4404,
+            "nonempty_units": 974,
+            "max_unit_events": 12,
+            "max_unit_share": 0.0027247956403269754,
+            "top5_share": 0.013396911898274296,
+            "top10_share": 0.025431425976385105,
+            "hhi": 0.0012788720682461077,
+            "effective_units": 781.9390420899855,
+            "events_after_deleting_largest_unit": 4392
+          },
+          "official_gt_identity_pair": {
+            "events": 0,
+            "nonempty_units": 0,
+            "max_unit_events": 0,
+            "max_unit_share": null,
+            "top5_share": null,
+            "top10_share": null,
+            "hhi": null,
+            "effective_units": null,
+            "events_after_deleting_largest_unit": 0
+          },
+          "official_gt_trajectories": 0,
+          "sources_with_ge_5_edges": 153,
+          "sources_with_ge_10_edges": 127
+        },
+        "both_endpoints_unknown": {
+          "source": {
+            "events": 252525,
+            "nonempty_units": 169,
+            "max_unit_events": 10972,
+            "max_unit_share": 0.04344916344916345,
+            "top5_share": 0.10485694485694486,
+            "top10_share": 0.15174735174735174,
+            "hhi": 0.008601643632947464,
+            "effective_units": 116.25685074531937,
+            "events_after_deleting_largest_unit": 241553
+          },
+          "predicted_track": {
+            "events": 252525,
+            "nonempty_units": 21492,
+            "max_unit_events": 16,
+            "max_unit_share": 6.336006336006336e-05,
+            "top5_share": 0.0003168003168003168,
+            "top10_share": 0.0006336006336006336,
+            "hhi": 5.2436693719735e-05,
+            "effective_units": 19070.615041917514,
+            "events_after_deleting_largest_unit": 252509
+          },
+          "official_gt_identity_pair": {
+            "events": 0,
+            "nonempty_units": 0,
+            "max_unit_events": 0,
+            "max_unit_share": null,
+            "top5_share": null,
+            "top10_share": null,
+            "hhi": null,
+            "effective_units": null,
+            "events_after_deleting_largest_unit": 0
+          },
+          "official_gt_trajectories": 0,
+          "sources_with_ge_5_edges": 169,
+          "sources_with_ge_10_edges": 169
+        }
+      }
+    }
+  },
+  "classification_outcome_values_decoded": false,
+  "tune_identity_values_decoded": false,
+  "real_NPZ_opened": false,
+  "training_or_model_imported": false,
+  "GPU_used": false,
+  "elapsed_seconds": 80.09907440841198,
+  "scope": "All selected fit edges and all fit eligible manual identity rows; no sampling. Mixed source bytes scanned, only fit identity fields decoded.",
+  "limitations": [
+    "Manual-source provenance inherits the fixed independently audited support rows; no raw GT rematching occurs here.",
+    "Unknown endpoints stay separate; different-GT labels cover observed endpoints only, not references or whole-track purity.",
+    "Descriptive identity support is not a statistical/mechanism, support-sufficiency, training-readiness or efficacy gate."
+  ]
+}

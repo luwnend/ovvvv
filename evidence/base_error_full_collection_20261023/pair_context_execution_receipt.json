@@ -1,0 +1,45 @@
+{
+  "status": "PASS_GT_FREE_PAIR_CONTEXT_INDEX_AND_FULL_INDEPENDENT_AUDIT",
+  "recorded_utc": "2026-10-23T15:39:20.696250+00:00",
+  "producer": {
+    "tool_session": 5623,
+    "actual_exit_code": 0,
+    "observed_by": "root direct write_stdin poll",
+    "elapsed_seconds": 45.80183528736234
+  },
+  "independent_audit": {
+    "tool_session": 90413,
+    "actual_exit_code": 0,
+    "observed_by": "evaluator_audit direct tool poll",
+    "elapsed_seconds": 54.17477420065552
+  },
+  "hashes": {
+    "results/base_error_full_collection_20261023/pair_context_v1/pair_context_receipt.json": "ae9b5fd9a122533733e14208e81b0c875ca7bbb41ed1397ff4b804b25901dd2c",
+    "results/base_error_full_collection_20261023/pair_context_v1/independent_pair_context_audit.json": "df7c386a8f01d3dbfce928e58758f9c455f685e8485dbfa8b19a0cd4ac936e81",
+    "results/base_error_full_collection_20261023/independent_pair_context_audit_execution_receipt.json": "d02c39299871f84c3bb43a9984c9902c51a35a6151a4838a12ad98284fc2feba"
+  },
+  "counts": {
+    "all_emitted_tracks": 144930,
+    "all_emitted_observations": 681602,
+    "supported_tracks": 52303,
+    "candidate_edges_lag_bin_0": 606278,
+    "candidate_edges_lag_bin_1": 714133,
+    "candidate_edges_lag_bin_2": 895490,
+    "candidate_edges_lag_bin_3": 1731217,
+    "retained_edges": 623878,
+    "retained_edges_lag_bin_0": 171039,
+    "edges_with_disjoint_reference_support": 497958,
+    "retained_edges_lag_bin_3": 147325,
+    "retained_edges_lag_bin_1": 158499,
+    "retained_edges_lag_bin_2": 147015,
+    "tracks_below_reference_support": 92627
+  },
+  "source_roles": {
+    "pair_role": 169,
+    "mean_role": 172,
+    "tune_evaluation": 42
+  },
+  "supervision_or_NPZ_opened": false,
+  "model_training_started": false,
+  "research_goal_complete": false
+}

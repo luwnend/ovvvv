@@ -1,0 +1,1011 @@
+{
+  "stage": "base_full_20261023",
+  "source_root": "/home/chenhc/ov/OVMOT_RESEARCH",
+  "files": [
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/项目进度.md",
+      "destination": "report/项目进度.md",
+      "bytes": 15139,
+      "sha256": "7be41f248ecc574a6e3fa73f15c48d0635fc292cb12de8ddda3790d49fd16a86"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/OVTrack_收尾总结.md",
+      "destination": "report/OVTrack_收尾总结.md",
+      "bytes": 8975,
+      "sha256": "cf4bf428bf43a0d4e9301d86a2d1774f9718d25150dbc10607cfa23b759a6a4f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/OVMOT_方法调研笔记.md",
+      "destination": "report/OVMOT_方法调研笔记.md",
+      "bytes": 22679,
+      "sha256": "2dfa50ee975e8bda14807256a5dc1387a3dbcdf7b1fa64a4b180e1ffdf782408"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_改进方案.md",
+      "destination": "report/COVTrack_改进方案.md",
+      "bytes": 2019,
+      "sha256": "3c697da9cbcf1f3a1693e0c2aa0189aab678aead4370fe9f9d9c79968da0a171"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_论文级改进设计.md",
+      "destination": "report/COVTrack_论文级改进设计.md",
+      "bytes": 20113,
+      "sha256": "982a36b3ac98b4c55a06a7dd289b04edc6a3c065a467ef4bc68c9d2083dd1eb2"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_完整val轨迹读出_20261023.md",
+      "destination": "report/COVTrack_完整val轨迹读出_20261023.md",
+      "bytes": 8485,
+      "sha256": "d5d703ab9220509235aa6aa79d914d5dde69ec81d157b31b021378a0e7045772"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_自然依赖核验_20261023.md",
+      "destination": "report/COVTrack_自然依赖核验_20261023.md",
+      "bytes": 13263,
+      "sha256": "cbfb9372983212a443d9c9cb24856239f30c7dad37dff9132bfd23262115e758"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_track_posterior_cache.py",
+      "destination": "tmp_analysis/build_track_posterior_cache.py",
+      "bytes": 21272,
+      "sha256": "5b5c86165c77f5d8a46258f4a46a1d16534548c100dc7bdefb687b85511100ad"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/evaluate_track_readouts.py",
+      "destination": "tmp_analysis/evaluate_track_readouts.py",
+      "bytes": 8887,
+      "sha256": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/summarize_track_readouts.py",
+      "destination": "tmp_analysis/summarize_track_readouts.py",
+      "bytes": 9930,
+      "sha256": "a53c6fe1bafffd43f2687564ecaa658161d89b7909b67884ed69afd6b6ff8703"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/score_track_cache_diagnostic.py",
+      "destination": "tmp_analysis/score_track_cache_diagnostic.py",
+      "bytes": 23485,
+      "sha256": "c828261a0c20cdd09b4a1f5264c9c268640e6613d96335630d4cbae9a8790c83"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_dependence_readouts.py",
+      "destination": "tmp_analysis/build_dependence_readouts.py",
+      "bytes": 21681,
+      "sha256": "dba93592ec8ff507c7decb062bc0d1d11cadba67142bca5f7534702e15c9af04"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_teta_classification_events.py",
+      "destination": "tmp_analysis/build_teta_classification_events.py",
+      "bytes": 8827,
+      "sha256": "c390794cf8e3e743158840e399f923dbbbef66bae354f2bcc60b3593604939e6"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/score_dependence_readouts.py",
+      "destination": "tmp_analysis/score_dependence_readouts.py",
+      "bytes": 10605,
+      "sha256": "5e36843ad56e9cf79a8381d19af045d8dd969171ddf967c0a2e378cae2f48952"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_natural_dependence.py",
+      "destination": "tmp_analysis/diagnose_natural_dependence.py",
+      "bytes": 45582,
+      "sha256": "c3eb25b4123fdeab49bc407996df0fbc8f69e6c6590f2ce78b910fdbafa50045"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_natural_dependence_posterior01.py",
+      "destination": "tmp_analysis/diagnose_natural_dependence_posterior01.py",
+      "bytes": 45973,
+      "sha256": "f1edad4dc9ae7373eb9c004b1bd37abff8ac0836738f3851eeb355fbcd7f2820"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/evaluate_dependence_readout.py",
+      "destination": "tmp_analysis/evaluate_dependence_readout.py",
+      "bytes": 8582,
+      "sha256": "b098593094fdac1a07b4fcbf6ad8bd5e620f73df2a06e45c78930f7905bc2fd8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_dependence_stage.py",
+      "destination": "tmp_analysis/verify_dependence_stage.py",
+      "bytes": 11351,
+      "sha256": "c2ddfb397072d8f090a9c951c67a474675e5a0eaa24298610890a6924509cb6d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/sync_research_stage.py",
+      "destination": "tmp_analysis/sync_research_stage.py",
+      "bytes": 16275,
+      "sha256": "a0b0515020a30ce668470f7f3519db7451c552bf2616d0d8637ba1fe383d75fa"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/novelty_audit_20261023.md",
+      "destination": "tmp_analysis/novelty_audit_20261023.md",
+      "bytes": 25515,
+      "sha256": "257c28e4399eee2f0034afc75856299f0b706db9d55d071a69fdfb5b4a64878b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/covtrackpp_code_boundary_20261023.md",
+      "destination": "tmp_analysis/covtrackpp_code_boundary_20261023.md",
+      "bytes": 19891,
+      "sha256": "fb9e3b5e4e0ae07a58dd747bf1609deecffbf62e22ab87990bf5fd5e81c04c7a"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/dependence_independent_review_20261023.md",
+      "destination": "tmp_analysis/dependence_independent_review_20261023.md",
+      "bytes": 5587,
+      "sha256": "fd07e217f2cd2e6a0edd00dfe72a30ac24edd3baebce7c5d313919c454b1a77d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_learning_readiness_20261023.md",
+      "destination": "tmp_analysis/base_error_learning_readiness_20261023.md",
+      "bytes": 11615,
+      "sha256": "9a4b5aaa4c12da3b70d59b4ed8d8cc2cc29c35e17244df73c42947aae3b7e41e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_base_error_learning_plan.py",
+      "destination": "tmp_analysis/build_base_error_learning_plan.py",
+      "bytes": 16693,
+      "sha256": "c391140fcea32b11b1bbcfe27c1e10f86bbdcd94701a5809c28fd6cc8e6dcfaa"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_learning_plan_20261023.json",
+      "destination": "tmp_analysis/base_error_learning_plan_20261023.json",
+      "bytes": 586803,
+      "sha256": "f37f1ecc52734953ea5269407ab0aa8013e650e97bed4dde3cdd399a11e13ba5"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/design.json",
+      "destination": "evidence/dependence_audit_20261023/design.json",
+      "bytes": 3252,
+      "sha256": "103536545be17f2065c53374181824c4db0691c5e13be7742354fe9780c3651c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/manifest.json",
+      "destination": "evidence/dependence_audit_20261023/manifest.json",
+      "bytes": 5585,
+      "sha256": "8dd3eafbf200bc70b7820ad90fdabeac501cc9c69a1aeaa49d2e703e16d0b67c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/completion_receipt.json",
+      "destination": "evidence/dependence_audit_20261023/completion_receipt.json",
+      "bytes": 37626,
+      "sha256": "abf0312689fa5218072dab7a40009e555fc600e478427756427d950c9a169991"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/protected_after.json",
+      "destination": "evidence/dependence_audit_20261023/protected_after.json",
+      "bytes": 1588,
+      "sha256": "a8d8c1ef9cc8ce4ac374df4883a135c992695112b3497b9d1afc8e0d477663a2"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/teta_events/receipt.json",
+      "destination": "evidence/dependence_audit_20261023/teta_events/receipt.json",
+      "bytes": 3063,
+      "sha256": "6e89388fbb060edffbcb86733800c9276d5d0fd2dc2cb088d0a7fe4a436ea980"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/scores/score_summary.json",
+      "destination": "evidence/dependence_audit_20261023/scores/score_summary.json",
+      "bytes": 117555,
+      "sha256": "42e3db16b9dd57c801b31656a9feedc52c3e8ac053eb2586f12489e7ab1801ff"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readback_verification.json",
+      "destination": "evidence/dependence_audit_20261023/readback_verification.json",
+      "bytes": 2087,
+      "sha256": "2863c7974b3bb0a1d0fa216e1452fc7ec2d4464bb63c5801eac48de8af01f2ec"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_numerical_preflight.json",
+      "destination": "evidence/dependence_audit_20261023/natural_numerical_preflight.json",
+      "bytes": 1127,
+      "sha256": "4db4dbf8021ad3f0d0525df37a5c58b42ef80c492b0e29dbf3b01da1842ccb72"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_mapping_preflight.json",
+      "destination": "evidence/dependence_audit_20261023/natural_mapping_preflight.json",
+      "bytes": 3991,
+      "sha256": "853a5decac35e7c25582bdc015f151675d6c777de8db7ff5b795f2eef8ffc2b9"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_error_dependence_summary.json",
+      "destination": "evidence/dependence_audit_20261023/natural_error_dependence_summary.json",
+      "bytes": 718104,
+      "sha256": "eee2ae255a0007c56e8e8f2c5382a69c9844d9e2ebf8d890d0bba7887efe634e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_execution_receipt.json",
+      "destination": "evidence/dependence_audit_20261023/natural_execution_receipt.json",
+      "bytes": 4842,
+      "sha256": "abeb19c8c9a757f9a01c7d0b96b85caf5a1fee9ffc91591e8e599db042ace9db"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/official_execution_receipt.json",
+      "destination": "evidence/dependence_audit_20261023/official_execution_receipt.json",
+      "bytes": 6839,
+      "sha256": "549bb7a152720580f83703f3707def64f303cf8ce3fc264a01b9562025a855ed"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/natural_protocol_deviation_receipt.json",
+      "destination": "evidence/dependence_audit_20261023/natural_protocol_deviation_receipt.json",
+      "bytes": 3413,
+      "sha256": "7575822c62e8feb4c74f55bbb43a1ffc8b3dbdc33cb10ddc6ec14284675ad966"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_numerical_preflight.json",
+      "destination": "evidence/dependence_audit_20261023/posterior01/natural_numerical_preflight.json",
+      "bytes": 1127,
+      "sha256": "6cf7e0713d1f906a04658ba6cc4aaf80a6fae5953a7a0a4b742779a044b8f499"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_mapping_preflight.json",
+      "destination": "evidence/dependence_audit_20261023/posterior01/natural_mapping_preflight.json",
+      "bytes": 4003,
+      "sha256": "e8d90d70b19d0185bd64c9b3dbe82fb8e8569eeaf50fba43ad72b32834390db3"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_error_dependence_summary.json",
+      "destination": "evidence/dependence_audit_20261023/posterior01/natural_error_dependence_summary.json",
+      "bytes": 609316,
+      "sha256": "19f0693732563c8c9e578a353452bcaa312e4848d88dbbd21b90defec00f3e51"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/natural_execution_receipt.json",
+      "destination": "evidence/dependence_audit_20261023/posterior01/natural_execution_receipt.json",
+      "bytes": 5368,
+      "sha256": "6d55b469bb19a6afa3b28e6754028626e9433090e3fae2a0cb65e8974c9c6197"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/boundary_contract.json",
+      "destination": "evidence/dependence_audit_20261023/posterior01/boundary_contract.json",
+      "bytes": 946,
+      "sha256": "9f4fbc102f23f8a1cebdb0041cc65444e44ab12df212385a5d5a0816eb84624c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/posterior01/primary_reproduction_check.json",
+      "destination": "evidence/dependence_audit_20261023/posterior01/primary_reproduction_check.json",
+      "bytes": 2584,
+      "sha256": "a9fe1e9480522acc2b8609cd05b14790fa2d342c0ea1dc7f6ebdeda32b605154"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected_mask_sumlog/receipt.json",
+      "destination": "evidence/dependence_audit_20261023/readouts/corrected_mask_sumlog/receipt.json",
+      "bytes": 1946,
+      "sha256": "517257eb5f9b5b50939e3856ba5a5cdc6de7a54c4420311885852b5760d28abd"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected_mask_sumlog/metrics.json",
+      "destination": "evidence/dependence_audit_20261023/readouts/corrected_mask_sumlog/metrics.json",
+      "bytes": 75632,
+      "sha256": "56595cf8c7437f34897f93d7235fd7f4377b466e2588f58f5bbbbb85229a6771"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/released.dep_inverse_density/receipt.json",
+      "destination": "evidence/dependence_audit_20261023/readouts/released.dep_inverse_density/receipt.json",
+      "bytes": 3738,
+      "sha256": "97c240a107beb5a812aca0d7d03300f8c7dbb0f928664681f1f54ebd76e6e574"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/released.dep_inverse_density/metrics.json",
+      "destination": "evidence/dependence_audit_20261023/readouts/released.dep_inverse_density/metrics.json",
+      "bytes": 75621,
+      "sha256": "a1c19a47151343a03336215f0f26355fb7809d50cad1977d15aadb460cc02fcb"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected.dep_inverse_density/receipt.json",
+      "destination": "evidence/dependence_audit_20261023/readouts/corrected.dep_inverse_density/receipt.json",
+      "bytes": 3740,
+      "sha256": "07636d8f465411ad8c2e120532610459809eabaedf67b2cc93cd015dbeef7fe7"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/dependence_audit_20261023/readouts/corrected.dep_inverse_density/metrics.json",
+      "destination": "evidence/dependence_audit_20261023/readouts/corrected.dep_inverse_density/metrics.json",
+      "bytes": 75634,
+      "sha256": "5e3b435fa71a13e0ce6853986f11bdc682ef8432a56a7e3631d5a5067e6e7abf"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/covtrackpp_live_sources_20261023/manifest.json",
+      "destination": "evidence/covtrackpp_code_audit_20261023/manifest.json",
+      "bytes": 5069,
+      "sha256": "37b35d96185a68f3a397e72fd8fb03fcb50e24dc3ce69b1ad004ec6759e6001c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/covtrackpp_live_sources_20261023/audit_verification.json",
+      "destination": "evidence/covtrackpp_code_audit_20261023/audit_verification.json",
+      "bytes": 655,
+      "sha256": "c781e5bf55c52a2de361a2b5ce234ba04ed8a5af97fa0fcb1f04b4534acdf587"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_base观测采集_20261023.md",
+      "destination": "report/COVTrack_base观测采集_20261023.md",
+      "bytes": 15631,
+      "sha256": "e657f375214dec76931d2d00e89b53280f2d3fbb022d64de35dc2a6392cdc172"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/prepare_base_error_collection.py",
+      "destination": "tmp_analysis/prepare_base_error_collection.py",
+      "bytes": 6459,
+      "sha256": "291aa33dc86c66cf7376610f20ffb427351267e8b3130540b9ca8386fe53edd3"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/collect_base_error_pilot.py",
+      "destination": "tmp_analysis/collect_base_error_pilot.py",
+      "bytes": 12381,
+      "sha256": "49cf8b3f43355287054bbad52cf44acc58aca20019da2bcfdbad295d979a5ce5"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_base_error_dump.py",
+      "destination": "tmp_analysis/verify_base_error_dump.py",
+      "bytes": 9871,
+      "sha256": "43674e77b702e3c783ccc0cc8045688dd65b078e8c7ed8e2c62866d4551b3af1"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_base_error_collection.py",
+      "destination": "tmp_analysis/verify_base_error_collection.py",
+      "bytes": 20172,
+      "sha256": "872d9ade3f416025fff07cfbcc0efc63334379093f4c066cf6fad9e84258ca5c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_learning_objective_20261023.md",
+      "destination": "tmp_analysis/base_error_learning_objective_20261023.md",
+      "bytes": 23914,
+      "sha256": "a80ff369577a3778fa669331e51c8a6e34e1203e574ee2758b3ad37759ab21c0"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/check_base_error_objective_synthetic.py",
+      "destination": "tmp_analysis/check_base_error_objective_synthetic.py",
+      "bytes": 9069,
+      "sha256": "8205712af17dc0af4523b4e7fc8b5a6775f830f248c494ace43d71edcb0e8d4a"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_objective_synthetic_20261023.json",
+      "destination": "tmp_analysis/base_error_objective_synthetic_20261023.json",
+      "bytes": 2641,
+      "sha256": "8a67f4ecc638c9b95e878777e7c779bcccd782137b4b176ac32af1c09ae89e96"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_pipeline_cpu_validation_20261023.json",
+      "destination": "tmp_analysis/base_error_pipeline_cpu_validation_20261023.json",
+      "bytes": 2403,
+      "sha256": "f3dd3dcb2966cf76564224b8729bce1f6eb87f52cb92b4140100d0bf365cd2bd"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_collection_protocol_review_20261023.md",
+      "destination": "tmp_analysis/base_collection_protocol_review_20261023.md",
+      "bytes": 11411,
+      "sha256": "24bf3a42f1b20d715c03ef3a90ad2914d25c66d6056c57f16a694df886d8a75e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_collection_verifier_rejection_checks_20261023.json",
+      "destination": "tmp_analysis/base_collection_verifier_rejection_checks_20261023.json",
+      "bytes": 365,
+      "sha256": "03781db0bafb0af8f3f14eb24cc21c28b1d3ffea0d94345a887f8e8056650ffb"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_base_error_support.py",
+      "destination": "tmp_analysis/build_base_error_support.py",
+      "bytes": 50601,
+      "sha256": "64e702efa4e0956b19e9f9a0991ecfff8022c527e3e8bfb3a50710bbf4090186"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_collection_deviations_20261023.json",
+      "destination": "tmp_analysis/base_error_collection_deviations_20261023.json",
+      "bytes": 2884,
+      "sha256": "9c8f8f4ba328f808f7cdd7b9096c9f122d7905bd006df4077a15e42ab93910c4"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/finish_base_error_collection.py",
+      "destination": "tmp_analysis/finish_base_error_collection.py",
+      "bytes": 3891,
+      "sha256": "392cc51e7251c46f0756a729d8bc62a0f2600fd32ea59e684bf10628dfb86607"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_support_review_handoff_20261023.json",
+      "destination": "tmp_analysis/base_support_review_handoff_20261023.json",
+      "bytes": 1704,
+      "sha256": "4e9019079133fde23c5802a2f9f2b9a20c33861d0e1199392d0a2f07f5e3f43e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_support_cpu_check_20261023.json",
+      "destination": "tmp_analysis/base_error_support_cpu_check_20261023.json",
+      "bytes": 485,
+      "sha256": "ee417e35e69104cd1f95babd56f611131cc8be3c2e02aaec06c775c0bdc763ae"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_support_handoff_20261023.md",
+      "destination": "tmp_analysis/base_error_support_handoff_20261023.md",
+      "bytes": 5626,
+      "sha256": "6495e1cb45ff41906c2dd3947cb4b77d964ea89bd3cff6a2c9313c05e9042a98"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/preparation_manifest.json",
+      "destination": "evidence/base_error_collection_20261023/preparation_manifest.json",
+      "bytes": 1961,
+      "sha256": "79c85747b2e7919206ba9e9c75cb820276ce298eb37659e537cdac080d47f61a"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/smoke_v2/collection_receipt.json",
+      "destination": "evidence/base_error_collection_20261023/smoke_v2/collection_receipt.json",
+      "bytes": 690,
+      "sha256": "84c0e8256d092eef21a626da08b5b1f5491d502534fcd133503f845187c3eeed"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/smoke_v2/run_manifest.json",
+      "destination": "evidence/base_error_collection_20261023/smoke_v2/run_manifest.json",
+      "bytes": 11019,
+      "sha256": "c6fca3813816725265627a73e00913883a522607829458c65a3dd6f3bd0a0088"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/smoke_v2/dump_verification.json",
+      "destination": "evidence/base_error_collection_20261023/smoke_v2/dump_verification.json",
+      "bytes": 1295,
+      "sha256": "62cb42e664dd45bc7e0d136371c3cc10c06c40b5e7012db54ee0f59f8a60ab52"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/smoke_v2/independent_collection_audit.json",
+      "destination": "evidence/base_error_collection_20261023/smoke_v2/independent_collection_audit.json",
+      "bytes": 2573,
+      "sha256": "ab7a8eeb522afaa107c8593d175e6463dee3cdce844964867c3a332803b5db69"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/pilot_collect_v1/collection_receipt.json",
+      "destination": "evidence/base_error_collection_20261023/pilot_collect_v1/collection_receipt.json",
+      "bytes": 699,
+      "sha256": "47b156052c5f4e853a1a8a8e2b1e4a2cb94fc017a28c9141c1ed6584d6d1e4f7"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/pilot_collect_v1/run_manifest.json",
+      "destination": "evidence/base_error_collection_20261023/pilot_collect_v1/run_manifest.json",
+      "bytes": 11023,
+      "sha256": "551079adc784d3adb5248dd52d5e4162c8bc7cf85f6115aba0d2b3a60a9d88b3"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/pilot_collect_v1/protected_after.json",
+      "destination": "evidence/base_error_collection_20261023/pilot_collect_v1/protected_after.json",
+      "bytes": 1322,
+      "sha256": "6aba0af18c3f86bf7911f130a9a0bb04a1fe1fbc58dc20c0beacec1eaff9e6b8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/pilot_collect_v1/dump_verification.json",
+      "destination": "evidence/base_error_collection_20261023/pilot_collect_v1/dump_verification.json",
+      "bytes": 208491,
+      "sha256": "3e5a92c73a7544ee640e0b6f616e80a720dca99045c01fcde917be792529e69a"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/pilot_collect_v1/independent_collection_audit.json",
+      "destination": "evidence/base_error_collection_20261023/pilot_collect_v1/independent_collection_audit.json",
+      "bytes": 209992,
+      "sha256": "dab5715ec7bd7ad551ab2c125bb4e722b552f6c1105a8fcfdd19724005ba5eeb"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/execution_receipt.json",
+      "destination": "evidence/base_error_collection_20261023/execution_receipt.json",
+      "bytes": 1680,
+      "sha256": "f537d8947afbf0d292b5ed9f9a7c3127c216bb855953e8eb579cf7575213f01d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/support_v1/support_receipt.json",
+      "destination": "evidence/base_error_collection_20261023/support_v1/support_receipt.json",
+      "bytes": 258027,
+      "sha256": "f0a0624f597086183a6638ddb1bd8a090fcd2c2acb1a25777114eb10a04df1f6"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/support_v1/support_summary.json",
+      "destination": "evidence/base_error_collection_20261023/support_v1/support_summary.json",
+      "bytes": 17170,
+      "sha256": "390ccd10a98ff403ea1b2e85ffa2cb7dc513e5504a26b2dc4cf6288b056c27b5"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/pilot_collect_v1/background_completion_audit.json",
+      "destination": "evidence/base_error_collection_20261023/pilot_collect_v1/background_completion_audit.json",
+      "bytes": 1071,
+      "sha256": "e35201ab488dca45bac228c8795bd7cf66a3ecafa944c32faa9cb9903507865b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/support_v1/independent_support_audit.json",
+      "destination": "evidence/base_error_collection_20261023/support_v1/independent_support_audit.json",
+      "bytes": 4530,
+      "sha256": "e07f67793cd1ba06b857a584d70f798985002b911df115e70e442a7a93697b67"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/mean_quality_v1/diagnostic_summary.json",
+      "destination": "evidence/base_error_collection_20261023/mean_quality_v1/diagnostic_summary.json",
+      "bytes": 18674,
+      "sha256": "a3d6ded14aa6acc02bf840d56cae0079b67cbfea567ba6118db4c2a702846729"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/mean_quality_v1/independent_mean_quality_audit.json",
+      "destination": "evidence/base_error_collection_20261023/mean_quality_v1/independent_mean_quality_audit.json",
+      "bytes": 8846,
+      "sha256": "bdd48ed7a4f1de27212852fd1e84174d6db2d513725fc231a973ec80af294c6b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_collection_20261023_v3/fit_tune_execution_receipt.json",
+      "destination": "evidence/base_error_collection_20261023/fit_tune_execution_receipt.json",
+      "bytes": 1216,
+      "sha256": "5ad0569b56034d27fafe8bdef60e68520b17b39144032a9211384b87ae78a817"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/SOURCE_COPY_MANIFEST.json",
+      "destination": "evidence/base_error_collection_20261023/schema/SOURCE_COPY_MANIFEST.json",
+      "bytes": 11379,
+      "sha256": "7991f51277e2636e0268b9e2de7bc0280bc69d452a4a4e05d8e4a4fee6da6998"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/SOURCE_PATCH_MANIFEST.json",
+      "destination": "evidence/base_error_collection_20261023/schema/SOURCE_PATCH_MANIFEST.json",
+      "bytes": 2251,
+      "sha256": "63bf0cc95b38a676c31fa698600fba140ce2393ed89f0a74bca79ed9db536af4"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/CPU_SCHEMA_SELF_TEST_FINAL.json",
+      "destination": "evidence/base_error_collection_20261023/schema/CPU_SCHEMA_SELF_TEST_FINAL.json",
+      "bytes": 693,
+      "sha256": "7a9e2ef3b082bed5c45fa8e9d622006f52e882b9c97cf949dc6e9933b9df6cac"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack_models_mot_ovtrack.py.patch",
+      "destination": "evidence/base_error_collection_20261023/schema/ovtrack_models_mot_ovtrack.py.patch",
+      "bytes": 5423,
+      "sha256": "fe8d7e31b1f0c81958e1636c16419b82ba5eac4128dfc273da6e1db927578c37"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack_models_roi_heads_ovtrack_roi_head.py.patch",
+      "destination": "evidence/base_error_collection_20261023/schema/ovtrack_models_roi_heads_ovtrack_roi_head.py.patch",
+      "bytes": 5750,
+      "sha256": "ac8109e439c6941548dbd2040668b4d1155a3fa8e744eee271d8c82895b3b5a3"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023/ovtrack/base_error_dump.py",
+      "destination": "evidence/base_error_collection_20261023/schema/base_error_dump.py",
+      "bytes": 14258,
+      "sha256": "e0a934285b6966f4bf541a6ef40a7366ce186c608911cee9f1a624e36def2168"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_support_cpu_check_20261023_v2.json",
+      "destination": "tmp_analysis/base_error_support_cpu_check_20261023_v2.json",
+      "bytes": 1650,
+      "sha256": "91c6a768430dddf23451527b6d768d591a6c41287c89457424308fc51de1426b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_support_independent_metadata_provenance_20261023.json",
+      "destination": "tmp_analysis/base_support_independent_metadata_provenance_20261023.json",
+      "bytes": 912,
+      "sha256": "8e8e44c46f8b396a851700fe826494eae82b562c5efed7976b6e09980c3b0f8e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_support_contract_audit_20261023.json",
+      "destination": "tmp_analysis/base_support_contract_audit_20261023.json",
+      "bytes": 2159,
+      "sha256": "7fc881a16f8504994cabc362f09320fcd0863e2db4442a2ac8b88fad7dcd683e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_support_independent_review_20261023.md",
+      "destination": "tmp_analysis/base_support_independent_review_20261023.md",
+      "bytes": 7148,
+      "sha256": "c91095a24067c8b0167798f4bfc6b97a2773531b6ebc3d2d3be8b1b478dd44ea"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_pilot_support_interpretation_20261023.md",
+      "destination": "tmp_analysis/base_pilot_support_interpretation_20261023.md",
+      "bytes": 7057,
+      "sha256": "6c389dc1f5f547fe5af10340318a93852b2a838ff62a2678560735c590d47ded"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_base_mean_quality.py",
+      "destination": "tmp_analysis/diagnose_base_mean_quality.py",
+      "bytes": 32931,
+      "sha256": "2458c403d4f7938ef0f649f9be419027aa5ce8168d011af1572675f5bdd4a84b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_mean_quality_predeclared_spec_20261023_v2.json",
+      "destination": "tmp_analysis/base_mean_quality_predeclared_spec_20261023_v2.json",
+      "bytes": 4044,
+      "sha256": "f60fe0585b8e8ab12cad145a8ba87cb3d0f98cc8f50553870afdbce16f6161a9"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_mean_quality_synthetic_receipt_20261023_v2.json",
+      "destination": "tmp_analysis/base_mean_quality_synthetic_receipt_20261023_v2.json",
+      "bytes": 1770,
+      "sha256": "3792d33388f25cde9510dac42dd87a1b5356e67d48c7dfcadccee620ced94f89"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/prepare_base_error_full_collection.py",
+      "destination": "tmp_analysis/prepare_base_error_full_collection.py",
+      "bytes": 22817,
+      "sha256": "6effccf38b142428fca9dbfe826fe580af1f2136fe34ed3f5d5aa079fb034601"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_base_error_full_collection.py",
+      "destination": "tmp_analysis/verify_base_error_full_collection.py",
+      "bytes": 29506,
+      "sha256": "32f0dad4ef6ed4e761293252e5703ee31f99f9c66aab0d1e43f8f4daa092cb88"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_full_collection_background.py",
+      "destination": "tmp_analysis/run_full_collection_background.py",
+      "bytes": 4817,
+      "sha256": "b18f72a20fde9ae5c361824bb2e4814223a01dcd390acfa99960019c3b996266"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_pause_handoff_20261023.md",
+      "destination": "tmp_analysis/base_error_pause_handoff_20261023.md",
+      "bytes": 3885,
+      "sha256": "7f54c0b405b8a1dcd8edd0c434d3600669afe37d5762026a212f4c9af7db5b1d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/preparation_manifest.json",
+      "destination": "evidence/base_error_full_collection_20261023/preparation_manifest.json",
+      "bytes": 3462,
+      "sha256": "ac803c90555fa9fb2774affe8c63d5a3747b8454a7528ccf4592a80c539584b1"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/independent_metadata_audit.json",
+      "destination": "evidence/base_error_full_collection_20261023/independent_metadata_audit.json",
+      "bytes": 1397,
+      "sha256": "a6e0d957a517106461af23d73be96d288e93ed9eed58956374b4083c8b1f1548"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/background_launch_receipt.json",
+      "destination": "evidence/base_error_full_collection_20261023/background_launch_receipt.json",
+      "bytes": 872,
+      "sha256": "d336906fe228cd79d04d64b053115cab79f471bfbff116e47378b414f70e04d4"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/background_pause_handoff.json",
+      "destination": "evidence/base_error_full_collection_20261023/background_pause_handoff.json",
+      "bytes": 2983,
+      "sha256": "c59b8dcfa5ad01e433e5f8f953e0dfa9122238162dc44fa7c9500b805d585cd6"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_full质量控制_20261023.md",
+      "destination": "report/COVTrack_full质量控制_20261023.md",
+      "bytes": 4058,
+      "sha256": "05c35df48e3b40302dd458ce9d8d1c2afe544ddf008e8a4283cdc1efc1908b60"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_fit身份混入支持_20261023.md",
+      "destination": "report/COVTrack_fit身份混入支持_20261023.md",
+      "bytes": 3547,
+      "sha256": "4d1423d354f6a78ddfaafdefc9c76df67d500b570624ea0ff6c285f711736293"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_base_error_full_support.py",
+      "destination": "tmp_analysis/build_base_error_full_support.py",
+      "bytes": 75389,
+      "sha256": "61f01dd29cc32a85133ceba0f0269c86fb0f5eb43e0ec951b39778640583504d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_full_support_adaptation_contract_20261023.json",
+      "destination": "tmp_analysis/base_error_full_support_adaptation_contract_20261023.json",
+      "bytes": 2244,
+      "sha256": "9e74c18776556a6b6e28bea564a8e8bac5d150a1d493c060aef408ca5d330160"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_error_full_support_cpu_execution_20261023.json",
+      "destination": "tmp_analysis/base_error_full_support_cpu_execution_20261023.json",
+      "bytes": 3009,
+      "sha256": "e3f7f49a39c71b1384305359b962019d31251c33453d634ad075543e9f49f978"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_support_independent_preflight_20261023.json",
+      "destination": "tmp_analysis/full_support_independent_preflight_20261023.json",
+      "bytes": 2340,
+      "sha256": "a96dd6024c4043788aed1b93cafb7f2bae630af12bc092f5352210ad726dc909"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_support_independent_preflight_20261023.md",
+      "destination": "tmp_analysis/full_support_independent_preflight_20261023.md",
+      "bytes": 603,
+      "sha256": "ba12da1996d15d60f640a0b6c6f86298966e0cb21e2c3c3accb3f230006c79f2"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_base_error_full_support_output.py",
+      "destination": "tmp_analysis/verify_base_error_full_support_output.py",
+      "bytes": 32371,
+      "sha256": "9e0603e5350488a87c635602bc4353d7cfe41ec20f88ed8cb1d3c003c318c37b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_full_mean_quality.py",
+      "destination": "tmp_analysis/diagnose_full_mean_quality.py",
+      "bytes": 22805,
+      "sha256": "464b9ad6dd551a6f813de1eded509d0fd0d00f26336cf90ee2cd54fb14e84e17"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_mean_implementation_spec_20261023.json",
+      "destination": "tmp_analysis/full_mean_implementation_spec_20261023.json",
+      "bytes": 3517,
+      "sha256": "08d48e54d56ae48f23dad1844c0d09d7c63f1f498ced429178cb525231b825d7"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_mean_synthetic_receipt_20261023_v2.json",
+      "destination": "tmp_analysis/full_mean_synthetic_receipt_20261023_v2.json",
+      "bytes": 931,
+      "sha256": "3a223268e9c5539257a788c01b2cfe4e2c58a49db3a9bf36312e2fbecc6e6bbf"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_mean_independent_synthetic_audit_20261023.json",
+      "destination": "tmp_analysis/full_mean_independent_synthetic_audit_20261023.json",
+      "bytes": 648,
+      "sha256": "b0d19068105da7702214fe7b3c371b13c616d08a01ce6c443ffe6161935bf184"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_mean_independent_preflight_20261023.json",
+      "destination": "tmp_analysis/full_mean_independent_preflight_20261023.json",
+      "bytes": 2423,
+      "sha256": "43ff8f53bfb1db22aa501459c34b073f6b7235ad9996b7c07b1f470e0a1a04be"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_mean_pair_gate_protocol_20261023.json",
+      "destination": "tmp_analysis/full_mean_pair_gate_protocol_20261023.json",
+      "bytes": 28727,
+      "sha256": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_mean_pair_gate_protocol_20261023.md",
+      "destination": "tmp_analysis/full_mean_pair_gate_protocol_20261023.md",
+      "bytes": 14167,
+      "sha256": "26c9962614c743e1bb5001e621da668632c1bae39463671ca4bb60ec4390036a"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_stage_handoff_20261023.md",
+      "destination": "tmp_analysis/full_stage_handoff_20261023.md",
+      "bytes": 6956,
+      "sha256": "0052e9d4f973ac1ffe36cf6f8854dba2628d1a91730a2c8bc1fccc6b5172605f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_full_mean_quality.py",
+      "destination": "tmp_analysis/audit_full_mean_quality.py",
+      "bytes": 28849,
+      "sha256": "4f8480425eedd702c8763da68b60f4b70ab2b0622b9be362034a9ea87f261582"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_mean_output_auditor_synthetic_receipt_20261023.json",
+      "destination": "tmp_analysis/full_mean_output_auditor_synthetic_receipt_20261023.json",
+      "bytes": 692,
+      "sha256": "d8dce74c825a5b7a5eb9eee6c963f5b8011fc92ae9148e8aefc400c4352b6a6f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/background_execution_receipt.json",
+      "destination": "evidence/base_error_full_collection_20261023/background_execution_receipt.json",
+      "bytes": 1476,
+      "sha256": "dadf20598a0a9fec6a6ce8a29dfd1a78bc0ea5e42c476f47e3d6a7a56125e838"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/independent_completion_review.json",
+      "destination": "evidence/base_error_full_collection_20261023/independent_completion_review.json",
+      "bytes": 4755,
+      "sha256": "fe0297db9761b8282e941112907bd6f20f347c92d1beb649c950e94158ae55b2"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/collection_receipt.json",
+      "destination": "evidence/base_error_full_collection_20261023/full_collect_v1/collection_receipt.json",
+      "bytes": 704,
+      "sha256": "138b9defef121a1a28385e4876378aff035818c077019ecf5e82a250093246ab"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/run_manifest.json",
+      "destination": "evidence/base_error_full_collection_20261023/full_collect_v1/run_manifest.json",
+      "bytes": 11141,
+      "sha256": "8a99676a2a45a61d3c76d423480f59381cfe4ab80e0a54df671417a5599198ab"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/model_ready.json",
+      "destination": "evidence/base_error_full_collection_20261023/full_collect_v1/model_ready.json",
+      "bytes": 176,
+      "sha256": "c8867c6685d0ee21d37bfbcc5e6244655a46daf2303d241d72d95a796260d201"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/protected_before.json",
+      "destination": "evidence/base_error_full_collection_20261023/full_collect_v1/protected_before.json",
+      "bytes": 1322,
+      "sha256": "6aba0af18c3f86bf7911f130a9a0bb04a1fe1fbc58dc20c0beacec1eaff9e6b8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/protected_after.json",
+      "destination": "evidence/base_error_full_collection_20261023/full_collect_v1/protected_after.json",
+      "bytes": 1322,
+      "sha256": "6aba0af18c3f86bf7911f130a9a0bb04a1fe1fbc58dc20c0beacec1eaff9e6b8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/support_summary.json",
+      "destination": "evidence/base_error_full_collection_20261023/support_v1/support_summary.json",
+      "bytes": 131082,
+      "sha256": "52d42d95d6c08fb61ee6e146b77af9935bfb012d3000c49576781868f220608a"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/independent_support_audit.json",
+      "destination": "evidence/base_error_full_collection_20261023/support_v1/independent_support_audit.json",
+      "bytes": 4846,
+      "sha256": "92174aaa954f6e66cd0e7f520f2f883f7b9e0017c84fbf9bf4509e734ba714e8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/independent_support_audit_execution_receipt.json",
+      "destination": "evidence/base_error_full_collection_20261023/independent_support_audit_execution_receipt.json",
+      "bytes": 1395,
+      "sha256": "f2ca7e2bae64f4e9bcb68b81339f546ce4c8bbbad8357e9ab8172b831f70beea"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/mean_quality_v1/diagnostic_summary.json",
+      "destination": "evidence/base_error_full_collection_20261023/mean_quality_v1/diagnostic_summary.json",
+      "bytes": 196081,
+      "sha256": "cbfc95c2b54b53348d233624374be6212971a8542cdd9834cc59e311812ef65a"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/mean_quality_v1/independent_mean_quality_audit.json",
+      "destination": "evidence/base_error_full_collection_20261023/mean_quality_v1/independent_mean_quality_audit.json",
+      "bytes": 12075,
+      "sha256": "f1f1241a0adc6c9d922373769bb3b535cb920a70661c0476363cb719ab8b2721"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/fit_tune_execution_receipt.json",
+      "destination": "evidence/base_error_full_collection_20261023/fit_tune_execution_receipt.json",
+      "bytes": 5817,
+      "sha256": "cd39d12747e8ba77e425a31693e1a37eaa51f720f3c89c66d24a8ae98011eb26"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_full_pair_context_cache.py",
+      "destination": "tmp_analysis/build_full_pair_context_cache.py",
+      "bytes": 26283,
+      "sha256": "70ac6b7e844cbff3802ced02db732d04d32f72173e32e684ece0befdf9ddb654"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_full_pair_context_output.py",
+      "destination": "tmp_analysis/verify_full_pair_context_output.py",
+      "bytes": 18862,
+      "sha256": "0b65685a6da1fe758527af4f9c9ea07e4801a536b5c882ac13df33066d73f590"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_pair_context_sealer_independent_preflight_20261023.json",
+      "destination": "tmp_analysis/full_pair_context_sealer_independent_preflight_20261023.json",
+      "bytes": 3623,
+      "sha256": "6c0a6045370b5561ef367d4b3848d7715d1eb1e2ec430d1de5df8f6147e5ce0f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_pair_context_sealer_independent_preflight_20261023.md",
+      "destination": "tmp_analysis/full_pair_context_sealer_independent_preflight_20261023.md",
+      "bytes": 1483,
+      "sha256": "1bdf1d76b72689f1010ee76ddcf159cef4dd551b9c7b5d6a30ec8d26e2d17bf6"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/pair_conditioning_identifiability_audit_20261023.md",
+      "destination": "tmp_analysis/pair_conditioning_identifiability_audit_20261023.md",
+      "bytes": 12260,
+      "sha256": "aa029adc8b105cc1b454dcec0e41ce5921de2a7d1e1cb7ba48cf79a688124ac3"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/check_pair_conditioning_mismatch_20261023.py",
+      "destination": "tmp_analysis/check_pair_conditioning_mismatch_20261023.py",
+      "bytes": 12819,
+      "sha256": "ddb935b4bc0e0d8f11cf3e37da0f984a1b746cf78c2cf40e8a0d383451cae113"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/pair_conditioning_mismatch_synthetic_20261023.json",
+      "destination": "tmp_analysis/pair_conditioning_mismatch_synthetic_20261023.json",
+      "bytes": 11874,
+      "sha256": "e57b191449a5d7ece669a5b111e15ecb709ff340eff14eeaebb3df87fd37723f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/semantic_uncertainty_2609_22351_fulltext_audit_20261023.md",
+      "destination": "tmp_analysis/semantic_uncertainty_2609_22351_fulltext_audit_20261023.md",
+      "bytes": 11579,
+      "sha256": "a6b69f6b9d8d5d75a1b3d7a42407dbf13c3e10d6c506eb03c75246f38f60b1e0"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/semantic_uncertainty_2609_22351_source_receipt_20261023.json",
+      "destination": "tmp_analysis/semantic_uncertainty_2609_22351_source_receipt_20261023.json",
+      "bytes": 8257,
+      "sha256": "f930459176f86d5b50449ce7d144bc177b193092baabcd06481b32702ae4eba8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_execution_receipt.json",
+      "destination": "evidence/base_error_full_collection_20261023/pair_context_execution_receipt.json",
+      "bytes": 1779,
+      "sha256": "f243fd4aef48798e3c4fff36e2aa0b4433500171747c124ba622a712e8d60741"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/independent_pair_context_audit_execution_receipt.json",
+      "destination": "evidence/base_error_full_collection_20261023/independent_pair_context_audit_execution_receipt.json",
+      "bytes": 1529,
+      "sha256": "d02c39299871f84c3bb43a9984c9902c51a35a6151a4838a12ad98284fc2feba"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/pair_context_receipt.json",
+      "destination": "evidence/base_error_full_collection_20261023/pair_context_v1/pair_context_receipt.json",
+      "bytes": 42753,
+      "sha256": "ae9b5fd9a122533733e14208e81b0c875ca7bbb41ed1397ff4b804b25901dd2c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/source_roles.json",
+      "destination": "evidence/base_error_full_collection_20261023/pair_context_v1/source_roles.json",
+      "bytes": 42380,
+      "sha256": "afa61df067f392b84ba917e1c536a9b64b869dbda19a2236b0a05b6f5c51cb8b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/independent_pair_context_audit.json",
+      "destination": "evidence/base_error_full_collection_20261023/pair_context_v1/independent_pair_context_audit.json",
+      "bytes": 3090,
+      "sha256": "df7c386a8f01d3dbfce928e58758f9c455f685e8485dbfa8b19a0cd4ac936e81"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_route_decision.json",
+      "destination": "evidence/base_error_full_collection_20261023/pair_route_decision.json",
+      "bytes": 2862,
+      "sha256": "0d08024f5c963fdc7d2e0743001072ff0c74889599de4cf8ce211d130758f944"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_fit_identity_edge_support.py",
+      "destination": "tmp_analysis/build_fit_identity_edge_support.py",
+      "bytes": 32246,
+      "sha256": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_fit_identity_edge_support_output.py",
+      "destination": "tmp_analysis/verify_fit_identity_edge_support_output.py",
+      "bytes": 20045,
+      "sha256": "862d31f63331a288804d808fb303e6704d6f4fdfa80f97daf13971f44c0f795d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_fit_identity_edge_support_20261023_synthetic_v2.json",
+      "destination": "tmp_analysis/base_fit_identity_edge_support_20261023_synthetic_v2.json",
+      "bytes": 1070,
+      "sha256": "948ed25c46fd783fb2163286d28677aba659ce567cdffa3106ef0dede3dd8550"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_fit_identity_edge_support_20261023_independent_preflight.json",
+      "destination": "tmp_analysis/base_fit_identity_edge_support_20261023_independent_preflight.json",
+      "bytes": 2552,
+      "sha256": "9aad788b2ce02b34daf920de4222578d4150149e7630894af0a73b5f860b3588"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_fit_identity_edge_support_20261023_independent_preflight.md",
+      "destination": "tmp_analysis/base_fit_identity_edge_support_20261023_independent_preflight.md",
+      "bytes": 1133,
+      "sha256": "818cbc3d2b86bce7713cdf4a338d54f620d27eaaf65ba9172643551157605576"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_fit_identity_edge_support_20261023_output_verifier_synthetic.json",
+      "destination": "tmp_analysis/base_fit_identity_edge_support_20261023_output_verifier_synthetic.json",
+      "bytes": 315,
+      "sha256": "c213d9dd3e24cd3b9740db986034e7ba9821796d26df8e3418206669fa8fd4ff"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/base_fit_identity_edge_support_20261023_oracle_design.md",
+      "destination": "tmp_analysis/base_fit_identity_edge_support_20261023_oracle_design.md",
+      "bytes": 5258,
+      "sha256": "7bd328c935c74900e66bd4ed2c0865809221d06ad75162f7fc25b8883a97499b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/fit_identity_execution_receipt.json",
+      "destination": "evidence/base_error_full_collection_20261023/fit_identity_execution_receipt.json",
+      "bytes": 4035,
+      "sha256": "e9b0784dcac0988b6c745397108362ddbed8945d19ec95d332be22831b0ef41b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/independent_fit_identity_edge_support_audit_execution_receipt.json",
+      "destination": "evidence/base_error_full_collection_20261023/independent_fit_identity_edge_support_audit_execution_receipt.json",
+      "bytes": 1446,
+      "sha256": "f9a90ce41dc13b086ed711b7673d4da43c3208d2e1b52f61a3c26332c7c72e37"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/base_fit_identity_edge_support_20261023/identity_support_brief.json",
+      "destination": "evidence/base_error_full_collection_20261023/base_fit_identity_edge_support_20261023/identity_support_brief.json",
+      "bytes": 170138,
+      "sha256": "b818247c12d4bd37f10c21b713dd4de5ee459d6ab7a8fd5443fa1a02caa0e689"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/base_fit_identity_edge_support_20261023/independent_identity_support_audit.json",
+      "destination": "evidence/base_error_full_collection_20261023/base_fit_identity_edge_support_20261023/independent_identity_support_audit.json",
+      "bytes": 20434,
+      "sha256": "8e0cafbb0dea4c9120119e62ff0bb9d5a5a3bd06855d5140117aa2481372beaf"
+    }
+  ],
+  "excludes": [
+    "datasets",
+    "checkpoints",
+    "prediction rows",
+    "raw posterior caches",
+    "logs",
+    "PDFs"
+  ],
+  "meaning": "Source artifact paths remain local; evidence JSON is a copied receipt, not the underlying data"
+}

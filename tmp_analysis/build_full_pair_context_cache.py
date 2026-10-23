@@ -23,6 +23,8 @@ ROOT = Path(__file__).resolve().parents[1]
 PROTOCOL = ROOT / "tmp_analysis/full_mean_pair_gate_protocol_20261023.json"
 PROTOCOL_SHA = "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718"
 FULL_PLAN_SHA = "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b"
+ACCEPTED_MANIFEST = ROOT / "results/base_error_full_collection_20261023/support_v1/gt_free_index_manifest.json"
+ACCEPTED_MANIFEST_SHA = "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667"
 ROLE_SEED = "pair_role_v1"
 EDGE_SEED = "pair_edges_v1"
 LAG_BINS = ((1, 2), (3, 5), (6, 10), (11, None))
@@ -50,6 +52,25 @@ def sha(path):
 
 def json_hash(value):
     return hashlib.sha256(json.dumps(value, separators=(",", ":"), ensure_ascii=False).encode()).hexdigest()
+
+
+def validate_manifest_binding(path, expected_path, expected_sha):
+    require(Path(path).resolve() == expected_path, "Use the independently accepted GT-free manifest path")
+    require(sha(path) == expected_sha, "Accepted GT-free manifest changed; independent re-review required")
+
+
+def authenticate_manifest(path):
+    """Bind the real entrypoint to the independently accepted upstream seal.
+
+    A self-consistent replacement manifest is insufficient: its provenance
+    must be the exact accepted full-support GT-free index, before any rows
+    are parsed. There is deliberately no CLI override for either binding.
+    """
+    validate_manifest_binding(path, ACCEPTED_MANIFEST, ACCEPTED_MANIFEST_SHA)
+
+
+def integer(value):
+    return isinstance(value, int) and not isinstance(value, bool)
 
 
 def write(path, value):
@@ -104,10 +125,18 @@ def edge_digest(video, local, first, second):
 
 def select_edges(video, local, observations):
     """Select hashes before target access; same hashes for swapped endpoints."""
-    require(local >= 0, "Negative local IDs cannot form tracks")
+    require(integer(video) and integer(local) and local >= 0, "Invalid video or local track ID")
+    for row in observations:
+        require(all(integer(row[k]) for k in ("observation_id", "image_id", "sampled_step", "original_frame_index")),
+                "Noninteger track observation coordinate")
+        require(row["observation_id"] >= 0 and row["sampled_step"] >= 0 and row["original_frame_index"] >= 0,
+                "Negative track observation coordinate")
     ordered = sorted(observations, key=lambda row: (row["sampled_step"], row["observation_id"]))
     require(len({row["observation_id"] for row in ordered}) == len(ordered), "Duplicate track observation")
     require(len({row["sampled_step"] for row in ordered}) == len(ordered), "Duplicate local track in sampled frame")
+    require(len({row["image_id"] for row in ordered}) == len(ordered), "Repeated image in one local track")
+    require(all(a["original_frame_index"] < b["original_frame_index"] for a, b in zip(ordered, ordered[1:])),
+            "Original frame indices must increase with sampled steps")
     if len(ordered) < MIN_TRACK:
         return [], [0] * len(LAG_BINS)
     heaps = [[] for _ in LAG_BINS]
@@ -173,7 +202,7 @@ def load_index(index_manifest, plan, directory):
     for row in jsonl(directory / "gt_free_observations.jsonl"):
         require(OBS_REQUIRED <= set(row) <= OBS_FIELDS, "Unexpected/missing observation field; possible supervision sidechannel")
         oid, vid, local, iid = row["observation_id"], row["video_id"], row["local_track_id"], row["image_id"]
-        require(all(isinstance(v, int) and not isinstance(v, bool) for v in (oid, vid, local, iid)), "Noninteger observation identity")
+        require(all(integer(v) for v in (oid, vid, local, iid, row["sampled_step"], row["original_frame_index"])), "Noninteger observation identity or time")
         require(oid >= 0 and oid not in seen and local >= 0, "Duplicate observation or unassigned local ID")
         seen.add(oid)
         require(iid in images and vid == images[iid]["video_id"], "Observation outside selected metadata")
@@ -183,7 +212,7 @@ def load_index(index_manifest, plan, directory):
         require(row["sampled_step"] == im["sample_step"] == im["frame_id"], "Sample-step provenance mismatch")
         require(row["original_frame_index"] == im["frame_index"], "Original frame provenance mismatch")
         require(Path(row["dump_file"]).name == row["dump_file"] and row["dump_file"].endswith(".npz"), "Invalid dump filename")
-        require(isinstance(row["dump_row"], int) and row["dump_row"] >= 0, "Invalid raw dump row")
+        require(integer(row["dump_row"]) and row["dump_row"] >= 0, "Invalid raw dump row")
         digest = row["dump_sha256"]
         require(isinstance(digest, str) and len(digest) == 64 and set(digest) <= set("0123456789abcdef"), "Invalid sealed dump digest")
         grouped[(vid, local)].append({key: row[key] for key in (
@@ -195,6 +224,8 @@ def load_index(index_manifest, plan, directory):
     listed_tracks = set()
     for row in jsonl(directory / "gt_free_tracks.jsonl"):
         require(set(row) == TRACK_FIELDS, "Unexpected track field; possible supervision sidechannel")
+        require(integer(row["video_id"]) and integer(row["local_track_id"]) and integer(row["n_observations"]) and
+                all(integer(oid) for oid in row["observation_ids"]), "Noninteger track identity or membership")
         key = (row["video_id"], row["local_track_id"])
         require(key in grouped and key not in listed_tracks, "Missing or duplicate GT-free track")
         listed_tracks.add(key)
@@ -212,6 +243,7 @@ def build(args):
     require(not args.out.exists(), "Use a new output directory")
     require(args.manifest.name == "gt_free_index_manifest.json", "Only sealed GT-free index manifest is supported")
     require(args.full_plan.name == "full_collection_plan.json", "Only full metadata plan is supported")
+    authenticate_manifest(args.manifest)
     inputs = [PROTOCOL, args.manifest, args.full_plan,
               args.manifest.parent / "gt_free_observations.jsonl", args.manifest.parent / "gt_free_tracks.jsonl",
               Path(__file__).resolve()]
@@ -283,6 +315,7 @@ def build(args):
         source_groups_with_edges=len(by_source), input_sha256=before, input_sha256_after=after,
         opened_input_paths=[str(path) for path in inputs if path != Path(__file__).resolve()],
         files=files, protocol_sha256=PROTOCOL_SHA, full_collection_plan_sha256=FULL_PLAN_SHA,
+        accepted_gt_free_manifest_sha256=ACCEPTED_MANIFEST_SHA,
         aggregation_key=["video_id", "local_track_id"],
         selection="GT-free all emitted tracks; max4 smallest edge hashes per sample-step lag bin; no target join",
         reference_definition="All track_contexts.observation_ids except observation_i/j, in stored sampled-step order; hash equals compact JSON array SHA256",
@@ -323,7 +356,10 @@ def self_test():
     require(select_edges(11, 7, r[:3])[0] == [], "Insufficient references admitted")
     rejected = []
     for name, local, fixture in (("negative_local_id", -1, r), ("duplicate_sample_frame", 7, r+[dict(r[0], observation_id=999)]),
-                                 ("duplicate_observation", 7, r+[dict(r[0], sampled_step=999)])):
+                                 ("duplicate_observation", 7, r+[dict(r[0], sampled_step=999)]),
+                                 ("repeated_image", 7, [dict(x, image_id=10) for x in r]),
+                                 ("decreasing_original_time", 7, [dict(x, original_frame_index=999-x["original_frame_index"]) for x in r]),
+                                 ("bool_time", 7, [dict(r[0], sampled_step=False)]+r[1:])):
         try:
             select_edges(11, local, fixture)
         except ValueError:
@@ -338,10 +374,28 @@ def self_test():
     for label, steps in (("one_to_two", [0,1,2]), ("three_to_five", [0,3,5]), ("six_to_ten", [0,6,10]), ("eleven_plus", [0,11,99])):
         # Boundary completeness checked independently from endpoint fixtures.
         require(all(0 <= lag_bin(b-a) <= 3 for a,b in itertools.combinations(steps,2)), label)
+    with tempfile.TemporaryDirectory(prefix="pair_seal_auth_selftest_") as temporary:
+        fixture = Path(temporary) / "gt_free_index_manifest.json"
+        fixture.write_text('{"synthetic":true}\n')
+        digest = sha(fixture)
+        validate_manifest_binding(fixture, fixture.resolve(), digest)
+        replacement = fixture.parent / "replacement" / fixture.name
+        replacement.parent.mkdir()
+        replacement.write_bytes(fixture.read_bytes())
+        for label, candidate in (("replacement_manifest_path", replacement), ("changed_manifest_bytes", fixture)):
+            if candidate == fixture:
+                fixture.write_text('{"synthetic":true,"observations":1}\n')
+            try:
+                validate_manifest_binding(candidate, fixture.resolve(), digest)
+            except ValueError:
+                rejected.append(label)
+            else:
+                raise AssertionError("Accepted unauthenticated upstream fixture: " + label)
     return dict(status="PASS_CPU_GT_FREE_PAIR_INDEX_SYNTHETIC_ONLY", smallest_hash_per_bin=True,
                 per_bin_cap=4, endpoint_swap_hash_invariant=True, input_order_invariant=True,
                 no_endpoint_reference=True, GT_and_prediction_values_do_not_affect_pure_selection=True,
                 cross_video_local_id_separate=True, role_assignment_metadata_only=True,
+                upstream_manifest_path_and_hash_binding=True, original_time_strictly_increasing=True,
                 below_four_has_no_edges=True, malformed_cases_rejected=rejected,
                 data_or_posterior_opened=False, correctness_opened=False, training_started=False, GPU_used=False)
 

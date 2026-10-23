@@ -1,0 +1,210 @@
+{
+  "status": "PRIMARY_FULLTEXT_READ_AND_PDF_EQUATIONS_TABLES_VISUALLY_VERIFIED",
+  "audit_created_utc": "2026-10-23T15:42:00.995110+00:00",
+  "paper": {
+    "title": "Hierarchical Aggregation of Semantic Uncertainty in 3D Scene Graphs",
+    "arxiv_id": "2609.22351",
+    "version": "v1",
+    "version_date": "2026-09-17",
+    "authors": [
+      "Carlos Cueto Zumaya",
+      "Iacopo Catalano",
+      "Wallace Moreira Bessa",
+      "Julio A. Placed"
+    ],
+    "pages": 8,
+    "license": "CC BY-NC-SA 4.0",
+    "abstract_url": "https://arxiv.org/abs/2609.22351",
+    "html_url": "https://arxiv.org/html/2609.22351",
+    "pdf_url": "https://arxiv.org/pdf/2609.22351",
+    "code_or_project_url_established": false
+  },
+  "retrieval_order": "Parallel HF Markdown/API first; both404. Then parallel primary arXiv abstract/HTML/PDF; all200.",
+  "hf_fetch": {
+    "retrieved_utc": "2026-10-23T15:24:09.812607+00:00",
+    "requests": [
+      {
+        "name": "hf_paper.md",
+        "url": "https://huggingface.co/papers/2609.22351.md",
+        "final_url": "https://huggingface.co/papers/2609.22351.md",
+        "status": 404,
+        "bytes": 289,
+        "sha256": "3c2ad9628539ed709c3475d0c29c212ddfb5f1e3975c12f7efde0649d1ecc5e5",
+        "content_type": "text/plain; charset=utf-8",
+        "preview": "Paper not found. For an arXiv paper to appear on Hugging Face, its arxiv.org URL needs to be mentioned in at least one model, dataset or Space's README.md.\n\nIf this paper exists, c"
+      },
+      {
+        "name": "hf_api.json",
+        "url": "https://huggingface.co/api/papers/2609.22351",
+        "final_url": "https://huggingface.co/api/papers/2609.22351",
+        "status": 404,
+        "bytes": 303,
+        "sha256": "d17c28a7eed72c18e30050e276eedc0d08ee488a7c89e0a25e45e4d4848fdf91",
+        "content_type": "application/json; charset=utf-8",
+        "preview": "{\"error\":\"Paper not found. For an arXiv paper to appear on Hugging Face, its arxiv.org URL needs to be mentioned in at least one model, dataset or Space's README.md.\\n\\nIf this pap"
+      }
+    ]
+  },
+  "arxiv_fetch": {
+    "retrieved_utc": "2026-10-23T15:25:06.797097+00:00",
+    "requests": [
+      {
+        "name": "arxiv_abs.html",
+        "url": "https://arxiv.org/abs/2609.22351",
+        "final_url": "https://arxiv.org/abs/2609.22351",
+        "status": 200,
+        "bytes": 42258,
+        "sha256": "fe94b7495cd86a982a2256936ec1060d946b580a9fe275cd76fac94c195bea5a",
+        "content_type": null,
+        "preview": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head><script>document.documentElement.classList.add('js');</script>  <title>[2609.22351] Hierarchical Agg"
+      },
+      {
+        "name": "arxiv_full.html",
+        "url": "https://arxiv.org/html/2609.22351",
+        "final_url": "https://arxiv.org/html/2609.22351",
+        "status": 200,
+        "bytes": 360690,
+        "sha256": "03160ffd7c1c24a1ce022bf69e1daabd503bacae251c29835794c7d42ffdf66b",
+        "content_type": null,
+        "preview": "<!DOCTYPE html><html lang=\"en\">\n<head>\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n<title>Hierarchical Aggregation o"
+      },
+      {
+        "name": "arxiv.pdf",
+        "url": "https://arxiv.org/pdf/2609.22351",
+        "final_url": "https://arxiv.org/pdf/2609.22351",
+        "status": 200,
+        "bytes": 3028224,
+        "sha256": "8716d0435e4195aa992c24dd4ea5224bcf22b91ad4d2e362f5802c94fe5b3589",
+        "content_type": null,
+        "preview": "%PDF"
+      }
+    ]
+  },
+  "reading_coverage": {
+    "prior_state": "abstract_only_not_fulltext",
+    "current_state": "entire_primary_HTML_text_read",
+    "fulltext_characters": 56168,
+    "primary_text_lines": {
+      "title_abstract_intro": [
+        91,
+        124
+      ],
+      "related_work": [
+        126,
+        147
+      ],
+      "all_methods": [
+        149,
+        354
+      ],
+      "all_experiments": [
+        356,
+        594
+      ],
+      "conclusion": [
+        596,
+        602
+      ],
+      "all_28_references": [
+        604,
+        901
+      ]
+    },
+    "appendix_found": false,
+    "pdf_text_extracted": true,
+    "pdf_rendering": "pdftoppm -f 5 -l 7 -scale-to 1800 -png",
+    "pdf_pages_visually_inspected": [
+      5,
+      6,
+      7
+    ],
+    "visual_checks": [
+      "PDFp5 Eq9-13 chain rule/approximate factors/association statement",
+      "PDFp6 Eq14 positive association qualification and Eq15=max; TableI",
+      "PDFp7 TablesII-III including frequencies/intervals and aggregation protocol"
+    ]
+  },
+  "syncable_companions": [
+    "tmp_analysis/semantic_uncertainty_2609_22351_fulltext_audit_20261023.md",
+    "tmp_analysis/semantic_uncertainty_2609_22351_source_receipt_20261023.json",
+    "tmp_analysis/pair_conditioning_identifiability_audit_20261023.md",
+    "tmp_analysis/check_pair_conditioning_mismatch_20261023.py",
+    "tmp_analysis/pair_conditioning_mismatch_synthetic_20261023.json"
+  ],
+  "local_only_artifacts": {
+    "arxiv.pdf": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/arxiv.pdf",
+      "bytes": 3028224,
+      "sha256": "8716d0435e4195aa992c24dd4ea5224bcf22b91ad4d2e362f5802c94fe5b3589"
+    },
+    "arxiv_abs.html": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/arxiv_abs.html",
+      "bytes": 42258,
+      "sha256": "fe94b7495cd86a982a2256936ec1060d946b580a9fe275cd76fac94c195bea5a"
+    },
+    "arxiv_fetch_receipt.json": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/arxiv_fetch_receipt.json",
+      "bytes": 1349,
+      "sha256": "1ce38df07c2c9c2ac5f2ddde35bd20c0b854ea1e46de062e60cb52e81239944a"
+    },
+    "arxiv_full.html": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/arxiv_full.html",
+      "bytes": 360690,
+      "sha256": "03160ffd7c1c24a1ce022bf69e1daabd503bacae251c29835794c7d42ffdf66b"
+    },
+    "hf_api.json": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/hf_api.json",
+      "bytes": 303,
+      "sha256": "d17c28a7eed72c18e30050e276eedc0d08ee488a7c89e0a25e45e4d4848fdf91"
+    },
+    "hf_fetch_receipt.json": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/hf_fetch_receipt.json",
+      "bytes": 1181,
+      "sha256": "1ae976460b10008f104a6827fd225e597b09fe749ea57665758b5840f94b58eb"
+    },
+    "hf_paper.md": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/hf_paper.md",
+      "bytes": 289,
+      "sha256": "3c2ad9628539ed709c3475d0c29c212ddfb5f1e3975c12f7efde0649d1ecc5e5"
+    },
+    "page-5.png": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/page-5.png",
+      "bytes": 654790,
+      "sha256": "7727a3fac42aa65839f01b9712cd0abae7cf60ac40bf338ff9a8f098446bd01a"
+    },
+    "page-6.png": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/page-6.png",
+      "bytes": 672244,
+      "sha256": "17c1ceb01cbc6d6148245b3c5b86aaba6d7803d0f978046aabd9957b00398090"
+    },
+    "page-7.png": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/page-7.png",
+      "bytes": 744632,
+      "sha256": "0ea41e6020c081bcedddeac5de71d853846cd6267665756700081c6c4131fe68"
+    },
+    "pdf_layout.txt": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/pdf_layout.txt",
+      "bytes": 68067,
+      "sha256": "b32f8b313d0bd04b5098926e9262aeea5c518a7d41afb9917c5dc6857b7ba34f"
+    },
+    "primary_fulltext.txt": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/primary_fulltext.txt",
+      "bytes": 56423,
+      "sha256": "ee59c7d6858489c577e366a177b8108d6da122280d0d1b977b05324ae8dd44da"
+    },
+    "primary_metadata.json": {
+      "local_only_path": "tmp_analysis/literature_2609_22351_20261023/primary_metadata.json",
+      "bytes": 1830,
+      "sha256": "ff7bdbb0aa27729cc5cd786d45495117d0a609d881d0d937edd948898eb7d637"
+    }
+  },
+  "dataset_files_opened": false,
+  "real_pair_fit_started": false,
+  "test_or_heldout_correctness_opened": false,
+  "limits": [
+    "No code repository established",
+    "Cited prior-paper leads not fulltext-reviewed here",
+    "No claim of complete exact-method collision",
+    "Published rounded constant-Brier arithmetic is diagnostic, not measured/fitted performance"
+  ]
+}

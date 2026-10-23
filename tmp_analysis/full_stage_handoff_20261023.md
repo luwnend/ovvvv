@@ -1,40 +1,55 @@
-# Full采集与support通过后的暂停交接（2026-10-23）
+# Full阶段当前交接（2026-10-23）
 
-用户要暂停Codex对话、过会儿重新打开。研究目标未完成；当前停止启动后续任务。完整采集和full support均已完成，强mean真实拟合尚未启动。当前状态以`results/base_error_full_collection_20261023/dialogue_pause_receipt.json`及其绑定的独立审计为准。旧pause文件和准备manifest是历史快照。
+用户已恢复，研究继续；整体目标未完成。目前没有本轮GPU任务或新detector/tracker/pair训练。旧pause JSON均为历史快照，不能据此重启已完成任务。
 
-## 已验收断点
+## 已完成且独立通过
 
-- 全量采集15,283帧、448视频、383源组、681,602条输出；实际2.9068小时。collector和两个CPU审计子进程实际exit0，独立终审PASS。外层supervisor自身终端exit没有直接wait证据。
-- Full support工具session51211由root直接poll确认exit0；独立全输出审计session68926由evaluator agent直接poll确认exit0，耗时95.71秒。`support_v1/independent_support_audit.json`状态`PASS_INDEPENDENT_FULL_SUPPORT_OUTPUT_AUDIT`，SHA `92174aaa954f6e66cd0e7f520f2f883f7b9e0017c84fbf9bf4509e734ba714e8`；绑定support receipt SHA `e206051d0809b8e20b24529254eacece96f997c72b7155e8264197e7c07aae1e`。
-- 全部emitted先按`(video_id,local_track_id)`封存：681,602观测、144,930轨迹。独立复算全部15,283帧几何匹配/排除计数，全部46,908人工anchor来源、23,887监督行与193,405pairs。fit/tune可监督观测21,661/2,226，错误12,694/1,081；重复观测对不是独立样本数。
-- 强mean实现、独立实现预审、完整候选合成检查已完成；真实full mean未实跑。`diagnose_full_mean_quality.py` SHA `464b9ad6dd551a6f813de1eded509d0fd0d00f26336cf90ee2cd54fb14e84e17`。
-- Pair协议JSON冻结SHA `fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718`。`build_full_pair_context_cache.py`仅WIP（CPU合成通过，真实索引未跑，尚待独立审查）。无真实pair训练、新detector/tracker训练或方法收益结论。
+| 阶段 | 真实执行及独立审计 | 当前结论 |
+|---|---|---|
+| Full采集 | collector及两个CPU审计子进程actual exit0；独立终审PASS | 15,283帧/448视频/681,602输出，10464.512秒=2.9068小时；原1–2小时估计偏低 |
+| Full support | root session51211/exit0；独立session68926/exit0 | 全emitted681,602观测/144,930轨迹先封存；fit/tune监督21,661/2,226，全部匹配/来源/行/pairs核验 |
+| 强mean质量控制 | root session21525/exit0，265.523秒；独立session96818/exit0，139.852秒 | B3主模型fit/tune Brier=0.147018/0.136580；B1=0.200349/0.203912；普通控制，不是新方法收益 |
+| GT-free pair上下文 | root session5623/exit0，45.802秒；独立session90413/exit0，54.175秒 | 623,878边，全部3,947,118候选SHA重算；172 mean/169 pair/42 tune元数据源组固定 |
+| Fit身份支持 | root session21762/exit0，33.543秒；独立session70485/exit0，80.099秒 | 560,371固定fit边中same12158/different819/单端unknown9388/双端unknown538006；分类正确性值未解码 |
 
-## 恢复次序
+Full采集外层detached supervisor自身terminal exit没有直接wait证据；不能将其子进程exit0改写成直接观测外层exit0。没有当前采集任务，勿重复采集、support、mean、索引或身份join。
 
-1. 读`report/项目进度.md`、本文件和`dialogue_pause_receipt.json`；核对receipt哈希和独立PASS。不要重复采集或重建已有support，不覆盖sealed目录。系统`python3`缺NumPy，科学计算用下方固定解释器。
-2. 现有full mean执行门槛已满足，恢复后可运行以下CPU诊断（本次尚未执行），再独立审计输出。11候选：B0、6个ridge、4个HGB；5折外层/3折内层按源组选模，固定inner-OOF Platt；B3校准模型为预定主模型，tune只评估一次。它仅验证hard平均错误质量，不能开放pair训练门槛。
+强mean协议固定14维推理质量特征、源组5折outer/3折inner、11候选，预定B3为inner-OOF Platt后模型，tune仅最终评一次。Tune B3−B1 Brier的1000次paired源组bootstrap区间[-0.083776,-0.052271]；B3−B2区间含0，不据tune换主模型。区间条件于冻结预测、未重拟合。历史HGB权重由已审代码和合成合约承担，独立审计重建216模型对象及全部预测，未重拟合HGB。
 
-```bash
-/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python -u \
-  tmp_analysis/diagnose_full_mean_quality.py \
-  --support results/base_error_full_collection_20261023/support_v1 \
-  --out results/base_error_full_collection_20261023/mean_quality_v1 \
-  --execute > results/base_error_full_collection_20261023/execution_logs/mean_quality_v1.log 2>&1
-```
+身份different边涉及135源组/280预测轨迹；最大源组28条，删后791条。只有12,977边两端身份已知，不能把819/560,371当总体污染率。保留全部fit边和原reference补集，unknown不作负例，不能按whole-track纯度选样。混合监督文件确实被扫描/哈希，仅解码fit身份字段，tune身份与分类正确性值未解码。
 
-3. 必须记录真实工具exit；成功后运行独立`audit_full_mean_quality.py --diagnostic <mean输出目录>`，生成`independent_mean_quality_audit.json`。该verifier已用全候选合成样例校验；真实输出审计尚未执行。禁止仅凭producer PASS或安静日志判断成功/失败。
-4. Pair sealer先独立审查，再决定实跑新目录。只读GT-free manifest/两份index、full metadata plan和协议；不读监督/原GT/NPZ，不用GT筛选reference。每轨迹长度至少4，每4个lag bin各4条hash边，reference为同轨全部其他输出并排除两端；源组元数据拆分mean/pair角色。
-5. 后续再做向量均值/可识别性审计、强quality/agreement、同容量attention/校准控制与独立泛化。新文献lead `Hierarchical Aggregation of Semantic Uncertainty in 3D Scene Graphs` (arXiv2609.22351)当前只核对摘要，全文机制对比待办，不能写成已经精读。
+## 当前路线决定
 
-## 关键科学边界
+冻结`full_mean_pair_gate_protocol_20261023.json` SHA `fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718`保持原样。三轮、每轮两项精确有限分布检查确认：`E[G|A,Y]`用`P(Y|p_i,p_j,A)`积分，一般不等于所需的`E[G|p_i,p_j,A]`；oracle均值/pi也有反例。统一conditioning后，该G最优预测由full p与共同标签后验确定，击败有限C129不能识别额外“内在协方差”。
 
-Hard同错=agreement×bothwrong。coarse均值中心化仍会残留共享未知Y引入的协方差；若pi是真实条件标签后验，协议旧plug-in超额残差条件期望恒为0，只能诊断pi误设，不能作为新颖性或训练gate。当前候选主目标改为类别共享的Y条件均值/残差矩，推理对1203类积分；它仍是条件矩，不能称appearance因果。C129同容量校准控制、teacher-forced及disjoint-reference证伪均待真实执行。
+**STOP这条具体部署公式及协方差新颖性归因，不启动其真实pair拟合。** 不是已实现pair代码失败，也不否定所有关系预测/attention。决定见`pair_route_decision.json`，精确证据见`tmp_analysis/pair_conditioning_identifiability_audit_20261023.md`和synthetic回执。
 
-所有输出先聚合再监督；未匹配为unknown；test/留出类正确性关闭。已有旧“TCES失败”错误分析已从正式结论撤回，历史归档保留溯源，不可沿用。保护发布baseline、`repos/COVTrack`、数据、pilot封存物及另一会话`results/covtrack_ctao_train20_bs24_20261022`训练/配置/进程。
+arXiv2609.22351v1全文方法/实验/参考文献及PDF关键页已核验，其所谓fully correlated聚合为max。它覆盖共享模型/词表重复错误的宽泛动机，并未证明与本候选精确实现撞车。早先“只读摘要”是历史状态。全文审计与来源SHA见`semantic_uncertainty_2609_22351_fulltext_audit_20261023.md`和source receipt。
 
-## Git与长任务
+## 权威回执与大文件
 
-研究工作区`/home/chenhc/ov/OVMOT_RESEARCH`，托管副本`/home/chenhc/ov/ovvvv`，远端`https://github.com/luwnend/ovvvv`，既有SSH可用。本次用`sync_research_stage.py --stage base_full_pause_20261023`同步暂停快照，明确区分通过的采集/support、预审实现和WIP；大型receipt/索引/后验/模型保留本地并绑定SHA。全阶段最终同步仍待mean完成后的`base_full_20261023`，不能将本暂停快照当最终研究完成。
+均在`results/base_error_full_collection_20261023/`：
 
-恢复后GPU启动前现场核对owner/UUID，非4GB且启动前没有chenhc进程；他人任务可按授权共卡。预计GPU超过20分钟时先可靠detached启动并验证、保存交接，再暂停Codex；CPU任务不自动触发该规则。本次不再启动mean或新长任务。
+- `fit_tune_execution_receipt.json`：采集/support/强mean实际exit、输入输出SHA和保护检查；mean独立audit SHA `f1f1241a0adc6c9d922373769bb3b535cb920a70661c0476363cb719ab8b2721`。
+- `pair_context_execution_receipt.json`：GT-free索引实际exit及独立全查；audit SHA `df7c386a8f01d3dbfce928e58758f9c455f685e8485dbfa8b19a0cd4ac936e81`。
+- `fit_identity_execution_receipt.json`及`independent_fit_identity_edge_support_audit_execution_receipt.json`：身份join和fresh独立verifier真实exit0。Audit SHA `8e0cafbb0dea4c9120119e62ff0bb9d5a5a3bd06855d5140117aa2481372beaf`。
+- `base_fit_identity_edge_support_20261023/identity_support_brief.json`：精确派生all/per-role/固定24cells，绑定22.96MB原summary、逐边rows及audit SHA；不改变原输出。
+
+2.63MB support receipt、22.96MB身份summary、原始逐帧NPZ/JSONL、模型对象及文献HTML/PDF仅本地保留，不直接Git-sync。监督来源、split及禁用边界继承已独立审计的固定输入，不可换新源冒充同run。
+
+## 下一步
+
+1. 在独立新目录做fit-only observed-label oracle分类对照：固定原context、角色、完整词表与uniform pooling；比较all-emitted / manual-known / same-GT / deterministic count-matched参考快照。主比较使用同covered分母，另外报告完整合法端点覆盖。按源组→GT轨迹→唯一端点等权，重复contexts分配端点权重。GT快照只诊断，不改实际cache/readout。
+2. 稀疏oracle不是数学上界；收益不等于GT-free可辨识性、新颖性或TETA。分开标签覆盖/数量效应，再检查同类异身份、class-blind separator及一级来源tracklet split/可靠记忆边界。不得因819条different边直接训练router。
+3. 新脚本先三轮每轮至少两项合成/实现检查及独立预审，root再执行真实CPU诊断并独立审计；不重复旧已封存任务。系统python3缺NumPy，科学计算用`/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python`。
+4. 新方法有超过质量/agreement/共享标签/同容量attention控制的可解释信号后，才进入独立训练目录；val只作探索，独立泛化另验。
+
+## 保护、Git与长任务
+
+全emitted按`(video_id,local_track_id)`先封存再监督；GT不得筛实际readout/reference。test/留出类正确性关闭，tune不用于选模型或改超参。旧错误“TCES失败”结论已从正式文档撤下，历史归档只供溯源。
+
+保护发布baseline、`repos/COVTrack`、原始数据、sealed pilot/full输出及另一会话`results/covtrack_ctao_train20_bs24_20261022`；不停止/修改其训练或配置。此次身份receipt再次核对7项保护文件未变。
+
+研究目录`/home/chenhc/ov/OVMOT_RESEARCH`，托管副本`/home/chenhc/ov/ovvvv`，远端`https://github.com/luwnend/ovvvv`；既有SSH可用，不需新密钥。当前最终阶段用`sync_research_stage.py --stage base_full_20261023`，逐文件核对snapshot SHA、diff后commit/push；旧`base_full_pause_20261023`快照保留历史，不是当前状态。
+
+未来GPU启动前现场核owner/UUID，非4GB且启动前没有chenhc进程；他人任务可按授权共卡。预计GPU超过20分钟：可靠detached启动、验证、保存交接后按用户规则暂停Codex。CPU长任务不自动触发此规则。用户已恢复，本次不会主动暂停研究或标整体完成。

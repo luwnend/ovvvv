@@ -1,0 +1,1622 @@
+{
+  "status": "SEALED_GT_FREE_PAIR_EDGE_REFERENCE_INDEX_PENDING_INDEPENDENT_AUDIT",
+  "completed_utc": "2026-10-23T15:31:47.171837+00:00",
+  "elapsed_seconds": 45.80183528736234,
+  "counters": {
+    "all_emitted_tracks": 144930,
+    "all_emitted_observations": 681602,
+    "supported_tracks": 52303,
+    "candidate_edges_lag_bin_0": 606278,
+    "candidate_edges_lag_bin_1": 714133,
+    "candidate_edges_lag_bin_2": 895490,
+    "candidate_edges_lag_bin_3": 1731217,
+    "retained_edges": 623878,
+    "retained_edges_lag_bin_0": 171039,
+    "edges_with_disjoint_reference_support": 497958,
+    "retained_edges_lag_bin_3": 147325,
+    "retained_edges_lag_bin_1": 158499,
+    "retained_edges_lag_bin_2": 147015,
+    "tracks_below_reference_support": 92627
+  },
+  "split_observation_counts": {
+    "fit": 613536,
+    "tune": 68066
+  },
+  "source_role_counts": {
+    "pair_role": 169,
+    "mean_role": 172,
+    "tune_evaluation": 42
+  },
+  "per_role": {
+    "mean_role": {
+      "supported_tracks": 25105,
+      "retained_edges": 297409
+    },
+    "pair_role": {
+      "supported_tracks": 21888,
+      "retained_edges": 262962
+    },
+    "tune_evaluation": {
+      "supported_tracks": 5310,
+      "retained_edges": 63507
+    }
+  },
+  "per_source": {
+    "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2": {
+      "supported_tracks": 110,
+      "retained_edges": 1095
+    },
+    "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929": {
+      "supported_tracks": 125,
+      "retained_edges": 909
+    },
+    "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e": {
+      "supported_tracks": 179,
+      "retained_edges": 1841
+    },
+    "ArgoVerse/2c07fcda-6671-3ac0-ac23-4a232e0e031e": {
+      "supported_tracks": 74,
+      "retained_edges": 750
+    },
+    "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818": {
+      "supported_tracks": 179,
+      "retained_edges": 1886
+    },
+    "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec": {
+      "supported_tracks": 212,
+      "retained_edges": 2305
+    },
+    "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2": {
+      "supported_tracks": 196,
+      "retained_edges": 1991
+    },
+    "ArgoVerse/84c35ea7-1a99-3a0c-a3ea-c5915d68acbc": {
+      "supported_tracks": 160,
+      "retained_edges": 1634
+    },
+    "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": {
+      "supported_tracks": 165,
+      "retained_edges": 2031
+    },
+    "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
+      "supported_tracks": 123,
+      "retained_edges": 1148
+    },
+    "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
+      "supported_tracks": 208,
+      "retained_edges": 2103
+    },
+    "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
+      "supported_tracks": 308,
+      "retained_edges": 3211
+    },
+    "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
+      "supported_tracks": 231,
+      "retained_edges": 2182
+    },
+    "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8": {
+      "supported_tracks": 172,
+      "retained_edges": 1628
+    },
+    "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0": {
+      "supported_tracks": 89,
+      "retained_edges": 838
+    },
+    "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2": {
+      "supported_tracks": 141,
+      "retained_edges": 1479
+    },
+    "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7": {
+      "supported_tracks": 111,
+      "retained_edges": 999
+    },
+    "BDD/b1d0a191-03dcecc2": {
+      "supported_tracks": 221,
+      "retained_edges": 2436
+    },
+    "BDD/b1f85377-44885085": {
+      "supported_tracks": 160,
+      "retained_edges": 1898
+    },
+    "BDD/b20b69d2-e31380a7": {
+      "supported_tracks": 65,
+      "retained_edges": 622
+    },
+    "BDD/b20b9c19-91e01a50": {
+      "supported_tracks": 113,
+      "retained_edges": 1236
+    },
+    "BDD/b21c68e6-65674a17": {
+      "supported_tracks": 186,
+      "retained_edges": 2080
+    },
+    "BDD/b21d5efb-5e2cd743": {
+      "supported_tracks": 44,
+      "retained_edges": 328
+    },
+    "BDD/b22a4d9f-73cc8810": {
+      "supported_tracks": 174,
+      "retained_edges": 1948
+    },
+    "BDD/b232c7c9-d251d9ee": {
+      "supported_tracks": 192,
+      "retained_edges": 2350
+    },
+    "BDD/b249e7f2-92d2efad": {
+      "supported_tracks": 165,
+      "retained_edges": 1984
+    },
+    "BDD/b262f576-b0373824": {
+      "supported_tracks": 119,
+      "retained_edges": 1378
+    },
+    "BDD/b27098c3-c443b6e3": {
+      "supported_tracks": 141,
+      "retained_edges": 1468
+    },
+    "BDD/b27127df-eac9b95e": {
+      "supported_tracks": 187,
+      "retained_edges": 1986
+    },
+    "BDD/b27369f3-9b9598f4": {
+      "supported_tracks": 169,
+      "retained_edges": 1962
+    },
+    "BDD/b27688b6-cd521517": {
+      "supported_tracks": 168,
+      "retained_edges": 1952
+    },
+    "BDD/b28ec521-898e11bd": {
+      "supported_tracks": 200,
+      "retained_edges": 2271
+    },
+    "BDD/b2bee3e1-80c787bd": {
+      "supported_tracks": 153,
+      "retained_edges": 1749
+    },
+    "BDD/b2d502aa-64d3e228": {
+      "supported_tracks": 80,
+      "retained_edges": 744
+    },
+    "BDD/b2d502aa-f0b28e3e": {
+      "supported_tracks": 79,
+      "retained_edges": 948
+    },
+    "BDD/b2dbb793-9f0b2bec": {
+      "supported_tracks": 190,
+      "retained_edges": 2171
+    },
+    "BDD/b2de938e-84eab379": {
+      "supported_tracks": 210,
+      "retained_edges": 2496
+    },
+    "BDD/b2e2b2be-4142962b": {
+      "supported_tracks": 139,
+      "retained_edges": 1595
+    },
+    "BDD/b2fc7cb5-1635d64b": {
+      "supported_tracks": 129,
+      "retained_edges": 1375
+    },
+    "BDD/b2ff6aba-fa4ac7d7": {
+      "supported_tracks": 191,
+      "retained_edges": 2378
+    },
+    "BDD/b3079ec6-df7b2d92": {
+      "supported_tracks": 177,
+      "retained_edges": 2133
+    },
+    "BDD/b30b460d-73d12a29": {
+      "supported_tracks": 138,
+      "retained_edges": 1439
+    },
+    "BDD/b3159650-1ba75f9b": {
+      "supported_tracks": 150,
+      "retained_edges": 1684
+    },
+    "BDD/b3378e5e-b7593301": {
+      "supported_tracks": 127,
+      "retained_edges": 1608
+    },
+    "BDD/b33ea6cb-3464fb13": {
+      "supported_tracks": 175,
+      "retained_edges": 1878
+    },
+    "BDD/b34b1b88-5bfe3b85": {
+      "supported_tracks": 107,
+      "retained_edges": 1216
+    },
+    "BDD/b368ee71-cf27b7fa": {
+      "supported_tracks": 209,
+      "retained_edges": 2445
+    },
+    "BDD/b36e0178-2037ca44": {
+      "supported_tracks": 101,
+      "retained_edges": 1178
+    },
+    "BDD/b39fe3cd-227ff7a8": {
+      "supported_tracks": 168,
+      "retained_edges": 1763
+    },
+    "BDD/b3a9281a-e8ba5d66": {
+      "supported_tracks": 173,
+      "retained_edges": 2163
+    },
+    "BDD/b3b9ee6e-6d2617d1": {
+      "supported_tracks": 177,
+      "retained_edges": 2201
+    },
+    "BDD/b3be4113-1fb56ec4": {
+      "supported_tracks": 164,
+      "retained_edges": 1922
+    },
+    "BDD/b3c939e3-3fb7622a": {
+      "supported_tracks": 179,
+      "retained_edges": 2064
+    },
+    "BDD/b3ce9f98-2b3d06d6": {
+      "supported_tracks": 85,
+      "retained_edges": 819
+    },
+    "BDD/b3ce9f98-2dc52573": {
+      "supported_tracks": 135,
+      "retained_edges": 1408
+    },
+    "BDD/b3da33d5-a64e7657": {
+      "supported_tracks": 168,
+      "retained_edges": 1986
+    },
+    "BDD/b3e0345b-69069f01": {
+      "supported_tracks": 195,
+      "retained_edges": 2048
+    },
+    "BDD/b3e08585-5cf240fb": {
+      "supported_tracks": 125,
+      "retained_edges": 1527
+    },
+    "BDD/b40b0ea3-b242efc9": {
+      "supported_tracks": 187,
+      "retained_edges": 2252
+    },
+    "BDD/b422ec08-d42660b6": {
+      "supported_tracks": 108,
+      "retained_edges": 1097
+    },
+    "BDD/b4235ab3-b305d3e9": {
+      "supported_tracks": 65,
+      "retained_edges": 620
+    },
+    "BDD/b4278d1f-dbd0295c": {
+      "supported_tracks": 74,
+      "retained_edges": 768
+    },
+    "BDD/b4301c7b-da5261f0": {
+      "supported_tracks": 185,
+      "retained_edges": 2069
+    },
+    "BDD/b4466011-05cbc315": {
+      "supported_tracks": 200,
+      "retained_edges": 2446
+    },
+    "BDD/b4536117-bc85ba28": {
+      "supported_tracks": 129,
+      "retained_edges": 1623
+    },
+    "Charades/0LHWF": {
+      "supported_tracks": 94,
+      "retained_edges": 1309
+    },
+    "Charades/1410C": {
+      "supported_tracks": 82,
+      "retained_edges": 1212
+    },
+    "Charades/35LUV": {
+      "supported_tracks": 98,
+      "retained_edges": 1353
+    },
+    "Charades/38TF8": {
+      "supported_tracks": 117,
+      "retained_edges": 1609
+    },
+    "Charades/3N1I2": {
+      "supported_tracks": 79,
+      "retained_edges": 1145
+    },
+    "Charades/48BUM": {
+      "supported_tracks": 97,
+      "retained_edges": 1153
+    },
+    "Charades/4H61U": {
+      "supported_tracks": 102,
+      "retained_edges": 1407
+    },
+    "Charades/4K0BP": {
+      "supported_tracks": 86,
+      "retained_edges": 1187
+    },
+    "Charades/4U8WV": {
+      "supported_tracks": 91,
+      "retained_edges": 1292
+    },
+    "Charades/50E06": {
+      "supported_tracks": 76,
+      "retained_edges": 1002
+    },
+    "Charades/5HPZ1": {
+      "supported_tracks": 122,
+      "retained_edges": 1599
+    },
+    "Charades/6EU06": {
+      "supported_tracks": 97,
+      "retained_edges": 1226
+    },
+    "Charades/6FV5P": {
+      "supported_tracks": 78,
+      "retained_edges": 1046
+    },
+    "Charades/7177T": {
+      "supported_tracks": 113,
+      "retained_edges": 1531
+    },
+    "Charades/735W9": {
+      "supported_tracks": 129,
+      "retained_edges": 1735
+    },
+    "Charades/7P0JX": {
+      "supported_tracks": 99,
+      "retained_edges": 1060
+    },
+    "Charades/8Q0EY": {
+      "supported_tracks": 104,
+      "retained_edges": 1427
+    },
+    "Charades/9M48H": {
+      "supported_tracks": 100,
+      "retained_edges": 1405
+    },
+    "Charades/9UU4W": {
+      "supported_tracks": 89,
+      "retained_edges": 1286
+    },
+    "Charades/A2EY4": {
+      "supported_tracks": 88,
+      "retained_edges": 1244
+    },
+    "Charades/AIOTI": {
+      "supported_tracks": 115,
+      "retained_edges": 1300
+    },
+    "Charades/AVSN8": {
+      "supported_tracks": 127,
+      "retained_edges": 1546
+    },
+    "Charades/BI6Y4": {
+      "supported_tracks": 149,
+      "retained_edges": 1962
+    },
+    "Charades/CF9QP": {
+      "supported_tracks": 78,
+      "retained_edges": 936
+    },
+    "Charades/CYLQ0": {
+      "supported_tracks": 152,
+      "retained_edges": 1645
+    },
+    "Charades/E8468": {
+      "supported_tracks": 133,
+      "retained_edges": 1366
+    },
+    "Charades/E9FY2": {
+      "supported_tracks": 108,
+      "retained_edges": 1152
+    },
+    "Charades/EIKUN": {
+      "supported_tracks": 104,
+      "retained_edges": 1065
+    },
+    "Charades/FHAV0": {
+      "supported_tracks": 133,
+      "retained_edges": 1511
+    },
+    "Charades/FZAEP": {
+      "supported_tracks": 81,
+      "retained_edges": 1146
+    },
+    "Charades/G2DIN": {
+      "supported_tracks": 128,
+      "retained_edges": 1665
+    },
+    "Charades/G8NEV": {
+      "supported_tracks": 103,
+      "retained_edges": 1322
+    },
+    "Charades/GL2JW": {
+      "supported_tracks": 80,
+      "retained_edges": 1151
+    },
+    "Charades/GQ341": {
+      "supported_tracks": 89,
+      "retained_edges": 1188
+    },
+    "Charades/HOYUT": {
+      "supported_tracks": 76,
+      "retained_edges": 1041
+    },
+    "Charades/HSKVH": {
+      "supported_tracks": 57,
+      "retained_edges": 589
+    },
+    "Charades/HYD3N": {
+      "supported_tracks": 87,
+      "retained_edges": 1083
+    },
+    "Charades/IIL9C": {
+      "supported_tracks": 70,
+      "retained_edges": 911
+    },
+    "Charades/IULK6": {
+      "supported_tracks": 98,
+      "retained_edges": 1381
+    },
+    "Charades/JLGLU": {
+      "supported_tracks": 77,
+      "retained_edges": 826
+    },
+    "Charades/JMPKP": {
+      "supported_tracks": 95,
+      "retained_edges": 1243
+    },
+    "Charades/JOUM7": {
+      "supported_tracks": 82,
+      "retained_edges": 1120
+    },
+    "Charades/KA3ER": {
+      "supported_tracks": 166,
+      "retained_edges": 2057
+    },
+    "Charades/KPHP5": {
+      "supported_tracks": 95,
+      "retained_edges": 1129
+    },
+    "Charades/LHTSI": {
+      "supported_tracks": 86,
+      "retained_edges": 1232
+    },
+    "Charades/M6ERH": {
+      "supported_tracks": 122,
+      "retained_edges": 1639
+    },
+    "Charades/MZ9X7": {
+      "supported_tracks": 66,
+      "retained_edges": 710
+    },
+    "Charades/NPEA3": {
+      "supported_tracks": 114,
+      "retained_edges": 1326
+    },
+    "Charades/O87OF": {
+      "supported_tracks": 88,
+      "retained_edges": 1226
+    },
+    "Charades/O8DER": {
+      "supported_tracks": 104,
+      "retained_edges": 1089
+    },
+    "Charades/PC7H2": {
+      "supported_tracks": 98,
+      "retained_edges": 1278
+    },
+    "Charades/PEWH4": {
+      "supported_tracks": 81,
+      "retained_edges": 1145
+    },
+    "Charades/PJUM0": {
+      "supported_tracks": 95,
+      "retained_edges": 1369
+    },
+    "Charades/QBUAT": {
+      "supported_tracks": 107,
+      "retained_edges": 1387
+    },
+    "Charades/QCPXJ": {
+      "supported_tracks": 97,
+      "retained_edges": 1370
+    },
+    "Charades/QHU9R": {
+      "supported_tracks": 75,
+      "retained_edges": 1054
+    },
+    "Charades/QZZPS": {
+      "supported_tracks": 61,
+      "retained_edges": 805
+    },
+    "Charades/S7OTQ": {
+      "supported_tracks": 101,
+      "retained_edges": 1445
+    },
+    "Charades/SM5WL": {
+      "supported_tracks": 114,
+      "retained_edges": 1498
+    },
+    "Charades/SROEU": {
+      "supported_tracks": 88,
+      "retained_edges": 1216
+    },
+    "Charades/SVA4D": {
+      "supported_tracks": 121,
+      "retained_edges": 1703
+    },
+    "Charades/TQO6O": {
+      "supported_tracks": 60,
+      "retained_edges": 753
+    },
+    "Charades/U08M9": {
+      "supported_tracks": 59,
+      "retained_edges": 795
+    },
+    "Charades/U4J2Q": {
+      "supported_tracks": 86,
+      "retained_edges": 1216
+    },
+    "Charades/UDGP2": {
+      "supported_tracks": 138,
+      "retained_edges": 1654
+    },
+    "Charades/V7YEJ": {
+      "supported_tracks": 75,
+      "retained_edges": 1089
+    },
+    "Charades/W97NR": {
+      "supported_tracks": 84,
+      "retained_edges": 1108
+    },
+    "Charades/WJ1GN": {
+      "supported_tracks": 87,
+      "retained_edges": 996
+    },
+    "Charades/X9LP4": {
+      "supported_tracks": 80,
+      "retained_edges": 1063
+    },
+    "Charades/Y3M3W": {
+      "supported_tracks": 83,
+      "retained_edges": 1195
+    },
+    "Charades/YE6UZ": {
+      "supported_tracks": 127,
+      "retained_edges": 1778
+    },
+    "Charades/YK49T": {
+      "supported_tracks": 74,
+      "retained_edges": 937
+    },
+    "Charades/YXQWH": {
+      "supported_tracks": 96,
+      "retained_edges": 921
+    },
+    "Charades/Z6HEA": {
+      "supported_tracks": 111,
+      "retained_edges": 1000
+    },
+    "LaSOT/airplane-4": {
+      "supported_tracks": 49,
+      "retained_edges": 530
+    },
+    "LaSOT/basketball-11": {
+      "supported_tracks": 223,
+      "retained_edges": 2700
+    },
+    "LaSOT/basketball-4": {
+      "supported_tracks": 185,
+      "retained_edges": 2423
+    },
+    "LaSOT/basketball-6": {
+      "supported_tracks": 145,
+      "retained_edges": 1789
+    },
+    "LaSOT/bicycle-18": {
+      "supported_tracks": 98,
+      "retained_edges": 1070
+    },
+    "LaSOT/bicycle-4": {
+      "supported_tracks": 164,
+      "retained_edges": 2129
+    },
+    "LaSOT/bicycle-7": {
+      "supported_tracks": 152,
+      "retained_edges": 1635
+    },
+    "LaSOT/bicycle-9": {
+      "supported_tracks": 198,
+      "retained_edges": 2048
+    },
+    "LaSOT/bird-11": {
+      "supported_tracks": 97,
+      "retained_edges": 1044
+    },
+    "LaSOT/bird-12": {
+      "supported_tracks": 49,
+      "retained_edges": 530
+    },
+    "LaSOT/bird-17": {
+      "supported_tracks": 116,
+      "retained_edges": 1348
+    },
+    "LaSOT/boat-4": {
+      "supported_tracks": 131,
+      "retained_edges": 1496
+    },
+    "LaSOT/boat-7": {
+      "supported_tracks": 132,
+      "retained_edges": 1394
+    },
+    "LaSOT/boat-9": {
+      "supported_tracks": 72,
+      "retained_edges": 766
+    },
+    "LaSOT/book-11": {
+      "supported_tracks": 126,
+      "retained_edges": 1640
+    },
+    "LaSOT/book-15": {
+      "supported_tracks": 102,
+      "retained_edges": 1313
+    },
+    "LaSOT/book-2": {
+      "supported_tracks": 60,
+      "retained_edges": 867
+    },
+    "LaSOT/book-3": {
+      "supported_tracks": 82,
+      "retained_edges": 1107
+    },
+    "LaSOT/bottle-12": {
+      "supported_tracks": 179,
+      "retained_edges": 2196
+    },
+    "LaSOT/bus-19": {
+      "supported_tracks": 14,
+      "retained_edges": 90
+    },
+    "LaSOT/bus-8": {
+      "supported_tracks": 136,
+      "retained_edges": 1691
+    },
+    "LaSOT/car-17": {
+      "supported_tracks": 177,
+      "retained_edges": 2167
+    },
+    "LaSOT/cat-1": {
+      "supported_tracks": 20,
+      "retained_edges": 249
+    },
+    "LaSOT/cat-13": {
+      "supported_tracks": 98,
+      "retained_edges": 1205
+    },
+    "LaSOT/cat-4": {
+      "supported_tracks": 51,
+      "retained_edges": 572
+    },
+    "LaSOT/cat-7": {
+      "supported_tracks": 91,
+      "retained_edges": 1352
+    },
+    "LaSOT/cattle-14": {
+      "supported_tracks": 140,
+      "retained_edges": 1784
+    },
+    "LaSOT/cattle-9": {
+      "supported_tracks": 78,
+      "retained_edges": 1033
+    },
+    "LaSOT/cup-9": {
+      "supported_tracks": 65,
+      "retained_edges": 679
+    },
+    "LaSOT/deer-15": {
+      "supported_tracks": 41,
+      "retained_edges": 523
+    },
+    "LaSOT/deer-4": {
+      "supported_tracks": 48,
+      "retained_edges": 547
+    },
+    "LaSOT/dog-13": {
+      "supported_tracks": 122,
+      "retained_edges": 1577
+    },
+    "LaSOT/electricfan-13": {
+      "supported_tracks": 137,
+      "retained_edges": 1817
+    },
+    "LaSOT/elephant-14": {
+      "supported_tracks": 103,
+      "retained_edges": 1006
+    },
+    "LaSOT/elephant-19": {
+      "supported_tracks": 66,
+      "retained_edges": 762
+    },
+    "LaSOT/elephant-6": {
+      "supported_tracks": 63,
+      "retained_edges": 701
+    },
+    "LaSOT/flag-5": {
+      "supported_tracks": 82,
+      "retained_edges": 961
+    },
+    "LaSOT/giraffe-19": {
+      "supported_tracks": 75,
+      "retained_edges": 1009
+    },
+    "LaSOT/goldfish-17": {
+      "supported_tracks": 148,
+      "retained_edges": 1777
+    },
+    "LaSOT/guitar-6": {
+      "supported_tracks": 182,
+      "retained_edges": 2364
+    },
+    "LaSOT/guitar-9": {
+      "supported_tracks": 122,
+      "retained_edges": 1468
+    },
+    "LaSOT/hat-18": {
+      "supported_tracks": 97,
+      "retained_edges": 1443
+    },
+    "LaSOT/helmet-1": {
+      "supported_tracks": 88,
+      "retained_edges": 969
+    },
+    "LaSOT/helmet-3": {
+      "supported_tracks": 165,
+      "retained_edges": 1592
+    },
+    "LaSOT/horse-11": {
+      "supported_tracks": 185,
+      "retained_edges": 2174
+    },
+    "LaSOT/kite-18": {
+      "supported_tracks": 15,
+      "retained_edges": 135
+    },
+    "LaSOT/lion-12": {
+      "supported_tracks": 107,
+      "retained_edges": 1285
+    },
+    "LaSOT/lion-15": {
+      "supported_tracks": 137,
+      "retained_edges": 1678
+    },
+    "LaSOT/lion-9": {
+      "supported_tracks": 59,
+      "retained_edges": 633
+    },
+    "LaSOT/lizard-16": {
+      "supported_tracks": 107,
+      "retained_edges": 1284
+    },
+    "LaSOT/microphone-12": {
+      "supported_tracks": 182,
+      "retained_edges": 2212
+    },
+    "LaSOT/microphone-13": {
+      "supported_tracks": 170,
+      "retained_edges": 2047
+    },
+    "LaSOT/microphone-3": {
+      "supported_tracks": 145,
+      "retained_edges": 1859
+    },
+    "LaSOT/monkey-16": {
+      "supported_tracks": 113,
+      "retained_edges": 1445
+    },
+    "LaSOT/monkey-19": {
+      "supported_tracks": 76,
+      "retained_edges": 772
+    },
+    "LaSOT/motorcycle-1": {
+      "supported_tracks": 176,
+      "retained_edges": 2504
+    },
+    "LaSOT/motorcycle-19": {
+      "supported_tracks": 92,
+      "retained_edges": 948
+    },
+    "LaSOT/person-2": {
+      "supported_tracks": 239,
+      "retained_edges": 2910
+    },
+    "LaSOT/person-3": {
+      "supported_tracks": 199,
+      "retained_edges": 2066
+    },
+    "LaSOT/person-7": {
+      "supported_tracks": 202,
+      "retained_edges": 2318
+    },
+    "LaSOT/pool-17": {
+      "supported_tracks": 168,
+      "retained_edges": 2006
+    },
+    "LaSOT/rabbit-17": {
+      "supported_tracks": 117,
+      "retained_edges": 1466
+    },
+    "LaSOT/racing-14": {
+      "supported_tracks": 121,
+      "retained_edges": 1149
+    },
+    "LaSOT/racing-20": {
+      "supported_tracks": 162,
+      "retained_edges": 1484
+    },
+    "LaSOT/shark-18": {
+      "supported_tracks": 72,
+      "retained_edges": 732
+    },
+    "LaSOT/shark-20": {
+      "supported_tracks": 31,
+      "retained_edges": 357
+    },
+    "LaSOT/sheep-15": {
+      "supported_tracks": 100,
+      "retained_edges": 1157
+    },
+    "LaSOT/skateboard-1": {
+      "supported_tracks": 67,
+      "retained_edges": 843
+    },
+    "LaSOT/skateboard-18": {
+      "supported_tracks": 83,
+      "retained_edges": 915
+    },
+    "LaSOT/skateboard-8": {
+      "supported_tracks": 72,
+      "retained_edges": 899
+    },
+    "LaSOT/spider-5": {
+      "supported_tracks": 167,
+      "retained_edges": 1973
+    },
+    "LaSOT/surfboard-19": {
+      "supported_tracks": 76,
+      "retained_edges": 991
+    },
+    "LaSOT/surfboard-8": {
+      "supported_tracks": 76,
+      "retained_edges": 798
+    },
+    "LaSOT/swing-18": {
+      "supported_tracks": 149,
+      "retained_edges": 1834
+    },
+    "LaSOT/tank-12": {
+      "supported_tracks": 142,
+      "retained_edges": 1342
+    },
+    "LaSOT/tank-2": {
+      "supported_tracks": 168,
+      "retained_edges": 2105
+    },
+    "LaSOT/tiger-13": {
+      "supported_tracks": 157,
+      "retained_edges": 1771
+    },
+    "LaSOT/truck-10": {
+      "supported_tracks": 152,
+      "retained_edges": 1936
+    },
+    "LaSOT/truck-5": {
+      "supported_tracks": 145,
+      "retained_edges": 1733
+    },
+    "LaSOT/turtle-16": {
+      "supported_tracks": 42,
+      "retained_edges": 468
+    },
+    "LaSOT/umbrella-18": {
+      "supported_tracks": 128,
+      "retained_edges": 1655
+    },
+    "LaSOT/volleyball-15": {
+      "supported_tracks": 185,
+      "retained_edges": 2433
+    },
+    "LaSOT/volleyball-18": {
+      "supported_tracks": 133,
+      "retained_edges": 1875
+    },
+    "LaSOT/volleyball-19": {
+      "supported_tracks": 213,
+      "retained_edges": 2810
+    },
+    "LaSOT/volleyball-20": {
+      "supported_tracks": 127,
+      "retained_edges": 1760
+    },
+    "LaSOT/zebra-14": {
+      "supported_tracks": 88,
+      "retained_edges": 960
+    },
+    "LaSOT/zebra-18": {
+      "supported_tracks": 60,
+      "retained_edges": 608
+    },
+    "LaSOT/zebra-19": {
+      "supported_tracks": 124,
+      "retained_edges": 1583
+    },
+    "YFCC100M/v_10e0d0b52a44a1ab398d4dac2947e6e": {
+      "supported_tracks": 82,
+      "retained_edges": 966
+    },
+    "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11": {
+      "supported_tracks": 118,
+      "retained_edges": 1536
+    },
+    "YFCC100M/v_23584c2660351f12cffe1399c47ce870": {
+      "supported_tracks": 158,
+      "retained_edges": 1661
+    },
+    "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5": {
+      "supported_tracks": 146,
+      "retained_edges": 1586
+    },
+    "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b": {
+      "supported_tracks": 167,
+      "retained_edges": 2089
+    },
+    "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461": {
+      "supported_tracks": 147,
+      "retained_edges": 1875
+    },
+    "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d": {
+      "supported_tracks": 114,
+      "retained_edges": 1415
+    },
+    "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3": {
+      "supported_tracks": 150,
+      "retained_edges": 1855
+    },
+    "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3": {
+      "supported_tracks": 84,
+      "retained_edges": 1085
+    },
+    "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215": {
+      "supported_tracks": 100,
+      "retained_edges": 1038
+    },
+    "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0": {
+      "supported_tracks": 170,
+      "retained_edges": 2121
+    },
+    "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629": {
+      "supported_tracks": 130,
+      "retained_edges": 1647
+    },
+    "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3": {
+      "supported_tracks": 156,
+      "retained_edges": 1895
+    },
+    "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b": {
+      "supported_tracks": 149,
+      "retained_edges": 1875
+    },
+    "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf": {
+      "supported_tracks": 123,
+      "retained_edges": 1309
+    },
+    "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d": {
+      "supported_tracks": 114,
+      "retained_edges": 1265
+    },
+    "YFCC100M/v_6f90a13c795ef37404d95983341df": {
+      "supported_tracks": 168,
+      "retained_edges": 2065
+    },
+    "YFCC100M/v_72252bc9435f88bbfb28aac25484f30": {
+      "supported_tracks": 53,
+      "retained_edges": 393
+    },
+    "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a": {
+      "supported_tracks": 33,
+      "retained_edges": 270
+    },
+    "YFCC100M/v_82e9bb97b1a1fdde489511e69126644": {
+      "supported_tracks": 169,
+      "retained_edges": 2003
+    },
+    "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30": {
+      "supported_tracks": 47,
+      "retained_edges": 557
+    },
+    "YFCC100M/v_8d2127ed36a7e7d486ac8bf45dba0d2": {
+      "supported_tracks": 141,
+      "retained_edges": 1662
+    },
+    "YFCC100M/v_9018a07931e02026b3bd6e82489d4624": {
+      "supported_tracks": 94,
+      "retained_edges": 1318
+    },
+    "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c": {
+      "supported_tracks": 108,
+      "retained_edges": 1175
+    },
+    "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3": {
+      "supported_tracks": 71,
+      "retained_edges": 699
+    },
+    "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5": {
+      "supported_tracks": 151,
+      "retained_edges": 1830
+    },
+    "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c": {
+      "supported_tracks": 72,
+      "retained_edges": 583
+    },
+    "YFCC100M/v_b0b899f491f5d4c6fb47f89564034d1": {
+      "supported_tracks": 109,
+      "retained_edges": 1172
+    },
+    "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20": {
+      "supported_tracks": 131,
+      "retained_edges": 1436
+    },
+    "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a": {
+      "supported_tracks": 164,
+      "retained_edges": 1960
+    },
+    "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46": {
+      "supported_tracks": 151,
+      "retained_edges": 1624
+    },
+    "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33": {
+      "supported_tracks": 135,
+      "retained_edges": 1475
+    },
+    "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4": {
+      "supported_tracks": 33,
+      "retained_edges": 427
+    },
+    "YFCC100M/v_ca3710d4f4cd8b4316974b641d37ba3": {
+      "supported_tracks": 106,
+      "retained_edges": 1145
+    },
+    "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452": {
+      "supported_tracks": 129,
+      "retained_edges": 1649
+    },
+    "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e": {
+      "supported_tracks": 138,
+      "retained_edges": 1517
+    },
+    "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150": {
+      "supported_tracks": 118,
+      "retained_edges": 1398
+    },
+    "YFCC100M/v_df4744928b9b4199b5c73344efdce65": {
+      "supported_tracks": 71,
+      "retained_edges": 796
+    },
+    "YFCC100M/v_e2d3c540737396bebd0a4b53b3174e": {
+      "supported_tracks": 118,
+      "retained_edges": 1332
+    },
+    "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40": {
+      "supported_tracks": 162,
+      "retained_edges": 1929
+    },
+    "YFCC100M/v_ea33c680e1f18d71543b8f80815beec": {
+      "supported_tracks": 111,
+      "retained_edges": 1131
+    },
+    "YFCC100M/v_f1a914ab56b365013c9101083423370": {
+      "supported_tracks": 104,
+      "retained_edges": 1045
+    },
+    "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5": {
+      "supported_tracks": 184,
+      "retained_edges": 2223
+    },
+    "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e": {
+      "supported_tracks": 174,
+      "retained_edges": 1910
+    },
+    "YFCC100M/v_f729d4f362aea24236153ffc589adac": {
+      "supported_tracks": 170,
+      "retained_edges": 2137
+    },
+    "YFCC100M/v_f93e2640ce4cf8b1195c94764803414": {
+      "supported_tracks": 151,
+      "retained_edges": 1668
+    },
+    "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c": {
+      "supported_tracks": 118,
+      "retained_edges": 1489
+    },
+    "YouTube/-6quA485tw8": {
+      "supported_tracks": 204,
+      "retained_edges": 2613
+    },
+    "YouTube/-dQIXiV6gk0": {
+      "supported_tracks": 73,
+      "retained_edges": 736
+    },
+    "YouTube/0_gLCCZHzPs": {
+      "supported_tracks": 211,
+      "retained_edges": 2486
+    },
+    "YouTube/1cU81_rjt7s": {
+      "supported_tracks": 99,
+      "retained_edges": 831
+    },
+    "YouTube/1mPd_3N5gNQ": {
+      "supported_tracks": 58,
+      "retained_edges": 613
+    },
+    "YouTube/25eIK85JWi4": {
+      "supported_tracks": 81,
+      "retained_edges": 1085
+    },
+    "YouTube/313tbNN4J3o": {
+      "supported_tracks": 190,
+      "retained_edges": 2186
+    },
+    "YouTube/4KBTeNdE66U": {
+      "supported_tracks": 174,
+      "retained_edges": 2024
+    },
+    "YouTube/4ltcNlAq1wI": {
+      "supported_tracks": 114,
+      "retained_edges": 1389
+    },
+    "YouTube/5BDj0ow5hnA": {
+      "supported_tracks": 628,
+      "retained_edges": 7687
+    },
+    "YouTube/7SFkVnnp_eE": {
+      "supported_tracks": 95,
+      "retained_edges": 1225
+    },
+    "YouTube/7XQoDEQGqaw": {
+      "supported_tracks": 147,
+      "retained_edges": 2022
+    },
+    "YouTube/7YULkl7Xm04": {
+      "supported_tracks": 74,
+      "retained_edges": 772
+    },
+    "YouTube/7_xkhnbnI7M": {
+      "supported_tracks": 75,
+      "retained_edges": 929
+    },
+    "YouTube/87ksUt7mO3o": {
+      "supported_tracks": 122,
+      "retained_edges": 1688
+    },
+    "YouTube/8Zb-jZoObrk": {
+      "supported_tracks": 114,
+      "retained_edges": 1470
+    },
+    "YouTube/9sZI9IdgXZY": {
+      "supported_tracks": 198,
+      "retained_edges": 2317
+    },
+    "YouTube/AjH8TFfZIGY": {
+      "supported_tracks": 157,
+      "retained_edges": 1889
+    },
+    "YouTube/C48cXamb2B0": {
+      "supported_tracks": 108,
+      "retained_edges": 1342
+    },
+    "YouTube/Ce7YdX2cido": {
+      "supported_tracks": 56,
+      "retained_edges": 688
+    },
+    "YouTube/D8Vhxbho1fY": {
+      "supported_tracks": 222,
+      "retained_edges": 2498
+    },
+    "YouTube/EOSzItLkZQQ": {
+      "supported_tracks": 114,
+      "retained_edges": 1308
+    },
+    "YouTube/Fu0b-YbpPak": {
+      "supported_tracks": 148,
+      "retained_edges": 1861
+    },
+    "YouTube/G5hzcxkcAvM": {
+      "supported_tracks": 71,
+      "retained_edges": 905
+    },
+    "YouTube/H8g9ZBuQmrE": {
+      "supported_tracks": 82,
+      "retained_edges": 1123
+    },
+    "YouTube/HtaNMyVa260": {
+      "supported_tracks": 155,
+      "retained_edges": 1922
+    },
+    "YouTube/I7Q-x9MorO0": {
+      "supported_tracks": 115,
+      "retained_edges": 1588
+    },
+    "YouTube/IS3OtsJFP7Y": {
+      "supported_tracks": 203,
+      "retained_edges": 2489
+    },
+    "YouTube/IUbQjSiZL-Y": {
+      "supported_tracks": 133,
+      "retained_edges": 1528
+    },
+    "YouTube/J4ms6F6jgEk": {
+      "supported_tracks": 127,
+      "retained_edges": 1589
+    },
+    "YouTube/JMzNLlatrys": {
+      "supported_tracks": 128,
+      "retained_edges": 1585
+    },
+    "YouTube/JX1uj-YRiYo": {
+      "supported_tracks": 76,
+      "retained_edges": 899
+    },
+    "YouTube/JvtJRvTKzvw": {
+      "supported_tracks": 108,
+      "retained_edges": 1470
+    },
+    "YouTube/KUdBvuRaAbk": {
+      "supported_tracks": 103,
+      "retained_edges": 1375
+    },
+    "YouTube/LFPYYYZstjg": {
+      "supported_tracks": 155,
+      "retained_edges": 1814
+    },
+    "YouTube/Or8dXBSS_LM": {
+      "supported_tracks": 195,
+      "retained_edges": 2115
+    },
+    "YouTube/PQkE02amSDY": {
+      "supported_tracks": 151,
+      "retained_edges": 1582
+    },
+    "YouTube/Q5SutMM8H4I": {
+      "supported_tracks": 145,
+      "retained_edges": 1480
+    },
+    "YouTube/QEFmA2nj12w": {
+      "supported_tracks": 150,
+      "retained_edges": 1912
+    },
+    "YouTube/Q_701AtuEbE": {
+      "supported_tracks": 126,
+      "retained_edges": 1771
+    },
+    "YouTube/QlXEyPOUMUg": {
+      "supported_tracks": 126,
+      "retained_edges": 1617
+    },
+    "YouTube/Rf1XKstMa4E": {
+      "supported_tracks": 119,
+      "retained_edges": 1284
+    },
+    "YouTube/SA-if-DMT7E": {
+      "supported_tracks": 87,
+      "retained_edges": 1087
+    },
+    "YouTube/TcB0IFBwk-k": {
+      "supported_tracks": 95,
+      "retained_edges": 1195
+    },
+    "YouTube/VTEcwSCLwLg": {
+      "supported_tracks": 78,
+      "retained_edges": 931
+    },
+    "YouTube/Vl9zODoJMIU": {
+      "supported_tracks": 119,
+      "retained_edges": 1339
+    },
+    "YouTube/WKqbLbU68wU": {
+      "supported_tracks": 670,
+      "retained_edges": 8098
+    },
+    "YouTube/WwmfBwEMP6s": {
+      "supported_tracks": 130,
+      "retained_edges": 1433
+    },
+    "YouTube/XOe9GeojzCs": {
+      "supported_tracks": 1966,
+      "retained_edges": 23565
+    },
+    "YouTube/XV_FF3WC7kA": {
+      "supported_tracks": 871,
+      "retained_edges": 9817
+    },
+    "YouTube/Y0DKz3JCq3I": {
+      "supported_tracks": 137,
+      "retained_edges": 1514
+    },
+    "YouTube/YAAUPjq-L-Q": {
+      "supported_tracks": 198,
+      "retained_edges": 2530
+    },
+    "YouTube/YD5C5LX7j4k": {
+      "supported_tracks": 191,
+      "retained_edges": 2151
+    },
+    "YouTube/Z11ALGaUmH0": {
+      "supported_tracks": 128,
+      "retained_edges": 1510
+    },
+    "YouTube/ZbeMNLwASVo": {
+      "supported_tracks": 516,
+      "retained_edges": 6732
+    },
+    "YouTube/Zyo70ZiXmYY": {
+      "supported_tracks": 151,
+      "retained_edges": 1915
+    },
+    "YouTube/_cQZ-vtuFwQ": {
+      "supported_tracks": 139,
+      "retained_edges": 1924
+    },
+    "YouTube/aboKQqtoowA": {
+      "supported_tracks": 134,
+      "retained_edges": 1710
+    },
+    "YouTube/bFTTE4TV-ek": {
+      "supported_tracks": 131,
+      "retained_edges": 1642
+    },
+    "YouTube/bLoWh2xbm6o": {
+      "supported_tracks": 150,
+      "retained_edges": 1967
+    },
+    "YouTube/blDEcY6HZUU": {
+      "supported_tracks": 88,
+      "retained_edges": 850
+    },
+    "YouTube/c0FxOPxBaac": {
+      "supported_tracks": 139,
+      "retained_edges": 1507
+    },
+    "YouTube/cB83GjrvoeE": {
+      "supported_tracks": 105,
+      "retained_edges": 1362
+    },
+    "YouTube/cLiJgvrDlWw": {
+      "supported_tracks": 73,
+      "retained_edges": 839
+    },
+    "YouTube/d-orB-PokJw": {
+      "supported_tracks": 83,
+      "retained_edges": 894
+    },
+    "YouTube/dBXvpdoalr8": {
+      "supported_tracks": 161,
+      "retained_edges": 2197
+    },
+    "YouTube/dYAA0JLFrTc": {
+      "supported_tracks": 70,
+      "retained_edges": 762
+    },
+    "YouTube/dZZqaYgPrY0": {
+      "supported_tracks": 119,
+      "retained_edges": 1428
+    },
+    "YouTube/dtlXB2kt09k": {
+      "supported_tracks": 80,
+      "retained_edges": 1100
+    },
+    "YouTube/eXklJqhFx8E": {
+      "supported_tracks": 93,
+      "retained_edges": 1331
+    },
+    "YouTube/ef5NncrTQu4": {
+      "supported_tracks": 71,
+      "retained_edges": 819
+    },
+    "YouTube/f9U2VDJTIhg": {
+      "supported_tracks": 192,
+      "retained_edges": 2298
+    },
+    "YouTube/h3-lxgAoXwI": {
+      "supported_tracks": 160,
+      "retained_edges": 2055
+    },
+    "YouTube/hL-ePuEk4_M": {
+      "supported_tracks": 138,
+      "retained_edges": 1647
+    },
+    "YouTube/hg9scj8FyjY": {
+      "supported_tracks": 72,
+      "retained_edges": 809
+    },
+    "YouTube/iSjk42F0rvM": {
+      "supported_tracks": 141,
+      "retained_edges": 1869
+    },
+    "YouTube/jO3vuJ4xhns": {
+      "supported_tracks": 106,
+      "retained_edges": 1557
+    },
+    "YouTube/k2-d6fLeMSo": {
+      "supported_tracks": 128,
+      "retained_edges": 1356
+    },
+    "YouTube/kM1naurrexk": {
+      "supported_tracks": 109,
+      "retained_edges": 1289
+    },
+    "YouTube/lC0HkItqIqA": {
+      "supported_tracks": 81,
+      "retained_edges": 765
+    },
+    "YouTube/mThUfYcea3I": {
+      "supported_tracks": 80,
+      "retained_edges": 1016
+    },
+    "YouTube/mkcDANJjDcM": {
+      "supported_tracks": 99,
+      "retained_edges": 1345
+    },
+    "YouTube/mq7Wv-5qJwc": {
+      "supported_tracks": 97,
+      "retained_edges": 1027
+    },
+    "YouTube/nKsIbi_R02U": {
+      "supported_tracks": 149,
+      "retained_edges": 1896
+    },
+    "YouTube/na6zkG7dl3A": {
+      "supported_tracks": 149,
+      "retained_edges": 1801
+    },
+    "YouTube/oXNm2E97N9c": {
+      "supported_tracks": 227,
+      "retained_edges": 2732
+    },
+    "YouTube/od2IpoFxeMI": {
+      "supported_tracks": 162,
+      "retained_edges": 2022
+    },
+    "YouTube/owDp3KOHmu8": {
+      "supported_tracks": 96,
+      "retained_edges": 1078
+    },
+    "YouTube/pI8tpZLBcFk": {
+      "supported_tracks": 152,
+      "retained_edges": 1655
+    },
+    "YouTube/qGbvHecNfEo": {
+      "supported_tracks": 123,
+      "retained_edges": 1524
+    },
+    "YouTube/qlPC7oMm93g": {
+      "supported_tracks": 187,
+      "retained_edges": 2480
+    },
+    "YouTube/rin4oz7Fego": {
+      "supported_tracks": 175,
+      "retained_edges": 2254
+    },
+    "YouTube/s54UiLm7JLU": {
+      "supported_tracks": 196,
+      "retained_edges": 2321
+    },
+    "YouTube/sRd38UFfp6c": {
+      "supported_tracks": 88,
+      "retained_edges": 1014
+    },
+    "YouTube/tt0t_a1EDCE": {
+      "supported_tracks": 174,
+      "retained_edges": 1916
+    },
+    "YouTube/tvzrxfgWSc4": {
+      "supported_tracks": 121,
+      "retained_edges": 1748
+    },
+    "YouTube/u40AQIBH_Gs": {
+      "supported_tracks": 183,
+      "retained_edges": 2137
+    },
+    "YouTube/uqUfP7ugJp0": {
+      "supported_tracks": 148,
+      "retained_edges": 1848
+    },
+    "YouTube/uwW0ejeosmk": {
+      "supported_tracks": 450,
+      "retained_edges": 4985
+    },
+    "YouTube/v0N4o4Px8jQ": {
+      "supported_tracks": 172,
+      "retained_edges": 2147
+    },
+    "YouTube/vbQwxMme5yk": {
+      "supported_tracks": 159,
+      "retained_edges": 1669
+    },
+    "YouTube/vrWYdPeIUqw": {
+      "supported_tracks": 137,
+      "retained_edges": 1569
+    },
+    "YouTube/xNxxM-OOMfw": {
+      "supported_tracks": 125,
+      "retained_edges": 1564
+    },
+    "YouTube/yZGRVcIKU6Q": {
+      "supported_tracks": 110,
+      "retained_edges": 1514
+    },
+    "YouTube/yb7EbSnIAqM": {
+      "supported_tracks": 142,
+      "retained_edges": 1860
+    },
+    "YouTube/z-fsLpGHq6o": {
+      "supported_tracks": 901,
+      "retained_edges": 11609
+    },
+    "YouTube/zVN1SBxfR40": {
+      "supported_tracks": 167,
+      "retained_edges": 2114
+    },
+    "YouTube/zhdNNmwnYMI": {
+      "supported_tracks": 53,
+      "retained_edges": 718
+    }
+  },
+  "source_groups_with_edges": 382,
+  "input_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_mean_pair_gate_protocol_20261023.json": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_index_manifest.json": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_observations.jsonl": "fdd3a0e69d37f5be36c6a88c307fec0fe6035d09ef4939e5f8d4118becc300ce",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_tracks.jsonl": "266cc0a88ed52dbaab974f9ed01e9c67d4334ad6a9cea1ed00b87b94b7edf9ea",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_full_pair_context_cache.py": "70ac6b7e844cbff3802ced02db732d04d32f72173e32e684ece0befdf9ddb654"
+  },
+  "input_sha256_after": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_mean_pair_gate_protocol_20261023.json": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_index_manifest.json": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_observations.jsonl": "fdd3a0e69d37f5be36c6a88c307fec0fe6035d09ef4939e5f8d4118becc300ce",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_tracks.jsonl": "266cc0a88ed52dbaab974f9ed01e9c67d4334ad6a9cea1ed00b87b94b7edf9ea",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_full_pair_context_cache.py": "70ac6b7e844cbff3802ced02db732d04d32f72173e32e684ece0befdf9ddb654"
+  },
+  "opened_input_paths": [
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/full_mean_pair_gate_protocol_20261023.json",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_index_manifest.json",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_observations.jsonl",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1/gt_free_tracks.jsonl"
+  ],
+  "files": {
+    "source_roles.json": "afa61df067f392b84ba917e1c536a9b64b869dbda19a2236b0a05b6f5c51cb8b",
+    "track_contexts.jsonl": "35f3b6f7a2e9dda26656b56693ea173fd5039472146ce1eb1179470956bf3faf",
+    "edges.jsonl": "1d4b7df64db28600d08bd3689c1f1af23d58f9e16bcff98acc33cd7f698f9c01"
+  },
+  "protocol_sha256": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718",
+  "full_collection_plan_sha256": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+  "accepted_gt_free_manifest_sha256": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+  "aggregation_key": [
+    "video_id",
+    "local_track_id"
+  ],
+  "selection": "GT-free all emitted tracks; max4 smallest edge hashes per sample-step lag bin; no target join",
+  "reference_definition": "All track_contexts.observation_ids except observation_i/j, in stored sampled-step order; hash equals compact JSON array SHA256",
+  "supervision_opened": false,
+  "supervised_pair_filtering_performed": false,
+  "correctness_opened": false,
+  "test_opened": false,
+  "class_holdout_correctness_opened": false,
+  "posterior_or_feature_NPZ_opened": false,
+  "training_started": false,
+  "model_imported": false,
+  "GPU_used": false,
+  "downstream_note": "This index must remain complete; later supervised joins only form another table, never replace GT-free edges/readout indices"
+}

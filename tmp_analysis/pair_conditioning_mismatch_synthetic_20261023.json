@@ -1,0 +1,575 @@
+{
+  "status": "PASS_EXACT_CONDITIONING_AUDIT_SYNTHETIC_ONLY",
+  "dataset_files_opened": false,
+  "test_or_heldout_correctness_opened": false,
+  "real_pair_training_started": false,
+  "GPU_used": false,
+  "frozen_protocol_sha256_before": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718",
+  "frozen_protocol_sha256_after": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718",
+  "script_sha256": "ddb935b4bc0e0d8f11cf3e37da0f984a1b746cf78c2cf40e8a0d383451cae113",
+  "rounds": [
+    {
+      "round": 1,
+      "checks": [
+        "strict_same_A_fixed_Y_counterexample_exact_rational",
+        "unknown_Y_counterexample_with_exact_mu_d_pi"
+      ]
+    },
+    {
+      "round": 2,
+      "checks": [
+        "risk_projection_identity_and_strict_positive_K1203",
+        "joint_class_permutation_and_nonidentical_endpoint_exchange"
+      ]
+    },
+    {
+      "round": 3,
+      "checks": [
+        "coarse_pi_and_h_recover_coarse_mean_but_richer_pi_does_not_recover_full_conditional",
+        "matched_conditioning_oracle_pi_reconstructs_G_and_coarse_relation_can_still_help"
+      ]
+    }
+  ],
+  "fixed_Y": {
+    "pairs": [
+      [
+        [
+          {
+            "exact": "3/5",
+            "float": 0.6
+          },
+          {
+            "exact": "3/10",
+            "float": 0.3
+          },
+          {
+            "exact": "1/10",
+            "float": 0.1
+          }
+        ],
+        [
+          {
+            "exact": "3/5",
+            "float": 0.6
+          },
+          {
+            "exact": "3/10",
+            "float": 0.3
+          },
+          {
+            "exact": "1/10",
+            "float": 0.1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "exact": "3/10",
+            "float": 0.3
+          },
+          {
+            "exact": "3/5",
+            "float": 0.6
+          },
+          {
+            "exact": "1/10",
+            "float": 0.1
+          }
+        ],
+        [
+          {
+            "exact": "3/10",
+            "float": 0.3
+          },
+          {
+            "exact": "3/5",
+            "float": 0.6
+          },
+          {
+            "exact": "1/10",
+            "float": 0.1
+          }
+        ]
+      ]
+    ],
+    "state_weights": [
+      {
+        "exact": "1/2",
+        "float": 0.5
+      },
+      {
+        "exact": "1/2",
+        "float": 0.5
+      }
+    ],
+    "results": {
+      "moments": {
+        "0": {
+          "probability": {
+            "exact": "1",
+            "float": 1.0
+          },
+          "mu_i": [
+            {
+              "exact": "0",
+              "float": 0.0
+            },
+            {
+              "exact": "9/20",
+              "float": 0.45
+            },
+            {
+              "exact": "1/10",
+              "float": 0.1
+            }
+          ],
+          "mu_j": [
+            {
+              "exact": "0",
+              "float": 0.0
+            },
+            {
+              "exact": "9/20",
+              "float": 0.45
+            },
+            {
+              "exact": "1/10",
+              "float": 0.1
+            }
+          ],
+          "d": {
+            "exact": "9/400",
+            "float": 0.0225
+          },
+          "h": {
+            "exact": "47/200",
+            "float": 0.235
+          }
+        }
+      },
+      "true_conditional": [
+        {
+          "exact": "1/10",
+          "float": 0.1
+        },
+        {
+          "exact": "37/100",
+          "float": 0.37
+        }
+      ],
+      "mixed_conditioning": [
+        {
+          "exact": "47/200",
+          "float": 0.235
+        },
+        {
+          "exact": "47/200",
+          "float": 0.235
+        }
+      ],
+      "exact_posterior_formula": [
+        {
+          "exact": "1/10",
+          "float": 0.1
+        },
+        {
+          "exact": "37/100",
+          "float": 0.37
+        }
+      ],
+      "matched_conditioning_moments": [
+        {
+          "exact": "1/10",
+          "float": 0.1
+        },
+        {
+          "exact": "37/100",
+          "float": 0.37
+        }
+      ],
+      "coarse_mean": {
+        "exact": "47/200",
+        "float": 0.235
+      },
+      "excess_MSE": {
+        "exact": "729/40000",
+        "float": 0.018225
+      },
+      "mixed_MSE": {
+        "exact": "729/40000",
+        "float": 0.018225
+      },
+      "bayes_MSE": {
+        "exact": "0",
+        "float": 0.0
+      }
+    },
+    "same_A_features": {
+      "entropy": 0.81734542214651,
+      "top1": {
+        "exact": "3/5",
+        "float": 0.6
+      },
+      "margin": {
+        "exact": "3/10",
+        "float": 0.3
+      },
+      "text_image_JS": 0,
+      "emitted_label_agreement": true,
+      "pair_dot": {
+        "exact": "23/50",
+        "float": 0.46
+      },
+      "pair_cosine": 1,
+      "pair_JS": 0
+    }
+  },
+  "unknown_Y": {
+    "pairs": [
+      [
+        [
+          {
+            "exact": "3/5",
+            "float": 0.6
+          },
+          {
+            "exact": "3/10",
+            "float": 0.3
+          },
+          {
+            "exact": "1/10",
+            "float": 0.1
+          }
+        ],
+        [
+          {
+            "exact": "3/5",
+            "float": 0.6
+          },
+          {
+            "exact": "3/10",
+            "float": 0.3
+          },
+          {
+            "exact": "1/10",
+            "float": 0.1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "exact": "3/10",
+            "float": 0.3
+          },
+          {
+            "exact": "3/5",
+            "float": 0.6
+          },
+          {
+            "exact": "1/10",
+            "float": 0.1
+          }
+        ],
+        [
+          {
+            "exact": "3/10",
+            "float": 0.3
+          },
+          {
+            "exact": "3/5",
+            "float": 0.6
+          },
+          {
+            "exact": "1/10",
+            "float": 0.1
+          }
+        ]
+      ]
+    ],
+    "posterior": [
+      [
+        {
+          "exact": "4/5",
+          "float": 0.8
+        },
+        {
+          "exact": "1/5",
+          "float": 0.2
+        },
+        {
+          "exact": "0",
+          "float": 0.0
+        }
+      ],
+      [
+        {
+          "exact": "2/5",
+          "float": 0.4
+        },
+        {
+          "exact": "3/5",
+          "float": 0.6
+        },
+        {
+          "exact": "0",
+          "float": 0.0
+        }
+      ]
+    ],
+    "results": {
+      "moments": {
+        "0": {
+          "probability": {
+            "exact": "3/5",
+            "float": 0.6
+          },
+          "mu_i": [
+            {
+              "exact": "0",
+              "float": 0.0
+            },
+            {
+              "exact": "2/5",
+              "float": 0.4
+            },
+            {
+              "exact": "1/10",
+              "float": 0.1
+            }
+          ],
+          "mu_j": [
+            {
+              "exact": "0",
+              "float": 0.0
+            },
+            {
+              "exact": "2/5",
+              "float": 0.4
+            },
+            {
+              "exact": "1/10",
+              "float": 0.1
+            }
+          ],
+          "d": {
+            "exact": "1/50",
+            "float": 0.02
+          },
+          "h": {
+            "exact": "19/100",
+            "float": 0.19
+          }
+        },
+        "1": {
+          "probability": {
+            "exact": "2/5",
+            "float": 0.4
+          },
+          "mu_i": [
+            {
+              "exact": "3/8",
+              "float": 0.375
+            },
+            {
+              "exact": "0",
+              "float": 0.0
+            },
+            {
+              "exact": "1/10",
+              "float": 0.1
+            }
+          ],
+          "mu_j": [
+            {
+              "exact": "3/8",
+              "float": 0.375
+            },
+            {
+              "exact": "0",
+              "float": 0.0
+            },
+            {
+              "exact": "1/10",
+              "float": 0.1
+            }
+          ],
+          "d": {
+            "exact": "27/1600",
+            "float": 0.016875
+          },
+          "h": {
+            "exact": "67/400",
+            "float": 0.1675
+          }
+        }
+      },
+      "true_conditional": [
+        {
+          "exact": "77/500",
+          "float": 0.154
+        },
+        {
+          "exact": "26/125",
+          "float": 0.208
+        }
+      ],
+      "mixed_conditioning": [
+        {
+          "exact": "371/2000",
+          "float": 0.1855
+        },
+        {
+          "exact": "353/2000",
+          "float": 0.1765
+        }
+      ],
+      "exact_posterior_formula": [
+        {
+          "exact": "77/500",
+          "float": 0.154
+        },
+        {
+          "exact": "26/125",
+          "float": 0.208
+        }
+      ],
+      "matched_conditioning_moments": [
+        {
+          "exact": "77/500",
+          "float": 0.154
+        },
+        {
+          "exact": "26/125",
+          "float": 0.208
+        }
+      ],
+      "coarse_mean": {
+        "exact": "181/1000",
+        "float": 0.181
+      },
+      "excess_MSE": {
+        "exact": "3969/4000000",
+        "float": 0.00099225
+      },
+      "mixed_MSE": {
+        "exact": "62289/4000000",
+        "float": 0.01557225
+      },
+      "bayes_MSE": {
+        "exact": "729/50000",
+        "float": 0.01458
+      }
+    }
+  },
+  "full1203": {
+    "K": 1203,
+    "tail_epsilon": {
+      "exact": "1/100000000",
+      "float": 1e-08
+    },
+    "main_scale": {
+      "exact": "249997/250000",
+      "float": 0.999988
+    },
+    "strictly_positive": true,
+    "true_conditional": [
+      {
+        "exact": "2499940000363/25000000000000",
+        "float": 0.09999760001452
+      },
+      {
+        "exact": "1849955600267/5000000000000",
+        "float": 0.3699911200534
+      }
+    ],
+    "mixed_conditioning": [
+      {
+        "exact": "5874859000849/25000000000000",
+        "float": 0.23499436003396
+      },
+      {
+        "exact": "5874859000849/25000000000000",
+        "float": 0.23499436003396
+      }
+    ],
+    "excess_MSE": {
+      "exact": "2847519564960355317059049/156250000000000000000000000",
+      "float": 0.018224125215746276
+    }
+  },
+  "symmetries": {
+    "joint_class_permutations": 12,
+    "endpoint_swap": true,
+    "nonidentical_endpoints": true
+  },
+  "conditioning_scope": {
+    "coarse_pi_h_integral": {
+      "exact": "181/1000",
+      "float": 0.181
+    },
+    "coarse_target": {
+      "exact": "181/1000",
+      "float": 0.181
+    },
+    "matched_full_target": [
+      {
+        "exact": "77/500",
+        "float": 0.154
+      },
+      {
+        "exact": "26/125",
+        "float": 0.208
+      }
+    ]
+  },
+  "relation_usefulness": {
+    "independent_coarse_trace": {
+      "exact": "0",
+      "float": 0.0
+    },
+    "coupled_coarse_trace": {
+      "exact": "1/100",
+      "float": 0.01
+    }
+  },
+  "additional_literature_checks": [
+    "noisy_OR_upper_bound_not_universal",
+    "constant_Brier_arithmetic_with_identical_macro_weighting"
+  ],
+  "noisy_or_qualification": {
+    "equal_marginal": {
+      "exact": "2/5",
+      "float": 0.4
+    },
+    "mutually_exclusive_union": {
+      "exact": "4/5",
+      "float": 0.8
+    },
+    "noisy_or": {
+      "exact": "16/25",
+      "float": 0.64
+    },
+    "max_dependence_union": {
+      "exact": "2/5",
+      "float": 0.4
+    }
+  },
+  "paper_constant_Brier_diagnostic": {
+    "assumed_same_weight_prevalence": {
+      "exact": "1/5",
+      "float": 0.2
+    },
+    "constant0": {
+      "exact": "1/5",
+      "float": 0.2
+    },
+    "constant_point2": {
+      "exact": "4/25",
+      "float": 0.16
+    },
+    "caveat": "Published values are rounded; arithmetic diagnostic on identical macro weighting, not a measured or deployment-fitted comparator."
+  },
+  "interpretation": "Perfect coarse moments and perfect richer label posterior do not repair mixed conditioning. Finite C129 gains cannot imply universal relation-network impossibility or intrinsic covariance."
+}
