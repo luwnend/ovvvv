@@ -1,6 +1,6 @@
 # COVTrack base观测采集与暂停续接 — 2026-10-23
 
-当前已完成独立full-vocabulary导出接口、1,299帧pilot封存、fit/tune自然错误支持及固定均值质量诊断。**全部fit/tune扩采已在独立后台启动；预计1–2小时，按用户超过20分钟暂停Codex对话的规则交接，后台继续。可学习依赖方法尚未成立，没有新tracker训练。** 保持test关闭。最新恢复入口为`tmp_analysis/base_error_pause_handoff_20261023.md`及full stage的`background_pause_handoff.json`，下文pilot暂停段落仅为历史记录。
+当前已完成独立full-vocabulary导出接口、1,299帧pilot封存、pilot fit/tune自然错误支持及固定均值质量诊断。**全部fit/tune扩采已完成并独立终审通过：15,283帧/681,602输出，实际2.91小时；正在进行full支持集与更强均值质量控制。可学习依赖方法尚未成立，没有新tracker训练。** test保持关闭。full stage的`background_execution_receipt.json`和`independent_completion_review.json`为当前采集完成证据，下文pause交接保留历史状态。
 
 ## 已完成的可核验接口
 
@@ -83,3 +83,18 @@ test的274帧/11,950输出仅保留GT-free结构，没有prediction-GT匹配或�
 扩采预计1–2小时，仅冻结公开权重推理，完成后由独立后台程序记录真实子进程exit并做CPU校验，不自动训练或用test调参。最终状态应检查新stage的`background_execution_receipt.json`，启动回执不等于采集成功；若进程仍运行，下一会话先现场核验PID及日志，不能重复启动。
 
 上次用户暂停发生在full启动之前；历史`pause_handoff.json`保留该时刻及已完成证据的hash。恢复后已于14:19（Asia/Shanghai）由supervisor4190240启动collector4190241，run=`full_collect_v1`，日志=`execution_logs/full_collect_v1.log`。`background_launch_receipt.json`已生成，新的`background_pause_handoff.json`记录暂停Codex时的真实进程与帧进度。准备manifest的未启动/PENDING字段是生成时快照，当前以独立metadata audit及运行回执为准。预计超过20分钟故依最新用户规则暂停对话；后台继续并自动执行双CPU验收。既有另一会话训练保持运行。恢复时先核查`background_execution_receipt.json`和进程日志，**不得重复启动已有run**；不要重跑已封存pilot/support/固定质量诊断。full support builder仍需独立适配及审计，不能直接强套pilot guard。
+
+## Full采集完成验收
+
+采集实际于17:13（Asia/Shanghai）完成，10464.512秒=2.9068小时，原1–2小时预估偏低。15,283帧/448视频/681,602条retained及emitted输出完整，448次真实tracker重置；1204后验列、337类mask，融合重建全帧最大误差`4.2475654860041345e-7`。没有真实零输出帧或未分配ID，本批不能新增这两项真实覆盖声明。
+
+`background_execution_receipt.json`记录collector与两个CPU审计子进程均实际exit0。`independent_completion_review.json`重新核对30,566个当前NPZ/receipt的SHA（约10.45GB）、15,283个逐帧事件/身份/计数、7项保护文件、71份源码及13项准备输入；26固定帧/1,213观测另做内容复核。全帧语义证据仍由原sealed双full audit承担，不将26帧抽核写成第二次全帧语义重算。外层detached supervisor自身的terminal exit没有直接wait证据，仅核实了其子进程真实exit链、最终日志/回执和当前进程不存在。
+
+这封存的是冻结模型、完整词表、稀疏人工anchor时序下的观察流；没有新方法训练、full自然错误支持或新颖性结论。下一步使用独立full support适配器并审计，再做fit-only nested source-group强质量控制；test/留出类正确性仍关闭。
+
+
+## Full支持完成与本次用户暂停
+
+Full support builder工具session51211由root直接poll确认actual exit0。独立输出审计session68926由evaluator agent直接poll确认actual exit0（95.71秒），状态`PASS_INDEPENDENT_FULL_SUPPORT_OUTPUT_AUDIT`；receipt SHA绑定一致。审计覆盖全部681,602观测、144,930轨迹、15,283帧Hungarian与排除计数、46,908人工anchor来源、23,887监督观测及193,405重复观测对。fit为21,661观测/12,694错误/338实际有监督源组/131类；tune为2,226/1,081/42组/38类。这些是描述性支持，不等同独立样本数、条件协方差或方法有效性。
+
+用户要求可暂停后再开，当前停在完整support审计通过、强mean真实拟合未启动的断点。mean实现/独立预审和合成审计已封存；pair sealer仍为WIP待独立审查，未实跑。完整恢复次序见`tmp_analysis/full_stage_handoff_20261023.md`，当前状态/hash见`results/base_error_full_collection_20261023/dialogue_pause_receipt.json`。早先1–2小时估计、采集运行中及旧pause记录只表示历史时刻。

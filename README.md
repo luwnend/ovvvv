@@ -6,8 +6,8 @@ COVTrack 上的开放词汇多目标跟踪研究：先核验机制和完整验�
 - [方法设计与新颖性边界](report/COVTrack_论文级改进设计.md)。
 - [完整 val 轨迹读出报告](report/COVTrack_完整val轨迹读出_20261023.md)。
 - [自然误判与依赖读出阶段](report/COVTrack_自然依赖核验_20261023.md)。
-- [base完整词表采集与暂停续接](report/COVTrack_base观测采集_20261023.md)：pilot、fit/tune支持与固定质量诊断已封存并独立通过；全量扩采已在独立后台运行，仍待完整验收。
-- [本次暂停恢复入口](tmp_analysis/base_error_pause_handoff_20261023.md)：full fit/tune预计GPU耗时1–2小时，按用户超过20分钟暂停对话的规则交接，后台继续。回来先查真实exit/双audit，不重复启动。
+- [base完整词表采集与暂停续接](report/COVTrack_base观测采集_20261023.md)：全量15,283帧/681,602输出已完成（实际2.91小时），full support及独立全输出审计实际exit0；强mean真实拟合尚未启动。
+- [本次暂停恢复入口](tmp_analysis/full_stage_handoff_20261023.md)：按用户要求暂停；恢复先核对采集/support回执，再执行已预审的CPU强mean诊断。pair sealer仍为WIP，无真实pair训练；勿重复采集或重建support。
 - [方法调研笔记](report/OVMOT_方法调研笔记.md)。
 
 冻结对照：发布 COVTrack R50 / ctao_public.pth / 官方完整 TAO validation / A 参数 .37 / 80 / 50 / .4。

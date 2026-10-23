@@ -1,0 +1,39 @@
+{
+  "status": "PAUSED_BY_USER_AFTER_FULL_SUPPORT_AUDIT_PASS",
+  "created_utc": "2026-10-23T14:13:44.854152+00:00",
+  "completed": {
+    "full_support_implementation_preflight": "tmp_analysis/full_support_independent_preflight_20261023.json",
+    "full_mean_implementation_preflight": "tmp_analysis/full_mean_independent_preflight_20261023.json",
+    "full_support_output_audit": "results/base_error_full_collection_20261023/support_v1/independent_support_audit.json",
+    "audit_actual_exit0_receipt": "results/base_error_full_collection_20261023/independent_support_audit_execution_receipt.json"
+  },
+  "pending": [
+    "Do not start during user pause. On resume, verify preflight script/helper/protocol and support/audit hashes, then root may execute the predeclared CPU full mean diagnostic once.",
+    "After mean completes, use tmp_analysis/audit_full_mean_quality.py for independent real-output audit; no pair/tracker fitting is currently approved by these preflights."
+  ],
+  "bindings": {
+    "results/base_error_full_collection_20261023/support_v1/independent_support_audit.json": "92174aaa954f6e66cd0e7f520f2f883f7b9e0017c84fbf9bf4509e734ba714e8",
+    "results/base_error_full_collection_20261023/independent_support_audit_execution_receipt.json": "f2ca7e2bae64f4e9bcb68b81339f546ce4c8bbbad8357e9ab8172b831f70beea",
+    "tmp_analysis/full_mean_independent_preflight_20261023.json": "43ff8f53bfb1db22aa501459c34b073f6b7235ad9996b7c07b1f470e0a1a04be",
+    "tmp_analysis/diagnose_full_mean_quality.py": "464b9ad6dd551a6f813de1eded509d0fd0d00f26336cf90ee2cd54fb14e84e17",
+    "tmp_analysis/full_mean_pair_gate_protocol_20261023.json": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718"
+  },
+  "no_live_auditor_process": true,
+  "fit_tune_summary": {
+    "fit": {
+      "observations": 21661,
+      "pairs": 177016,
+      "target_categories": 131,
+      "errors": 12694,
+      "source_groups": 338
+    },
+    "tune": {
+      "observations": 2226,
+      "pairs": 16389,
+      "target_categories": 38,
+      "errors": 1081,
+      "source_groups": 42
+    }
+  },
+  "no_new_long_tasks_started_after_pause_request": true
+}

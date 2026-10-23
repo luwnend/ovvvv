@@ -1,0 +1,23 @@
+{
+  "status": "PASS_CPU_GT_FREE_PAIR_INDEX_SYNTHETIC_ONLY",
+  "smallest_hash_per_bin": true,
+  "per_bin_cap": 4,
+  "endpoint_swap_hash_invariant": true,
+  "input_order_invariant": true,
+  "no_endpoint_reference": true,
+  "GT_and_prediction_values_do_not_affect_pure_selection": true,
+  "cross_video_local_id_separate": true,
+  "role_assignment_metadata_only": true,
+  "below_four_has_no_edges": true,
+  "malformed_cases_rejected": [
+    "negative_local_id",
+    "duplicate_sample_frame",
+    "duplicate_observation"
+  ],
+  "data_or_posterior_opened": false,
+  "correctness_opened": false,
+  "training_started": false,
+  "GPU_used": false,
+  "script_sha256": "9d17f9acf0f3f6ddb60b19d8d55d4d2140c9f371bcacae4c6d43ee274241fd6a",
+  "protocol_sha256": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718"
+}

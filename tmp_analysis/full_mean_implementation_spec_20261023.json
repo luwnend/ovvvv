@@ -1,0 +1,117 @@
+{
+  "status": "PREDECLARED_FULL_MEAN_ONLY",
+  "candidates": [
+    {
+      "name": "mean",
+      "kind": "mean"
+    },
+    {
+      "name": "ridge_10.0",
+      "kind": "ridge",
+      "ridge": 10.0
+    },
+    {
+      "name": "ridge_1.0",
+      "kind": "ridge",
+      "ridge": 1.0
+    },
+    {
+      "name": "ridge_0.1",
+      "kind": "ridge",
+      "ridge": 0.1
+    },
+    {
+      "name": "ridge_0.01",
+      "kind": "ridge",
+      "ridge": 0.01
+    },
+    {
+      "name": "ridge_0.001",
+      "kind": "ridge",
+      "ridge": 0.001
+    },
+    {
+      "name": "ridge_0.0001",
+      "kind": "ridge",
+      "ridge": 0.0001
+    },
+    {
+      "name": "HGB_leaf7_l210",
+      "kind": "HGB",
+      "leaves": 7,
+      "l2": 10
+    },
+    {
+      "name": "HGB_leaf7_l21",
+      "kind": "HGB",
+      "leaves": 7,
+      "l2": 1
+    },
+    {
+      "name": "HGB_leaf15_l210",
+      "kind": "HGB",
+      "leaves": 15,
+      "l2": 10
+    },
+    {
+      "name": "HGB_leaf15_l21",
+      "kind": "HGB",
+      "leaves": 15,
+      "l2": 1
+    }
+  ],
+  "features": [
+    "fused_foreground_entropy_normalized",
+    "fused_foreground_top1",
+    "fused_foreground_margin",
+    "text_foreground_entropy_normalized",
+    "text_foreground_top1",
+    "text_foreground_margin",
+    "image_foreground_entropy_normalized",
+    "image_foreground_top1",
+    "image_foreground_margin",
+    "text_image_JS_normalized",
+    "raw_detector_score",
+    "box_normalized_area",
+    "box_log_aspect",
+    "fused_background_probability"
+  ],
+  "frozen_feature_helper_sha256": "2458c403d4f7938ef0f649f9be419027aa5ce8168d011af1572675f5bdd4a84b",
+  "target": "Eligible emitted-label error; no GT/category/identity predictor",
+  "hierarchy": "Equal source -> equal eligible official GT trajectory -> equal observation; recompute for each training subset",
+  "selection": "5 deterministic source-group outer folds; 3 inner folds per outer train; select concatenated inner OOF hierarchical Brier. Candidates within 1e-5 of minimum use declared grid order.",
+  "fold_seeds": {
+    "outer": "full_mean_outer_v1",
+    "inner": "full_mean_inner_v1"
+  },
+  "ridge": "Weighted mean BCE + .5*lambda*||beta_features||^2; train-only weighted standardization; unpenalized intercept",
+  "HGB": {
+    "max_iter": 100,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 40,
+    "max_bins": 128,
+    "early_stopping": false,
+    "random_state": 20261023,
+    "sample_weight": "n_train * hierarchy_weights; l2 uses that scale"
+  },
+  "calibrator": "Fixed Platt on selected candidate's inner OOF predictions, weighted BCE + .5*1e-4*(intercept^2+(slope-1)^2); intercept [-20,20], slope [0,10]. Refit base on whole training subset. Outer/tune outcomes never calibrate their own predictions.",
+  "outputs": [
+    "B0_mean",
+    "B1_fixed_ridge_1",
+    "B2_nested_raw",
+    "B3_nested_Platt"
+  ],
+  "primary": "B3_nested_Platt; always report raw B2 too, never choose between them on outer/tune",
+  "final": "All-fit 3 inner source-group folds choose candidate and fit OOF calibrator; refit all fit, then predict tune once",
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 20261023,
+    "unit": "source_group",
+    "interpretation": "Conditional on frozen predictions; no model refit or training-uncertainty claim"
+  },
+  "gate": "Hard mean-risk control only. Does not qualify wrong-evidence vector centering, pair-dependence prediction, final tracking efficacy or novelty.",
+  "tune_selection": false,
+  "test_outcomes": false,
+  "heldout_class_correctness": false,
+  "GPU": false
+}

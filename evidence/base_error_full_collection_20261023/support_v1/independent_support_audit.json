@@ -1,0 +1,179 @@
+{
+  "status": "PASS_INDEPENDENT_FULL_SUPPORT_OUTPUT_AUDIT",
+  "support": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/support_v1",
+  "support_receipt_sha256": "e206051d0809b8e20b24529254eacece96f997c72b7155e8264197e7c07aae1e",
+  "support_builder_sha256": "61f01dd29cc32a85133ceba0f0269c86fb0f5eb43e0ec951b39778640583504d",
+  "gt_free_index_manifest_sha256": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+  "all_emitted_observations": 681602,
+  "all_emitted_tracks": 144930,
+  "all_frame_dump_hashes_and_index_rows_verified": 15283,
+  "all_raw_dump_and_frame_receipt_hashes_verified": 30566,
+  "input_hashes_verified": 15,
+  "output_hashes_verified": 6,
+  "supervised_observations_verified": 23887,
+  "primary_pairs_verified": 193405,
+  "exact_manual_source_and_posterior_mapping_verified": true,
+  "all_manual_target_provenance_verified": 46908,
+  "primary_pairs_equal_all_eligible_endpoint_combinations": true,
+  "oracle_fields_absent_from_primary_pairs": true,
+  "test_prediction_gt_joins_or_outcomes": false,
+  "fit_tune": {
+    "fit": {
+      "observations": 21661,
+      "pairs": 177016,
+      "target_categories": 131,
+      "errors": 12694,
+      "source_groups": 338
+    },
+    "tune": {
+      "observations": 2226,
+      "pairs": 16389,
+      "target_categories": 38,
+      "errors": 1081,
+      "source_groups": 42
+    }
+  },
+  "test_structure_only": {},
+  "independently_recomputed_full_gt_matching_frames": 15283,
+  "sampled_matching_results": [
+    {
+      "image_id": 40940,
+      "split": "tune",
+      "predictions": 52,
+      "all_official_gt": 4,
+      "matched": 2,
+      "supervised": 1
+    },
+    {
+      "image_id": 98284,
+      "split": "tune",
+      "predictions": 25,
+      "all_official_gt": 2,
+      "matched": 2,
+      "supervised": 1
+    },
+    {
+      "image_id": 113351,
+      "split": "tune",
+      "predictions": 51,
+      "all_official_gt": 3,
+      "matched": 1,
+      "supervised": 1
+    },
+    {
+      "image_id": 191695,
+      "split": "fit",
+      "predictions": 16,
+      "all_official_gt": 1,
+      "matched": 1,
+      "supervised": 1
+    },
+    {
+      "image_id": 297714,
+      "split": "fit",
+      "predictions": 22,
+      "all_official_gt": 2,
+      "matched": 2,
+      "supervised": 2
+    },
+    {
+      "image_id": 307866,
+      "split": "tune",
+      "predictions": 35,
+      "all_official_gt": 2,
+      "matched": 1,
+      "supervised": 0
+    },
+    {
+      "image_id": 311746,
+      "split": "fit",
+      "predictions": 58,
+      "all_official_gt": 2,
+      "matched": 2,
+      "supervised": 1
+    },
+    {
+      "image_id": 364931,
+      "split": "tune",
+      "predictions": 62,
+      "all_official_gt": 8,
+      "matched": 4,
+      "supervised": 4
+    },
+    {
+      "image_id": 378676,
+      "split": "fit",
+      "predictions": 64,
+      "all_official_gt": 3,
+      "matched": 3,
+      "supervised": 1
+    },
+    {
+      "image_id": 393814,
+      "split": "fit",
+      "predictions": 25,
+      "all_official_gt": 3,
+      "matched": 1,
+      "supervised": 1
+    },
+    {
+      "image_id": 407192,
+      "split": "tune",
+      "predictions": 32,
+      "all_official_gt": 2,
+      "matched": 1,
+      "supervised": 1
+    },
+    {
+      "image_id": 427796,
+      "split": "fit",
+      "predictions": 15,
+      "all_official_gt": 2,
+      "matched": 1,
+      "supervised": 0
+    },
+    {
+      "image_id": 455839,
+      "split": "fit",
+      "predictions": 26,
+      "all_official_gt": 4,
+      "matched": 3,
+      "supervised": 3
+    },
+    {
+      "image_id": 457851,
+      "split": "fit",
+      "predictions": 21,
+      "all_official_gt": 1,
+      "matched": 1,
+      "supervised": 1
+    },
+    {
+      "image_id": 465230,
+      "split": "tune",
+      "predictions": 37,
+      "all_official_gt": 2,
+      "matched": 1,
+      "supervised": 1
+    },
+    {
+      "image_id": 471386,
+      "split": "fit",
+      "predictions": 48,
+      "all_official_gt": 3,
+      "matched": 1,
+      "supervised": 1
+    }
+  ],
+  "matching_scope": "All15283 full fit/tune frames; sample listing is display-only",
+  "allowed_next_step": "Predeclared CPU full nested B0/B1/B2/B3 hard-error mean diagnostics after hash-bound implementation preflight; no pair training, tracker training or test opening",
+  "training_readiness_established": false,
+  "method_efficacy_established": false,
+  "elapsed_seconds": 95.71135306358337,
+  "limitations": [
+    "Raw posterior probability semantics inherit the sealed full collection audit; this verifier independently checks all supervised soft risks and argmax mappings",
+    "Whole-track identity oracle scopes remain diagnostics only",
+    "No detector-unseen class/video, centered covariance or efficacy claim"
+  ],
+  "independent_verifier_sha256": "9e0603e5350488a87c635602bc4353d7cfe41ec20f88ed8cb1d3c003c318c37b"
+}

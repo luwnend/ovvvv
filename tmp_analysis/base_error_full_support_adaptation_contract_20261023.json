@@ -1,0 +1,27 @@
+{
+  "status": "PREDECLARED_FULL_SUPPORT_ADAPTATION",
+  "script_sha256": "61f01dd29cc32a85133ceba0f0269c86fb0f5eb43e0ec951b39778640583504d",
+  "parent_pilot_builder": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_base_error_support.py",
+  "parent_pilot_builder_sha256": "64e702efa4e0956b19e9f9a0991ecfff8022c527e3e8bfb3a50710bbf4090186",
+  "unchanged_semantics": [
+    "Class-blind max-cardinality then summed-IoU Hungarian matching over ALL official GT",
+    "Inclusive IoU>=0.5; ambiguity excluded only after global assignment; unmatched stays unknown",
+    "All-emitted GT-free observation/track seal precedes parsing supervision source JSONs",
+    "Exact is_ori manual anchors, unique synset bridge and source/official bbox equality",
+    "Only fit/tune and readout-fit target classes reach correctness/soft-risk outcomes",
+    "Actual emitted det_labels+1 error is primary; posterior argmax separate",
+    "Same predicted track AND same GT identity defines descriptive pair scope",
+    "Oracle identity diagnostic is never a training mask/weight/feature or reference selector"
+  ],
+  "adapted_guards": [
+    "full_inference.json and separately sealed full_collection_plan.json replace pilot-only scope",
+    "Require independent full metadata and full runtime audit statuses plus dump verification",
+    "Full allocation has 450 videos, 448 nonempty videos, 383 source groups, 15283 frames",
+    "Full targets have explicit official old-vocabulary annotation/image/category bridges and tune eligibility",
+    "No test frames/dumps in this collection; all-emitted index still preserves every fit/tune prediction",
+    "Fresh output inside full stage; --execute gate; metadata-only --preflight mode",
+    "Per-image eligible anchor counts indexed once instead of scanning all anchors per frame"
+  ],
+  "reference_policy": "This builder does not select references. Full all-emitted GT-free tracks remain the only admissible reference pool; GT correctness, identity, holdout and oracle purity never select references.",
+  "closed_outcome_boundary": "Source annotation JSONs contain original training labels including readout-test/heldout labels; only selected fit/tune coordinates are mapped, and heldout correctness is never computed."
+}

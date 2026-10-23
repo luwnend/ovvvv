@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_FULL_GRID_MEAN_CONTRACTS",
+  "script_sha256": "99e6141f0edcd9ef2cd223dc8739b70d695812c2e0f9cd5876fb8e6c87b47061",
+  "full_11_candidate_grid_outer_outcome_flip_predictions_bitwise_invariant": true,
+  "held_outer_receipt_selection_calibration_bitwise_invariant": true,
+  "actual_HGB_matches_independent_declared_hierarchical_weight_scale": true,
+  "unequal_source_trajectory_weights_exact": true,
+  "weighted_train_only_standardization_exact": true,
+  "constant_feature_and_single_outcome_fallback": true,
+  "synthetic_rows": 240,
+  "synthetic_source_groups": 15,
+  "real_support_opened": false,
+  "GPU_used": false
+}

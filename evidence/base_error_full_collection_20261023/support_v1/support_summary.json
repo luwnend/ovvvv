@@ -1,0 +1,4482 @@
+{
+  "status": "PASS_FIT_TUNE_SIGNAL_SUPPORT_AUDIT",
+  "stage": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023",
+  "run": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1",
+  "support_receipt_sha256": "e206051d0809b8e20b24529254eacece96f997c72b7155e8264197e7c07aae1e",
+  "gt_free_index_manifest_sha256": "7006622770899f46de98132bb981f9519a69de80ef91cf6e533ba7ad79916667",
+  "supervised_observations": 23887,
+  "supervised_pairs": 193405,
+  "fit_tune": {
+    "fit": {
+      "matching_counts": {
+        "frames": 13791,
+        "emitted_predictions": 613536,
+        "full_official_gt": 43311,
+        "official_gt_unmapped_category": 177,
+        "geometry_matched": 24423,
+        "geometry_unmatched_unknown": 589113,
+        "ambiguous_multi_gt_predictions": 505,
+        "official_gt_not_assigned": 18888,
+        "eligible_fit_category_supervised": 21661,
+        "eligible_manual_anchors": 39903,
+        "eligible_manual_anchors_without_supervision": 18242,
+        "ambiguous_matched_excluded": 505,
+        "class_holdout_match_closed": 1497,
+        "nonmanual_intersection_match_excluded": 760
+      },
+      "observations": {
+        "observations": 21661,
+        "correct": 8967,
+        "errors": 12694,
+        "error_rate": 0.5860301925118877,
+        "posterior_argmax_correct": 8967,
+        "emitted_label_argmax_disagreements": 0,
+        "soft_risk": {
+          "mean": 0.6781636406592502,
+          "min": 0.0003794007914960096,
+          "max": 0.9999999854929208,
+          "q10": 0.12922360464814742,
+          "median": 0.9363813842304367,
+          "q90": 0.9995739661648095
+        },
+        "source_groups": 338,
+        "videos": 400,
+        "gt_trajectories": 1814,
+        "predicted_tracks": 3293,
+        "target_categories": 131,
+        "target_category_ids": [
+          3,
+          32,
+          35,
+          36,
+          41,
+          58,
+          62,
+          77,
+          79,
+          80,
+          90,
+          94,
+          99,
+          110,
+          118,
+          127,
+          129,
+          133,
+          153,
+          156,
+          160,
+          162,
+          173,
+          188,
+          192,
+          207,
+          217,
+          220,
+          225,
+          230,
+          232,
+          241,
+          259,
+          286,
+          299,
+          332,
+          338,
+          339,
+          344,
+          350,
+          359,
+          369,
+          375,
+          378,
+          393,
+          409,
+          415,
+          421,
+          422,
+          429,
+          447,
+          451,
+          494,
+          496,
+          520,
+          521,
+          523,
+          540,
+          550,
+          569,
+          584,
+          589,
+          615,
+          622,
+          626,
+          630,
+          631,
+          641,
+          649,
+          652,
+          658,
+          685,
+          692,
+          697,
+          701,
+          703,
+          713,
+          715,
+          720,
+          724,
+          742,
+          745,
+          757,
+          767,
+          780,
+          781,
+          793,
+          798,
+          800,
+          802,
+          804,
+          818,
+          835,
+          854,
+          861,
+          863,
+          868,
+          881,
+          922,
+          924,
+          935,
+          943,
+          947,
+          948,
+          953,
+          962,
+          964,
+          967,
+          979,
+          982,
+          993,
+          995,
+          999,
+          1000,
+          1004,
+          1021,
+          1046,
+          1072,
+          1088,
+          1101,
+          1102,
+          1108,
+          1110,
+          1111,
+          1122,
+          1123,
+          1133,
+          1138,
+          1153,
+          1182,
+          1190
+        ]
+      },
+      "diagnostic_oracle_identity": {
+        "observed_multi_identity_predicted_tracks": 405,
+        "observed_single_identity_predicted_tracks": 2888,
+        "labels_used": "All unambiguous official matched identities, including heldout/nonmanual targets",
+        "training_or_tuning_use_permitted": false
+      },
+      "pair_scopes": {
+        "all_same_identity_subpairs/all": {
+          "pairs": 177016,
+          "agreement_pairs": 101879,
+          "both_correct": 55964,
+          "exactly_one_wrong": 27156,
+          "both_wrong": 93896,
+          "same_wrong_class": 45915,
+          "different_wrong_class": 47981,
+          "both_wrong_rate": 0.5304379265151172,
+          "same_wrong_class_rate": 0.25938333258010576,
+          "mean_endpoint_soft_risk_product": 0.573629939503239,
+          "source_groups": 336,
+          "videos": 397,
+          "gt_trajectories": 1486,
+          "predicted_tracks": 2012,
+          "target_categories": 127,
+          "target_category_ids": [
+            3,
+            32,
+            35,
+            41,
+            58,
+            62,
+            77,
+            79,
+            80,
+            90,
+            94,
+            99,
+            110,
+            118,
+            127,
+            129,
+            133,
+            153,
+            156,
+            160,
+            162,
+            173,
+            188,
+            192,
+            207,
+            217,
+            220,
+            225,
+            230,
+            232,
+            241,
+            259,
+            286,
+            299,
+            332,
+            338,
+            339,
+            344,
+            350,
+            359,
+            369,
+            375,
+            378,
+            393,
+            409,
+            415,
+            421,
+            422,
+            429,
+            447,
+            451,
+            494,
+            496,
+            520,
+            521,
+            523,
+            540,
+            550,
+            569,
+            584,
+            589,
+            615,
+            622,
+            626,
+            630,
+            631,
+            641,
+            649,
+            652,
+            658,
+            685,
+            692,
+            701,
+            703,
+            713,
+            715,
+            720,
+            724,
+            742,
+            745,
+            757,
+            767,
+            780,
+            781,
+            793,
+            798,
+            800,
+            802,
+            804,
+            818,
+            835,
+            854,
+            861,
+            863,
+            868,
+            881,
+            922,
+            924,
+            935,
+            943,
+            947,
+            948,
+            953,
+            962,
+            964,
+            967,
+            979,
+            982,
+            995,
+            999,
+            1000,
+            1021,
+            1046,
+            1072,
+            1088,
+            1101,
+            1102,
+            1108,
+            1110,
+            1111,
+            1122,
+            1123,
+            1133,
+            1138,
+            1153,
+            1182,
+            1190
+          ],
+          "concentration": {
+            "max_source_pairs_share": 0.04400732137207936,
+            "max_gt_trajectory_pairs_share": 0.004406381344059294,
+            "max_source_both_wrong_share": 0.06642455482661669,
+            "max_gt_trajectory_both_wrong_share": 0.008307063133679815,
+            "max_source_same_wrong_class_share": 0.06910595665904389,
+            "max_gt_trajectory_same_wrong_class_share": 0.016987912446912775
+          },
+          "per_source_event_counts": {
+            "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2": {
+              "pairs": 7,
+              "both_wrong": 3,
+              "same_wrong_class": 3
+            },
+            "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929": {
+              "pairs": 42,
+              "both_wrong": 3,
+              "same_wrong_class": 3
+            },
+            "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e": {
+              "pairs": 258,
+              "both_wrong": 10,
+              "same_wrong_class": 10
+            },
+            "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818": {
+              "pairs": 200,
+              "both_wrong": 1,
+              "same_wrong_class": 0
+            },
+            "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec": {
+              "pairs": 710,
+              "both_wrong": 164,
+              "same_wrong_class": 136
+            },
+            "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2": {
+              "pairs": 337,
+              "both_wrong": 58,
+              "same_wrong_class": 35
+            },
+            "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": {
+              "pairs": 88,
+              "both_wrong": 55,
+              "same_wrong_class": 45
+            },
+            "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
+              "pairs": 45,
+              "both_wrong": 6,
+              "same_wrong_class": 6
+            },
+            "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
+              "pairs": 725,
+              "both_wrong": 262,
+              "same_wrong_class": 262
+            },
+            "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
+              "pairs": 786,
+              "both_wrong": 190,
+              "same_wrong_class": 75
+            },
+            "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
+              "pairs": 285,
+              "both_wrong": 10,
+              "same_wrong_class": 3
+            },
+            "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8": {
+              "pairs": 128,
+              "both_wrong": 7,
+              "same_wrong_class": 6
+            },
+            "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0": {
+              "pairs": 89,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2": {
+              "pairs": 455,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7": {
+              "pairs": 99,
+              "both_wrong": 27,
+              "same_wrong_class": 17
+            },
+            "BDD/b1d0a191-03dcecc2": {
+              "pairs": 481,
+              "both_wrong": 207,
+              "same_wrong_class": 177
+            },
+            "BDD/b20b69d2-e31380a7": {
+              "pairs": 139,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b20b9c19-91e01a50": {
+              "pairs": 313,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b21c68e6-65674a17": {
+              "pairs": 6,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b21d5efb-5e2cd743": {
+              "pairs": 4,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b22a4d9f-73cc8810": {
+              "pairs": 684,
+              "both_wrong": 6,
+              "same_wrong_class": 6
+            },
+            "BDD/b232c7c9-d251d9ee": {
+              "pairs": 385,
+              "both_wrong": 97,
+              "same_wrong_class": 97
+            },
+            "BDD/b249e7f2-92d2efad": {
+              "pairs": 359,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b262f576-b0373824": {
+              "pairs": 14,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b27098c3-c443b6e3": {
+              "pairs": 79,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b27127df-eac9b95e": {
+              "pairs": 660,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b27369f3-9b9598f4": {
+              "pairs": 45,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b27688b6-cd521517": {
+              "pairs": 411,
+              "both_wrong": 3,
+              "same_wrong_class": 3
+            },
+            "BDD/b28ec521-898e11bd": {
+              "pairs": 633,
+              "both_wrong": 1,
+              "same_wrong_class": 0
+            },
+            "BDD/b2bee3e1-80c787bd": {
+              "pairs": 466,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b2d502aa-64d3e228": {
+              "pairs": 74,
+              "both_wrong": 3,
+              "same_wrong_class": 1
+            },
+            "BDD/b2d502aa-f0b28e3e": {
+              "pairs": 88,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b2dbb793-9f0b2bec": {
+              "pairs": 400,
+              "both_wrong": 37,
+              "same_wrong_class": 37
+            },
+            "BDD/b2de938e-84eab379": {
+              "pairs": 123,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b2e2b2be-4142962b": {
+              "pairs": 547,
+              "both_wrong": 11,
+              "same_wrong_class": 4
+            },
+            "BDD/b2fc7cb5-1635d64b": {
+              "pairs": 352,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b2ff6aba-fa4ac7d7": {
+              "pairs": 303,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3079ec6-df7b2d92": {
+              "pairs": 476,
+              "both_wrong": 4,
+              "same_wrong_class": 2
+            },
+            "BDD/b30b460d-73d12a29": {
+              "pairs": 120,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3159650-1ba75f9b": {
+              "pairs": 7,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3378e5e-b7593301": {
+              "pairs": 44,
+              "both_wrong": 21,
+              "same_wrong_class": 21
+            },
+            "BDD/b33ea6cb-3464fb13": {
+              "pairs": 238,
+              "both_wrong": 15,
+              "same_wrong_class": 10
+            },
+            "BDD/b34b1b88-5bfe3b85": {
+              "pairs": 236,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "BDD/b368ee71-cf27b7fa": {
+              "pairs": 726,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "BDD/b36e0178-2037ca44": {
+              "pairs": 31,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "BDD/b39fe3cd-227ff7a8": {
+              "pairs": 485,
+              "both_wrong": 36,
+              "same_wrong_class": 28
+            },
+            "BDD/b3a9281a-e8ba5d66": {
+              "pairs": 520,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3b9ee6e-6d2617d1": {
+              "pairs": 385,
+              "both_wrong": 70,
+              "same_wrong_class": 18
+            },
+            "BDD/b3be4113-1fb56ec4": {
+              "pairs": 40,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3ce9f98-2dc52573": {
+              "pairs": 455,
+              "both_wrong": 24,
+              "same_wrong_class": 17
+            },
+            "BDD/b3da33d5-a64e7657": {
+              "pairs": 176,
+              "both_wrong": 2,
+              "same_wrong_class": 2
+            },
+            "BDD/b40b0ea3-b242efc9": {
+              "pairs": 801,
+              "both_wrong": 73,
+              "same_wrong_class": 43
+            },
+            "BDD/b422ec08-d42660b6": {
+              "pairs": 125,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b4235ab3-b305d3e9": {
+              "pairs": 17,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b4278d1f-dbd0295c": {
+              "pairs": 73,
+              "both_wrong": 6,
+              "same_wrong_class": 3
+            },
+            "BDD/b4301c7b-da5261f0": {
+              "pairs": 774,
+              "both_wrong": 23,
+              "same_wrong_class": 16
+            },
+            "BDD/b4466011-05cbc315": {
+              "pairs": 434,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b4536117-bc85ba28": {
+              "pairs": 32,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "Charades/0LHWF": {
+              "pairs": 436,
+              "both_wrong": 314,
+              "same_wrong_class": 82
+            },
+            "Charades/35LUV": {
+              "pairs": 748,
+              "both_wrong": 631,
+              "same_wrong_class": 311
+            },
+            "Charades/3N1I2": {
+              "pairs": 164,
+              "both_wrong": 164,
+              "same_wrong_class": 107
+            },
+            "Charades/48BUM": {
+              "pairs": 38,
+              "both_wrong": 38,
+              "same_wrong_class": 7
+            },
+            "Charades/4H61U": {
+              "pairs": 164,
+              "both_wrong": 77,
+              "same_wrong_class": 19
+            },
+            "Charades/4K0BP": {
+              "pairs": 176,
+              "both_wrong": 46,
+              "same_wrong_class": 17
+            },
+            "Charades/50E06": {
+              "pairs": 500,
+              "both_wrong": 500,
+              "same_wrong_class": 161
+            },
+            "Charades/5HPZ1": {
+              "pairs": 692,
+              "both_wrong": 143,
+              "same_wrong_class": 35
+            },
+            "Charades/6EU06": {
+              "pairs": 228,
+              "both_wrong": 206,
+              "same_wrong_class": 80
+            },
+            "Charades/6FV5P": {
+              "pairs": 1047,
+              "both_wrong": 797,
+              "same_wrong_class": 241
+            },
+            "Charades/7177T": {
+              "pairs": 568,
+              "both_wrong": 568,
+              "same_wrong_class": 255
+            },
+            "Charades/735W9": {
+              "pairs": 539,
+              "both_wrong": 485,
+              "same_wrong_class": 112
+            },
+            "Charades/7P0JX": {
+              "pairs": 281,
+              "both_wrong": 252,
+              "same_wrong_class": 66
+            },
+            "Charades/8Q0EY": {
+              "pairs": 335,
+              "both_wrong": 292,
+              "same_wrong_class": 57
+            },
+            "Charades/9M48H": {
+              "pairs": 757,
+              "both_wrong": 351,
+              "same_wrong_class": 135
+            },
+            "Charades/9UU4W": {
+              "pairs": 367,
+              "both_wrong": 177,
+              "same_wrong_class": 78
+            },
+            "Charades/A2EY4": {
+              "pairs": 6,
+              "both_wrong": 6,
+              "same_wrong_class": 3
+            },
+            "Charades/AIOTI": {
+              "pairs": 93,
+              "both_wrong": 80,
+              "same_wrong_class": 13
+            },
+            "Charades/AVSN8": {
+              "pairs": 142,
+              "both_wrong": 127,
+              "same_wrong_class": 30
+            },
+            "Charades/BI6Y4": {
+              "pairs": 337,
+              "both_wrong": 261,
+              "same_wrong_class": 150
+            },
+            "Charades/CF9QP": {
+              "pairs": 723,
+              "both_wrong": 508,
+              "same_wrong_class": 218
+            },
+            "Charades/E8468": {
+              "pairs": 58,
+              "both_wrong": 46,
+              "same_wrong_class": 16
+            },
+            "Charades/E9FY2": {
+              "pairs": 110,
+              "both_wrong": 110,
+              "same_wrong_class": 14
+            },
+            "Charades/EIKUN": {
+              "pairs": 472,
+              "both_wrong": 467,
+              "same_wrong_class": 300
+            },
+            "Charades/FHAV0": {
+              "pairs": 161,
+              "both_wrong": 161,
+              "same_wrong_class": 25
+            },
+            "Charades/FZAEP": {
+              "pairs": 596,
+              "both_wrong": 568,
+              "same_wrong_class": 162
+            },
+            "Charades/G2DIN": {
+              "pairs": 554,
+              "both_wrong": 554,
+              "same_wrong_class": 166
+            },
+            "Charades/G8NEV": {
+              "pairs": 789,
+              "both_wrong": 205,
+              "same_wrong_class": 162
+            },
+            "Charades/GL2JW": {
+              "pairs": 286,
+              "both_wrong": 286,
+              "same_wrong_class": 106
+            },
+            "Charades/GQ341": {
+              "pairs": 1510,
+              "both_wrong": 1043,
+              "same_wrong_class": 458
+            },
+            "Charades/HOYUT": {
+              "pairs": 187,
+              "both_wrong": 170,
+              "same_wrong_class": 38
+            },
+            "Charades/HSKVH": {
+              "pairs": 14,
+              "both_wrong": 14,
+              "same_wrong_class": 5
+            },
+            "Charades/HYD3N": {
+              "pairs": 473,
+              "both_wrong": 248,
+              "same_wrong_class": 53
+            },
+            "Charades/IIL9C": {
+              "pairs": 536,
+              "both_wrong": 490,
+              "same_wrong_class": 111
+            },
+            "Charades/IULK6": {
+              "pairs": 653,
+              "both_wrong": 563,
+              "same_wrong_class": 354
+            },
+            "Charades/JMPKP": {
+              "pairs": 154,
+              "both_wrong": 137,
+              "same_wrong_class": 49
+            },
+            "Charades/KA3ER": {
+              "pairs": 179,
+              "both_wrong": 175,
+              "same_wrong_class": 95
+            },
+            "Charades/KPHP5": {
+              "pairs": 120,
+              "both_wrong": 91,
+              "same_wrong_class": 20
+            },
+            "Charades/LHTSI": {
+              "pairs": 300,
+              "both_wrong": 276,
+              "same_wrong_class": 81
+            },
+            "Charades/M6ERH": {
+              "pairs": 613,
+              "both_wrong": 586,
+              "same_wrong_class": 184
+            },
+            "Charades/MZ9X7": {
+              "pairs": 224,
+              "both_wrong": 224,
+              "same_wrong_class": 58
+            },
+            "Charades/NPEA3": {
+              "pairs": 93,
+              "both_wrong": 93,
+              "same_wrong_class": 74
+            },
+            "Charades/O87OF": {
+              "pairs": 116,
+              "both_wrong": 108,
+              "same_wrong_class": 20
+            },
+            "Charades/O8DER": {
+              "pairs": 158,
+              "both_wrong": 42,
+              "same_wrong_class": 8
+            },
+            "Charades/PC7H2": {
+              "pairs": 458,
+              "both_wrong": 59,
+              "same_wrong_class": 27
+            },
+            "Charades/PEWH4": {
+              "pairs": 517,
+              "both_wrong": 304,
+              "same_wrong_class": 129
+            },
+            "Charades/PJUM0": {
+              "pairs": 364,
+              "both_wrong": 292,
+              "same_wrong_class": 103
+            },
+            "Charades/QBUAT": {
+              "pairs": 549,
+              "both_wrong": 549,
+              "same_wrong_class": 236
+            },
+            "Charades/QCPXJ": {
+              "pairs": 340,
+              "both_wrong": 315,
+              "same_wrong_class": 217
+            },
+            "Charades/QHU9R": {
+              "pairs": 328,
+              "both_wrong": 145,
+              "same_wrong_class": 69
+            },
+            "Charades/QZZPS": {
+              "pairs": 115,
+              "both_wrong": 92,
+              "same_wrong_class": 71
+            },
+            "Charades/S7OTQ": {
+              "pairs": 210,
+              "both_wrong": 96,
+              "same_wrong_class": 88
+            },
+            "Charades/SROEU": {
+              "pairs": 643,
+              "both_wrong": 427,
+              "same_wrong_class": 103
+            },
+            "Charades/SVA4D": {
+              "pairs": 319,
+              "both_wrong": 51,
+              "same_wrong_class": 14
+            },
+            "Charades/TQO6O": {
+              "pairs": 287,
+              "both_wrong": 283,
+              "same_wrong_class": 211
+            },
+            "Charades/U08M9": {
+              "pairs": 719,
+              "both_wrong": 498,
+              "same_wrong_class": 166
+            },
+            "Charades/U4J2Q": {
+              "pairs": 859,
+              "both_wrong": 564,
+              "same_wrong_class": 188
+            },
+            "Charades/UDGP2": {
+              "pairs": 117,
+              "both_wrong": 81,
+              "same_wrong_class": 73
+            },
+            "Charades/V7YEJ": {
+              "pairs": 17,
+              "both_wrong": 17,
+              "same_wrong_class": 6
+            },
+            "Charades/W97NR": {
+              "pairs": 719,
+              "both_wrong": 354,
+              "same_wrong_class": 163
+            },
+            "Charades/X9LP4": {
+              "pairs": 140,
+              "both_wrong": 132,
+              "same_wrong_class": 56
+            },
+            "Charades/Y3M3W": {
+              "pairs": 1232,
+              "both_wrong": 903,
+              "same_wrong_class": 576
+            },
+            "Charades/YE6UZ": {
+              "pairs": 98,
+              "both_wrong": 53,
+              "same_wrong_class": 17
+            },
+            "Charades/YK49T": {
+              "pairs": 211,
+              "both_wrong": 210,
+              "same_wrong_class": 37
+            },
+            "Charades/YXQWH": {
+              "pairs": 157,
+              "both_wrong": 149,
+              "same_wrong_class": 61
+            },
+            "Charades/Z6HEA": {
+              "pairs": 334,
+              "both_wrong": 212,
+              "same_wrong_class": 28
+            },
+            "LaSOT/airplane-4": {
+              "pairs": 595,
+              "both_wrong": 55,
+              "same_wrong_class": 21
+            },
+            "LaSOT/basketball-11": {
+              "pairs": 322,
+              "both_wrong": 110,
+              "same_wrong_class": 56
+            },
+            "LaSOT/basketball-4": {
+              "pairs": 553,
+              "both_wrong": 211,
+              "same_wrong_class": 15
+            },
+            "LaSOT/basketball-6": {
+              "pairs": 941,
+              "both_wrong": 621,
+              "same_wrong_class": 116
+            },
+            "LaSOT/bicycle-4": {
+              "pairs": 1056,
+              "both_wrong": 70,
+              "same_wrong_class": 37
+            },
+            "LaSOT/bicycle-7": {
+              "pairs": 1016,
+              "both_wrong": 32,
+              "same_wrong_class": 2
+            },
+            "LaSOT/bicycle-9": {
+              "pairs": 644,
+              "both_wrong": 24,
+              "same_wrong_class": 18
+            },
+            "LaSOT/bird-11": {
+              "pairs": 722,
+              "both_wrong": 2,
+              "same_wrong_class": 2
+            },
+            "LaSOT/bird-12": {
+              "pairs": 1062,
+              "both_wrong": 559,
+              "same_wrong_class": 250
+            },
+            "LaSOT/bird-17": {
+              "pairs": 807,
+              "both_wrong": 777,
+              "same_wrong_class": 459
+            },
+            "LaSOT/boat-4": {
+              "pairs": 796,
+              "both_wrong": 4,
+              "same_wrong_class": 0
+            },
+            "LaSOT/boat-9": {
+              "pairs": 6,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/book-11": {
+              "pairs": 793,
+              "both_wrong": 793,
+              "same_wrong_class": 748
+            },
+            "LaSOT/book-15": {
+              "pairs": 1252,
+              "both_wrong": 1060,
+              "same_wrong_class": 713
+            },
+            "LaSOT/book-2": {
+              "pairs": 785,
+              "both_wrong": 783,
+              "same_wrong_class": 503
+            },
+            "LaSOT/book-3": {
+              "pairs": 943,
+              "both_wrong": 18,
+              "same_wrong_class": 16
+            },
+            "LaSOT/bottle-12": {
+              "pairs": 122,
+              "both_wrong": 37,
+              "same_wrong_class": 11
+            },
+            "LaSOT/bus-19": {
+              "pairs": 7,
+              "both_wrong": 2,
+              "same_wrong_class": 1
+            },
+            "LaSOT/bus-8": {
+              "pairs": 1092,
+              "both_wrong": 43,
+              "same_wrong_class": 11
+            },
+            "LaSOT/car-17": {
+              "pairs": 1060,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "LaSOT/cat-1": {
+              "pairs": 1600,
+              "both_wrong": 1398,
+              "same_wrong_class": 493
+            },
+            "LaSOT/cat-13": {
+              "pairs": 1375,
+              "both_wrong": 686,
+              "same_wrong_class": 321
+            },
+            "LaSOT/cat-4": {
+              "pairs": 517,
+              "both_wrong": 384,
+              "same_wrong_class": 184
+            },
+            "LaSOT/cat-7": {
+              "pairs": 780,
+              "both_wrong": 435,
+              "same_wrong_class": 354
+            },
+            "LaSOT/cattle-14": {
+              "pairs": 591,
+              "both_wrong": 3,
+              "same_wrong_class": 2
+            },
+            "LaSOT/cattle-9": {
+              "pairs": 1521,
+              "both_wrong": 78,
+              "same_wrong_class": 28
+            },
+            "LaSOT/cup-9": {
+              "pairs": 469,
+              "both_wrong": 25,
+              "same_wrong_class": 3
+            },
+            "LaSOT/deer-15": {
+              "pairs": 733,
+              "both_wrong": 91,
+              "same_wrong_class": 91
+            },
+            "LaSOT/deer-4": {
+              "pairs": 1560,
+              "both_wrong": 894,
+              "same_wrong_class": 693
+            },
+            "LaSOT/dog-13": {
+              "pairs": 502,
+              "both_wrong": 72,
+              "same_wrong_class": 14
+            },
+            "LaSOT/electricfan-13": {
+              "pairs": 485,
+              "both_wrong": 105,
+              "same_wrong_class": 56
+            },
+            "LaSOT/elephant-14": {
+              "pairs": 709,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/elephant-6": {
+              "pairs": 808,
+              "both_wrong": 5,
+              "same_wrong_class": 3
+            },
+            "LaSOT/flag-5": {
+              "pairs": 746,
+              "both_wrong": 565,
+              "same_wrong_class": 337
+            },
+            "LaSOT/giraffe-19": {
+              "pairs": 838,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/goldfish-17": {
+              "pairs": 527,
+              "both_wrong": 527,
+              "same_wrong_class": 47
+            },
+            "LaSOT/guitar-9": {
+              "pairs": 463,
+              "both_wrong": 164,
+              "same_wrong_class": 82
+            },
+            "LaSOT/hat-18": {
+              "pairs": 992,
+              "both_wrong": 992,
+              "same_wrong_class": 316
+            },
+            "LaSOT/helmet-1": {
+              "pairs": 379,
+              "both_wrong": 379,
+              "same_wrong_class": 241
+            },
+            "LaSOT/helmet-3": {
+              "pairs": 80,
+              "both_wrong": 10,
+              "same_wrong_class": 3
+            },
+            "LaSOT/lion-12": {
+              "pairs": 2197,
+              "both_wrong": 1116,
+              "same_wrong_class": 536
+            },
+            "LaSOT/lion-15": {
+              "pairs": 1220,
+              "both_wrong": 1220,
+              "same_wrong_class": 602
+            },
+            "LaSOT/lion-9": {
+              "pairs": 886,
+              "both_wrong": 596,
+              "same_wrong_class": 336
+            },
+            "LaSOT/lizard-16": {
+              "pairs": 666,
+              "both_wrong": 666,
+              "same_wrong_class": 252
+            },
+            "LaSOT/microphone-12": {
+              "pairs": 1558,
+              "both_wrong": 1317,
+              "same_wrong_class": 901
+            },
+            "LaSOT/microphone-13": {
+              "pairs": 562,
+              "both_wrong": 555,
+              "same_wrong_class": 234
+            },
+            "LaSOT/microphone-3": {
+              "pairs": 379,
+              "both_wrong": 379,
+              "same_wrong_class": 186
+            },
+            "LaSOT/monkey-16": {
+              "pairs": 780,
+              "both_wrong": 28,
+              "same_wrong_class": 4
+            },
+            "LaSOT/motorcycle-19": {
+              "pairs": 28,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/person-2": {
+              "pairs": 536,
+              "both_wrong": 381,
+              "same_wrong_class": 181
+            },
+            "LaSOT/person-3": {
+              "pairs": 445,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/person-7": {
+              "pairs": 321,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/pool-17": {
+              "pairs": 165,
+              "both_wrong": 57,
+              "same_wrong_class": 26
+            },
+            "LaSOT/rabbit-17": {
+              "pairs": 1168,
+              "both_wrong": 688,
+              "same_wrong_class": 176
+            },
+            "LaSOT/racing-14": {
+              "pairs": 315,
+              "both_wrong": 9,
+              "same_wrong_class": 4
+            },
+            "LaSOT/racing-20": {
+              "pairs": 529,
+              "both_wrong": 378,
+              "same_wrong_class": 37
+            },
+            "LaSOT/shark-20": {
+              "pairs": 211,
+              "both_wrong": 154,
+              "same_wrong_class": 35
+            },
+            "LaSOT/sheep-15": {
+              "pairs": 1231,
+              "both_wrong": 703,
+              "same_wrong_class": 630
+            },
+            "LaSOT/skateboard-1": {
+              "pairs": 792,
+              "both_wrong": 6,
+              "same_wrong_class": 6
+            },
+            "LaSOT/skateboard-18": {
+              "pairs": 934,
+              "both_wrong": 3,
+              "same_wrong_class": 1
+            },
+            "LaSOT/skateboard-8": {
+              "pairs": 1198,
+              "both_wrong": 169,
+              "same_wrong_class": 81
+            },
+            "LaSOT/surfboard-8": {
+              "pairs": 153,
+              "both_wrong": 3,
+              "same_wrong_class": 3
+            },
+            "LaSOT/swing-18": {
+              "pairs": 284,
+              "both_wrong": 190,
+              "same_wrong_class": 32
+            },
+            "LaSOT/tank-12": {
+              "pairs": 13,
+              "both_wrong": 8,
+              "same_wrong_class": 1
+            },
+            "LaSOT/tank-2": {
+              "pairs": 397,
+              "both_wrong": 193,
+              "same_wrong_class": 26
+            },
+            "LaSOT/tiger-13": {
+              "pairs": 1507,
+              "both_wrong": 802,
+              "same_wrong_class": 430
+            },
+            "LaSOT/truck-10": {
+              "pairs": 2641,
+              "both_wrong": 1350,
+              "same_wrong_class": 1034
+            },
+            "LaSOT/truck-5": {
+              "pairs": 1537,
+              "both_wrong": 1055,
+              "same_wrong_class": 1003
+            },
+            "LaSOT/umbrella-18": {
+              "pairs": 666,
+              "both_wrong": 29,
+              "same_wrong_class": 4
+            },
+            "LaSOT/volleyball-18": {
+              "pairs": 632,
+              "both_wrong": 167,
+              "same_wrong_class": 24
+            },
+            "LaSOT/volleyball-19": {
+              "pairs": 177,
+              "both_wrong": 69,
+              "same_wrong_class": 23
+            },
+            "LaSOT/volleyball-20": {
+              "pairs": 459,
+              "both_wrong": 254,
+              "same_wrong_class": 45
+            },
+            "LaSOT/zebra-14": {
+              "pairs": 813,
+              "both_wrong": 813,
+              "same_wrong_class": 213
+            },
+            "LaSOT/zebra-18": {
+              "pairs": 578,
+              "both_wrong": 16,
+              "same_wrong_class": 1
+            },
+            "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11": {
+              "pairs": 939,
+              "both_wrong": 714,
+              "same_wrong_class": 323
+            },
+            "YFCC100M/v_23584c2660351f12cffe1399c47ce870": {
+              "pairs": 82,
+              "both_wrong": 43,
+              "same_wrong_class": 29
+            },
+            "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5": {
+              "pairs": 30,
+              "both_wrong": 19,
+              "same_wrong_class": 16
+            },
+            "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b": {
+              "pairs": 819,
+              "both_wrong": 510,
+              "same_wrong_class": 182
+            },
+            "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461": {
+              "pairs": 153,
+              "both_wrong": 150,
+              "same_wrong_class": 81
+            },
+            "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d": {
+              "pairs": 64,
+              "both_wrong": 45,
+              "same_wrong_class": 26
+            },
+            "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3": {
+              "pairs": 816,
+              "both_wrong": 526,
+              "same_wrong_class": 209
+            },
+            "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3": {
+              "pairs": 622,
+              "both_wrong": 136,
+              "same_wrong_class": 68
+            },
+            "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215": {
+              "pairs": 19,
+              "both_wrong": 4,
+              "same_wrong_class": 1
+            },
+            "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0": {
+              "pairs": 1139,
+              "both_wrong": 588,
+              "same_wrong_class": 106
+            },
+            "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629": {
+              "pairs": 693,
+              "both_wrong": 690,
+              "same_wrong_class": 433
+            },
+            "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3": {
+              "pairs": 6,
+              "both_wrong": 5,
+              "same_wrong_class": 3
+            },
+            "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b": {
+              "pairs": 137,
+              "both_wrong": 137,
+              "same_wrong_class": 82
+            },
+            "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf": {
+              "pairs": 465,
+              "both_wrong": 307,
+              "same_wrong_class": 131
+            },
+            "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d": {
+              "pairs": 642,
+              "both_wrong": 134,
+              "same_wrong_class": 15
+            },
+            "YFCC100M/v_6f90a13c795ef37404d95983341df": {
+              "pairs": 1050,
+              "both_wrong": 3,
+              "same_wrong_class": 1
+            },
+            "YFCC100M/v_72252bc9435f88bbfb28aac25484f30": {
+              "pairs": 25,
+              "both_wrong": 17,
+              "same_wrong_class": 1
+            },
+            "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a": {
+              "pairs": 3,
+              "both_wrong": 3,
+              "same_wrong_class": 0
+            },
+            "YFCC100M/v_82e9bb97b1a1fdde489511e69126644": {
+              "pairs": 255,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30": {
+              "pairs": 436,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YFCC100M/v_9018a07931e02026b3bd6e82489d4624": {
+              "pairs": 465,
+              "both_wrong": 94,
+              "same_wrong_class": 31
+            },
+            "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c": {
+              "pairs": 16,
+              "both_wrong": 11,
+              "same_wrong_class": 9
+            },
+            "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3": {
+              "pairs": 309,
+              "both_wrong": 232,
+              "same_wrong_class": 34
+            },
+            "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5": {
+              "pairs": 42,
+              "both_wrong": 36,
+              "same_wrong_class": 36
+            },
+            "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c": {
+              "pairs": 35,
+              "both_wrong": 28,
+              "same_wrong_class": 6
+            },
+            "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20": {
+              "pairs": 107,
+              "both_wrong": 14,
+              "same_wrong_class": 1
+            },
+            "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a": {
+              "pairs": 78,
+              "both_wrong": 15,
+              "same_wrong_class": 2
+            },
+            "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46": {
+              "pairs": 188,
+              "both_wrong": 8,
+              "same_wrong_class": 1
+            },
+            "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33": {
+              "pairs": 223,
+              "both_wrong": 102,
+              "same_wrong_class": 58
+            },
+            "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4": {
+              "pairs": 136,
+              "both_wrong": 136,
+              "same_wrong_class": 46
+            },
+            "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452": {
+              "pairs": 515,
+              "both_wrong": 325,
+              "same_wrong_class": 101
+            },
+            "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e": {
+              "pairs": 405,
+              "both_wrong": 123,
+              "same_wrong_class": 63
+            },
+            "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150": {
+              "pairs": 22,
+              "both_wrong": 22,
+              "same_wrong_class": 21
+            },
+            "YFCC100M/v_df4744928b9b4199b5c73344efdce65": {
+              "pairs": 716,
+              "both_wrong": 411,
+              "same_wrong_class": 264
+            },
+            "YFCC100M/v_e2d3c540737396bebd0a4b53b3174e": {
+              "pairs": 6,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40": {
+              "pairs": 247,
+              "both_wrong": 22,
+              "same_wrong_class": 10
+            },
+            "YFCC100M/v_ea33c680e1f18d71543b8f80815beec": {
+              "pairs": 267,
+              "both_wrong": 76,
+              "same_wrong_class": 18
+            },
+            "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5": {
+              "pairs": 407,
+              "both_wrong": 61,
+              "same_wrong_class": 16
+            },
+            "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e": {
+              "pairs": 95,
+              "both_wrong": 47,
+              "same_wrong_class": 10
+            },
+            "YFCC100M/v_f729d4f362aea24236153ffc589adac": {
+              "pairs": 584,
+              "both_wrong": 575,
+              "same_wrong_class": 544
+            },
+            "YFCC100M/v_f93e2640ce4cf8b1195c94764803414": {
+              "pairs": 348,
+              "both_wrong": 342,
+              "same_wrong_class": 238
+            },
+            "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c": {
+              "pairs": 402,
+              "both_wrong": 203,
+              "same_wrong_class": 177
+            },
+            "YouTube/-6quA485tw8": {
+              "pairs": 1567,
+              "both_wrong": 1496,
+              "same_wrong_class": 1132
+            },
+            "YouTube/-dQIXiV6gk0": {
+              "pairs": 122,
+              "both_wrong": 122,
+              "same_wrong_class": 42
+            },
+            "YouTube/1cU81_rjt7s": {
+              "pairs": 12,
+              "both_wrong": 7,
+              "same_wrong_class": 2
+            },
+            "YouTube/1mPd_3N5gNQ": {
+              "pairs": 273,
+              "both_wrong": 120,
+              "same_wrong_class": 8
+            },
+            "YouTube/25eIK85JWi4": {
+              "pairs": 43,
+              "both_wrong": 42,
+              "same_wrong_class": 19
+            },
+            "YouTube/313tbNN4J3o": {
+              "pairs": 888,
+              "both_wrong": 672,
+              "same_wrong_class": 270
+            },
+            "YouTube/4ltcNlAq1wI": {
+              "pairs": 21,
+              "both_wrong": 10,
+              "same_wrong_class": 2
+            },
+            "YouTube/5BDj0ow5hnA": {
+              "pairs": 2377,
+              "both_wrong": 2035,
+              "same_wrong_class": 1079
+            },
+            "YouTube/7SFkVnnp_eE": {
+              "pairs": 79,
+              "both_wrong": 56,
+              "same_wrong_class": 25
+            },
+            "YouTube/7XQoDEQGqaw": {
+              "pairs": 69,
+              "both_wrong": 66,
+              "same_wrong_class": 19
+            },
+            "YouTube/7YULkl7Xm04": {
+              "pairs": 55,
+              "both_wrong": 19,
+              "same_wrong_class": 4
+            },
+            "YouTube/7_xkhnbnI7M": {
+              "pairs": 288,
+              "both_wrong": 279,
+              "same_wrong_class": 133
+            },
+            "YouTube/87ksUt7mO3o": {
+              "pairs": 367,
+              "both_wrong": 243,
+              "same_wrong_class": 170
+            },
+            "YouTube/9sZI9IdgXZY": {
+              "pairs": 426,
+              "both_wrong": 416,
+              "same_wrong_class": 170
+            },
+            "YouTube/AjH8TFfZIGY": {
+              "pairs": 10,
+              "both_wrong": 6,
+              "same_wrong_class": 1
+            },
+            "YouTube/C48cXamb2B0": {
+              "pairs": 67,
+              "both_wrong": 67,
+              "same_wrong_class": 16
+            },
+            "YouTube/Ce7YdX2cido": {
+              "pairs": 21,
+              "both_wrong": 21,
+              "same_wrong_class": 15
+            },
+            "YouTube/D8Vhxbho1fY": {
+              "pairs": 1517,
+              "both_wrong": 1157,
+              "same_wrong_class": 326
+            },
+            "YouTube/EOSzItLkZQQ": {
+              "pairs": 30,
+              "both_wrong": 24,
+              "same_wrong_class": 2
+            },
+            "YouTube/Fu0b-YbpPak": {
+              "pairs": 579,
+              "both_wrong": 119,
+              "same_wrong_class": 28
+            },
+            "YouTube/H8g9ZBuQmrE": {
+              "pairs": 80,
+              "both_wrong": 10,
+              "same_wrong_class": 10
+            },
+            "YouTube/HtaNMyVa260": {
+              "pairs": 629,
+              "both_wrong": 287,
+              "same_wrong_class": 224
+            },
+            "YouTube/I7Q-x9MorO0": {
+              "pairs": 660,
+              "both_wrong": 437,
+              "same_wrong_class": 426
+            },
+            "YouTube/IS3OtsJFP7Y": {
+              "pairs": 433,
+              "both_wrong": 217,
+              "same_wrong_class": 51
+            },
+            "YouTube/IUbQjSiZL-Y": {
+              "pairs": 461,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YouTube/JMzNLlatrys": {
+              "pairs": 674,
+              "both_wrong": 139,
+              "same_wrong_class": 53
+            },
+            "YouTube/JX1uj-YRiYo": {
+              "pairs": 299,
+              "both_wrong": 61,
+              "same_wrong_class": 10
+            },
+            "YouTube/JvtJRvTKzvw": {
+              "pairs": 142,
+              "both_wrong": 6,
+              "same_wrong_class": 1
+            },
+            "YouTube/KUdBvuRaAbk": {
+              "pairs": 190,
+              "both_wrong": 1,
+              "same_wrong_class": 0
+            },
+            "YouTube/LFPYYYZstjg": {
+              "pairs": 169,
+              "both_wrong": 169,
+              "same_wrong_class": 110
+            },
+            "YouTube/Or8dXBSS_LM": {
+              "pairs": 54,
+              "both_wrong": 4,
+              "same_wrong_class": 2
+            },
+            "YouTube/PQkE02amSDY": {
+              "pairs": 302,
+              "both_wrong": 287,
+              "same_wrong_class": 155
+            },
+            "YouTube/Q5SutMM8H4I": {
+              "pairs": 25,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YouTube/QEFmA2nj12w": {
+              "pairs": 219,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "YouTube/Q_701AtuEbE": {
+              "pairs": 173,
+              "both_wrong": 73,
+              "same_wrong_class": 9
+            },
+            "YouTube/QlXEyPOUMUg": {
+              "pairs": 4,
+              "both_wrong": 4,
+              "same_wrong_class": 2
+            },
+            "YouTube/Rf1XKstMa4E": {
+              "pairs": 891,
+              "both_wrong": 885,
+              "same_wrong_class": 371
+            },
+            "YouTube/SA-if-DMT7E": {
+              "pairs": 785,
+              "both_wrong": 646,
+              "same_wrong_class": 566
+            },
+            "YouTube/TcB0IFBwk-k": {
+              "pairs": 686,
+              "both_wrong": 521,
+              "same_wrong_class": 261
+            },
+            "YouTube/VTEcwSCLwLg": {
+              "pairs": 48,
+              "both_wrong": 1,
+              "same_wrong_class": 0
+            },
+            "YouTube/Vl9zODoJMIU": {
+              "pairs": 427,
+              "both_wrong": 385,
+              "same_wrong_class": 263
+            },
+            "YouTube/WKqbLbU68wU": {
+              "pairs": 2972,
+              "both_wrong": 1929,
+              "same_wrong_class": 597
+            },
+            "YouTube/WwmfBwEMP6s": {
+              "pairs": 708,
+              "both_wrong": 338,
+              "same_wrong_class": 122
+            },
+            "YouTube/XOe9GeojzCs": {
+              "pairs": 7790,
+              "both_wrong": 5489,
+              "same_wrong_class": 2632
+            },
+            "YouTube/XV_FF3WC7kA": {
+              "pairs": 1113,
+              "both_wrong": 818,
+              "same_wrong_class": 523
+            },
+            "YouTube/Y0DKz3JCq3I": {
+              "pairs": 380,
+              "both_wrong": 380,
+              "same_wrong_class": 77
+            },
+            "YouTube/YAAUPjq-L-Q": {
+              "pairs": 2622,
+              "both_wrong": 2121,
+              "same_wrong_class": 1477
+            },
+            "YouTube/YD5C5LX7j4k": {
+              "pairs": 398,
+              "both_wrong": 70,
+              "same_wrong_class": 41
+            },
+            "YouTube/Z11ALGaUmH0": {
+              "pairs": 155,
+              "both_wrong": 138,
+              "same_wrong_class": 10
+            },
+            "YouTube/ZbeMNLwASVo": {
+              "pairs": 1807,
+              "both_wrong": 450,
+              "same_wrong_class": 252
+            },
+            "YouTube/Zyo70ZiXmYY": {
+              "pairs": 565,
+              "both_wrong": 564,
+              "same_wrong_class": 286
+            },
+            "YouTube/aboKQqtoowA": {
+              "pairs": 220,
+              "both_wrong": 213,
+              "same_wrong_class": 201
+            },
+            "YouTube/bFTTE4TV-ek": {
+              "pairs": 906,
+              "both_wrong": 213,
+              "same_wrong_class": 97
+            },
+            "YouTube/bLoWh2xbm6o": {
+              "pairs": 956,
+              "both_wrong": 786,
+              "same_wrong_class": 365
+            },
+            "YouTube/blDEcY6HZUU": {
+              "pairs": 8,
+              "both_wrong": 2,
+              "same_wrong_class": 0
+            },
+            "YouTube/c0FxOPxBaac": {
+              "pairs": 28,
+              "both_wrong": 12,
+              "same_wrong_class": 2
+            },
+            "YouTube/cB83GjrvoeE": {
+              "pairs": 637,
+              "both_wrong": 637,
+              "same_wrong_class": 512
+            },
+            "YouTube/cLiJgvrDlWw": {
+              "pairs": 352,
+              "both_wrong": 301,
+              "same_wrong_class": 53
+            },
+            "YouTube/d-orB-PokJw": {
+              "pairs": 733,
+              "both_wrong": 119,
+              "same_wrong_class": 18
+            },
+            "YouTube/dYAA0JLFrTc": {
+              "pairs": 67,
+              "both_wrong": 38,
+              "same_wrong_class": 3
+            },
+            "YouTube/dZZqaYgPrY0": {
+              "pairs": 361,
+              "both_wrong": 334,
+              "same_wrong_class": 175
+            },
+            "YouTube/dtlXB2kt09k": {
+              "pairs": 210,
+              "both_wrong": 171,
+              "same_wrong_class": 35
+            },
+            "YouTube/eXklJqhFx8E": {
+              "pairs": 866,
+              "both_wrong": 122,
+              "same_wrong_class": 120
+            },
+            "YouTube/ef5NncrTQu4": {
+              "pairs": 121,
+              "both_wrong": 121,
+              "same_wrong_class": 17
+            },
+            "YouTube/f9U2VDJTIhg": {
+              "pairs": 155,
+              "both_wrong": 65,
+              "same_wrong_class": 9
+            },
+            "YouTube/h3-lxgAoXwI": {
+              "pairs": 137,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YouTube/hL-ePuEk4_M": {
+              "pairs": 1321,
+              "both_wrong": 919,
+              "same_wrong_class": 383
+            },
+            "YouTube/hg9scj8FyjY": {
+              "pairs": 870,
+              "both_wrong": 647,
+              "same_wrong_class": 395
+            },
+            "YouTube/iSjk42F0rvM": {
+              "pairs": 1,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "YouTube/jO3vuJ4xhns": {
+              "pairs": 160,
+              "both_wrong": 3,
+              "same_wrong_class": 3
+            },
+            "YouTube/kM1naurrexk": {
+              "pairs": 1091,
+              "both_wrong": 468,
+              "same_wrong_class": 72
+            },
+            "YouTube/lC0HkItqIqA": {
+              "pairs": 137,
+              "both_wrong": 137,
+              "same_wrong_class": 9
+            },
+            "YouTube/mThUfYcea3I": {
+              "pairs": 787,
+              "both_wrong": 12,
+              "same_wrong_class": 10
+            },
+            "YouTube/mkcDANJjDcM": {
+              "pairs": 449,
+              "both_wrong": 416,
+              "same_wrong_class": 249
+            },
+            "YouTube/mq7Wv-5qJwc": {
+              "pairs": 31,
+              "both_wrong": 6,
+              "same_wrong_class": 1
+            },
+            "YouTube/nKsIbi_R02U": {
+              "pairs": 1272,
+              "both_wrong": 55,
+              "same_wrong_class": 21
+            },
+            "YouTube/na6zkG7dl3A": {
+              "pairs": 117,
+              "both_wrong": 9,
+              "same_wrong_class": 2
+            },
+            "YouTube/od2IpoFxeMI": {
+              "pairs": 301,
+              "both_wrong": 56,
+              "same_wrong_class": 2
+            },
+            "YouTube/owDp3KOHmu8": {
+              "pairs": 444,
+              "both_wrong": 416,
+              "same_wrong_class": 144
+            },
+            "YouTube/pI8tpZLBcFk": {
+              "pairs": 55,
+              "both_wrong": 3,
+              "same_wrong_class": 0
+            },
+            "YouTube/qlPC7oMm93g": {
+              "pairs": 880,
+              "both_wrong": 143,
+              "same_wrong_class": 46
+            },
+            "YouTube/rin4oz7Fego": {
+              "pairs": 34,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YouTube/s54UiLm7JLU": {
+              "pairs": 94,
+              "both_wrong": 78,
+              "same_wrong_class": 12
+            },
+            "YouTube/sRd38UFfp6c": {
+              "pairs": 686,
+              "both_wrong": 350,
+              "same_wrong_class": 105
+            },
+            "YouTube/tvzrxfgWSc4": {
+              "pairs": 597,
+              "both_wrong": 276,
+              "same_wrong_class": 82
+            },
+            "YouTube/u40AQIBH_Gs": {
+              "pairs": 336,
+              "both_wrong": 139,
+              "same_wrong_class": 71
+            },
+            "YouTube/uqUfP7ugJp0": {
+              "pairs": 13,
+              "both_wrong": 4,
+              "same_wrong_class": 0
+            },
+            "YouTube/uwW0ejeosmk": {
+              "pairs": 1624,
+              "both_wrong": 1246,
+              "same_wrong_class": 392
+            },
+            "YouTube/v0N4o4Px8jQ": {
+              "pairs": 565,
+              "both_wrong": 88,
+              "same_wrong_class": 27
+            },
+            "YouTube/vbQwxMme5yk": {
+              "pairs": 700,
+              "both_wrong": 196,
+              "same_wrong_class": 144
+            },
+            "YouTube/vrWYdPeIUqw": {
+              "pairs": 485,
+              "both_wrong": 71,
+              "same_wrong_class": 22
+            },
+            "YouTube/yZGRVcIKU6Q": {
+              "pairs": 1886,
+              "both_wrong": 1603,
+              "same_wrong_class": 1031
+            },
+            "YouTube/yb7EbSnIAqM": {
+              "pairs": 89,
+              "both_wrong": 49,
+              "same_wrong_class": 17
+            },
+            "YouTube/z-fsLpGHq6o": {
+              "pairs": 7237,
+              "both_wrong": 6237,
+              "same_wrong_class": 3173
+            },
+            "YouTube/zVN1SBxfR40": {
+              "pairs": 637,
+              "both_wrong": 511,
+              "same_wrong_class": 509
+            },
+            "YouTube/zhdNNmwnYMI": {
+              "pairs": 1008,
+              "both_wrong": 1008,
+              "same_wrong_class": 218
+            }
+          }
+        },
+        "diagnostic_oracle_observed_single_matched_identity_tracks/all": {
+          "pairs": 158891,
+          "agreement_pairs": 91674,
+          "both_correct": 49577,
+          "exactly_one_wrong": 24657,
+          "both_wrong": 84657,
+          "same_wrong_class": 42097,
+          "different_wrong_class": 42560,
+          "both_wrong_rate": 0.5327992145558905,
+          "same_wrong_class_rate": 0.2649426336293434,
+          "mean_endpoint_soft_risk_product": 0.5760366030098374,
+          "source_groups": 331,
+          "videos": 389,
+          "gt_trajectories": 1268,
+          "predicted_tracks": 1690,
+          "target_categories": 122,
+          "target_category_ids": [
+            3,
+            32,
+            35,
+            41,
+            58,
+            62,
+            80,
+            94,
+            99,
+            110,
+            118,
+            127,
+            129,
+            133,
+            153,
+            156,
+            160,
+            162,
+            173,
+            188,
+            192,
+            207,
+            217,
+            220,
+            225,
+            230,
+            232,
+            259,
+            286,
+            299,
+            332,
+            338,
+            339,
+            344,
+            350,
+            359,
+            369,
+            375,
+            378,
+            393,
+            409,
+            415,
+            421,
+            422,
+            429,
+            447,
+            451,
+            494,
+            496,
+            520,
+            521,
+            523,
+            540,
+            550,
+            569,
+            584,
+            589,
+            615,
+            622,
+            626,
+            630,
+            631,
+            641,
+            649,
+            652,
+            658,
+            685,
+            692,
+            701,
+            703,
+            713,
+            715,
+            720,
+            724,
+            742,
+            745,
+            757,
+            767,
+            780,
+            781,
+            793,
+            798,
+            800,
+            802,
+            804,
+            818,
+            835,
+            854,
+            861,
+            863,
+            868,
+            881,
+            922,
+            924,
+            935,
+            943,
+            947,
+            948,
+            953,
+            962,
+            964,
+            967,
+            979,
+            982,
+            995,
+            999,
+            1000,
+            1021,
+            1046,
+            1072,
+            1088,
+            1101,
+            1102,
+            1108,
+            1110,
+            1111,
+            1122,
+            1123,
+            1133,
+            1138,
+            1153,
+            1190
+          ],
+          "concentration": {
+            "max_source_pairs_share": 0.044735069953616,
+            "max_gt_trajectory_pairs_share": 0.004909025684274125,
+            "max_source_both_wrong_share": 0.07126404195754633,
+            "max_gt_trajectory_both_wrong_share": 0.009213650377405295,
+            "max_source_same_wrong_class_share": 0.0735206784331425,
+            "max_gt_trajectory_same_wrong_class_share": 0.018528636244863055
+          },
+          "per_source_event_counts": {
+            "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2": {
+              "pairs": 3,
+              "both_wrong": 3,
+              "same_wrong_class": 3
+            },
+            "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929": {
+              "pairs": 27,
+              "both_wrong": 3,
+              "same_wrong_class": 3
+            },
+            "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e": {
+              "pairs": 258,
+              "both_wrong": 10,
+              "same_wrong_class": 10
+            },
+            "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818": {
+              "pairs": 200,
+              "both_wrong": 1,
+              "same_wrong_class": 0
+            },
+            "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec": {
+              "pairs": 640,
+              "both_wrong": 163,
+              "same_wrong_class": 135
+            },
+            "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2": {
+              "pairs": 232,
+              "both_wrong": 21,
+              "same_wrong_class": 13
+            },
+            "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": {
+              "pairs": 87,
+              "both_wrong": 55,
+              "same_wrong_class": 45
+            },
+            "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
+              "pairs": 42,
+              "both_wrong": 6,
+              "same_wrong_class": 6
+            },
+            "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
+              "pairs": 677,
+              "both_wrong": 231,
+              "same_wrong_class": 231
+            },
+            "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
+              "pairs": 694,
+              "both_wrong": 190,
+              "same_wrong_class": 75
+            },
+            "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
+              "pairs": 284,
+              "both_wrong": 10,
+              "same_wrong_class": 3
+            },
+            "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8": {
+              "pairs": 119,
+              "both_wrong": 7,
+              "same_wrong_class": 6
+            },
+            "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0": {
+              "pairs": 88,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2": {
+              "pairs": 452,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7": {
+              "pairs": 82,
+              "both_wrong": 26,
+              "same_wrong_class": 16
+            },
+            "BDD/b1d0a191-03dcecc2": {
+              "pairs": 291,
+              "both_wrong": 207,
+              "same_wrong_class": 177
+            },
+            "BDD/b20b69d2-e31380a7": {
+              "pairs": 136,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b20b9c19-91e01a50": {
+              "pairs": 312,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b22a4d9f-73cc8810": {
+              "pairs": 683,
+              "both_wrong": 6,
+              "same_wrong_class": 6
+            },
+            "BDD/b232c7c9-d251d9ee": {
+              "pairs": 325,
+              "both_wrong": 97,
+              "same_wrong_class": 97
+            },
+            "BDD/b249e7f2-92d2efad": {
+              "pairs": 30,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b262f576-b0373824": {
+              "pairs": 7,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b27098c3-c443b6e3": {
+              "pairs": 79,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b27127df-eac9b95e": {
+              "pairs": 386,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b27369f3-9b9598f4": {
+              "pairs": 45,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b27688b6-cd521517": {
+              "pairs": 317,
+              "both_wrong": 3,
+              "same_wrong_class": 3
+            },
+            "BDD/b28ec521-898e11bd": {
+              "pairs": 633,
+              "both_wrong": 1,
+              "same_wrong_class": 0
+            },
+            "BDD/b2bee3e1-80c787bd": {
+              "pairs": 410,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b2d502aa-64d3e228": {
+              "pairs": 74,
+              "both_wrong": 3,
+              "same_wrong_class": 1
+            },
+            "BDD/b2d502aa-f0b28e3e": {
+              "pairs": 84,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b2dbb793-9f0b2bec": {
+              "pairs": 305,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b2de938e-84eab379": {
+              "pairs": 123,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b2e2b2be-4142962b": {
+              "pairs": 547,
+              "both_wrong": 11,
+              "same_wrong_class": 4
+            },
+            "BDD/b2fc7cb5-1635d64b": {
+              "pairs": 352,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b2ff6aba-fa4ac7d7": {
+              "pairs": 47,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3079ec6-df7b2d92": {
+              "pairs": 447,
+              "both_wrong": 3,
+              "same_wrong_class": 1
+            },
+            "BDD/b30b460d-73d12a29": {
+              "pairs": 120,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3159650-1ba75f9b": {
+              "pairs": 7,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3378e5e-b7593301": {
+              "pairs": 43,
+              "both_wrong": 21,
+              "same_wrong_class": 21
+            },
+            "BDD/b33ea6cb-3464fb13": {
+              "pairs": 238,
+              "both_wrong": 15,
+              "same_wrong_class": 10
+            },
+            "BDD/b34b1b88-5bfe3b85": {
+              "pairs": 236,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "BDD/b368ee71-cf27b7fa": {
+              "pairs": 726,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "BDD/b36e0178-2037ca44": {
+              "pairs": 19,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "BDD/b39fe3cd-227ff7a8": {
+              "pairs": 485,
+              "both_wrong": 36,
+              "same_wrong_class": 28
+            },
+            "BDD/b3a9281a-e8ba5d66": {
+              "pairs": 520,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3b9ee6e-6d2617d1": {
+              "pairs": 385,
+              "both_wrong": 70,
+              "same_wrong_class": 18
+            },
+            "BDD/b3be4113-1fb56ec4": {
+              "pairs": 37,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3ce9f98-2dc52573": {
+              "pairs": 392,
+              "both_wrong": 21,
+              "same_wrong_class": 14
+            },
+            "BDD/b3da33d5-a64e7657": {
+              "pairs": 176,
+              "both_wrong": 2,
+              "same_wrong_class": 2
+            },
+            "BDD/b40b0ea3-b242efc9": {
+              "pairs": 675,
+              "both_wrong": 70,
+              "same_wrong_class": 43
+            },
+            "BDD/b422ec08-d42660b6": {
+              "pairs": 112,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b4235ab3-b305d3e9": {
+              "pairs": 17,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b4278d1f-dbd0295c": {
+              "pairs": 66,
+              "both_wrong": 6,
+              "same_wrong_class": 3
+            },
+            "BDD/b4301c7b-da5261f0": {
+              "pairs": 725,
+              "both_wrong": 13,
+              "same_wrong_class": 6
+            },
+            "BDD/b4466011-05cbc315": {
+              "pairs": 431,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b4536117-bc85ba28": {
+              "pairs": 24,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "Charades/0LHWF": {
+              "pairs": 436,
+              "both_wrong": 314,
+              "same_wrong_class": 82
+            },
+            "Charades/35LUV": {
+              "pairs": 748,
+              "both_wrong": 631,
+              "same_wrong_class": 311
+            },
+            "Charades/3N1I2": {
+              "pairs": 164,
+              "both_wrong": 164,
+              "same_wrong_class": 107
+            },
+            "Charades/48BUM": {
+              "pairs": 28,
+              "both_wrong": 28,
+              "same_wrong_class": 6
+            },
+            "Charades/4H61U": {
+              "pairs": 164,
+              "both_wrong": 77,
+              "same_wrong_class": 19
+            },
+            "Charades/4K0BP": {
+              "pairs": 176,
+              "both_wrong": 46,
+              "same_wrong_class": 17
+            },
+            "Charades/50E06": {
+              "pairs": 409,
+              "both_wrong": 409,
+              "same_wrong_class": 139
+            },
+            "Charades/5HPZ1": {
+              "pairs": 692,
+              "both_wrong": 143,
+              "same_wrong_class": 35
+            },
+            "Charades/6EU06": {
+              "pairs": 210,
+              "both_wrong": 198,
+              "same_wrong_class": 80
+            },
+            "Charades/6FV5P": {
+              "pairs": 1047,
+              "both_wrong": 797,
+              "same_wrong_class": 241
+            },
+            "Charades/7177T": {
+              "pairs": 568,
+              "both_wrong": 568,
+              "same_wrong_class": 255
+            },
+            "Charades/735W9": {
+              "pairs": 123,
+              "both_wrong": 69,
+              "same_wrong_class": 24
+            },
+            "Charades/7P0JX": {
+              "pairs": 281,
+              "both_wrong": 252,
+              "same_wrong_class": 66
+            },
+            "Charades/8Q0EY": {
+              "pairs": 335,
+              "both_wrong": 292,
+              "same_wrong_class": 57
+            },
+            "Charades/9M48H": {
+              "pairs": 757,
+              "both_wrong": 351,
+              "same_wrong_class": 135
+            },
+            "Charades/9UU4W": {
+              "pairs": 367,
+              "both_wrong": 177,
+              "same_wrong_class": 78
+            },
+            "Charades/AIOTI": {
+              "pairs": 93,
+              "both_wrong": 80,
+              "same_wrong_class": 13
+            },
+            "Charades/AVSN8": {
+              "pairs": 23,
+              "both_wrong": 8,
+              "same_wrong_class": 3
+            },
+            "Charades/BI6Y4": {
+              "pairs": 337,
+              "both_wrong": 261,
+              "same_wrong_class": 150
+            },
+            "Charades/CF9QP": {
+              "pairs": 723,
+              "both_wrong": 508,
+              "same_wrong_class": 218
+            },
+            "Charades/E8468": {
+              "pairs": 58,
+              "both_wrong": 46,
+              "same_wrong_class": 16
+            },
+            "Charades/E9FY2": {
+              "pairs": 55,
+              "both_wrong": 55,
+              "same_wrong_class": 9
+            },
+            "Charades/EIKUN": {
+              "pairs": 472,
+              "both_wrong": 467,
+              "same_wrong_class": 300
+            },
+            "Charades/FHAV0": {
+              "pairs": 161,
+              "both_wrong": 161,
+              "same_wrong_class": 25
+            },
+            "Charades/FZAEP": {
+              "pairs": 596,
+              "both_wrong": 568,
+              "same_wrong_class": 162
+            },
+            "Charades/G2DIN": {
+              "pairs": 554,
+              "both_wrong": 554,
+              "same_wrong_class": 166
+            },
+            "Charades/G8NEV": {
+              "pairs": 467,
+              "both_wrong": 183,
+              "same_wrong_class": 155
+            },
+            "Charades/GL2JW": {
+              "pairs": 286,
+              "both_wrong": 286,
+              "same_wrong_class": 106
+            },
+            "Charades/GQ341": {
+              "pairs": 1510,
+              "both_wrong": 1043,
+              "same_wrong_class": 458
+            },
+            "Charades/HOYUT": {
+              "pairs": 187,
+              "both_wrong": 170,
+              "same_wrong_class": 38
+            },
+            "Charades/HSKVH": {
+              "pairs": 14,
+              "both_wrong": 14,
+              "same_wrong_class": 5
+            },
+            "Charades/HYD3N": {
+              "pairs": 473,
+              "both_wrong": 248,
+              "same_wrong_class": 53
+            },
+            "Charades/IIL9C": {
+              "pairs": 336,
+              "both_wrong": 336,
+              "same_wrong_class": 72
+            },
+            "Charades/IULK6": {
+              "pairs": 565,
+              "both_wrong": 504,
+              "same_wrong_class": 332
+            },
+            "Charades/JMPKP": {
+              "pairs": 154,
+              "both_wrong": 137,
+              "same_wrong_class": 49
+            },
+            "Charades/KA3ER": {
+              "pairs": 169,
+              "both_wrong": 169,
+              "same_wrong_class": 92
+            },
+            "Charades/KPHP5": {
+              "pairs": 120,
+              "both_wrong": 91,
+              "same_wrong_class": 20
+            },
+            "Charades/LHTSI": {
+              "pairs": 300,
+              "both_wrong": 276,
+              "same_wrong_class": 81
+            },
+            "Charades/M6ERH": {
+              "pairs": 613,
+              "both_wrong": 586,
+              "same_wrong_class": 184
+            },
+            "Charades/MZ9X7": {
+              "pairs": 158,
+              "both_wrong": 158,
+              "same_wrong_class": 30
+            },
+            "Charades/NPEA3": {
+              "pairs": 83,
+              "both_wrong": 83,
+              "same_wrong_class": 64
+            },
+            "Charades/O87OF": {
+              "pairs": 8,
+              "both_wrong": 2,
+              "same_wrong_class": 0
+            },
+            "Charades/O8DER": {
+              "pairs": 53,
+              "both_wrong": 42,
+              "same_wrong_class": 8
+            },
+            "Charades/PC7H2": {
+              "pairs": 451,
+              "both_wrong": 59,
+              "same_wrong_class": 27
+            },
+            "Charades/PEWH4": {
+              "pairs": 517,
+              "both_wrong": 304,
+              "same_wrong_class": 129
+            },
+            "Charades/PJUM0": {
+              "pairs": 364,
+              "both_wrong": 292,
+              "same_wrong_class": 103
+            },
+            "Charades/QBUAT": {
+              "pairs": 549,
+              "both_wrong": 549,
+              "same_wrong_class": 236
+            },
+            "Charades/QCPXJ": {
+              "pairs": 325,
+              "both_wrong": 300,
+              "same_wrong_class": 211
+            },
+            "Charades/QHU9R": {
+              "pairs": 297,
+              "both_wrong": 136,
+              "same_wrong_class": 67
+            },
+            "Charades/QZZPS": {
+              "pairs": 115,
+              "both_wrong": 92,
+              "same_wrong_class": 71
+            },
+            "Charades/S7OTQ": {
+              "pairs": 210,
+              "both_wrong": 96,
+              "same_wrong_class": 88
+            },
+            "Charades/SROEU": {
+              "pairs": 643,
+              "both_wrong": 427,
+              "same_wrong_class": 103
+            },
+            "Charades/SVA4D": {
+              "pairs": 319,
+              "both_wrong": 51,
+              "same_wrong_class": 14
+            },
+            "Charades/TQO6O": {
+              "pairs": 20,
+              "both_wrong": 16,
+              "same_wrong_class": 0
+            },
+            "Charades/U08M9": {
+              "pairs": 719,
+              "both_wrong": 498,
+              "same_wrong_class": 166
+            },
+            "Charades/U4J2Q": {
+              "pairs": 859,
+              "both_wrong": 564,
+              "same_wrong_class": 188
+            },
+            "Charades/UDGP2": {
+              "pairs": 117,
+              "both_wrong": 81,
+              "same_wrong_class": 73
+            },
+            "Charades/V7YEJ": {
+              "pairs": 17,
+              "both_wrong": 17,
+              "same_wrong_class": 6
+            },
+            "Charades/W97NR": {
+              "pairs": 519,
+              "both_wrong": 270,
+              "same_wrong_class": 121
+            },
+            "Charades/X9LP4": {
+              "pairs": 140,
+              "both_wrong": 132,
+              "same_wrong_class": 56
+            },
+            "Charades/Y3M3W": {
+              "pairs": 1232,
+              "both_wrong": 903,
+              "same_wrong_class": 576
+            },
+            "Charades/YE6UZ": {
+              "pairs": 98,
+              "both_wrong": 53,
+              "same_wrong_class": 17
+            },
+            "Charades/YK49T": {
+              "pairs": 210,
+              "both_wrong": 210,
+              "same_wrong_class": 37
+            },
+            "Charades/YXQWH": {
+              "pairs": 157,
+              "both_wrong": 149,
+              "same_wrong_class": 61
+            },
+            "Charades/Z6HEA": {
+              "pairs": 334,
+              "both_wrong": 212,
+              "same_wrong_class": 28
+            },
+            "LaSOT/airplane-4": {
+              "pairs": 595,
+              "both_wrong": 55,
+              "same_wrong_class": 21
+            },
+            "LaSOT/basketball-11": {
+              "pairs": 295,
+              "both_wrong": 109,
+              "same_wrong_class": 56
+            },
+            "LaSOT/basketball-4": {
+              "pairs": 536,
+              "both_wrong": 211,
+              "same_wrong_class": 15
+            },
+            "LaSOT/basketball-6": {
+              "pairs": 506,
+              "both_wrong": 390,
+              "same_wrong_class": 92
+            },
+            "LaSOT/bicycle-4": {
+              "pairs": 1041,
+              "both_wrong": 55,
+              "same_wrong_class": 30
+            },
+            "LaSOT/bicycle-7": {
+              "pairs": 813,
+              "both_wrong": 4,
+              "same_wrong_class": 1
+            },
+            "LaSOT/bicycle-9": {
+              "pairs": 619,
+              "both_wrong": 24,
+              "same_wrong_class": 18
+            },
+            "LaSOT/bird-11": {
+              "pairs": 631,
+              "both_wrong": 2,
+              "same_wrong_class": 2
+            },
+            "LaSOT/bird-12": {
+              "pairs": 1062,
+              "both_wrong": 559,
+              "same_wrong_class": 250
+            },
+            "LaSOT/bird-17": {
+              "pairs": 807,
+              "both_wrong": 777,
+              "same_wrong_class": 459
+            },
+            "LaSOT/boat-4": {
+              "pairs": 796,
+              "both_wrong": 4,
+              "same_wrong_class": 0
+            },
+            "LaSOT/boat-9": {
+              "pairs": 6,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/book-11": {
+              "pairs": 793,
+              "both_wrong": 793,
+              "same_wrong_class": 748
+            },
+            "LaSOT/book-15": {
+              "pairs": 1252,
+              "both_wrong": 1060,
+              "same_wrong_class": 713
+            },
+            "LaSOT/book-2": {
+              "pairs": 785,
+              "both_wrong": 783,
+              "same_wrong_class": 503
+            },
+            "LaSOT/book-3": {
+              "pairs": 943,
+              "both_wrong": 18,
+              "same_wrong_class": 16
+            },
+            "LaSOT/bottle-12": {
+              "pairs": 116,
+              "both_wrong": 31,
+              "same_wrong_class": 10
+            },
+            "LaSOT/bus-19": {
+              "pairs": 6,
+              "both_wrong": 1,
+              "same_wrong_class": 0
+            },
+            "LaSOT/bus-8": {
+              "pairs": 1092,
+              "both_wrong": 43,
+              "same_wrong_class": 11
+            },
+            "LaSOT/car-17": {
+              "pairs": 922,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "LaSOT/cat-1": {
+              "pairs": 1600,
+              "both_wrong": 1398,
+              "same_wrong_class": 493
+            },
+            "LaSOT/cat-13": {
+              "pairs": 1375,
+              "both_wrong": 686,
+              "same_wrong_class": 321
+            },
+            "LaSOT/cat-4": {
+              "pairs": 517,
+              "both_wrong": 384,
+              "same_wrong_class": 184
+            },
+            "LaSOT/cat-7": {
+              "pairs": 780,
+              "both_wrong": 435,
+              "same_wrong_class": 354
+            },
+            "LaSOT/cattle-14": {
+              "pairs": 232,
+              "both_wrong": 2,
+              "same_wrong_class": 1
+            },
+            "LaSOT/cattle-9": {
+              "pairs": 1521,
+              "both_wrong": 78,
+              "same_wrong_class": 28
+            },
+            "LaSOT/cup-9": {
+              "pairs": 469,
+              "both_wrong": 25,
+              "same_wrong_class": 3
+            },
+            "LaSOT/deer-15": {
+              "pairs": 733,
+              "both_wrong": 91,
+              "same_wrong_class": 91
+            },
+            "LaSOT/deer-4": {
+              "pairs": 1560,
+              "both_wrong": 894,
+              "same_wrong_class": 693
+            },
+            "LaSOT/dog-13": {
+              "pairs": 499,
+              "both_wrong": 71,
+              "same_wrong_class": 14
+            },
+            "LaSOT/electricfan-13": {
+              "pairs": 485,
+              "both_wrong": 105,
+              "same_wrong_class": 56
+            },
+            "LaSOT/elephant-14": {
+              "pairs": 553,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/elephant-6": {
+              "pairs": 298,
+              "both_wrong": 2,
+              "same_wrong_class": 2
+            },
+            "LaSOT/flag-5": {
+              "pairs": 746,
+              "both_wrong": 565,
+              "same_wrong_class": 337
+            },
+            "LaSOT/giraffe-19": {
+              "pairs": 838,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/goldfish-17": {
+              "pairs": 527,
+              "both_wrong": 527,
+              "same_wrong_class": 47
+            },
+            "LaSOT/guitar-9": {
+              "pairs": 463,
+              "both_wrong": 164,
+              "same_wrong_class": 82
+            },
+            "LaSOT/hat-18": {
+              "pairs": 992,
+              "both_wrong": 992,
+              "same_wrong_class": 316
+            },
+            "LaSOT/helmet-1": {
+              "pairs": 379,
+              "both_wrong": 379,
+              "same_wrong_class": 241
+            },
+            "LaSOT/helmet-3": {
+              "pairs": 80,
+              "both_wrong": 10,
+              "same_wrong_class": 3
+            },
+            "LaSOT/lion-12": {
+              "pairs": 975,
+              "both_wrong": 3,
+              "same_wrong_class": 3
+            },
+            "LaSOT/lion-15": {
+              "pairs": 1220,
+              "both_wrong": 1220,
+              "same_wrong_class": 602
+            },
+            "LaSOT/lion-9": {
+              "pairs": 886,
+              "both_wrong": 596,
+              "same_wrong_class": 336
+            },
+            "LaSOT/lizard-16": {
+              "pairs": 666,
+              "both_wrong": 666,
+              "same_wrong_class": 252
+            },
+            "LaSOT/microphone-12": {
+              "pairs": 1558,
+              "both_wrong": 1317,
+              "same_wrong_class": 901
+            },
+            "LaSOT/microphone-13": {
+              "pairs": 562,
+              "both_wrong": 555,
+              "same_wrong_class": 234
+            },
+            "LaSOT/microphone-3": {
+              "pairs": 274,
+              "both_wrong": 274,
+              "same_wrong_class": 137
+            },
+            "LaSOT/monkey-16": {
+              "pairs": 780,
+              "both_wrong": 28,
+              "same_wrong_class": 4
+            },
+            "LaSOT/motorcycle-19": {
+              "pairs": 28,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/person-2": {
+              "pairs": 345,
+              "both_wrong": 190,
+              "same_wrong_class": 82
+            },
+            "LaSOT/person-3": {
+              "pairs": 100,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/person-7": {
+              "pairs": 215,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/pool-17": {
+              "pairs": 111,
+              "both_wrong": 36,
+              "same_wrong_class": 22
+            },
+            "LaSOT/rabbit-17": {
+              "pairs": 1168,
+              "both_wrong": 688,
+              "same_wrong_class": 176
+            },
+            "LaSOT/racing-14": {
+              "pairs": 315,
+              "both_wrong": 9,
+              "same_wrong_class": 4
+            },
+            "LaSOT/racing-20": {
+              "pairs": 529,
+              "both_wrong": 378,
+              "same_wrong_class": 37
+            },
+            "LaSOT/shark-20": {
+              "pairs": 211,
+              "both_wrong": 154,
+              "same_wrong_class": 35
+            },
+            "LaSOT/sheep-15": {
+              "pairs": 1231,
+              "both_wrong": 703,
+              "same_wrong_class": 630
+            },
+            "LaSOT/skateboard-1": {
+              "pairs": 792,
+              "both_wrong": 6,
+              "same_wrong_class": 6
+            },
+            "LaSOT/skateboard-18": {
+              "pairs": 934,
+              "both_wrong": 3,
+              "same_wrong_class": 1
+            },
+            "LaSOT/skateboard-8": {
+              "pairs": 1198,
+              "both_wrong": 169,
+              "same_wrong_class": 81
+            },
+            "LaSOT/swing-18": {
+              "pairs": 284,
+              "both_wrong": 190,
+              "same_wrong_class": 32
+            },
+            "LaSOT/tank-12": {
+              "pairs": 13,
+              "both_wrong": 8,
+              "same_wrong_class": 1
+            },
+            "LaSOT/tank-2": {
+              "pairs": 226,
+              "both_wrong": 40,
+              "same_wrong_class": 8
+            },
+            "LaSOT/tiger-13": {
+              "pairs": 1507,
+              "both_wrong": 802,
+              "same_wrong_class": 430
+            },
+            "LaSOT/truck-10": {
+              "pairs": 2641,
+              "both_wrong": 1350,
+              "same_wrong_class": 1034
+            },
+            "LaSOT/truck-5": {
+              "pairs": 1521,
+              "both_wrong": 1054,
+              "same_wrong_class": 1003
+            },
+            "LaSOT/umbrella-18": {
+              "pairs": 666,
+              "both_wrong": 29,
+              "same_wrong_class": 4
+            },
+            "LaSOT/volleyball-18": {
+              "pairs": 276,
+              "both_wrong": 21,
+              "same_wrong_class": 6
+            },
+            "LaSOT/volleyball-19": {
+              "pairs": 174,
+              "both_wrong": 69,
+              "same_wrong_class": 23
+            },
+            "LaSOT/volleyball-20": {
+              "pairs": 459,
+              "both_wrong": 254,
+              "same_wrong_class": 45
+            },
+            "LaSOT/zebra-14": {
+              "pairs": 445,
+              "both_wrong": 445,
+              "same_wrong_class": 117
+            },
+            "LaSOT/zebra-18": {
+              "pairs": 578,
+              "both_wrong": 16,
+              "same_wrong_class": 1
+            },
+            "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11": {
+              "pairs": 938,
+              "both_wrong": 713,
+              "same_wrong_class": 323
+            },
+            "YFCC100M/v_23584c2660351f12cffe1399c47ce870": {
+              "pairs": 82,
+              "both_wrong": 43,
+              "same_wrong_class": 29
+            },
+            "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5": {
+              "pairs": 26,
+              "both_wrong": 16,
+              "same_wrong_class": 15
+            },
+            "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b": {
+              "pairs": 819,
+              "both_wrong": 510,
+              "same_wrong_class": 182
+            },
+            "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461": {
+              "pairs": 153,
+              "both_wrong": 150,
+              "same_wrong_class": 81
+            },
+            "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d": {
+              "pairs": 64,
+              "both_wrong": 45,
+              "same_wrong_class": 26
+            },
+            "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3": {
+              "pairs": 717,
+              "both_wrong": 494,
+              "same_wrong_class": 200
+            },
+            "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3": {
+              "pairs": 622,
+              "both_wrong": 136,
+              "same_wrong_class": 68
+            },
+            "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215": {
+              "pairs": 2,
+              "both_wrong": 2,
+              "same_wrong_class": 0
+            },
+            "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0": {
+              "pairs": 1139,
+              "both_wrong": 588,
+              "same_wrong_class": 106
+            },
+            "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629": {
+              "pairs": 537,
+              "both_wrong": 534,
+              "same_wrong_class": 325
+            },
+            "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3": {
+              "pairs": 5,
+              "both_wrong": 5,
+              "same_wrong_class": 3
+            },
+            "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b": {
+              "pairs": 137,
+              "both_wrong": 137,
+              "same_wrong_class": 82
+            },
+            "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf": {
+              "pairs": 231,
+              "both_wrong": 171,
+              "same_wrong_class": 97
+            },
+            "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d": {
+              "pairs": 642,
+              "both_wrong": 134,
+              "same_wrong_class": 15
+            },
+            "YFCC100M/v_6f90a13c795ef37404d95983341df": {
+              "pairs": 1050,
+              "both_wrong": 3,
+              "same_wrong_class": 1
+            },
+            "YFCC100M/v_72252bc9435f88bbfb28aac25484f30": {
+              "pairs": 25,
+              "both_wrong": 17,
+              "same_wrong_class": 1
+            },
+            "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a": {
+              "pairs": 3,
+              "both_wrong": 3,
+              "same_wrong_class": 0
+            },
+            "YFCC100M/v_82e9bb97b1a1fdde489511e69126644": {
+              "pairs": 249,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30": {
+              "pairs": 436,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YFCC100M/v_9018a07931e02026b3bd6e82489d4624": {
+              "pairs": 465,
+              "both_wrong": 94,
+              "same_wrong_class": 31
+            },
+            "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c": {
+              "pairs": 13,
+              "both_wrong": 10,
+              "same_wrong_class": 9
+            },
+            "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3": {
+              "pairs": 309,
+              "both_wrong": 232,
+              "same_wrong_class": 34
+            },
+            "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5": {
+              "pairs": 42,
+              "both_wrong": 36,
+              "same_wrong_class": 36
+            },
+            "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c": {
+              "pairs": 35,
+              "both_wrong": 28,
+              "same_wrong_class": 6
+            },
+            "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20": {
+              "pairs": 92,
+              "both_wrong": 13,
+              "same_wrong_class": 1
+            },
+            "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a": {
+              "pairs": 77,
+              "both_wrong": 15,
+              "same_wrong_class": 2
+            },
+            "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46": {
+              "pairs": 188,
+              "both_wrong": 8,
+              "same_wrong_class": 1
+            },
+            "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33": {
+              "pairs": 144,
+              "both_wrong": 23,
+              "same_wrong_class": 2
+            },
+            "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4": {
+              "pairs": 15,
+              "both_wrong": 15,
+              "same_wrong_class": 0
+            },
+            "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452": {
+              "pairs": 515,
+              "both_wrong": 325,
+              "same_wrong_class": 101
+            },
+            "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e": {
+              "pairs": 405,
+              "both_wrong": 123,
+              "same_wrong_class": 63
+            },
+            "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150": {
+              "pairs": 22,
+              "both_wrong": 22,
+              "same_wrong_class": 21
+            },
+            "YFCC100M/v_df4744928b9b4199b5c73344efdce65": {
+              "pairs": 348,
+              "both_wrong": 209,
+              "same_wrong_class": 182
+            },
+            "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40": {
+              "pairs": 43,
+              "both_wrong": 11,
+              "same_wrong_class": 6
+            },
+            "YFCC100M/v_ea33c680e1f18d71543b8f80815beec": {
+              "pairs": 206,
+              "both_wrong": 62,
+              "same_wrong_class": 18
+            },
+            "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5": {
+              "pairs": 371,
+              "both_wrong": 58,
+              "same_wrong_class": 15
+            },
+            "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e": {
+              "pairs": 30,
+              "both_wrong": 12,
+              "same_wrong_class": 5
+            },
+            "YFCC100M/v_f729d4f362aea24236153ffc589adac": {
+              "pairs": 583,
+              "both_wrong": 575,
+              "same_wrong_class": 544
+            },
+            "YFCC100M/v_f93e2640ce4cf8b1195c94764803414": {
+              "pairs": 2,
+              "both_wrong": 2,
+              "same_wrong_class": 0
+            },
+            "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c": {
+              "pairs": 84,
+              "both_wrong": 28,
+              "same_wrong_class": 20
+            },
+            "YouTube/-6quA485tw8": {
+              "pairs": 1275,
+              "both_wrong": 1205,
+              "same_wrong_class": 981
+            },
+            "YouTube/-dQIXiV6gk0": {
+              "pairs": 122,
+              "both_wrong": 122,
+              "same_wrong_class": 42
+            },
+            "YouTube/1cU81_rjt7s": {
+              "pairs": 12,
+              "both_wrong": 7,
+              "same_wrong_class": 2
+            },
+            "YouTube/1mPd_3N5gNQ": {
+              "pairs": 42,
+              "both_wrong": 42,
+              "same_wrong_class": 2
+            },
+            "YouTube/25eIK85JWi4": {
+              "pairs": 39,
+              "both_wrong": 38,
+              "same_wrong_class": 18
+            },
+            "YouTube/313tbNN4J3o": {
+              "pairs": 822,
+              "both_wrong": 636,
+              "same_wrong_class": 234
+            },
+            "YouTube/4ltcNlAq1wI": {
+              "pairs": 21,
+              "both_wrong": 10,
+              "same_wrong_class": 2
+            },
+            "YouTube/5BDj0ow5hnA": {
+              "pairs": 2319,
+              "both_wrong": 2035,
+              "same_wrong_class": 1079
+            },
+            "YouTube/7SFkVnnp_eE": {
+              "pairs": 79,
+              "both_wrong": 56,
+              "same_wrong_class": 25
+            },
+            "YouTube/7XQoDEQGqaw": {
+              "pairs": 69,
+              "both_wrong": 66,
+              "same_wrong_class": 19
+            },
+            "YouTube/7YULkl7Xm04": {
+              "pairs": 40,
+              "both_wrong": 4,
+              "same_wrong_class": 1
+            },
+            "YouTube/7_xkhnbnI7M": {
+              "pairs": 288,
+              "both_wrong": 279,
+              "same_wrong_class": 133
+            },
+            "YouTube/87ksUt7mO3o": {
+              "pairs": 299,
+              "both_wrong": 230,
+              "same_wrong_class": 166
+            },
+            "YouTube/9sZI9IdgXZY": {
+              "pairs": 6,
+              "both_wrong": 3,
+              "same_wrong_class": 1
+            },
+            "YouTube/AjH8TFfZIGY": {
+              "pairs": 10,
+              "both_wrong": 6,
+              "same_wrong_class": 1
+            },
+            "YouTube/C48cXamb2B0": {
+              "pairs": 67,
+              "both_wrong": 67,
+              "same_wrong_class": 16
+            },
+            "YouTube/Ce7YdX2cido": {
+              "pairs": 21,
+              "both_wrong": 21,
+              "same_wrong_class": 15
+            },
+            "YouTube/D8Vhxbho1fY": {
+              "pairs": 986,
+              "both_wrong": 658,
+              "same_wrong_class": 180
+            },
+            "YouTube/EOSzItLkZQQ": {
+              "pairs": 30,
+              "both_wrong": 24,
+              "same_wrong_class": 2
+            },
+            "YouTube/Fu0b-YbpPak": {
+              "pairs": 327,
+              "both_wrong": 83,
+              "same_wrong_class": 13
+            },
+            "YouTube/H8g9ZBuQmrE": {
+              "pairs": 80,
+              "both_wrong": 10,
+              "same_wrong_class": 10
+            },
+            "YouTube/HtaNMyVa260": {
+              "pairs": 629,
+              "both_wrong": 287,
+              "same_wrong_class": 224
+            },
+            "YouTube/I7Q-x9MorO0": {
+              "pairs": 615,
+              "both_wrong": 427,
+              "same_wrong_class": 424
+            },
+            "YouTube/IS3OtsJFP7Y": {
+              "pairs": 417,
+              "both_wrong": 216,
+              "same_wrong_class": 51
+            },
+            "YouTube/IUbQjSiZL-Y": {
+              "pairs": 461,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YouTube/JMzNLlatrys": {
+              "pairs": 674,
+              "both_wrong": 139,
+              "same_wrong_class": 53
+            },
+            "YouTube/JX1uj-YRiYo": {
+              "pairs": 299,
+              "both_wrong": 61,
+              "same_wrong_class": 10
+            },
+            "YouTube/JvtJRvTKzvw": {
+              "pairs": 142,
+              "both_wrong": 6,
+              "same_wrong_class": 1
+            },
+            "YouTube/KUdBvuRaAbk": {
+              "pairs": 190,
+              "both_wrong": 1,
+              "same_wrong_class": 0
+            },
+            "YouTube/LFPYYYZstjg": {
+              "pairs": 169,
+              "both_wrong": 169,
+              "same_wrong_class": 110
+            },
+            "YouTube/Or8dXBSS_LM": {
+              "pairs": 3,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YouTube/PQkE02amSDY": {
+              "pairs": 14,
+              "both_wrong": 14,
+              "same_wrong_class": 2
+            },
+            "YouTube/Q5SutMM8H4I": {
+              "pairs": 21,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YouTube/QEFmA2nj12w": {
+              "pairs": 1,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YouTube/Q_701AtuEbE": {
+              "pairs": 137,
+              "both_wrong": 37,
+              "same_wrong_class": 7
+            },
+            "YouTube/QlXEyPOUMUg": {
+              "pairs": 4,
+              "both_wrong": 4,
+              "same_wrong_class": 2
+            },
+            "YouTube/Rf1XKstMa4E": {
+              "pairs": 870,
+              "both_wrong": 870,
+              "same_wrong_class": 368
+            },
+            "YouTube/SA-if-DMT7E": {
+              "pairs": 610,
+              "both_wrong": 510,
+              "same_wrong_class": 485
+            },
+            "YouTube/TcB0IFBwk-k": {
+              "pairs": 440,
+              "both_wrong": 440,
+              "same_wrong_class": 203
+            },
+            "YouTube/VTEcwSCLwLg": {
+              "pairs": 3,
+              "both_wrong": 1,
+              "same_wrong_class": 0
+            },
+            "YouTube/Vl9zODoJMIU": {
+              "pairs": 322,
+              "both_wrong": 311,
+              "same_wrong_class": 258
+            },
+            "YouTube/WKqbLbU68wU": {
+              "pairs": 2961,
+              "both_wrong": 1928,
+              "same_wrong_class": 597
+            },
+            "YouTube/WwmfBwEMP6s": {
+              "pairs": 693,
+              "both_wrong": 332,
+              "same_wrong_class": 122
+            },
+            "YouTube/XOe9GeojzCs": {
+              "pairs": 7108,
+              "both_wrong": 5182,
+              "same_wrong_class": 2567
+            },
+            "YouTube/XV_FF3WC7kA": {
+              "pairs": 942,
+              "both_wrong": 766,
+              "same_wrong_class": 499
+            },
+            "YouTube/Y0DKz3JCq3I": {
+              "pairs": 380,
+              "both_wrong": 380,
+              "same_wrong_class": 77
+            },
+            "YouTube/YAAUPjq-L-Q": {
+              "pairs": 2622,
+              "both_wrong": 2121,
+              "same_wrong_class": 1477
+            },
+            "YouTube/YD5C5LX7j4k": {
+              "pairs": 350,
+              "both_wrong": 25,
+              "same_wrong_class": 13
+            },
+            "YouTube/Z11ALGaUmH0": {
+              "pairs": 2,
+              "both_wrong": 2,
+              "same_wrong_class": 1
+            },
+            "YouTube/ZbeMNLwASVo": {
+              "pairs": 1743,
+              "both_wrong": 450,
+              "same_wrong_class": 252
+            },
+            "YouTube/Zyo70ZiXmYY": {
+              "pairs": 289,
+              "both_wrong": 288,
+              "same_wrong_class": 145
+            },
+            "YouTube/aboKQqtoowA": {
+              "pairs": 29,
+              "both_wrong": 22,
+              "same_wrong_class": 10
+            },
+            "YouTube/bFTTE4TV-ek": {
+              "pairs": 735,
+              "both_wrong": 213,
+              "same_wrong_class": 97
+            },
+            "YouTube/bLoWh2xbm6o": {
+              "pairs": 956,
+              "both_wrong": 786,
+              "same_wrong_class": 365
+            },
+            "YouTube/blDEcY6HZUU": {
+              "pairs": 8,
+              "both_wrong": 2,
+              "same_wrong_class": 0
+            },
+            "YouTube/c0FxOPxBaac": {
+              "pairs": 7,
+              "both_wrong": 2,
+              "same_wrong_class": 1
+            },
+            "YouTube/cB83GjrvoeE": {
+              "pairs": 637,
+              "both_wrong": 637,
+              "same_wrong_class": 512
+            },
+            "YouTube/cLiJgvrDlWw": {
+              "pairs": 352,
+              "both_wrong": 301,
+              "same_wrong_class": 53
+            },
+            "YouTube/d-orB-PokJw": {
+              "pairs": 733,
+              "both_wrong": 119,
+              "same_wrong_class": 18
+            },
+            "YouTube/dYAA0JLFrTc": {
+              "pairs": 28,
+              "both_wrong": 10,
+              "same_wrong_class": 1
+            },
+            "YouTube/dZZqaYgPrY0": {
+              "pairs": 361,
+              "both_wrong": 334,
+              "same_wrong_class": 175
+            },
+            "YouTube/dtlXB2kt09k": {
+              "pairs": 210,
+              "both_wrong": 171,
+              "same_wrong_class": 35
+            },
+            "YouTube/eXklJqhFx8E": {
+              "pairs": 866,
+              "both_wrong": 122,
+              "same_wrong_class": 120
+            },
+            "YouTube/ef5NncrTQu4": {
+              "pairs": 121,
+              "both_wrong": 121,
+              "same_wrong_class": 17
+            },
+            "YouTube/f9U2VDJTIhg": {
+              "pairs": 138,
+              "both_wrong": 64,
+              "same_wrong_class": 8
+            },
+            "YouTube/h3-lxgAoXwI": {
+              "pairs": 137,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YouTube/hL-ePuEk4_M": {
+              "pairs": 1200,
+              "both_wrong": 846,
+              "same_wrong_class": 363
+            },
+            "YouTube/hg9scj8FyjY": {
+              "pairs": 870,
+              "both_wrong": 647,
+              "same_wrong_class": 395
+            },
+            "YouTube/iSjk42F0rvM": {
+              "pairs": 1,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "YouTube/jO3vuJ4xhns": {
+              "pairs": 15,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YouTube/kM1naurrexk": {
+              "pairs": 1034,
+              "both_wrong": 437,
+              "same_wrong_class": 65
+            },
+            "YouTube/lC0HkItqIqA": {
+              "pairs": 137,
+              "both_wrong": 137,
+              "same_wrong_class": 9
+            },
+            "YouTube/mThUfYcea3I": {
+              "pairs": 787,
+              "both_wrong": 12,
+              "same_wrong_class": 10
+            },
+            "YouTube/mkcDANJjDcM": {
+              "pairs": 449,
+              "both_wrong": 416,
+              "same_wrong_class": 249
+            },
+            "YouTube/mq7Wv-5qJwc": {
+              "pairs": 31,
+              "both_wrong": 6,
+              "same_wrong_class": 1
+            },
+            "YouTube/nKsIbi_R02U": {
+              "pairs": 1270,
+              "both_wrong": 54,
+              "same_wrong_class": 21
+            },
+            "YouTube/na6zkG7dl3A": {
+              "pairs": 23,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "YouTube/od2IpoFxeMI": {
+              "pairs": 301,
+              "both_wrong": 56,
+              "same_wrong_class": 2
+            },
+            "YouTube/owDp3KOHmu8": {
+              "pairs": 444,
+              "both_wrong": 416,
+              "same_wrong_class": 144
+            },
+            "YouTube/pI8tpZLBcFk": {
+              "pairs": 55,
+              "both_wrong": 3,
+              "same_wrong_class": 0
+            },
+            "YouTube/qlPC7oMm93g": {
+              "pairs": 804,
+              "both_wrong": 143,
+              "same_wrong_class": 46
+            },
+            "YouTube/rin4oz7Fego": {
+              "pairs": 34,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "YouTube/s54UiLm7JLU": {
+              "pairs": 25,
+              "both_wrong": 11,
+              "same_wrong_class": 2
+            },
+            "YouTube/sRd38UFfp6c": {
+              "pairs": 686,
+              "both_wrong": 350,
+              "same_wrong_class": 105
+            },
+            "YouTube/tvzrxfgWSc4": {
+              "pairs": 597,
+              "both_wrong": 276,
+              "same_wrong_class": 82
+            },
+            "YouTube/u40AQIBH_Gs": {
+              "pairs": 261,
+              "both_wrong": 139,
+              "same_wrong_class": 71
+            },
+            "YouTube/uqUfP7ugJp0": {
+              "pairs": 12,
+              "both_wrong": 3,
+              "same_wrong_class": 0
+            },
+            "YouTube/uwW0ejeosmk": {
+              "pairs": 1047,
+              "both_wrong": 799,
+              "same_wrong_class": 233
+            },
+            "YouTube/v0N4o4Px8jQ": {
+              "pairs": 565,
+              "both_wrong": 88,
+              "same_wrong_class": 27
+            },
+            "YouTube/vbQwxMme5yk": {
+              "pairs": 700,
+              "both_wrong": 196,
+              "same_wrong_class": 144
+            },
+            "YouTube/vrWYdPeIUqw": {
+              "pairs": 417,
+              "both_wrong": 63,
+              "same_wrong_class": 22
+            },
+            "YouTube/yZGRVcIKU6Q": {
+              "pairs": 1807,
+              "both_wrong": 1603,
+              "same_wrong_class": 1031
+            },
+            "YouTube/yb7EbSnIAqM": {
+              "pairs": 88,
+              "both_wrong": 49,
+              "same_wrong_class": 17
+            },
+            "YouTube/z-fsLpGHq6o": {
+              "pairs": 6949,
+              "both_wrong": 6033,
+              "same_wrong_class": 3095
+            },
+            "YouTube/zVN1SBxfR40": {
+              "pairs": 637,
+              "both_wrong": 511,
+              "same_wrong_class": 509
+            },
+            "YouTube/zhdNNmwnYMI": {
+              "pairs": 1008,
+              "both_wrong": 1008,
+              "same_wrong_class": 218
+            }
+          }
+        }
+      }
+    },
+    "tune": {
+      "matching_counts": {
+        "frames": 1492,
+        "emitted_predictions": 68066,
+        "full_official_gt": 4938,
+        "official_gt_unmapped_category": 0,
+        "geometry_matched": 2584,
+        "geometry_unmatched_unknown": 65482,
+        "ambiguous_multi_gt_predictions": 59,
+        "official_gt_not_assigned": 2354,
+        "eligible_fit_category_supervised": 2226,
+        "eligible_manual_anchors": 4557,
+        "eligible_manual_anchors_without_supervision": 2331,
+        "ambiguous_matched_excluded": 59,
+        "nonmanual_intersection_match_excluded": 36,
+        "class_holdout_match_closed": 263
+      },
+      "observations": {
+        "observations": 2226,
+        "correct": 1145,
+        "errors": 1081,
+        "error_rate": 0.48562443845462716,
+        "posterior_argmax_correct": 1145,
+        "emitted_label_argmax_disagreements": 0,
+        "soft_risk": {
+          "mean": 0.6052348565384529,
+          "min": 0.004042471272429626,
+          "max": 0.9999999872037277,
+          "q10": 0.09217785640489323,
+          "median": 0.6882751411436492,
+          "q90": 0.9996658202811588
+        },
+        "source_groups": 42,
+        "videos": 45,
+        "gt_trajectories": 213,
+        "predicted_tracks": 366,
+        "target_categories": 38,
+        "target_category_ids": [
+          1,
+          35,
+          41,
+          79,
+          94,
+          110,
+          118,
+          127,
+          133,
+          173,
+          207,
+          220,
+          230,
+          344,
+          378,
+          422,
+          447,
+          504,
+          521,
+          569,
+          701,
+          703,
+          724,
+          742,
+          781,
+          793,
+          798,
+          800,
+          804,
+          811,
+          868,
+          947,
+          954,
+          970,
+          1000,
+          1108,
+          1123,
+          1130
+        ]
+      },
+      "diagnostic_oracle_identity": {
+        "observed_multi_identity_predicted_tracks": 53,
+        "observed_single_identity_predicted_tracks": 313,
+        "labels_used": "All unambiguous official matched identities, including heldout/nonmanual targets",
+        "training_or_tuning_use_permitted": false
+      },
+      "pair_scopes": {
+        "all_same_identity_subpairs/all": {
+          "pairs": 16389,
+          "agreement_pairs": 10399,
+          "both_correct": 7814,
+          "exactly_one_wrong": 2277,
+          "both_wrong": 6298,
+          "same_wrong_class": 2585,
+          "different_wrong_class": 3713,
+          "both_wrong_rate": 0.3842821404600647,
+          "same_wrong_class_rate": 0.15772774421868327,
+          "mean_endpoint_soft_risk_product": 0.44620154902072456,
+          "source_groups": 42,
+          "videos": 45,
+          "gt_trajectories": 169,
+          "predicted_tracks": 219,
+          "target_categories": 37,
+          "target_category_ids": [
+            1,
+            35,
+            41,
+            79,
+            94,
+            110,
+            118,
+            127,
+            133,
+            173,
+            207,
+            220,
+            230,
+            344,
+            378,
+            422,
+            447,
+            504,
+            521,
+            569,
+            703,
+            724,
+            742,
+            781,
+            793,
+            798,
+            800,
+            804,
+            811,
+            868,
+            947,
+            954,
+            970,
+            1000,
+            1108,
+            1123,
+            1130
+          ],
+          "concentration": {
+            "max_source_pairs_share": 0.09366038196351212,
+            "max_gt_trajectory_pairs_share": 0.0452132527915065,
+            "max_source_both_wrong_share": 0.20546205144490315,
+            "max_gt_trajectory_both_wrong_share": 0.11765639885677993,
+            "max_source_same_wrong_class_share": 0.23172147001934235,
+            "max_gt_trajectory_same_wrong_class_share": 0.15705996131528047
+          },
+          "per_source_event_counts": {
+            "ArgoVerse/2c07fcda-6671-3ac0-ac23-4a232e0e031e": {
+              "pairs": 5,
+              "both_wrong": 4,
+              "same_wrong_class": 4
+            },
+            "ArgoVerse/84c35ea7-1a99-3a0c-a3ea-c5915d68acbc": {
+              "pairs": 316,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "BDD/b1f85377-44885085": {
+              "pairs": 422,
+              "both_wrong": 123,
+              "same_wrong_class": 93
+            },
+            "BDD/b3c939e3-3fb7622a": {
+              "pairs": 1063,
+              "both_wrong": 24,
+              "same_wrong_class": 7
+            },
+            "BDD/b3ce9f98-2b3d06d6": {
+              "pairs": 10,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3e0345b-69069f01": {
+              "pairs": 514,
+              "both_wrong": 3,
+              "same_wrong_class": 1
+            },
+            "BDD/b3e08585-5cf240fb": {
+              "pairs": 18,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "Charades/1410C": {
+              "pairs": 346,
+              "both_wrong": 346,
+              "same_wrong_class": 107
+            },
+            "Charades/38TF8": {
+              "pairs": 173,
+              "both_wrong": 94,
+              "same_wrong_class": 34
+            },
+            "Charades/4U8WV": {
+              "pairs": 56,
+              "both_wrong": 28,
+              "same_wrong_class": 1
+            },
+            "Charades/CYLQ0": {
+              "pairs": 229,
+              "both_wrong": 199,
+              "same_wrong_class": 47
+            },
+            "Charades/JLGLU": {
+              "pairs": 114,
+              "both_wrong": 114,
+              "same_wrong_class": 22
+            },
+            "Charades/JOUM7": {
+              "pairs": 114,
+              "both_wrong": 79,
+              "same_wrong_class": 36
+            },
+            "Charades/SM5WL": {
+              "pairs": 603,
+              "both_wrong": 530,
+              "same_wrong_class": 108
+            },
+            "Charades/WJ1GN": {
+              "pairs": 49,
+              "both_wrong": 42,
+              "same_wrong_class": 36
+            },
+            "LaSOT/bicycle-18": {
+              "pairs": 409,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/boat-7": {
+              "pairs": 759,
+              "both_wrong": 11,
+              "same_wrong_class": 2
+            },
+            "LaSOT/elephant-19": {
+              "pairs": 252,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/guitar-6": {
+              "pairs": 1072,
+              "both_wrong": 614,
+              "same_wrong_class": 458
+            },
+            "LaSOT/horse-11": {
+              "pairs": 767,
+              "both_wrong": 3,
+              "same_wrong_class": 3
+            },
+            "LaSOT/motorcycle-1": {
+              "pairs": 438,
+              "both_wrong": 1,
+              "same_wrong_class": 0
+            },
+            "LaSOT/shark-18": {
+              "pairs": 487,
+              "both_wrong": 422,
+              "same_wrong_class": 58
+            },
+            "LaSOT/surfboard-19": {
+              "pairs": 110,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/turtle-16": {
+              "pairs": 435,
+              "both_wrong": 435,
+              "same_wrong_class": 46
+            },
+            "LaSOT/volleyball-15": {
+              "pairs": 1104,
+              "both_wrong": 139,
+              "same_wrong_class": 82
+            },
+            "YFCC100M/v_10e0d0b52a44a1ab398d4dac2947e6e": {
+              "pairs": 295,
+              "both_wrong": 13,
+              "same_wrong_class": 5
+            },
+            "YFCC100M/v_8d2127ed36a7e7d486ac8bf45dba0d2": {
+              "pairs": 184,
+              "both_wrong": 48,
+              "same_wrong_class": 16
+            },
+            "YFCC100M/v_b0b899f491f5d4c6fb47f89564034d1": {
+              "pairs": 143,
+              "both_wrong": 113,
+              "same_wrong_class": 34
+            },
+            "YFCC100M/v_ca3710d4f4cd8b4316974b641d37ba3": {
+              "pairs": 37,
+              "both_wrong": 10,
+              "same_wrong_class": 2
+            },
+            "YFCC100M/v_f1a914ab56b365013c9101083423370": {
+              "pairs": 93,
+              "both_wrong": 2,
+              "same_wrong_class": 1
+            },
+            "YouTube/0_gLCCZHzPs": {
+              "pairs": 59,
+              "both_wrong": 45,
+              "same_wrong_class": 32
+            },
+            "YouTube/4KBTeNdE66U": {
+              "pairs": 28,
+              "both_wrong": 1,
+              "same_wrong_class": 0
+            },
+            "YouTube/8Zb-jZoObrk": {
+              "pairs": 801,
+              "both_wrong": 657,
+              "same_wrong_class": 298
+            },
+            "YouTube/G5hzcxkcAvM": {
+              "pairs": 1294,
+              "both_wrong": 1294,
+              "same_wrong_class": 599
+            },
+            "YouTube/J4ms6F6jgEk": {
+              "pairs": 233,
+              "both_wrong": 54,
+              "same_wrong_class": 9
+            },
+            "YouTube/_cQZ-vtuFwQ": {
+              "pairs": 39,
+              "both_wrong": 3,
+              "same_wrong_class": 1
+            },
+            "YouTube/dBXvpdoalr8": {
+              "pairs": 1535,
+              "both_wrong": 465,
+              "same_wrong_class": 330
+            },
+            "YouTube/k2-d6fLeMSo": {
+              "pairs": 57,
+              "both_wrong": 40,
+              "same_wrong_class": 10
+            },
+            "YouTube/oXNm2E97N9c": {
+              "pairs": 233,
+              "both_wrong": 12,
+              "same_wrong_class": 6
+            },
+            "YouTube/qGbvHecNfEo": {
+              "pairs": 1209,
+              "both_wrong": 81,
+              "same_wrong_class": 25
+            },
+            "YouTube/tt0t_a1EDCE": {
+              "pairs": 209,
+              "both_wrong": 194,
+              "same_wrong_class": 41
+            },
+            "YouTube/xNxxM-OOMfw": {
+              "pairs": 75,
+              "both_wrong": 53,
+              "same_wrong_class": 29
+            }
+          }
+        },
+        "diagnostic_oracle_observed_single_matched_identity_tracks/all": {
+          "pairs": 14628,
+          "agreement_pairs": 9223,
+          "both_correct": 6826,
+          "exactly_one_wrong": 2025,
+          "both_wrong": 5777,
+          "same_wrong_class": 2397,
+          "different_wrong_class": 3380,
+          "both_wrong_rate": 0.39492753623188404,
+          "same_wrong_class_rate": 0.16386382280557835,
+          "mean_endpoint_soft_risk_product": 0.45410904366064003,
+          "source_groups": 42,
+          "videos": 44,
+          "gt_trajectories": 143,
+          "predicted_tracks": 181,
+          "target_categories": 34,
+          "target_category_ids": [
+            1,
+            35,
+            79,
+            94,
+            110,
+            118,
+            127,
+            133,
+            173,
+            207,
+            220,
+            230,
+            344,
+            378,
+            422,
+            447,
+            521,
+            569,
+            703,
+            724,
+            742,
+            781,
+            793,
+            798,
+            800,
+            804,
+            868,
+            947,
+            954,
+            970,
+            1000,
+            1108,
+            1123,
+            1130
+          ],
+          "concentration": {
+            "max_source_pairs_share": 0.10493573967733115,
+            "max_gt_trajectory_pairs_share": 0.05065627563576702,
+            "max_source_both_wrong_share": 0.22399169118919854,
+            "max_gt_trajectory_both_wrong_share": 0.12826726674744676,
+            "max_source_same_wrong_class_share": 0.24989570296203586,
+            "max_gt_trajectory_same_wrong_class_share": 0.16937838965373384
+          },
+          "per_source_event_counts": {
+            "ArgoVerse/2c07fcda-6671-3ac0-ac23-4a232e0e031e": {
+              "pairs": 5,
+              "both_wrong": 4,
+              "same_wrong_class": 4
+            },
+            "ArgoVerse/84c35ea7-1a99-3a0c-a3ea-c5915d68acbc": {
+              "pairs": 315,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "BDD/b1f85377-44885085": {
+              "pairs": 179,
+              "both_wrong": 110,
+              "same_wrong_class": 82
+            },
+            "BDD/b3c939e3-3fb7622a": {
+              "pairs": 1063,
+              "both_wrong": 24,
+              "same_wrong_class": 7
+            },
+            "BDD/b3ce9f98-2b3d06d6": {
+              "pairs": 10,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3e0345b-69069f01": {
+              "pairs": 508,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "BDD/b3e08585-5cf240fb": {
+              "pairs": 14,
+              "both_wrong": 1,
+              "same_wrong_class": 1
+            },
+            "Charades/1410C": {
+              "pairs": 346,
+              "both_wrong": 346,
+              "same_wrong_class": 107
+            },
+            "Charades/38TF8": {
+              "pairs": 173,
+              "both_wrong": 94,
+              "same_wrong_class": 34
+            },
+            "Charades/4U8WV": {
+              "pairs": 55,
+              "both_wrong": 28,
+              "same_wrong_class": 1
+            },
+            "Charades/CYLQ0": {
+              "pairs": 229,
+              "both_wrong": 199,
+              "same_wrong_class": 47
+            },
+            "Charades/JLGLU": {
+              "pairs": 114,
+              "both_wrong": 114,
+              "same_wrong_class": 22
+            },
+            "Charades/JOUM7": {
+              "pairs": 114,
+              "both_wrong": 79,
+              "same_wrong_class": 36
+            },
+            "Charades/SM5WL": {
+              "pairs": 603,
+              "both_wrong": 530,
+              "same_wrong_class": 108
+            },
+            "Charades/WJ1GN": {
+              "pairs": 39,
+              "both_wrong": 39,
+              "same_wrong_class": 36
+            },
+            "LaSOT/bicycle-18": {
+              "pairs": 409,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/boat-7": {
+              "pairs": 759,
+              "both_wrong": 11,
+              "same_wrong_class": 2
+            },
+            "LaSOT/elephant-19": {
+              "pairs": 97,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/guitar-6": {
+              "pairs": 796,
+              "both_wrong": 478,
+              "same_wrong_class": 400
+            },
+            "LaSOT/horse-11": {
+              "pairs": 767,
+              "both_wrong": 3,
+              "same_wrong_class": 3
+            },
+            "LaSOT/motorcycle-1": {
+              "pairs": 435,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/shark-18": {
+              "pairs": 487,
+              "both_wrong": 422,
+              "same_wrong_class": 58
+            },
+            "LaSOT/surfboard-19": {
+              "pairs": 110,
+              "both_wrong": 0,
+              "same_wrong_class": 0
+            },
+            "LaSOT/turtle-16": {
+              "pairs": 435,
+              "both_wrong": 435,
+              "same_wrong_class": 46
+            },
+            "LaSOT/volleyball-15": {
+              "pairs": 710,
+              "both_wrong": 139,
+              "same_wrong_class": 82
+            },
+            "YFCC100M/v_10e0d0b52a44a1ab398d4dac2947e6e": {
+              "pairs": 250,
+              "both_wrong": 12,
+              "same_wrong_class": 5
+            },
+            "YFCC100M/v_8d2127ed36a7e7d486ac8bf45dba0d2": {
+              "pairs": 184,
+              "both_wrong": 48,
+              "same_wrong_class": 16
+            },
+            "YFCC100M/v_b0b899f491f5d4c6fb47f89564034d1": {
+              "pairs": 26,
+              "both_wrong": 13,
+              "same_wrong_class": 2
+            },
+            "YFCC100M/v_ca3710d4f4cd8b4316974b641d37ba3": {
+              "pairs": 36,
+              "both_wrong": 9,
+              "same_wrong_class": 2
+            },
+            "YFCC100M/v_f1a914ab56b365013c9101083423370": {
+              "pairs": 2,
+              "both_wrong": 2,
+              "same_wrong_class": 1
+            },
+            "YouTube/0_gLCCZHzPs": {
+              "pairs": 28,
+              "both_wrong": 22,
+              "same_wrong_class": 10
+            },
+            "YouTube/4KBTeNdE66U": {
+              "pairs": 28,
+              "both_wrong": 1,
+              "same_wrong_class": 0
+            },
+            "YouTube/8Zb-jZoObrk": {
+              "pairs": 801,
+              "both_wrong": 657,
+              "same_wrong_class": 298
+            },
+            "YouTube/G5hzcxkcAvM": {
+              "pairs": 1294,
+              "both_wrong": 1294,
+              "same_wrong_class": 599
+            },
+            "YouTube/J4ms6F6jgEk": {
+              "pairs": 212,
+              "both_wrong": 54,
+              "same_wrong_class": 9
+            },
+            "YouTube/_cQZ-vtuFwQ": {
+              "pairs": 39,
+              "both_wrong": 3,
+              "same_wrong_class": 1
+            },
+            "YouTube/dBXvpdoalr8": {
+              "pairs": 1535,
+              "both_wrong": 465,
+              "same_wrong_class": 330
+            },
+            "YouTube/k2-d6fLeMSo": {
+              "pairs": 46,
+              "both_wrong": 33,
+              "same_wrong_class": 9
+            },
+            "YouTube/oXNm2E97N9c": {
+              "pairs": 127,
+              "both_wrong": 12,
+              "same_wrong_class": 6
+            },
+            "YouTube/qGbvHecNfEo": {
+              "pairs": 1148,
+              "both_wrong": 20,
+              "same_wrong_class": 7
+            },
+            "YouTube/tt0t_a1EDCE": {
+              "pairs": 53,
+              "both_wrong": 50,
+              "same_wrong_class": 24
+            },
+            "YouTube/xNxxM-OOMfw": {
+              "pairs": 47,
+              "both_wrong": 25,
+              "same_wrong_class": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "test": {
+    "status": "CLOSED_NO_GT_MATCHING_NO_ERROR_OUTCOMES"
+  },
+  "training_started": false,
+  "training_readiness_established": false,
+  "oracle_identity_diagnostics_used_for_training": false,
+  "raw_indices_and_supervision_rows": "Local-only artifacts; do not Git-sync raw matched rows or indices",
+  "interpretations": [
+    "Counts/pairs are descriptive support, not independent sample counts, covariance or efficacy evidence",
+    "Observed single matched identity does not establish whole-track purity",
+    "Sparse manual-anchor timeline and current full1203 vocabulary regime",
+    "Frozen detector may have seen base classes/videos; class holdout is readout pseudo-novel only"
+  ]
+}

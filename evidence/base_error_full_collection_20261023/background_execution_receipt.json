@@ -1,0 +1,35 @@
+{
+  "status": "PASS_FULL_COLLECTION_EXECUTION_AND_CPU_AUDITS_PENDING_ROOT_REVIEW",
+  "completed_utc": "2026-10-23T09:13:49.084460+00:00",
+  "collection_command": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "-u",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/collect_base_error_pilot.py",
+    "--annotation",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_inference.json",
+    "--out",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1"
+  ],
+  "terminal_exit_code": 0,
+  "terminal_exit_observed": true,
+  "observed_by": "detached supervisor subprocess.run of its own child",
+  "collection_log_sha256": "46a934dd55d67bbb00f28b84e181be3d4365d77c576ea14b1b9b3c20154bc18e",
+  "launch_receipt_sha256": "d336906fe228cd79d04d64b053115cab79f471bfbff116e47378b414f70e04d4",
+  "stages": [
+    {
+      "file": "dump_verification.json",
+      "terminal_exit_code": 0,
+      "terminal_exit_observed": true,
+      "sha256": "658ca0aadad2cb37186c6091c6ab176904c2524edcf4051051dfd57bade0daed"
+    },
+    {
+      "file": "independent_collection_audit.json",
+      "terminal_exit_code": 0,
+      "terminal_exit_observed": true,
+      "sha256": "c7c89de6a660b3119ddf44768870f2f202608c25a2a98e2edc92880a76f5b4e6"
+    }
+  ],
+  "new_method_training": false,
+  "research_goal_complete": false,
+  "collection_receipt_sha256": "138b9defef121a1a28385e4876378aff035818c077019ecf5e82a250093246ab"
+}

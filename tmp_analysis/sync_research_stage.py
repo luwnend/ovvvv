@@ -56,6 +56,33 @@ BASE_JSON = ["preparation_manifest.json", "smoke_v2/collection_receipt.json",
 BASE_JSON += ["pilot_collect_v1/background_completion_audit.json", "support_v1/independent_support_audit.json",
               "mean_quality_v1/diagnostic_summary.json", "mean_quality_v1/independent_mean_quality_audit.json",
               "fit_tune_execution_receipt.json"]
+FULL_SCRIPTS = ["build_base_error_full_support.py", "base_error_full_support_adaptation_contract_20261023.json",
+                "base_error_full_support_cpu_execution_20261023.json", "full_support_independent_preflight_20261023.json",
+                "full_support_independent_preflight_20261023.md", "verify_base_error_full_support_output.py",
+                "diagnose_full_mean_quality.py", "full_mean_implementation_spec_20261023.json",
+                "full_mean_synthetic_receipt_20261023_v2.json", "full_mean_independent_synthetic_audit_20261023.json",
+                "full_mean_independent_preflight_20261023.json", "full_mean_pair_gate_protocol_20261023.json",
+                "full_mean_pair_gate_protocol_20261023.md", "full_stage_handoff_20261023.md"]
+FULL_JSON = ["background_execution_receipt.json", "independent_completion_review.json",
+             "full_collect_v1/collection_receipt.json", "full_collect_v1/run_manifest.json",
+             "full_collect_v1/model_ready.json", "full_collect_v1/protected_before.json", "full_collect_v1/protected_after.json",
+             "support_v1/support_receipt.json", "support_v1/support_summary.json", "support_v1/independent_support_audit.json",
+             "mean_quality_v1/diagnostic_summary.json", "mean_quality_v1/independent_mean_quality_audit.json",
+             "fit_tune_execution_receipt.json"]
+FULL_PAUSE_SCRIPTS = FULL_SCRIPTS + ["audit_full_mean_quality.py",
+                "evaluator_audit_handoff_20261023.json",
+                "full_mean_output_auditor_synthetic_receipt_20261023.json",
+                "check_full_mean_pair_gate_synthetic.py", "full_mean_pair_gate_synthetic_20261023.json",
+                "build_full_pair_context_cache.py", "full_pair_context_cache_synthetic_20261023.json"]
+# This checkpoint records incomplete work explicitly; it never substitutes for final audits.
+# The 2.6 MB full support receipt stays local and is hash-bound by the pause receipt.
+FULL_PAUSE_JSON = ["background_execution_receipt.json", "independent_completion_review.json",
+                  "full_collect_v1/collection_receipt.json", "full_collect_v1/run_manifest.json",
+                  "full_collect_v1/model_ready.json", "full_collect_v1/protected_before.json",
+                  "full_collect_v1/protected_after.json", "support_v1/support_summary.json",
+                  "support_v1/independent_support_audit.json",
+                  "independent_support_audit_execution_receipt.json",
+                  "dialogue_pause_receipt.json"]
 
 
 def sha256(data):
@@ -65,7 +92,7 @@ def sha256(data):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--repo", type=Path, default=ROOT.parent / "ovvvv")
-    ap.add_argument("--stage", choices=["dependence_20261023", "base_error_interface_20261023", "base_error_20261023"], required=True)
+    ap.add_argument("--stage", choices=["dependence_20261023", "base_error_interface_20261023", "base_error_20261023", "base_full_20261023", "base_full_pause_20261023"], required=True)
     ap.add_argument("--diagnostic-json", nargs="*", default=[],
                     help="Exact relative JSON paths under dependence_audit_20261023; no glob")
     args = ap.parse_args()
@@ -82,7 +109,7 @@ def main():
     mapping += [(ROOT / "tmp_analysis/covtrackpp_live_sources_20261023" / name,
                  Path("evidence/covtrackpp_code_audit_20261023") / name)
                 for name in ("manifest.json", "audit_verification.json")]
-    if args.stage in ("base_error_interface_20261023", "base_error_20261023"):
+    if args.stage in ("base_error_interface_20261023", "base_error_20261023", "base_full_20261023", "base_full_pause_20261023"):
         mapping.append((ROOT / "report/COVTrack_base观测采集_20261023.md", Path("report/COVTrack_base观测采集_20261023.md")))
         mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name) for name in BASE_SCRIPTS]
         base = ROOT / "results/base_error_collection_20261023_v3"
@@ -93,7 +120,7 @@ def main():
                     for name in ("SOURCE_COPY_MANIFEST.json", "SOURCE_PATCH_MANIFEST.json", "CPU_SCHEMA_SELF_TEST_FINAL.json",
                                  "ovtrack_models_mot_ovtrack.py.patch", "ovtrack_models_roi_heads_ovtrack_roi_head.py.patch")]
         mapping.append((copy / "ovtrack/base_error_dump.py", Path("evidence/base_error_collection_20261023/schema/base_error_dump.py")))
-        if args.stage == "base_error_20261023":
+        if args.stage in ("base_error_20261023", "base_full_20261023", "base_full_pause_20261023"):
             mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name) for name in BASE_FINAL_SCRIPTS]
             full = ROOT / "results/base_error_full_collection_20261023"
             full_names = ["preparation_manifest.json", "independent_metadata_audit.json"]
@@ -106,6 +133,12 @@ def main():
                 full_names.append("pause_handoff.json")
             mapping += [(full / name, Path("evidence/base_error_full_collection_20261023") / name)
                         for name in full_names]
+            if args.stage == "base_full_20261023":
+                mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name) for name in FULL_SCRIPTS]
+                mapping += [(full / name, Path("evidence/base_error_full_collection_20261023") / name) for name in FULL_JSON]
+            if args.stage == "base_full_pause_20261023":
+                mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name) for name in FULL_PAUSE_SCRIPTS]
+                mapping += [(full / name, Path("evidence/base_error_full_collection_20261023") / name) for name in FULL_PAUSE_JSON]
     # Read and validate the entire allowlist before writing any destination.
     payloads = []
     for source, rel in mapping:

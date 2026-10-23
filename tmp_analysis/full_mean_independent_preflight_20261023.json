@@ -1,0 +1,38 @@
+{
+  "status": "PASS_INDEPENDENT_FULL_MEAN_IMPLEMENTATION_PREFLIGHT",
+  "created_utc": "2026-10-23T14:05:42.763220+00:00",
+  "script_sha256": "464b9ad6dd551a6f813de1eded509d0fd0d00f26336cf90ee2cd54fb14e84e17",
+  "helper_sha256": "2458c403d4f7938ef0f649f9be419027aa5ce8168d011af1572675f5bdd4a84b",
+  "protocol_sha256": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718",
+  "implementation_spec_sha256": "08d48e54d56ae48f23dad1844c0d09d7c63f1f498ced429178cb525231b825d7",
+  "independent_synthetic_audit_sha256": "81e0dcd6b9471149d1a13ec3ceeb64c34efa91021306814158ca64853d8dd0f1",
+  "independent_synthetic_actual_exit_code": 0,
+  "checks": {
+    "exact_frozen_mean_specification_equality": true,
+    "source_group_nested_5_outer_3_inner": true,
+    "all_11_declared_candidates_and_tie_rule": true,
+    "hierarchical_weights_recomputed_per_training_subset": true,
+    "train_only_weighted_ridge_standardization": true,
+    "HGB_weight_scale_independently_reproduced": true,
+    "selected_inner_OOF_only_bounded_Platt": true,
+    "full_grid_own_outer_outcome_flip_predictions_bitwise_invariant": true,
+    "nested_audit_inner_models_replay_and_selection_calibration_recompute": true,
+    "primary_B3_and_always_report_raw_B2": true,
+    "all_fit_inner_selection_then_tune_predict_once": true,
+    "conditional_1000_source_group_bootstrap": true,
+    "hash_bound_independent_support_required_before_real_load": true,
+    "hash_bound_self_helper_protocol_preflight_required": true,
+    "test_and_class_holdout_correctness_closed": true,
+    "emitted_label_target_separate_from_posterior_argmax": true
+  },
+  "scope": "CPU hard emitted-label mean-risk diagnostic implementation only. This review does not open real full support outcomes and does not approve pair learners.",
+  "required_before_execute": "Independent full support output audit must PASS and bind the exact support_receipt.json hash; runner fails closed otherwise.",
+  "limitations": [
+    "This preflight verifies implementation and synthetic contracts, not achieved real-data performance.",
+    "Hard-error calibration does not qualify E[wrong-evidence vector | context] or covariance centering.",
+    "No pair dependence, novelty, tracking efficacy or unseen-detector generalization follows.",
+    "Bootstrap is conditional on frozen predictions, with no training-uncertainty claim."
+  ],
+  "real_full_support_opened": false,
+  "GPU_used": false
+}

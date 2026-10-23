@@ -1,0 +1,417 @@
+{
+  "status": "PREDECLARED_FULL_MEAN_AND_PAIR_GATE_NO_FULL_OUTCOMES_USED_FOR_DESIGN",
+  "created_utc": "2026-10-23T13:57:22.271121+00:00",
+  "design_scope": "Fit/tune full1203 sparse exact-manual-anchor protocol; full test and class-holdout correctness remain closed; no full tune outcomes used to choose this design",
+  "experimental_unit": "source group; videos, GT trajectories, predicted tracks, observations and pairs are repeated observations, not independent replicates",
+  "mean_control": {
+    "status": "PREDECLARED_FULL_MEAN_ONLY",
+    "features": [
+      "fused_foreground_entropy_normalized",
+      "fused_foreground_top1",
+      "fused_foreground_margin",
+      "text_foreground_entropy_normalized",
+      "text_foreground_top1",
+      "text_foreground_margin",
+      "image_foreground_entropy_normalized",
+      "image_foreground_top1",
+      "image_foreground_margin",
+      "text_image_JS_normalized",
+      "raw_detector_score",
+      "box_normalized_area",
+      "box_log_aspect",
+      "fused_background_probability"
+    ],
+    "frozen_feature_helper_sha256": "2458c403d4f7938ef0f649f9be419027aa5ce8168d011af1572675f5bdd4a84b",
+    "target": "Eligible emitted-label error; no GT/category/identity predictor",
+    "hierarchy": "Equal source -> equal eligible official GT trajectory -> equal observation; recompute for each training subset",
+    "selection": "5 deterministic source-group outer folds; 3 inner folds per outer train; select concatenated inner OOF hierarchical Brier. Candidates within 1e-5 of minimum use declared grid order.",
+    "fold_seeds": {
+      "outer": "full_mean_outer_v1",
+      "inner": "full_mean_inner_v1"
+    },
+    "ridge": "Weighted mean BCE + .5*lambda*||beta_features||^2; train-only weighted standardization; unpenalized intercept",
+    "HGB": {
+      "max_iter": 100,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 40,
+      "max_bins": 128,
+      "early_stopping": false,
+      "random_state": 20261023,
+      "sample_weight": "n_train * hierarchy_weights; l2 uses that scale"
+    },
+    "calibrator": "Fixed Platt on selected candidate's inner OOF predictions, weighted BCE + .5*1e-4*(intercept^2+(slope-1)^2); intercept [-20,20], slope [0,10]. Refit base on whole training subset. Outer/tune outcomes never calibrate their own predictions.",
+    "outputs": [
+      "B0_mean",
+      "B1_fixed_ridge_1",
+      "B2_nested_raw",
+      "B3_nested_Platt"
+    ],
+    "primary": "B3_nested_Platt; always report raw B2 too, never choose between them on outer/tune",
+    "final": "All-fit 3 inner source-group folds choose candidate and fit OOF calibrator; refit all fit, then predict tune once",
+    "bootstrap": {
+      "replicates": 1000,
+      "seed": 20261023,
+      "unit": "source_group",
+      "interpretation": "Conditional on frozen predictions; no model refit or training-uncertainty claim"
+    },
+    "gate": "Hard mean-risk control only. Does not qualify wrong-evidence vector centering, pair-dependence prediction, final tracking efficacy or novelty.",
+    "tune_selection": false,
+    "test_outcomes": false,
+    "heldout_class_correctness": false,
+    "GPU": false,
+    "candidate_grid": [
+      {
+        "name": "mean",
+        "kind": "mean"
+      },
+      {
+        "name": "ridge_10.0",
+        "kind": "ridge",
+        "ridge": 10.0
+      },
+      {
+        "name": "ridge_1.0",
+        "kind": "ridge",
+        "ridge": 1.0
+      },
+      {
+        "name": "ridge_0.1",
+        "kind": "ridge",
+        "ridge": 0.1
+      },
+      {
+        "name": "ridge_0.01",
+        "kind": "ridge",
+        "ridge": 0.01
+      },
+      {
+        "name": "ridge_0.001",
+        "kind": "ridge",
+        "ridge": 0.001
+      },
+      {
+        "name": "ridge_0.0001",
+        "kind": "ridge",
+        "ridge": 0.0001
+      },
+      {
+        "name": "HGB_leaf7_l210",
+        "kind": "HGB",
+        "leaves": 7,
+        "l2": 10
+      },
+      {
+        "name": "HGB_leaf7_l21",
+        "kind": "HGB",
+        "leaves": 7,
+        "l2": 1
+      },
+      {
+        "name": "HGB_leaf15_l210",
+        "kind": "HGB",
+        "leaves": 15,
+        "l2": 10
+      },
+      {
+        "name": "HGB_leaf15_l21",
+        "kind": "HGB",
+        "leaves": 15,
+        "l2": 1
+      }
+    ],
+    "primary_selection_metric": "source_trajectory_observation_weighted Brier of concatenated inner OOF predictions",
+    "tie_tolerance": 1e-05,
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "Platt": {
+      "objective": "weighted_mean_BCE + 0.5*1e-4*(intercept**2+(slope-1)**2)",
+      "intercept_bounds": [
+        -20,
+        20
+      ],
+      "slope_bounds": [
+        0,
+        10
+      ],
+      "initial": [
+        0,
+        1
+      ],
+      "outcome_data": "selected candidate inner OOF predictions and training-subset labels only; no outer/tune labels",
+      "constant_predictor": "identity-centered penalty resolves nonidentifiable raw base slope; do not claim joint calibration slope identifiable on constant predictions"
+    },
+    "reliability_bins": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1
+    ],
+    "source_group_only_folds": true,
+    "no_tune_model_selection": true,
+    "implementation_spec_sha256": "08d48e54d56ae48f23dad1844c0d09d7c63f1f498ced429178cb525231b825d7"
+  },
+  "pair_design": {
+    "stage_status": "SPECIFICATION_ONLY_NEW_PAIR_RUNNER_REQUIRED",
+    "primary_claim": "P5 is a semantic-posterior misspecification diagnostic only. A deployable candidate must predict the Y-conditional wrong-evidence moment and beat matched quality/agreement and shared-label calibration controls; this is statistical conditional prediction, not automatic causal covariance or novelty.",
+    "hard_mean_gate": "B3 hard-error calibration does not establish E[W|V], class-direction calibration or valid centering",
+    "fit_roles": {
+      "rule": "On all selected fit source groups, block by source_group.split(\"/\")[0]; SHA256(pair_role_v1+NUL+group) sort within block, alternate mean_role then pair_role. Assignment uses sealed metadata only, before support outcomes. Do not reassign a group lacking legal targets.",
+      "nuisance_role": "mean_role: train/fix quality, direct W mean, shared candidate calibrators; three source-group diagnostic folds inside this role only",
+      "pair_role": "pair_role: 5 outer x 3 inner source-group CV for pair heads with fixed disjoint nuisance models; no label from these groups may affect nuisance parameters, hyperparameters, calibration or target centering",
+      "tune": "Nuisance models remain trained on mean_role; pair heads refit on pair_role; evaluate tune once after all decisions frozen",
+      "reason": "Avoid global OOF nuisance targets whose training/selection uses a pair-validation group; no nested residual-table leakage",
+      "reverse_roles": "Prespecified secondary robustness run, not a source of model/hyperparameter selection; report both directions if executed"
+    },
+    "edge_protocol": {
+      "key": [
+        "video_id",
+        "local_track_id"
+      ],
+      "selection_before_supervision": true,
+      "minimum_emitted_track_length": 4,
+      "lag_bins_sample_steps": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          11,
+          null
+        ]
+      ],
+      "per_track_cap_per_bin": 4,
+      "maximum_edges_per_predicted_track": 16,
+      "rank": "SHA256(pair_edges_v1|video_id|local_track_id|min_observation_id|max_observation_id); retain smallest hashes in each lag bin",
+      "supervision_after_edge_seal": "Retain only endpoints independently eligible under fit-category/manual-source/class-blind matching AND same official GT identity; never whole-track oracle purity masks",
+      "weights": "Equal source group -> equal eligible official GT trajectory -> equal retained edge inside trajectory; recompute in every pair-training/evaluation subset",
+      "no_supported_edge": "quality-only fallback, not a zero/error/negative training example",
+      "reference": "All other emitted observations from this predicted track, excluding both endpoints; no GT filtering or pseudo-label correctness test; pool arithmetic means of foreground-normalized fused/text/image probabilities",
+      "time": "Offline sparse timeline only; memo50 and lag bins count sampled steps, not seconds"
+    },
+    "context": {
+      "Q": "For u_i,u_j = frozen 14 quality features: (u_i+u_j)/2, abs(u_i-u_j), u_i*u_j; frozen quality hard-risk mean/absdiff/product; emitted-label agreement; fused posterior dot/cosine/JS; reference entropy/top1/margin; log1p(number of references). No absolute class/source/video/track/GT inputs.",
+      "A": "Q plus cosine(raw track embedding_i,raw track embedding_j), cosine(raw class embedding_i,raw class embedding_j), log1p(sample_step_lag), log1p(original_frame_index_lag). Do not use tracker-fused appearance as raw appearance.",
+      "same_conditioning": "Direct W mean uses the full A context (or endpoint-oriented equivalent) and the same reference fields as the A pair head. Adding new inputs requires a new mean audit.",
+      "orientation": "Endpoint mean uses own u then other u and shared symmetric A summaries; one shared function used for both endpoints",
+      "per_candidate_exclusion_for_direct_mean": "Individual current p_i,c/p_j,c, GT-dependent coordinates, absolute class IDs and class embeddings are excluded from the primary direct-mean input. All 1203 coordinates still enter its loss and target trace."
+    },
+    "direct_W_mean": {
+      "W": "W_i,c = p_i,c * 1[c != y], with p foreground-normalized and y used only in target",
+      "basis": [
+        "q_ref_fused",
+        "q_ref_text",
+        "q_ref_image",
+        "normalize(q_ref_fused**2)",
+        "normalize(sqrt(q_ref_fused))",
+        "uniform_1203"
+      ],
+      "model": "mu_i,c = sigmoid(alpha^T z_i) * sum_m softmax(B z_i)_m * basis_m,c; six basis weights and one mass head, shared over candidates/endpoints, no per-class parameters",
+      "objective": "Hierarchical endpoint-context weighted sum_c (W_i,c-mu_i,c)**2 + 0.5*1e-3*penalized_parameter_L2; no Huber or top-k truncation",
+      "weights": "Equal mean-role source -> equal eligible GT trajectory -> equal unique eligible endpoint -> equal retained contexts involving that endpoint",
+      "optimizer": {
+        "method": "L-BFGS-B with analytic gradient or identical autograd",
+        "maxiter": 300,
+        "gtol": 1e-06,
+        "ridge": 0.001,
+        "starts": "two fixed starts: uniform mixture, and fused-reference dominated mixture; choose lower training objective only"
+      },
+      "efficient_loss": "Cache 6x6 basis Gram, six dot(basis,W), ||W||^2 per endpoint-context; optimize from these sufficient statistics without materializing N*1203 trainable outputs",
+      "diagnostics": "Three source-group OOF folds within mean_role; report residual mass and each L2-normalized basis projection by fixed mass bins, agreement and lag separately; calibration cannot be inferred from hard-error B3",
+      "projection_equivalence_margin": 0.02,
+      "mass_equivalence_margin": 0.02,
+      "support_rule_for_equivalence": "For each predeclared marginal cell with >=10 source groups, source-bootstrap 95% interval must fit entirely in +/-0.02. A smaller or unsupported cell is inconclusive; never merge bins after observing outcomes.",
+      "calibration_interpretation": "These are finite projection checks only. Passing does not prove the full vector conditional mean; failure forbids conditional-covariance language and triggers a specified richer mean study, not tune-driven model changes."
+    },
+    "shared_candidate_calibration": {
+      "single_view_control": "Fit scalar fused temperature and class-shared loglinear text/image/fused calibrator by CE on mean_role only; candidate columns compete over all1203, no positive class-holdout label",
+      "common_label_pi": "pi_y = softmax_y(sum_b beta_b*(log p_i,b,y+log p_j,b,y) + sum_b gamma_b*log q_ref,b,y), b in fused,text,image; coefficients shared over all candidate classes",
+      "optimizer": "Six nonnegative coefficients in [0,10], CE + 0.5*1e-3*||theta-theta0||^2; theta0=[0.5,0,0,1,0,0] in fused/text/image endpoint then reference order; L-BFGS-B maxiter300; fixed prior, no pair-role/tune optimization",
+      "epsilon": 1e-08,
+      "disclosure": "This is supervised readout calibration with all columns as negative competitors. Class holdout means no positive target from that class; not detector-unseen and not an unseen softmax column.",
+      "plug_in_mu": "p_i*(1-pi_single) is calibration control only; same-identity coordinate residual products are forced nonnegative"
+    },
+    "common_label_null": {
+      "identity": "Under conditional endpoint p independence given V, shared unknown Y already produces diagonal covariance. If m_i,c=E[p_i,c|V] does not depend on Y and P(Y=c|V)=pi_c, latent-label trace=sum_c m_i,c*m_j,c*pi_c*(1-pi_c).",
+      "general_decomposition": "Cov(W_i,W_j|V)=E_Y Cov(W_i,W_j|V,Y)+Cov_Y(E[W_i|V,Y],E[W_j|V,Y]); the second term can survive perfectly fitted coarsened means.",
+      "operational_G0": "Given current observed p_i,p_j and learned common-label pi, G0=dot(p_i,p_j)-sum_c pi_c*p_i,c*p_j,c",
+      "operational_t0": "With mtilde_i=p_i*(1-pi), t0=G0-dot(mtilde_i,mu_j)-dot(mu_i,mtilde_j)+dot(mu_i,mu_j)",
+      "purpose": "Strong shared-label/semantic-calibration control with richer current-posterior access; not an estimate of appearance-caused dependence. A residual beyond a misspecified pi can still be label-posterior error.",
+      "exact_conditional_degeneracy": "If pi=P(Y|p_i,p_j,V) and t0 is the exact integral over Y, E[t-t0|p_i,p_j,V]=0. Predictability of P5 implies misspecified pi/conditioning or finite-sample error. It is not evidence of view coupling and never by itself authorizes mechanism retraining."
+    },
+    "pair_target": "t=dot(W_i-mu_i,W_j-mu_j), including both cross terms; scalar trace surrogate, not full covariance. Nuisance mu fixed from disjoint mean_role.",
+    "pair_head": {
+      "kind": "Weighted ridge on 128 frozen Gaussian random Fourier features plus intercept",
+      "transform": "Training-subset weighted standardization; zero-scale features mapped to0. RFF phi=sqrt(2/128)*cos(Z@Omega/sqrt(d)+b), Omega iid N(0,1), b iid Uniform(0,2pi), fixed seed20261023; intercept unpenalized.",
+      "trainable_parameter_count": 129,
+      "ridge_grid": [
+        10,
+        1,
+        0.1,
+        0.01,
+        0.001,
+        0.0001
+      ],
+      "selection": "5 outer x3 inner source-group CV on pair_role; inner concatenated hierarchical weighted MSE; within1e-8 use largest ridge. Frozen nuisance models never use pair_role labels.",
+      "target_clip": "No target clipping. Prediction clipped to [-1,1] identically for all scalar trace controls; report unclipped MSE sensitivity too.",
+      "same_capacity": "Q-only and A heads each have exactly129 active trainable coefficients despite different fixed input maps. This controls parameter count and optimization budget, not universal approximation power."
+    },
+    "comparators": [
+      {
+        "name": "P0_zero",
+        "prediction": "0"
+      },
+      {
+        "name": "P0_training_mean",
+        "prediction": "pair-training hierarchical mean t"
+      },
+      {
+        "name": "P1_QA",
+        "prediction": "RFF128(Q) ridge -> t"
+      },
+      {
+        "name": "P2_relation",
+        "prediction": "RFF128(A) ridge -> t"
+      },
+      {
+        "name": "P3_shared_label_null",
+        "prediction": "operational_t0 from fixed mean-role calibrator"
+      },
+      {
+        "name": "P4_null_plus_QA",
+        "prediction": "t0+RFF128(Q) ridge -> (t-t0)"
+      },
+      {
+        "name": "P5_null_plus_relation",
+        "prediction": "t0+RFF128(A) ridge -> (t-t0)"
+      }
+    ],
+    "primary_comparisons": [
+      "P5_null_plus_relation vs P4_null_plus_QA",
+      "P5_null_plus_relation vs P3_shared_label_null"
+    ],
+    "secondary_comparisons": [
+      "P2_relation vs P1_QA",
+      "P2_relation vs P0_zero",
+      "P2_relation vs P3_shared_label_null"
+    ],
+    "falsification": {
+      "label_conditional_teacher_forcing": "Oracle diagnostic only: refit the same six-basis direct-mean family on mean_role with extra GT-free-reference-at-y features q_ref,y and normalized rank(q_ref,y), exclude basis coordinate c=y and renormalize remaining bases; force mu_i,y=0. This conditions nuisance on known shared y without absolute class parameters. Fit/evaluate a separate same-capacity Q/A pair comparison on t_oracle; oracle y never enters deployable models or selects their hyperparameters.",
+      "teacher_forcing_interpretation": "If primary apparent pair signal vanishes on this label-conditioned diagnostic, reject attribution to view coupling beyond common-label uncertainty. If oracle mean projection checks fail, result is inconclusive rather than an automatic rejection or pass.",
+      "split_reference": "On the predeclared emitted-length>=6 subset only, hash-sort all nonendpoint reference observations and split alternately into A/B, each>=2; nuisance endpoint_i uses referenceA and endpoint_j uses referenceB. Refit matching nuisance models on mean_role and repeat fixed Q/A comparison. Shared-reference noise can create apparent excess; failure rejects shared-reference-specific attribution.",
+      "shuffle_training": "For pair_role training only, independently permute t-t0 labels within source_group x agreement strata, seed20261024. Evaluate only strata with>=2 training edges and report their coverage; compare candidate and shuffled fit on the same eligible evaluation scope. Never use heldout/tune labels to construct shuffle or strata.",
+      "ablation": "Repeat P5 with appearance features removed, then time features removed, retaining RFF128/129 coefficients and same search budget. These are prespecified descriptive ablations, never a way to select a final model from tune."
+    },
+    "decision": {
+      "predictive_candidate": "P5 can pass a diagnostic predictability comparison only; it never authorizes novelty/mechanism retraining. The conditional_moment_candidate statistical and operational rules govern whether to advance a small readout candidate.",
+      "falsification_failure": "If P2 gains but P5 does not, common-label/calibration structure explains the observed residual under this control. If P5 gains but C129 matches the conditional-moment candidate on raw G, classify P5 as semantic calibration correction and stop mechanism retraining. If Q/A matches relation or disjoint-reference/shuffled controls remove the effect, reject the corresponding relational interpretation.",
+      "mechanism_label": "A complete conditional-moment predictive pass supports only an incremental label-conditional wrong-evidence moment model. No novelty claim from P5 or average positivity; shared source/identity difficulty and conditional mean approximation remain alternative explanations.",
+      "tune": "One frozen evaluation of all declared comparators, no refit or threshold/lambda/model changes. A tune failure rejects advancement of this frozen candidate; a tune success is developmental confirmation, not a new untouched test.",
+      "deferred": "Generic attention/learned log-pool and authentic correlated-fusion comparison remain required before downstream efficacy/novelty claims. Statistical scalar gates are not those completed comparisons.",
+      "no_downstream_before_gate": true
+    },
+    "evaluation": {
+      "primary": "source -> official GT trajectory -> retained edge weighted MSE",
+      "secondary": [
+        "micro MSE",
+        "weighted MAE",
+        "signed target mean and prediction mean",
+        "target/prediction calibration slope/intercept",
+        "negative target/prediction fractions",
+        "agreement and lag marginal strata",
+        "source and trajectory event concentration"
+      ],
+      "bootstrap": {
+        "unit": "source_group",
+        "replicates": 1000,
+        "seed": 20261023,
+        "paired": true,
+        "interpretation": "Conditional on frozen nuisance and pair predictions; no refitting and no training-uncertainty or independent-pair claim"
+      },
+      "final_null_comparison": "Do not select best comparator on tune; report all declared differences"
+    },
+    "same_capacity_label_CE_control": {
+      "name": "C129_shared_label_CE",
+      "training_role": "pair_role, the identical 5 outer x3 inner source-group folds and edge weights used for pair regression; nuisance baseline pi remains fixed from mean_role",
+      "parameters": 129,
+      "candidate_token_fields": "six scaled log scores: symmetric sum of endpoint fused/text/image log probabilities (3), reference fused/text/image log probabilities (3); use eps1e-8 and divide logs by log(1203). Plus three foreground normalized reference ranks.",
+      "context20": "14 endpoint-averaged quality features, emitted-label agreement, fused endpoint JS, two raw appearance cosines, log1p(sample lag), log1p(original-frame lag); training-only weighted standardization",
+      "score": "126 coefficients for six candidate log-score fields times [1,context20], plus three coefficients for reference ranks; same 129 coefficients for every candidate, no per-class bias or absolute class embedding. Add fixed mean-role baseline log(pi0) as offset.",
+      "fit": "Full1203 CE +0.5*lambda*||theta||^2; convex loglinear correction, L-BFGS-B maxiter100, gtol1e-6; no intercept common to all classes (would cancel). Coefficients initialized0. Candidate probability/GT category only used in CE supervision.",
+      "lambda_grid": [
+        10,
+        1,
+        0.1,
+        0.01,
+        0.001,
+        0.0001
+      ],
+      "selection": "Inner OOF weighted MSE of implied G_C=dot(p_i,p_j)-sum_c pi_C,c*p_i,c*p_j,c vs observed G; within1e-8 largest lambda. Same six-candidate tuning budget as pair RFF. Also report weighted CE and hard-risk calibration.",
+      "comparison": "Evaluate G_C against the operational Y-conditional candidate on the SAME raw G target, source groups and frozen edges. No comparison of MSEs for different targets.",
+      "implementation": "Stream candidate logits in bounded batches and exploit six-field x21-context factorization; never materialize edges x1203 x129.",
+      "meaning": "Strong supervised semantic calibration competitor. Any remaining gain can still reflect finite calibration capacity, not prove intrinsic view dependence."
+    },
+    "conditional_moment_candidate": {
+      "status": "PRIMARY_SCIENTIFIC_ROUTE_AFTER_MEAN_SANITY; SPEC_ONLY_NO_REAL_PAIR_FIT",
+      "target_mean": "mu_i^y=E[W_i|A,Y=y]; query the shared six-basis mean with q_ref_fused,y and its normalized reference rank as two additional scalar features; set coordinate y to0, normalize each remaining basis with denominator max(1-Q_m,y,1e-8). Identical shared function for endpoints. Actual y used only in supervised training/diagnostic query.",
+      "training_target": "t_Y=(W_i-mu_i^Y) dot (W_j-mu_j^Y), nuisances trained exclusively on mean_role. This removes the between-Y covariance term when label-conditional means are correct; mean projection checks remain mandatory.",
+      "class_shared_pair_head": "129-parameter RFF128+intercept ridge predicting d(A,y)=E[t_Y|A,Y=y]. Per-candidate inputs are A plus q_ref_fused,y and normalized reference rank_y. No individual current p_i,y or p_j,y; no absolute category or true label supplied at deployment.",
+      "matched_QA_head": "Identical RFF128/129 coefficients/ridge grid/folds, use Q plus the same candidate q_ref_y/rank_y. Exact all-candidate query function, trained at known eligible Y only.",
+      "inference": "For each of all1203 candidate y, compute shared mu_i^y, mu_j^y, d(A,y), then D_cond=sum_y pi0_y*d(A,y) and G_cond=sum_y pi0_y*(dot(mu_i^y,mu_j^y)+d(A,y)). pi0 is the frozen mean-role reference/current-posterior shared-label calibrator. No GT y is read at inference.",
+      "baselines": [
+        "G_indY=sum_y pi0_y*dot(mu_i^y,mu_j^y), conditional-independence given Y reference",
+        "G_QA with the matched Q-query head instead of A-query head",
+        "G_C from C129_shared_label_CE, same raw G target"
+      ],
+      "cost": "No1203x1203 tensor: each y-conditional basis Gram=(Gram_mn-Q_m,y*Q_n,y)/((1-Q_m,y)*(1-Q_n,y)); shared mean only6 mixture weights+mass per y. Exact integration costs O(K*(36+128)) per edge, K=1203; stream <=256 edges per batch. All candidate mass retained; top-k without an explicit exact tail is forbidden.",
+      "statistical_primary": "On pair-role outer OOF, A-query head vs Q-query head MSE for observed t_Y; source/GT-trajectory weighted and paired source bootstrap. Also report zero prediction and negative moment support. A positive average alone never passes.",
+      "operational_primary": "On same outer OOF groups, compare G_cond vs BOTH G_QA and G_C on observed raw G; require >=5% lower weighted MSE and source-bootstrap95% upper CI of each difference<0. Mean difference must remain<0 when deleting any single source group. The five-percent threshold is a predeclared practical effect choice, not power or independence evidence.",
+      "advance_rule": "Only this joint conditional-target plus operational-control pass can justify a small frozen candidate readout experiment. P5 predictability alone cannot. If C129 matches/beats G_cond, do not proceed to mechanism retraining or rename the P5 correction as a new method.",
+      "interpretation_limits": "Oracle Y at supervised training is legitimate label conditioning; integration over uncertain pi0 at deployment remains a model assumption. Shared semantic/identity difficulty and mean misspecification remain possible; this is not appearance-caused covariance or a covariance inverse.",
+      "test_scope": "No test or class-holdout correctness opened; fit-role only optimization, tune once after frozen models. Positive supervision is restricted to readout-fit labels."
+    }
+  },
+  "synthetic_before_real_pair": [
+    "Independent endpoints plus shared Bernoulli label produce positive ideal-centered wrong-evidence trace; label-conditional centering removes it",
+    "Operational_G0/t0 equals exact finite sum over Y; use full cross terms",
+    "Perfect pi implies zero expected excess t-t0 conditional on observed p, so a nonzero predictive correction may diagnose pi misspecification",
+    "Disjoint source-role and outer-label mutation cannot change the validation nuisance/selected model/prediction",
+    "Class permutation equivariance, endpoint swap symmetry, no endpoint inside reference, closed heldout/test inputs"
+  ],
+  "runtime_estimate": {
+    "scope": "Estimates before full supervised support is opened; count matched rows/selected edges first and time a fit-only benchmark without changing the frozen model grid",
+    "mean_CPU": "2-20min after feature extraction for <=39903 fit and4557 tune manual-anchor upper bounds, 198 base candidate fits plus fixed-lambda controls; 1 CPU thread, no GPU",
+    "pair_CPU": "For<=50000 legal retained edges: basic fixed-basis nuisance+scalar RFF diagnostics approximately15-60min; full C129 nested CE and exact all1203 Y-conditional integration may add30-180min on1 CPU thread. Benchmark one FIT-only candidate before scheduling all folds; if projected run exceeds3h CPU, record resource stop and optimize caching without changing data/hypotheses or claiming completion. No GPU allocation assumed.",
+    "storage": "Sufficient-statistic basis Gram caches, GT-free per-track posterior sums, bounded candidate-logit batches. Approximate all-raw branch posterior payload is9.8GB float32 for681602x3x1204; do not duplicate it per fold or materialize pairx1203x129."
+  },
+  "immutable_inputs": {
+    "parent_plan_sha256": "f37f1ecc52734953ea5269407ab0aa8013e650e97bed4dde3cdd399a11e13ba5",
+    "old_mean_helper_sha256": "2458c403d4f7938ef0f649f9be419027aa5ce8168d011af1572675f5bdd4a84b",
+    "old_objective": "tmp_analysis/base_error_learning_objective_20261023.md",
+    "full_stage": "results/base_error_full_collection_20261023",
+    "full_support": "Pending independent full support audit; bind exact receipt/hash before execution"
+  },
+  "actions_this_design": {
+    "full_test_outcomes_read": false,
+    "class_holdout_correctness_read": false,
+    "full_tune_outcomes_used_for_design": false,
+    "pair_training_started": false,
+    "GPU_used": false,
+    "existing_scripts_modified": false
+  },
+  "revision_note": "Pair identifiability amendment made before any full mean execution; mean_control is byte-for-byte equivalent as a JSON object to the first frozen protocol."
+}

@@ -1,0 +1,9 @@
+{
+  "ready_utc": "2026-10-23T06:19:38.329877+00:00",
+  "load_seconds": 14.709698433987796,
+  "actual_novel_mask_count": 337,
+  "text_features_shape": [
+    1203,
+    512
+  ]
+}

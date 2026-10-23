@@ -1,0 +1,41 @@
+{
+  "status": "PASS_INDEPENDENT_FULL_SUPPORT_IMPLEMENTATION_PREFLIGHT",
+  "created_utc": "2026-10-23T14:00:30.554398+00:00",
+  "script_sha256": "61f01dd29cc32a85133ceba0f0269c86fb0f5eb43e0ec951b39778640583504d",
+  "inputs": {
+    "tmp_analysis/build_base_error_full_support.py": "61f01dd29cc32a85133ceba0f0269c86fb0f5eb43e0ec951b39778640583504d",
+    "tmp_analysis/build_base_error_support.py": "64e702efa4e0956b19e9f9a0991ecfff8022c527e3e8bfb3a50710bbf4090186",
+    "tmp_analysis/base_error_full_support_cpu_execution_20261023.json": "e3f7f49a39c71b1384305359b962019d31251c33453d634ad075543e9f49f978",
+    "tmp_analysis/base_error_full_support_adaptation_contract_20261023.json": "9e74c18776556a6b6e28bea564a8e8bac5d150a1d493c060aef408ca5d330160"
+  },
+  "independent_self_test_actual_exit_code": 0,
+  "reviewed_scope": {
+    "frames": 15283,
+    "nonempty_videos": 448,
+    "allocated_videos": 450,
+    "source_groups": 383,
+    "emitted_observations": 681602,
+    "manual_targets": 46908
+  },
+  "checks": {
+    "inherited_source_and_class_partitions": true,
+    "full_specific_metadata_and_runtime_audit_bindings": true,
+    "raw_inventory_rehash_required_before_real_support": true,
+    "all_emitted_index_sealed_before_supervision_payload_parsing": true,
+    "all_original_official_GT_class_blind_Hungarian_before_eligibility": true,
+    "unmatched_unknown_and_multi_GT_ambiguity_excluded": true,
+    "explicit_old_TAO_synset_annotation_image_bridge": true,
+    "fit_tune_eligibility_and_test_correctness_closure": true,
+    "emitted_label_error_preserved_separate_from_posterior_argmax": true,
+    "oracle_identity_diagnostic_excluded_from_training_selection_features": true,
+    "frozen_pilot_sources_preserved": true
+  },
+  "scope": "Implementation preflight only; root may execute CPU support builder with this exact script hash. No real support output reviewed yet.",
+  "limitations": [
+    "Copied-core AST parity is supplementary; live output requires independent row, matching, pair and provenance audit.",
+    "Source supervision JSONs contain test labels; full source files are parsed after sealing, but test prediction/GT joins and outcomes remain closed.",
+    "Descriptive support does not establish pair mechanism, vector centering or method efficacy."
+  ],
+  "real_support_outputs_reviewed": false,
+  "GPU_used": false
+}

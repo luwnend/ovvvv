@@ -1,0 +1,33 @@
+{
+  "status": "PASS_EXACT_COMMON_LABEL_AND_REFERENCE_SYNTHETIC_ONLY",
+  "independent_endpoint_shared_label": {
+    "exact_centered_trace": 0.1104,
+    "latent_label_term": 0.1104,
+    "label_conditional_trace": -8.673617379884035e-19,
+    "interpretation": "Positive ideal-centered trace survives perfect marginal means; common Y alone suffices"
+  },
+  "general_total_covariance": {
+    "total_trace": 0.057600000000000005,
+    "within_Y": 8.673617379884035e-19,
+    "between_Y": 0.057600000000000005
+  },
+  "exact_operational_null_cases": 100,
+  "class_permutation_cases": 100,
+  "max_absolute_true_pi_expected_excess": 1.214306433183765e-16,
+  "misspecified_pi": {
+    "apparent_excess": -0.01319999999999999,
+    "interpretation": "A learnable correction can be label-posterior misspecification alone"
+  },
+  "shared_reference_estimation": {
+    "shared_error_trace": 0.04000000000000001,
+    "disjoint_error_trace": 0.0
+  },
+  "full_dataset_opened": false,
+  "test_opened": false,
+  "heldout_correctness_opened": false,
+  "real_model_fitted": false,
+  "GPU_used": false,
+  "limitations": "Exact constructed distributions only; no data sufficiency, efficacy, causal mechanism or novelty evidence",
+  "script_sha256": "9385d0b33f1003f18a1e168eb020b6c03aaefe9b6d2e438d045f38408a0e3cc8",
+  "protocol_sha256": "fc10e338c0160e389008aa34de13dd384cc0466bdd9df08ba7f937104de00718"
+}

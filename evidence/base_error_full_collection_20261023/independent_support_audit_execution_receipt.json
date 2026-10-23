@@ -1,0 +1,20 @@
+{
+  "status": "PASS_INDEPENDENT_FULL_SUPPORT_AUDIT_EXECUTION",
+  "completed_utc": "2026-10-23T14:13:44.850031+00:00",
+  "actual_observed_exit_code": 0,
+  "tool_session_id": 68926,
+  "command": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "tmp_analysis/verify_base_error_full_support_output.py",
+    "--support",
+    "results/base_error_full_collection_20261023/support_v1"
+  ],
+  "log": "results/base_error_full_collection_20261023/execution_logs/support_v1_independent_audit.log",
+  "audit_sha256": "92174aaa954f6e66cd0e7f520f2f883f7b9e0017c84fbf9bf4509e734ba714e8",
+  "support_receipt_sha256": "e206051d0809b8e20b24529254eacece96f997c72b7155e8264197e7c07aae1e",
+  "verifier_sha256": "9e0603e5350488a87c635602bc4353d7cfe41ec20f88ed8cb1d3c003c318c37b",
+  "background_process_remaining": false,
+  "termination_note": "A pause-driven attempt to stop only this auditor found its PID already absent; no signal was sent. Its tool session subsequently returned actual exit0.",
+  "scope": "All15283 frames independently rematched against all original official GT; all30566 raw/receipt hashes; all681602 index rows; all46908 manual target provenance; all23887 supervised rows and193405 exhaustive primary pairs. Posterior semantics inherit sealed collection audit; all supervised soft risks and argmax mappings independently recomputed.",
+  "no_mean_fit_started_by_this_agent": true
+}

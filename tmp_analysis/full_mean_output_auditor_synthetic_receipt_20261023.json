@@ -1,0 +1,17 @@
+{
+  "status": "PASS_FULL_MEAN_OUTPUT_AUDITOR_SYNTHETIC",
+  "started_utc": "2026-10-23T14:07:51.515634+00:00",
+  "completed_utc": "2026-10-23T14:07:52.603698+00:00",
+  "argv": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_full_mean_quality.py",
+    "--self-test"
+  ],
+  "exit_code": 0,
+  "stderr": "",
+  "audit_script_sha256": "4f8480425eedd702c8763da68b60f4b70ab2b0622b9be362034a9ea87f261582",
+  "producer_sha256": "464b9ad6dd551a6f813de1eded509d0fd0d00f26336cf90ee2cd54fb14e84e17",
+  "stdout_sha256": "f03ceedd2a453e499de16c80e021b6cb6256668c1a8e0129bf1251d1d384f93a",
+  "real_support_opened": false,
+  "GPU_used": false
+}
