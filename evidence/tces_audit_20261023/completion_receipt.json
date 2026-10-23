@@ -1,0 +1,47 @@
+{
+  "status": "PASS_FULLVAL_TRACK_LABEL_READOUT_STAGE",
+  "scope": "4 candidate readouts plus 1 released baseline; substantive mechanism development remains incomplete",
+  "finished_at": "2026-10-23T12:37:48.457627+08:00",
+  "all_owned_jobs_exit_zero": true,
+  "source_protection": "All explicit protected-before existence/hash checks, checkpoint, evaluator, annotation and prediction non-category fields passed",
+  "raw_loc_assoc_arrays_identical": true,
+  "classification_counts_reconstruct_metrics": true,
+  "summary_config": {
+    "replicates": 2000,
+    "seed": 20261023
+  },
+  "new_training_started": false,
+  "existing_training_config_and_launcher_unchanged": true,
+  "old_invalid_conclusions_removed_from_formal_reports": true,
+  "historical_snapshots": "Retained with retraction notice and original SHA checks; not current evidence",
+  "artifacts": {
+    "manifest.json": "e99246961113f62515fafdcfa99635bac854a033abf46674b33d0f2cf1beda73",
+    "cache_readback_verification.json": "e5283daf4532fe6d040f105082366b250120c1c521770b2cabfe0f5c1416626a",
+    "readout_artifacts_verification.json": "6bd5a5ce593f2cd56386700e4acfffe692d3052fef38230e04fbb1b891ba39b9",
+    "protected_before.json": "b4920b978473c3f49f78ee8c54bd16b3f6d8000a405fd4a0508d3d770e31b2ea",
+    "protected_after.json": "4cc3e47335703ddc77bc6d4bdce3a33117393b6013890f995dbb29321fc8c82b",
+    "checkpoint_receipt.json": "b9ac214ce1e09f43f6dc225104d3c5d36aaafb6abde4fd0b5d3b1a2c2aaee4a4",
+    "job_exits.json": "11083b913a149174819f13fd0955e0e665caa3eddb60785f1f7a2c38f9cc5fe6",
+    "paired_summary_1c8ffa976ed8.json": "74e2432b963d9c5cab698d581056c81fb0e304ac8ae59d109e3e25c2cd5f96ab",
+    "diagnostic.json": "f0cd932a04c1db7d00ab0e443c12bedf2f2af0c792887b31e96cc56307711949",
+    "argmax_tcc_control_local_teta.json": "da92ebf5f5b0e0bf8e01fac04f3e79b772cc717915b6cc995a1d148b9d39dd46"
+  },
+  "documents": {
+    "report/项目进度.md": "f5972442af4d73b17f8a506c447f4a6b6f17cecadf8a113261c158f1b5409fa2",
+    "report/COVTrack_论文级改进设计.md": "39e324a86364abcfcd8efbb57da9dae54ffba2aca6b1213af1569bc4aeef018b",
+    "report/COVTrack_改进方案.md": "15a06d0891284706682ff308e1b136d5a186b4d9b711fb1b8ae08deaf37ffa0c",
+    "report/COVTrack_完整val轨迹读出_20261023.md": "d5d703ab9220509235aa6aa79d914d5dde69ec81d157b31b021378a0e7045772"
+  },
+  "verification_process_exit": {
+    "session": 34870,
+    "exit_code": 0,
+    "observed_by": "/root/evaluator_audit"
+  },
+  "limitations": [
+    "Released-weight cached fixed detections and IDs, not the separate ongoing training checkpoint",
+    "Exploratory validation; 26/35 novel classes have one GT video",
+    "Ordinary pooling is a control, not a validated novel mechanism",
+    "Corrected-mask sumlog and full detector/NMS counterfactual not evaluated",
+    "No new dependence intervention or training performed"
+  ]
+}

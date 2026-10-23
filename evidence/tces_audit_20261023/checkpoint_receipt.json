@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2/saved_models/ctao_public_res/ctao_public.pth",
+  "resolved": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2/saved_models/ctao_public_res/ctao_public.pth",
+  "sha256": "e4d0b65798844280ea13943e580ce6233ae5d331c4aa1d38eb226c3208dd567c",
+  "size": 368829353,
+  "source": "logs/cov_tces_v3_fullval.log checkpoint load line",
+  "training_output_modified": false
+}

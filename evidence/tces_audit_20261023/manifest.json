@@ -1,0 +1,435 @@
+{
+  "status": "PASS_FULL_TRACKER_POSTERIOR_CACHE_AUDIT",
+  "command": [
+    "tmp_analysis/build_track_posterior_cache.py"
+  ],
+  "elapsed_seconds": 1150.511904001236,
+  "python": "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "inputs": {
+    "dump_dir": "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_tces_v3_fullval",
+    "annotation": "/raid/datasets/ring_data/data/tao/annotations/validation_ours_v1.json",
+    "class_names": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2/ovtrack/models/roi_heads/class_name.py",
+    "official": "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_tces_v3_fullval_eval/tao_track.json"
+  },
+  "input_sha256": {
+    "annotation": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+    "class_names": "6f50d7b3f16eef96e15b6cfbf97a53b195e26dbc34df51e7679645c99e6937d9",
+    "official": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48"
+  },
+  "dump_filename_size_inventory_sha256": "adeb5a0e0f766f22d50c0b2b9f5442beaf23dc4cae0d94b1b11e52c1c0e5212f",
+  "output_sha256": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+  "output_bytes": 4298032475,
+  "aggregation": "All dumped tracker outputs, no GT matching or annotation-based filtering. Per-video observations sorted by frame_id, float64 accumulation; posterior matrices saved float32.",
+  "track_key": "(video_id, local_track_id)",
+  "posterior_columns": "tao_validation_used_cate_ids followed by background (-1 sentinel)",
+  "majority": "Counts use det_labels+1; pandas category_id.mode()[0] is lowest category_id on ties. Argmax counts are stored separately for each posterior branch.",
+  "sumlog": "sum(log(max(p, 9.9999999999999998e-13))) over all observations, including background",
+  "reliability": "entropy computed on renormalized 296-column foreground; weight=max(0,1-H/log(296)); entropy_weighted_sumprob accumulates weight times original 297-column posterior",
+  "fusion": "normalized text**(1/3)*image**(2/3) where actual validation_novel_index is true, text**(2/3)*image**(1/3) otherwise; source branch row normalization cancels during fused row normalization",
+  "corrected_mask_diagnostic": "p_corrected_mask uses the same fixed geometric fusion formula with frequency=='r' foreground columns and false background; only public category vocabulary metadata is used, with no per-sample GT. Boxes and IDs stay fixed. This is an implementation diagnostic, not a novelty claim.",
+  "fusion_mask_true_count": 86,
+  "frequency_rare_count": 35,
+  "fusion_mask_frequency_rare_disagreement_columns": 93,
+  "caution": "Fusion's historical validation_novel_index is a separate mask from GT category frequency. Use category_frequency or frequency_rare_mask for rare/base metrics.",
+  "audit": {
+    "dump_files": 36371,
+    "annotation_images": 36375,
+    "annotation_videos": 988,
+    "official_observations": 1529908,
+    "processed_files": 36371,
+    "observations": 1529908,
+    "zero_observation_dump_files": 0,
+    "argmax_det_label_mismatches": 5,
+    "fused_formula_max_abs_error": 3.4708499230262646e-07,
+    "fused_formula_values": 454382676,
+    "box_max_abs_error": 6.103515625e-05,
+    "score_max_abs_error": 0.0,
+    "first_frame_label_disagrees_with_tcc": 69109,
+    "majority_tied_tracks": 56637,
+    "tcc_label_mismatches": 0,
+    "compared_official_observations": 1529908,
+    "fused_formula_mean_abs_error": 2.5685840192247873e-10,
+    "tracks": 324639,
+    "missing_images_without_official_predictions": [
+      {
+        "id": 42240,
+        "video_id": 1072,
+        "frame_id": 19,
+        "file_name": "val/YFCC100M/v_d3ab4d41f766c84cc92c8b7f469cf942/frame0631.jpg"
+      },
+      {
+        "id": 57168,
+        "video_id": 1516,
+        "frame_id": 38,
+        "file_name": "val/AVA/AYebXQ8eUkM_scene_8_94309-96004/frame1301.jpg"
+      },
+      {
+        "id": 98727,
+        "video_id": 2651,
+        "frame_id": 32,
+        "file_name": "val/Charades/GT43R/frame0961.jpg"
+      },
+      {
+        "id": 98728,
+        "video_id": 2651,
+        "frame_id": 33,
+        "file_name": "val/Charades/GT43R/frame0991.jpg"
+      }
+    ],
+    "short_track_counts": {
+      "1": 109024,
+      "2": 62255,
+      "3": 36332,
+      "4": 23539,
+      "5": 16606
+    },
+    "n_obs_min": 1,
+    "n_obs_max": 51,
+    "argmax_det_label_mismatch_rate": 3.2681703736433824e-06
+  },
+  "probability_schema": {
+    "p_fused": {
+      "min": 0.0,
+      "max": 0.9999901652336121,
+      "row_sum_min": 0.9999996502346178,
+      "row_sum_max": 1.0000003530068025,
+      "row_sum_max_abs_error": 3.530068024559796e-07,
+      "background_min": 0.0,
+      "background_max": 0.0,
+      "background_nonzero_rows": 0,
+      "zeros": 1529908,
+      "nonfinite_values": 0
+    },
+    "p_text": {
+      "min": 2.5278278031999317e-21,
+      "max": 1.0,
+      "row_sum_min": 0.9999997233337079,
+      "row_sum_max": 1.0000002673962372,
+      "row_sum_max_abs_error": 2.766662920983265e-07,
+      "background_min": 1.8959827485787173e-08,
+      "background_max": 1.0,
+      "background_nonzero_rows": 1529908,
+      "zeros": 0,
+      "nonfinite_values": 0
+    },
+    "p_image": {
+      "min": 0.0,
+      "max": 0.9995821118354797,
+      "row_sum_min": 0.9999997309935225,
+      "row_sum_max": 1.0000002557953849,
+      "row_sum_max_abs_error": 2.690064775379142e-07,
+      "background_min": 0.0,
+      "background_max": 0.0,
+      "background_nonzero_rows": 0,
+      "zeros": 1529908,
+      "nonfinite_values": 0
+    }
+  },
+  "fields": {
+    "key": {
+      "shape": [
+        324639,
+        2
+      ],
+      "dtype": "int64"
+    },
+    "global_track_id": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "n_obs": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "first_label_col": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "first_label": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "first_frame_id": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "last_frame_id": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "first_image_id": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "last_image_id": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "majority_counts": {
+      "shape": [
+        324639,
+        296
+      ],
+      "dtype": "uint32"
+    },
+    "tcc_category_id": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "tcc_label_col": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "score_sum": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "score_mean": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "score_min": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "score_max": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "p_fused_sumprob": {
+      "shape": [
+        324639,
+        297
+      ],
+      "dtype": "float32"
+    },
+    "p_fused_sumlog": {
+      "shape": [
+        324639,
+        297
+      ],
+      "dtype": "float32"
+    },
+    "p_fused_argmax_counts": {
+      "shape": [
+        324639,
+        296
+      ],
+      "dtype": "uint32"
+    },
+    "p_fused_entropy_sum": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "p_fused_entropy_weight_sum": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "p_fused_entropy_weighted_sumprob": {
+      "shape": [
+        324639,
+        297
+      ],
+      "dtype": "float32"
+    },
+    "p_text_sumprob": {
+      "shape": [
+        324639,
+        297
+      ],
+      "dtype": "float32"
+    },
+    "p_text_sumlog": {
+      "shape": [
+        324639,
+        297
+      ],
+      "dtype": "float32"
+    },
+    "p_text_argmax_counts": {
+      "shape": [
+        324639,
+        296
+      ],
+      "dtype": "uint32"
+    },
+    "p_text_entropy_sum": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "p_text_entropy_weight_sum": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "p_text_entropy_weighted_sumprob": {
+      "shape": [
+        324639,
+        297
+      ],
+      "dtype": "float32"
+    },
+    "p_image_sumprob": {
+      "shape": [
+        324639,
+        297
+      ],
+      "dtype": "float32"
+    },
+    "p_image_sumlog": {
+      "shape": [
+        324639,
+        297
+      ],
+      "dtype": "float32"
+    },
+    "p_image_argmax_counts": {
+      "shape": [
+        324639,
+        296
+      ],
+      "dtype": "uint32"
+    },
+    "p_image_entropy_sum": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "p_image_entropy_weight_sum": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "p_image_entropy_weighted_sumprob": {
+      "shape": [
+        324639,
+        297
+      ],
+      "dtype": "float32"
+    },
+    "p_corrected_mask_sumprob": {
+      "shape": [
+        324639,
+        297
+      ],
+      "dtype": "float32"
+    },
+    "p_corrected_mask_sumlog": {
+      "shape": [
+        324639,
+        297
+      ],
+      "dtype": "float32"
+    },
+    "p_corrected_mask_argmax_counts": {
+      "shape": [
+        324639,
+        296
+      ],
+      "dtype": "uint32"
+    },
+    "p_corrected_mask_entropy_sum": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "p_corrected_mask_entropy_weight_sum": {
+      "shape": [
+        324639
+      ],
+      "dtype": "float64"
+    },
+    "p_corrected_mask_entropy_weighted_sumprob": {
+      "shape": [
+        324639,
+        297
+      ],
+      "dtype": "float32"
+    },
+    "branch_argmax_agreement_count": {
+      "shape": [
+        324639
+      ],
+      "dtype": "int64"
+    },
+    "category_ids": {
+      "shape": [
+        296
+      ],
+      "dtype": "int64"
+    },
+    "category_names": {
+      "shape": [
+        296
+      ],
+      "dtype": "<U45"
+    },
+    "category_frequency": {
+      "shape": [
+        296
+      ],
+      "dtype": "<U1"
+    },
+    "frequency_rare_mask": {
+      "shape": [
+        296
+      ],
+      "dtype": "bool"
+    },
+    "fusion_validation_novel_index": {
+      "shape": [
+        297
+      ],
+      "dtype": "bool"
+    },
+    "posterior_category_ids": {
+      "shape": [
+        297
+      ],
+      "dtype": "int64"
+    }
+  }
+}

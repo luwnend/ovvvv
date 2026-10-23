@@ -1,0 +1,31 @@
+{
+  "rule": "fused_sumlog",
+  "status": "COMPLETE",
+  "baseline": "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json",
+  "baseline_sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+  "cache": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/track_cache.npz",
+  "cache_sha256": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+  "result": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/tao_track.json",
+  "result_sha256": "727497d9bba22494714dd2eb25ea10a68b42ab03791f297fd50d1f091e0550ce",
+  "observations": 1529908,
+  "tracks": 324639,
+  "changed_tracks": 50108,
+  "changed_observations": 224861,
+  "modified_fields": [
+    "category_id"
+  ],
+  "second_tcc": false,
+  "aggregation_uses_gt": false,
+  "ann": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/annotations/validation_ours_v1.json",
+  "ann_sha256": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+  "evaluator_files": {
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/eval.py": "8219b9a2858faf0c166bff2fa1d25eb96a96578329916d2e0196f84e5aadbbcc",
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/metrics/teta.py": "47a132d92b2e9c92fd47f9e36140278e7ac263418539b606bf58ceead20d97d4",
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/datasets/tao.py": "c174d9cd3df6962474db588eff7cb3e82736d9a5b387f8653cefa603b9a7a6ab"
+  },
+  "metrics_sha256": "7738a37a198786673aae5f1b4dc2033b2d159e7c263c298d5317e83cd6494d2f",
+  "counts_sha256": "d8f5972136b36b3664e44796a5f5aeaed4b150515a97d7157392fbddee232c36",
+  "aggregate_raw_sha256": "449d6a4996c34c40081276eae9100a977636770bcee0586830cabd95ca114cf6",
+  "readout_script_sha256": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9",
+  "summary_sha256": "d68e4650b0600d05da6883be0bdea35c7ea6dc87165e8e6bdad1179d53a4811d"
+}

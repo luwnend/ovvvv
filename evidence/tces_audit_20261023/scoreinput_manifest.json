@@ -1,0 +1,34 @@
+{
+  "source": {
+    "prediction": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json",
+      "sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48"
+    },
+    "annotation": {
+      "path": "/raid/datasets/ring_data/data/tao/annotations/validation_ours_v1.json",
+      "sha256": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d"
+    },
+    "matching": "classagnostic_max_total_iou_hungarian_then_threshold_v1",
+    "iou_threshold": 0.5
+  },
+  "script": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/score_track_cache_diagnostic.py",
+    "sha256": "6760351604a065494e411168b7bcbb98d0fe6ffd41c94ac68c7de25cb7481a98"
+  },
+  "scoreinput_sha256": "3b7bbf8d89370849b7beffe92b1c0e98cccca2da153c9d390f81903cb4492c04",
+  "n_prediction_observations": 1529908,
+  "n_prediction_tracks": 324639,
+  "n_annotation_images": 36375,
+  "n_annotation_gt_observations": 112798,
+  "n_matched_observations": 65711,
+  "n_matched_tracks": 10219,
+  "n_gt_support_classes": 296,
+  "n_gt_support_rare_classes": 35,
+  "elapsed_seconds": 17.325,
+  "matching_protocol": "For each image, maximize the sum of raw bbox IoUs with a class-agnostic one-to-one Hungarian assignment, then retain assigned pairs with IoU >= threshold. No class, posterior, score or GT identity enters the assignment. This is independent diagnostic matching, not TETA's temporal alignment assignment.",
+  "track_key_columns": [
+    "video_id",
+    "official_global_track_id"
+  ],
+  "aggregation_scope": "Every original emitted tracker observation; matching only chooses scoring rows"
+}

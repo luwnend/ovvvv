@@ -1,0 +1,322 @@
+{
+  "status": "PASS_READOUT_ARTIFACTS_AND_PROTECTED_SOURCES",
+  "verification_script": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_readout_artifacts.py",
+  "python": "/home/chenhc/miniconda3/envs/covtrack/bin/python",
+  "scope": "Read-only verification; no evaluation, training or existing-artifact writes. Script hashes from readout receipts and changing summary code are deliberately outside scope.",
+  "rules": [
+    "fused_sumprob",
+    "fused_sumlog",
+    "corrected_mask_sumprob",
+    "corrected_mask_tcc"
+  ],
+  "annotation": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/annotations/validation_ours_v1.json",
+    "sha256": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+    "matches_baseline_receipt": true
+  },
+  "checkpoint": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2/saved_models/ctao_public_res/ctao_public.pth",
+    "resolved": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2/saved_models/ctao_public_res/ctao_public.pth",
+    "sha256": "e4d0b65798844280ea13943e580ce6233ae5d331c4aa1d38eb226c3208dd567c",
+    "size": 368829353,
+    "matches_checkpoint_receipt": true
+  },
+  "protected_manifest": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/protected_before.json",
+    "sha256": "b4920b978473c3f49f78ee8c54bd16b3f6d8000a405fd4a0508d3d770e31b2ea"
+  },
+  "checkpoint_receipt": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/checkpoint_receipt.json",
+    "sha256": "b9ac214ce1e09f43f6dc225104d3c5d36aaafb6abde4fd0b5d3b1a2c2aaee4a4"
+  },
+  "protected_checks": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json": {
+      "expected_exists": true,
+      "actual_exists": true,
+      "expected_sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+      "actual_sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+      "unchanged": true
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/OVTrack/teta_summary_results.pth": {
+      "expected_exists": true,
+      "actual_exists": true,
+      "expected_sha256": "621b769b60f88816be02c9cb79339b493ef60f17717a135cf663e3599a8a1d62",
+      "actual_sha256": "621b769b60f88816be02c9cb79339b493ef60f17717a135cf663e3599a8a1d62",
+      "unchanged": true
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/weights/ctao_public.pth": {
+      "expected_exists": false,
+      "actual_exists": false,
+      "absence_preserved": true
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base/configs/uncertainty-ovtrack-teta/ovtrack_r50_ctao_train.py": {
+      "expected_exists": true,
+      "actual_exists": true,
+      "expected_sha256": "d8ae926e540c327d4baa2ced8cb1338f70d6a67eb73d2fb02de4d79893cecc08",
+      "actual_sha256": "d8ae926e540c327d4baa2ced8cb1338f70d6a67eb73d2fb02de4d79893cecc08",
+      "unchanged": true
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/covtrack_ctao_train20_bs24_20261022/ovtrack_r50_ctao_train.py": {
+      "expected_exists": true,
+      "actual_exists": true,
+      "expected_sha256": "b907b90fe73d6c515d3487efeb7d921dbbc874b4ef4a840cecebb50a1e9a169d",
+      "actual_sha256": "b907b90fe73d6c515d3487efeb7d921dbbc874b4ef4a840cecebb50a1e9a169d",
+      "unchanged": true
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/scripts/train_covtrack20.py": {
+      "expected_exists": true,
+      "actual_exists": true,
+      "expected_sha256": "0beeac07b81caa5c1be3ee2232adee2d4d78a554bbac310b233e2d567395312c",
+      "actual_sha256": "0beeac07b81caa5c1be3ee2232adee2d4d78a554bbac310b233e2d567395312c",
+      "unchanged": true
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/repos/COVTrack/ovtrack/models/roi_heads/class_name.py": {
+      "expected_exists": true,
+      "actual_exists": true,
+      "expected_sha256": "6f50d7b3f16eef96e15b6cfbf97a53b195e26dbc34df51e7679645c99e6937d9",
+      "actual_sha256": "6f50d7b3f16eef96e15b6cfbf97a53b195e26dbc34df51e7679645c99e6937d9",
+      "unchanged": true
+    }
+  },
+  "complete_receipt_checks": {
+    "tcc": {
+      "status_observed": "COMPLETE",
+      "receipt_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/receipt.json",
+      "receipt_sha256_before_comparison": "65660c8fe8590796d2a7c8930224ba113c931bc6b7b195b1c6e9d8a5d42ba87b",
+      "artifacts": {
+        "tao_track.json": {
+          "sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+          "matches_receipt": true
+        },
+        "metrics.json": {
+          "sha256": "58ce4060e886b1572ddd7b0f29d3847955b083aa56af5aaadb9b5faef6c697c0",
+          "matches_receipt": true
+        },
+        "classification_counts.npz": {
+          "sha256": "ccf49aa564a10def1d5140517630b130ac4b095b2729151596a781c5dc8ab022",
+          "matches_receipt": true
+        },
+        "aggregate_raw.pkl": {
+          "sha256": "a88b99bdd6cbd5f0ffa65cbdd52dc718347efa6fcd659da305b05e63e4de33b7",
+          "matches_receipt": true
+        },
+        "OVTrack/teta_summary_results.pth": {
+          "sha256": "dd891b2a7e1d98243c18ed3b54cb33ac65055ce2c709a29839de0e0cd03795e6",
+          "matches_receipt": true
+        }
+      },
+      "same_baseline_annotation_evaluator": true
+    },
+    "fused_sumprob": {
+      "status_observed": "COMPLETE",
+      "receipt_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/receipt.json",
+      "receipt_sha256_before_comparison": "719106e4be00b09aacdb910e1c4bdf50ba5a1bcfc146d953e71342d0491f7b5f",
+      "artifacts": {
+        "tao_track.json": {
+          "sha256": "f791467f46d6a6074a41128e31e5abd5131d1c427751eed7bd7938f1660e4dd7",
+          "matches_receipt": true
+        },
+        "metrics.json": {
+          "sha256": "e7b363f10307edd98826697be1e00beef9f32ea95b853334756f0768c64bc140",
+          "matches_receipt": true
+        },
+        "classification_counts.npz": {
+          "sha256": "f3b62da7498c8bd45a643d6bb3272bcb1b6150c36549907a737629bb7de829ef",
+          "matches_receipt": true
+        },
+        "aggregate_raw.pkl": {
+          "sha256": "3196f34c08060b68033a6265b0c4cc7d43ff5f94a62861ba0982297f2c4131be",
+          "matches_receipt": true
+        },
+        "OVTrack/teta_summary_results.pth": {
+          "sha256": "1966405bd5bd176c4cc09e91f3f1da86c788a76bbec4158193f549d7a926c7a5",
+          "matches_receipt": true
+        }
+      },
+      "same_baseline_annotation_evaluator": true
+    },
+    "fused_sumlog": {
+      "status_observed": "COMPLETE",
+      "receipt_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/receipt.json",
+      "receipt_sha256_before_comparison": "d8e4bed654e13357feafcf91cdeaaa2dea2849f83d6d526e6cf9f1920f675c03",
+      "artifacts": {
+        "tao_track.json": {
+          "sha256": "727497d9bba22494714dd2eb25ea10a68b42ab03791f297fd50d1f091e0550ce",
+          "matches_receipt": true
+        },
+        "metrics.json": {
+          "sha256": "7738a37a198786673aae5f1b4dc2033b2d159e7c263c298d5317e83cd6494d2f",
+          "matches_receipt": true
+        },
+        "classification_counts.npz": {
+          "sha256": "d8f5972136b36b3664e44796a5f5aeaed4b150515a97d7157392fbddee232c36",
+          "matches_receipt": true
+        },
+        "aggregate_raw.pkl": {
+          "sha256": "449d6a4996c34c40081276eae9100a977636770bcee0586830cabd95ca114cf6",
+          "matches_receipt": true
+        },
+        "OVTrack/teta_summary_results.pth": {
+          "sha256": "d68e4650b0600d05da6883be0bdea35c7ea6dc87165e8e6bdad1179d53a4811d",
+          "matches_receipt": true
+        }
+      },
+      "same_baseline_annotation_evaluator": true
+    },
+    "corrected_mask_sumprob": {
+      "status_observed": "COMPLETE",
+      "receipt_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/receipt.json",
+      "receipt_sha256_before_comparison": "f617675dfd315c679851284481b1f9b030ef12a64ef5b9004afcd174e7bbba4f",
+      "artifacts": {
+        "tao_track.json": {
+          "sha256": "9566dc8def2d5c76f918509400f261d2853b27a91284df45919accf241743691",
+          "matches_receipt": true
+        },
+        "metrics.json": {
+          "sha256": "275415eba381d268a9d2c0becafc4b92fb16abe9bea96ffd011b99da5a5c6859",
+          "matches_receipt": true
+        },
+        "classification_counts.npz": {
+          "sha256": "983cc4a6e135a0a172bcd822d1d591d6671050d43c4579e5dd725e97ac83cd41",
+          "matches_receipt": true
+        },
+        "aggregate_raw.pkl": {
+          "sha256": "f713b1b7401f01d4d931b26ae78473962e3a449dac5801a59370dfbd7c302093",
+          "matches_receipt": true
+        },
+        "OVTrack/teta_summary_results.pth": {
+          "sha256": "bf2fbb5e1d4a05c0ecd6cdac4ff6603968441606b05fc427b1e5936fcf1d6ce6",
+          "matches_receipt": true
+        }
+      },
+      "same_baseline_annotation_evaluator": true
+    },
+    "corrected_mask_tcc": {
+      "status_observed": "COMPLETE",
+      "receipt_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/receipt.json",
+      "receipt_sha256_before_comparison": "9379a2ac15c8683a49ac06f5560c66002c5e5b4c59fe7b238759c0f4ead5c10c",
+      "artifacts": {
+        "tao_track.json": {
+          "sha256": "e6cfb10bccbcc9a77140a4a29cbc37e298c900e9462aa7dbb903b0da5e20551b",
+          "matches_receipt": true
+        },
+        "metrics.json": {
+          "sha256": "eb1c186e0604c3c7cf33e3cf41d708713b5c659beddf710ceac470cfe33a0894",
+          "matches_receipt": true
+        },
+        "classification_counts.npz": {
+          "sha256": "e27097a021fdd0055d217cfb986cc7bd268e04f2529b6f7e83459725e79c9754",
+          "matches_receipt": true
+        },
+        "aggregate_raw.pkl": {
+          "sha256": "d20c2a922bc384a7ba23f6e886a8298265e915e54e4b370e1ab1999564e98bef",
+          "matches_receipt": true
+        },
+        "OVTrack/teta_summary_results.pth": {
+          "sha256": "136743abe238ff1aebdb90fba6ccd9db12080e8a1463223689c610728e1c2372",
+          "matches_receipt": true
+        }
+      },
+      "same_baseline_annotation_evaluator": true
+    }
+  },
+  "record_comparison": {
+    "fused_sumprob": {
+      "n_rows": 1529908,
+      "row_count_equal": true,
+      "record_order_preserved": true,
+      "all_keys_equal": true,
+      "all_non_category_fields_equal_with_types": true,
+      "n_tracks": 324639,
+      "changed_observations": 152612,
+      "changed_tracks": 38774,
+      "counts_match_receipt": true
+    },
+    "fused_sumlog": {
+      "n_rows": 1529908,
+      "row_count_equal": true,
+      "record_order_preserved": true,
+      "all_keys_equal": true,
+      "all_non_category_fields_equal_with_types": true,
+      "n_tracks": 324639,
+      "changed_observations": 224861,
+      "changed_tracks": 50108,
+      "counts_match_receipt": true
+    },
+    "corrected_mask_sumprob": {
+      "n_rows": 1529908,
+      "row_count_equal": true,
+      "record_order_preserved": true,
+      "all_keys_equal": true,
+      "all_non_category_fields_equal_with_types": true,
+      "n_tracks": 324639,
+      "changed_observations": 316548,
+      "changed_tracks": 82464,
+      "counts_match_receipt": true
+    },
+    "corrected_mask_tcc": {
+      "n_rows": 1529908,
+      "row_count_equal": true,
+      "record_order_preserved": true,
+      "all_keys_equal": true,
+      "all_non_category_fields_equal_with_types": true,
+      "n_tracks": 324639,
+      "changed_observations": 251001,
+      "changed_tracks": 64760,
+      "counts_match_receipt": true
+    }
+  },
+  "prediction_hashes_stable_before_after_comparison": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/tao_track.json": "f791467f46d6a6074a41128e31e5abd5131d1c427751eed7bd7938f1660e4dd7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/tao_track.json": "727497d9bba22494714dd2eb25ea10a68b42ab03791f297fd50d1f091e0550ce",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/tao_track.json": "9566dc8def2d5c76f918509400f261d2853b27a91284df45919accf241743691",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/tao_track.json": "e6cfb10bccbcc9a77140a4a29cbc37e298c900e9462aa7dbb903b0da5e20551b"
+  },
+  "source_fingerprints": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+    "/raid/datasets/ring_data/data/tao/annotations/validation_ours_v1.json": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/OVTrack/teta_summary_results.pth": "621b769b60f88816be02c9cb79339b493ef60f17717a135cf663e3599a8a1d62",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base/configs/uncertainty-ovtrack-teta/ovtrack_r50_ctao_train.py": "d8ae926e540c327d4baa2ced8cb1338f70d6a67eb73d2fb02de4d79893cecc08",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/covtrack_ctao_train20_bs24_20261022/ovtrack_r50_ctao_train.py": "b907b90fe73d6c515d3487efeb7d921dbbc874b4ef4a840cecebb50a1e9a169d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/scripts/train_covtrack20.py": "0beeac07b81caa5c1be3ee2232adee2d4d78a554bbac310b233e2d567395312c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/repos/COVTrack/ovtrack/models/roi_heads/class_name.py": "6f50d7b3f16eef96e15b6cfbf97a53b195e26dbc34df51e7679645c99e6937d9",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2/saved_models/ctao_public_res/ctao_public.pth": "e4d0b65798844280ea13943e580ce6233ae5d331c4aa1d38eb226c3208dd567c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/metrics.json": "58ce4060e886b1572ddd7b0f29d3847955b083aa56af5aaadb9b5faef6c697c0",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/classification_counts.npz": "ccf49aa564a10def1d5140517630b130ac4b095b2729151596a781c5dc8ab022",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/aggregate_raw.pkl": "a88b99bdd6cbd5f0ffa65cbdd52dc718347efa6fcd659da305b05e63e4de33b7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/OVTrack/teta_summary_results.pth": "dd891b2a7e1d98243c18ed3b54cb33ac65055ce2c709a29839de0e0cd03795e6",
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/eval.py": "8219b9a2858faf0c166bff2fa1d25eb96a96578329916d2e0196f84e5aadbbcc",
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/metrics/teta.py": "47a132d92b2e9c92fd47f9e36140278e7ac263418539b606bf58ceead20d97d4",
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/datasets/tao.py": "c174d9cd3df6962474db588eff7cb3e82736d9a5b387f8653cefa603b9a7a6ab",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/tcc/receipt.json": "65660c8fe8590796d2a7c8930224ba113c931bc6b7b195b1c6e9d8a5d42ba87b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/tao_track.json": "f791467f46d6a6074a41128e31e5abd5131d1c427751eed7bd7938f1660e4dd7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/metrics.json": "e7b363f10307edd98826697be1e00beef9f32ea95b853334756f0768c64bc140",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/classification_counts.npz": "f3b62da7498c8bd45a643d6bb3272bcb1b6150c36549907a737629bb7de829ef",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/aggregate_raw.pkl": "3196f34c08060b68033a6265b0c4cc7d43ff5f94a62861ba0982297f2c4131be",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/OVTrack/teta_summary_results.pth": "1966405bd5bd176c4cc09e91f3f1da86c788a76bbec4158193f549d7a926c7a5",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/track_cache.npz": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/receipt.json": "719106e4be00b09aacdb910e1c4bdf50ba5a1bcfc146d953e71342d0491f7b5f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/tao_track.json": "727497d9bba22494714dd2eb25ea10a68b42ab03791f297fd50d1f091e0550ce",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/metrics.json": "7738a37a198786673aae5f1b4dc2033b2d159e7c263c298d5317e83cd6494d2f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/classification_counts.npz": "d8f5972136b36b3664e44796a5f5aeaed4b150515a97d7157392fbddee232c36",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/aggregate_raw.pkl": "449d6a4996c34c40081276eae9100a977636770bcee0586830cabd95ca114cf6",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/OVTrack/teta_summary_results.pth": "d68e4650b0600d05da6883be0bdea35c7ea6dc87165e8e6bdad1179d53a4811d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/receipt.json": "d8e4bed654e13357feafcf91cdeaaa2dea2849f83d6d526e6cf9f1920f675c03",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/tao_track.json": "9566dc8def2d5c76f918509400f261d2853b27a91284df45919accf241743691",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/metrics.json": "275415eba381d268a9d2c0becafc4b92fb16abe9bea96ffd011b99da5a5c6859",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/classification_counts.npz": "983cc4a6e135a0a172bcd822d1d591d6671050d43c4579e5dd725e97ac83cd41",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/aggregate_raw.pkl": "f713b1b7401f01d4d931b26ae78473962e3a449dac5801a59370dfbd7c302093",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/OVTrack/teta_summary_results.pth": "bf2fbb5e1d4a05c0ecd6cdac4ff6603968441606b05fc427b1e5936fcf1d6ce6",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/receipt.json": "f617675dfd315c679851284481b1f9b030ef12a64ef5b9004afcd174e7bbba4f",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/tao_track.json": "e6cfb10bccbcc9a77140a4a29cbc37e298c900e9462aa7dbb903b0da5e20551b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/metrics.json": "eb1c186e0604c3c7cf33e3cf41d708713b5c659beddf710ceac470cfe33a0894",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/classification_counts.npz": "e27097a021fdd0055d217cfb986cc7bd268e04f2529b6f7e83459725e79c9754",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/aggregate_raw.pkl": "d20c2a922bc384a7ba23f6e886a8298265e915e54e4b370e1ab1999564e98bef",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/OVTrack/teta_summary_results.pth": "136743abe238ff1aebdb90fba6ccd9db12080e8a1463223689c610728e1c2372",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/receipt.json": "9379a2ac15c8683a49ac06f5560c66002c5e5b4c59fe7b238759c0f4ead5c10c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/protected_before.json": "b4920b978473c3f49f78ee8c54bd16b3f6d8000a405fd4a0508d3d770e31b2ea",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/checkpoint_receipt.json": "b9ac214ce1e09f43f6dc225104d3c5d36aaafb6abde4fd0b5d3b1a2c2aaee4a4"
+  },
+  "elapsed_seconds": 100.131
+}

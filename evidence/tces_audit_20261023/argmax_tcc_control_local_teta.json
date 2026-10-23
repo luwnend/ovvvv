@@ -1,0 +1,48 @@
+{
+  "status": "PASS_ACTUAL_LOCAL_TETA_RAW_ARRAY_INVARIANCE",
+  "source_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+    "/raid/datasets/ring_data/data/tao/annotations/validation_ours_v1.json": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d"
+  },
+  "script": {
+    "path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/check_argmax_control_local_teta.py",
+    "sha256": "e297f294edeceb3cd0667d5f29cbb0abf72bb9883a7a79ad8d715519a36af470"
+  },
+  "evaluator_sha256": {
+    "/home/chenhc/miniconda3/envs/covtrack/lib/python3.8/site-packages/teta/metrics/teta.py": "47a132d92b2e9c92fd47f9e36140278e7ac263418539b606bf58ceead20d97d4",
+    "/home/chenhc/miniconda3/envs/covtrack/lib/python3.8/site-packages/teta/datasets/tao.py": "c174d9cd3df6962474db588eff7cb3e82736d9a5b387f8653cefa603b9a7a6ab",
+    "/home/chenhc/miniconda3/envs/covtrack/lib/python3.8/site-packages/teta/eval.py": "8219b9a2858faf0c166bff2fa1d25eb96a96578329916d2e0196f84e5aadbbcc"
+  },
+  "video_id": 768,
+  "global_track_id": 87926,
+  "old_category_id": 692,
+  "new_category_id": 207,
+  "modified_observations": 3,
+  "video_prediction_observations": 1909,
+  "video_GT_observations": 58,
+  "video_images": 40,
+  "full_dataset_class_inventory_preserved": 296,
+  "compared_threshold": 50,
+  "all_classes_equal_by_raw_field": {
+    "TETA": true,
+    "LocA": true,
+    "AssocA": true,
+    "ClsA": true,
+    "LocRe": true,
+    "LocPr": true,
+    "AssocRe": true,
+    "AssocPr": true,
+    "ClsRe": true,
+    "ClsPr": true,
+    "Loc_TP": true,
+    "Loc_FN": true,
+    "Loc_FP": true,
+    "Cls_TP": true,
+    "Cls_FN": true,
+    "Cls_FP": true
+  },
+  "unequal_class_fields": [],
+  "source_files_unchanged": true,
+  "scope": "Actual installed teta.eval.eval_sequence was run twice on exact video 768 inputs, retaining the full 296-class inventory and non-exhaustive TETA defaults. Only category_id of the specified three prediction observations changed. Every per-class raw field, including Cls_TP/FN/FP and every localization/association alpha entry, is bitwise equal. Other sequences receive no changed observations, so this control change is metric-neutral for the corresponding full-dataset evaluation. This is an equality receipt, not a new method score.",
+  "elapsed_seconds": 18.367
+}

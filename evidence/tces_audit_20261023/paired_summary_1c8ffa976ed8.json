@@ -1,0 +1,3168 @@
+{
+  "baseline": {
+    "combined": {
+      "n_classes": 296,
+      "TETA": 38.921471428235,
+      "LocA": 57.27530465128391,
+      "AssocA": 41.83916861382982,
+      "ClsA": 17.649941019591324,
+      "LocRe": 59.73337888250619,
+      "LocPr": 79.65758899966852,
+      "AssocRe": 46.76477544694931,
+      "AssocPr": 67.1313431605742,
+      "ClsRe": 28.237613760865965,
+      "ClsPr": 24.9765303806675
+    },
+    "base": {
+      "n_classes": 261,
+      "TETA": 39.55391490686021,
+      "LocA": 57.15495890000262,
+      "AssocA": 41.96026115954742,
+      "ClsA": 19.546524661030595,
+      "LocRe": 59.654620938336805,
+      "LocPr": 79.62129104570528,
+      "AssocRe": 46.8247016121858,
+      "AssocPr": 67.32891904628137,
+      "ClsRe": 31.22761393259313,
+      "ClsPr": 27.487062922211496
+    },
+    "novel": {
+      "n_classes": 35,
+      "TETA": 34.20525005905872,
+      "LocA": 58.17274011083888,
+      "AssocA": 40.93616420147874,
+      "ClsA": 3.506845864858532,
+      "LocRe": 60.320688123312294,
+      "LocPr": 79.92826802779427,
+      "AssocRe": 46.31789747190006,
+      "AssocPr": 65.65799155573018,
+      "ClsRe": 5.94075533741485,
+      "ClsPr": 6.255130570868022
+    }
+  },
+  "results": {
+    "fused_sumprob": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 39.04617124750004,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 18.024040477386365,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 28.794844371485272,
+          "ClsPr": 26.351631858950203
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.68365053734998,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.93573155249991,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 31.81133959598714,
+          "ClsPr": 28.995297045398875
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 34.29239711461909,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 3.768287031539682,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 6.300408554485679,
+          "ClsPr": 6.637442897147255
+        }
+      },
+      "delta_from_tcc": {
+        "combined": {
+          "TETA": 0.12469981926503948,
+          "LocA": 0.0,
+          "AssocA": 0.0,
+          "ClsA": 0.3740994577950403,
+          "LocRe": 0.0,
+          "LocPr": 0.0,
+          "AssocRe": 0.0,
+          "AssocPr": 0.0,
+          "ClsRe": 0.5572306106193068,
+          "ClsPr": 1.3751014782827014
+        },
+        "base": {
+          "TETA": 0.1297356304897761,
+          "LocA": 0.0,
+          "AssocA": 0.0,
+          "ClsA": 0.3892068914693141,
+          "LocRe": 0.0,
+          "LocPr": 0.0,
+          "AssocRe": 0.0,
+          "AssocPr": 0.0,
+          "ClsRe": 0.5837256633940093,
+          "ClsPr": 1.5082341231873784
+        },
+        "novel": {
+          "TETA": 0.08714705556037217,
+          "LocA": 0.0,
+          "AssocA": 0.0,
+          "ClsA": 0.2614411666811498,
+          "LocRe": 0.0,
+          "LocPr": 0.0,
+          "AssocRe": 0.0,
+          "AssocPr": 0.0,
+          "ClsRe": 0.35965321707082865,
+          "ClsPr": 0.3823123262792336
+        }
+      },
+      "paired_video_bootstrap": {
+        "base": {
+          "ClsA_delta_percentile_95": [
+            0.033120365836636474,
+            0.8951143242574625
+          ],
+          "TETA_delta_percentile_95": [
+            0.01104012194554549,
+            0.29837144141915417
+          ],
+          "fraction_resamples_positive": 0.9835
+        },
+        "novel": {
+          "ClsA_delta_percentile_95": [
+            -0.1587067921840412,
+            0.5466376625844526
+          ],
+          "TETA_delta_percentile_95": [
+            -0.05290226406134707,
+            0.18221255419481752
+          ],
+          "fraction_resamples_positive": 0.702
+        },
+        "combined": {
+          "ClsA_delta_percentile_95": [
+            0.05143582451841484,
+            0.8096361584799662
+          ],
+          "TETA_delta_percentile_95": [
+            0.017145274839471612,
+            0.26987871949332204
+          ],
+          "fraction_resamples_positive": 0.988
+        }
+      },
+      "influence_analysis": {
+        "base": {
+          "leave_one_video_out_ClsA_delta_range": [
+            0.22799409223209238,
+            0.5388678452494322
+          ],
+          "most_influential_video": "val-HACS-Cleaning_windows_v_RsbAYZ_3ZGk_scene_0_0-3058",
+          "ClsA_delta_without_that_video": 0.22799409223209238,
+          "benefited_classes": 81,
+          "harmed_classes": 54,
+          "unchanged_classes": 126
+        },
+        "novel": {
+          "leave_one_video_out_ClsA_delta_range": [
+            -0.059359160523118425,
+            0.3236780231351832
+          ],
+          "most_influential_video": "val-HACS-Playing_saxophone_v_Ll1361jhJLQ_scene_0_0-1805",
+          "ClsA_delta_without_that_video": -0.059359160523118425,
+          "benefited_classes": 3,
+          "harmed_classes": 2,
+          "unchanged_classes": 30
+        },
+        "combined": {
+          "leave_one_video_out_ClsA_delta_range": [
+            0.231948982791947,
+            0.5060640150133177
+          ],
+          "most_influential_video": "val-HACS-Cleaning_windows_v_RsbAYZ_3ZGk_scene_0_0-3058",
+          "ClsA_delta_without_that_video": 0.231948982791947,
+          "benefited_classes": 84,
+          "harmed_classes": 56,
+          "unchanged_classes": 156
+        }
+      },
+      "raw_loc_assoc_all_arrays_identical": true,
+      "per_class_ClsA_delta": {
+        "aerosol_can": 0.0,
+        "airplane": 1.704147501888201,
+        "armchair": 0.0,
+        "atomizer": 42.44444444444444,
+        "ax": -1.2179872008596155,
+        "baby_buggy": 0.15246449456975597,
+        "backpack": -0.3112479436658244,
+        "handbag": 9.56377938412125,
+        "suitcase": 0.17797765228381146,
+        "ball": 0.22894933301736842,
+        "balloon": 0.0,
+        "banana": 2.238308536287125,
+        "barbell": 0.0,
+        "baseball_bat": 0.0,
+        "basket": 1.0870298765152633,
+        "basketball": 0.0,
+        "beanie": 0.0,
+        "bear": 0.08051763446057336,
+        "bed": -0.1186345447862962,
+        "bedspread": 0.0,
+        "cow": -0.608857463442753,
+        "beeper": 0.0,
+        "bell": 0.0,
+        "bicycle": 2.3865124893960257,
+        "binder": 0.0,
+        "binoculars": 0.0,
+        "bird": 0.3858154358735977,
+        "birdfeeder": 0.0,
+        "birdcage": 1.5405405405405475,
+        "birdhouse": 5.10912416175573,
+        "black_sheep": -0.6542893794546678,
+        "blanket": -0.20016692435631178,
+        "boat": 6.286225727541911,
+        "book": 0.5440892653085356,
+        "booklet": 0.0,
+        "bottle": 7.29541713127243,
+        "bow_(weapon)": 0.0,
+        "bowl": 9.733445777911328,
+        "briefcase": 0.0,
+        "broom": -0.9270164046514324,
+        "bucket": 3.008508451149538,
+        "bull": 0.0,
+        "bun": 0.0,
+        "buoy": -3.1720771648807613,
+        "bus_(vehicle)": -0.04948780009588205,
+        "business_card": 9.497474747474755,
+        "cab_(taxi)": 0.10512383891244781,
+        "calf": 0.0,
+        "camel": 0.0,
+        "camera": 0.1329835792035876,
+        "can": 7.405979029266618,
+        "candle": -0.5148169886136804,
+        "canister": 0.0,
+        "canoe": 0.0,
+        "bottle_cap": 2.1072971976472417,
+        "cape": 0.0,
+        "car_(automobile)": 0.0019153595219734143,
+        "railcar_(part_of_a_train)": 0.46000079082777745,
+        "car_battery": 0.0,
+        "carton": -1.0290384929654208,
+        "cat": 2.1916998758582693,
+        "cellular_telephone": 1.6604890278539202,
+        "chain_mail": 0.0,
+        "chair": 0.5651637815360715,
+        "chicken_(animal)": 0.0,
+        "crisp_(potato_chip)": 0.0,
+        "cigarette": 3.9857353841574508,
+        "cigarette_case": 0.0,
+        "clip": 0.0,
+        "clipboard": 0.16421999995854009,
+        "clutch_bag": 0.0,
+        "coat": 0.014317534781046859,
+        "coat_hanger": 0.0,
+        "coffee_table": 0.0,
+        "coin": 0.0,
+        "pacifier": 1.8272452849821477,
+        "computer_keyboard": 2.783764723413938,
+        "cone": 0.2518542392959944,
+        "control": 0.0,
+        "convertible_(automobile)": 0.0,
+        "cooler_(for_food)": -1.0622576302293183,
+        "cornet": 9.235930735930737,
+        "crab_(animal)": 0.0,
+        "cube": 0.0,
+        "cup": -1.4878904498828476,
+        "curtain": 1.2257440793347456,
+        "cushion": 0.0688234573173947,
+        "cylinder": 0.0,
+        "cymbal": 0.0,
+        "deer": 0.16291703242377764,
+        "die": 0.0,
+        "dish": 0.0,
+        "dog": 3.936241395331969,
+        "doormat": 0.0,
+        "drawer": -0.2055560194232271,
+        "dress_hat": 0.0,
+        "drone": 0.0,
+        "drum_(musical_instrument)": 0.0,
+        "drumstick": 0.0,
+        "duck": 0.0,
+        "duffel_bag": 0.0,
+        "dustpan": 0.0,
+        "eagle": 0.0,
+        "earphone": 0.22216267640887777,
+        "eggbeater": 0.0,
+        "refrigerator": 0.18507547668262703,
+        "elephant": -0.3256251609895031,
+        "envelope": 0.0,
+        "faucet": 0.6446999151740442,
+        "fish": -0.30402288189824844,
+        "fishing_rod": 0.0,
+        "flag": -0.24319050848762913,
+        "flute_glass": -2.038404699459491,
+        "football_helmet": 0.0,
+        "fork": 14.04348133798996,
+        "frisbee": -0.11044504529737464,
+        "frog": 0.0,
+        "garbage": 0.0,
+        "garbage_truck": 0.0,
+        "giant_panda": 0.0,
+        "gift_wrap": 0.0,
+        "giraffe": 0.0,
+        "goat": 0.6044826280509827,
+        "goose": 0.03558093464412737,
+        "gorilla": 0.0,
+        "grocery_bag": 5.1862977946858635,
+        "guitar": -0.619748817788377,
+        "gun": 0.0,
+        "hairbrush": 0.0,
+        "hammer": 0.0,
+        "hair_dryer": -0.06161294932984873,
+        "handcuff": 0.0,
+        "harmonium": 0.0,
+        "hat": 0.018066523346916052,
+        "helicopter": 0.0,
+        "helmet": 0.0,
+        "heron": 0.0,
+        "hippopotamus": 0.0,
+        "hockey_stick": -1.6579300653400426,
+        "hog": 0.0,
+        "horse": -6.132823203419008,
+        "hose": 0.0,
+        "polar_bear": -34.215185329330914,
+        "icecream": 0.0,
+        "igniter": 0.0,
+        "iron_(for_clothing)": 0.0,
+        "jacket": 0.05016285679717125,
+        "jean": 0.0,
+        "jersey": 0.0,
+        "kayak": 0.18148324280374695,
+        "kettle": 0.0,
+        "kite": -2.0341160553526763,
+        "knife": -0.5037464041919684,
+        "knitting_needle": 0.0,
+        "knob": -0.26233774182421454,
+        "ladle": -2.23003440281148,
+        "lamp": 3.2195576732691187,
+        "lanyard": 0.0,
+        "laptop_computer": 1.394750204937779,
+        "lawn_mower": 0.03615723346666755,
+        "lemon": -3.9265257103382254,
+        "life_buoy": -2.4747107506852757,
+        "lion": -0.022585184925611124,
+        "lizard": 12.47861434185548,
+        "log": -6.737828874387066,
+        "magazine": 0.0,
+        "mallet": 0.0,
+        "marker": 5.114168668942831,
+        "matchbox": 0.7621894144238457,
+        "mattress": 0.0,
+        "measuring_cup": 0.0,
+        "medicine": 0.0,
+        "microphone": 2.037239888018288,
+        "minivan": 0.0,
+        "mirror": 0.2502199981369655,
+        "mixer_(kitchen_tool)": 0.0,
+        "money": 0.0,
+        "monitor_(computer_equipment) computer_monitor": 0.0,
+        "monkey": 2.4709691434131824,
+        "motor_scooter": 0.0,
+        "motorcycle": -0.3270882404321185,
+        "mouse_(computer_equipment)": 4.763783053560129,
+        "musical_instrument": 0.0,
+        "napkin": 0.024906837559814543,
+        "necklace": 0.0,
+        "notebook": 0.0,
+        "notepad": 0.0,
+        "nut": 0.0,
+        "oar": 0.0,
+        "orange_(fruit)": 0.0,
+        "packet": 7.697270899203399,
+        "paddle": -2.1426143176728125,
+        "paintbrush": 0.0,
+        "pan_(for_cooking)": 0.0,
+        "paper_towel": 0.0,
+        "parachute": 0.0,
+        "peeler_(tool_for_fruit_and_vegetables)": 0.0,
+        "pen": -1.7227584496805086,
+        "pencil": -3.111811578359408,
+        "penguin": 0.0,
+        "person": 1.8113421436059056,
+        "piano": 0.0,
+        "pickup_truck": 0.0,
+        "pigeon": 0.0,
+        "pillow": 2.336512601934256,
+        "pistol": 0.0,
+        "pitcher_(vessel_for_liquid)": -0.4203355692674826,
+        "pizza": -1.4487620926276534,
+        "plate": 0.16778313209164253,
+        "pliers": 0.0,
+        "pole": 0.0,
+        "pot": -0.04999822269616416,
+        "potato": 0.0,
+        "rabbit": 0.0,
+        "racket": 0.0,
+        "rag_doll": 0.0,
+        "rat": 0.0,
+        "record_player": 6.128446934329288,
+        "remote_control": 1.434099199750209,
+        "rifle": 0.0,
+        "sandal_(type_of_shoe)": 0.5234317194247508,
+        "sandwich": 5.030803894011441,
+        "saxophone": 11.228011452149381,
+        "scissors": -2.5971961892234674,
+        "scraper": 0.0,
+        "scrubbing_brush": 0.0,
+        "sculpture": 0.0,
+        "shaker": 0.0,
+        "shark": 0.0,
+        "shawl": 0.0,
+        "sheep": -0.5701231434767919,
+        "shirt": 1.734414011649327,
+        "shoe": -1.2657007777117428,
+        "shoulder_bag": 0.0,
+        "skateboard": -8.059911510184634,
+        "ski_pole": -0.13350206575269574,
+        "skirt": -0.1902521085483364,
+        "slipper_(footwear)": 0.0,
+        "spatula": 0.0,
+        "spectacles": -0.07942584382324336,
+        "spider": 0.0,
+        "sponge": 2.0818713450292394,
+        "spoon": 9.916319280312443,
+        "squirrel": 5.656328266396967,
+        "statue_(sculpture)": 0.0,
+        "steering_wheel": 0.0,
+        "step_stool": 0.07186265042957984,
+        "stool": 1.2777452964321974,
+        "straw_(for_drinking)": -1.1849942780058438,
+        "sugar_bowl": 0.0,
+        "sunglasses": 1.3996127886849692,
+        "surfboard": 6.228512014745725,
+        "mop": 0.0,
+        "sweater": 0.0,
+        "sword": 0.0,
+        "army_tank": 0.0,
+        "tape_(sticky_cloth_or_paper)": -1.7137077927438682,
+        "tarp": -35.57034632034631,
+        "teacup": 0.0,
+        "teakettle": 0.0,
+        "teapot": 0.0,
+        "telephone": 0.0,
+        "tennis_racket": 0.09150858937293838,
+        "thermometer": 0.0,
+        "thread": 0.0,
+        "tissue_paper": 0.0,
+        "toast_(food)": 0.0,
+        "toolbox": 0.0,
+        "toothbrush": -0.3051320005674647,
+        "toothpaste": -26.761904761904752,
+        "cover": 0.0,
+        "towel": 0.9582180306783554,
+        "toy": -4.325147503715897,
+        "dirt_bike": 0.0,
+        "trailer_truck": 0.0,
+        "tray": 0.0,
+        "tripod": 9.604166666666666,
+        "trousers": 0.0,
+        "truck": 3.4182375013436257,
+        "turtle": 0.0,
+        "umbrella": -0.9516677208369941,
+        "underwear": 0.0,
+        "vacuum_cleaner": 0.4545102093687472,
+        "volleyball": 0.0,
+        "walking_stick": 0.0,
+        "wallet": 0.0,
+        "walrus": 0.0,
+        "automatic_washer": 0.0,
+        "water_bottle": 1.618464699198741,
+        "water_jug": 0.0,
+        "water_scooter": -3.045813193953137,
+        "water_ski": 0.0,
+        "windshield_wiper": 0.0,
+        "wineglass": -2.906497953816128,
+        "wooden_spoon": 9.174603174603174,
+        "zebra": -0.44201594310540315
+      },
+      "receipt": {
+        "rule": "fused_sumprob",
+        "status": "COMPLETE",
+        "baseline": "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json",
+        "baseline_sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+        "cache": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/track_cache.npz",
+        "cache_sha256": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+        "result": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumprob/tao_track.json",
+        "result_sha256": "f791467f46d6a6074a41128e31e5abd5131d1c427751eed7bd7938f1660e4dd7",
+        "observations": 1529908,
+        "tracks": 324639,
+        "changed_tracks": 38774,
+        "changed_observations": 152612,
+        "modified_fields": [
+          "category_id"
+        ],
+        "second_tcc": false,
+        "aggregation_uses_gt": false,
+        "ann": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/annotations/validation_ours_v1.json",
+        "ann_sha256": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+        "evaluator_files": {
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/eval.py": "8219b9a2858faf0c166bff2fa1d25eb96a96578329916d2e0196f84e5aadbbcc",
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/metrics/teta.py": "47a132d92b2e9c92fd47f9e36140278e7ac263418539b606bf58ceead20d97d4",
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/datasets/tao.py": "c174d9cd3df6962474db588eff7cb3e82736d9a5b387f8653cefa603b9a7a6ab"
+        },
+        "metrics_sha256": "e7b363f10307edd98826697be1e00beef9f32ea95b853334756f0768c64bc140",
+        "counts_sha256": "f3b62da7498c8bd45a643d6bb3272bcb1b6150c36549907a737629bb7de829ef",
+        "aggregate_raw_sha256": "3196f34c08060b68033a6265b0c4cc7d43ff5f94a62861ba0982297f2c4131be",
+        "readout_script_sha256": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9",
+        "summary_sha256": "1966405bd5bd176c4cc09e91f3f1da86c788a76bbec4158193f549d7a926c7a5"
+      }
+    },
+    "fused_sumlog": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 39.300961189414814,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 18.788410303130714,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 28.635010322177575,
+          "ClsPr": 26.630900258402256
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.7742958173984,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 20.207667392645174,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 30.982636382131332,
+          "ClsPr": 28.113344675805184
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 35.77123724930875,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 8.204807435608624,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 11.12842741795098,
+          "ClsPr": 15.576100460054755
+        }
+      },
+      "delta_from_tcc": {
+        "combined": {
+          "TETA": 0.37948976117981204,
+          "LocA": 0.0,
+          "AssocA": 0.0,
+          "ClsA": 1.13846928353939,
+          "LocRe": 0.0,
+          "LocPr": 0.0,
+          "AssocRe": 0.0,
+          "AssocPr": 0.0,
+          "ClsRe": 0.3973965613116093,
+          "ClsPr": 1.654369877734755
+        },
+        "base": {
+          "TETA": 0.2203809105381893,
+          "LocA": 0.0,
+          "AssocA": 0.0,
+          "ClsA": 0.6611427316145786,
+          "LocRe": 0.0,
+          "LocPr": 0.0,
+          "AssocRe": 0.0,
+          "AssocPr": 0.0,
+          "ClsRe": -0.24497755046179748,
+          "ClsPr": 0.6262817535936875
+        },
+        "novel": {
+          "TETA": 1.565987190250027,
+          "LocA": 0.0,
+          "AssocA": 0.0,
+          "ClsA": 4.697961570750092,
+          "LocRe": 0.0,
+          "LocPr": 0.0,
+          "AssocRe": 0.0,
+          "AssocPr": 0.0,
+          "ClsRe": 5.187672080536131,
+          "ClsPr": 9.320969889186735
+        }
+      },
+      "paired_video_bootstrap": {
+        "base": {
+          "ClsA_delta_percentile_95": [
+            -0.19831253056540502,
+            1.3830130790036963
+          ],
+          "TETA_delta_percentile_95": [
+            -0.066104176855135,
+            0.46100435966789877
+          ],
+          "fraction_resamples_positive": 0.927
+        },
+        "novel": {
+          "ClsA_delta_percentile_95": [
+            0.6007998183220122,
+            6.112982665376565
+          ],
+          "TETA_delta_percentile_95": [
+            0.2002666061073374,
+            2.037660888458855
+          ],
+          "fraction_resamples_positive": 0.993
+        },
+        "combined": {
+          "ClsA_delta_percentile_95": [
+            0.12340224814181977,
+            1.72114790076494
+          ],
+          "TETA_delta_percentile_95": [
+            0.04113408271393992,
+            0.5737159669216466
+          ],
+          "fraction_resamples_positive": 0.99
+        }
+      },
+      "influence_analysis": {
+        "base": {
+          "leave_one_video_out_ClsA_delta_range": [
+            0.4335453663214669,
+            0.9174602460227423
+          ],
+          "most_influential_video": "val-LaSOT-surfboard-12",
+          "ClsA_delta_without_that_video": 0.9174602460227423,
+          "benefited_classes": 88,
+          "harmed_classes": 52,
+          "unchanged_classes": 121
+        },
+        "novel": {
+          "leave_one_video_out_ClsA_delta_range": [
+            2.790689815648382,
+            5.180849294541561
+          ],
+          "most_influential_video": "val-LaSOT-gorilla-8",
+          "ClsA_delta_without_that_video": 2.790689815648382,
+          "benefited_classes": 8,
+          "harmed_classes": 2,
+          "unchanged_classes": 25
+        },
+        "combined": {
+          "leave_one_video_out_ClsA_delta_range": [
+            0.9115181956224209,
+            1.3644789837438815
+          ],
+          "most_influential_video": "val-LaSOT-gorilla-8",
+          "ClsA_delta_without_that_video": 0.9115181956224209,
+          "benefited_classes": 96,
+          "harmed_classes": 54,
+          "unchanged_classes": 146
+        }
+      },
+      "raw_loc_assoc_all_arrays_identical": true,
+      "per_class_ClsA_delta": {
+        "aerosol_can": 0.0,
+        "airplane": 6.850644867728633,
+        "armchair": 0.0,
+        "atomizer": 0.0,
+        "ax": 7.414433959556067,
+        "baby_buggy": 10.2484658079998,
+        "backpack": -1.867582605208093,
+        "handbag": 4.057027176665738,
+        "suitcase": 0.3739034043976368,
+        "ball": -5.186821302589806,
+        "balloon": 0.0,
+        "banana": 4.733187480778657,
+        "barbell": 38.482740447957845,
+        "baseball_bat": 0.0,
+        "basket": 20.454516012914006,
+        "basketball": 0.0,
+        "beanie": 0.0,
+        "bear": 0.5668836769987173,
+        "bed": 0.4101886269815864,
+        "bedspread": 0.0,
+        "cow": 0.5293881170923953,
+        "beeper": 0.0,
+        "bell": 0.0,
+        "bicycle": 2.1771823843163673,
+        "binder": 0.0,
+        "binoculars": 0.0,
+        "bird": 1.140319917505872,
+        "birdfeeder": 0.0,
+        "birdcage": 1.5405405405405475,
+        "birdhouse": 5.10912416175573,
+        "black_sheep": -0.6542893794546678,
+        "blanket": 0.20222906332545243,
+        "boat": -2.947513966614146,
+        "book": 5.013529007358521,
+        "booklet": 0.0,
+        "bottle": 7.174815497630782,
+        "bow_(weapon)": 0.0,
+        "bowl": -3.034889724410938,
+        "briefcase": 0.0,
+        "broom": -0.9270164046514324,
+        "bucket": 1.9893067600803036,
+        "bull": 0.0,
+        "bun": 0.0,
+        "buoy": -14.563751608617956,
+        "bus_(vehicle)": -3.281068812340628,
+        "business_card": 9.497474747474755,
+        "cab_(taxi)": 0.880603361947415,
+        "calf": 0.0,
+        "camel": 0.0,
+        "camera": 3.832374845872364,
+        "can": -30.989631299591792,
+        "candle": 11.552583769041505,
+        "canister": 0.0,
+        "canoe": -57.60714521976132,
+        "bottle_cap": 16.758788782294204,
+        "cape": 0.0,
+        "car_(automobile)": -0.05986183683883439,
+        "railcar_(part_of_a_train)": -7.809811217749857,
+        "car_battery": 0.0,
+        "carton": -1.0290384929654208,
+        "cat": 10.486868720059462,
+        "cellular_telephone": -0.915139132643759,
+        "chain_mail": 0.0,
+        "chair": -8.435428181132291,
+        "chicken_(animal)": 0.0,
+        "crisp_(potato_chip)": 0.0,
+        "cigarette": 7.903637351559409,
+        "cigarette_case": 0.0,
+        "clip": 0.0,
+        "clipboard": 0.16421999995854009,
+        "clutch_bag": 0.0,
+        "coat": 0.07274655598086294,
+        "coat_hanger": 0.0,
+        "coffee_table": 0.0,
+        "coin": -23.995541111998676,
+        "pacifier": 1.6620801198169843,
+        "computer_keyboard": 10.444550857156173,
+        "cone": 6.121897384501523,
+        "control": 0.0,
+        "convertible_(automobile)": 0.0,
+        "cooler_(for_food)": 0.1932818954095481,
+        "cornet": -41.049783549783555,
+        "crab_(animal)": 0.0,
+        "cube": 0.0,
+        "cup": 4.89336115330444,
+        "curtain": 17.01852389745538,
+        "cushion": 2.020043502555829,
+        "cylinder": 0.0,
+        "cymbal": 0.0,
+        "deer": 0.16291703242377764,
+        "die": 0.0,
+        "dish": 0.0,
+        "dog": 2.325269118523849,
+        "doormat": 0.0,
+        "drawer": 3.471410681628413,
+        "dress_hat": 0.0,
+        "drone": 45.83368620277574,
+        "drum_(musical_instrument)": 0.0,
+        "drumstick": 0.0,
+        "duck": 0.0,
+        "duffel_bag": 0.0,
+        "dustpan": 0.0,
+        "eagle": 0.0,
+        "earphone": 0.055899231425651674,
+        "eggbeater": 0.0,
+        "refrigerator": 13.700189187346382,
+        "elephant": 1.724664028332569,
+        "envelope": 0.0,
+        "faucet": -2.1833962543811865,
+        "fish": -1.2227884218440241,
+        "fishing_rod": 0.0,
+        "flag": 2.831275584809795,
+        "flute_glass": 0.16218351645422757,
+        "football_helmet": 0.0,
+        "fork": 17.71300943295315,
+        "frisbee": 3.2068448061141965,
+        "frog": 0.0,
+        "garbage": 0.0,
+        "garbage_truck": 0.0,
+        "giant_panda": 0.0,
+        "gift_wrap": 0.0,
+        "giraffe": 0.014353990804067962,
+        "goat": 1.027123513669837,
+        "goose": -0.15478029621276645,
+        "gorilla": 66.75451142855987,
+        "grocery_bag": -2.3328425044133674,
+        "guitar": -0.4757760543090086,
+        "gun": 0.0,
+        "hairbrush": 0.0,
+        "hammer": 0.0,
+        "hair_dryer": -6.677938250693664,
+        "handcuff": 0.0,
+        "harmonium": 0.0,
+        "hat": -0.09249934425893758,
+        "helicopter": 0.0,
+        "helmet": 0.0,
+        "heron": 0.0,
+        "hippopotamus": 0.0,
+        "hockey_stick": -1.48533747274745,
+        "hog": 0.0,
+        "horse": 0.3132870548101181,
+        "hose": 0.0,
+        "polar_bear": -33.99353033528748,
+        "icecream": 0.0,
+        "igniter": 0.0,
+        "iron_(for_clothing)": 0.0,
+        "jacket": 0.14442599085674201,
+        "jean": 0.0,
+        "jersey": 0.0,
+        "kayak": 28.35510891327283,
+        "kettle": 4.166666666666671,
+        "kite": -0.1056368373560801,
+        "knife": -6.15720584729446,
+        "knitting_needle": 0.0,
+        "knob": -0.36414423990729206,
+        "ladle": -5.950469844087138,
+        "lamp": 2.4657386416921305,
+        "lanyard": 0.0,
+        "laptop_computer": -3.133141263996947,
+        "lawn_mower": 0.03615723346666755,
+        "lemon": -2.8206669963095052,
+        "life_buoy": 1.72867086159728,
+        "lion": -5.6506837563916354,
+        "lizard": 19.757960994393965,
+        "log": -14.798887956242048,
+        "magazine": 0.0,
+        "mallet": 0.0,
+        "marker": -5.229175620049649,
+        "matchbox": 5.649420837002742,
+        "mattress": 0.0,
+        "measuring_cup": 0.0,
+        "medicine": 0.0,
+        "microphone": 3.7500991359009817,
+        "minivan": 0.0,
+        "mirror": 3.238631795951867,
+        "mixer_(kitchen_tool)": 0.0,
+        "money": 0.0,
+        "monitor_(computer_equipment) computer_monitor": 4.800494634473509,
+        "monkey": -0.027247956403269755,
+        "motor_scooter": 0.0,
+        "motorcycle": 2.879179744387514,
+        "mouse_(computer_equipment)": 6.289136918566609,
+        "musical_instrument": 0.0,
+        "napkin": -0.07923040422470173,
+        "necklace": 0.0,
+        "notebook": 1.2902177890827247,
+        "notepad": 0.0,
+        "nut": 0.0,
+        "oar": 20.85375183111321,
+        "orange_(fruit)": 0.0,
+        "packet": 16.07704556733393,
+        "paddle": -10.821387069764866,
+        "paintbrush": 0.0,
+        "pan_(for_cooking)": 0.0,
+        "paper_towel": 0.0,
+        "parachute": 0.0,
+        "peeler_(tool_for_fruit_and_vegetables)": 0.0,
+        "pen": -4.053862991902648,
+        "pencil": -5.2602469675811605,
+        "penguin": 0.0,
+        "person": 1.014358893163461,
+        "piano": 0.0,
+        "pickup_truck": 0.0,
+        "pigeon": 1.8061828481595925,
+        "pillow": 0.9479681204563555,
+        "pistol": 0.0,
+        "pitcher_(vessel_for_liquid)": -1.907198805506404,
+        "pizza": 34.71720315279189,
+        "plate": -2.8734840571261593,
+        "pliers": 5.570929070929072,
+        "pole": 0.0,
+        "pot": 2.2271128671291365,
+        "potato": 0.0,
+        "rabbit": 0.0,
+        "racket": 0.0,
+        "rag_doll": 0.0,
+        "rat": 0.0,
+        "record_player": 0.0,
+        "remote_control": 5.422273824136045,
+        "rifle": 0.0,
+        "sandal_(type_of_shoe)": 0.0,
+        "sandwich": 5.591440830290072,
+        "saxophone": 14.356593209366125,
+        "scissors": 4.598141872668208,
+        "scraper": 0.0,
+        "scrubbing_brush": 0.0,
+        "sculpture": 0.0,
+        "shaker": 0.0,
+        "shark": 0.0,
+        "shawl": 5.631876127126762,
+        "sheep": -3.437359694269837,
+        "shirt": 1.4776900505358546,
+        "shoe": -1.0260325791909821,
+        "shoulder_bag": 0.0,
+        "skateboard": 5.8928643327835815,
+        "ski_pole": 0.07486644137830822,
+        "skirt": -0.6409698539186549,
+        "slipper_(footwear)": 18.99848716714743,
+        "spatula": 0.0,
+        "spectacles": 0.14783134851985258,
+        "spider": 0.0,
+        "sponge": 0.0,
+        "spoon": 34.009184210035606,
+        "squirrel": 0.0,
+        "statue_(sculpture)": 0.0,
+        "steering_wheel": 0.0,
+        "step_stool": 0.07186265042957984,
+        "stool": 7.59836167231467,
+        "straw_(for_drinking)": 0.2810768867688669,
+        "sugar_bowl": 0.0,
+        "sunglasses": 1.770082143285535,
+        "surfboard": 16.43956430645001,
+        "mop": 0.0,
+        "sweater": 0.0,
+        "sword": 31.41819665442676,
+        "army_tank": -18.245426996811126,
+        "tape_(sticky_cloth_or_paper)": -24.526859552939342,
+        "tarp": -2.4373862852123693,
+        "teacup": 0.0,
+        "teakettle": 0.0,
+        "teapot": -19.746919850173906,
+        "telephone": 0.0,
+        "tennis_racket": 0.906057202103953,
+        "thermometer": 0.0,
+        "thread": 0.0,
+        "tissue_paper": 0.0,
+        "toast_(food)": 0.0,
+        "toolbox": 0.0,
+        "toothbrush": -4.5984928258027296,
+        "toothpaste": -21.428571428571423,
+        "cover": 0.0,
+        "towel": 0.3275241990127977,
+        "toy": -1.9628949581669417,
+        "dirt_bike": 0.0,
+        "trailer_truck": 0.0,
+        "tray": 0.0,
+        "tripod": 0.0,
+        "trousers": 0.0,
+        "truck": 3.987463600812603,
+        "turtle": 0.0,
+        "umbrella": 9.328815433574306,
+        "underwear": 0.0,
+        "vacuum_cleaner": 11.08512555276006,
+        "volleyball": 0.0,
+        "walking_stick": 0.0,
+        "wallet": 0.0,
+        "walrus": 0.0,
+        "automatic_washer": 0.0,
+        "water_bottle": -2.884971822485136,
+        "water_jug": 0.0,
+        "water_scooter": 26.902410824469655,
+        "water_ski": 0.0,
+        "windshield_wiper": 0.0,
+        "wineglass": 5.052930270194317,
+        "wooden_spoon": 0.0,
+        "zebra": -0.2766048157369738
+      },
+      "receipt": {
+        "rule": "fused_sumlog",
+        "status": "COMPLETE",
+        "baseline": "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json",
+        "baseline_sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+        "cache": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/track_cache.npz",
+        "cache_sha256": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+        "result": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/fused_sumlog/tao_track.json",
+        "result_sha256": "727497d9bba22494714dd2eb25ea10a68b42ab03791f297fd50d1f091e0550ce",
+        "observations": 1529908,
+        "tracks": 324639,
+        "changed_tracks": 50108,
+        "changed_observations": 224861,
+        "modified_fields": [
+          "category_id"
+        ],
+        "second_tcc": false,
+        "aggregation_uses_gt": false,
+        "ann": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/annotations/validation_ours_v1.json",
+        "ann_sha256": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+        "evaluator_files": {
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/eval.py": "8219b9a2858faf0c166bff2fa1d25eb96a96578329916d2e0196f84e5aadbbcc",
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/metrics/teta.py": "47a132d92b2e9c92fd47f9e36140278e7ac263418539b606bf58ceead20d97d4",
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/datasets/tao.py": "c174d9cd3df6962474db588eff7cb3e82736d9a5b387f8653cefa603b9a7a6ab"
+        },
+        "metrics_sha256": "7738a37a198786673aae5f1b4dc2033b2d159e7c263c298d5317e83cd6494d2f",
+        "counts_sha256": "d8f5972136b36b3664e44796a5f5aeaed4b150515a97d7157392fbddee232c36",
+        "aggregate_raw_sha256": "449d6a4996c34c40081276eae9100a977636770bcee0586830cabd95ca114cf6",
+        "readout_script_sha256": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9",
+        "summary_sha256": "d68e4650b0600d05da6883be0bdea35c7ea6dc87165e8e6bdad1179d53a4811d"
+      }
+    },
+    "corrected_mask_tcc": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.83676243980245,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.395814054293666,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 27.706913719029554,
+          "ClsPr": 24.874767730909163
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.433258253553426,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.18455470111032,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 30.385452109096217,
+          "ClsPr": 27.327578183315886
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 34.388607942973785,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 4.056919516603742,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 7.73267029596102,
+          "ClsPr": 6.583809785819009
+        }
+      },
+      "delta_from_tcc": {
+        "combined": {
+          "TETA": -0.0847089884325527,
+          "LocA": 0.0,
+          "AssocA": 0.0,
+          "ClsA": -0.2541269652976581,
+          "LocRe": 0.0,
+          "LocPr": 0.0,
+          "AssocRe": 0.0,
+          "AssocPr": 0.0,
+          "ClsRe": -0.5307000418364112,
+          "ClsPr": -0.1017626497583386
+        },
+        "base": {
+          "TETA": -0.12065665330678144,
+          "LocA": 0.0,
+          "AssocA": 0.0,
+          "ClsA": -0.3619699599202768,
+          "LocRe": 0.0,
+          "LocPr": 0.0,
+          "AssocRe": 0.0,
+          "AssocPr": 0.0,
+          "ClsRe": -0.8421618234969124,
+          "ClsPr": -0.15948473889561043
+        },
+        "novel": {
+          "TETA": 0.1833578839150647,
+          "LocA": 0.0,
+          "AssocA": 0.0,
+          "ClsA": 0.5500736517452096,
+          "LocRe": 0.0,
+          "LocPr": 0.0,
+          "AssocRe": 0.0,
+          "AssocPr": 0.0,
+          "ClsRe": 1.7919149585461698,
+          "ClsPr": 0.32867921495098784
+        }
+      },
+      "paired_video_bootstrap": {
+        "base": {
+          "ClsA_delta_percentile_95": [
+            -0.6793912473927006,
+            0.2844818871876265
+          ],
+          "TETA_delta_percentile_95": [
+            -0.2264637491309002,
+            0.09482729572920884
+          ],
+          "fraction_resamples_positive": 0.1945
+        },
+        "novel": {
+          "ClsA_delta_percentile_95": [
+            0.01691347015463871,
+            1.9017064208356458
+          ],
+          "TETA_delta_percentile_95": [
+            0.00563782338487957,
+            0.6339021402785486
+          ],
+          "fraction_resamples_positive": 0.9795
+        },
+        "combined": {
+          "ClsA_delta_percentile_95": [
+            -0.5451498753857342,
+            0.3464155674100615
+          ],
+          "TETA_delta_percentile_95": [
+            -0.18171662512857809,
+            0.11547185580335384
+          ],
+          "fraction_resamples_positive": 0.312
+        }
+      },
+      "influence_analysis": {
+        "base": {
+          "leave_one_video_out_ClsA_delta_range": [
+            -0.4493790366562801,
+            -0.20565098736325876
+          ],
+          "most_influential_video": "val-LaSOT-bear-16",
+          "ClsA_delta_without_that_video": -0.20565098736325876,
+          "benefited_classes": 56,
+          "harmed_classes": 68,
+          "unchanged_classes": 137
+        },
+        "novel": {
+          "leave_one_video_out_ClsA_delta_range": [
+            0.29633322913123444,
+            0.6665425570511746
+          ],
+          "most_influential_video": "val-AVA-G0gDuIVKiXg_scene_25_65010-66644",
+          "ClsA_delta_without_that_video": 0.29633322913123444,
+          "benefited_classes": 5,
+          "harmed_classes": 0,
+          "unchanged_classes": 30
+        },
+        "combined": {
+          "leave_one_video_out_ClsA_delta_range": [
+            -0.3312005093115094,
+            -0.11629165503624395
+          ],
+          "most_influential_video": "val-LaSOT-bear-16",
+          "ClsA_delta_without_that_video": -0.11629165503624395,
+          "benefited_classes": 61,
+          "harmed_classes": 68,
+          "unchanged_classes": 167
+        }
+      },
+      "raw_loc_assoc_all_arrays_identical": true,
+      "per_class_ClsA_delta": {
+        "aerosol_can": 0.0,
+        "airplane": -0.6406531860490787,
+        "armchair": 0.0,
+        "atomizer": 0.0,
+        "ax": 2.950253386251401,
+        "baby_buggy": 0.0,
+        "backpack": -1.1183762222750038,
+        "handbag": -0.018447623876319597,
+        "suitcase": 0.006854737758038354,
+        "ball": -2.7071399357826778,
+        "balloon": 0.0,
+        "banana": -3.8100813511254614,
+        "barbell": 0.0,
+        "baseball_bat": 0.0,
+        "basket": -8.048399052980603,
+        "basketball": 0.0,
+        "beanie": 0.0,
+        "bear": 0.0,
+        "bed": 1.2720629288845817,
+        "bedspread": 0.0,
+        "cow": -0.5107431820503976,
+        "beeper": 0.0,
+        "bell": 0.0,
+        "bicycle": -1.3694694242373942,
+        "binder": 0.0,
+        "binoculars": 0.0,
+        "bird": -0.23162690960066,
+        "birdfeeder": 0.0,
+        "birdcage": 0.0,
+        "birdhouse": 0.0,
+        "black_sheep": -0.6542893794546678,
+        "blanket": 4.218363917962897,
+        "boat": -1.5932899828377316,
+        "book": -1.706804361253127,
+        "booklet": 0.0,
+        "bottle": 2.9388084620477386,
+        "bow_(weapon)": 0.0,
+        "bowl": 5.641002188040439,
+        "briefcase": 0.0,
+        "broom": 0.8035492912397473,
+        "bucket": -4.75261591239191,
+        "bull": 0.0,
+        "bun": -0.08824565952799013,
+        "buoy": 1.6616340316030715,
+        "bus_(vehicle)": -0.17405181583656315,
+        "business_card": -11.138422035480843,
+        "cab_(taxi)": -0.008959561662962301,
+        "calf": 0.0,
+        "camel": 0.0,
+        "camera": -1.5552448750922636,
+        "can": -2.163084858914921,
+        "candle": -1.8185109649904252,
+        "canister": 0.0,
+        "canoe": 0.0,
+        "bottle_cap": 2.095745901379761,
+        "cape": 0.0,
+        "car_(automobile)": -0.33874949180874125,
+        "railcar_(part_of_a_train)": -19.113200791601187,
+        "car_battery": 0.0,
+        "carton": 5.371930331619897,
+        "cat": 0.5105366506164088,
+        "cellular_telephone": 5.201836002023569,
+        "chain_mail": 0.0,
+        "chair": -3.778709329135303,
+        "chicken_(animal)": 0.0,
+        "crisp_(potato_chip)": 0.0,
+        "cigarette": 0.060560962176559485,
+        "cigarette_case": 0.0,
+        "clip": 0.0,
+        "clipboard": 0.006747638326585648,
+        "clutch_bag": 0.0,
+        "coat": -0.007958454909097079,
+        "coat_hanger": 0.0,
+        "coffee_table": 0.0,
+        "coin": -0.09359897119451688,
+        "pacifier": 4.994871881451239,
+        "computer_keyboard": -0.267084475950746,
+        "cone": 0.0,
+        "control": 0.0,
+        "convertible_(automobile)": 0.0,
+        "cooler_(for_food)": 0.0,
+        "cornet": -41.049783549783555,
+        "crab_(animal)": 0.0,
+        "cube": 0.0,
+        "cup": -0.8142264074559407,
+        "curtain": -0.4876211137612003,
+        "cushion": 0.07936799205139788,
+        "cylinder": 0.0,
+        "cymbal": 0.0,
+        "deer": 0.0,
+        "die": 0.0,
+        "dish": 0.0,
+        "dog": 1.6713498501023452,
+        "doormat": 0.0,
+        "drawer": 0.36323494235239195,
+        "dress_hat": 0.0,
+        "drone": 0.0,
+        "drum_(musical_instrument)": 0.0,
+        "drumstick": 0.0,
+        "duck": 0.0,
+        "duffel_bag": 0.0,
+        "dustpan": 0.0,
+        "eagle": 0.0,
+        "earphone": -1.8042285545994603,
+        "eggbeater": 0.0,
+        "refrigerator": -0.7757732624975517,
+        "elephant": -1.916678840570114,
+        "envelope": 0.0,
+        "faucet": 0.05785819482431265,
+        "fish": 0.6151934841102431,
+        "fishing_rod": 0.0,
+        "flag": 0.11942051181470958,
+        "flute_glass": 0.0,
+        "football_helmet": 0.0,
+        "fork": -1.1294624846014187,
+        "frisbee": 0.0036041116620502134,
+        "frog": 0.0,
+        "garbage": 0.0,
+        "garbage_truck": 0.0,
+        "giant_panda": 0.0,
+        "gift_wrap": 0.0,
+        "giraffe": -0.7077773943476302,
+        "goat": 2.8954796295089267,
+        "goose": 0.03877281207603467,
+        "gorilla": 0.0,
+        "grocery_bag": 0.5102365606794166,
+        "guitar": -3.468558438794176,
+        "gun": 0.0,
+        "hairbrush": 0.0,
+        "hammer": 0.0,
+        "hair_dryer": 3.3909553345474173,
+        "handcuff": 8.880914791489127,
+        "harmonium": 0.0,
+        "hat": -0.7006133266049861,
+        "helicopter": 0.0,
+        "helmet": 0.0,
+        "heron": 0.0,
+        "hippopotamus": 0.0,
+        "hockey_stick": 2.2212181223397973,
+        "hog": -0.022619681877826703,
+        "horse": -0.8653951953234156,
+        "hose": 0.0,
+        "polar_bear": -34.24367129999037,
+        "icecream": 0.0,
+        "igniter": 0.0,
+        "iron_(for_clothing)": 0.0,
+        "jacket": 0.01800696332200724,
+        "jean": 0.0,
+        "jersey": 0.0,
+        "kayak": 15.66612254659271,
+        "kettle": 0.0,
+        "kite": 0.05501273278905927,
+        "knife": 2.394143563851312,
+        "knitting_needle": 0.0,
+        "knob": -0.1645657715965818,
+        "ladle": 7.590535735877502,
+        "lamp": 0.16867267918365414,
+        "lanyard": 0.0,
+        "laptop_computer": 6.390958702465525,
+        "lawn_mower": 0.0,
+        "lemon": 13.881489813301133,
+        "life_buoy": 0.14112903225805695,
+        "lion": 0.0,
+        "lizard": 0.0,
+        "log": -1.8405164090241648,
+        "magazine": 0.0,
+        "mallet": 0.0,
+        "marker": 8.345017004112698,
+        "matchbox": 0.7385248170124861,
+        "mattress": 0.0,
+        "measuring_cup": 0.0,
+        "medicine": 0.0,
+        "microphone": 3.4033845162378,
+        "minivan": 0.0,
+        "mirror": -0.11755817463557072,
+        "mixer_(kitchen_tool)": 0.0,
+        "money": 0.0,
+        "monitor_(computer_equipment) computer_monitor": 0.09424603174602453,
+        "monkey": -0.027247956403269755,
+        "motor_scooter": 0.0,
+        "motorcycle": -0.019929498156550096,
+        "mouse_(computer_equipment)": 0.9621090494570801,
+        "musical_instrument": 0.0,
+        "napkin": 0.1688180993145646,
+        "necklace": 0.0,
+        "notebook": -1.2393343398426104,
+        "notepad": 0.0,
+        "nut": 0.0,
+        "oar": 0.0,
+        "orange_(fruit)": 0.0,
+        "packet": -12.090763762053227,
+        "paddle": -0.09516973913263271,
+        "paintbrush": 0.0,
+        "pan_(for_cooking)": 0.0,
+        "paper_towel": 0.0,
+        "parachute": 0.0,
+        "peeler_(tool_for_fruit_and_vegetables)": 0.0,
+        "pen": -1.932264651449156,
+        "pencil": 22.166419983711577,
+        "penguin": 0.0,
+        "person": 0.7253643779200019,
+        "piano": 0.0,
+        "pickup_truck": -0.0039506172197398826,
+        "pigeon": 0.0,
+        "pillow": 7.712031018043742,
+        "pistol": 0.0,
+        "pitcher_(vessel_for_liquid)": -3.9397827080072503,
+        "pizza": 0.0,
+        "plate": 0.05915072476113181,
+        "pliers": 0.0,
+        "pole": 0.0,
+        "pot": 2.9817965104115025,
+        "potato": 0.0,
+        "rabbit": 0.0,
+        "racket": 0.0,
+        "rag_doll": 0.0,
+        "rat": 0.0,
+        "record_player": 5.93602170910291,
+        "remote_control": 3.164048465369211,
+        "rifle": 0.0,
+        "sandal_(type_of_shoe)": 0.5826611032141198,
+        "sandwich": 0.0,
+        "saxophone": 0.0,
+        "scissors": -1.500556546773879,
+        "scraper": 0.0,
+        "scrubbing_brush": 0.0,
+        "sculpture": 0.0,
+        "shaker": 0.0,
+        "shark": 0.0,
+        "shawl": 0.0,
+        "sheep": 3.8570160605182977,
+        "shirt": -0.015104587258504054,
+        "shoe": -0.1629816045815673,
+        "shoulder_bag": 0.0,
+        "skateboard": -2.5023800518186903,
+        "ski_pole": -0.16314492663441982,
+        "skirt": 0.2508147662320326,
+        "slipper_(footwear)": 0.0,
+        "spatula": 0.0,
+        "spectacles": -0.017399040642908536,
+        "spider": 0.0,
+        "sponge": 0.0,
+        "spoon": 2.241655965366043,
+        "squirrel": 0.0,
+        "statue_(sculpture)": 0.0,
+        "steering_wheel": 0.0,
+        "step_stool": 0.07186265042957984,
+        "stool": -0.177426477063376,
+        "straw_(for_drinking)": -1.1100982757604712,
+        "sugar_bowl": 0.0,
+        "sunglasses": -0.6516108207122748,
+        "surfboard": 2.0407716967729925,
+        "mop": 0.0,
+        "sweater": 0.0,
+        "sword": 0.0,
+        "army_tank": 4.461666693989521,
+        "tape_(sticky_cloth_or_paper)": -1.3017433233474058,
+        "tarp": -38.79324576149639,
+        "teacup": 0.0,
+        "teakettle": 0.0,
+        "teapot": -19.746919850173906,
+        "telephone": 0.0,
+        "tennis_racket": -1.007475481942598,
+        "thermometer": 0.0,
+        "thread": 0.0,
+        "tissue_paper": 0.0,
+        "toast_(food)": 0.0,
+        "toolbox": 0.0,
+        "toothbrush": -0.81864039935195,
+        "toothpaste": -10.499999999999993,
+        "cover": 0.0,
+        "towel": 0.20000451307904132,
+        "toy": -2.5775215301165026,
+        "dirt_bike": 0.0,
+        "trailer_truck": 0.0,
+        "tray": 0.0,
+        "tripod": 10.526361805316556,
+        "trousers": 0.0,
+        "truck": 2.4808697939407907,
+        "turtle": 0.0,
+        "umbrella": -3.5270123578801957,
+        "underwear": 0.0,
+        "vacuum_cleaner": 0.0,
+        "volleyball": 0.0,
+        "walking_stick": 0.0,
+        "wallet": 0.0,
+        "walrus": 0.0,
+        "automatic_washer": 0.0,
+        "water_bottle": 1.1734487563925757,
+        "water_jug": 0.0,
+        "water_scooter": -2.7155722358345926,
+        "water_ski": 0.0,
+        "windshield_wiper": 0.0,
+        "wineglass": 0.0,
+        "wooden_spoon": 0.0,
+        "zebra": 0.0
+      },
+      "receipt": {
+        "rule": "corrected_mask_tcc",
+        "status": "COMPLETE",
+        "baseline": "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json",
+        "baseline_sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+        "cache": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/track_cache.npz",
+        "cache_sha256": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+        "result": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_tcc/tao_track.json",
+        "result_sha256": "e6cfb10bccbcc9a77140a4a29cbc37e298c900e9462aa7dbb903b0da5e20551b",
+        "observations": 1529908,
+        "tracks": 324639,
+        "changed_tracks": 64760,
+        "changed_observations": 251001,
+        "modified_fields": [
+          "category_id"
+        ],
+        "second_tcc": false,
+        "aggregation_uses_gt": false,
+        "ann": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/annotations/validation_ours_v1.json",
+        "ann_sha256": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+        "evaluator_files": {
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/eval.py": "8219b9a2858faf0c166bff2fa1d25eb96a96578329916d2e0196f84e5aadbbcc",
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/metrics/teta.py": "47a132d92b2e9c92fd47f9e36140278e7ac263418539b606bf58ceead20d97d4",
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/datasets/tao.py": "c174d9cd3df6962474db588eff7cb3e82736d9a5b387f8653cefa603b9a7a6ab"
+        },
+        "metrics_sha256": "eb1c186e0604c3c7cf33e3cf41d708713b5c659beddf710ceac470cfe33a0894",
+        "counts_sha256": "e27097a021fdd0055d217cfb986cc7bd268e04f2529b6f7e83459725e79c9754",
+        "aggregate_raw_sha256": "d20c2a922bc384a7ba23f6e886a8298265e915e54e4b370e1ab1999564e98bef",
+        "readout_script_sha256": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9",
+        "summary_sha256": "136743abe238ff1aebdb90fba6ccd9db12080e8a1463223689c610728e1c2372"
+      }
+    },
+    "corrected_mask_sumprob": {
+      "split": {
+        "combined": {
+          "n_classes": 296,
+          "TETA": 38.94089200743847,
+          "LocA": 57.27530465128391,
+          "AssocA": 41.83916861382982,
+          "ClsA": 17.70820275720168,
+          "LocRe": 59.73337888250619,
+          "LocPr": 79.65758899966852,
+          "AssocRe": 46.76477544694931,
+          "AssocPr": 67.1313431605742,
+          "ClsRe": 28.43610208157701,
+          "ClsPr": 26.019807883676812
+        },
+        "base": {
+          "n_classes": 261,
+          "TETA": 39.50852905094477,
+          "LocA": 57.15495890000262,
+          "AssocA": 41.96026115954742,
+          "ClsA": 19.41036709328431,
+          "LocRe": 59.654620938336805,
+          "LocPr": 79.62129104570528,
+          "AssocRe": 46.8247016121858,
+          "AssocPr": 67.32891904628137,
+          "ClsRe": 31.069754482616805,
+          "ClsPr": 28.294055320801437
+        },
+        "novel": {
+          "n_classes": 35,
+          "TETA": 34.707941483005804,
+          "LocA": 58.17274011083888,
+          "AssocA": 40.93616420147874,
+          "ClsA": 5.014920136699802,
+          "LocRe": 60.320688123312294,
+          "LocPr": 79.92826802779427,
+          "AssocRe": 46.31789747190006,
+          "AssocPr": 65.65799155573018,
+          "ClsRe": 8.796579890965937,
+          "ClsPr": 9.060419852547463
+        }
+      },
+      "delta_from_tcc": {
+        "combined": {
+          "TETA": 0.0194205792034694,
+          "LocA": 0.0,
+          "AssocA": 0.0,
+          "ClsA": 0.05826173761035491,
+          "LocRe": 0.0,
+          "LocPr": 0.0,
+          "AssocRe": 0.0,
+          "AssocPr": 0.0,
+          "ClsRe": 0.19848832071104283,
+          "ClsPr": 1.0432775030093104
+        },
+        "base": {
+          "TETA": -0.04538585591543409,
+          "LocA": 0.0,
+          "AssocA": 0.0,
+          "ClsA": -0.1361575677462845,
+          "LocRe": 0.0,
+          "LocPr": 0.0,
+          "AssocRe": 0.0,
+          "AssocPr": 0.0,
+          "ClsRe": -0.15785944997632484,
+          "ClsPr": 0.8069923985899408
+        },
+        "novel": {
+          "TETA": 0.5026914239470841,
+          "LocA": 0.0,
+          "AssocA": 0.0,
+          "ClsA": 1.5080742718412696,
+          "LocRe": 0.0,
+          "LocPr": 0.0,
+          "AssocRe": 0.0,
+          "AssocPr": 0.0,
+          "ClsRe": 2.855824553551087,
+          "ClsPr": 2.8052892816794417
+        }
+      },
+      "paired_video_bootstrap": {
+        "base": {
+          "ClsA_delta_percentile_95": [
+            -0.600603695145621,
+            0.710737465286591
+          ],
+          "TETA_delta_percentile_95": [
+            -0.20020123171520698,
+            0.23691248842886367
+          ],
+          "fraction_resamples_positive": 0.572
+        },
+        "novel": {
+          "ClsA_delta_percentile_95": [
+            0.15940451238631986,
+            2.5726995667064507
+          ],
+          "TETA_delta_percentile_95": [
+            0.05313483746210662,
+            0.8575665222354836
+          ],
+          "fraction_resamples_positive": 0.989
+        },
+        "combined": {
+          "ClsA_delta_percentile_95": [
+            -0.41052554864249613,
+            0.8040501610619856
+          ],
+          "TETA_delta_percentile_95": [
+            -0.1368418495474987,
+            0.2680167203539952
+          ],
+          "fraction_resamples_positive": 0.729
+        }
+      },
+      "influence_analysis": {
+        "base": {
+          "leave_one_video_out_ClsA_delta_range": [
+            -0.3802773987185987,
+            0.20731310356059882
+          ],
+          "most_influential_video": "val-LaSOT-surfboard-12",
+          "ClsA_delta_without_that_video": 0.20731310356059882,
+          "benefited_classes": 81,
+          "harmed_classes": 53,
+          "unchanged_classes": 127
+        },
+        "novel": {
+          "leave_one_video_out_ClsA_delta_range": [
+            0.900250218926123,
+            1.6555441228071592
+          ],
+          "most_influential_video": "val-HACS-Archery_v_BuyfIer3bwk_scene_0_798-3588",
+          "ClsA_delta_without_that_video": 0.900250218926123,
+          "benefited_classes": 7,
+          "harmed_classes": 1,
+          "unchanged_classes": 27
+        },
+        "combined": {
+          "leave_one_video_out_ClsA_delta_range": [
+            -0.1569925728078036,
+            0.36111932278297537
+          ],
+          "most_influential_video": "val-LaSOT-surfboard-12",
+          "ClsA_delta_without_that_video": 0.36111932278297537,
+          "benefited_classes": 88,
+          "harmed_classes": 54,
+          "unchanged_classes": 154
+        }
+      },
+      "raw_loc_assoc_all_arrays_identical": true,
+      "per_class_ClsA_delta": {
+        "aerosol_can": 0.0,
+        "airplane": 0.6496797461585118,
+        "armchair": 0.0,
+        "atomizer": 0.0,
+        "ax": -1.2179872008596155,
+        "baby_buggy": 0.15246449456975597,
+        "backpack": 0.3407239403627704,
+        "handbag": 8.90748776549891,
+        "suitcase": 0.11003680119878378,
+        "ball": -2.4218721948470545,
+        "balloon": 0.0,
+        "banana": -2.4003132143432566,
+        "barbell": 0.0,
+        "baseball_bat": 0.0,
+        "basket": 1.2395246518548717,
+        "basketball": 0.0,
+        "beanie": 0.0,
+        "bear": 0.08051763446057336,
+        "bed": 2.113750495996028,
+        "bedspread": 0.0,
+        "cow": -0.6241969239328782,
+        "beeper": 0.0,
+        "bell": 0.0,
+        "bicycle": -0.04469012433769137,
+        "binder": 0.0,
+        "binoculars": 0.0,
+        "bird": 0.18099142748734387,
+        "birdfeeder": 0.0,
+        "birdcage": 1.5405405405405475,
+        "birdhouse": 5.10912416175573,
+        "black_sheep": -0.6542893794546678,
+        "blanket": 0.6661036567775902,
+        "boat": 1.8541407511202124,
+        "book": -0.13359880988688388,
+        "booklet": 0.0,
+        "bottle": 7.369770356160778,
+        "bow_(weapon)": 21.280414438502675,
+        "bowl": 8.891427619365494,
+        "briefcase": 0.0,
+        "broom": -0.28690688691294497,
+        "bucket": 0.876929499902765,
+        "bull": 0.0,
+        "bun": 0.0,
+        "buoy": -2.5370639022812895,
+        "bus_(vehicle)": -0.6980861284125837,
+        "business_card": 9.497474747474755,
+        "cab_(taxi)": 0.10512383891244781,
+        "calf": 0.0,
+        "camel": 0.0,
+        "camera": 5.53906713509406,
+        "can": -31.264877847922023,
+        "candle": 0.1341779540260335,
+        "canister": 0.0,
+        "canoe": -77.29435910666561,
+        "bottle_cap": -0.7867574830311916,
+        "cape": 0.0,
+        "car_(automobile)": -0.41214777080570286,
+        "railcar_(part_of_a_train)": 10.141705136722845,
+        "car_battery": 0.0,
+        "carton": 4.410171022355049,
+        "cat": -1.1679017047238887,
+        "cellular_telephone": 4.08316947644029,
+        "chain_mail": 0.0,
+        "chair": 2.1770240425312934,
+        "chicken_(animal)": 0.0,
+        "crisp_(potato_chip)": 0.0,
+        "cigarette": 1.8551794927574097,
+        "cigarette_case": 0.0,
+        "clip": 0.0,
+        "clipboard": 0.16421999995854009,
+        "clutch_bag": 0.0,
+        "coat": -0.2618728354860757,
+        "coat_hanger": 0.0,
+        "coffee_table": 0.0,
+        "coin": 0.0,
+        "pacifier": 22.97589526761046,
+        "computer_keyboard": 1.9250257949100131,
+        "cone": 0.8761305231414269,
+        "control": 0.0,
+        "convertible_(automobile)": 0.0,
+        "cooler_(for_food)": 1.3227799129989748,
+        "cornet": 9.235930735930737,
+        "crab_(animal)": 0.0,
+        "cube": 0.0,
+        "cup": -1.9353501592299196,
+        "curtain": 0.5021856539755518,
+        "cushion": 0.21958018035026727,
+        "cylinder": 0.0,
+        "cymbal": 0.0,
+        "deer": 0.0,
+        "die": 0.0,
+        "dish": 0.0,
+        "dog": 1.6581368606930553,
+        "doormat": 0.0,
+        "drawer": -0.9988688824113581,
+        "dress_hat": 0.0,
+        "drone": 0.0,
+        "drum_(musical_instrument)": 0.0,
+        "drumstick": 0.0,
+        "duck": 0.0,
+        "duffel_bag": 0.0,
+        "dustpan": 0.0,
+        "eagle": 0.0,
+        "earphone": -1.8041416390995206,
+        "eggbeater": 0.0,
+        "refrigerator": -0.7164766731171355,
+        "elephant": -0.3309133893137215,
+        "envelope": 0.0,
+        "faucet": 0.5019641462700548,
+        "fish": 0.2588339297102227,
+        "fishing_rod": 0.0,
+        "flag": 0.45188371121387405,
+        "flute_glass": -2.038404699459491,
+        "football_helmet": 0.0,
+        "fork": -0.8173418711732694,
+        "frisbee": 2.534429470001054,
+        "frog": 0.0,
+        "garbage": 0.0,
+        "garbage_truck": 0.0,
+        "giant_panda": 0.0,
+        "gift_wrap": 0.0,
+        "giraffe": 0.0,
+        "goat": 5.516234965786271,
+        "goose": 0.6895893214252982,
+        "gorilla": 0.0,
+        "grocery_bag": 0.9883306909707734,
+        "guitar": -5.967474417990822,
+        "gun": 0.0,
+        "hairbrush": 0.0,
+        "hammer": 0.0,
+        "hair_dryer": 3.409680522583752,
+        "handcuff": 11.498074876486282,
+        "harmonium": 0.0,
+        "hat": 0.04541681959454591,
+        "helicopter": 0.0,
+        "helmet": 0.0,
+        "heron": 0.0,
+        "hippopotamus": 0.0,
+        "hockey_stick": 1.314190633095075,
+        "hog": 0.0,
+        "horse": -6.058621143068848,
+        "hose": 0.0,
+        "polar_bear": -34.215185329330914,
+        "icecream": 0.0,
+        "igniter": 0.0,
+        "iron_(for_clothing)": 0.0,
+        "jacket": 0.10587996207991424,
+        "jean": 0.0,
+        "jersey": 0.0,
+        "kayak": 15.617204999497844,
+        "kettle": 0.0,
+        "kite": -2.697864387640088,
+        "knife": 2.7912219671197924,
+        "knitting_needle": 0.0,
+        "knob": 0.5855241081775651,
+        "ladle": -2.23003440281148,
+        "lamp": -0.6617841126312989,
+        "lanyard": 0.0,
+        "laptop_computer": 8.242160752387008,
+        "lawn_mower": 0.03615723346666755,
+        "lemon": 7.57155556556631,
+        "life_buoy": -3.8757689475100605,
+        "lion": 0.0,
+        "lizard": 12.47861434185548,
+        "log": -3.925618728286839,
+        "magazine": 0.0,
+        "mallet": 0.0,
+        "marker": 9.460255538654962,
+        "matchbox": 0.3086330884827708,
+        "mattress": 0.0,
+        "measuring_cup": 0.0,
+        "medicine": 0.0,
+        "microphone": 2.1352256022348364,
+        "minivan": 0.0,
+        "mirror": 0.13712622913723926,
+        "mixer_(kitchen_tool)": 0.0,
+        "money": 0.0,
+        "monitor_(computer_equipment) computer_monitor": -1.5754710509707905,
+        "monkey": 2.4709691434131824,
+        "motor_scooter": 0.0,
+        "motorcycle": -1.0379656637555144,
+        "mouse_(computer_equipment)": 4.701542689437744,
+        "musical_instrument": 0.0,
+        "napkin": 0.14422349813594526,
+        "necklace": 0.0,
+        "notebook": 0.0,
+        "notepad": 0.0,
+        "nut": 0.0,
+        "oar": 0.0,
+        "orange_(fruit)": 0.0,
+        "packet": -16.114700394308088,
+        "paddle": -0.5117125033424159,
+        "paintbrush": 0.0,
+        "pan_(for_cooking)": 0.0,
+        "paper_towel": 0.0,
+        "parachute": 0.0,
+        "peeler_(tool_for_fruit_and_vegetables)": 0.0,
+        "pen": -1.9280819126996356,
+        "pencil": 22.025290951453513,
+        "penguin": 0.0,
+        "person": 2.4405341094445916,
+        "piano": 0.0,
+        "pickup_truck": -0.0039506172197398826,
+        "pigeon": 0.0,
+        "pillow": 6.898679954333321,
+        "pistol": 0.0,
+        "pitcher_(vessel_for_liquid)": -3.0586959391465847,
+        "pizza": -1.1846246794240471,
+        "plate": -0.5689077707201449,
+        "pliers": 0.0,
+        "pole": 0.0,
+        "pot": 0.4579462987544112,
+        "potato": 0.0,
+        "rabbit": 0.0,
+        "racket": 0.0,
+        "rag_doll": 0.0,
+        "rat": 0.0,
+        "record_player": 5.809204524721766,
+        "remote_control": 4.040033407458758,
+        "rifle": 0.0,
+        "sandal_(type_of_shoe)": 0.4564125272181162,
+        "sandwich": 0.0,
+        "saxophone": 13.893175664914798,
+        "scissors": -2.721564655638396,
+        "scraper": 0.0,
+        "scrubbing_brush": 0.0,
+        "sculpture": 0.0,
+        "shaker": 0.0,
+        "shark": 0.0,
+        "shawl": 0.0,
+        "sheep": 3.8602497905581927,
+        "shirt": 1.4321892531570866,
+        "shoe": -1.3602130537622372,
+        "shoulder_bag": 0.0,
+        "skateboard": -8.114095949692363,
+        "ski_pole": -0.43738915866735617,
+        "skirt": 0.25608656699337584,
+        "slipper_(footwear)": 0.0,
+        "spatula": 0.0,
+        "spectacles": -0.005285412262156397,
+        "spider": 0.0,
+        "sponge": 2.0818713450292394,
+        "spoon": 9.845634756502918,
+        "squirrel": 6.218447864331259,
+        "statue_(sculpture)": 0.0,
+        "steering_wheel": 0.0,
+        "step_stool": 0.07186265042957984,
+        "stool": 1.2187305722484538,
+        "straw_(for_drinking)": -1.9868659129329247,
+        "sugar_bowl": 0.0,
+        "sunglasses": 0.9589445618133468,
+        "surfboard": 8.398757164750066,
+        "mop": 0.0,
+        "sweater": 0.0,
+        "sword": 0.0,
+        "army_tank": 5.669940780355766,
+        "tape_(sticky_cloth_or_paper)": -2.586971472547976,
+        "tarp": -53.5166755135296,
+        "teacup": 0.0,
+        "teakettle": 0.0,
+        "teapot": 0.0,
+        "telephone": 0.0,
+        "tennis_racket": 1.554959225380381,
+        "thermometer": 0.0,
+        "thread": 0.0,
+        "tissue_paper": 0.0,
+        "toast_(food)": 0.0,
+        "toolbox": 0.0,
+        "toothbrush": -0.6117423416198466,
+        "toothpaste": -40.34757219045144,
+        "cover": 0.0,
+        "towel": 1.2951033724303835,
+        "toy": -4.577902978418766,
+        "dirt_bike": 0.0,
+        "trailer_truck": 0.0,
+        "tray": 0.0,
+        "tripod": 7.673478568215411,
+        "trousers": 0.0,
+        "truck": 5.818357282880207,
+        "turtle": 0.0,
+        "umbrella": 0.8189165306587114,
+        "underwear": 0.0,
+        "vacuum_cleaner": 0.4545102093687472,
+        "volleyball": 0.0,
+        "walking_stick": 0.0,
+        "wallet": 0.0,
+        "walrus": 0.0,
+        "automatic_washer": 0.0,
+        "water_bottle": 1.5909067249228492,
+        "water_jug": 0.0,
+        "water_scooter": -5.478229430674084,
+        "water_ski": 0.0,
+        "windshield_wiper": 0.0,
+        "wineglass": -0.6994782227747365,
+        "wooden_spoon": 9.174603174603174,
+        "zebra": -0.44201594310540315
+      },
+      "receipt": {
+        "rule": "corrected_mask_sumprob",
+        "status": "COMPLETE",
+        "baseline": "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json",
+        "baseline_sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+        "cache": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/track_cache.npz",
+        "cache_sha256": "fd4263ae5089cde1a42bbe4e044bb1af099a31e3373e7ab7d0b3b2be5b9fa02f",
+        "result": "/home/chenhc/ov/OVMOT_RESEARCH/results/tces_audit_20261023/readouts/corrected_mask_sumprob/tao_track.json",
+        "result_sha256": "9566dc8def2d5c76f918509400f261d2853b27a91284df45919accf241743691",
+        "observations": 1529908,
+        "tracks": 324639,
+        "changed_tracks": 82464,
+        "changed_observations": 316548,
+        "modified_fields": [
+          "category_id"
+        ],
+        "second_tcc": false,
+        "aggregation_uses_gt": false,
+        "ann": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/annotations/validation_ours_v1.json",
+        "ann_sha256": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d",
+        "evaluator_files": {
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/eval.py": "8219b9a2858faf0c166bff2fa1d25eb96a96578329916d2e0196f84e5aadbbcc",
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/metrics/teta.py": "47a132d92b2e9c92fd47f9e36140278e7ac263418539b606bf58ceead20d97d4",
+          "/home/chenhc/.conda/envs/ovtrack_ovmot/lib/python3.8/site-packages/teta/datasets/tao.py": "c174d9cd3df6962474db588eff7cb3e82736d9a5b387f8653cefa603b9a7a6ab"
+        },
+        "metrics_sha256": "275415eba381d268a9d2c0becafc4b92fb16abe9bea96ffd011b99da5a5c6859",
+        "counts_sha256": "983cc4a6e135a0a172bcd822d1d591d6671050d43c4579e5dd725e97ac83cd41",
+        "aggregate_raw_sha256": "f713b1b7401f01d4d931b26ae78473962e3a449dac5801a59370dfbd7c302093",
+        "readout_script_sha256": "561b2251df20c9191ee223579ff07a267fd769c2bcba20d804be7b90caea5cc9",
+        "summary_sha256": "bf2fbb5e1d4a05c0ecd6cdac4ff6603968441606b05fc427b1e5936fcf1d6ce6"
+      }
+    }
+  },
+  "per_class_support": {
+    "aerosol_can": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "airplane": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "armchair": {
+      "GT_videos": 5,
+      "localized_classification_videos": 5
+    },
+    "atomizer": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "ax": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "baby_buggy": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "backpack": {
+      "GT_videos": 14,
+      "localized_classification_videos": 13
+    },
+    "handbag": {
+      "GT_videos": 17,
+      "localized_classification_videos": 16
+    },
+    "suitcase": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "ball": {
+      "GT_videos": 24,
+      "localized_classification_videos": 22
+    },
+    "balloon": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "banana": {
+      "GT_videos": 2,
+      "localized_classification_videos": 1
+    },
+    "barbell": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "baseball_bat": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "basket": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "basketball": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "beanie": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "bear": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "bed": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "bedspread": {
+      "GT_videos": 2,
+      "localized_classification_videos": 1
+    },
+    "cow": {
+      "GT_videos": 8,
+      "localized_classification_videos": 8
+    },
+    "beeper": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "bell": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "bicycle": {
+      "GT_videos": 17,
+      "localized_classification_videos": 17
+    },
+    "binder": {
+      "GT_videos": 4,
+      "localized_classification_videos": 4
+    },
+    "binoculars": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "bird": {
+      "GT_videos": 7,
+      "localized_classification_videos": 7
+    },
+    "birdfeeder": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "birdcage": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "birdhouse": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "black_sheep": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "blanket": {
+      "GT_videos": 19,
+      "localized_classification_videos": 19
+    },
+    "boat": {
+      "GT_videos": 6,
+      "localized_classification_videos": 6
+    },
+    "book": {
+      "GT_videos": 26,
+      "localized_classification_videos": 26
+    },
+    "booklet": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "bottle": {
+      "GT_videos": 42,
+      "localized_classification_videos": 42
+    },
+    "bow_(weapon)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "bowl": {
+      "GT_videos": 11,
+      "localized_classification_videos": 11
+    },
+    "briefcase": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "broom": {
+      "GT_videos": 17,
+      "localized_classification_videos": 16
+    },
+    "bucket": {
+      "GT_videos": 6,
+      "localized_classification_videos": 6
+    },
+    "bull": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "bun": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "buoy": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "bus_(vehicle)": {
+      "GT_videos": 13,
+      "localized_classification_videos": 12
+    },
+    "business_card": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "cab_(taxi)": {
+      "GT_videos": 19,
+      "localized_classification_videos": 19
+    },
+    "calf": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "camel": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "camera": {
+      "GT_videos": 15,
+      "localized_classification_videos": 13
+    },
+    "can": {
+      "GT_videos": 5,
+      "localized_classification_videos": 5
+    },
+    "candle": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "canister": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "canoe": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "bottle_cap": {
+      "GT_videos": 7,
+      "localized_classification_videos": 7
+    },
+    "cape": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "car_(automobile)": {
+      "GT_videos": 210,
+      "localized_classification_videos": 208
+    },
+    "railcar_(part_of_a_train)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "car_battery": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "carton": {
+      "GT_videos": 18,
+      "localized_classification_videos": 18
+    },
+    "cat": {
+      "GT_videos": 11,
+      "localized_classification_videos": 11
+    },
+    "cellular_telephone": {
+      "GT_videos": 64,
+      "localized_classification_videos": 59
+    },
+    "chain_mail": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "chair": {
+      "GT_videos": 9,
+      "localized_classification_videos": 9
+    },
+    "chicken_(animal)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "crisp_(potato_chip)": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "cigarette": {
+      "GT_videos": 11,
+      "localized_classification_videos": 9
+    },
+    "cigarette_case": {
+      "GT_videos": 1,
+      "localized_classification_videos": 0
+    },
+    "clip": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "clipboard": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "clutch_bag": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "coat": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "coat_hanger": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "coffee_table": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "coin": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "pacifier": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "computer_keyboard": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "cone": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "control": {
+      "GT_videos": 2,
+      "localized_classification_videos": 0
+    },
+    "convertible_(automobile)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "cooler_(for_food)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "cornet": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "crab_(animal)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "cube": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "cup": {
+      "GT_videos": 45,
+      "localized_classification_videos": 44
+    },
+    "curtain": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "cushion": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "cylinder": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "cymbal": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "deer": {
+      "GT_videos": 5,
+      "localized_classification_videos": 5
+    },
+    "die": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "dish": {
+      "GT_videos": 4,
+      "localized_classification_videos": 4
+    },
+    "dog": {
+      "GT_videos": 37,
+      "localized_classification_videos": 37
+    },
+    "doormat": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "drawer": {
+      "GT_videos": 6,
+      "localized_classification_videos": 6
+    },
+    "dress_hat": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "drone": {
+      "GT_videos": 4,
+      "localized_classification_videos": 4
+    },
+    "drum_(musical_instrument)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "drumstick": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "duck": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "duffel_bag": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "dustpan": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "eagle": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "earphone": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "eggbeater": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "refrigerator": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "elephant": {
+      "GT_videos": 4,
+      "localized_classification_videos": 4
+    },
+    "envelope": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "faucet": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "fish": {
+      "GT_videos": 17,
+      "localized_classification_videos": 17
+    },
+    "fishing_rod": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "flag": {
+      "GT_videos": 10,
+      "localized_classification_videos": 9
+    },
+    "flute_glass": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "football_helmet": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "fork": {
+      "GT_videos": 5,
+      "localized_classification_videos": 5
+    },
+    "frisbee": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "frog": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "garbage": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "garbage_truck": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "giant_panda": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "gift_wrap": {
+      "GT_videos": 3,
+      "localized_classification_videos": 2
+    },
+    "giraffe": {
+      "GT_videos": 8,
+      "localized_classification_videos": 8
+    },
+    "goat": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "goose": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "gorilla": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "grocery_bag": {
+      "GT_videos": 30,
+      "localized_classification_videos": 30
+    },
+    "guitar": {
+      "GT_videos": 6,
+      "localized_classification_videos": 6
+    },
+    "gun": {
+      "GT_videos": 7,
+      "localized_classification_videos": 6
+    },
+    "hairbrush": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "hammer": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "hair_dryer": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "handcuff": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "harmonium": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "hat": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "helicopter": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "helmet": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "heron": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "hippopotamus": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "hockey_stick": {
+      "GT_videos": 5,
+      "localized_classification_videos": 5
+    },
+    "hog": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "horse": {
+      "GT_videos": 16,
+      "localized_classification_videos": 16
+    },
+    "hose": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "polar_bear": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "icecream": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "igniter": {
+      "GT_videos": 4,
+      "localized_classification_videos": 4
+    },
+    "iron_(for_clothing)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "jacket": {
+      "GT_videos": 8,
+      "localized_classification_videos": 8
+    },
+    "jean": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "jersey": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "kayak": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "kettle": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "kite": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "knife": {
+      "GT_videos": 5,
+      "localized_classification_videos": 5
+    },
+    "knitting_needle": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "knob": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "ladle": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "lamp": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "lanyard": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "laptop_computer": {
+      "GT_videos": 10,
+      "localized_classification_videos": 10
+    },
+    "lawn_mower": {
+      "GT_videos": 6,
+      "localized_classification_videos": 6
+    },
+    "lemon": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "life_buoy": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "lion": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "lizard": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "log": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "magazine": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "mallet": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "marker": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "matchbox": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "mattress": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "measuring_cup": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "medicine": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "microphone": {
+      "GT_videos": 8,
+      "localized_classification_videos": 8
+    },
+    "minivan": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "mirror": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "mixer_(kitchen_tool)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "money": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "monitor_(computer_equipment) computer_monitor": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "monkey": {
+      "GT_videos": 7,
+      "localized_classification_videos": 7
+    },
+    "motor_scooter": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "motorcycle": {
+      "GT_videos": 10,
+      "localized_classification_videos": 10
+    },
+    "mouse_(computer_equipment)": {
+      "GT_videos": 4,
+      "localized_classification_videos": 4
+    },
+    "musical_instrument": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "napkin": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "necklace": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "notebook": {
+      "GT_videos": 10,
+      "localized_classification_videos": 10
+    },
+    "notepad": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "nut": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "oar": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "orange_(fruit)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 0
+    },
+    "packet": {
+      "GT_videos": 12,
+      "localized_classification_videos": 12
+    },
+    "paddle": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "paintbrush": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "pan_(for_cooking)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "paper_towel": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "parachute": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "peeler_(tool_for_fruit_and_vegetables)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "pen": {
+      "GT_videos": 12,
+      "localized_classification_videos": 11
+    },
+    "pencil": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "penguin": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "person": {
+      "GT_videos": 826,
+      "localized_classification_videos": 806
+    },
+    "piano": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "pickup_truck": {
+      "GT_videos": 24,
+      "localized_classification_videos": 24
+    },
+    "pigeon": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "pillow": {
+      "GT_videos": 21,
+      "localized_classification_videos": 20
+    },
+    "pistol": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "pitcher_(vessel_for_liquid)": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "pizza": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "plate": {
+      "GT_videos": 11,
+      "localized_classification_videos": 11
+    },
+    "pliers": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "pole": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "pot": {
+      "GT_videos": 5,
+      "localized_classification_videos": 5
+    },
+    "potato": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "rabbit": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "racket": {
+      "GT_videos": 11,
+      "localized_classification_videos": 11
+    },
+    "rag_doll": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "rat": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "record_player": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "remote_control": {
+      "GT_videos": 9,
+      "localized_classification_videos": 9
+    },
+    "rifle": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "sandal_(type_of_shoe)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "sandwich": {
+      "GT_videos": 10,
+      "localized_classification_videos": 9
+    },
+    "saxophone": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "scissors": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "scraper": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "scrubbing_brush": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "sculpture": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "shaker": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "shark": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "shawl": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "sheep": {
+      "GT_videos": 8,
+      "localized_classification_videos": 8
+    },
+    "shirt": {
+      "GT_videos": 6,
+      "localized_classification_videos": 6
+    },
+    "shoe": {
+      "GT_videos": 6,
+      "localized_classification_videos": 6
+    },
+    "shoulder_bag": {
+      "GT_videos": 4,
+      "localized_classification_videos": 4
+    },
+    "skateboard": {
+      "GT_videos": 8,
+      "localized_classification_videos": 8
+    },
+    "ski_pole": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "skirt": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "slipper_(footwear)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "spatula": {
+      "GT_videos": 4,
+      "localized_classification_videos": 4
+    },
+    "spectacles": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "spider": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "sponge": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "spoon": {
+      "GT_videos": 6,
+      "localized_classification_videos": 6
+    },
+    "squirrel": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "statue_(sculpture)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "steering_wheel": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "step_stool": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "stool": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "straw_(for_drinking)": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "sugar_bowl": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "sunglasses": {
+      "GT_videos": 3,
+      "localized_classification_videos": 3
+    },
+    "surfboard": {
+      "GT_videos": 6,
+      "localized_classification_videos": 6
+    },
+    "mop": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "sweater": {
+      "GT_videos": 4,
+      "localized_classification_videos": 4
+    },
+    "sword": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "army_tank": {
+      "GT_videos": 8,
+      "localized_classification_videos": 8
+    },
+    "tape_(sticky_cloth_or_paper)": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "tarp": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "teacup": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "teakettle": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "teapot": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "telephone": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "tennis_racket": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "thermometer": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "thread": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "tissue_paper": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "toast_(food)": {
+      "GT_videos": 3,
+      "localized_classification_videos": 2
+    },
+    "toolbox": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "toothbrush": {
+      "GT_videos": 4,
+      "localized_classification_videos": 4
+    },
+    "toothpaste": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "cover": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "towel": {
+      "GT_videos": 43,
+      "localized_classification_videos": 42
+    },
+    "toy": {
+      "GT_videos": 14,
+      "localized_classification_videos": 13
+    },
+    "dirt_bike": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "trailer_truck": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "tray": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "tripod": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "trousers": {
+      "GT_videos": 4,
+      "localized_classification_videos": 4
+    },
+    "truck": {
+      "GT_videos": 51,
+      "localized_classification_videos": 51
+    },
+    "turtle": {
+      "GT_videos": 5,
+      "localized_classification_videos": 5
+    },
+    "umbrella": {
+      "GT_videos": 5,
+      "localized_classification_videos": 5
+    },
+    "underwear": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "vacuum_cleaner": {
+      "GT_videos": 6,
+      "localized_classification_videos": 6
+    },
+    "volleyball": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "walking_stick": {
+      "GT_videos": 2,
+      "localized_classification_videos": 1
+    },
+    "wallet": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "walrus": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "automatic_washer": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "water_bottle": {
+      "GT_videos": 7,
+      "localized_classification_videos": 6
+    },
+    "water_jug": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "water_scooter": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "water_ski": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "windshield_wiper": {
+      "GT_videos": 1,
+      "localized_classification_videos": 1
+    },
+    "wineglass": {
+      "GT_videos": 6,
+      "localized_classification_videos": 6
+    },
+    "wooden_spoon": {
+      "GT_videos": 2,
+      "localized_classification_videos": 2
+    },
+    "zebra": {
+      "GT_videos": 7,
+      "localized_classification_videos": 7
+    }
+  },
+  "novel_classes_with_only_one_GT_video": 26,
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261023,
+    "unit": "video, paired",
+    "class_universe": "fixed 261 base / 35 novel",
+    "empty_resample_category": "absent classes contribute zero delta; unlike rerunning TAO class selection on resampled data",
+    "limitation": "26/35 novel classes occur in one GT video; about 10 novel classes are absent per ordinary video resample. Their deltas shrink toward zero. This interval cannot establish across-video class generalization or serve as a significance gate.",
+    "scope": "exploratory empirical video-composition perturbation interval; deterministic per-class deltas and support are primary evidence"
+  },
+  "run_id": "1c8ffa976ed8",
+  "script_sha256": "a53c6fe1bafffd43f2687564ecaa658161d89b7909b67884ed69afd6b6ff8703",
+  "annotation_sha256": "559811dd8166922c537e71457fecc0faf9ad0acc5522cafca7954273c0e2a67d"
+}
