@@ -37,6 +37,7 @@ FILES = [
     'tmp_analysis/scene_translation_donorout_independent_preflight_20261024.json',
     'tmp_analysis/audit_scene_translation_donorout_launch_live_20261024.py',
     'tmp_analysis/scene_translation_donorout_launch_live_audit_20261024.json',
+    'tmp_analysis/network_spacetime_next_information_audit_20261024.md',
 ]
 FILES += ['tmp_analysis/' + pattern % i for i in (1, 2, 3) for pattern in (
     'cached_endpoint_scene_motion_synthetic_round%d_20261024_v2.json',

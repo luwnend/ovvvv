@@ -8,8 +8,8 @@
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/项目进度.md",
       "destination": "report/项目进度.md",
-      "bytes": 21844,
-      "sha256": "46b7c408d1ba0f3d177f6cebe5667153a1c4c6a082d4d50e0b110d826d079b14"
+      "bytes": 22472,
+      "sha256": "661441e50c98a928a047f90615aeb162da59e0f539b35d9cc51b40c4c05919b1"
     },
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_特征与时空改进_20261024.md",
@@ -20,8 +20,8 @@
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_外部运动预测诊断_20261024.md",
       "destination": "report/COVTrack_外部运动预测诊断_20261024.md",
-      "bytes": 5359,
-      "sha256": "257ab3e26981bdb024b8168b43d3d82e757e2b2fed9f604140d185cb5e981ef6"
+      "bytes": 5748,
+      "sha256": "b2ac8d557873688d7fda7bfe1d19a98afaff2a8e6a89cebc6c32a892723e3427"
     },
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_handoff_20261024.md",
@@ -38,8 +38,8 @@
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/sync_scene_translation_stage_20261024.py",
       "destination": "tmp_analysis/sync_scene_translation_stage_20261024.py",
-      "bytes": 5569,
-      "sha256": "967a9b18f1036ab05497da94b3a5eed11389307900788adf112939dcad31a780"
+      "bytes": 5642,
+      "sha256": "2330204aba93f29b81bc807e46c1d5bcf607e164de1814b3118f7572e7d77d97"
     },
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_endpoint_scene_motion_20261024.py",
@@ -172,6 +172,12 @@
       "destination": "tmp_analysis/scene_translation_donorout_launch_live_audit_20261024.json",
       "bytes": 12923,
       "sha256": "67798aa5976855226c219db77eae7a1e5a9f3f36a3c0ace601e0e1dfcfd68b38"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/network_spacetime_next_information_audit_20261024.md",
+      "destination": "tmp_analysis/network_spacetime_next_information_audit_20261024.md",
+      "bytes": 7782,
+      "sha256": "199b771851d8584623f49824316e4459afe45c8cd055250d6bfc7fa73310b123"
     },
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_endpoint_scene_motion_synthetic_round1_20261024_v2.json",
