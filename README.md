@@ -10,7 +10,8 @@ COVTrack 上的开放词汇多目标跟踪研究：先核验机制和完整验�
 - [强质量控制](report/COVTrack_full质量控制_20261023.md)：nested source-CV主模型fit/tune Brier=0.147018/0.136580，独立审计通过；普通控制，不是新方法TETA收益。
 - [fit身份混入支持](report/COVTrack_fit身份混入支持_20261023.md)：560,371条固定fit边中819条已知不同身份，涉及135源组；大量unknown保持未知。真实执行与独立全查通过，尚不构成训练条件。
 - [特征与时空改进](report/COVTrack_特征与时空改进_20261024.md)：五种外观记忆对照及相对时空模块已加入。TAO train固定fit部分12源组、697帧的回放与1,210,939完整候选诊断独立通过；memory首要F1与released均0.824266。391个条件query中CV替代外观修4/破63，不支持直接加运动权重；尚无方法收益。
-- [当前后台续接](tmp_analysis/fit_lag_identity_support_handoff_20261024.md)：完整FIT固定lag `{1,4}` 跨源支持诊断已于2026-10-24 01:04后台启动，之后自动独立全查；55,352,164候选已封存，尚未完成，不要重复启动。之后再决定appearance adapter × geometry输入2×2，目前未训练。前一阶段[特征续接](tmp_analysis/feature_spacetime_handoff_20261024.md)与[full溯源](tmp_analysis/full_stage_handoff_20261023.md)保留，身份净化oracle暂缓。
+- [当前阶段续接](tmp_analysis/fit_lag_identity_support_handoff_20261024.md)：完整FIT固定lag `{1,4}` 的55,352,164候选与独立全量复算已完成、双方实际exit0；341源组/403视频。同预测类别CV-covered的共同1,331query上raw外观错16→99，长间隔困难值得处理，但CV直接替代仍破坏更多。必要支持门通过，尚无训练或新方法收益。[轻量完整支持](evidence/fit_lag_identity_support_20261024_v1/support_brief.json)与[完成回执](evidence/fit_lag_identity_support_20261024_v1/completion_receipt.json)。
+- [身份特征与几何分离对照](tmp_analysis/identity_spacetime_followup_recommendation_20261024.md)：独立source-OOF、identity adapter × geometry及强控制建议，未训练；[动态外观候选](tmp_analysis/causal_appearance_transport_candidate_20261024.md)：已加入无训练角速度外推与低秩正交算子，三轮合成通过，真实数据收益与新颖性未建立。前一阶段[特征续接](tmp_analysis/feature_spacetime_handoff_20261024.md)与[full溯源](tmp_analysis/full_stage_handoff_20261023.md)保留。
 - [方法调研笔记](report/OVMOT_方法调研笔记.md)。
 
 冻结对照：发布 COVTrack R50 / ctao_public.pth / 官方完整 TAO validation / A 参数 .37 / 80 / 50 / .4。

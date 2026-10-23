@@ -1,0 +1,282 @@
+{
+  "stage": "fit_lag_identity_support_20261024",
+  "phase": "complete",
+  "phase_is_completion": true,
+  "source_root": "/home/chenhc/ov/OVMOT_RESEARCH",
+  "files": [
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/sync_fit_lag_support_stage_20261024.py",
+      "destination": "tmp_analysis/sync_fit_lag_support_stage_20261024.py",
+      "bytes": 6507,
+      "sha256": "0c68572d46fa8eb05399b3b68a29580980affe150656219ac428ce0226b93ee5"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_factorial_design_20261024.md",
+      "destination": "tmp_analysis/identity_spacetime_factorial_design_20261024.md",
+      "bytes": 6831,
+      "sha256": "22557c159ad562439852bf054204c2cccfdde0be544e50b379504198af07b907"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_protocol_20261024.json",
+      "destination": "tmp_analysis/fit_lag_identity_support_protocol_20261024.json",
+      "bytes": 7253,
+      "sha256": "dd84da8fd028af36c223f42a30d19f9f23725eb790e60aaa668700c80a0806ad"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_fit_lag_identity_support_20261024.py",
+      "destination": "tmp_analysis/audit_fit_lag_identity_support_20261024.py",
+      "bytes": 44420,
+      "sha256": "9beb8faf932d13f417d491ddd8f853de001d17a414eac0d59d016b0ffcf3af3b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_synthetic_round1_20261024_v3.json",
+      "destination": "tmp_analysis/fit_lag_identity_support_synthetic_round1_20261024_v3.json",
+      "bytes": 622,
+      "sha256": "57430a4701b3eb710e12770075a8460eedce0139a6c958724c395d93eaa08113"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_synthetic_round2_20261024_v3.json",
+      "destination": "tmp_analysis/fit_lag_identity_support_synthetic_round2_20261024_v3.json",
+      "bytes": 625,
+      "sha256": "baa64472edeed12fc8f9a84e5a0e1bda8fe2b327aaa300f1a2cc8ad1b2906c92"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_synthetic_round3_20261024_v3.json",
+      "destination": "tmp_analysis/fit_lag_identity_support_synthetic_round3_20261024_v3.json",
+      "bytes": 682,
+      "sha256": "26563c3418a339e27623d10ce7bb72d84d61dcc7867e38ff0eb7eb2a154d7998"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_independent_preflight_20261024.json",
+      "destination": "tmp_analysis/fit_lag_identity_support_independent_preflight_20261024.json",
+      "bytes": 2174,
+      "sha256": "0344310cdf2ca904ac00cb64dd250db4a0b1b71f7f94904fb56f38d94ed36b0d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_fit_lag_identity_support_implementation_20261024.py",
+      "destination": "tmp_analysis/audit_fit_lag_identity_support_implementation_20261024.py",
+      "bytes": 10626,
+      "sha256": "3cdb3a36fe58363ca14ed2dc06c71651f279a23ec78137f030d097b95eb8eb2b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/verify_fit_lag_identity_support_output_20261024.py",
+      "destination": "tmp_analysis/verify_fit_lag_identity_support_output_20261024.py",
+      "bytes": 42979,
+      "sha256": "74a5c59c957439411acdb7139822c8d83c583584ab07e9e21957e731e648d3ce"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_output_verifier_synthetic_20261024.json",
+      "destination": "tmp_analysis/fit_lag_identity_support_output_verifier_synthetic_20261024.json",
+      "bytes": 1892,
+      "sha256": "7724f0651c671580e08848217d4f512674366a48b388f30f0b79de207e7dc7a1"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_fit_lag_support_background_20261024.py",
+      "destination": "tmp_analysis/run_fit_lag_support_background_20261024.py",
+      "bytes": 28497,
+      "sha256": "68818258f50e0d937d00611af20171e17d02fc2386b281095c400edd41a8eae8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_support_background_synthetic_20261024_v2.json",
+      "destination": "tmp_analysis/fit_lag_support_background_synthetic_20261024_v2.json",
+      "bytes": 1472,
+      "sha256": "ccc407ad73934072d11d10c7efae47477b3756236b2c81e4a673c778de713d1f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_git_publication_20261024.json",
+      "destination": "tmp_analysis/feature_spacetime_git_publication_20261024.json",
+      "bytes": 903,
+      "sha256": "f76c15f7d60cdb1bd8ba636f3be002bc7891264cbda355cb8ae5bf981f94fb94"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_handoff_20261024.md",
+      "destination": "tmp_analysis/feature_spacetime_handoff_20261024.md",
+      "bytes": 5947,
+      "sha256": "5f041236515c7d712a194a6fbe1971ad49286f9ae05f5b0ac260770e2737a0bd"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/fit_lag_identity_support_handoff_20261024.md",
+      "destination": "tmp_analysis/fit_lag_identity_support_handoff_20261024.md",
+      "bytes": 8789,
+      "sha256": "eae475e927553ea8a292dfde5ef5e7f581d604cbaaf49dced8e4fafdfee71297"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/finalize_fit_lag_support_stage_20261024.py",
+      "destination": "tmp_analysis/finalize_fit_lag_support_stage_20261024.py",
+      "bytes": 18785,
+      "sha256": "f71027fa2b8cf5444c5eb11b896495f4b53c9f93d44f59e263dd12d0c15b1a8e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_followup_recommendation_20261024.md",
+      "destination": "tmp_analysis/identity_spacetime_followup_recommendation_20261024.md",
+      "bytes": 15738,
+      "sha256": "23a1361129af172e201e10c0fefa82cf3e76c78ce640d824329652785f40f173"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_candidate_20261024.md",
+      "destination": "tmp_analysis/causal_appearance_transport_candidate_20261024.md",
+      "bytes": 15814,
+      "sha256": "74a7f07e258805908f2161f890b49ecc566fbd0518e8e01f27144829406a4bb7"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport.py",
+      "destination": "tmp_analysis/causal_appearance_transport.py",
+      "bytes": 6604,
+      "sha256": "8b534c5f133880165e3e46abbd93e49584ebf8e20bec9c58b46ab425fa8f5924"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/check_causal_appearance_transport_20261024.py",
+      "destination": "tmp_analysis/check_causal_appearance_transport_20261024.py",
+      "bytes": 7887,
+      "sha256": "e72c156c9f6e02d7bdfdad71dbaf4d37763305909688a6e38048e82c9fcf421b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_synthetic_round1_20261024.json",
+      "destination": "tmp_analysis/causal_appearance_transport_synthetic_round1_20261024.json",
+      "bytes": 640,
+      "sha256": "9f035f9f8c802d6de0a8ef9e3c35c6a7bef93c04d112f1f9e49a3b386e6b4917"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_synthetic_round2_20261024.json",
+      "destination": "tmp_analysis/causal_appearance_transport_synthetic_round2_20261024.json",
+      "bytes": 593,
+      "sha256": "8dd4b35843cdbe4165f5439954a01e2a837feeafffbe83f28a2a29fe8dad7952"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_synthetic_round3_20261024.json",
+      "destination": "tmp_analysis/causal_appearance_transport_synthetic_round3_20261024.json",
+      "bytes": 632,
+      "sha256": "05af8271545562b8221479ac07cb0a33466ec876c09de265cc00201d281c21b3"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_causal_appearance_transport_independent_20261024.py",
+      "destination": "tmp_analysis/audit_causal_appearance_transport_independent_20261024.py",
+      "bytes": 10073,
+      "sha256": "3d22f1e2f642bf0845f51d8f56f584b2b5744fd33648de716bca7f2d88f4434f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_independent_synthetic_20261024.json",
+      "destination": "tmp_analysis/causal_appearance_transport_independent_synthetic_20261024.json",
+      "bytes": 2373,
+      "sha256": "6f5000ab974130cba931135ebfaedfac0d14669ef1dc746ad6d962fce13b6dc9"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/causal_appearance_transport_independent_execution_20261024.json",
+      "destination": "tmp_analysis/causal_appearance_transport_independent_execution_20261024.json",
+      "bytes": 1401,
+      "sha256": "8fdd9162bd2d0bc43ff4f8926d4c7b480a6df026c202794d17beeea798a5a04d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/项目进度.md",
+      "destination": "report/项目进度.md",
+      "bytes": 17906,
+      "sha256": "40c2290b08de1fb38407646472060a57d674e28cc4a8b173b0164408fe1b2ffd"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_特征与时空改进_20261024.md",
+      "destination": "report/COVTrack_特征与时空改进_20261024.md",
+      "bytes": 18062,
+      "sha256": "7108158a91d495b8db53059d3435f3330a345a9b85c453484a21da6707d567c6"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/producer_execution_receipt.json",
+      "destination": "evidence/fit_lag_identity_support_20261024_v1/producer_execution_receipt.json",
+      "bytes": 4694,
+      "sha256": "a2cd29b2bd8b69ac58a32607cd1371a08228bc91bf9229405e1438d89fab220c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/independent_output_audit.json",
+      "destination": "evidence/fit_lag_identity_support_20261024_v1/independent_output_audit.json",
+      "bytes": 57642,
+      "sha256": "99e0d3467529f23c85926591799ae624dfa0802c8d0a597c675b8c89968c6606"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/support_brief.json",
+      "destination": "evidence/fit_lag_identity_support_20261024_v1/support_brief.json",
+      "bytes": 1033840,
+      "sha256": "25b191940d57c4307f4dc1c4566f3e05f1bacb43c14d16d03ce459a93b2f1803"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_20261024_v1/completion_receipt.json",
+      "destination": "evidence/fit_lag_identity_support_20261024_v1/completion_receipt.json",
+      "bytes": 23989,
+      "sha256": "5e70740d4940f2a4a7cbf4e94c538b152f277826834ebeb8a58bd70d494f14b8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/launch_spec.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/launch_spec.json",
+      "bytes": 6732,
+      "sha256": "61b7952367407caa8d3e9061154bfaa19f62ac976c0f99b93c33123c4cd9d049"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/launch_receipt.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/launch_receipt.json",
+      "bytes": 1678,
+      "sha256": "a46cd54318f1226a143f11f3e83bb478e7251b56e101b44bf920eab9b611f36f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/supervisor_ready.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/supervisor_ready.json",
+      "bytes": 5260,
+      "sha256": "040229408f2a5792c9904ed5ca82cf3380d0c3aa29283991b1ece4c59a6ec721"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/supervisor_process.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/supervisor_process.json",
+      "bytes": 693,
+      "sha256": "e5caa39ad5853e7631bf5444105edaf15a3ac95a77e5a77e8a1aff2070732c39"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/producer_process.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/producer_process.json",
+      "bytes": 765,
+      "sha256": "2f351c489435fef29342bff60118cce6f8f3c8af677a395f1c803918c83f22f1"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/producer_exit.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/producer_exit.json",
+      "bytes": 4694,
+      "sha256": "a2cd29b2bd8b69ac58a32607cd1371a08228bc91bf9229405e1438d89fab220c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/verifier_process.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/verifier_process.json",
+      "bytes": 941,
+      "sha256": "fb9309106860b81bb60d532ea85b775eaf134c2c00724370015196826e0ce3bc"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/verifier_exit.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/verifier_exit.json",
+      "bytes": 4872,
+      "sha256": "c2fd125a5a1095fe6c71f7fe984b6209753983ece31f8cb805495554a7d1474d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/execution_receipt.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/execution_receipt.json",
+      "bytes": 11446,
+      "sha256": "03d709170041fa7fad8bcdbecc5aab17378fe5ca463a17954523740de81f3d24"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/protected_before.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/protected_before.json",
+      "bytes": 1502,
+      "sha256": "daa53c8aa3d528098fd3e01304402be3eda8c4fb0af292670ea2db6bbba9879f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_lag_identity_support_execution_20261024_v1/protected_after.json",
+      "destination": "evidence/fit_lag_identity_support_execution_20261024_v1/protected_after.json",
+      "bytes": 1501,
+      "sha256": "0f4720e795c80e6ce7b680e3d528de31803368c35ce4f3214b1ae26c7292232c"
+    }
+  ],
+  "excludes": [
+    "NPZ",
+    "NPY scores",
+    "JSONL",
+    "SQLite",
+    "full summary",
+    "checkpoints",
+    "logs",
+    "datasets"
+  ]
+}

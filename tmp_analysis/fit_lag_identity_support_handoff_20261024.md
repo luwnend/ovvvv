@@ -2,11 +2,11 @@
 
 ## 当前状态
 
-**真实后台任务已启动，尚未完成。** 2026-10-24 01:04:00 Asia/Shanghai（UTC 2026-10-23 17:04:00）root启动命令实际exit0。supervisor PID305992、producer PID305994的start ticks/boot ID/cmdline均核实一致，ready状态`READY_PINNED_FIT_LAG_SUPPORT_PRODUCER`。完成producer后自动接fresh独立全输出审计；不要另起或重跑。
+**全FIT真实计算、fresh独立全查与最终哈希复核均已完成；整体研究继续。** 2026-10-24 01:04:00启动，01:11:34 Asia/Shanghai结束。producer192.726秒、独立审计258.325秒；detached supervisor对自有producer305994/verifier307134的`wait()`实际记录两个exit0。执行状态`PASS_FIT_LAG_SUPPORT_EXECUTION_AND_INDEPENDENT_AUDIT`，7保护与全部pin未变。不要重跑旧任务或把启动时process.state当当前活着。
 
-01:06:12现场检查：806个score shard已生成，全部55,352,164候选全局封存，seal SHA `d24932ab0885bd6b902374532770726cf5fcca1f24fbe9ff9b239c7c538a20a3`；producer仍运行、没有actualexit或audit完成。`progress_receipt.json`是此历史时刻快照；恢复时先查最新status，勿据它猜当前仍在生成。
+完成入口：`results/fit_lag_identity_support_20261024_v1/completion_receipt.json`，状态`PASS_FIT_LAG_IDENTITY_SUPPORT_AND_INDEPENDENT_OUTPUT_AUDIT`，SHA `5e70740d4940f2a4a7cbf4e94c538b152f277826834ebeb8a58bd70d494f14b8`。轻量`support_brief.json`1,033,840bytes，SHA `25b191940d57c4307f4dc1c4566f3e05f1bacb43c14d16d03ce459a93b2f1803`，包含全部341源组与8个union cells；full summary/SQLite/全局seal留本地。独立audit SHA `99e0d3467529f23c85926591799ae624dfa0802c8d0a597c675b8c89968c6606`，summary SHA `9764e2a6f35e4e0a5ce3ab319d15ca4642afda5383289710a5e9dd66e48974c1`，seal SHA `d24932ab0885bd6b902374532770726cf5fcca1f24fbe9ff9b239c7c538a20a3`。`progress_receipt.json`仍是01:06历史快照，不当当前状态。
 
-上一特征阶段代码与文档已推送GitHub commit `8263c3bb7703c9d00609c9f6975f03d2875c2e94`，push实际exit0、remote `refs/heads/main`相同，工作副本clean。旧五模式memory和12源组相邻候选结果已封存，不重跑。
+前一特征阶段已推送`8263c3b`；本阶段running checkpoint `23e0d45af9483ecb07bf6baa26856ea93d3a6680` push实际exit0且remote SHA核同（一次banner timeout后默认配置重试成功，不改SSH命令、不需新钥匙）。最终阶段另作complete snapshot/commit；以现场Git与publication receipt为准。旧五模式memory和12源组相邻候选结果均不重跑。
 
 ## 为什么做这项
 
@@ -57,8 +57,16 @@ supervisor：`tmp_analysis/run_fit_lag_support_background_20261024.py`，SHA `68
 
 ## 时间、结果与续接
 
-尚无真实完成耗时；producer粗估15–45分钟CPU，fresh全输出重算另需相近预算，估计来自不同实现的旧小run，不是承诺。CUDA禁用。CPU长任务不触发用户的GPU>20分钟暂停规则；后台进程与交接便于对话关闭后续接。root已核ready与绑定进程，继续核首批shard/日志；尚无方法指标或训练结果。
+旧15–45分钟CPU粗估已被实测替代：producer192.73秒、fresh全输出重算258.33秒，总启动至完成约7分34秒。CUDA禁用；未触发GPU>20分钟暂停规则。独立复算全部55,352,164行六score，最大误差CV 2.84e-14，其余0；SQLite query/trajectory/identitypair113,719/12,452/38,138逐行重建通过。没有官方新方法指标或训练结果。
 
-报告全部source、两lag、同预测类别/全部候选、CV共同分母与未知覆盖、GT/source错误分布、同query跨lag支持和全部source held-out fold。支持门仅是必要逻辑条件，不能将55m相关候选当独立样本，也不自动转训练。真正新训练需支持通过后另行冻结并审查具体协议。
+同predcat/commonCV的lag1/4各2949/2142 hardquery，raw错46/149，分布29/50源组；CV修26/60、破289/533。固定共同1331query/107源组raw错16/99（both8），说明分母固定后仍有跨时刻困难；reference/history仍改变，不能作时间的因果归因。必要门通过，合并hard/error source176/55，bothlag fold156pass/185不满足，全部保留。unknown不负例，无positive不等于unmatched。不能把55m候选当独立样本；支持门仍HOLD、没有训练就绪承诺。
 
 保护发布baseline、冻结上游、原数据、旧sealed结果与另一会话训练。磁盘当前约50GiB可用（启动前复查），本任务不清理旧结果。完整score/SQLite/逐帧JSONL/full summary仅本地；`sync_fit_lag_support_stage_20261024.py`显式同步轻量脚本/协议/阶段回执，phase running不冒称完成。全输出通过后派生`support_brief.json`绑定完整summary/SQLite/seal/hash，再更新报告、Git。
+
+## 继续做什么
+
+1. 先核本次完成snapshot与Git publication。旧producer/protocol/preflight/verifier/supervisor/identity_spacetime_factorial_design全pinned，继续只读，不改它们来准备新实验。
+2. `identity_spacetime_followup_recommendation_20261024.md`另存新source-OOF方案。原mean/pair角色是旧nuisance职责，不能直接当新身份训练/untouched holdout。全部FIT支持已看，后续OOF为探索性；tune/test/留出target继续关闭。adapter本体与同一frozen appearance下geometry增量分开读出。
+3. 新`causal_appearance_transport.py`与checker三轮实际exit0，fresh独立26项合成审计CPU session59647 exit0；receipt `causal_appearance_transport_independent_synthetic_20261024.json`，SHA `6f5000ab974130cba931135ebfaedfac0d14669ef1dc746ad6d962fce13b6dc9`。仅合成、未读真实数据或训练。固定单位球面恒角速度外推是普通动态外观控制；受约束低秩正交指数是候选数学原语，未实现history encoder或接tracker。当前已知反例：track-specific正交可消除身份间距、错误past-ID能把正确last特征外推至干扰物。未来调用者必须对重复/无ID提供无效mask，core不能检出唯一但错误ID。
+4. `causal_appearance_transport_candidate_20261024.md`记录神经输运候选、碰撞边界与停止门。先冻结并审普通无训练动态外观控制的全FIT协议；不得直接将合成通过当作真实收益。文献已有2015动态外观与2023特征预测，2026 TFLF命中但全文访问受阻，广泛“预测外观”不算新意。
+5. 整体研究active。需要长GPU训练时先落实可检验机制/强控制，再按已有授权现场检查GPU/owner；预计GPU>20分钟时可靠后台启动并交接后暂停对话，CPU不自动触发此规则。

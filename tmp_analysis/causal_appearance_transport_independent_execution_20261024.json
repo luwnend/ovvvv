@@ -1,0 +1,31 @@
+{
+  "status": "PASS_INDEPENDENT_CAUSAL_APPEARANCE_TRANSPORT_AUDIT_EXECUTION",
+  "recorded_utc": "2026-10-23T17:21:03.410851+00:00",
+  "actual_tool_execution": {
+    "tool": "exec_command followed by write_stdin",
+    "session_id": 59647,
+    "launch_chunk_id": "66d1eb",
+    "completion_chunk_id": "1ed751",
+    "exit_code": 0,
+    "observed_by": "novelty_audit independent tool execution",
+    "command": "CUDA_VISIBLE_DEVICES= OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 /home/chenhc/.conda/envs/ovtrack_ovmot/bin/python tmp_analysis/audit_causal_appearance_transport_independent_20261024.py --output tmp_analysis/causal_appearance_transport_independent_synthetic_20261024.json"
+  },
+  "evidence": {
+    "tmp_analysis/causal_appearance_transport.py": {
+      "sha256": "8b534c5f133880165e3e46abbd93e49584ebf8e20bec9c58b46ab425fa8f5924",
+      "bytes": 6604
+    },
+    "tmp_analysis/audit_causal_appearance_transport_independent_20261024.py": {
+      "sha256": "3d22f1e2f642bf0845f51d8f56f584b2b5744fd33648de716bca7f2d88f4434f",
+      "bytes": 10073
+    },
+    "tmp_analysis/causal_appearance_transport_independent_synthetic_20261024.json": {
+      "sha256": "6f5000ab974130cba931135ebfaedfac0d14669ef1dc746ad6d962fce13b6dc9",
+      "bytes": 2373
+    }
+  },
+  "checks_passed": 26,
+  "synthetic_only": true,
+  "real_features_or_supervision_opened": false,
+  "training_started": false
+}

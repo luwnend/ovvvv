@@ -26,6 +26,17 @@ SCRIPTS = [
     "feature_spacetime_git_publication_20261024.json",
     "feature_spacetime_handoff_20261024.md",
     "fit_lag_identity_support_handoff_20261024.md",
+    "finalize_fit_lag_support_stage_20261024.py",
+    "identity_spacetime_followup_recommendation_20261024.md",
+    "causal_appearance_transport_candidate_20261024.md",
+    "causal_appearance_transport.py",
+    "check_causal_appearance_transport_20261024.py",
+    "causal_appearance_transport_synthetic_round1_20261024.json",
+    "causal_appearance_transport_synthetic_round2_20261024.json",
+    "causal_appearance_transport_synthetic_round3_20261024.json",
+    "audit_causal_appearance_transport_independent_20261024.py",
+    "causal_appearance_transport_independent_synthetic_20261024.json",
+    "causal_appearance_transport_independent_execution_20261024.json",
 ]
 REPORTS = ["项目进度.md", "COVTrack_特征与时空改进_20261024.md"]
 

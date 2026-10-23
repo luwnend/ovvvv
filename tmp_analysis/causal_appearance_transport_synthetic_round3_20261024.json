@@ -1,0 +1,16 @@
+{
+  "status": "PASS_SYNTHETIC_TRANSPORT_PRIMITIVES",
+  "round": 3,
+  "checks": [
+    "orthogonality_does_not_preserve_between_track_identity_separation",
+    "wrong_history_can_convert_correct_last_feature_to_distractor",
+    "appearance_and_skew_rate_have_finite_nonzero_gradient",
+    "zero_gap_identity_and_empty_memory"
+  ],
+  "checks_passed": 4,
+  "training_started": false,
+  "real_data_accessed": false,
+  "performance_or_novelty_established": false,
+  "code_sha256": "8b534c5f133880165e3e46abbd93e49584ebf8e20bec9c58b46ab425fa8f5924",
+  "checker_sha256": "e72c156c9f6e02d7bdfdad71dbaf4d37763305909688a6e38048e82c9fcf421b"
+}

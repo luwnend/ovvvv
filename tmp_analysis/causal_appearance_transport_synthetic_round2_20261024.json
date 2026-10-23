@@ -1,0 +1,16 @@
+{
+  "status": "PASS_SYNTHETIC_TRANSPORT_PRIMITIVES",
+  "round": 2,
+  "checks": [
+    "norm_and_identity_on_orthogonal_complement",
+    "fixed_generator_semigroup_is_structural_only",
+    "invalid_history_exact_fallback_even_with_nan_generator",
+    "basis_and_skew_contract_rejection"
+  ],
+  "checks_passed": 4,
+  "training_started": false,
+  "real_data_accessed": false,
+  "performance_or_novelty_established": false,
+  "code_sha256": "8b534c5f133880165e3e46abbd93e49584ebf8e20bec9c58b46ab425fa8f5924",
+  "checker_sha256": "e72c156c9f6e02d7bdfdad71dbaf4d37763305909688a6e38048e82c9fcf421b"
+}
