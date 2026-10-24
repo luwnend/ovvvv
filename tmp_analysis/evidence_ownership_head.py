@@ -85,6 +85,7 @@ class EvidenceOwnershipLedger(nn.Module):
         child_geometry,
         parent_time,
         child_time,
+        stable_child_ids=None,
     ):
         if not torch.isfinite(parent_tokens).all():
             raise ValueError("nonfinite parent token")
@@ -130,7 +131,12 @@ class EvidenceOwnershipLedger(nn.Module):
         # child_tokens are edge-aligned by the documented interface.  A unique
         # child posterior may be addressed by edge_child.
         if child_tokens.shape[0] not in (len(edge_child), n_child):
-            raise ValueError("child tokens must be edge-aligned or unique-child rows")
+            raise ValueError("child token rows must be E or n_child")
+        if stable_child_ids is None:
+            stable_child_ids = torch.arange(n_child, dtype=torch.long,
+                                            device=parent_tokens.device)
+        if stable_child_ids.shape != (n_child,) or stable_child_ids.dtype != torch.long:
+            raise ValueError("stable child ids must be int64 [n_child]")
         if child_tokens.shape[0] == len(edge_child):
             child_tokens_for_edge = child_tokens
         else:
@@ -167,19 +173,27 @@ class EvidenceOwnershipLedger(nn.Module):
             self.child_mask(child_tokens_for_edge)
         )[:, 0]
         child_mask = predicted * overlap.clamp(0, 1)
-        # Per-cell ownership is decided by the actual score mask = predicted
-        # occupancy * overlap.  Ties deterministically retain the lower edge
-        # index.  Zero-score cells are not assigned.
+        # Per-cell ownership is decided by score mask = predicted occupancy *
+        # overlap.  Equal scores are resolved by stable child identity, not
+        # input-edge order; zero-score cells remain unowned.
         assignment = torch.full((n_parent, height, width), -1,
                                 dtype=torch.long, device=parent_tokens.device)
         best = torch.zeros((n_parent, height, width),
                            dtype=child_mask.dtype, device=child_mask.device)
+        best_child_id = torch.full((n_parent, height, width), 2**62,
+                                   dtype=torch.long, device=parent_tokens.device)
         for edge, parent_index in enumerate(edge_parent.tolist()):
             score = child_mask[edge].reshape(-1)
             current_best = best[parent_index].reshape(-1)
+            current_child = best_child_id[parent_index].reshape(-1)
             current_owner = assignment[parent_index].reshape(-1)
-            replace = (score > 0) & (score > current_best)
+            stable_id = int(stable_child_ids[int(edge_child[edge])])
+            replace = (score > 0) & (
+                (score > current_best) |
+                ((score == current_best) & (stable_id < current_child))
+            )
             current_best[replace] = score[replace]
+            current_child[replace] = stable_id
             current_owner[replace] = edge
         ownership = torch.zeros_like(child_mask)
         for edge, (parent_index, child_index) in enumerate(
@@ -325,6 +339,7 @@ def synthetic_contracts():
         embedding,
         torch.cat([geometry, geometry], 0),
         torch.tensor([10], dtype=torch.long), torch.tensor([5, 5], dtype=torch.long),
+        stable_child_ids=torch.tensor([1, 0], dtype=torch.long),
     )
     assert torch.allclose(twice, reversed_twice, atol=1e-6), (
         "Tied edges must use a deterministic lower-index owner"
