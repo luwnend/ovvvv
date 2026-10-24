@@ -48,8 +48,13 @@ query，GT 只用于评分，未知 identity 候选保留但选中后记为 unre
 平滑解释，不是局部空间证据的独立贡献。空间 top-k 则比历史 global mean 的
 source 宏低 `18.49 pp`，比随机空间置换低 `3.89 pp`。
 
-因此本阶段不训练普通局部 attention、类别条件 token attention 或历史 token
-memory，也不把 alignment 的微小 AUROC 变化包装成新模块。若后续重启，
+独立复核进一步指出：129 个正对中 98 个来自同一 local track；top1 的
+48/57 历史局部 token 选择中，36 个指向未来同 local track 的锚点，而该锚点
+的历史包含 query。这能解释“当前 + 历史”的表面连续性收益，却不能满足
+部署时的独立身份信息门。按严格过去且跨 local track 的复核，FGFA 相对
+raw 为 **−0.2613**。因此本阶段不训练普通局部 attention、类别条件 token
+attention 或历史 token memory，也不把 alignment 的微小 AUROC 变化包装成新模块。
+若后续重启，
 必须先出现新的可证伪机制，而不是换池化、增加 attention head 或只用单帧 raw
 作对照。
 
@@ -60,18 +65,20 @@ memory，也不把 alignment 的微小 AUROC 变化包装成新模块。若后�
   /home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/geometry_roi_information_gate_20261024.py \
   --cache-dir /raid/datasets/chc_data/geometry_roi_full_20261024_v1 \
   --receipt /home/chenhc/ov/OVMOT_RESEARCH/results/geometry_roi_full_audit_receipt_20261024_v2/audit_receipt.json \
-  --out /home/chenhc/ov/OVMOT_RESEARCH/results/geometry_roi_information_gate_full_20261024_v3
+  --out /home/chenhc/ov/OVMOT_RESEARCH/results/geometry_roi_information_gate_full_20261024_v4
 
 /home/chenhc/miniconda3/envs/covtrack/bin/python \
   /home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/independent_audit_geometry_roi_information_gate_20261024.py
 ```
 
-- 作者单测：14 项，3 轮均 exit `0`。独立审计：重读标签、token 与
-  receipt，独立重实现全部 arm 和 top1，3 轮均 exit `0`。
+- 当前实现单测：14 项，3 轮均 exit `0`。独立复算：重读标签、token 与
+  receipt，独立重实现全部 arm 和 top1，3 轮均 exit `0`。另有独立复核脚本
+  显式检查同 local-track 偏好和严格过去/跨 track 混淆，结果见
+  `tmp_analysis/geometry_roi_gate_independent_review_20261024.md`。
 - 全量 evaluator 主输出：
-  `results/geometry_roi_information_gate_full_20261024_v3/evaluation_result.json`。
+  `results/geometry_roi_information_gate_full_20261024_v4/evaluation_result.json`。
 - 独立复算：
-  `results/geometry_roi_information_gate_full_20261024_v3/independent_audit_full.json`。
+  `results/geometry_roi_information_gate_full_20261024_v4/independent_audit_full.json`。
 - 三轮单测与独立复算的实际 stdout/stderr/exit code 都在同目录 `tests/` 和
   `independent_audit_rounds/`。
 
