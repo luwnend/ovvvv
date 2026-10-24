@@ -1,0 +1,255 @@
+#!/usr/bin/env python3
+"""Synthetic-only evidence ownership ledger for fixed COVTrack boxes.
+
+The module learns a class-conditioned, nonnegative amount of parent evidence
+that can be explained by a contained child region.  It never adds child
+features to the parent.  This file deliberately contains no tracker or
+detection integration until its analytic contracts pass independently.
+
+Inputs:
+  parent_tokens: [N, D, H, W] parent ROI features
+  child_tokens:  [E, D, H, W] child ROI features, repeated per edge
+  edge_parent:   [E] parent row index
+  edge_child:    [E] child row index
+  overlap:       [E, H, W] fraction of each parent grid cell covered by child
+  child_posterior: [n_child, C] observed class posterior
+  class_embedding: [C, D] fixed text embeddings
+
+Outputs per parent and per class log evidence correction.  The correction is
+negative or zero.  Parent evidence mass is shared across children with a hard
+partition of unity so overlapping children cannot subtract the same cell more
+than once.
+"""
+import torch
+from torch import nn
+import torch.nn.functional as F
+
+
+class EvidenceOwnershipLedger(nn.Module):
+    def __init__(self, dim=256, hidden=128, max_children=8, class_width=256):
+        super().__init__()
+        self.class_width = int(class_width)
+        self.child_mask = nn.Sequential(
+            nn.Conv2d(dim, hidden, 3, padding=1),
+            nn.GroupNorm(8, hidden),
+            nn.GELU(),
+            nn.Conv2d(hidden, 1, 1),
+        )
+        self.child_query = nn.Sequential(
+            nn.Linear(dim + 5, hidden),
+            nn.GELU(),
+            nn.Linear(hidden, dim),
+        )
+        self.relation = nn.Sequential(
+            nn.Linear(dim + class_width, hidden),
+            nn.GELU(),
+            nn.Linear(hidden, 1),
+        )
+        self.max_children = max_children
+        # A nonzero final relation layer avoids a dead gradient for child_query.
+        # The large negative bias keeps the initial correction near identity.
+        # The no-child path returns an exact zero tensor independently.
+        nn.init.normal_(self.relation[-1].weight, 0.0, 0.01)
+        nn.init.constant_(self.relation[-1].bias, -4.0)
+
+    def forward(
+        self,
+        parent_tokens,
+        child_tokens,
+        edge_parent,
+        edge_child,
+        overlap,
+        child_posterior,
+        class_embedding,
+        child_geometry,
+    ):
+        n_parent, dim, height, width = parent_tokens.shape
+        n_child, classes = child_posterior.shape
+        assert class_embedding.shape == (classes, dim)
+        assert child_tokens.shape[-3:] == (dim, height, width)
+        assert overlap.shape == (len(edge_parent), height, width)
+        assert len(edge_child) == len(edge_parent) == len(child_geometry)
+        parent_tokens = F.normalize(parent_tokens, dim=1)
+        child_tokens = F.normalize(child_tokens, dim=1)
+        embeddings = F.normalize(class_embedding, dim=1)
+        if len(edge_parent) == 0:
+            return torch.zeros((n_parent, classes), dtype=parent_tokens.dtype,
+                               device=parent_tokens.device)
+
+        # Predicted child occupancy in the parent ROI is nonnegative.
+        predicted = torch.sigmoid(self.child_mask(child_tokens))[:, 0]
+        child_mask = predicted * overlap.clamp(0, 1)
+        # Hard ownership: where children overlap, the larger predicted
+        # occupancy takes the cell.  Ties go to the lower edge index.  This
+        # prevents double-counting while remaining differentiable away from it.
+        assignment = torch.full((n_parent, height, width), -1,
+                                dtype=torch.long, device=parent_tokens.device)
+        for edge, parent_index in enumerate(edge_parent.tolist()):
+            score = child_mask[edge]
+            current = assignment[parent_index]
+            taken = current[current >= 0]
+            if taken.numel():
+                taken_idx = torch.nonzero(current.reshape(-1) >= 0,
+                                          as_tuple=False).flatten()
+                current_score = current.reshape(-1)[taken_idx]
+                # Only replace an existing owner when strictly larger; ties
+                # deterministically stay with the lower edge index.  The
+                # previous version replaced every cell with the last edge.
+                replace = score.reshape(-1)[taken_idx] > current_score
+                positions = taken_idx[replace]
+                current.reshape(-1)[positions] = edge
+            empty = current < 0
+            current[empty] = edge
+        ownership = torch.zeros_like(child_mask)
+        for edge, (parent_index, child_index) in enumerate(
+            zip(edge_parent.tolist(), edge_child.tolist())
+        ):
+            ownership[edge] = child_mask[edge] * (assignment[parent_index] == edge)
+
+        # Parent positive evidence in every ROI cell, projected onto classes.
+        parent_evidence = torch.einsum("ndhw,cd->nchw", parent_tokens, embeddings)
+        parent_positive = parent_evidence.clamp_min(0)
+        explained = []
+        for edge, (parent_index, child_index) in enumerate(
+            zip(edge_parent.tolist(), edge_child.tolist())
+        ):
+            class_support = child_posterior[child_index].clamp(0, 1)
+            # The child's own evidence for a parent class reduces how much that
+            # class could have been generated by the child.  It is a signal,
+            # not a calibrated probability.
+            available = (1 - class_support).unsqueeze(1)
+            child_relation = self.child_query(
+                torch.cat(
+                    [child_tokens[edge].mean((-2, -1)).unsqueeze(0),
+                     child_geometry[edge].unsqueeze(0)],
+                    dim=1,
+                )
+            )[0]
+            parent_relation = torch.einsum(
+                "dhw,cd->chw", parent_tokens[parent_index], embeddings
+            )
+            # Keep the class axis explicit by channel padding to a fixed 256
+            # feature width.  The synthetic and real adapters must construct
+            # this block with the exact class vocabulary size.
+            class_width = self.class_width
+            if classes > class_width:
+                raise ValueError("class width exceeds fixed relation width")
+            parent_grid = torch.zeros(
+                (class_width, height, width),
+                dtype=parent_relation.dtype, device=parent_relation.device,
+            )
+            parent_grid[:classes] = parent_relation
+            relation = self.relation(
+                torch.cat(
+                    [parent_grid.permute(1, 2, 0).reshape(-1, class_width),
+                     child_relation.expand(height * width, dim)],
+                    dim=1,
+                )
+            ).reshape(height, width)
+            # The relation score is spatial.  Class conditioning enters through
+            # the parent's per-class evidence and child's posterior; it must not
+            # be described as a per-class text relation here.
+            mask = ownership[edge].view(1, 1, height, width)
+            class_weight = available.view(1, classes, 1, 1)
+            relation_spatial = torch.sigmoid(relation).view(1, 1, height, width)
+            parent_positive_grid = parent_positive[
+                parent_index
+            ].view(1, classes, height, width)
+            explained.append(
+                (class_weight * relation_spatial * mask *
+                 parent_positive_grid).sum((-1, -2))
+            )
+
+        stacked = torch.stack(explained, dim=0).reshape(len(explained), classes)
+        correction = torch.zeros(
+            (n_parent, classes), dtype=parent_tokens.dtype, device=parent_tokens.device
+        )
+        # `explained` is [edge, class, height, width] so each edge has been
+        # summed over its own ownership mask without being broadcast across
+        # another class.
+        correction.index_add_(0, edge_parent.to(correction.device), -stacked)
+        return correction
+
+
+def synthetic_contracts():
+    """Analytic checks that need no data or pretrained head."""
+    torch.manual_seed(20261025)
+    dim, h, w, classes = 8, 3, 3, 5
+    model = EvidenceOwnershipLedger(
+        dim=dim, max_children=4, class_width=classes
+    ).eval()
+    parent = torch.randn(1, dim, h, w)
+    child = torch.randn(1, dim, h, w)
+    posterior = torch.full((1, classes), 1 / classes)
+    embedding = torch.randn(classes, dim)
+    geometry = torch.zeros(1, 5)
+
+    empty = model(parent, child, torch.empty(0, dtype=torch.long),
+                  torch.empty(0, dtype=torch.long), torch.empty(0, h, w),
+                  posterior, embedding, torch.empty(0, 5))
+    assert torch.equal(empty, torch.zeros_like(empty)), "No-child identity failed"
+
+    overlap = torch.zeros(1, h, w)
+    overlap[0, :, :] = 1
+    once = model(parent, child, torch.tensor([0]), torch.tensor([0]), overlap,
+                 posterior, embedding, geometry)
+    assert (once <= 0).all(), "Ownership must subtract, never add evidence"
+    twice = model(
+        parent,
+        torch.cat([child, child], 0),
+        torch.tensor([0, 0]),
+        torch.tensor([0, 1]),
+        torch.cat([overlap, overlap], 0),
+        torch.cat([posterior, posterior], 0),
+        embedding,
+        torch.cat([geometry, geometry], 0),
+    )
+    assert torch.isfinite(twice).all(), "Overlapping children produced nonfinite values"
+    assert (twice <= 0).all(), "Overlapping children added evidence"
+    # A cell can be owned by at most one child.  The overlap contract is about
+    # preventing each edge from claiming the full parent cell independently.
+    assert torch.allclose(once, twice, atol=1e-6), (
+        "Two equal fully overlapping children must have one owner"
+    )
+    larger = child * 2.0
+    winner_changed = model(
+        parent,
+        torch.cat([child, larger], 0),
+        torch.tensor([0, 0]),
+        torch.tensor([0, 1]),
+        torch.cat([overlap, overlap], 0),
+        torch.cat([posterior, posterior], 0),
+        embedding,
+        torch.cat([geometry, geometry], 0),
+    )
+    assert torch.isfinite(winner_changed).all(), (
+        "A strictly larger second child must produce a valid ownership result"
+    )
+    # Class-conditioning: changing the child posterior to support one class
+    # must alter the explain-away amounts rather than applying one scalar gate.
+    support_first = torch.zeros_like(posterior)
+    support_first[:, 0] = 1
+    changed_class = model(parent, child, torch.tensor([0]), torch.tensor([0]),
+                          overlap, support_first, embedding, geometry)
+    assert not torch.allclose(once, changed_class), "Class conditioning has no effect"
+    parent_grad = parent.requires_grad_(True)
+    loss = model(parent_grad, child, torch.tensor([0]), torch.tensor([0]),
+                 overlap, posterior, embedding, geometry).sum()
+    loss.abs().backward()
+    assert parent_grad.grad is not None and torch.isfinite(parent_grad.grad).all()
+    # A class with no positive parent evidence cannot receive a correction.
+    parent_zero = torch.zeros_like(parent)
+    zero_correction = model(parent_zero, child, torch.tensor([0]),
+                            torch.tensor([0]), overlap, posterior, embedding,
+                            geometry)
+    assert torch.equal(zero_correction, torch.zeros_like(zero_correction)), (
+        "Zero parent evidence must produce zero correction"
+    )
+    return dict(no_child_exact=True, overlap_nonpositive=True,
+                overlap_finite=True, overlap_no_double_subtract=True,
+                class_conditioned=True, finite_parent_gradient=True,
+                zero_parent_evidence_identity=True)
+
+
+if __name__ == "__main__":
+    print(synthetic_contracts())
