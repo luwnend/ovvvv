@@ -1,0 +1,48 @@
+{
+  "status": "FIT_CONTAINMENT_PARENT_SUPPORT_DESCRIPTION",
+  "edges": 205999,
+  "unique_parent_track_contexts": 42108,
+  "unique_child_track_contexts": 93909,
+  "sources": 341,
+  "parent_child_class_pairs": 35246,
+  "parent_classes": 1036,
+  "top_parent_child_pairs": {
+    "(207, 1178)": 4618,
+    "(207, 1056)": 3607,
+    "(1027, 1027)": 3455,
+    "(207, 207)": 3029,
+    "(207, 549)": 2735,
+    "(330, 330)": 2580,
+    "(653, 653)": 1565,
+    "(207, 876)": 1394,
+    "(1027, 1026)": 1130,
+    "(793, 948)": 1042,
+    "(207, 642)": 988,
+    "(207, 1186)": 938,
+    "(1027, 827)": 908,
+    "(1023, 1023)": 864,
+    "(641, 641)": 837,
+    "(1056, 1056)": 801,
+    "(1027, 1112)": 796,
+    "(1027, 207)": 795,
+    "(1074, 1074)": 749,
+    "(330, 827)": 729
+  },
+  "source_parent_support": {
+    "min": 8,
+    "median": 106,
+    "max": 1927,
+    "sources_at_least_5_parents": 341,
+    "largest_source": "YouTube/XOe9GeojzCs"
+  },
+  "observation_frames_per_parent": {
+    "min": 1,
+    "median": 1,
+    "max": 36
+  },
+  "unknown_not_negative": true,
+  "gt_used": false,
+  "training": false,
+  "GPU": false,
+  "interpretation": "Sampling support only. A parent track with multiple child classes must not yield duplicate independent events; the same parent is one cluster. This does not show class error, occlusion causality or tracking performance."
+}

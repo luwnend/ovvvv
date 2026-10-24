@@ -1,0 +1,7 @@
+{
+  "status": "PASS_FIT_CONTAINMENT_PARENT_SUPPORT_DESCRIPTION",
+  "edges_sha256": "b9d969a4c6b7028f58fa73e0c366404c16ecc9ecc7d0f32f701ed2e177483efe",
+  "script_sha256": "0fbb1c2cc8e1b0a37132ba64684e58284c0c1302df75f0506d07ebf23490050a",
+  "training": false,
+  "GPU": false
+}
