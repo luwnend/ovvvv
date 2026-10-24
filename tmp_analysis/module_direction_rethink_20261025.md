@@ -192,16 +192,9 @@ L_teacher = Huber(hat_T_pjc, T_pjc) + λ_ce CE(corrected_parent, train_label)
 
 ### A7. 合成原型的实现状态
 
-`tmp_analysis/evidence_ownership_head.py` 目前只是独立合成契约原型，尚未接入 COVTrack。首轮发现并修复了三项实现问题：relation 末端零初始化使 `child_query` 梯度恒零；重叠 child 的占位逻辑会把格点无条件交给后一个 edge；修正后又暴露了 2D mask 与 flat assignment 的布尔索引错位。现在以下检查已实际通过：
+`tmp_analysis/evidence_ownership_head.py` 仍只是独立合成契约原型，尚未接入 COVTrack。首轮实现曾有三项问题：relation 末端零初始化使 `child_query` 梯度恒零；重叠 child 的占位逻辑按输入顺序覆盖；2D mask 与 flat assignment 布尔索引错位。随后独立复核又在快照 `eab492b8` 发现阻断项：`max_children` 未执行、owner 选择规则与注释不一致、默认 256 类宽无法接受实际 1203 类、NaN 非 fail-closed、observed posterior 会收到梯度，以及 class-conditioning 可退化为共享 scalar gate。
 
-- 无 child 输出精确全零，训练一步后仍保持；
-- 重叠 child 不重复扣减；
-- 严格更大的 child 可以获得占位，结果有限；
-- 改变 child posterior 会改变 attribution（存在类别条件信号）；
-- 父 token 和所有子模块梯度有限，`child_query` 在一步 SGD 后确有非零梯度；
-- 零父正证据输出精确全零。
-
-这是**实现契约通过**，不是方法收益、真实遮挡因果性、source-OOD 或 TETA 通过。下一轮要另写独立审计，而不是让作者测试自证；真实接入前还必须验证 ROI 网格、NMS 行和 child occupancy 的坐标系一致。
+当前修订已执行以下检查，并全部通过：无 child 精确恒等、只减不增、严格更大 child 可换主、相等 tie 保持较低 edge、`max_children` 超限拒绝、NaN overlap 拒绝、1203 类默认空 child 路径可用、posterior 不带梯度、有限梯度。但这只是**修订后的作者测试**；独立复核结论仍是旧快照的 FAIL，尚未对当前版本重审。更不能把这一步称为方法收益、真实遮挡因果性、source-OOD 或 TETA 通过。真实接入前还必须验证 ROI 网格、NMS 行、child occupancy 坐标系，以及 class-conditioning 是否真正读取文本/类别关系而非弱共享 gate。
 
 ### A8. 成本
 

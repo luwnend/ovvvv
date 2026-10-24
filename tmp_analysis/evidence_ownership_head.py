@@ -19,6 +19,12 @@ Outputs per parent and per class log evidence correction.  The correction is
 negative or zero.  Parent evidence mass is shared across children with a hard
 partition of unity so overlapping children cannot subtract the same cell more
 than once.
+
+Status: synthetic contract prototype only.  This revision addresses an
+independent audit of snapshot eab492b8: enforce limits and finite inputs,
+use a deterministic maximum-ownership rule, expose all 1203 classes by
+default, and treat the observed child posterior as a detached input.
+It remains unvalidated on real data.
 """
 import torch
 from torch import nn
@@ -26,7 +32,7 @@ import torch.nn.functional as F
 
 
 class EvidenceOwnershipLedger(nn.Module):
-    def __init__(self, dim=256, hidden=128, max_children=8, class_width=256):
+    def __init__(self, dim=256, hidden=128, max_children=8, class_width=1203):
         super().__init__()
         self.class_width = int(class_width)
         self.child_mask = nn.Sequential(
@@ -63,8 +69,35 @@ class EvidenceOwnershipLedger(nn.Module):
         class_embedding,
         child_geometry,
     ):
+        if not torch.isfinite(parent_tokens).all():
+            raise ValueError("nonfinite parent token")
+        if not torch.isfinite(child_tokens).all():
+            raise ValueError("nonfinite child token")
+        if not torch.isfinite(overlap).all():
+            raise ValueError("nonfinite overlap")
+        if not torch.isfinite(child_posterior).all():
+            raise ValueError("nonfinite child posterior")
+        if not torch.isfinite(class_embedding).all():
+            raise ValueError("nonfinite class embedding")
+        if not torch.isfinite(child_geometry).all():
+            raise ValueError("nonfinite child geometry")
         n_parent, dim, height, width = parent_tokens.shape
         n_child, classes = child_posterior.shape
+        if edge_parent.dtype != torch.long or edge_child.dtype != torch.long:
+            raise TypeError("edge indices must be int64")
+        if len(edge_parent):
+            per_parent = torch.bincount(
+                edge_parent.cpu(), minlength=n_parent
+            )
+            if int(per_parent.max()) > self.max_children:
+                raise ValueError("per-parent child count exceeds max_children")
+        if len(edge_parent) and (
+            int(edge_parent.min()) < 0 or int(edge_parent.max()) >= len(parent_tokens)
+            or int(edge_child.min()) < 0
+            or int(edge_child.max()) >= len(child_posterior)
+        ):
+            raise IndexError("child or parent index out of range")
+        child_posterior = child_posterior.detach()
         assert class_embedding.shape == (classes, dim)
         assert child_tokens.shape[-3:] == (dim, height, width)
         assert overlap.shape == (len(edge_parent), height, width)
@@ -79,27 +112,20 @@ class EvidenceOwnershipLedger(nn.Module):
         # Predicted child occupancy in the parent ROI is nonnegative.
         predicted = torch.sigmoid(self.child_mask(child_tokens))[:, 0]
         child_mask = predicted * overlap.clamp(0, 1)
-        # Hard ownership: where children overlap, the larger predicted
-        # occupancy takes the cell.  Ties go to the lower edge index.  This
-        # prevents double-counting while remaining differentiable away from it.
+        # Per-cell ownership is decided by the actual score mask = predicted
+        # occupancy * overlap.  Ties deterministically retain the lower edge
+        # index.  Zero-score cells are not assigned.
         assignment = torch.full((n_parent, height, width), -1,
                                 dtype=torch.long, device=parent_tokens.device)
+        best = torch.zeros((n_parent, height, width),
+                           dtype=child_mask.dtype, device=child_mask.device)
         for edge, parent_index in enumerate(edge_parent.tolist()):
-            score = child_mask[edge]
-            current = assignment[parent_index]
-            taken = current[current >= 0]
-            if taken.numel():
-                taken_idx = torch.nonzero(current.reshape(-1) >= 0,
-                                          as_tuple=False).flatten()
-                current_score = current.reshape(-1)[taken_idx]
-                # Only replace an existing owner when strictly larger; ties
-                # deterministically stay with the lower edge index.  The
-                # previous version replaced every cell with the last edge.
-                replace = score.reshape(-1)[taken_idx] > current_score
-                positions = taken_idx[replace]
-                current.reshape(-1)[positions] = edge
-            empty = current < 0
-            current[empty] = edge
+            score = child_mask[edge].reshape(-1)
+            current_best = best[parent_index].reshape(-1)
+            current_owner = assignment[parent_index].reshape(-1)
+            replace = (score > 0) & (score > current_best)
+            current_best[replace] = score[replace]
+            current_owner[replace] = edge
         ownership = torch.zeros_like(child_mask)
         for edge, (parent_index, child_index) in enumerate(
             zip(edge_parent.tolist(), edge_child.tolist())
@@ -114,10 +140,11 @@ class EvidenceOwnershipLedger(nn.Module):
             zip(edge_parent.tolist(), edge_child.tolist())
         ):
             class_support = child_posterior[child_index].clamp(0, 1)
-            # The child's own evidence for a parent class reduces how much that
-            # class could have been generated by the child.  It is a signal,
-            # not a calibrated probability.
-            available = (1 - class_support).unsqueeze(1)
+            # Explain-away is strongest when a contained child has detector
+            # evidence for the same parent class: that region may be the source
+            # of the parent's positive class evidence. The posterior is a
+            # detached observation, never an optimized model input.
+            available = class_support.unsqueeze(1).detach()
             child_relation = self.child_query(
                 torch.cat(
                     [child_tokens[edge].mean((-2, -1)).unsqueeze(0),
@@ -225,6 +252,40 @@ def synthetic_contracts():
     assert torch.isfinite(winner_changed).all(), (
         "A strictly larger second child must produce a valid ownership result"
     )
+    # A lower-index owner must win a strict tie; input order must not change
+    # the ownership partition.
+    reversed_twice = model(
+        parent,
+        torch.cat([child, child], 0),
+        torch.tensor([0, 0]),
+        torch.tensor([1, 0]),
+        torch.cat([overlap, overlap], 0),
+        torch.cat([posterior, posterior], 0),
+        embedding,
+        torch.cat([geometry, geometry], 0),
+    )
+    assert torch.allclose(twice, reversed_twice, atol=1e-6), (
+        "Tied edges must use a deterministic lower-index owner"
+    )
+    try:
+        limited = EvidenceOwnershipLedger(
+            dim=dim, max_children=1, class_width=classes
+        ).eval()
+        limited(parent, torch.cat([child, child], 0),
+              torch.tensor([0, 0]), torch.tensor([0, 1]),
+              torch.cat([overlap, overlap], 0), torch.cat([posterior, posterior], 0),
+              embedding, torch.cat([geometry, geometry], 0))
+        raise AssertionError("max_children was not enforced")
+    except ValueError:
+        pass
+    bad_overlap = overlap.clone()
+    bad_overlap[0, 0, 0] = float("nan")
+    try:
+        model(parent, child, torch.tensor([0]), torch.tensor([0]),
+              bad_overlap, posterior, embedding, geometry)
+        raise AssertionError("nonfinite overlap was not rejected")
+    except ValueError:
+        pass
     # Class-conditioning: changing the child posterior to support one class
     # must alter the explain-away amounts rather than applying one scalar gate.
     support_first = torch.zeros_like(posterior)
@@ -232,6 +293,11 @@ def synthetic_contracts():
     changed_class = model(parent, child, torch.tensor([0]), torch.tensor([0]),
                           overlap, support_first, embedding, geometry)
     assert not torch.allclose(once, changed_class), "Class conditioning has no effect"
+    # The observed posterior is an input, not a trainable path.
+    posterior_leaf = posterior.clone().requires_grad_(True)
+    model(parent, child, torch.tensor([0]), torch.tensor([0]), overlap,
+          posterior_leaf, embedding, geometry).sum().backward()
+    assert posterior_leaf.grad is None, "observed posterior received gradient"
     parent_grad = parent.requires_grad_(True)
     loss = model(parent_grad, child, torch.tensor([0]), torch.tensor([0]),
                  overlap, posterior, embedding, geometry).sum()
@@ -248,7 +314,9 @@ def synthetic_contracts():
     return dict(no_child_exact=True, overlap_nonpositive=True,
                 overlap_finite=True, overlap_no_double_subtract=True,
                 class_conditioned=True, finite_parent_gradient=True,
-                zero_parent_evidence_identity=True)
+                zero_parent_evidence_identity=True,
+                deterministic_tie=True, max_children_enforced=True,
+                nonfinite_rejected=True, posterior_detached=True)
 
 
 if __name__ == "__main__":
