@@ -1,0 +1,21 @@
+{
+  "status": "LIGHTWEIGHT_VERIFIED_STAGE_SNAPSHOT",
+  "files": [
+    {
+      "path": "track_semantic_agg_20261024/strict_disjoint_receipt_strict_disjoint.json",
+      "sha256": "2036354e3bc944a9df39382d0821911afdc37d23b70fcf6201c94ed41868d9e7"
+    },
+    {
+      "path": "track_semantic_agg_20261024/strict_disjoint_metrics.json",
+      "sha256": "24ef61d92eb220dffc0269703f508efcb344aa19f9c601521877392dff59a311"
+    },
+    {
+      "path": "track_semantic_agg_20261024/medium_disjoint_receipt_medium_disjoint.json",
+      "sha256": "be71ef7985875e876f8d8b18df4aacec8095cd6198abdfee47fa03c1badd0182"
+    },
+    {
+      "path": "track_semantic_agg_20261024/medium_disjoint_metrics.json",
+      "sha256": "6bb174dfd10f303928d584742217391568ee51b3a7cf47b0710d1bbef59cac6d"
+    }
+  ]
+}

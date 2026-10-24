@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE_GT_FREE_FRAME_DISJOINT_STITCHING",
+  "arm": "medium_disjoint",
+  "gate": {
+    "max_gap": 30,
+    "max_cdist": 1.5,
+    "max_lsize": 1.0
+  },
+  "input_sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48",
+  "output_sha256": "4eef32500f37852172f890e05796dfe9314736eb5e2c219d8cd085a441108ebd",
+  "output": "/home/chenhc/ov/OVMOT_RESEARCH/results/track_semantic_agg_20261024/merge/tao_track_medium_disjoint.json",
+  "input_rows": 1529908,
+  "output_rows": 1529908,
+  "tracks_before": 324639,
+  "tracks_after": 194765,
+  "gated_candidates": 621886,
+  "accepted_edges": 129874,
+  "max_output_track_id": 10194764,
+  "same_frame_ID_duplicates": 0,
+  "dropped_rows": 0,
+  "GT_used_for_merging": false,
+  "official_TETA_evaluated": false,
+  "interpretation": "Exploratory VAL control; not a validated method or novelty claim."
+}
