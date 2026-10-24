@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ROI_TRACK_TRACE_SYNTHETIC",
+  "round": 1,
+  "checks": [
+    "native_FC_replay_and_retained_detection_row_alignment",
+    "multiple_head_calls_rejected_and_hooks_do_not_change_output"
+  ],
+  "module_sha256": "e9fea53294de57098ab59cc1c5d6d38c2412ae9c40807d4232069511c1d5ad04",
+  "actual_GPU_or_real_cache_used": false,
+  "training": false
+}

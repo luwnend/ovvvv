@@ -171,6 +171,42 @@
       "sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32"
     },
     {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/roi_track_spatial_trace_20261024.py",
+      "destination": "stage_20261024/tmp_analysis/roi_track_spatial_trace_20261024.py",
+      "bytes": 5225,
+      "sha256": "e9fea53294de57098ab59cc1c5d6d38c2412ae9c40807d4232069511c1d5ad04"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/observe_roi_spatial_tokens_20261024.py",
+      "destination": "stage_20261024/tmp_analysis/observe_roi_spatial_tokens_20261024.py",
+      "bytes": 11046,
+      "sha256": "ad7c394817c5f0f2fff235592ffc49d1ff088cff283cae0c218197f97cf9ea0d"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/roi_spatial_observation_protocol_20261024.json",
+      "destination": "stage_20261024/tmp_analysis/roi_spatial_observation_protocol_20261024.json",
+      "bytes": 9408,
+      "sha256": "ea49049e193a11e9522eb40788511b58be1160efcf959da3cebf09c0c7d34f17"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/roi_track_spatial_trace_round1_20261024_v1.json",
+      "destination": "stage_20261024/tmp_analysis/roi_track_spatial_trace_round1_20261024_v1.json",
+      "bytes": 359,
+      "sha256": "9d8e21afb79b8985552ff59691f808a964b8c0c10cad6d840a15f6674d48b121"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/roi_track_spatial_trace_round2_20261024_v1.json",
+      "destination": "stage_20261024/tmp_analysis/roi_track_spatial_trace_round2_20261024_v1.json",
+      "bytes": 359,
+      "sha256": "194760a671697aafbca2d3b0794da8c88c269336b1606dca9fcd0155a4444e22"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/roi_track_spatial_trace_round3_20261024_v1.json",
+      "destination": "stage_20261024/tmp_analysis/roi_track_spatial_trace_round3_20261024_v1.json",
+      "bytes": 359,
+      "sha256": "d0f9472c62eb420d86c8c2da0f1eb571000f0dc897a805dc6f186ee5be02d674"
+    },
+    {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_four_frame_cpu_protocol_20261024.json",
       "destination": "stage_20261024/tmp_analysis/all_candidate_scene_residual_four_frame_cpu_protocol_20261024.json",
       "bytes": 9599,
@@ -301,6 +337,18 @@
       "destination": "evidence/all_candidate_scene_residual_four_frame_cpu_execution_20261024_v1/completion_receipt.json",
       "bytes": 455,
       "sha256": "92cb981bea1947b9549fe9afe93d44223d199df81535da4f7253fd8d7cde32c8"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/roi_spatial_observation_20261024_v1/observation_receipt.json",
+      "destination": "evidence/roi_spatial_observation_20261024_v1/observation_receipt.json",
+      "bytes": 5220,
+      "sha256": "e4fc6de7f07034ae35a4777838d4d11108da0cb8408b70ce7d4f7825619673d6"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/roi_spatial_observation_execution_20261024_v1/actual_exit.json",
+      "destination": "evidence/roi_spatial_observation_execution_20261024_v1/actual_exit.json",
+      "bytes": 180,
+      "sha256": "d6d66a2c662fc9d78d4b4ac3e1fe188d868036c9fc94a0aa85c6e57efd14f02c"
     }
   ],
   "excludes": [

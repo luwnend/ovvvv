@@ -1,0 +1,109 @@
+{
+  "status": "FROZEN_FOUR_FRAME_ROI_SPATIAL_OBSERVATION_V1",
+  "runner_sha256": "ad7c394817c5f0f2fff235592ffc49d1ff088cff283cae0c218197f97cf9ea0d",
+  "trace_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/roi_track_spatial_trace_20261024.py",
+  "GPU_UUID": "GPU-2a55197e-2c19-45ff-cf33-13031951f9d0",
+  "output_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/roi_spatial_observation_20261024_v1",
+  "parent_collection_manifest": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/run_manifest.json",
+  "code_root": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base_error_20261023",
+  "config_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/collection_config.py",
+  "checkpoint_path": "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2/saved_models/ctao_public_res/ctao_public.pth",
+  "protected_authority_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_protected_before_20261024.json",
+  "frames": [
+    {
+      "source": "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2",
+      "video_id": 1271,
+      "image_id": 214313,
+      "frame_id": 0,
+      "original_frame": 150,
+      "cache_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214313_f0.npz",
+      "cache_sha256": "d1b1e5a0013d663b5d1074949d9fe320bb775eb7a3453c28f65b6df1449e826e",
+      "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/side_right_08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2/ring_side_right_315969044028927168.jpg",
+      "image_sha256": "80d41dee0d95c264e633f6b1f0a983fedf92e9322d1c9c0deb87b3cce860b0d6"
+    },
+    {
+      "source": "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2",
+      "video_id": 1271,
+      "image_id": 214314,
+      "frame_id": 1,
+      "original_frame": 240,
+      "cache_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214314_f1.npz",
+      "cache_sha256": "15174f41631cdfb93f859d3aa665dd954580073a145a08a5866a8ba8c85cb265",
+      "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/side_right_08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2/ring_side_right_315969047025931488.jpg",
+      "image_sha256": "3ccc20e2685187a5ff79a5bbea8997b53160c488367ea4e27514033d475d2086"
+    },
+    {
+      "source": "BDD/b1d0a191-03dcecc2",
+      "video_id": 801,
+      "image_id": 148612,
+      "frame_id": 0,
+      "original_frame": 0,
+      "cache_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v801_i148612_f0.npz",
+      "cache_sha256": "778237d5b10b35831f4bb9ac411094267f2f5faa2e62578946dc2e5290bfe1cc",
+      "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/BDD/b1d0a191-03dcecc2/frame0001.jpg",
+      "image_sha256": "73ee79568b2fc628c076c3c9db31681aca048fc0c792a823af21e64112d6d838"
+    },
+    {
+      "source": "BDD/b1d0a191-03dcecc2",
+      "video_id": 801,
+      "image_id": 148642,
+      "frame_id": 1,
+      "original_frame": 30,
+      "cache_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v801_i148642_f1.npz",
+      "cache_sha256": "0e27c39d9b5ac361b9af3faed587f282107706e222c25c61b9aca2d280635921",
+      "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/BDD/b1d0a191-03dcecc2/frame0031.jpg",
+      "image_sha256": "779690741b8901b393a7c0b806643f9183cbd7e1f4061ca2d8c6d38f0c19d070"
+    }
+  ],
+  "input_pins": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/observe_roi_spatial_tokens_20261024.py": "ad7c394817c5f0f2fff235592ffc49d1ff088cff283cae0c218197f97cf9ea0d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/roi_track_spatial_trace_20261024.py": "e9fea53294de57098ab59cc1c5d6d38c2412ae9c40807d4232069511c1d5ad04",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/run_manifest.json": "8a99676a2a45a61d3c76d423480f59381cfe4ab80e0a54df671417a5599198ab",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/collection_config.py": "712ecc9486b5e1c4da527722939bbb2beea2bcbc7e6d5bc4b492cc7bd56bdb16",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2/saved_models/pretrained_models/detpro_prompt.pt": "00ba2f0bfb9abdb577b2fcf2afae12655d6190a18f11051aabdc97f8e4c24579",
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_tces_v2/saved_models/ctao_public_res/ctao_public.pth": "e4d0b65798844280ea13943e580ce6233ae5d331c4aa1d38eb226c3208dd567c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_inference.json": "375fa82b7ec603cb8781a63abf47c3c64f03f1f4c8b0e242cb7403fa0786abf2",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/source_roles.json": "afa61df067f392b84ba917e1c536a9b64b869dbda19a2236b0a05b6f5c51cb8b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump_inventory.json": "5a7f94a531e754aef0cec1c78b82a080ee92d6e451f943a46be8c71c6a7676db",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/frame_execution.jsonl": "e0e327a887840fbbdf5acacc374a589f696ad529af62d7a9a535bc2dd6161c07",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/build_fit_identity_edge_support.py": "e68f35ca48ba6f32d519efbdb33a711fc201cbf1a2f65c50f1c828a767b1d2b5",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_protected_before_20261024.json": "cb32e7704490e70b657b9cd3c7145d19a2f578aad33b9b77e61b951660207297",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/roi_track_spatial_trace_round1_20261024_v1.json": "9d8e21afb79b8985552ff59691f808a964b8c0c10cad6d840a15f6674d48b121",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/roi_track_spatial_trace_round2_20261024_v1.json": "194760a671697aafbca2d3b0794da8c88c269336b1606dca9fcd0155a4444e22",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/roi_track_spatial_trace_round3_20261024_v1.json": "d0f9472c62eb420d86c8c2da0f1eb571000f0dc897a805dc6f186ee5be02d674",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214313_f0.npz": "d1b1e5a0013d663b5d1074949d9fe320bb775eb7a3453c28f65b6df1449e826e",
+    "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/side_right_08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2/ring_side_right_315969044028927168.jpg": "80d41dee0d95c264e633f6b1f0a983fedf92e9322d1c9c0deb87b3cce860b0d6",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214314_f1.npz": "15174f41631cdfb93f859d3aa665dd954580073a145a08a5866a8ba8c85cb265",
+    "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/side_right_08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2/ring_side_right_315969047025931488.jpg": "3ccc20e2685187a5ff79a5bbea8997b53160c488367ea4e27514033d475d2086",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v801_i148612_f0.npz": "778237d5b10b35831f4bb9ac411094267f2f5faa2e62578946dc2e5290bfe1cc",
+    "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/BDD/b1d0a191-03dcecc2/frame0001.jpg": "73ee79568b2fc628c076c3c9db31681aca048fc0c792a823af21e64112d6d838",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v801_i148642_f1.npz": "0e27c39d9b5ac361b9af3faed587f282107706e222c25c61b9aca2d280635921",
+    "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/BDD/b1d0a191-03dcecc2/frame0031.jpg": "779690741b8901b393a7c0b806643f9183cbd7e1f4061ca2d8c6d38f0c19d070"
+  },
+  "cache_member_allowlist": [
+    "track_feats",
+    "tracker_keep_mask",
+    "pretracker_det_row",
+    "det_bboxes",
+    "pretracker_det_bboxes",
+    "roi_proposal_row"
+  ],
+  "selection": "Metadata only: lexicographic sealed FIT sources, first source/video with at least two sampled frames in each of first two distinct dataset blocks; take prefix frames0,1. No result, identity, class, visibility or feature selection.",
+  "purpose": "Ordinary spatial observation only, no training/new feature or method effectiveness/novelty claim.",
+  "runtime": {
+    "python": "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "seed": 20261023,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "threads": 1,
+    "planned_GPU_minutes": [
+      1,
+      5
+    ],
+    "hard_timeout_seconds": 300
+  },
+  "parity": "Native N_pre full-batch/device/dtype/CHW FC replay exactly; pretracker model-space boxes/keep/row order exact; CPU NumPy->float16->retained cast equals parent raw cache. Saved retained NCHW float32 grids, not physical visible patches or identified motion.",
+  "historical_runtime_limitations": "Original prompt/image/input-tensor SHA and complete TF32/cuBLAS/cuDNN/driver flags were not sealed. Current inputs are pinned here; a strict replay mismatch does not establish failure of spatial feature mechanism.",
+  "forbidden": "No GT/class/posterior/released identity, no new OOF/donorout outputs, no training, frozen source/data mutation, prior run overwrite, retries, GPU with preexisting chenhc process or 4GB GPU."
+}

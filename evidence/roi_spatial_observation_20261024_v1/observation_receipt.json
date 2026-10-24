@@ -1,0 +1,208 @@
+{
+  "status": "PASS_FOUR_FRAME_SPATIAL_OBSERVATION_AND_RAW_CACHE_PARITY",
+  "protocol_sha256": "ea49049e193a11e9522eb40788511b58be1160efcf959da3cebf09c0c7d34f17",
+  "frames": [
+    {
+      "video_id": 1271,
+      "frame_id": 0,
+      "image_id": 214313,
+      "retained_rows": 50,
+      "spatial_shape": [
+        50,
+        256,
+        7,
+        7
+      ],
+      "native_full_batch_FC_replay_exact": true,
+      "cached_float16_raw_bitwise_exact": true,
+      "retained_row_locator_exact": true,
+      "saved_token_dtype": "float32",
+      "layout": "NCHW",
+      "native_raw_dtype": "float32",
+      "preprocessing": {
+        "scale_factor": [
+          0.6666666865348816,
+          0.6666666865348816,
+          0.6666666865348816,
+          0.6666666865348816
+        ],
+        "ori_shape": [
+          1200,
+          1920,
+          3
+        ],
+        "img_shape": [
+          800,
+          1280,
+          3
+        ],
+        "pad_shape": [
+          800,
+          1280,
+          3
+        ]
+      },
+      "saved_retained_subset_FC_replay_not_yet_verified": true,
+      "file": "v1271_f0.npz",
+      "sha256": "dd1f319363d5f175caf45c5a9376ac50d752952b994c3252e1c936cadbabc46c",
+      "elapsed_seconds": 21.863929781131446
+    },
+    {
+      "video_id": 1271,
+      "frame_id": 1,
+      "image_id": 214314,
+      "retained_rows": 54,
+      "spatial_shape": [
+        54,
+        256,
+        7,
+        7
+      ],
+      "native_full_batch_FC_replay_exact": true,
+      "cached_float16_raw_bitwise_exact": true,
+      "retained_row_locator_exact": true,
+      "saved_token_dtype": "float32",
+      "layout": "NCHW",
+      "native_raw_dtype": "float32",
+      "preprocessing": {
+        "scale_factor": [
+          0.6666666865348816,
+          0.6666666865348816,
+          0.6666666865348816,
+          0.6666666865348816
+        ],
+        "ori_shape": [
+          1200,
+          1920,
+          3
+        ],
+        "img_shape": [
+          800,
+          1280,
+          3
+        ],
+        "pad_shape": [
+          800,
+          1280,
+          3
+        ]
+      },
+      "saved_retained_subset_FC_replay_not_yet_verified": true,
+      "file": "v1271_f1.npz",
+      "sha256": "cec3ebe74e9e3397f73aecf04733d94011897c72e5726671535c29b3469b6f4b",
+      "elapsed_seconds": 22.581913663074374
+    },
+    {
+      "video_id": 801,
+      "frame_id": 0,
+      "image_id": 148612,
+      "retained_rows": 69,
+      "spatial_shape": [
+        69,
+        256,
+        7,
+        7
+      ],
+      "native_full_batch_FC_replay_exact": true,
+      "cached_float16_raw_bitwise_exact": true,
+      "retained_row_locator_exact": true,
+      "saved_token_dtype": "float32",
+      "layout": "NCHW",
+      "native_raw_dtype": "float32",
+      "preprocessing": {
+        "scale_factor": [
+          1.041406273841858,
+          1.0416666269302368,
+          1.041406273841858,
+          1.0416666269302368
+        ],
+        "ori_shape": [
+          720,
+          1280,
+          3
+        ],
+        "img_shape": [
+          750,
+          1333,
+          3
+        ],
+        "pad_shape": [
+          768,
+          1344,
+          3
+        ]
+      },
+      "saved_retained_subset_FC_replay_not_yet_verified": true,
+      "file": "v801_f0.npz",
+      "sha256": "676730c0f6392d3878dc4539adf73d10733986515059c4e07b5d1b8277ca9918",
+      "elapsed_seconds": 23.09738903399557
+    },
+    {
+      "video_id": 801,
+      "frame_id": 1,
+      "image_id": 148642,
+      "retained_rows": 68,
+      "spatial_shape": [
+        68,
+        256,
+        7,
+        7
+      ],
+      "native_full_batch_FC_replay_exact": true,
+      "cached_float16_raw_bitwise_exact": true,
+      "retained_row_locator_exact": true,
+      "saved_token_dtype": "float32",
+      "layout": "NCHW",
+      "native_raw_dtype": "float32",
+      "preprocessing": {
+        "scale_factor": [
+          1.041406273841858,
+          1.0416666269302368,
+          1.041406273841858,
+          1.0416666269302368
+        ],
+        "ori_shape": [
+          720,
+          1280,
+          3
+        ],
+        "img_shape": [
+          750,
+          1333,
+          3
+        ],
+        "pad_shape": [
+          768,
+          1344,
+          3
+        ]
+      },
+      "saved_retained_subset_FC_replay_not_yet_verified": true,
+      "file": "v801_f1.npz",
+      "sha256": "282d6c1b1fe048b91c03adffe7c6d0cd152e1802d1e5d6723eafee32352f500b",
+      "elapsed_seconds": 23.811623783782125
+    }
+  ],
+  "total_retained_rows": 241,
+  "elapsed_seconds": 24.651233606040478,
+  "device": {
+    "uuid": "GPU-2a55197e-2c19-45ff-cf33-13031951f9d0",
+    "name": "NVIDIA A100-SXM4-40GB",
+    "free_mib": 29100,
+    "preexisting_processes": [
+      {
+        "pid": 4171961,
+        "owner": "chenj",
+        "memory_mib": 7554
+      },
+      {
+        "pid": 410044,
+        "owner": "stjr",
+        "memory_mib": 3534
+      }
+    ]
+  },
+  "no_training_or_method_effectiveness_or_novelty_established": true,
+  "all_input_pins_and_protected7_unchanged": true,
+  "raw_token_parity_scope": "native full-batch FC replay; actual raw CPU NumPy castfloat16 equals parent cache; saved NCHW float32 tokens are retained subset, whose separate FC replay has not yet been verified"
+}
