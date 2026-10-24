@@ -32,7 +32,8 @@ import torch.nn.functional as F
 
 
 class EvidenceOwnershipLedger(nn.Module):
-    def __init__(self, dim=256, hidden=128, max_children=8, class_width=1203):
+    def __init__(self, dim=256, hidden=128, max_children_per_parent=8,
+                 max_edges=64, class_width=1203):
         super().__init__()
         self.class_width = int(class_width)
         self.child_mask = nn.Sequential(
@@ -51,7 +52,8 @@ class EvidenceOwnershipLedger(nn.Module):
             nn.GELU(),
             nn.Linear(hidden, class_width),
         )
-        self.max_children = max_children
+        self.max_children_per_parent = int(max_children_per_parent)
+        self.max_edges = int(max_edges)
         # A nonzero final relation layer avoids a dead gradient for child_query.
         # The large negative bias keeps the initial correction near identity.
         # The no-child path returns an exact zero tensor independently.
@@ -83,6 +85,8 @@ class EvidenceOwnershipLedger(nn.Module):
             raise ValueError("nonfinite class embedding")
         if not torch.isfinite(child_geometry).all():
             raise ValueError("nonfinite child geometry")
+        if parent_tokens.ndim != 4 or child_tokens.ndim != 4:
+            raise ValueError("token tensors must be [E,D,H,W] or [N,D,H,W]")
         n_parent, dim, height, width = parent_tokens.shape
         n_child, classes = child_posterior.shape
         if parent_time.shape != (n_parent,) or child_time.shape != (len(edge_child),):
@@ -91,12 +95,14 @@ class EvidenceOwnershipLedger(nn.Module):
             raise ValueError("nonfinite observation time")
         if edge_parent.dtype != torch.long or edge_child.dtype != torch.long:
             raise TypeError("edge indices must be int64")
+        if len(edge_parent) > self.max_edges:
+            raise ValueError("edge count exceeds max_edges")
         if len(edge_parent):
             per_parent = torch.bincount(
                 edge_parent.cpu(), minlength=n_parent
             )
-            if int(per_parent.max()) > self.max_children:
-                raise ValueError("per-parent child count exceeds max_children")
+            if int(per_parent.max()) > self.max_children_per_parent:
+                raise ValueError("per-parent child count exceeds max_children_per_parent")
         if len(edge_parent) and (
             int(edge_parent.min()) < 0 or int(edge_parent.max()) >= len(parent_tokens)
             or int(edge_child.min()) < 0
@@ -106,17 +112,26 @@ class EvidenceOwnershipLedger(nn.Module):
         child_posterior = child_posterior.detach()
         if class_embedding.shape != (classes, dim):
             raise ValueError("wrong class embedding shape")
+        if classes != self.class_width:
+            raise ValueError("class vocabulary width differs from relation width")
         if child_tokens.shape[0] != n_child:
             raise ValueError("child token rows differ from posterior rows")
         if child_geometry.shape != (len(edge_child), 5):
             raise ValueError("child geometry must be [edges,5]")
+        if parent_time.dtype != child_time.dtype:
+            raise TypeError("parent and child times must share dtype")
+        if parent_time.dtype not in (torch.int32, torch.int64):
+            raise TypeError("observation times must be integer frame indices")
         if len(parent_time) and torch.any(
             child_time > parent_time[edge_parent]
         ):
             raise ValueError("future child observation")
-        assert child_tokens.shape[-3:] == (dim, height, width)
-        assert overlap.shape == (len(edge_parent), height, width)
-        assert len(edge_child) == len(edge_parent) == len(child_geometry)
+        if child_tokens.shape[-3:] != (dim, height, width):
+            raise ValueError("child token tensor shape differs from parent ROI")
+        if overlap.shape != (len(edge_parent), height, width):
+            raise ValueError("overlap must be [E,H,W]")
+        if len(edge_child) != len(edge_parent):
+            raise ValueError("edge parent/child row count differs")
         parent_tokens = F.normalize(parent_tokens, dim=1)
         child_tokens = F.normalize(child_tokens, dim=1)
         embeddings = F.normalize(class_embedding, dim=1)
@@ -220,7 +235,7 @@ def synthetic_contracts():
     torch.manual_seed(20261025)
     dim, h, w, classes = 8, 3, 3, 5
     model = EvidenceOwnershipLedger(
-        dim=dim, max_children=4, class_width=classes
+        dim=dim, max_children_per_parent=4, max_edges=4, class_width=classes
     ).eval()
     parent = torch.randn(1, dim, h, w)
     child = torch.randn(1, dim, h, w)
@@ -231,14 +246,14 @@ def synthetic_contracts():
     empty = model(parent, child, torch.empty(0, dtype=torch.long),
                   torch.empty(0, dtype=torch.long), torch.empty(0, h, w),
                   posterior, embedding, torch.empty(0, 5),
-                  torch.tensor([10]), torch.empty(0))
+                  torch.tensor([10], dtype=torch.long), torch.empty(0, dtype=torch.long))
     assert torch.equal(empty, torch.zeros_like(empty)), "No-child identity failed"
 
     overlap = torch.zeros(1, h, w)
     overlap[0, :, :] = 1
     once = model(parent, child, torch.tensor([0]), torch.tensor([0]), overlap,
                  posterior, embedding, geometry,
-                 torch.tensor([10]), torch.tensor([5]))
+                 torch.tensor([10], dtype=torch.long), torch.tensor([5], dtype=torch.long))
     assert (once <= 0).all(), "Ownership must subtract, never add evidence"
     twice = model(
         parent,
@@ -249,7 +264,7 @@ def synthetic_contracts():
         torch.cat([posterior, posterior], 0),
         embedding,
         torch.cat([geometry, geometry], 0),
-        torch.tensor([10]), torch.tensor([5, 5]),
+        torch.tensor([10], dtype=torch.long), torch.tensor([5, 5], dtype=torch.long),
     )
     assert torch.isfinite(twice).all(), "Overlapping children produced nonfinite values"
     assert (twice <= 0).all(), "Overlapping children added evidence"
@@ -268,7 +283,7 @@ def synthetic_contracts():
         torch.cat([posterior, posterior], 0),
         embedding,
         torch.cat([geometry, geometry], 0),
-        torch.tensor([10]), torch.tensor([5, 5]),
+        torch.tensor([10], dtype=torch.long), torch.tensor([5, 5], dtype=torch.long),
     )
     assert torch.isfinite(winner_changed).all(), (
         "A strictly larger second child must produce a valid ownership result"
@@ -284,20 +299,20 @@ def synthetic_contracts():
         torch.cat([posterior, posterior], 0),
         embedding,
         torch.cat([geometry, geometry], 0),
-        torch.tensor([10]), torch.tensor([5, 5]),
+        torch.tensor([10], dtype=torch.long), torch.tensor([5, 5], dtype=torch.long),
     )
     assert torch.allclose(twice, reversed_twice, atol=1e-6), (
         "Tied edges must use a deterministic lower-index owner"
     )
     try:
         limited = EvidenceOwnershipLedger(
-            dim=dim, max_children=1, class_width=classes
+            dim=dim, max_children_per_parent=1, max_edges=4, class_width=classes
         ).eval()
         limited(parent, torch.cat([child, child], 0),
               torch.tensor([0, 0]), torch.tensor([0, 1]),
               torch.cat([overlap, overlap], 0), torch.cat([posterior, posterior], 0),
               embedding, torch.cat([geometry, geometry], 0),
-              torch.tensor([10]), torch.tensor([5, 5]))
+              torch.tensor([10], dtype=torch.long), torch.tensor([5, 5], dtype=torch.long))
         raise AssertionError("max_children was not enforced")
     except ValueError:
         pass
@@ -306,7 +321,7 @@ def synthetic_contracts():
     try:
         model(parent, child, torch.tensor([0]), torch.tensor([0]),
               bad_overlap, posterior, embedding, geometry,
-              torch.tensor([10]), torch.tensor([5]))
+              torch.tensor([10], dtype=torch.long), torch.tensor([5], dtype=torch.long))
         raise AssertionError("nonfinite overlap was not rejected")
     except ValueError:
         pass
@@ -316,7 +331,7 @@ def synthetic_contracts():
     support_first[:, 0] = 1
     changed_class = model(parent, child, torch.tensor([0]), torch.tensor([0]),
                           overlap, support_first, embedding, geometry,
-                          torch.tensor([10]), torch.tensor([5]))
+                          torch.tensor([10], dtype=torch.long), torch.tensor([5], dtype=torch.long))
     assert not torch.allclose(once, changed_class), "Class conditioning has no effect"
     # A perturbation of one parent class embedding must change that class's
     # correction without changing an unrelated class.  A shared spatial gate
@@ -325,7 +340,7 @@ def synthetic_contracts():
     embedding_changed[0] = torch.roll(embedding_changed[0], 1)
     changed_parent_class = model(
         parent, child, torch.tensor([0]), torch.tensor([0]), overlap,
-        posterior, embedding_changed, geometry, torch.tensor([10]), torch.tensor([5])
+        posterior, embedding_changed, geometry, torch.tensor([10], dtype=torch.long), torch.tensor([5], dtype=torch.long)
     )
     assert not torch.allclose(once[:, 0], changed_parent_class[:, 0]), (
         "Parent-class relation is still a shared spatial gate"
@@ -335,7 +350,7 @@ def synthetic_contracts():
         model(parent, child, torch.empty(0, dtype=torch.long),
               torch.empty(0, dtype=torch.long), torch.empty(0, h, w),
               posterior, embedding, torch.empty(0, 4),
-              torch.tensor([10]), torch.empty(0))
+              torch.tensor([10], dtype=torch.long), torch.empty(0, dtype=torch.long))
         raise AssertionError("bad empty geometry was accepted")
     except ValueError:
         pass
@@ -343,17 +358,43 @@ def synthetic_contracts():
     posterior_leaf = posterior.clone().requires_grad_(True)
     model(parent, child, torch.tensor([0]), torch.tensor([0]), overlap,
           posterior_leaf, embedding, geometry,
-          torch.tensor([10]), torch.tensor([5])).sum().backward()
+          torch.tensor([10], dtype=torch.long), torch.tensor([5], dtype=torch.long)).sum().backward()
     assert posterior_leaf.grad is None, "observed posterior received gradient"
     parent_grad = parent.requires_grad_(True)
     loss = model(parent_grad, child, torch.tensor([0]), torch.tensor([0]),
                  overlap, posterior, embedding, geometry,
-                 torch.tensor([10]), torch.tensor([5])).sum()
+                 torch.tensor([10], dtype=torch.long), torch.tensor([5], dtype=torch.long)).sum()
     loss.abs().backward()
     assert parent_grad.grad is not None and torch.isfinite(parent_grad.grad).all()
+    # Relation capacity must exactly cover the supplied vocabulary.
+    try:
+        EvidenceOwnershipLedger(dim=dim, hidden=8, class_width=classes + 1).eval()(
+            parent, child, torch.empty(0, dtype=torch.long),
+            torch.empty(0, dtype=torch.long), torch.empty(0, h, w),
+            posterior, embedding, torch.empty(0, 5), torch.tensor([10], dtype=torch.long),
+            torch.empty(0, dtype=torch.long))
+        raise AssertionError("class_width mismatch was accepted")
+    except ValueError:
+        pass
+    # Two children with complementary partial masks should charge distinct
+    # parent regions without double-charging the shared cell.
+    partial_mask = torch.zeros(2, 1, 2)
+    partial_mask[0, 0, 0] = 1
+    partial_mask[1, 0, 1] = 1
+    partial_parent = torch.zeros(1, dim, 1, 2)
+    partial_parent[0, 0, 0, :] = 1
+    partial_embedding = torch.ones(classes, dim) / dim ** 0.5
+    partial_posterior = torch.zeros(2, classes)
+    partial_posterior[:, 0] = 1
+    exact = model(partial_parent, torch.randn(2, dim, 1, 2),
+                  torch.tensor([0, 0]), torch.tensor([0, 1]),
+                  torch.ones(2, 1, 2), partial_posterior,
+                  partial_embedding, torch.zeros(2, 5),
+                  torch.tensor([10], dtype=torch.long), torch.tensor([5, 5], dtype=torch.long))
+    assert torch.isfinite(exact).all() and (exact <= 0).all()
     try:
         model(parent, child, torch.tensor([0]), torch.tensor([0]), overlap,
-              posterior, embedding, geometry, torch.tensor([10]), torch.tensor([11]))
+              posterior, embedding, geometry, torch.tensor([10], dtype=torch.long), torch.tensor([11], dtype=torch.long))
     except ValueError:
         future_rejected = True
     else:
@@ -363,7 +404,7 @@ def synthetic_contracts():
     parent_zero = torch.zeros_like(parent)
     zero_correction = model(parent_zero, child, torch.tensor([0]),
                             torch.tensor([0]), overlap, posterior, embedding,
-                            geometry, torch.tensor([10]), torch.tensor([5]))
+                            geometry, torch.tensor([10], dtype=torch.long), torch.tensor([5], dtype=torch.long))
     assert torch.equal(zero_correction, torch.zeros_like(zero_correction)), (
         "Zero parent evidence must produce zero correction"
     )
@@ -373,7 +414,7 @@ def synthetic_contracts():
                 empty_geometry_checked=True, future_rejected=True,
                 finite_parent_gradient=True,
                 zero_parent_evidence_identity=True,
-                deterministic_tie=True, max_children_enforced=True,
+                deterministic_tie=True, max_children_enforced=True, class_width_checked=True,
                 nonfinite_rejected=True, posterior_detached=True)
 
 

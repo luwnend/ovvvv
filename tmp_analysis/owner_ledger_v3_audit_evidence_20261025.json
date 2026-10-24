@@ -1,0 +1,644 @@
+{
+  "subject": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/evidence_ownership_head.py",
+  "source_sha256_start": "68fa88395a0e2e99bfe5a3fa7e4a3218ac09f45eb9dca96f260deffc0a453bd9",
+  "source_sha256_end": "68fa88395a0e2e99bfe5a3fa7e4a3218ac09f45eb9dca96f260deffc0a453bd9",
+  "source_size_bytes": 17935,
+  "torch_version": "1.10.0+cu113",
+  "device": "cpu",
+  "rounds": {
+    "1": {
+      "tests": 14,
+      "counterexamples": 9
+    },
+    "2": {
+      "tests": 9,
+      "counterexamples": 3
+    },
+    "3": {
+      "tests": 6,
+      "counterexamples": 3
+    }
+  },
+  "tests": [
+    {
+      "round": 1,
+      "name": "valid empty edge returns exact identity",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "rejected": false,
+        "shape": [
+          1,
+          3
+        ],
+        "exact_zero": true,
+        "exception": null
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "counterexample: malformed empty geometry [0,4] rejected explicitly",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "geometry_shape": [
+          0,
+          4
+        ],
+        "rejection": "ValueError: child geometry must be [edges,5]"
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "counterexample: malformed empty overlap is rejected in normal mode",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "overlap_shape": [
+          0,
+          2,
+          3
+        ],
+        "rejection": "AssertionError: ",
+        "note": "only via assert"
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "counterexample: empty shape contract survives python -O",
+      "passed": false,
+      "counterexample": true,
+      "detail": {
+        "returncode": 0,
+        "stdout": "ACCEPTED (1, 3) True",
+        "stderr": "",
+        "finding": "assert-based checks disappear under -O"
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "counterexample: empty edge rejects class_width/vocabulary mismatch",
+      "passed": false,
+      "counterexample": true,
+      "detail": {
+        "class_width": 6,
+        "actual_classes": 3,
+        "accepted": true,
+        "accepted_result_shape": [
+          1,
+          3
+        ],
+        "exception": null
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "counterexample: integer child posterior rejected",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "accepted": false,
+        "exception": "ValueError: future child observation"
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "empty time vectors reject wrong shapes",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "parent_time_2d": "ValueError: time vectors must align with parent/edge rows",
+        "child_time_1": "ValueError: time vectors must align with parent/edge rows"
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "counterexample: future child is rejected per parent edge",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "parent_time": [
+          10,
+          20
+        ],
+        "child_time": [
+          9,
+          21
+        ],
+        "rejection": "ValueError: future child observation"
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "same-frame child is admitted and past child is admitted",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "exception": null
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "nonfinite child time rejects (nan)",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "child_time": [
+          9.0,
+          "nan"
+        ],
+        "rejection": "ValueError: nonfinite observation time"
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "nonfinite child time rejects (inf)",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "child_time": [
+          9.0,
+          "inf"
+        ],
+        "rejection": "ValueError: nonfinite observation time"
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "counterexample: time dtype is validated and consistent",
+      "passed": false,
+      "counterexample": true,
+      "detail": {
+        "int64": {
+          "accepted": true,
+          "finite": true
+        },
+        "bool": {
+          "accepted": true,
+          "finite": true
+        },
+        "mixed_int_float": {
+          "accepted": true,
+          "finite": true
+        },
+        "mixed_float32_float64": {
+          "accepted": true,
+          "finite": true
+        }
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "all eight float inputs reject NaN and Inf",
+      "passed": true,
+      "counterexample": false,
+      "detail": [
+        {
+          "input": "parent_tokens",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite parent token"
+        },
+        {
+          "input": "parent_tokens",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite parent token"
+        },
+        {
+          "input": "child_tokens",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite child token"
+        },
+        {
+          "input": "child_tokens",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite child token"
+        },
+        {
+          "input": "overlap",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite overlap"
+        },
+        {
+          "input": "overlap",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite overlap"
+        },
+        {
+          "input": "child_posterior",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite child posterior"
+        },
+        {
+          "input": "child_posterior",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite child posterior"
+        },
+        {
+          "input": "class_embedding",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite class embedding"
+        },
+        {
+          "input": "class_embedding",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite class embedding"
+        },
+        {
+          "input": "child_geometry",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite child geometry"
+        },
+        {
+          "input": "child_geometry",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite child geometry"
+        },
+        {
+          "input": "parent_time",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite observation time"
+        },
+        {
+          "input": "parent_time",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite observation time"
+        },
+        {
+          "input": "child_time",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite observation time"
+        },
+        {
+          "input": "child_time",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite observation time"
+        }
+      ],
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "edge index range and dtype are fail-closed",
+      "passed": true,
+      "counterexample": false,
+      "detail": [
+        {
+          "field": "parent",
+          "value": -1,
+          "rejected": true,
+          "exception": "RuntimeError: bincount only supports 1-d non-negative integral inputs."
+        },
+        {
+          "field": "parent",
+          "value": 1,
+          "rejected": true,
+          "exception": "IndexError: child or parent index out of range"
+        },
+        {
+          "field": "parent",
+          "value": 99,
+          "rejected": true,
+          "exception": "IndexError: child or parent index out of range"
+        },
+        {
+          "field": "child",
+          "value": -1,
+          "rejected": true,
+          "exception": "IndexError: child or parent index out of range"
+        },
+        {
+          "field": "child",
+          "value": 1,
+          "rejected": true,
+          "exception": "IndexError: child or parent index out of range"
+        },
+        {
+          "field": "child",
+          "value": 99,
+          "rejected": true,
+          "exception": "IndexError: child or parent index out of range"
+        },
+        {
+          "field": "parent",
+          "value": "float dtype",
+          "rejected": true,
+          "exception": "TypeError: edge indices must be int64"
+        },
+        {
+          "field": "child",
+          "value": "float dtype",
+          "rejected": true,
+          "exception": "TypeError: edge indices must be int64"
+        }
+      ],
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "counterexample: [0,1,0] ownership uses local maximum",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "correction": [
+          [
+            0.0,
+            0.0,
+            -0.351187139749527
+          ],
+          [
+            0.0,
+            -0.49993830919265747,
+            0.0
+          ]
+        ],
+        "expected": {
+          "parent0": 2,
+          "parent1": 1
+        }
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "counterexample: strict tie deterministically uses lower edge",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "forward": [
+          [
+            -0.25846827030181885,
+            0.0,
+            0.0
+          ]
+        ],
+        "payload_reversed": [
+          [
+            0.0,
+            0.0,
+            -0.25846827030181885
+          ]
+        ]
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "complete overlap subtracts once",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "single": [
+          [
+            -0.20677462220191956,
+            0.0,
+            -0.15508095920085907
+          ]
+        ],
+        "twice": [
+          [
+            -0.20677462220191956,
+            0.0,
+            -0.15508095920085907
+          ]
+        ],
+        "max_abs_diff": 0.0
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "partial overlap has one owner per cell and no duplicate charge",
+      "passed": false,
+      "counterexample": false,
+      "detail": {
+        "combined": [
+          [
+            -0.5618994235992432,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_A_left_plus_B_right": [
+          [
+            -0.20677462220191956,
+            0.0,
+            -0.20677462220191956
+          ]
+        ],
+        "max_abs_diff": 0.3551248013973236
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "counterexample: wrong child cannot explain parent class",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "correction": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "parent_support": "class 0",
+        "child_support": "class 1"
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "max_children is per parent and enforced",
+      "passed": false,
+      "counterexample": false,
+      "detail": {
+        "one_per_parent_no_exception": false,
+        "two_same_parent_exception": "ValueError: per-parent child count exceeds max_children"
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "zero parent evidence is exact identity",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "output": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "exact_zero": true
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "random inputs only subtract and remain finite",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "seeds": 24,
+        "failures": []
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "actual 1203-class nonempty vocabulary",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "shape": [
+          1,
+          1203
+        ],
+        "finite": true,
+        "max": 0.0
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "counterexample: relation is [H,W,C], not shared spatial scalar",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "relation_shape": [
+          1,
+          2,
+          3
+        ],
+        "mean_class_spread": 0.09870180487632751,
+        "shared_spatial_gate_rmse": 0.04166729748249054,
+        "correction": [
+          [
+            -0.4233126938343048,
+            -0.14685174822807312,
+            0.0
+          ]
+        ]
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "initialization relation is nearly class-agnostic (warning)",
+      "passed": false,
+      "counterexample": false,
+      "detail": {
+        "mean_class_spread": 0.0002750195562839508,
+        "shared_spatial_gate_rmse": 0.00011272345727775246,
+        "note": "capacity test is above; this is numerical initialisation, not a structural failure"
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "counterexample: shuffled relation text changes class response",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "original": [
+          [
+            -0.4233126938343048,
+            -0.14685174822807312,
+            0.0
+          ]
+        ],
+        "shuffled_text": [
+          [
+            -0.2539876103401184,
+            -0.244752898812294,
+            0.0
+          ]
+        ],
+        "max_abs_diff": 0.1693250834941864
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "counterexample: one parent-class embedding perturbation is class-local",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "delta": [
+          0.04469028115272522,
+          0.0,
+          0.0
+        ],
+        "target_abs": 0.04469028115272522,
+        "other_abs": 0.0
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "child_query reads detached posterior and posterior has no gradient",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "query_changed_by_posterior": true,
+        "posterior_grad_none": true
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "gradients are finite and child_query/relation/child_mask are non-dead",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "all_parameter_grads_finite": true,
+        "input_grads_finite": true,
+        "child_query_maxabs": 4.094013638678007e-05,
+        "relation_maxabs": 0.006718387361615896,
+        "child_mask_maxabs": 0.004370765760540962
+      },
+      "exception": null
+    }
+  ],
+  "failures": [
+    "counterexample: empty shape contract survives python -O",
+    "counterexample: empty edge rejects class_width/vocabulary mismatch",
+    "counterexample: time dtype is validated and consistent",
+    "partial overlap has one owner per cell and no duplicate charge",
+    "max_children is per parent and enforced",
+    "initialization relation is nearly class-agnostic (warning)"
+  ],
+  "warnings": [
+    "initialization relation is nearly class-agnostic (warning)"
+  ]
+}
