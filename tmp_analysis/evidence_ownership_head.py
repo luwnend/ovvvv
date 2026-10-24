@@ -31,6 +31,17 @@ from torch import nn
 import torch.nn.functional as F
 
 
+class StableSpatialNorm(nn.Module):
+    """Normalize across channels, without requiring N or H*W to exceed one."""
+
+    def __init__(self, channels):
+        super().__init__()
+        self.norm = nn.LayerNorm(channels)
+
+    def forward(self, x):
+        return self.norm(x.permute(0, 2, 3, 1)).permute(0, 3, 1, 2)
+
+
 class EvidenceOwnershipLedger(nn.Module):
     def __init__(self, dim=256, hidden=128, max_children_per_parent=8,
                  max_edges=64, class_width=1203):
@@ -38,10 +49,9 @@ class EvidenceOwnershipLedger(nn.Module):
         self.class_width = int(class_width)
         self.child_mask = nn.Sequential(
             nn.Conv2d(dim, hidden, 3, padding=1),
-            # InstanceNorm has per-sample statistics, so the legitimate single
-            # edge batch also works in training mode. GroupNorm would fail for
-            # exactly one sample per channel.
-            nn.InstanceNorm2d(hidden, affine=True),
+            # Channel LayerNorm also accepts N=1 and H*W=1. Both GroupNorm and
+            # InstanceNorm reject a legal 1x1 ROI in training mode.
+            StableSpatialNorm(hidden),
             nn.GELU(),
             nn.Conv2d(hidden, 1, 1),
         )

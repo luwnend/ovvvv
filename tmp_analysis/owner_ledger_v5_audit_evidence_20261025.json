@@ -1,0 +1,521 @@
+{
+  "audit": "EvidenceOwnershipLedger v5 independent CPU audit",
+  "main_file": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/evidence_ownership_head.py",
+  "snapshot": "/raid/datasets/chc_data/partwhole_review_20261025_v1/evidence_ownership_head_417f734e.py",
+  "source_sha256_start": "417f734e63228637a153657c4106801e2f16a641209154b21ec7ea7ef4ce6ae3",
+  "source_sha256_end": "417f734e63228637a153657c4106801e2f16a641209154b21ec7ea7ef4ce6ae3",
+  "snapshot_sha256_start": "417f734e63228637a153657c4106801e2f16a641209154b21ec7ea7ef4ce6ae3",
+  "snapshot_sha256_end": "417f734e63228637a153657c4106801e2f16a641209154b21ec7ea7ef4ce6ae3",
+  "v4_comparator": "/raid/datasets/chc_data/partwhole_review_20261025_v1/evidence_ownership_head_833a4bf.py",
+  "v4_sha256": "833a4bf6dcd7e6af2763b602f975ee9a0e7fea09e68dde9a5b7904f84305af6b",
+  "torch_version": "1.10.0+cu113",
+  "device": "cpu",
+  "cuda_visible_devices": "",
+  "rounds": {
+    "1": {
+      "total": 6,
+      "counterexamples": 6,
+      "failures": [
+        "counterexample: single parent under train() with a legal 1x1 ROI is accepted",
+        "counterexample: two parents under train() with 1x1 ROIs are accepted",
+        "eval() single parent with 1x1 ROI remains accepted",
+        "v4/v5 normalizer comparison catches both the exact 1x1 single-row failure and batch-2 regression"
+      ]
+    },
+    "2": {
+      "total": 6,
+      "counterexamples": 6,
+      "failures": []
+    },
+    "3": {
+      "total": 8,
+      "counterexamples": 8,
+      "failures": [
+        "counterexample: train-mode 1x1 gradients are available"
+      ]
+    }
+  },
+  "tests": [
+    {
+      "round": 1,
+      "name": "counterexample: single parent under train() with a legal 1x1 ROI is accepted",
+      "passed": false,
+      "counterexample": true,
+      "detail": {
+        "exception": "ValueError: Expected more than 1 spatial element when training, got input size torch.Size([1, 8, 1, 1])"
+      }
+    },
+    {
+      "round": 1,
+      "name": "counterexample: two parents under train() with 1x1 ROIs are accepted",
+      "passed": false,
+      "counterexample": true,
+      "detail": {
+        "exception": "ValueError: Expected more than 1 spatial element when training, got input size torch.Size([2, 8, 1, 1])"
+      }
+    },
+    {
+      "round": 1,
+      "name": "train() single parent with 2x2 ROI is finite, nonpositive, and has correct shape",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "shape": [
+          1,
+          3
+        ],
+        "finite": true,
+        "nonpositive": true,
+        "max": -0.0018234050367027521
+      }
+    },
+    {
+      "round": 1,
+      "name": "train() batch 2 with 2x2 all-ones ROI is finite and nonpositive",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "shape": [
+          2,
+          3
+        ],
+        "finite": true,
+        "nonpositive": true,
+        "max": 0.0
+      }
+    },
+    {
+      "round": 1,
+      "name": "eval() single parent with 1x1 ROI remains accepted",
+      "passed": false,
+      "counterexample": true,
+      "detail": {
+        "exception": "ValueError: Expected more than 1 spatial element when training, got input size torch.Size([1, 8, 1, 1])"
+      }
+    },
+    {
+      "round": 1,
+      "name": "v4/v5 normalizer comparison catches both the exact 1x1 single-row failure and batch-2 regression",
+      "passed": false,
+      "counterexample": true,
+      "detail": {
+        "matrix": [
+          {
+            "n_parent": 1,
+            "h": 1,
+            "w": 1,
+            "v4": {
+              "accepted": false,
+              "exception": "ValueError: Expected more than 1 value per channel when training, got input size [1, 8, 1, 1]"
+            },
+            "v5": {
+              "accepted": false,
+              "exception": "ValueError: Expected more than 1 spatial element when training, got input size torch.Size([1, 8, 1, 1])"
+            }
+          },
+          {
+            "n_parent": 1,
+            "h": 2,
+            "w": 2,
+            "v4": {
+              "accepted": true,
+              "finite": true
+            },
+            "v5": {
+              "accepted": true,
+              "finite": true
+            }
+          },
+          {
+            "n_parent": 1,
+            "h": 1,
+            "w": 2,
+            "v4": {
+              "accepted": true,
+              "finite": true
+            },
+            "v5": {
+              "accepted": true,
+              "finite": true
+            }
+          },
+          {
+            "n_parent": 2,
+            "h": 1,
+            "w": 1,
+            "v4": {
+              "accepted": true,
+              "finite": true
+            },
+            "v5": {
+              "accepted": false,
+              "exception": "ValueError: Expected more than 1 spatial element when training, got input size torch.Size([2, 8, 1, 1])"
+            }
+          },
+          {
+            "n_parent": 2,
+            "h": 2,
+            "w": 2,
+            "v4": {
+              "accepted": true,
+              "finite": true
+            },
+            "v5": {
+              "accepted": true,
+              "finite": true
+            }
+          },
+          {
+            "n_parent": 2,
+            "h": 1,
+            "w": 2,
+            "v4": {
+              "accepted": true,
+              "finite": true
+            },
+            "v5": {
+              "accepted": true,
+              "finite": true
+            }
+          }
+        ],
+        "expected_v5_fix": false
+      }
+    },
+    {
+      "round": 2,
+      "name": "counterexample: invalid empty overlap shape is rejected under python -O",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "cases": [
+          {
+            "shape": [
+              0,
+              2,
+              3
+            ],
+            "returncode": 0,
+            "stdout": "REJECT ValueError overlap must be [E,H,W]",
+            "stderr": ""
+          },
+          {
+            "shape": [
+              0,
+              3,
+              2
+            ],
+            "returncode": 0,
+            "stdout": "REJECT ValueError overlap must be [E,H,W]",
+            "stderr": ""
+          },
+          {
+            "shape": [
+              1,
+              2,
+              2
+            ],
+            "returncode": 0,
+            "stdout": "REJECT ValueError overlap must be [E,H,W]",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "name": "counterexample: empty edge is exact zero even in train() with 1x1 ROI",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "shape": [
+          1,
+          3
+        ],
+        "exact_zero": true
+      }
+    },
+    {
+      "round": 2,
+      "name": "counterexample: class width mismatch is rejected on empty and nonempty paths",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "empty": {
+          "rejected": true,
+          "exception": "ValueError: class vocabulary width differs from relation width"
+        },
+        "nonempty": {
+          "rejected": true,
+          "exception": "ValueError: class vocabulary width differs from relation width"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "name": "counterexample: time dtype, finiteness, and future contract",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "accepted_int32": {
+          "accepted": true,
+          "exception": "accepted without exception"
+        },
+        "accepted_int64": {
+          "accepted": true,
+          "exception": "accepted without exception"
+        },
+        "mixed_int32_int64": {
+          "rejected": true,
+          "exception": "TypeError: parent and child times must share dtype"
+        },
+        "mixed_int64_float32": {
+          "rejected": true,
+          "exception": "TypeError: parent and child times must share dtype"
+        },
+        "bool": {
+          "rejected": true,
+          "exception": "TypeError: observation times must be integer frame indices"
+        },
+        "float32": {
+          "rejected": true,
+          "exception": "TypeError: observation times must be integer frame indices"
+        },
+        "future": {
+          "rejected": true,
+          "exception": "ValueError: future child observation"
+        },
+        "parent_nan": {
+          "rejected": true,
+          "exception": "ValueError: nonfinite observation time"
+        },
+        "child_inf": {
+          "rejected": true,
+          "exception": "ValueError: nonfinite observation time"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "name": "counterexample: NaN and Inf are rejected for every tensor input",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "parent_tokens": {
+          "rejected": true,
+          "exception": "ValueError: nonfinite parent token"
+        },
+        "child_tokens": {
+          "rejected": true,
+          "exception": "ValueError: nonfinite child token"
+        },
+        "overlap": {
+          "rejected": true,
+          "exception": "ValueError: nonfinite overlap"
+        },
+        "posterior": {
+          "rejected": true,
+          "exception": "ValueError: nonfinite child posterior"
+        },
+        "embedding": {
+          "rejected": true,
+          "exception": "ValueError: nonfinite class embedding"
+        },
+        "geometry": {
+          "rejected": true,
+          "exception": "ValueError: nonfinite child geometry"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "name": "counterexample: per-parent and global edge limits stay separate",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "legal": "accepted without exception",
+        "same_parent": "ValueError: per-parent child count exceeds max_children_per_parent",
+        "global_max_edges": "ValueError: edge count exceeds max_edges"
+      }
+    },
+    {
+      "round": 3,
+      "name": "counterexample: owner uses per-parent local max and strict lower-edge tie",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "local_max": [
+          [
+            0.0,
+            0.0,
+            -0.351187139749527
+          ],
+          [
+            0.0,
+            -0.49993830919265747,
+            0.0
+          ]
+        ],
+        "tie": [
+          [
+            -0.25846827030181885,
+            0.0,
+            0.0
+          ]
+        ],
+        "tie_payload_reversed": [
+          [
+            0.0,
+            0.0,
+            -0.25846827030181885
+          ]
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "name": "counterexample: full and partial overlaps prevent duplicate subtraction",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "full_overlap_no_double": true,
+        "partial_partition_exact": true,
+        "a_only": [
+          [
+            -0.5582914352416992,
+            0.0,
+            0.0
+          ]
+        ],
+        "b_only": [
+          [
+            0.0,
+            0.0,
+            -0.49625909328460693
+          ]
+        ],
+        "both": [
+          [
+            -0.5582914352416992,
+            0.0,
+            -0.49625909328460693
+          ]
+        ],
+        "expected": [
+          [
+            -0.5582914352416992,
+            0.0,
+            -0.49625909328460693
+          ]
+        ],
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "round": 3,
+      "name": "counterexample: class-conditioned evidence and detached posterior",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "posterior_changes_output": true,
+        "embedding_delta": [
+          -0.038589924573898315,
+          0.0,
+          0.0
+        ],
+        "posterior_grad_is_none": true
+      }
+    },
+    {
+      "round": 3,
+      "name": "counterexample: zero parent evidence has exact zero correction",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "exact_zero": true
+      }
+    },
+    {
+      "round": 3,
+      "name": "counterexample: train-mode 2x2 gradients are finite and mechanism paths are alive",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "all_parameter_grads_finite": true,
+        "selected_maxabs": {
+          "child_mask_last_weight": 0.0017540357075631618,
+          "child_query_last_weight": 3.3313244784949347e-06,
+          "relation_last_weight": 0.0005126559408381581
+        },
+        "parent_input_grad_finite": true,
+        "child_input_grad_finite": true
+      }
+    },
+    {
+      "round": 3,
+      "name": "counterexample: train-mode 1x1 gradients are available",
+      "passed": false,
+      "counterexample": true,
+      "detail": {
+        "exception": "ValueError: Expected more than 1 spatial element when training, got input size torch.Size([1, 8, 1, 1])"
+      }
+    },
+    {
+      "round": 3,
+      "name": "counterexample: per-parent outputs are independent within a train-mode batch",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "batch_output": [
+          [
+            -0.0032370886765420437,
+            -0.003448636271059513,
+            -0.0016749522183090448
+          ],
+          [
+            -0.0006189577979966998,
+            -0.001138002029620111,
+            -0.001619634684175253
+          ]
+        ],
+        "separate_output": [
+          [
+            -0.0032370886765420437,
+            -0.0034486365038901567,
+            -0.0016749524511396885
+          ],
+          [
+            -0.000618957681581378,
+            -0.001138002029620111,
+            -0.001619634684175253
+          ]
+        ],
+        "max_abs_diff": 2.3283064365386963e-10
+      }
+    },
+    {
+      "round": 3,
+      "name": "counterexample: 1203-class train-mode 2x2 path remains finite",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "shape": [
+          1,
+          1203
+        ],
+        "finite": true,
+        "nonpositive": true,
+        "max": 0.0
+      }
+    }
+  ],
+  "failures": [
+    "counterexample: single parent under train() with a legal 1x1 ROI is accepted",
+    "counterexample: two parents under train() with 1x1 ROIs are accepted",
+    "eval() single parent with 1x1 ROI remains accepted",
+    "v4/v5 normalizer comparison catches both the exact 1x1 single-row failure and batch-2 regression",
+    "counterexample: train-mode 1x1 gradients are available"
+  ],
+  "verdict": "FAIL: the exact legal 1x1 single-row train-mode case is not fixed; InstanceNorm2d also regresses a previously working batch-2 1x1 case.",
+  "gpu_pilot": "NOT_ALLOWED_BY_THIS_AUDIT"
+}

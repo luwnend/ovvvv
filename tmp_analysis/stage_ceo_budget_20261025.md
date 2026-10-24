@@ -36,7 +36,7 @@ full FIT 扫描覆盖 7 个数据 block；最大 source 仅占 4.79% 的去重�
 
 ## 已通过的实现契约
 
-当前 `evidence_ownership_head.py` 快照 `417f734e`：修复了 `833a4bf6` 单独复核发现的单行 `train()` GroupNorm 错误，改用 InstanceNorm；作者测试与单行 train 前反传通过，等待最终独立复核。此前的 `833a4bf6` 15/15 PASS 不含 train-mode 单行测试：`python -O` 下 shape 仍拒绝、1203 类宽精确、int32/int64 时间且拒未来、per-parent/全局上限分离、partial overlap 各格一 owner、关系输出 per-class、无 child 精确恒等、随机输入 finite/nonpositive、梯度有限。此结论只对快照有效；后续编辑必须重新审计。它放行真实遮挡特征采集，不放行训练或方法收益 claim。
+当前 `evidence_ownership_head.py` 快照 `c0ea9872`：`833a4bf6` 的单行 `train()` GroupNorm 错误已修；InstanceNorm 方案在 1×1 ROI 仍失败，已换成通道 LayerNorm（StableSpatialNorm）。作者测试和 (1,1,1)/(2,1,1)/(1/2,2,2) 等 train 前向+梯度均通过，等待最终独立复核。`833a4bf6` 的 15/15 PASS 不含 train-mode 单行或 1×1 测试：`python -O` 下 shape 仍拒绝、1203 类宽精确、int32/int64 时间且拒未来、per-parent/全局上限分离、partial overlap 各格一 owner、关系输出 per-class、无 child 精确恒等、随机输入 finite/nonpositive、梯度有限。此结论只对快照有效；后续编辑必须重新审计。它放行真实遮挡特征采集，不放行训练或方法收益 claim。
 
 ## 下一道门
 
