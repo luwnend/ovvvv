@@ -192,9 +192,15 @@ L_teacher = Huber(hat_T_pjc, T_pjc) + λ_ce CE(corrected_parent, train_label)
 
 ### A7. 合成原型的实现状态
 
-`tmp_analysis/evidence_ownership_head.py` 仍只是独立合成契约原型，尚未接入 COVTrack。首轮实现曾有三项问题：relation 末端零初始化使 `child_query` 梯度恒零；重叠 child 的占位逻辑按输入顺序覆盖；2D mask 与 flat assignment 布尔索引错位。随后独立复核又在快照 `eab492b8` 发现阻断项：`max_children` 未执行、owner 选择规则与注释不一致、默认 256 类宽无法接受实际 1203 类、NaN 非 fail-closed、observed posterior 会收到梯度，以及 class-conditioning 可退化为共享 scalar gate。
+`tmp_analysis/evidence_ownership_head.py` 仍只是独立合成契约原型，尚未接入 COVTrack。独立复核版本历史：
 
-当前修订已执行以下检查，并全部通过：无 child 精确恒等、只减不增、严格更大 child 可换主、相等 tie 保持较低 edge、`max_children` 超限拒绝、NaN overlap 拒绝、1203 类默认空 child 路径可用、posterior 不带梯度、有限梯度。但这只是**修订后的作者测试**；独立复核结论仍是旧快照的 FAIL，尚未对当前版本重审。更不能把这一步称为方法收益、真实遮挡因果性、source-OOD 或 TETA 通过。真实接入前还必须验证 ROI 网格、NMS 行、child occupancy 坐标系，以及 class-conditioning 是否真正读取文本/类别关系而非弱共享 gate。
+- `eab492b8`：FAIL。owner 选择、per-parent 上限、1203 类宽度、NaN fail-closed、posterior detach 均有问题；
+- `c4684e66`：FAIL。这些多数修复，但空 geometry shape 未验证、接口不含时间、relation 仍退化为共享空间标量；
+- 当前修订（`68fa8839`）：增加了 `[E,5]`/`[E,H,W]`/time 对齐检查，拒绝 `child_time > parent_time`，relation 输出 `[H,W,C]` 的父类条件，`child_query` 读取 child posterior；作者契约现全部通过。
+
+作者测试覆盖：无 child 精确恒等、只减不增、重叠不双扣、严格更大 child 换主、tie 给低 edge、per-parent 上限、1203 类、NaN 拒绝、未来时间拒绝、posterior detach、父类 embedding 单独扰动只影响该类、有限梯度。它们只是放行到下一次独立复核的证据，不是收益或因果结论。
+
+此外，当前 relation 是“父类 embedding 与 child query 的 learned per-class scalar”加上 child posterior 的类别乘子，足以排除纯共享 gate，但还不能证明学习到了 `part-of` 文本关系。正式实验需要随机类关系、learned class table、class-agnostic 与只换 child posterior 的强控制。
 
 ### A8. 成本
 

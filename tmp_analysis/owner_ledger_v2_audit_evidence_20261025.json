@@ -1,0 +1,440 @@
+{
+  "source_snapshot": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/evidence_ownership_head.py",
+  "source_sha256": "c4684e660842e00299ac6943e8af1419575a27753b12c1f96b8e4b2ad7c69c69",
+  "torch_version": "1.10.0+cu113",
+  "rounds": {
+    "1": 7,
+    "2": 7,
+    "3": 7
+  },
+  "tests": [
+    {
+      "round": 1,
+      "name": "empty edge exact identity",
+      "passed": true,
+      "detail": {
+        "shape": [
+          1,
+          3
+        ],
+        "exact_zero": true
+      },
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "malformed empty geometry rejected",
+      "passed": false,
+      "detail": {
+        "accepted": true,
+        "shape": [
+          1,
+          3
+        ]
+      },
+      "exception": "accepted and returned identity"
+    },
+    {
+      "round": 1,
+      "name": "nonempty edge with empty child token rejected",
+      "passed": true,
+      "detail": {
+        "accepted": false
+      },
+      "exception": "IndexError: index 0 is out of bounds for dimension 0 with size 0"
+    },
+    {
+      "round": 1,
+      "name": "all six inputs reject NaN and Inf",
+      "passed": true,
+      "detail": [
+        {
+          "input": "parent",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite parent token"
+        },
+        {
+          "input": "parent",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite parent token"
+        },
+        {
+          "input": "child",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite child token"
+        },
+        {
+          "input": "child",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite child token"
+        },
+        {
+          "input": "overlap",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite overlap"
+        },
+        {
+          "input": "overlap",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite overlap"
+        },
+        {
+          "input": "posterior",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite child posterior"
+        },
+        {
+          "input": "posterior",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite child posterior"
+        },
+        {
+          "input": "embedding",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite class embedding"
+        },
+        {
+          "input": "embedding",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite class embedding"
+        },
+        {
+          "input": "geometry",
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError: nonfinite child geometry"
+        },
+        {
+          "input": "geometry",
+          "value": "inf",
+          "rejected": true,
+          "exception": "ValueError: nonfinite child geometry"
+        }
+      ],
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "all index bounds and dtype probes fail closed",
+      "passed": true,
+      "detail": [
+        {
+          "field": "parent",
+          "index": -1,
+          "rejected": true,
+          "exception": "RuntimeError: bincount only supports 1-d non-negative integral inputs."
+        },
+        {
+          "field": "parent",
+          "index": 1,
+          "rejected": true,
+          "exception": "IndexError: child or parent index out of range"
+        },
+        {
+          "field": "parent",
+          "index": 99,
+          "rejected": true,
+          "exception": "IndexError: child or parent index out of range"
+        },
+        {
+          "field": "child",
+          "index": -1,
+          "rejected": true,
+          "exception": "IndexError: child or parent index out of range"
+        },
+        {
+          "field": "child",
+          "index": 1,
+          "rejected": true,
+          "exception": "IndexError: child or parent index out of range"
+        },
+        {
+          "field": "child",
+          "index": 99,
+          "rejected": true,
+          "exception": "IndexError: child or parent index out of range"
+        },
+        {
+          "field": "parent",
+          "index": "float",
+          "rejected": true,
+          "exception": "TypeError: edge indices must be int64"
+        },
+        {
+          "field": "child",
+          "index": "float",
+          "rejected": true,
+          "exception": "TypeError: edge indices must be int64"
+        }
+      ],
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "max_children is enforced per parent",
+      "passed": true,
+      "detail": [
+        {
+          "case": "one edge per parent",
+          "accepted": true,
+          "exception": null
+        },
+        {
+          "case": "two edges on one parent",
+          "rejected": true,
+          "exception": "ValueError: per-parent child count exceeds max_children"
+        }
+      ],
+      "exception": null
+    },
+    {
+      "round": 1,
+      "name": "default 1203-class full vocabulary",
+      "passed": true,
+      "detail": {
+        "class_width": 1203,
+        "relation_in_features": 1459,
+        "output_shape": [
+          2,
+          1203
+        ],
+        "finite": true,
+        "all_nonpositive": true
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "[0,1,0] scores [1,9,5] owner is local maximum",
+      "passed": true,
+      "detail": {
+        "values": [
+          [
+            0.0,
+            0.0,
+            -0.012610025703907013
+          ],
+          [
+            0.0,
+            -0.017954297363758087,
+            0.0
+          ]
+        ],
+        "expected_parent0_class": "2",
+        "expected_parent1_class": "1"
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "higher-score child owns and wrong child does not explain",
+      "passed": true,
+      "detail": {
+        "child1_wins": [
+          [
+            0.0,
+            0.0,
+            -0.012532639317214489
+          ]
+        ],
+        "child0_wins": [
+          [
+            -0.01251448504626751,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "fully overlapping strict tie gives lower edge",
+      "passed": true,
+      "detail": {
+        "forward": [
+          [
+            -0.009235120378434658,
+            0.0,
+            0.0
+          ]
+        ],
+        "payload_reversed": [
+          [
+            0.0,
+            0.0,
+            -0.009235120378434658
+          ]
+        ]
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "partial overlap has one owner and respects score",
+      "passed": true,
+      "detail": {
+        "child1_wins": [
+          [
+            0.0,
+            0.0,
+            -0.011121449992060661
+          ]
+        ],
+        "child0_wins": [
+          [
+            -0.011127082630991936,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "zero legal overlap gives exact no-ownership identity",
+      "passed": true,
+      "detail": {
+        "exact_zero": true
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "future inputs are absent from interface",
+      "passed": false,
+      "detail": {
+        "signature": "(self, parent_tokens, child_tokens, edge_parent, edge_child, overlap, child_posterior, class_embedding, child_geometry)",
+        "extra_future_kwarg_result": "TypeError: forward() got an unexpected keyword argument 'future_tokens'",
+        "note": "structural only; caller must still supply past/current observations; no frame/time index exists, so a future child cannot be rejected by this module"
+      },
+      "exception": null
+    },
+    {
+      "round": 2,
+      "name": "permuted non-tied edges are invariant",
+      "passed": true,
+      "detail": {
+        "max_abs_diff": 0.0
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "child support for parent class increases explain-away",
+      "passed": true,
+      "detail": {
+        "q0_sweep": [
+          0,
+          0.25,
+          0.5,
+          1
+        ],
+        "correction_class0": [
+          0.0,
+          -0.0032998390961438417,
+          -0.0065996781922876835,
+          -0.013199356384575367
+        ]
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "child posterior receives no gradient",
+      "passed": true,
+      "detail": {
+        "posterior_grad": null
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "posterior values still control class axis",
+      "passed": true,
+      "detail": {
+        "class0_support": [
+          [
+            -0.007392562460154295,
+            0.0,
+            0.0
+          ]
+        ],
+        "class1_support": [
+          [
+            0.0,
+            -0.014738901518285275,
+            0.0
+          ]
+        ]
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "parent positive support is localized and zero is exact identity",
+      "passed": true,
+      "detail": {
+        "one_positive_cell": [
+          [
+            -0.013179920613765717,
+            0.0,
+            0.0
+          ]
+        ],
+        "all_zero_parent_exact": true
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "class conditioning is not a shared spatial scalar",
+      "passed": false,
+      "detail": {
+        "relation_shape": [
+          2,
+          2
+        ],
+        "relation_is_one_scalar_per_cell": true,
+        "uniform_support_plus_identical_embeddings_yields_shared_scalar": true,
+        "finding": "active path is q_child[c] * one class-agnostic spatial relation score * parent_positive[c]; child_query does not consume posterior and has no per-class/cross-class parameters"
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "gradients finite and child_query not dead",
+      "passed": true,
+      "detail": {
+        "all_parameter_grads_finite": true,
+        "child_query_first_maxabs": 2.105782414218993e-06,
+        "child_query_last_maxabs": 4.528175395535072e-06,
+        "input_parent_grad_finite": true,
+        "input_child_grad_finite": true,
+        "geometry_grad_finite": true
+      },
+      "exception": null
+    },
+    {
+      "round": 3,
+      "name": "numeric overlap outside [0,1] rejected",
+      "passed": true,
+      "detail": {
+        "accepted_without_nan": false,
+        "notes": "NaN is rejected; -1 and 2 are clamped by implementation"
+      },
+      "exception": "ValueError: nonfinite overlap"
+    }
+  ]
+}
