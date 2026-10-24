@@ -1,0 +1,106 @@
+{
+  "status": "DRAFT_READONLY_METADATA_STREAMING_FULL_CANDIDATE_SCENE_RESIDUAL_V1",
+  "schema": "STREAMING_FULL_CANDIDATE_SCENE_RESIDUAL_FRAME_PAIR_V1",
+  "purpose": "Resource preflight and output contract only; no FIT worker is launched by this protocol.",
+  "runner_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/streaming_full_candidate_scene_residual_preflight_20261024.py",
+  "population": {
+    "split": "fit",
+    "selection": "The 403 metadata-nonempty FIT videos inherited by full_collection_plan; no outcome, identity, category, GT, posterior, or tracker-ID selection.",
+    "source_groups_expected": 341,
+    "videos_expected": 403,
+    "frames_expected": 13791,
+    "lags": [1, 4],
+    "candidate_rule": "For every same-video frame pair at the exact sampled frame_id lag, retain the complete Q x M Cartesian candidate population. A candidate is never removed by MNN, availability, exclusion, gain, or any label.",
+    "frame_pair_chunk": "One independently sealed chunk per (video_id, lag, query_frame_id, reference_frame_id); no cross-video pair and no in-memory full-FIT matrix.",
+    "expected_frame_pairs": {"1": 13388, "4": 12185},
+    "expected_candidates": {"1": 29096237, "4": 26255927, "total": 55352164},
+    "maximum_candidates_per_chunk": 5929
+  },
+  "inputs": {
+    "plan_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json",
+    "plan_sha256": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+    "frame_execution_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/frame_execution.jsonl",
+    "frame_execution_sha256": "e0e327a887840fbbdf5acacc374a589f696ad529af62d7a9a535bc2dd6161c07",
+    "inventory_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump_inventory.json",
+    "inventory_sha256": "5a7f94a531e754aef0cec1c78b82a080ee92d6e451f943a46be8c71c6a7676db",
+    "scene_residual_module_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_20261024.py",
+    "scene_residual_module_sha256": "0824dbd527563496cf4d3275ec2de169295bf3d72c4eef145529ebd04cf5b7be",
+    "cached_motion_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_endpoint_scene_motion_20261024.py",
+    "cached_motion_sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32",
+    "pilot_audit_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_four_frame_cpu_independent_completion_audit_20261024.json",
+    "pilot_audit_sha256": "0f3d302a28b47c46aca6c32f958754b9704b6bc5e57a5c26ff2adcf2ffffac70"
+  },
+  "raw_member_allowlist": ["det_bboxes[:,:4]", "track_feats", "roi_proposal_row", "video_id", "image_id", "frame_id", "frame_index"],
+  "forbidden_inputs": ["GT", "category", "posterior", "released_track_id", "manual_identity", "OOF_score", "test_partition", "identity_filter"],
+  "arms": {
+    "fullpool": "Canonical raw strict-positive reciprocal MNN over the full valid row pool; this arm is a diagnostic control and does not filter candidates.",
+    "row_excluded": "Before rematching, remove the candidate query row and reference row; then recompute strict-positive reciprocal MNN.",
+    "proposal_overlap_excluded": "Before rematching, remove each endpoint, all equal roi_proposal_row rows, and every row with direct positive-area overlap with that endpoint box; no transitive closure.",
+    "minimum_anchors": 3,
+    "missing": "Candidate remains in the chunk. Its arm is available=0, anchor_count is retained, and donor-dependent values are NaN; missing is never converted to zero or identity motion."
+  },
+  "edge_output": {
+    "format": "NPZ chunk written with exclusive create, then hashed; no edge-level anchor tuple JSON.",
+    "arrays": {
+      "rowloc": "uint32[N,2] query_row, reference_row",
+      "raw_cosine": "float64[N] canonical full-matrix value",
+      "static_abs_L1": "float64[N] candidate centre displacement normalized by pair scale",
+      "available": "uint8[N,3] ordered fullpool,row_excluded,proposal_overlap_excluded",
+      "anchor_count": "uint16[N,3] ordered per-arm count",
+      "translation_xy": "float64[N,3,2] original-image-pixel median translation; NaN when unavailable",
+      "corrected_L1": "float64[N,3] corrected normalized displacement; NaN when unavailable",
+      "gain": "float64[N,3] static_abs_L1 - corrected_L1; NaN when unavailable",
+      "fit_key": "uint64[N,3] truncated SHA-256 key of arm plus endpoint exclusion digests",
+      "anchor_hash": "uint8[N,3,32] SHA-256 of ordered uint32 anchor row pairs; empty-anchor hash is deterministic",
+      "mask": "uint8[N] bit 0 fullpool-MNN candidate, bits 1-3 arm availability, bit 4 finite static geometry"
+    },
+    "endpoint_tables": {
+      "query_exclusion_hash": "uint8[Q,3,32] full SHA-256 for canonical sorted query exclusion rows, once per endpoint",
+      "reference_exclusion_hash": "uint8[M,3,32] full SHA-256 for canonical sorted reference exclusion rows, once per endpoint"
+    },
+    "key_definition": "fit_key is the uint64 little-endian interpretation of the first eight bytes of SHA-256(domain=scene-residual-fit-key-v1, arm name, query exclusion SHA-256, reference exclusion SHA-256). Full endpoint digests remain in endpoint_tables so an auditor can detect a key collision.",
+    "anchor_hash_definition": "SHA-256(domain=scene-residual-anchor-v1 followed by C-contiguous little-endian uint32 ordered (query_row,reference_row) pairs).",
+    "edge_bytes_uncompressed": {
+      "rowloc": 8,
+      "raw_and_static": 16,
+      "three_arm_available_count_translation_corrected_gain_key_anchor_hash": 225,
+      "mask": 1,
+      "total_per_candidate": 250
+    },
+    "provenance": "A chunk receipt binds input frame locators, Q/M, candidate count, array shapes/dtypes, output SHA-256, endpoint-table SHA-256, previous receipt hash, and protocol SHA-256. Full anchor tuples are reconstructed by a fresh auditor from the pinned raw cache and anchor_hash."
+  },
+  "streaming_and_recovery": {
+    "output_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/streaming_full_candidate_scene_residual_20261024_v1",
+    "execution_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/streaming_full_candidate_scene_residual_execution_20261024_v1",
+    "chunk_order": "lexicographic (video_id, lag, query_frame_id, reference_frame_id)",
+    "manifest": "append-only canonical JSONL; each line includes previous_receipt_sha256 and receipt_sha256",
+    "resume": "Only a complete prefix with verified output, input, and hash-chain pins may continue. Never overwrite, retry, or reinterpret a partial chunk.",
+    "finalize": "After all chunks, independently recompute counts, hashes, and arm values from raw cache; only then write global seal and any later FIT identity join."
+  },
+  "runtime": {
+    "python": "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "CPU_only": true,
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "chunk_timeout_seconds": 900,
+    "automatic_retry": false,
+    "no_training": true,
+    "no_identity_join_until_global_seal": true
+  },
+  "resource_planning": {
+    "pilot_scope": "The pinned four-frame pilot measured one proposal-overlap arm and 8,692 candidates; its elapsed time is a scaling reference only, not a runtime guarantee.",
+    "pilot_candidates": 8692,
+    "pilot_similarity_entry_work": 25243600,
+    "pilot_elapsed_seconds": 2.757811265066266,
+    "arms_to_project": 3,
+    "planning_safety_factor": 2.0,
+    "memory_rule": "Only one frame-pair and its arrays may be resident; no full-FIT candidate array, fit-record list, or edge anchor tuple collection.",
+    "metadata_only_preflight": "This draft and its preflight read plan/frame metadata and hashes only; they do not open NPZ payloads, run scene residual, launch a worker, or create the output directory.",
+    "minimum_free_disk_bytes": 33285996544,
+    "output_overhead_reserve_bytes": 1073741824,
+    "extra_safety_reserve_bytes": 2147483648
+  },
+  "interpretation": "A passing preflight establishes only a frozen, resumable CPU output contract and resource estimate. It establishes no identity correctness, physical camera motion, tracking gain, generalization, or novelty."
+}

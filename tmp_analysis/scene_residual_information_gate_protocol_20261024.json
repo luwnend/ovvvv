@@ -1,0 +1,50 @@
+{
+  "status": "FROZEN_FIXED_FIT_GT_FREE_SCENE_RESIDUAL_INFORMATION_GATE_V1",
+  "purpose": "Complete all candidate scene residuals on the already fixed 12-source/20-video/697-frame exploratory FIT population, then compare residual cues against raw appearance on a common supported known-label readout.",
+  "script_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/diagnose_scene_residual_information_gate_20261024.py",
+  "script_sha256": "ea57cc395d65c19b78df857f88231de77dbfa3f80edd52b2455b6e9d19e4e80e",
+  "selection_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/context_feature_memory_replay_protocol_20261024.json",
+  "selection_sha256": "740d6c782fdfe8240ddc8c4b924e566cebd2465a6a05233f02197b1e904aaf1b",
+  "residual_module_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_20261024.py",
+  "residual_module_sha256": "0824dbd527563496cf4d3275ec2de169295bf3d72c4eef145529ebd04cf5b7be",
+  "prior_candidate_seal": "/home/chenhc/ov/OVMOT_RESEARCH/results/spacetime_candidate_features_20261024_v1/GT_free_candidates_sealed.json",
+  "population": {
+    "source_groups": 12,
+    "videos": 20,
+    "frames": 697,
+    "adjacent_pairs": 677
+  },
+  "candidate_contract": "All retained query rows x all retained immediately previous rows for every adjacent selected pair; no identity/category/outcome filtering; unknown endpoints retained.",
+  "residual_contract": "Strict endpoint exclusion, fresh reciprocal matching, minimum 3 anchors, componentwise median translation in original-image pixels, normalized residual L1 and gain; unavailable is explicit.",
+  "stored_fields": [
+    "raw_cosine",
+    "static_abs_L1",
+    "corrected_L1",
+    "gain",
+    "available",
+    "anchor_count",
+    "fit_index",
+    "residual_dxdy",
+    "translation_xy",
+    "residual_mad_xy"
+  ],
+  "readout": "After GT-free seal, use previously sealed eligible FIT labels only for source-macro AUC and common supported-query repair/break; unknown is not negative.",
+  "controls": [
+    "raw appearance cosine",
+    "static displacement",
+    "scene residual",
+    "scene gain",
+    "reversed residual placebo"
+  ],
+  "runtime": {
+    "python": "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "CPU_only": true,
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "hard_timeout_seconds": 1200,
+    "automatic_retry": false
+  },
+  "interpretation": "Exploratory information gate only; no learned fusion, tracker metric, independent generalization, physical camera interpretation, or novelty claim."
+}

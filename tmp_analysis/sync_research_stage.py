@@ -163,6 +163,28 @@ FEATURE_SPACETIME_CANDIDATE_JSON = [
     "spacetime_candidate_features_20261024_v1/completion_receipt.json",
 ]
 
+# Scene-residual information gate and the read-only full-FIT resource hold.
+FEATURE_SCENE_RESIDUAL_REPORTS = [
+    "COVTrack_场景残差信息门_20261024.md",
+    "COVTrack_流式场景残差资源预检_20261024.md",
+]
+FEATURE_SCENE_RESIDUAL_SCRIPTS = [
+    "diagnose_scene_residual_information_gate_20261024.py",
+    "finalize_scene_residual_information_gate_20261024.py",
+    "audit_scene_residual_information_gate_20261024.py",
+    "scene_residual_information_gate_protocol_20261024.json",
+    "streaming_full_candidate_scene_residual_preflight_20261024.py",
+    "streaming_full_candidate_scene_residual_preflight_20261024.json",
+    "streaming_full_candidate_scene_residual_protocol_20261024.json",
+    "streaming_full_candidate_scene_residual_protocol_20261024.md",
+]
+FEATURE_SCENE_RESIDUAL_JSON = [
+    "scene_residual_information_gate_20261024_v1/GT_free_residual_sealed.json",
+    "scene_residual_information_gate_20261024_v1/summary.json",
+    "scene_residual_information_gate_20261024_v1/completion_receipt.json",
+    "scene_residual_information_gate_20261024_v1/independent_output_audit.json",
+]
+
 
 def feature_spacetime_mapping():
     """Return the exact lightweight allowlist without reading or copying files."""
@@ -175,6 +197,12 @@ def feature_spacetime_mapping():
                 for name in FEATURE_MEMORY_JSON]
     mapping += [(ROOT / "results" / source, Path("evidence") / source)
                 for source in FEATURE_SPACETIME_CANDIDATE_JSON]
+    mapping += [(ROOT / "report" / name, Path("report") / name)
+                for name in FEATURE_SCENE_RESIDUAL_REPORTS]
+    mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name)
+                for name in FEATURE_SCENE_RESIDUAL_SCRIPTS]
+    mapping += [(ROOT / "results" / source, Path("evidence") / source)
+                for source in FEATURE_SCENE_RESIDUAL_JSON]
     return mapping
 
 

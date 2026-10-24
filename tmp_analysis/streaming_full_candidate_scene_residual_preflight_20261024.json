@@ -1,0 +1,4126 @@
+{
+  "status": "HOLD_METADATA_STREAMING_RESOURCE_PREFLIGHT",
+  "recorded_utc": "2026-10-24T01:40:44.709784+00:00",
+  "protocol_sha256": "61b289f1f4ef0f79c256970858735b771803873006408a120dd69025e248b537",
+  "preflight_sha256": "9843237c0bf4712fe8a029dccc8080f057da15ebf63d11d1cadfe445da7a8a45",
+  "input_pins": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json": {
+      "sha256": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+      "size_bytes": 5009779
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/frame_execution.jsonl": {
+      "sha256": "e0e327a887840fbbdf5acacc374a589f696ad529af62d7a9a535bc2dd6161c07",
+      "size_bytes": 9719146
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump_inventory.json": {
+      "sha256": "5a7f94a531e754aef0cec1c78b82a080ee92d6e451f943a46be8c71c6a7676db",
+      "size_bytes": 3013108
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_20261024.py": {
+      "sha256": "0824dbd527563496cf4d3275ec2de169295bf3d72c4eef145529ebd04cf5b7be",
+      "size_bytes": 8132
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_endpoint_scene_motion_20261024.py": {
+      "sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32",
+      "size_bytes": 20061
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_four_frame_cpu_independent_completion_audit_20261024.json": {
+      "sha256": "0f3d302a28b47c46aca6c32f958754b9704b6bc5e57a5c26ff2adcf2ffffac70",
+      "size_bytes": 7878
+    }
+  },
+  "line_count_total": 15283,
+  "selected_fit_videos": 403,
+  "selected_fit_frames": 13791,
+  "lag_stats": {
+    "1": {
+      "frame_pairs": 13388,
+      "candidates": 29096237,
+      "similarity_entries": 82205773057,
+      "per_video": {
+        "0": {
+          "frame_pairs": 38,
+          "candidates": 95833,
+          "similarity_entries": 262349143
+        },
+        "3": {
+          "frame_pairs": 32,
+          "candidates": 67643,
+          "similarity_entries": 146378045
+        },
+        "7": {
+          "frame_pairs": 35,
+          "candidates": 42010,
+          "similarity_entries": 58163548
+        },
+        "9": {
+          "frame_pairs": 39,
+          "candidates": 112150,
+          "similarity_entries": 341319876
+        },
+        "11": {
+          "frame_pairs": 38,
+          "candidates": 96686,
+          "similarity_entries": 253115970
+        },
+        "13": {
+          "frame_pairs": 34,
+          "candidates": 88405,
+          "similarity_entries": 232667281
+        },
+        "16": {
+          "frame_pairs": 38,
+          "candidates": 45310,
+          "similarity_entries": 73674930
+        },
+        "40": {
+          "frame_pairs": 39,
+          "candidates": 82408,
+          "similarity_entries": 205980778
+        },
+        "50": {
+          "frame_pairs": 39,
+          "candidates": 45634,
+          "similarity_entries": 61756330
+        },
+        "51": {
+          "frame_pairs": 25,
+          "candidates": 73737,
+          "similarity_entries": 229668439
+        },
+        "67": {
+          "frame_pairs": 39,
+          "candidates": 47298,
+          "similarity_entries": 64752208
+        },
+        "69": {
+          "frame_pairs": 37,
+          "candidates": 50572,
+          "similarity_entries": 72504682
+        },
+        "71": {
+          "frame_pairs": 39,
+          "candidates": 93360,
+          "similarity_entries": 224644852
+        },
+        "72": {
+          "frame_pairs": 37,
+          "candidates": 56630,
+          "similarity_entries": 89808222
+        },
+        "85": {
+          "frame_pairs": 39,
+          "candidates": 106741,
+          "similarity_entries": 305719649
+        },
+        "92": {
+          "frame_pairs": 39,
+          "candidates": 48313,
+          "similarity_entries": 74959661
+        },
+        "109": {
+          "frame_pairs": 39,
+          "candidates": 74739,
+          "similarity_entries": 145171253
+        },
+        "114": {
+          "frame_pairs": 38,
+          "candidates": 121580,
+          "similarity_entries": 398421278
+        },
+        "117": {
+          "frame_pairs": 39,
+          "candidates": 16595,
+          "similarity_entries": 7786159
+        },
+        "119": {
+          "frame_pairs": 39,
+          "candidates": 27908,
+          "similarity_entries": 21370454
+        },
+        "121": {
+          "frame_pairs": 39,
+          "candidates": 144087,
+          "similarity_entries": 541419783
+        },
+        "134": {
+          "frame_pairs": 36,
+          "candidates": 76981,
+          "similarity_entries": 186503185
+        },
+        "144": {
+          "frame_pairs": 39,
+          "candidates": 73143,
+          "similarity_entries": 151328365
+        },
+        "146": {
+          "frame_pairs": 27,
+          "candidates": 95067,
+          "similarity_entries": 340508953
+        },
+        "152": {
+          "frame_pairs": 34,
+          "candidates": 105486,
+          "similarity_entries": 329710694
+        },
+        "157": {
+          "frame_pairs": 38,
+          "candidates": 113898,
+          "similarity_entries": 350497790
+        },
+        "158": {
+          "frame_pairs": 39,
+          "candidates": 101691,
+          "similarity_entries": 266779223
+        },
+        "160": {
+          "frame_pairs": 39,
+          "candidates": 118893,
+          "similarity_entries": 365526591
+        },
+        "170": {
+          "frame_pairs": 19,
+          "candidates": 32399,
+          "similarity_entries": 56362325
+        },
+        "183": {
+          "frame_pairs": 39,
+          "candidates": 11713,
+          "similarity_entries": 3728461
+        },
+        "184": {
+          "frame_pairs": 39,
+          "candidates": 109836,
+          "similarity_entries": 314076834
+        },
+        "189": {
+          "frame_pairs": 36,
+          "candidates": 38191,
+          "similarity_entries": 41594727
+        },
+        "201": {
+          "frame_pairs": 39,
+          "candidates": 116907,
+          "similarity_entries": 353754775
+        },
+        "203": {
+          "frame_pairs": 39,
+          "candidates": 69343,
+          "similarity_entries": 131502343
+        },
+        "220": {
+          "frame_pairs": 17,
+          "candidates": 62980,
+          "similarity_entries": 235826636
+        },
+        "221": {
+          "frame_pairs": 39,
+          "candidates": 67708,
+          "similarity_entries": 122883468
+        },
+        "237": {
+          "frame_pairs": 20,
+          "candidates": 38351,
+          "similarity_entries": 85195813
+        },
+        "239": {
+          "frame_pairs": 36,
+          "candidates": 151191,
+          "similarity_entries": 636564651
+        },
+        "261": {
+          "frame_pairs": 39,
+          "candidates": 109715,
+          "similarity_entries": 312909963
+        },
+        "279": {
+          "frame_pairs": 32,
+          "candidates": 46058,
+          "similarity_entries": 69698188
+        },
+        "282": {
+          "frame_pairs": 36,
+          "candidates": 44372,
+          "similarity_entries": 60117576
+        },
+        "300": {
+          "frame_pairs": 38,
+          "candidates": 22472,
+          "similarity_entries": 17223962
+        },
+        "301": {
+          "frame_pairs": 30,
+          "candidates": 118066,
+          "similarity_entries": 471102466
+        },
+        "303": {
+          "frame_pairs": 39,
+          "candidates": 79472,
+          "similarity_entries": 168665406
+        },
+        "310": {
+          "frame_pairs": 39,
+          "candidates": 56380,
+          "similarity_entries": 82950710
+        },
+        "324": {
+          "frame_pairs": 36,
+          "candidates": 125992,
+          "similarity_entries": 446322318
+        },
+        "330": {
+          "frame_pairs": 39,
+          "candidates": 146596,
+          "similarity_entries": 560109490
+        },
+        "346": {
+          "frame_pairs": 39,
+          "candidates": 97672,
+          "similarity_entries": 260976178
+        },
+        "349": {
+          "frame_pairs": 39,
+          "candidates": 106491,
+          "similarity_entries": 294435231
+        },
+        "357": {
+          "frame_pairs": 39,
+          "candidates": 129113,
+          "similarity_entries": 429461967
+        },
+        "358": {
+          "frame_pairs": 39,
+          "candidates": 48983,
+          "similarity_entries": 65466923
+        },
+        "366": {
+          "frame_pairs": 39,
+          "candidates": 101234,
+          "similarity_entries": 265180602
+        },
+        "369": {
+          "frame_pairs": 30,
+          "candidates": 47048,
+          "similarity_entries": 90940584
+        },
+        "371": {
+          "frame_pairs": 39,
+          "candidates": 67942,
+          "similarity_entries": 120145534
+        },
+        "379": {
+          "frame_pairs": 39,
+          "candidates": 181963,
+          "similarity_entries": 851492951
+        },
+        "383": {
+          "frame_pairs": 39,
+          "candidates": 212597,
+          "similarity_entries": 1160104457
+        },
+        "384": {
+          "frame_pairs": 39,
+          "candidates": 11991,
+          "similarity_entries": 4032669
+        },
+        "399": {
+          "frame_pairs": 36,
+          "candidates": 64194,
+          "similarity_entries": 125847892
+        },
+        "400": {
+          "frame_pairs": 35,
+          "candidates": 27430,
+          "similarity_entries": 24250196
+        },
+        "415": {
+          "frame_pairs": 39,
+          "candidates": 106408,
+          "similarity_entries": 308989514
+        },
+        "417": {
+          "frame_pairs": 38,
+          "candidates": 78508,
+          "similarity_entries": 182744396
+        },
+        "433": {
+          "frame_pairs": 37,
+          "candidates": 24805,
+          "similarity_entries": 18591641
+        },
+        "452": {
+          "frame_pairs": 20,
+          "candidates": 66328,
+          "similarity_entries": 221027560
+        },
+        "456": {
+          "frame_pairs": 39,
+          "candidates": 138679,
+          "similarity_entries": 501672563
+        },
+        "461": {
+          "frame_pairs": 39,
+          "candidates": 174324,
+          "similarity_entries": 781249212
+        },
+        "483": {
+          "frame_pairs": 39,
+          "candidates": 88396,
+          "similarity_entries": 202820274
+        },
+        "488": {
+          "frame_pairs": 39,
+          "candidates": 132339,
+          "similarity_entries": 455440581
+        },
+        "496": {
+          "frame_pairs": 39,
+          "candidates": 50268,
+          "similarity_entries": 76669340
+        },
+        "498": {
+          "frame_pairs": 39,
+          "candidates": 107396,
+          "similarity_entries": 300800696
+        },
+        "501": {
+          "frame_pairs": 39,
+          "candidates": 92507,
+          "similarity_entries": 223101645
+        },
+        "502": {
+          "frame_pairs": 39,
+          "candidates": 150984,
+          "similarity_entries": 588496720
+        },
+        "508": {
+          "frame_pairs": 39,
+          "candidates": 79612,
+          "similarity_entries": 178836506
+        },
+        "524": {
+          "frame_pairs": 40,
+          "candidates": 14455,
+          "similarity_entries": 7396591
+        },
+        "535": {
+          "frame_pairs": 39,
+          "candidates": 44242,
+          "similarity_entries": 51438756
+        },
+        "545": {
+          "frame_pairs": 39,
+          "candidates": 116358,
+          "similarity_entries": 348269604
+        },
+        "546": {
+          "frame_pairs": 39,
+          "candidates": 151155,
+          "similarity_entries": 589844129
+        },
+        "551": {
+          "frame_pairs": 39,
+          "candidates": 14907,
+          "similarity_entries": 6995461
+        },
+        "560": {
+          "frame_pairs": 39,
+          "candidates": 15936,
+          "similarity_entries": 7159866
+        },
+        "568": {
+          "frame_pairs": 39,
+          "candidates": 66167,
+          "similarity_entries": 118537491
+        },
+        "569": {
+          "frame_pairs": 28,
+          "candidates": 29910,
+          "similarity_entries": 41650866
+        },
+        "575": {
+          "frame_pairs": 39,
+          "candidates": 62440,
+          "similarity_entries": 102245478
+        },
+        "592": {
+          "frame_pairs": 39,
+          "candidates": 98481,
+          "similarity_entries": 252615351
+        },
+        "594": {
+          "frame_pairs": 39,
+          "candidates": 21190,
+          "similarity_entries": 12193814
+        },
+        "595": {
+          "frame_pairs": 2,
+          "candidates": 6264,
+          "similarity_entries": 19624680
+        },
+        "601": {
+          "frame_pairs": 39,
+          "candidates": 57964,
+          "similarity_entries": 93104954
+        },
+        "621": {
+          "frame_pairs": 31,
+          "candidates": 66792,
+          "similarity_entries": 148644120
+        },
+        "630": {
+          "frame_pairs": 32,
+          "candidates": 123060,
+          "similarity_entries": 475485372
+        },
+        "632": {
+          "frame_pairs": 39,
+          "candidates": 90059,
+          "similarity_entries": 211378651
+        },
+        "633": {
+          "frame_pairs": 39,
+          "candidates": 95799,
+          "similarity_entries": 240715999
+        },
+        "635": {
+          "frame_pairs": 37,
+          "candidates": 132641,
+          "similarity_entries": 478574065
+        },
+        "650": {
+          "frame_pairs": 39,
+          "candidates": 101139,
+          "similarity_entries": 265299381
+        },
+        "661": {
+          "frame_pairs": 29,
+          "candidates": 99397,
+          "similarity_entries": 344779005
+        },
+        "662": {
+          "frame_pairs": 39,
+          "candidates": 144174,
+          "similarity_entries": 540360776
+        },
+        "677": {
+          "frame_pairs": 36,
+          "candidates": 83840,
+          "similarity_entries": 199808602
+        },
+        "678": {
+          "frame_pairs": 33,
+          "candidates": 105512,
+          "similarity_entries": 343028864
+        },
+        "686": {
+          "frame_pairs": 34,
+          "candidates": 108970,
+          "similarity_entries": 352647810
+        },
+        "689": {
+          "frame_pairs": 24,
+          "candidates": 72353,
+          "similarity_entries": 222035701
+        },
+        "696": {
+          "frame_pairs": 39,
+          "candidates": 144738,
+          "similarity_entries": 541712310
+        },
+        "705": {
+          "frame_pairs": 39,
+          "candidates": 141812,
+          "similarity_entries": 526010634
+        },
+        "712": {
+          "frame_pairs": 12,
+          "candidates": 36863,
+          "similarity_entries": 115349691
+        },
+        "720": {
+          "frame_pairs": 39,
+          "candidates": 105422,
+          "similarity_entries": 292482450
+        },
+        "721": {
+          "frame_pairs": 39,
+          "candidates": 120437,
+          "similarity_entries": 385965911
+        },
+        "730": {
+          "frame_pairs": 7,
+          "candidates": 18319,
+          "similarity_entries": 48502337
+        },
+        "731": {
+          "frame_pairs": 24,
+          "candidates": 80868,
+          "similarity_entries": 275654242
+        },
+        "732": {
+          "frame_pairs": 39,
+          "candidates": 106090,
+          "similarity_entries": 293436358
+        },
+        "735": {
+          "frame_pairs": 19,
+          "candidates": 62994,
+          "similarity_entries": 210791678
+        },
+        "736": {
+          "frame_pairs": 16,
+          "candidates": 48290,
+          "similarity_entries": 146458962
+        },
+        "739": {
+          "frame_pairs": 30,
+          "candidates": 108117,
+          "similarity_entries": 393828053
+        },
+        "749": {
+          "frame_pairs": 25,
+          "candidates": 84727,
+          "similarity_entries": 291346247
+        },
+        "767": {
+          "frame_pairs": 28,
+          "candidates": 76753,
+          "similarity_entries": 212796927
+        },
+        "777": {
+          "frame_pairs": 30,
+          "candidates": 115773,
+          "similarity_entries": 448264559
+        },
+        "778": {
+          "frame_pairs": 39,
+          "candidates": 130925,
+          "similarity_entries": 443845977
+        },
+        "801": {
+          "frame_pairs": 39,
+          "candidates": 167561,
+          "similarity_entries": 723897419
+        },
+        "807": {
+          "frame_pairs": 33,
+          "candidates": 116400,
+          "similarity_entries": 412340728
+        },
+        "813": {
+          "frame_pairs": 14,
+          "candidates": 39872,
+          "similarity_entries": 116816976
+        },
+        "824": {
+          "frame_pairs": 35,
+          "candidates": 139732,
+          "similarity_entries": 561338974
+        },
+        "825": {
+          "frame_pairs": 23,
+          "candidates": 50050,
+          "similarity_entries": 110498892
+        },
+        "841": {
+          "frame_pairs": 39,
+          "candidates": 131080,
+          "similarity_entries": 452374684
+        },
+        "847": {
+          "frame_pairs": 39,
+          "candidates": 114057,
+          "similarity_entries": 338651951
+        },
+        "849": {
+          "frame_pairs": 33,
+          "candidates": 110296,
+          "similarity_entries": 375569116
+        },
+        "859": {
+          "frame_pairs": 39,
+          "candidates": 148662,
+          "similarity_entries": 571697666
+        },
+        "862": {
+          "frame_pairs": 23,
+          "candidates": 52801,
+          "similarity_entries": 124567881
+        },
+        "894": {
+          "frame_pairs": 37,
+          "candidates": 132401,
+          "similarity_entries": 476930425
+        },
+        "897": {
+          "frame_pairs": 38,
+          "candidates": 132124,
+          "similarity_entries": 466809250
+        },
+        "903": {
+          "frame_pairs": 28,
+          "candidates": 88633,
+          "similarity_entries": 283876705
+        },
+        "907": {
+          "frame_pairs": 39,
+          "candidates": 150471,
+          "similarity_entries": 584988803
+        },
+        "908": {
+          "frame_pairs": 28,
+          "candidates": 122357,
+          "similarity_entries": 536693841
+        },
+        "912": {
+          "frame_pairs": 13,
+          "candidates": 49339,
+          "similarity_entries": 187982575
+        },
+        "928": {
+          "frame_pairs": 38,
+          "candidates": 147176,
+          "similarity_entries": 591129962
+        },
+        "934": {
+          "frame_pairs": 39,
+          "candidates": 155063,
+          "similarity_entries": 623807709
+        },
+        "936": {
+          "frame_pairs": 38,
+          "candidates": 116028,
+          "similarity_entries": 360508396
+        },
+        "943": {
+          "frame_pairs": 38,
+          "candidates": 120587,
+          "similarity_entries": 387476391
+        },
+        "959": {
+          "frame_pairs": 31,
+          "candidates": 101585,
+          "similarity_entries": 336446703
+        },
+        "985": {
+          "frame_pairs": 22,
+          "candidates": 79236,
+          "similarity_entries": 288773092
+        },
+        "989": {
+          "frame_pairs": 16,
+          "candidates": 28202,
+          "similarity_entries": 54028032
+        },
+        "995": {
+          "frame_pairs": 24,
+          "candidates": 92288,
+          "similarity_entries": 356836526
+        },
+        "1008": {
+          "frame_pairs": 39,
+          "candidates": 63524,
+          "similarity_entries": 138917080
+        },
+        "1014": {
+          "frame_pairs": 39,
+          "candidates": 131906,
+          "similarity_entries": 451762490
+        },
+        "1041": {
+          "frame_pairs": 39,
+          "candidates": 70380,
+          "similarity_entries": 129098202
+        },
+        "1043": {
+          "frame_pairs": 31,
+          "candidates": 12511,
+          "similarity_entries": 5422473
+        },
+        "1058": {
+          "frame_pairs": 37,
+          "candidates": 3672,
+          "similarity_entries": 507732
+        },
+        "1059": {
+          "frame_pairs": 39,
+          "candidates": 90750,
+          "similarity_entries": 216052688
+        },
+        "1061": {
+          "frame_pairs": 14,
+          "candidates": 44902,
+          "similarity_entries": 144779460
+        },
+        "1062": {
+          "frame_pairs": 39,
+          "candidates": 104795,
+          "similarity_entries": 299343545
+        },
+        "1066": {
+          "frame_pairs": 38,
+          "candidates": 38618,
+          "similarity_entries": 46349972
+        },
+        "1080": {
+          "frame_pairs": 17,
+          "candidates": 7409,
+          "similarity_entries": 3387625
+        },
+        "1090": {
+          "frame_pairs": 31,
+          "candidates": 75642,
+          "similarity_entries": 198195250
+        },
+        "1097": {
+          "frame_pairs": 20,
+          "candidates": 46400,
+          "similarity_entries": 121401710
+        },
+        "1111": {
+          "frame_pairs": 28,
+          "candidates": 94935,
+          "similarity_entries": 326931445
+        },
+        "1117": {
+          "frame_pairs": 39,
+          "candidates": 125946,
+          "similarity_entries": 411378926
+        },
+        "1126": {
+          "frame_pairs": 32,
+          "candidates": 20411,
+          "similarity_entries": 17522155
+        },
+        "1142": {
+          "frame_pairs": 33,
+          "candidates": 39354,
+          "similarity_entries": 48134420
+        },
+        "1153": {
+          "frame_pairs": 32,
+          "candidates": 99742,
+          "similarity_entries": 320679006
+        },
+        "1160": {
+          "frame_pairs": 35,
+          "candidates": 71328,
+          "similarity_entries": 165535960
+        },
+        "1165": {
+          "frame_pairs": 39,
+          "candidates": 108127,
+          "similarity_entries": 303576925
+        },
+        "1168": {
+          "frame_pairs": 30,
+          "candidates": 87643,
+          "similarity_entries": 259308265
+        },
+        "1173": {
+          "frame_pairs": 39,
+          "candidates": 77969,
+          "similarity_entries": 158221101
+        },
+        "1190": {
+          "frame_pairs": 14,
+          "candidates": 44045,
+          "similarity_entries": 139021867
+        },
+        "1192": {
+          "frame_pairs": 7,
+          "candidates": 21820,
+          "similarity_entries": 68838872
+        },
+        "1201": {
+          "frame_pairs": 39,
+          "candidates": 105653,
+          "similarity_entries": 288399895
+        },
+        "1204": {
+          "frame_pairs": 37,
+          "candidates": 50551,
+          "similarity_entries": 74814355
+        },
+        "1208": {
+          "frame_pairs": 9,
+          "candidates": 27335,
+          "similarity_entries": 84753457
+        },
+        "1213": {
+          "frame_pairs": 31,
+          "candidates": 92948,
+          "similarity_entries": 284833914
+        },
+        "1214": {
+          "frame_pairs": 0,
+          "candidates": 0,
+          "similarity_entries": 0
+        },
+        "1218": {
+          "frame_pairs": 8,
+          "candidates": 31495,
+          "similarity_entries": 126539563
+        },
+        "1219": {
+          "frame_pairs": 36,
+          "candidates": 78086,
+          "similarity_entries": 173573620
+        },
+        "1226": {
+          "frame_pairs": 15,
+          "candidates": 52992,
+          "similarity_entries": 187632920
+        },
+        "1236": {
+          "frame_pairs": 39,
+          "candidates": 10646,
+          "similarity_entries": 3235312
+        },
+        "1253": {
+          "frame_pairs": 1,
+          "candidates": 3190,
+          "similarity_entries": 10176100
+        },
+        "1271": {
+          "frame_pairs": 7,
+          "candidates": 18553,
+          "similarity_entries": 50759149
+        },
+        "1285": {
+          "frame_pairs": 14,
+          "candidates": 52639,
+          "similarity_entries": 199252741
+        },
+        "1293": {
+          "frame_pairs": 39,
+          "candidates": 44014,
+          "similarity_entries": 54748500
+        },
+        "1300": {
+          "frame_pairs": 15,
+          "candidates": 47327,
+          "similarity_entries": 151655455
+        },
+        "1302": {
+          "frame_pairs": 15,
+          "candidates": 49505,
+          "similarity_entries": 166548563
+        },
+        "1308": {
+          "frame_pairs": 39,
+          "candidates": 89952,
+          "similarity_entries": 216033002
+        },
+        "1319": {
+          "frame_pairs": 17,
+          "candidates": 60278,
+          "similarity_entries": 215085238
+        },
+        "1320": {
+          "frame_pairs": 15,
+          "candidates": 44440,
+          "similarity_entries": 133117472
+        },
+        "1329": {
+          "frame_pairs": 29,
+          "candidates": 100095,
+          "similarity_entries": 352157123
+        },
+        "1330": {
+          "frame_pairs": 36,
+          "candidates": 100943,
+          "similarity_entries": 285830817
+        },
+        "1338": {
+          "frame_pairs": 30,
+          "candidates": 83729,
+          "similarity_entries": 239334079
+        },
+        "1353": {
+          "frame_pairs": 34,
+          "candidates": 84205,
+          "similarity_entries": 214445887
+        },
+        "1356": {
+          "frame_pairs": 39,
+          "candidates": 86409,
+          "similarity_entries": 195083315
+        },
+        "1370": {
+          "frame_pairs": 39,
+          "candidates": 53214,
+          "similarity_entries": 79762240
+        },
+        "1387": {
+          "frame_pairs": 36,
+          "candidates": 35017,
+          "similarity_entries": 48184241
+        },
+        "1414": {
+          "frame_pairs": 31,
+          "candidates": 79213,
+          "similarity_entries": 206886049
+        },
+        "1435": {
+          "frame_pairs": 39,
+          "candidates": 44504,
+          "similarity_entries": 53099250
+        },
+        "1437": {
+          "frame_pairs": 39,
+          "candidates": 49644,
+          "similarity_entries": 64675330
+        },
+        "1447": {
+          "frame_pairs": 39,
+          "candidates": 54976,
+          "similarity_entries": 82739208
+        },
+        "1453": {
+          "frame_pairs": 39,
+          "candidates": 78553,
+          "similarity_entries": 164779965
+        },
+        "1457": {
+          "frame_pairs": 36,
+          "candidates": 33369,
+          "similarity_entries": 35693563
+        },
+        "1479": {
+          "frame_pairs": 39,
+          "candidates": 108315,
+          "similarity_entries": 304698425
+        },
+        "1481": {
+          "frame_pairs": 32,
+          "candidates": 21778,
+          "similarity_entries": 18095684
+        },
+        "1482": {
+          "frame_pairs": 38,
+          "candidates": 88489,
+          "similarity_entries": 213200101
+        },
+        "1488": {
+          "frame_pairs": 39,
+          "candidates": 94254,
+          "similarity_entries": 230643592
+        },
+        "1491": {
+          "frame_pairs": 39,
+          "candidates": 56974,
+          "similarity_entries": 87330222
+        },
+        "1524": {
+          "frame_pairs": 39,
+          "candidates": 47844,
+          "similarity_entries": 81835682
+        },
+        "1541": {
+          "frame_pairs": 36,
+          "candidates": 79482,
+          "similarity_entries": 178190728
+        },
+        "1574": {
+          "frame_pairs": 32,
+          "candidates": 28776,
+          "similarity_entries": 37330028
+        },
+        "1576": {
+          "frame_pairs": 35,
+          "candidates": 43665,
+          "similarity_entries": 61523779
+        },
+        "1585": {
+          "frame_pairs": 39,
+          "candidates": 74964,
+          "similarity_entries": 146563662
+        },
+        "1586": {
+          "frame_pairs": 39,
+          "candidates": 32147,
+          "similarity_entries": 28951647
+        },
+        "1591": {
+          "frame_pairs": 39,
+          "candidates": 75221,
+          "similarity_entries": 149445089
+        },
+        "1610": {
+          "frame_pairs": 39,
+          "candidates": 54755,
+          "similarity_entries": 79565049
+        },
+        "1617": {
+          "frame_pairs": 39,
+          "candidates": 92947,
+          "similarity_entries": 223366115
+        },
+        "1630": {
+          "frame_pairs": 38,
+          "candidates": 23465,
+          "similarity_entries": 18865479
+        },
+        "1632": {
+          "frame_pairs": 37,
+          "candidates": 77843,
+          "similarity_entries": 180558853
+        },
+        "1643": {
+          "frame_pairs": 39,
+          "candidates": 134604,
+          "similarity_entries": 468093394
+        },
+        "1644": {
+          "frame_pairs": 39,
+          "candidates": 117924,
+          "similarity_entries": 361623190
+        },
+        "1653": {
+          "frame_pairs": 6,
+          "candidates": 13853,
+          "similarity_entries": 35089595
+        },
+        "1658": {
+          "frame_pairs": 39,
+          "candidates": 102778,
+          "similarity_entries": 300545570
+        },
+        "1666": {
+          "frame_pairs": 39,
+          "candidates": 116698,
+          "similarity_entries": 362117356
+        },
+        "1674": {
+          "frame_pairs": 39,
+          "candidates": 29432,
+          "similarity_entries": 28726506
+        },
+        "1675": {
+          "frame_pairs": 39,
+          "candidates": 131481,
+          "similarity_entries": 461858763
+        },
+        "1677": {
+          "frame_pairs": 39,
+          "candidates": 128839,
+          "similarity_entries": 444844655
+        },
+        "1681": {
+          "frame_pairs": 39,
+          "candidates": 14835,
+          "similarity_entries": 6015075
+        },
+        "1686": {
+          "frame_pairs": 39,
+          "candidates": 31688,
+          "similarity_entries": 26916446
+        },
+        "1687": {
+          "frame_pairs": 39,
+          "candidates": 9019,
+          "similarity_entries": 2295313
+        },
+        "1691": {
+          "frame_pairs": 39,
+          "candidates": 12062,
+          "similarity_entries": 4750980
+        },
+        "1695": {
+          "frame_pairs": 39,
+          "candidates": 6534,
+          "similarity_entries": 1224320
+        },
+        "1699": {
+          "frame_pairs": 32,
+          "candidates": 15865,
+          "similarity_entries": 9058515
+        },
+        "1710": {
+          "frame_pairs": 39,
+          "candidates": 111702,
+          "similarity_entries": 337332044
+        },
+        "1711": {
+          "frame_pairs": 39,
+          "candidates": 88682,
+          "similarity_entries": 213268350
+        },
+        "1714": {
+          "frame_pairs": 38,
+          "candidates": 71192,
+          "similarity_entries": 135526034
+        },
+        "1734": {
+          "frame_pairs": 39,
+          "candidates": 40732,
+          "similarity_entries": 55093628
+        },
+        "1742": {
+          "frame_pairs": 28,
+          "candidates": 31999,
+          "similarity_entries": 41535567
+        },
+        "1751": {
+          "frame_pairs": 39,
+          "candidates": 80151,
+          "similarity_entries": 171199425
+        },
+        "1768": {
+          "frame_pairs": 39,
+          "candidates": 111354,
+          "similarity_entries": 326535090
+        },
+        "1769": {
+          "frame_pairs": 39,
+          "candidates": 17913,
+          "similarity_entries": 8717697
+        },
+        "1779": {
+          "frame_pairs": 39,
+          "candidates": 178876,
+          "similarity_entries": 825087518
+        },
+        "1790": {
+          "frame_pairs": 39,
+          "candidates": 1967,
+          "similarity_entries": 128985
+        },
+        "1793": {
+          "frame_pairs": 39,
+          "candidates": 123412,
+          "similarity_entries": 394568726
+        },
+        "1808": {
+          "frame_pairs": 33,
+          "candidates": 106465,
+          "similarity_entries": 356688319
+        },
+        "1810": {
+          "frame_pairs": 39,
+          "candidates": 47385,
+          "similarity_entries": 88427109
+        },
+        "1814": {
+          "frame_pairs": 39,
+          "candidates": 85408,
+          "similarity_entries": 194545960
+        },
+        "1826": {
+          "frame_pairs": 39,
+          "candidates": 132308,
+          "similarity_entries": 457710514
+        },
+        "1831": {
+          "frame_pairs": 39,
+          "candidates": 52665,
+          "similarity_entries": 80129245
+        },
+        "1836": {
+          "frame_pairs": 39,
+          "candidates": 27339,
+          "similarity_entries": 24396701
+        },
+        "1874": {
+          "frame_pairs": 38,
+          "candidates": 11569,
+          "similarity_entries": 5878067
+        },
+        "1882": {
+          "frame_pairs": 39,
+          "candidates": 51476,
+          "similarity_entries": 71062216
+        },
+        "1905": {
+          "frame_pairs": 39,
+          "candidates": 27133,
+          "similarity_entries": 20462839
+        },
+        "1910": {
+          "frame_pairs": 39,
+          "candidates": 51120,
+          "similarity_entries": 71586874
+        },
+        "1914": {
+          "frame_pairs": 39,
+          "candidates": 81340,
+          "similarity_entries": 174981646
+        },
+        "1923": {
+          "frame_pairs": 39,
+          "candidates": 32300,
+          "similarity_entries": 29454230
+        },
+        "1927": {
+          "frame_pairs": 39,
+          "candidates": 105704,
+          "similarity_entries": 289405838
+        },
+        "1929": {
+          "frame_pairs": 39,
+          "candidates": 56028,
+          "similarity_entries": 81512208
+        },
+        "1935": {
+          "frame_pairs": 39,
+          "candidates": 92008,
+          "similarity_entries": 225335872
+        },
+        "1938": {
+          "frame_pairs": 39,
+          "candidates": 78302,
+          "similarity_entries": 176786320
+        },
+        "1939": {
+          "frame_pairs": 39,
+          "candidates": 79425,
+          "similarity_entries": 185966411
+        },
+        "1940": {
+          "frame_pairs": 39,
+          "candidates": 139454,
+          "similarity_entries": 502140340
+        },
+        "1949": {
+          "frame_pairs": 39,
+          "candidates": 198809,
+          "similarity_entries": 1017814607
+        },
+        "1955": {
+          "frame_pairs": 39,
+          "candidates": 24022,
+          "similarity_entries": 15942330
+        },
+        "1963": {
+          "frame_pairs": 39,
+          "candidates": 2394,
+          "similarity_entries": 181090
+        },
+        "1967": {
+          "frame_pairs": 39,
+          "candidates": 34908,
+          "similarity_entries": 36387790
+        },
+        "1995": {
+          "frame_pairs": 39,
+          "candidates": 97957,
+          "similarity_entries": 249754925
+        },
+        "2003": {
+          "frame_pairs": 39,
+          "candidates": 55388,
+          "similarity_entries": 81200816
+        },
+        "2010": {
+          "frame_pairs": 39,
+          "candidates": 38021,
+          "similarity_entries": 57045045
+        },
+        "2012": {
+          "frame_pairs": 23,
+          "candidates": 81554,
+          "similarity_entries": 293257690
+        },
+        "2017": {
+          "frame_pairs": 39,
+          "candidates": 22613,
+          "similarity_entries": 14111421
+        },
+        "2018": {
+          "frame_pairs": 39,
+          "candidates": 21164,
+          "similarity_entries": 14558480
+        },
+        "2023": {
+          "frame_pairs": 39,
+          "candidates": 49660,
+          "similarity_entries": 64348402
+        },
+        "2028": {
+          "frame_pairs": 39,
+          "candidates": 78130,
+          "similarity_entries": 158624740
+        },
+        "2030": {
+          "frame_pairs": 28,
+          "candidates": 66297,
+          "similarity_entries": 170116889
+        },
+        "2031": {
+          "frame_pairs": 39,
+          "candidates": 103492,
+          "similarity_entries": 278491608
+        },
+        "2033": {
+          "frame_pairs": 39,
+          "candidates": 46546,
+          "similarity_entries": 56311824
+        },
+        "2037": {
+          "frame_pairs": 39,
+          "candidates": 54163,
+          "similarity_entries": 91848615
+        },
+        "2041": {
+          "frame_pairs": 39,
+          "candidates": 37005,
+          "similarity_entries": 48312189
+        },
+        "2044": {
+          "frame_pairs": 38,
+          "candidates": 55856,
+          "similarity_entries": 95635792
+        },
+        "2045": {
+          "frame_pairs": 39,
+          "candidates": 109133,
+          "similarity_entries": 309415497
+        },
+        "2049": {
+          "frame_pairs": 31,
+          "candidates": 33919,
+          "similarity_entries": 43465597
+        },
+        "2051": {
+          "frame_pairs": 39,
+          "candidates": 132748,
+          "similarity_entries": 458786824
+        },
+        "2052": {
+          "frame_pairs": 38,
+          "candidates": 29651,
+          "similarity_entries": 30456083
+        },
+        "2054": {
+          "frame_pairs": 31,
+          "candidates": 106363,
+          "similarity_entries": 367547227
+        },
+        "2055": {
+          "frame_pairs": 39,
+          "candidates": 101490,
+          "similarity_entries": 272887130
+        },
+        "2056": {
+          "frame_pairs": 38,
+          "candidates": 35405,
+          "similarity_entries": 59813501
+        },
+        "2059": {
+          "frame_pairs": 28,
+          "candidates": 66456,
+          "similarity_entries": 197075766
+        },
+        "2064": {
+          "frame_pairs": 39,
+          "candidates": 73737,
+          "similarity_entries": 143829981
+        },
+        "2067": {
+          "frame_pairs": 39,
+          "candidates": 85410,
+          "similarity_entries": 188334876
+        },
+        "2070": {
+          "frame_pairs": 39,
+          "candidates": 35124,
+          "similarity_entries": 80316304
+        },
+        "2072": {
+          "frame_pairs": 39,
+          "candidates": 99166,
+          "similarity_entries": 278207332
+        },
+        "2074": {
+          "frame_pairs": 29,
+          "candidates": 95376,
+          "similarity_entries": 315776728
+        },
+        "2076": {
+          "frame_pairs": 39,
+          "candidates": 85667,
+          "similarity_entries": 191293165
+        },
+        "2082": {
+          "frame_pairs": 39,
+          "candidates": 83358,
+          "similarity_entries": 182902608
+        },
+        "2084": {
+          "frame_pairs": 39,
+          "candidates": 56079,
+          "similarity_entries": 82708511
+        },
+        "2086": {
+          "frame_pairs": 39,
+          "candidates": 117103,
+          "similarity_entries": 361599617
+        },
+        "2088": {
+          "frame_pairs": 36,
+          "candidates": 128096,
+          "similarity_entries": 459223114
+        },
+        "2091": {
+          "frame_pairs": 39,
+          "candidates": 49335,
+          "similarity_entries": 63417637
+        },
+        "2093": {
+          "frame_pairs": 32,
+          "candidates": 14290,
+          "similarity_entries": 7629656
+        },
+        "2100": {
+          "frame_pairs": 39,
+          "candidates": 21523,
+          "similarity_entries": 13449957
+        },
+        "2101": {
+          "frame_pairs": 37,
+          "candidates": 37196,
+          "similarity_entries": 45575252
+        },
+        "2102": {
+          "frame_pairs": 39,
+          "candidates": 65321,
+          "similarity_entries": 120354087
+        },
+        "2128": {
+          "frame_pairs": 32,
+          "candidates": 27927,
+          "similarity_entries": 25593387
+        },
+        "2131": {
+          "frame_pairs": 39,
+          "candidates": 51348,
+          "similarity_entries": 83326076
+        },
+        "2132": {
+          "frame_pairs": 29,
+          "candidates": 62750,
+          "similarity_entries": 139303620
+        },
+        "2145": {
+          "frame_pairs": 34,
+          "candidates": 66685,
+          "similarity_entries": 132384059
+        },
+        "2148": {
+          "frame_pairs": 30,
+          "candidates": 85313,
+          "similarity_entries": 243947059
+        },
+        "2152": {
+          "frame_pairs": 31,
+          "candidates": 31353,
+          "similarity_entries": 33712773
+        },
+        "2156": {
+          "frame_pairs": 32,
+          "candidates": 52959,
+          "similarity_entries": 89325549
+        },
+        "2161": {
+          "frame_pairs": 30,
+          "candidates": 79142,
+          "similarity_entries": 210032226
+        },
+        "2164": {
+          "frame_pairs": 31,
+          "candidates": 50777,
+          "similarity_entries": 89023285
+        },
+        "2167": {
+          "frame_pairs": 30,
+          "candidates": 87910,
+          "similarity_entries": 261667166
+        },
+        "2170": {
+          "frame_pairs": 31,
+          "candidates": 63256,
+          "similarity_entries": 130298832
+        },
+        "2175": {
+          "frame_pairs": 31,
+          "candidates": 77477,
+          "similarity_entries": 195109227
+        },
+        "2178": {
+          "frame_pairs": 20,
+          "candidates": 62141,
+          "similarity_entries": 194427723
+        },
+        "2181": {
+          "frame_pairs": 31,
+          "candidates": 45002,
+          "similarity_entries": 66990358
+        },
+        "2182": {
+          "frame_pairs": 31,
+          "candidates": 39706,
+          "similarity_entries": 54199186
+        },
+        "2188": {
+          "frame_pairs": 34,
+          "candidates": 131612,
+          "similarity_entries": 512378090
+        },
+        "2190": {
+          "frame_pairs": 30,
+          "candidates": 45720,
+          "similarity_entries": 71182958
+        },
+        "2194": {
+          "frame_pairs": 12,
+          "candidates": 19538,
+          "similarity_entries": 32639054
+        },
+        "2197": {
+          "frame_pairs": 30,
+          "candidates": 75894,
+          "similarity_entries": 193313946
+        },
+        "2201": {
+          "frame_pairs": 33,
+          "candidates": 105313,
+          "similarity_entries": 338972375
+        },
+        "2202": {
+          "frame_pairs": 30,
+          "candidates": 53964,
+          "similarity_entries": 97877704
+        },
+        "2207": {
+          "frame_pairs": 30,
+          "candidates": 64371,
+          "similarity_entries": 139305457
+        },
+        "2215": {
+          "frame_pairs": 31,
+          "candidates": 75260,
+          "similarity_entries": 188959192
+        },
+        "2221": {
+          "frame_pairs": 32,
+          "candidates": 66521,
+          "similarity_entries": 140744643
+        },
+        "2223": {
+          "frame_pairs": 31,
+          "candidates": 113754,
+          "similarity_entries": 420438272
+        },
+        "2227": {
+          "frame_pairs": 25,
+          "candidates": 69293,
+          "similarity_entries": 193749461
+        },
+        "2238": {
+          "frame_pairs": 32,
+          "candidates": 101529,
+          "similarity_entries": 325216763
+        },
+        "2243": {
+          "frame_pairs": 30,
+          "candidates": 83058,
+          "similarity_entries": 231974964
+        },
+        "2244": {
+          "frame_pairs": 31,
+          "candidates": 103555,
+          "similarity_entries": 347182651
+        },
+        "2245": {
+          "frame_pairs": 34,
+          "candidates": 107522,
+          "similarity_entries": 353000570
+        },
+        "2246": {
+          "frame_pairs": 31,
+          "candidates": 56625,
+          "similarity_entries": 104456709
+        },
+        "2250": {
+          "frame_pairs": 33,
+          "candidates": 17594,
+          "similarity_entries": 9789398
+        },
+        "2251": {
+          "frame_pairs": 30,
+          "candidates": 60841,
+          "similarity_entries": 125926363
+        },
+        "2260": {
+          "frame_pairs": 23,
+          "candidates": 59292,
+          "similarity_entries": 155844460
+        },
+        "2294": {
+          "frame_pairs": 39,
+          "candidates": 42449,
+          "similarity_entries": 50406443
+        },
+        "2297": {
+          "frame_pairs": 39,
+          "candidates": 42646,
+          "similarity_entries": 48991378
+        },
+        "2300": {
+          "frame_pairs": 39,
+          "candidates": 10695,
+          "similarity_entries": 3339163
+        },
+        "2314": {
+          "frame_pairs": 39,
+          "candidates": 7801,
+          "similarity_entries": 1749513
+        },
+        "2326": {
+          "frame_pairs": 39,
+          "candidates": 154421,
+          "similarity_entries": 615268861
+        },
+        "2330": {
+          "frame_pairs": 39,
+          "candidates": 82199,
+          "similarity_entries": 178261861
+        },
+        "2334": {
+          "frame_pairs": 30,
+          "candidates": 37830,
+          "similarity_entries": 56209538
+        },
+        "2338": {
+          "frame_pairs": 34,
+          "candidates": 113916,
+          "similarity_entries": 384695944
+        },
+        "2339": {
+          "frame_pairs": 22,
+          "candidates": 39498,
+          "similarity_entries": 78471224
+        },
+        "2354": {
+          "frame_pairs": 39,
+          "candidates": 160873,
+          "similarity_entries": 666933103
+        },
+        "2360": {
+          "frame_pairs": 39,
+          "candidates": 83237,
+          "similarity_entries": 198158545
+        },
+        "2362": {
+          "frame_pairs": 39,
+          "candidates": 7371,
+          "similarity_entries": 1662027
+        },
+        "2371": {
+          "frame_pairs": 32,
+          "candidates": 15010,
+          "similarity_entries": 8220248
+        },
+        "2383": {
+          "frame_pairs": 39,
+          "candidates": 124156,
+          "similarity_entries": 418777424
+        },
+        "2386": {
+          "frame_pairs": 39,
+          "candidates": 65197,
+          "similarity_entries": 113854175
+        },
+        "2396": {
+          "frame_pairs": 39,
+          "candidates": 36816,
+          "similarity_entries": 50980622
+        },
+        "2400": {
+          "frame_pairs": 39,
+          "candidates": 62554,
+          "similarity_entries": 110895246
+        },
+        "2409": {
+          "frame_pairs": 39,
+          "candidates": 114456,
+          "similarity_entries": 338566886
+        },
+        "2414": {
+          "frame_pairs": 7,
+          "candidates": 2130,
+          "similarity_entries": 676436
+        },
+        "2434": {
+          "frame_pairs": 39,
+          "candidates": 6743,
+          "similarity_entries": 1372081
+        },
+        "2443": {
+          "frame_pairs": 39,
+          "candidates": 22172,
+          "similarity_entries": 17928398
+        },
+        "2460": {
+          "frame_pairs": 39,
+          "candidates": 19796,
+          "similarity_entries": 11008670
+        },
+        "2461": {
+          "frame_pairs": 38,
+          "candidates": 77034,
+          "similarity_entries": 161909576
+        },
+        "2469": {
+          "frame_pairs": 39,
+          "candidates": 45266,
+          "similarity_entries": 54349752
+        },
+        "2478": {
+          "frame_pairs": 39,
+          "candidates": 12561,
+          "similarity_entries": 5244783
+        },
+        "2479": {
+          "frame_pairs": 39,
+          "candidates": 103606,
+          "similarity_entries": 277691674
+        },
+        "2480": {
+          "frame_pairs": 39,
+          "candidates": 87752,
+          "similarity_entries": 214098752
+        },
+        "2487": {
+          "frame_pairs": 39,
+          "candidates": 75800,
+          "similarity_entries": 151747600
+        },
+        "2513": {
+          "frame_pairs": 39,
+          "candidates": 141091,
+          "similarity_entries": 514617225
+        },
+        "2519": {
+          "frame_pairs": 39,
+          "candidates": 184246,
+          "similarity_entries": 874801522
+        },
+        "2522": {
+          "frame_pairs": 39,
+          "candidates": 77513,
+          "similarity_entries": 168013129
+        },
+        "2535": {
+          "frame_pairs": 15,
+          "candidates": 57019,
+          "similarity_entries": 217687365
+        },
+        "2543": {
+          "frame_pairs": 15,
+          "candidates": 58698,
+          "similarity_entries": 231088922
+        },
+        "2560": {
+          "frame_pairs": 29,
+          "candidates": 106022,
+          "similarity_entries": 393310804
+        },
+        "2565": {
+          "frame_pairs": 14,
+          "candidates": 40024,
+          "similarity_entries": 118699104
+        },
+        "2578": {
+          "frame_pairs": 15,
+          "candidates": 54802,
+          "similarity_entries": 201084566
+        },
+        "2580": {
+          "frame_pairs": 15,
+          "candidates": 52933,
+          "similarity_entries": 187885839
+        },
+        "2583": {
+          "frame_pairs": 17,
+          "candidates": 52044,
+          "similarity_entries": 160481516
+        },
+        "2585": {
+          "frame_pairs": 15,
+          "candidates": 59240,
+          "similarity_entries": 235737664
+        },
+        "2608": {
+          "frame_pairs": 27,
+          "candidates": 96901,
+          "similarity_entries": 350493229
+        },
+        "2611": {
+          "frame_pairs": 15,
+          "candidates": 44539,
+          "similarity_entries": 133342767
+        },
+        "2623": {
+          "frame_pairs": 12,
+          "candidates": 39706,
+          "similarity_entries": 133863600
+        },
+        "2626": {
+          "frame_pairs": 29,
+          "candidates": 78013,
+          "similarity_entries": 219310813
+        },
+        "2629": {
+          "frame_pairs": 15,
+          "candidates": 61849,
+          "similarity_entries": 257579037
+        },
+        "2630": {
+          "frame_pairs": 17,
+          "candidates": 62788,
+          "similarity_entries": 233200090
+        },
+        "2633": {
+          "frame_pairs": 10,
+          "candidates": 41282,
+          "similarity_entries": 172118596
+        },
+        "2657": {
+          "frame_pairs": 30,
+          "candidates": 52024,
+          "similarity_entries": 112403022
+        },
+        "2660": {
+          "frame_pairs": 30,
+          "candidates": 54774,
+          "similarity_entries": 106821484
+        },
+        "2666": {
+          "frame_pairs": 32,
+          "candidates": 53172,
+          "similarity_entries": 92022410
+        },
+        "2667": {
+          "frame_pairs": 31,
+          "candidates": 90402,
+          "similarity_entries": 266364654
+        },
+        "2683": {
+          "frame_pairs": 29,
+          "candidates": 72238,
+          "similarity_entries": 182933790
+        },
+        "2688": {
+          "frame_pairs": 30,
+          "candidates": 27081,
+          "similarity_entries": 25448515
+        },
+        "2694": {
+          "frame_pairs": 34,
+          "candidates": 64920,
+          "similarity_entries": 125568652
+        },
+        "2699": {
+          "frame_pairs": 30,
+          "candidates": 65032,
+          "similarity_entries": 194398230
+        },
+        "2715": {
+          "frame_pairs": 33,
+          "candidates": 63384,
+          "similarity_entries": 126920584
+        },
+        "2718": {
+          "frame_pairs": 30,
+          "candidates": 55303,
+          "similarity_entries": 106104107
+        },
+        "2722": {
+          "frame_pairs": 30,
+          "candidates": 44883,
+          "similarity_entries": 92005871
+        },
+        "2752": {
+          "frame_pairs": 30,
+          "candidates": 45311,
+          "similarity_entries": 72814019
+        },
+        "2758": {
+          "frame_pairs": 30,
+          "candidates": 36754,
+          "similarity_entries": 53589734
+        },
+        "2761": {
+          "frame_pairs": 30,
+          "candidates": 53585,
+          "similarity_entries": 113138707
+        },
+        "2810": {
+          "frame_pairs": 30,
+          "candidates": 46233,
+          "similarity_entries": 72287221
+        },
+        "2812": {
+          "frame_pairs": 30,
+          "candidates": 72124,
+          "similarity_entries": 179530418
+        },
+        "2830": {
+          "frame_pairs": 34,
+          "candidates": 80690,
+          "similarity_entries": 193084686
+        },
+        "2845": {
+          "frame_pairs": 32,
+          "candidates": 31423,
+          "similarity_entries": 31685693
+        },
+        "2862": {
+          "frame_pairs": 30,
+          "candidates": 83435,
+          "similarity_entries": 237334511
+        },
+        "2867": {
+          "frame_pairs": 30,
+          "candidates": 44750,
+          "similarity_entries": 75406812
+        },
+        "2873": {
+          "frame_pairs": 29,
+          "candidates": 80899,
+          "similarity_entries": 227641429
+        },
+        "2894": {
+          "frame_pairs": 30,
+          "candidates": 46664,
+          "similarity_entries": 109099814
+        },
+        "2896": {
+          "frame_pairs": 30,
+          "candidates": 36120,
+          "similarity_entries": 47389154
+        },
+        "2901": {
+          "frame_pairs": 30,
+          "candidates": 52478,
+          "similarity_entries": 124463076
+        },
+        "2919": {
+          "frame_pairs": 30,
+          "candidates": 91257,
+          "similarity_entries": 279803115
+        },
+        "2932": {
+          "frame_pairs": 31,
+          "candidates": 23562,
+          "similarity_entries": 22023004
+        },
+        "2936": {
+          "frame_pairs": 31,
+          "candidates": 21299,
+          "similarity_entries": 15341279
+        },
+        "2937": {
+          "frame_pairs": 33,
+          "candidates": 82867,
+          "similarity_entries": 214275655
+        },
+        "2941": {
+          "frame_pairs": 29,
+          "candidates": 61478,
+          "similarity_entries": 149744862
+        },
+        "2975": {
+          "frame_pairs": 30,
+          "candidates": 107924,
+          "similarity_entries": 399649406
+        },
+        "2977": {
+          "frame_pairs": 30,
+          "candidates": 72990,
+          "similarity_entries": 188047702
+        },
+        "2978": {
+          "frame_pairs": 33,
+          "candidates": 47045,
+          "similarity_entries": 81379427
+        },
+        "2987": {
+          "frame_pairs": 31,
+          "candidates": 90184,
+          "similarity_entries": 264799260
+        }
+      }
+    },
+    "4": {
+      "frame_pairs": 12185,
+      "candidates": 26255927,
+      "similarity_entries": 73540599901,
+      "per_video": {
+        "0": {
+          "frame_pairs": 35,
+          "candidates": 87806,
+          "similarity_entries": 234838288
+        },
+        "3": {
+          "frame_pairs": 29,
+          "candidates": 62102,
+          "similarity_entries": 135596022
+        },
+        "7": {
+          "frame_pairs": 32,
+          "candidates": 35936,
+          "similarity_entries": 44549324
+        },
+        "9": {
+          "frame_pairs": 36,
+          "candidates": 102524,
+          "similarity_entries": 307987504
+        },
+        "11": {
+          "frame_pairs": 35,
+          "candidates": 90341,
+          "similarity_entries": 239701045
+        },
+        "13": {
+          "frame_pairs": 31,
+          "candidates": 81185,
+          "similarity_entries": 215304349
+        },
+        "16": {
+          "frame_pairs": 35,
+          "candidates": 40822,
+          "similarity_entries": 62708862
+        },
+        "40": {
+          "frame_pairs": 36,
+          "candidates": 79128,
+          "similarity_entries": 195522144
+        },
+        "50": {
+          "frame_pairs": 36,
+          "candidates": 40285,
+          "similarity_entries": 50781049
+        },
+        "51": {
+          "frame_pairs": 22,
+          "candidates": 65474,
+          "similarity_entries": 204441872
+        },
+        "67": {
+          "frame_pairs": 36,
+          "candidates": 44733,
+          "similarity_entries": 62477851
+        },
+        "69": {
+          "frame_pairs": 34,
+          "candidates": 46162,
+          "similarity_entries": 64031850
+        },
+        "71": {
+          "frame_pairs": 36,
+          "candidates": 85707,
+          "similarity_entries": 205027805
+        },
+        "72": {
+          "frame_pairs": 34,
+          "candidates": 51324,
+          "similarity_entries": 79370130
+        },
+        "85": {
+          "frame_pairs": 36,
+          "candidates": 96461,
+          "similarity_entries": 269572139
+        },
+        "92": {
+          "frame_pairs": 36,
+          "candidates": 43988,
+          "similarity_entries": 63725790
+        },
+        "109": {
+          "frame_pairs": 36,
+          "candidates": 69053,
+          "similarity_entries": 133630933
+        },
+        "114": {
+          "frame_pairs": 35,
+          "candidates": 110772,
+          "similarity_entries": 358463744
+        },
+        "117": {
+          "frame_pairs": 36,
+          "candidates": 15012,
+          "similarity_entries": 6645950
+        },
+        "119": {
+          "frame_pairs": 36,
+          "candidates": 25900,
+          "similarity_entries": 19568068
+        },
+        "121": {
+          "frame_pairs": 36,
+          "candidates": 131993,
+          "similarity_entries": 490893429
+        },
+        "134": {
+          "frame_pairs": 33,
+          "candidates": 69121,
+          "similarity_entries": 161193567
+        },
+        "144": {
+          "frame_pairs": 36,
+          "candidates": 67214,
+          "similarity_entries": 139465872
+        },
+        "146": {
+          "frame_pairs": 24,
+          "candidates": 85678,
+          "similarity_entries": 309645950
+        },
+        "152": {
+          "frame_pairs": 31,
+          "candidates": 96346,
+          "similarity_entries": 302859618
+        },
+        "157": {
+          "frame_pairs": 35,
+          "candidates": 106342,
+          "similarity_entries": 331572392
+        },
+        "158": {
+          "frame_pairs": 36,
+          "candidates": 94035,
+          "similarity_entries": 246374183
+        },
+        "160": {
+          "frame_pairs": 36,
+          "candidates": 110036,
+          "similarity_entries": 339457572
+        },
+        "170": {
+          "frame_pairs": 16,
+          "candidates": 26700,
+          "similarity_entries": 45166068
+        },
+        "183": {
+          "frame_pairs": 36,
+          "candidates": 10553,
+          "similarity_entries": 3259803
+        },
+        "184": {
+          "frame_pairs": 36,
+          "candidates": 102078,
+          "similarity_entries": 293418854
+        },
+        "189": {
+          "frame_pairs": 33,
+          "candidates": 34440,
+          "similarity_entries": 36590794
+        },
+        "201": {
+          "frame_pairs": 36,
+          "candidates": 107305,
+          "similarity_entries": 321778891
+        },
+        "203": {
+          "frame_pairs": 36,
+          "candidates": 63581,
+          "similarity_entries": 117752689
+        },
+        "220": {
+          "frame_pairs": 14,
+          "candidates": 50833,
+          "similarity_entries": 185611795
+        },
+        "221": {
+          "frame_pairs": 36,
+          "candidates": 63078,
+          "similarity_entries": 114156156
+        },
+        "237": {
+          "frame_pairs": 17,
+          "candidates": 30970,
+          "similarity_entries": 62180752
+        },
+        "239": {
+          "frame_pairs": 33,
+          "candidates": 138898,
+          "similarity_entries": 585983436
+        },
+        "261": {
+          "frame_pairs": 36,
+          "candidates": 101828,
+          "similarity_entries": 291451226
+        },
+        "279": {
+          "frame_pairs": 29,
+          "candidates": 42350,
+          "similarity_entries": 64231154
+        },
+        "282": {
+          "frame_pairs": 33,
+          "candidates": 39411,
+          "similarity_entries": 48994011
+        },
+        "300": {
+          "frame_pairs": 35,
+          "candidates": 20144,
+          "similarity_entries": 13876802
+        },
+        "301": {
+          "frame_pairs": 27,
+          "candidates": 107727,
+          "similarity_entries": 434525727
+        },
+        "303": {
+          "frame_pairs": 36,
+          "candidates": 73095,
+          "similarity_entries": 154045055
+        },
+        "310": {
+          "frame_pairs": 36,
+          "candidates": 52563,
+          "similarity_entries": 78240123
+        },
+        "324": {
+          "frame_pairs": 33,
+          "candidates": 115950,
+          "similarity_entries": 411765082
+        },
+        "330": {
+          "frame_pairs": 36,
+          "candidates": 133850,
+          "similarity_entries": 504587506
+        },
+        "346": {
+          "frame_pairs": 36,
+          "candidates": 89827,
+          "similarity_entries": 237325949
+        },
+        "349": {
+          "frame_pairs": 36,
+          "candidates": 97206,
+          "similarity_entries": 264873962
+        },
+        "357": {
+          "frame_pairs": 36,
+          "candidates": 119608,
+          "similarity_entries": 398547036
+        },
+        "358": {
+          "frame_pairs": 36,
+          "candidates": 45102,
+          "similarity_entries": 59575180
+        },
+        "366": {
+          "frame_pairs": 36,
+          "candidates": 93754,
+          "similarity_entries": 246221684
+        },
+        "369": {
+          "frame_pairs": 27,
+          "candidates": 40871,
+          "similarity_entries": 75295435
+        },
+        "371": {
+          "frame_pairs": 36,
+          "candidates": 62335,
+          "similarity_entries": 108922641
+        },
+        "379": {
+          "frame_pairs": 36,
+          "candidates": 167075,
+          "similarity_entries": 777727533
+        },
+        "383": {
+          "frame_pairs": 36,
+          "candidates": 196468,
+          "similarity_entries": 1073354150
+        },
+        "384": {
+          "frame_pairs": 36,
+          "candidates": 11182,
+          "similarity_entries": 3845860
+        },
+        "399": {
+          "frame_pairs": 33,
+          "candidates": 57818,
+          "similarity_entries": 112092404
+        },
+        "400": {
+          "frame_pairs": 32,
+          "candidates": 24145,
+          "similarity_entries": 19736061
+        },
+        "415": {
+          "frame_pairs": 36,
+          "candidates": 96179,
+          "similarity_entries": 272658255
+        },
+        "417": {
+          "frame_pairs": 35,
+          "candidates": 70521,
+          "similarity_entries": 156808999
+        },
+        "433": {
+          "frame_pairs": 34,
+          "candidates": 22644,
+          "similarity_entries": 16279318
+        },
+        "452": {
+          "frame_pairs": 17,
+          "candidates": 56323,
+          "similarity_entries": 187496787
+        },
+        "456": {
+          "frame_pairs": 36,
+          "candidates": 126822,
+          "similarity_entries": 452417878
+        },
+        "461": {
+          "frame_pairs": 36,
+          "candidates": 161362,
+          "similarity_entries": 726750362
+        },
+        "483": {
+          "frame_pairs": 36,
+          "candidates": 81446,
+          "similarity_entries": 185873932
+        },
+        "488": {
+          "frame_pairs": 36,
+          "candidates": 123333,
+          "similarity_entries": 426423633
+        },
+        "496": {
+          "frame_pairs": 36,
+          "candidates": 45395,
+          "similarity_entries": 65269609
+        },
+        "498": {
+          "frame_pairs": 36,
+          "candidates": 98653,
+          "similarity_entries": 273146227
+        },
+        "501": {
+          "frame_pairs": 36,
+          "candidates": 85292,
+          "similarity_entries": 204958942
+        },
+        "502": {
+          "frame_pairs": 36,
+          "candidates": 138601,
+          "similarity_entries": 536252667
+        },
+        "508": {
+          "frame_pairs": 36,
+          "candidates": 70996,
+          "similarity_entries": 153062928
+        },
+        "524": {
+          "frame_pairs": 37,
+          "candidates": 12076,
+          "similarity_entries": 5283844
+        },
+        "535": {
+          "frame_pairs": 36,
+          "candidates": 40753,
+          "similarity_entries": 47354237
+        },
+        "545": {
+          "frame_pairs": 36,
+          "candidates": 107756,
+          "similarity_entries": 323829360
+        },
+        "546": {
+          "frame_pairs": 36,
+          "candidates": 140698,
+          "similarity_entries": 552707690
+        },
+        "551": {
+          "frame_pairs": 36,
+          "candidates": 13490,
+          "similarity_entries": 5875534
+        },
+        "560": {
+          "frame_pairs": 36,
+          "candidates": 14404,
+          "similarity_entries": 6114674
+        },
+        "568": {
+          "frame_pairs": 36,
+          "candidates": 60991,
+          "similarity_entries": 108783321
+        },
+        "569": {
+          "frame_pairs": 25,
+          "candidates": 24738,
+          "similarity_entries": 29906280
+        },
+        "575": {
+          "frame_pairs": 36,
+          "candidates": 57737,
+          "similarity_entries": 95273335
+        },
+        "592": {
+          "frame_pairs": 36,
+          "candidates": 91016,
+          "similarity_entries": 232693872
+        },
+        "594": {
+          "frame_pairs": 36,
+          "candidates": 19365,
+          "similarity_entries": 11110215
+        },
+        "595": {
+          "frame_pairs": 0,
+          "candidates": 0,
+          "similarity_entries": 0
+        },
+        "601": {
+          "frame_pairs": 36,
+          "candidates": 53066,
+          "similarity_entries": 84655484
+        },
+        "621": {
+          "frame_pairs": 28,
+          "candidates": 61101,
+          "similarity_entries": 137448089
+        },
+        "630": {
+          "frame_pairs": 29,
+          "candidates": 111493,
+          "similarity_entries": 430732795
+        },
+        "632": {
+          "frame_pairs": 36,
+          "candidates": 83847,
+          "similarity_entries": 198166911
+        },
+        "633": {
+          "frame_pairs": 36,
+          "candidates": 89101,
+          "similarity_entries": 224854381
+        },
+        "635": {
+          "frame_pairs": 34,
+          "candidates": 121298,
+          "similarity_entries": 435101790
+        },
+        "650": {
+          "frame_pairs": 36,
+          "candidates": 93564,
+          "similarity_entries": 246398138
+        },
+        "661": {
+          "frame_pairs": 26,
+          "candidates": 89389,
+          "similarity_entries": 311155655
+        },
+        "662": {
+          "frame_pairs": 36,
+          "candidates": 131741,
+          "similarity_entries": 486370645
+        },
+        "677": {
+          "frame_pairs": 33,
+          "candidates": 76729,
+          "similarity_entries": 181936543
+        },
+        "678": {
+          "frame_pairs": 30,
+          "candidates": 96112,
+          "similarity_entries": 312750486
+        },
+        "686": {
+          "frame_pairs": 31,
+          "candidates": 99199,
+          "similarity_entries": 320146389
+        },
+        "689": {
+          "frame_pairs": 21,
+          "candidates": 63441,
+          "similarity_entries": 194841265
+        },
+        "696": {
+          "frame_pairs": 36,
+          "candidates": 134125,
+          "similarity_entries": 502702205
+        },
+        "705": {
+          "frame_pairs": 36,
+          "candidates": 131327,
+          "similarity_entries": 485922899
+        },
+        "712": {
+          "frame_pairs": 9,
+          "candidates": 28123,
+          "similarity_entries": 88113945
+        },
+        "720": {
+          "frame_pairs": 36,
+          "candidates": 96889,
+          "similarity_entries": 266768101
+        },
+        "721": {
+          "frame_pairs": 36,
+          "candidates": 110754,
+          "similarity_entries": 352943858
+        },
+        "730": {
+          "frame_pairs": 4,
+          "candidates": 10359,
+          "similarity_entries": 27137025
+        },
+        "731": {
+          "frame_pairs": 21,
+          "candidates": 71938,
+          "similarity_entries": 247503166
+        },
+        "732": {
+          "frame_pairs": 36,
+          "candidates": 97065,
+          "similarity_entries": 265284361
+        },
+        "735": {
+          "frame_pairs": 16,
+          "candidates": 52600,
+          "similarity_entries": 174312610
+        },
+        "736": {
+          "frame_pairs": 13,
+          "candidates": 39007,
+          "similarity_entries": 117587527
+        },
+        "739": {
+          "frame_pairs": 27,
+          "candidates": 96594,
+          "similarity_entries": 348427128
+        },
+        "749": {
+          "frame_pairs": 22,
+          "candidates": 74170,
+          "similarity_entries": 253487066
+        },
+        "767": {
+          "frame_pairs": 25,
+          "candidates": 68553,
+          "similarity_entries": 190439473
+        },
+        "777": {
+          "frame_pairs": 27,
+          "candidates": 104469,
+          "similarity_entries": 405484285
+        },
+        "778": {
+          "frame_pairs": 36,
+          "candidates": 120982,
+          "similarity_entries": 410341446
+        },
+        "801": {
+          "frame_pairs": 36,
+          "candidates": 154349,
+          "similarity_entries": 664903155
+        },
+        "807": {
+          "frame_pairs": 30,
+          "candidates": 105543,
+          "similarity_entries": 373325973
+        },
+        "813": {
+          "frame_pairs": 11,
+          "candidates": 31912,
+          "similarity_entries": 93215130
+        },
+        "824": {
+          "frame_pairs": 32,
+          "candidates": 128396,
+          "similarity_entries": 519440722
+        },
+        "825": {
+          "frame_pairs": 20,
+          "candidates": 43272,
+          "similarity_entries": 94953836
+        },
+        "841": {
+          "frame_pairs": 36,
+          "candidates": 119643,
+          "similarity_entries": 407843301
+        },
+        "847": {
+          "frame_pairs": 36,
+          "candidates": 105119,
+          "similarity_entries": 310807261
+        },
+        "849": {
+          "frame_pairs": 30,
+          "candidates": 100065,
+          "similarity_entries": 339699781
+        },
+        "859": {
+          "frame_pairs": 36,
+          "candidates": 135626,
+          "similarity_entries": 512801016
+        },
+        "862": {
+          "frame_pairs": 20,
+          "candidates": 46401,
+          "similarity_entries": 109524829
+        },
+        "894": {
+          "frame_pairs": 34,
+          "candidates": 121350,
+          "similarity_entries": 436467728
+        },
+        "897": {
+          "frame_pairs": 35,
+          "candidates": 120695,
+          "similarity_entries": 422002031
+        },
+        "903": {
+          "frame_pairs": 25,
+          "candidates": 78546,
+          "similarity_entries": 249610034
+        },
+        "907": {
+          "frame_pairs": 36,
+          "candidates": 138299,
+          "similarity_entries": 533437709
+        },
+        "908": {
+          "frame_pairs": 25,
+          "candidates": 109837,
+          "similarity_entries": 484013087
+        },
+        "912": {
+          "frame_pairs": 10,
+          "candidates": 37668,
+          "similarity_entries": 142763654
+        },
+        "928": {
+          "frame_pairs": 35,
+          "candidates": 136213,
+          "similarity_entries": 547845903
+        },
+        "934": {
+          "frame_pairs": 36,
+          "candidates": 143869,
+          "similarity_entries": 579875907
+        },
+        "936": {
+          "frame_pairs": 35,
+          "candidates": 106686,
+          "similarity_entries": 329370998
+        },
+        "943": {
+          "frame_pairs": 35,
+          "candidates": 110317,
+          "similarity_entries": 352653915
+        },
+        "959": {
+          "frame_pairs": 28,
+          "candidates": 91275,
+          "similarity_entries": 299594181
+        },
+        "985": {
+          "frame_pairs": 19,
+          "candidates": 68847,
+          "similarity_entries": 251999101
+        },
+        "989": {
+          "frame_pairs": 13,
+          "candidates": 22393,
+          "similarity_entries": 40908777
+        },
+        "995": {
+          "frame_pairs": 21,
+          "candidates": 80309,
+          "similarity_entries": 308688585
+        },
+        "1008": {
+          "frame_pairs": 36,
+          "candidates": 56273,
+          "similarity_entries": 116802915
+        },
+        "1014": {
+          "frame_pairs": 36,
+          "candidates": 120596,
+          "similarity_entries": 406989916
+        },
+        "1041": {
+          "frame_pairs": 36,
+          "candidates": 64815,
+          "similarity_entries": 118156057
+        },
+        "1043": {
+          "frame_pairs": 28,
+          "candidates": 11717,
+          "similarity_entries": 5319505
+        },
+        "1058": {
+          "frame_pairs": 34,
+          "candidates": 3029,
+          "similarity_entries": 347739
+        },
+        "1059": {
+          "frame_pairs": 36,
+          "candidates": 83638,
+          "similarity_entries": 197927348
+        },
+        "1061": {
+          "frame_pairs": 11,
+          "candidates": 35460,
+          "similarity_entries": 115346046
+        },
+        "1062": {
+          "frame_pairs": 36,
+          "candidates": 96721,
+          "similarity_entries": 274463181
+        },
+        "1066": {
+          "frame_pairs": 35,
+          "candidates": 34460,
+          "similarity_entries": 38821526
+        },
+        "1080": {
+          "frame_pairs": 14,
+          "candidates": 6105,
+          "similarity_entries": 2909073
+        },
+        "1090": {
+          "frame_pairs": 28,
+          "candidates": 68649,
+          "similarity_entries": 175244781
+        },
+        "1097": {
+          "frame_pairs": 17,
+          "candidates": 38087,
+          "similarity_entries": 87952705
+        },
+        "1111": {
+          "frame_pairs": 25,
+          "candidates": 85268,
+          "similarity_entries": 293784878
+        },
+        "1117": {
+          "frame_pairs": 36,
+          "candidates": 115916,
+          "similarity_entries": 377206944
+        },
+        "1126": {
+          "frame_pairs": 29,
+          "candidates": 18161,
+          "similarity_entries": 14390719
+        },
+        "1142": {
+          "frame_pairs": 30,
+          "candidates": 35352,
+          "similarity_entries": 42706958
+        },
+        "1153": {
+          "frame_pairs": 29,
+          "candidates": 90655,
+          "similarity_entries": 290700983
+        },
+        "1160": {
+          "frame_pairs": 32,
+          "candidates": 65270,
+          "similarity_entries": 144938530
+        },
+        "1165": {
+          "frame_pairs": 36,
+          "candidates": 99537,
+          "similarity_entries": 277993147
+        },
+        "1168": {
+          "frame_pairs": 27,
+          "candidates": 78800,
+          "similarity_entries": 231322002
+        },
+        "1173": {
+          "frame_pairs": 36,
+          "candidates": 71787,
+          "similarity_entries": 144863525
+        },
+        "1190": {
+          "frame_pairs": 11,
+          "candidates": 34878,
+          "similarity_entries": 111391130
+        },
+        "1192": {
+          "frame_pairs": 4,
+          "candidates": 12401,
+          "similarity_entries": 39173065
+        },
+        "1201": {
+          "frame_pairs": 36,
+          "candidates": 97677,
+          "similarity_entries": 267246357
+        },
+        "1204": {
+          "frame_pairs": 34,
+          "candidates": 47037,
+          "similarity_entries": 70321179
+        },
+        "1208": {
+          "frame_pairs": 6,
+          "candidates": 18404,
+          "similarity_entries": 57156000
+        },
+        "1213": {
+          "frame_pairs": 28,
+          "candidates": 84509,
+          "similarity_entries": 259584079
+        },
+        "1214": {
+          "frame_pairs": 0,
+          "candidates": 0,
+          "similarity_entries": 0
+        },
+        "1218": {
+          "frame_pairs": 5,
+          "candidates": 18884,
+          "similarity_entries": 72734678
+        },
+        "1219": {
+          "frame_pairs": 33,
+          "candidates": 71813,
+          "similarity_entries": 159046133
+        },
+        "1226": {
+          "frame_pairs": 12,
+          "candidates": 42409,
+          "similarity_entries": 150090413
+        },
+        "1236": {
+          "frame_pairs": 36,
+          "candidates": 9935,
+          "similarity_entries": 2960225
+        },
+        "1253": {
+          "frame_pairs": 0,
+          "candidates": 0,
+          "similarity_entries": 0
+        },
+        "1271": {
+          "frame_pairs": 4,
+          "candidates": 10434,
+          "similarity_entries": 27830484
+        },
+        "1285": {
+          "frame_pairs": 11,
+          "candidates": 42060,
+          "similarity_entries": 161256830
+        },
+        "1293": {
+          "frame_pairs": 36,
+          "candidates": 41076,
+          "similarity_entries": 51323170
+        },
+        "1300": {
+          "frame_pairs": 12,
+          "candidates": 37686,
+          "similarity_entries": 119595178
+        },
+        "1302": {
+          "frame_pairs": 12,
+          "candidates": 40626,
+          "similarity_entries": 139320428
+        },
+        "1308": {
+          "frame_pairs": 36,
+          "candidates": 81309,
+          "similarity_entries": 191079001
+        },
+        "1319": {
+          "frame_pairs": 14,
+          "candidates": 49067,
+          "similarity_entries": 172697923
+        },
+        "1320": {
+          "frame_pairs": 12,
+          "candidates": 35864,
+          "similarity_entries": 108074616
+        },
+        "1329": {
+          "frame_pairs": 26,
+          "candidates": 89684,
+          "similarity_entries": 314670280
+        },
+        "1330": {
+          "frame_pairs": 33,
+          "candidates": 91850,
+          "similarity_entries": 258309340
+        },
+        "1338": {
+          "frame_pairs": 27,
+          "candidates": 76388,
+          "similarity_entries": 220347880
+        },
+        "1353": {
+          "frame_pairs": 31,
+          "candidates": 77248,
+          "similarity_entries": 195640566
+        },
+        "1356": {
+          "frame_pairs": 36,
+          "candidates": 78591,
+          "similarity_entries": 174272413
+        },
+        "1370": {
+          "frame_pairs": 36,
+          "candidates": 48199,
+          "similarity_entries": 68861311
+        },
+        "1387": {
+          "frame_pairs": 33,
+          "candidates": 30292,
+          "similarity_entries": 36164208
+        },
+        "1414": {
+          "frame_pairs": 28,
+          "candidates": 70644,
+          "similarity_entries": 181211604
+        },
+        "1435": {
+          "frame_pairs": 36,
+          "candidates": 41150,
+          "similarity_entries": 49171086
+        },
+        "1437": {
+          "frame_pairs": 36,
+          "candidates": 45440,
+          "similarity_entries": 59002500
+        },
+        "1447": {
+          "frame_pairs": 36,
+          "candidates": 51076,
+          "similarity_entries": 75668362
+        },
+        "1453": {
+          "frame_pairs": 36,
+          "candidates": 73294,
+          "similarity_entries": 154608860
+        },
+        "1457": {
+          "frame_pairs": 33,
+          "candidates": 31057,
+          "similarity_entries": 32939329
+        },
+        "1479": {
+          "frame_pairs": 36,
+          "candidates": 100674,
+          "similarity_entries": 286121232
+        },
+        "1481": {
+          "frame_pairs": 29,
+          "candidates": 20703,
+          "similarity_entries": 17806443
+        },
+        "1482": {
+          "frame_pairs": 35,
+          "candidates": 82132,
+          "similarity_entries": 196968134
+        },
+        "1488": {
+          "frame_pairs": 36,
+          "candidates": 86760,
+          "similarity_entries": 211155012
+        },
+        "1491": {
+          "frame_pairs": 36,
+          "candidates": 51512,
+          "similarity_entries": 76589358
+        },
+        "1524": {
+          "frame_pairs": 36,
+          "candidates": 40202,
+          "similarity_entries": 60142656
+        },
+        "1541": {
+          "frame_pairs": 33,
+          "candidates": 71583,
+          "similarity_entries": 156734595
+        },
+        "1574": {
+          "frame_pairs": 29,
+          "candidates": 22447,
+          "similarity_entries": 24738067
+        },
+        "1576": {
+          "frame_pairs": 32,
+          "candidates": 38999,
+          "similarity_entries": 53044397
+        },
+        "1585": {
+          "frame_pairs": 36,
+          "candidates": 68422,
+          "similarity_entries": 131846786
+        },
+        "1586": {
+          "frame_pairs": 36,
+          "candidates": 28798,
+          "similarity_entries": 24441658
+        },
+        "1591": {
+          "frame_pairs": 36,
+          "candidates": 68809,
+          "similarity_entries": 134664021
+        },
+        "1610": {
+          "frame_pairs": 36,
+          "candidates": 51158,
+          "similarity_entries": 75354184
+        },
+        "1617": {
+          "frame_pairs": 36,
+          "candidates": 85354,
+          "similarity_entries": 203511338
+        },
+        "1630": {
+          "frame_pairs": 35,
+          "candidates": 21540,
+          "similarity_entries": 15729522
+        },
+        "1632": {
+          "frame_pairs": 34,
+          "candidates": 70195,
+          "similarity_entries": 157888829
+        },
+        "1643": {
+          "frame_pairs": 36,
+          "candidates": 124941,
+          "similarity_entries": 437102825
+        },
+        "1644": {
+          "frame_pairs": 36,
+          "candidates": 109270,
+          "similarity_entries": 335772258
+        },
+        "1653": {
+          "frame_pairs": 3,
+          "candidates": 7038,
+          "similarity_entries": 18286490
+        },
+        "1658": {
+          "frame_pairs": 36,
+          "candidates": 89525,
+          "similarity_entries": 239068669
+        },
+        "1666": {
+          "frame_pairs": 36,
+          "candidates": 105444,
+          "similarity_entries": 315879740
+        },
+        "1674": {
+          "frame_pairs": 36,
+          "candidates": 25973,
+          "similarity_entries": 24539755
+        },
+        "1675": {
+          "frame_pairs": 36,
+          "candidates": 119169,
+          "similarity_entries": 406046363
+        },
+        "1677": {
+          "frame_pairs": 36,
+          "candidates": 116506,
+          "similarity_entries": 387274102
+        },
+        "1681": {
+          "frame_pairs": 36,
+          "candidates": 13560,
+          "similarity_entries": 5436118
+        },
+        "1686": {
+          "frame_pairs": 36,
+          "candidates": 29433,
+          "similarity_entries": 24878259
+        },
+        "1687": {
+          "frame_pairs": 36,
+          "candidates": 8358,
+          "similarity_entries": 2124158
+        },
+        "1691": {
+          "frame_pairs": 36,
+          "candidates": 10902,
+          "similarity_entries": 4080986
+        },
+        "1695": {
+          "frame_pairs": 36,
+          "candidates": 6061,
+          "similarity_entries": 1141189
+        },
+        "1699": {
+          "frame_pairs": 29,
+          "candidates": 14323,
+          "similarity_entries": 7858547
+        },
+        "1710": {
+          "frame_pairs": 36,
+          "candidates": 101857,
+          "similarity_entries": 302753303
+        },
+        "1711": {
+          "frame_pairs": 36,
+          "candidates": 80588,
+          "similarity_entries": 188661386
+        },
+        "1714": {
+          "frame_pairs": 35,
+          "candidates": 65300,
+          "similarity_entries": 123590800
+        },
+        "1734": {
+          "frame_pairs": 36,
+          "candidates": 36188,
+          "similarity_entries": 45704684
+        },
+        "1742": {
+          "frame_pairs": 25,
+          "candidates": 28939,
+          "similarity_entries": 37301393
+        },
+        "1751": {
+          "frame_pairs": 36,
+          "candidates": 74855,
+          "similarity_entries": 161326685
+        },
+        "1768": {
+          "frame_pairs": 36,
+          "candidates": 103051,
+          "similarity_entries": 301888427
+        },
+        "1769": {
+          "frame_pairs": 36,
+          "candidates": 16513,
+          "similarity_entries": 8054731
+        },
+        "1779": {
+          "frame_pairs": 36,
+          "candidates": 166084,
+          "similarity_entries": 770061666
+        },
+        "1790": {
+          "frame_pairs": 36,
+          "candidates": 1769,
+          "similarity_entries": 110043
+        },
+        "1793": {
+          "frame_pairs": 36,
+          "candidates": 114392,
+          "similarity_entries": 366110474
+        },
+        "1808": {
+          "frame_pairs": 30,
+          "candidates": 95653,
+          "similarity_entries": 315312657
+        },
+        "1810": {
+          "frame_pairs": 36,
+          "candidates": 41838,
+          "similarity_entries": 65365250
+        },
+        "1814": {
+          "frame_pairs": 36,
+          "candidates": 79174,
+          "similarity_entries": 179940466
+        },
+        "1826": {
+          "frame_pairs": 36,
+          "candidates": 120690,
+          "similarity_entries": 411405016
+        },
+        "1831": {
+          "frame_pairs": 36,
+          "candidates": 46341,
+          "similarity_entries": 63454969
+        },
+        "1836": {
+          "frame_pairs": 36,
+          "candidates": 24670,
+          "similarity_entries": 20770054
+        },
+        "1874": {
+          "frame_pairs": 35,
+          "candidates": 9685,
+          "similarity_entries": 4419305
+        },
+        "1882": {
+          "frame_pairs": 36,
+          "candidates": 47910,
+          "similarity_entries": 65890162
+        },
+        "1905": {
+          "frame_pairs": 36,
+          "candidates": 24564,
+          "similarity_entries": 18050358
+        },
+        "1910": {
+          "frame_pairs": 36,
+          "candidates": 45885,
+          "similarity_entries": 62038219
+        },
+        "1914": {
+          "frame_pairs": 36,
+          "candidates": 74373,
+          "similarity_entries": 157060061
+        },
+        "1923": {
+          "frame_pairs": 36,
+          "candidates": 29740,
+          "similarity_entries": 26202726
+        },
+        "1927": {
+          "frame_pairs": 36,
+          "candidates": 97831,
+          "similarity_entries": 268508411
+        },
+        "1929": {
+          "frame_pairs": 36,
+          "candidates": 51584,
+          "similarity_entries": 74852902
+        },
+        "1935": {
+          "frame_pairs": 36,
+          "candidates": 84560,
+          "similarity_entries": 205230018
+        },
+        "1938": {
+          "frame_pairs": 36,
+          "candidates": 69596,
+          "similarity_entries": 150017304
+        },
+        "1939": {
+          "frame_pairs": 36,
+          "candidates": 68143,
+          "similarity_entries": 141692911
+        },
+        "1940": {
+          "frame_pairs": 36,
+          "candidates": 128565,
+          "similarity_entries": 461673719
+        },
+        "1949": {
+          "frame_pairs": 36,
+          "candidates": 183513,
+          "similarity_entries": 939443175
+        },
+        "1955": {
+          "frame_pairs": 36,
+          "candidates": 21740,
+          "similarity_entries": 14032992
+        },
+        "1963": {
+          "frame_pairs": 36,
+          "candidates": 2111,
+          "similarity_entries": 155497
+        },
+        "1967": {
+          "frame_pairs": 36,
+          "candidates": 31401,
+          "similarity_entries": 30094979
+        },
+        "1995": {
+          "frame_pairs": 36,
+          "candidates": 90403,
+          "similarity_entries": 230273195
+        },
+        "2003": {
+          "frame_pairs": 36,
+          "candidates": 51749,
+          "similarity_entries": 75633787
+        },
+        "2010": {
+          "frame_pairs": 36,
+          "candidates": 32287,
+          "similarity_entries": 42082107
+        },
+        "2012": {
+          "frame_pairs": 20,
+          "candidates": 69901,
+          "similarity_entries": 246913103
+        },
+        "2017": {
+          "frame_pairs": 36,
+          "candidates": 20663,
+          "similarity_entries": 12436683
+        },
+        "2018": {
+          "frame_pairs": 36,
+          "candidates": 19072,
+          "similarity_entries": 12029504
+        },
+        "2023": {
+          "frame_pairs": 36,
+          "candidates": 45838,
+          "similarity_entries": 59370462
+        },
+        "2028": {
+          "frame_pairs": 36,
+          "candidates": 71701,
+          "similarity_entries": 144676833
+        },
+        "2030": {
+          "frame_pairs": 25,
+          "candidates": 58170,
+          "similarity_entries": 146307308
+        },
+        "2031": {
+          "frame_pairs": 36,
+          "candidates": 95473,
+          "similarity_entries": 256140473
+        },
+        "2033": {
+          "frame_pairs": 36,
+          "candidates": 43013,
+          "similarity_entries": 51949285
+        },
+        "2037": {
+          "frame_pairs": 36,
+          "candidates": 47617,
+          "similarity_entries": 76092203
+        },
+        "2041": {
+          "frame_pairs": 36,
+          "candidates": 32908,
+          "similarity_entries": 37902796
+        },
+        "2044": {
+          "frame_pairs": 35,
+          "candidates": 52230,
+          "similarity_entries": 90088444
+        },
+        "2045": {
+          "frame_pairs": 36,
+          "candidates": 101229,
+          "similarity_entries": 288238437
+        },
+        "2049": {
+          "frame_pairs": 28,
+          "candidates": 29307,
+          "similarity_entries": 33757627
+        },
+        "2051": {
+          "frame_pairs": 36,
+          "candidates": 122558,
+          "similarity_entries": 424791682
+        },
+        "2052": {
+          "frame_pairs": 35,
+          "candidates": 25615,
+          "similarity_entries": 24289447
+        },
+        "2054": {
+          "frame_pairs": 28,
+          "candidates": 95926,
+          "similarity_entries": 331024638
+        },
+        "2055": {
+          "frame_pairs": 36,
+          "candidates": 92860,
+          "similarity_entries": 248140434
+        },
+        "2056": {
+          "frame_pairs": 35,
+          "candidates": 30572,
+          "similarity_entries": 47518786
+        },
+        "2059": {
+          "frame_pairs": 25,
+          "candidates": 60580,
+          "similarity_entries": 176565616
+        },
+        "2064": {
+          "frame_pairs": 36,
+          "candidates": 68143,
+          "similarity_entries": 131737837
+        },
+        "2067": {
+          "frame_pairs": 36,
+          "candidates": 78585,
+          "similarity_entries": 172852645
+        },
+        "2070": {
+          "frame_pairs": 36,
+          "candidates": 28022,
+          "similarity_entries": 53625248
+        },
+        "2072": {
+          "frame_pairs": 36,
+          "candidates": 89578,
+          "similarity_entries": 247572592
+        },
+        "2074": {
+          "frame_pairs": 26,
+          "candidates": 85286,
+          "similarity_entries": 281118054
+        },
+        "2076": {
+          "frame_pairs": 36,
+          "candidates": 79594,
+          "similarity_entries": 178606474
+        },
+        "2082": {
+          "frame_pairs": 36,
+          "candidates": 75934,
+          "similarity_entries": 163943522
+        },
+        "2084": {
+          "frame_pairs": 36,
+          "candidates": 51956,
+          "similarity_entries": 76338004
+        },
+        "2086": {
+          "frame_pairs": 36,
+          "candidates": 107977,
+          "similarity_entries": 333118983
+        },
+        "2088": {
+          "frame_pairs": 33,
+          "candidates": 117673,
+          "similarity_entries": 422639799
+        },
+        "2091": {
+          "frame_pairs": 36,
+          "candidates": 45570,
+          "similarity_entries": 58365580
+        },
+        "2093": {
+          "frame_pairs": 29,
+          "candidates": 12525,
+          "similarity_entries": 6366571
+        },
+        "2100": {
+          "frame_pairs": 36,
+          "candidates": 18949,
+          "similarity_entries": 10529879
+        },
+        "2101": {
+          "frame_pairs": 34,
+          "candidates": 33273,
+          "similarity_entries": 36840381
+        },
+        "2102": {
+          "frame_pairs": 36,
+          "candidates": 60169,
+          "similarity_entries": 108584771
+        },
+        "2128": {
+          "frame_pairs": 29,
+          "candidates": 25550,
+          "similarity_entries": 23391388
+        },
+        "2131": {
+          "frame_pairs": 36,
+          "candidates": 45558,
+          "similarity_entries": 71217378
+        },
+        "2132": {
+          "frame_pairs": 26,
+          "candidates": 56955,
+          "similarity_entries": 126793659
+        },
+        "2145": {
+          "frame_pairs": 31,
+          "candidates": 60932,
+          "similarity_entries": 121099988
+        },
+        "2148": {
+          "frame_pairs": 27,
+          "candidates": 77105,
+          "similarity_entries": 222267659
+        },
+        "2152": {
+          "frame_pairs": 28,
+          "candidates": 28517,
+          "similarity_entries": 30233387
+        },
+        "2156": {
+          "frame_pairs": 29,
+          "candidates": 48242,
+          "similarity_entries": 81435556
+        },
+        "2161": {
+          "frame_pairs": 27,
+          "candidates": 71206,
+          "similarity_entries": 188853410
+        },
+        "2164": {
+          "frame_pairs": 28,
+          "candidates": 45273,
+          "similarity_entries": 77081395
+        },
+        "2167": {
+          "frame_pairs": 27,
+          "candidates": 79165,
+          "similarity_entries": 235665455
+        },
+        "2170": {
+          "frame_pairs": 28,
+          "candidates": 57499,
+          "similarity_entries": 119085423
+        },
+        "2175": {
+          "frame_pairs": 28,
+          "candidates": 70480,
+          "similarity_entries": 178046170
+        },
+        "2178": {
+          "frame_pairs": 17,
+          "candidates": 53065,
+          "similarity_entries": 166638081
+        },
+        "2181": {
+          "frame_pairs": 28,
+          "candidates": 40789,
+          "similarity_entries": 60506879
+        },
+        "2182": {
+          "frame_pairs": 28,
+          "candidates": 35626,
+          "similarity_entries": 48013236
+        },
+        "2188": {
+          "frame_pairs": 31,
+          "candidates": 119966,
+          "similarity_entries": 466458138
+        },
+        "2190": {
+          "frame_pairs": 27,
+          "candidates": 41729,
+          "similarity_entries": 65551495
+        },
+        "2194": {
+          "frame_pairs": 9,
+          "candidates": 14240,
+          "similarity_entries": 22996522
+        },
+        "2197": {
+          "frame_pairs": 27,
+          "candidates": 68134,
+          "similarity_entries": 173304106
+        },
+        "2201": {
+          "frame_pairs": 30,
+          "candidates": 95345,
+          "similarity_entries": 305715031
+        },
+        "2202": {
+          "frame_pairs": 27,
+          "candidates": 48621,
+          "similarity_entries": 88262645
+        },
+        "2207": {
+          "frame_pairs": 27,
+          "candidates": 57146,
+          "similarity_entries": 122411742
+        },
+        "2215": {
+          "frame_pairs": 28,
+          "candidates": 68702,
+          "similarity_entries": 174192776
+        },
+        "2221": {
+          "frame_pairs": 29,
+          "candidates": 59707,
+          "similarity_entries": 125363611
+        },
+        "2223": {
+          "frame_pairs": 28,
+          "candidates": 103115,
+          "similarity_entries": 381892565
+        },
+        "2227": {
+          "frame_pairs": 22,
+          "candidates": 61582,
+          "similarity_entries": 173536066
+        },
+        "2238": {
+          "frame_pairs": 29,
+          "candidates": 92030,
+          "similarity_entries": 295456494
+        },
+        "2243": {
+          "frame_pairs": 27,
+          "candidates": 74054,
+          "similarity_entries": 205322146
+        },
+        "2244": {
+          "frame_pairs": 28,
+          "candidates": 93239,
+          "similarity_entries": 311541003
+        },
+        "2245": {
+          "frame_pairs": 31,
+          "candidates": 97361,
+          "similarity_entries": 316908015
+        },
+        "2246": {
+          "frame_pairs": 28,
+          "candidates": 50671,
+          "similarity_entries": 92901617
+        },
+        "2250": {
+          "frame_pairs": 30,
+          "candidates": 15805,
+          "similarity_entries": 8670313
+        },
+        "2251": {
+          "frame_pairs": 27,
+          "candidates": 54373,
+          "similarity_entries": 111209893
+        },
+        "2260": {
+          "frame_pairs": 20,
+          "candidates": 52225,
+          "similarity_entries": 137604963
+        },
+        "2294": {
+          "frame_pairs": 36,
+          "candidates": 38324,
+          "similarity_entries": 44062714
+        },
+        "2297": {
+          "frame_pairs": 36,
+          "candidates": 39244,
+          "similarity_entries": 44678012
+        },
+        "2300": {
+          "frame_pairs": 36,
+          "candidates": 9975,
+          "similarity_entries": 3103533
+        },
+        "2314": {
+          "frame_pairs": 36,
+          "candidates": 7005,
+          "similarity_entries": 1477535
+        },
+        "2326": {
+          "frame_pairs": 36,
+          "candidates": 142656,
+          "similarity_entries": 569104254
+        },
+        "2330": {
+          "frame_pairs": 36,
+          "candidates": 75740,
+          "similarity_entries": 163401928
+        },
+        "2334": {
+          "frame_pairs": 27,
+          "candidates": 35088,
+          "similarity_entries": 49292046
+        },
+        "2338": {
+          "frame_pairs": 31,
+          "candidates": 103645,
+          "similarity_entries": 349636755
+        },
+        "2339": {
+          "frame_pairs": 19,
+          "candidates": 32239,
+          "similarity_entries": 59423089
+        },
+        "2354": {
+          "frame_pairs": 36,
+          "candidates": 147963,
+          "similarity_entries": 609363459
+        },
+        "2360": {
+          "frame_pairs": 36,
+          "candidates": 74068,
+          "similarity_entries": 168466174
+        },
+        "2362": {
+          "frame_pairs": 36,
+          "candidates": 6481,
+          "similarity_entries": 1380287
+        },
+        "2371": {
+          "frame_pairs": 29,
+          "candidates": 13409,
+          "similarity_entries": 7099931
+        },
+        "2383": {
+          "frame_pairs": 36,
+          "candidates": 112087,
+          "similarity_entries": 363607923
+        },
+        "2386": {
+          "frame_pairs": 36,
+          "candidates": 58716,
+          "similarity_entries": 100099086
+        },
+        "2396": {
+          "frame_pairs": 36,
+          "candidates": 33239,
+          "similarity_entries": 42707351
+        },
+        "2400": {
+          "frame_pairs": 36,
+          "candidates": 54590,
+          "similarity_entries": 89223176
+        },
+        "2409": {
+          "frame_pairs": 36,
+          "candidates": 105160,
+          "similarity_entries": 309292834
+        },
+        "2414": {
+          "frame_pairs": 4,
+          "candidates": 1217,
+          "similarity_entries": 403725
+        },
+        "2434": {
+          "frame_pairs": 36,
+          "candidates": 5848,
+          "similarity_entries": 1064712
+        },
+        "2443": {
+          "frame_pairs": 36,
+          "candidates": 20240,
+          "similarity_entries": 15305324
+        },
+        "2460": {
+          "frame_pairs": 36,
+          "candidates": 17685,
+          "similarity_entries": 9261519
+        },
+        "2461": {
+          "frame_pairs": 35,
+          "candidates": 71909,
+          "similarity_entries": 153239265
+        },
+        "2469": {
+          "frame_pairs": 36,
+          "candidates": 41899,
+          "similarity_entries": 50808789
+        },
+        "2478": {
+          "frame_pairs": 36,
+          "candidates": 11477,
+          "similarity_entries": 4364709
+        },
+        "2479": {
+          "frame_pairs": 36,
+          "candidates": 95167,
+          "similarity_entries": 253458959
+        },
+        "2480": {
+          "frame_pairs": 36,
+          "candidates": 79849,
+          "similarity_entries": 191862637
+        },
+        "2487": {
+          "frame_pairs": 36,
+          "candidates": 69769,
+          "similarity_entries": 137933823
+        },
+        "2513": {
+          "frame_pairs": 36,
+          "candidates": 131003,
+          "similarity_entries": 479814807
+        },
+        "2519": {
+          "frame_pairs": 36,
+          "candidates": 170624,
+          "similarity_entries": 812692572
+        },
+        "2522": {
+          "frame_pairs": 36,
+          "candidates": 72123,
+          "similarity_entries": 154506209
+        },
+        "2535": {
+          "frame_pairs": 12,
+          "candidates": 45634,
+          "similarity_entries": 174116584
+        },
+        "2543": {
+          "frame_pairs": 12,
+          "candidates": 47170,
+          "similarity_entries": 187021404
+        },
+        "2560": {
+          "frame_pairs": 26,
+          "candidates": 95209,
+          "similarity_entries": 352960017
+        },
+        "2565": {
+          "frame_pairs": 11,
+          "candidates": 32016,
+          "similarity_entries": 94635954
+        },
+        "2578": {
+          "frame_pairs": 12,
+          "candidates": 43911,
+          "similarity_entries": 160988201
+        },
+        "2580": {
+          "frame_pairs": 12,
+          "candidates": 42811,
+          "similarity_entries": 153742111
+        },
+        "2583": {
+          "frame_pairs": 14,
+          "candidates": 43012,
+          "similarity_entries": 133091310
+        },
+        "2585": {
+          "frame_pairs": 12,
+          "candidates": 46820,
+          "similarity_entries": 184605392
+        },
+        "2608": {
+          "frame_pairs": 24,
+          "candidates": 86699,
+          "similarity_entries": 315288915
+        },
+        "2611": {
+          "frame_pairs": 12,
+          "candidates": 35929,
+          "similarity_entries": 108421753
+        },
+        "2623": {
+          "frame_pairs": 9,
+          "candidates": 29557,
+          "similarity_entries": 98617911
+        },
+        "2626": {
+          "frame_pairs": 26,
+          "candidates": 67946,
+          "similarity_entries": 182949862
+        },
+        "2629": {
+          "frame_pairs": 12,
+          "candidates": 50000,
+          "similarity_entries": 210237140
+        },
+        "2630": {
+          "frame_pairs": 14,
+          "candidates": 51603,
+          "similarity_entries": 190729507
+        },
+        "2633": {
+          "frame_pairs": 7,
+          "candidates": 28836,
+          "similarity_entries": 119414960
+        },
+        "2657": {
+          "frame_pairs": 27,
+          "candidates": 46535,
+          "similarity_entries": 100143365
+        },
+        "2660": {
+          "frame_pairs": 27,
+          "candidates": 48082,
+          "similarity_entries": 89514694
+        },
+        "2666": {
+          "frame_pairs": 29,
+          "candidates": 47575,
+          "similarity_entries": 79764109
+        },
+        "2667": {
+          "frame_pairs": 28,
+          "candidates": 82020,
+          "similarity_entries": 243063152
+        },
+        "2683": {
+          "frame_pairs": 26,
+          "candidates": 64736,
+          "similarity_entries": 164207550
+        },
+        "2688": {
+          "frame_pairs": 27,
+          "candidates": 24449,
+          "similarity_entries": 23022159
+        },
+        "2694": {
+          "frame_pairs": 31,
+          "candidates": 59578,
+          "similarity_entries": 116239180
+        },
+        "2699": {
+          "frame_pairs": 27,
+          "candidates": 55270,
+          "similarity_entries": 159401460
+        },
+        "2715": {
+          "frame_pairs": 30,
+          "candidates": 57181,
+          "similarity_entries": 113614061
+        },
+        "2718": {
+          "frame_pairs": 27,
+          "candidates": 50440,
+          "similarity_entries": 97141684
+        },
+        "2722": {
+          "frame_pairs": 27,
+          "candidates": 36477,
+          "similarity_entries": 64016411
+        },
+        "2752": {
+          "frame_pairs": 27,
+          "candidates": 41489,
+          "similarity_entries": 66225801
+        },
+        "2758": {
+          "frame_pairs": 27,
+          "candidates": 32410,
+          "similarity_entries": 45315934
+        },
+        "2761": {
+          "frame_pairs": 27,
+          "candidates": 48270,
+          "similarity_entries": 100318422
+        },
+        "2810": {
+          "frame_pairs": 27,
+          "candidates": 41384,
+          "similarity_entries": 64373312
+        },
+        "2812": {
+          "frame_pairs": 27,
+          "candidates": 64873,
+          "similarity_entries": 161423483
+        },
+        "2830": {
+          "frame_pairs": 31,
+          "candidates": 73503,
+          "similarity_entries": 175098255
+        },
+        "2845": {
+          "frame_pairs": 29,
+          "candidates": 28673,
+          "similarity_entries": 29138843
+        },
+        "2862": {
+          "frame_pairs": 27,
+          "candidates": 74008,
+          "similarity_entries": 205675532
+        },
+        "2867": {
+          "frame_pairs": 27,
+          "candidates": 38752,
+          "similarity_entries": 62311710
+        },
+        "2873": {
+          "frame_pairs": 26,
+          "candidates": 72024,
+          "similarity_entries": 200996730
+        },
+        "2894": {
+          "frame_pairs": 27,
+          "candidates": 40539,
+          "similarity_entries": 90843605
+        },
+        "2896": {
+          "frame_pairs": 27,
+          "candidates": 33392,
+          "similarity_entries": 43776194
+        },
+        "2901": {
+          "frame_pairs": 27,
+          "candidates": 42355,
+          "similarity_entries": 84013409
+        },
+        "2919": {
+          "frame_pairs": 27,
+          "candidates": 81671,
+          "similarity_entries": 248677437
+        },
+        "2932": {
+          "frame_pairs": 28,
+          "candidates": 22176,
+          "similarity_entries": 21810930
+        },
+        "2936": {
+          "frame_pairs": 28,
+          "candidates": 19522,
+          "similarity_entries": 14453892
+        },
+        "2937": {
+          "frame_pairs": 30,
+          "candidates": 74644,
+          "similarity_entries": 190560156
+        },
+        "2941": {
+          "frame_pairs": 26,
+          "candidates": 54434,
+          "similarity_entries": 125461558
+        },
+        "2975": {
+          "frame_pairs": 27,
+          "candidates": 95626,
+          "similarity_entries": 346600764
+        },
+        "2977": {
+          "frame_pairs": 27,
+          "candidates": 66622,
+          "similarity_entries": 169667298
+        },
+        "2978": {
+          "frame_pairs": 30,
+          "candidates": 42828,
+          "similarity_entries": 70226956
+        },
+        "2987": {
+          "frame_pairs": 28,
+          "candidates": 81230,
+          "similarity_entries": 237481462
+        }
+      }
+    }
+  },
+  "totals": {
+    "frame_pairs": 25573,
+    "candidates": 55352164,
+    "similarity_entries": 155746372958,
+    "maximum_chunk_candidates": 5929,
+    "maximum_chunk_locator": {
+      "video_id": 383,
+      "lag": 1,
+      "query_frame_id": 30,
+      "reference_frame_id": 29,
+      "query_rows": 77,
+      "reference_rows": 77
+    }
+  },
+  "runtime_estimate": {
+    "pilot_elapsed_seconds": 2.757811265066266,
+    "pilot_similarity_entries": 25243600,
+    "seconds_per_similarity_entry": 1.0924793868807405e-07,
+    "projected_arms": 3,
+    "raw_projected_seconds": 51044.91061141649,
+    "planning_safety_factor": 2.0,
+    "planning_projected_seconds": 102089.82122283298,
+    "planning_projected_hours": 28.35828367300916,
+    "runtime_gate_12h": false,
+    "estimate_is_not_runtime_measurement": true
+  },
+  "storage_estimate": {
+    "edge_bytes_uncompressed": 13838041000,
+    "edge_bytes_uncompressed_gib": 12.887679971754551,
+    "chunk_header_reserve_bytes": 209494016,
+    "output_overhead_reserve_bytes": 1073741824,
+    "planning_output_bytes": 15121276840,
+    "extra_safety_reserve_bytes": 2147483648,
+    "free_bytes_at_snapshot": 30552580096,
+    "free_bytes_after_planning_and_extra_reserve": 13283819608,
+    "minimum_free_bytes_after_run": 33285996544,
+    "disk_gate": false,
+    "estimates_are_not_disk_reservations": true
+  },
+  "opened_npz_payloads": false,
+  "launched_worker": false,
+  "output_directory_created": false,
+  "labels_identity_gt_decoded": false,
+  "no_results_or_tracking_evaluation": true,
+  "interpretation": "Metadata-only resource estimate. HOLD means the full FIT worker must not be launched until the disk/runtime gate is re-evaluated after an explicit resource decision."
+}

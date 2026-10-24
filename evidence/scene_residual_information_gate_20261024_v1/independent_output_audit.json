@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_SCENE_RESIDUAL_INFORMATION_OUTPUT_AUDIT",
+  "pair_files": 677,
+  "candidate_count": 1210939,
+  "available_candidates": 1207931,
+  "max_gain_identity_error": 0.0,
+  "max_raw_source_error": 7.771561172376096e-16,
+  "module_sha256": "0824dbd527563496cf4d3275ec2de169295bf3d72c4eef145529ebd04cf5b7be",
+  "selection_sha256": "740d6c782fdfe8240ddc8c4b924e566cebd2465a6a05233f02197b1e904aaf1b",
+  "seal_sha256": "7fe5ad8258f02457531489f697b8cba39096f43487626ff1ad802ac43d2d8a79",
+  "summary_sha256": "a630a067d1ddbfd66dafc27d1683fb2f032f466e940d195bf97f9da9ca81e55d",
+  "unknown_not_negative": true,
+  "read_only": true
+}

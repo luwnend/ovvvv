@@ -1,0 +1,134 @@
+{
+  "status": "COMPLETE_GT_FREE_SCENE_RESIDUAL_INFORMATION_GATE",
+  "candidate_count": 1210939,
+  "pair_count": 677,
+  "available_candidates": 1207931,
+  "readout": {
+    "population": {
+      "all_candidates": {
+        "candidates": 1210939,
+        "known": 1832,
+        "positive": 608,
+        "negative": 1224,
+        "unknown": 1209107,
+        "auc": {
+          "raw_appearance_cosine": 0.9944396069831442,
+          "static_displacement": 0.9025103736670107,
+          "scene_residual": 0.9341908261875596,
+          "scene_gain": 0.6041816009557945,
+          "reversed_residual_placebo": 0.06580917381244045
+        },
+        "support": {
+          "raw_appearance_cosine": 1832,
+          "static_displacement": 1832,
+          "scene_residual": 1743,
+          "scene_gain": 1743,
+          "reversed_residual_placebo": 1743
+        },
+        "source_macro_auc": {
+          "raw_appearance_cosine": {
+            "mean": 0.997735839152285,
+            "supported_sources": 12
+          },
+          "static_displacement": {
+            "mean": 0.8900801917843442,
+            "supported_sources": 12
+          },
+          "scene_residual": {
+            "mean": 0.927684877610206,
+            "supported_sources": 12
+          },
+          "scene_gain": {
+            "mean": 0.6475109016784085,
+            "supported_sources": 12
+          },
+          "reversed_residual_placebo": {
+            "mean": 0.07231512238979391,
+            "supported_sources": 12
+          }
+        }
+      },
+      "residual_supported": {
+        "candidates": 1207931,
+        "known": 1743,
+        "positive": 558,
+        "negative": 1185,
+        "unknown": 1206188,
+        "auc": {
+          "raw_appearance_cosine": 0.9939385690304433,
+          "static_displacement": 0.9011705458010072,
+          "scene_residual": 0.9341908261875596,
+          "scene_gain": 0.6041816009557945,
+          "reversed_residual_placebo": 0.06580917381244045
+        },
+        "support": {
+          "raw_appearance_cosine": 1743,
+          "static_displacement": 1743,
+          "scene_residual": 1743,
+          "scene_gain": 1743,
+          "reversed_residual_placebo": 1743
+        },
+        "source_macro_auc": {
+          "raw_appearance_cosine": {
+            "mean": 0.9977244505446835,
+            "supported_sources": 12
+          },
+          "static_displacement": {
+            "mean": 0.8874513793313795,
+            "supported_sources": 12
+          },
+          "scene_residual": {
+            "mean": 0.927684877610206,
+            "supported_sources": 12
+          },
+          "scene_gain": {
+            "mean": 0.6475109016784085,
+            "supported_sources": 12
+          },
+          "reversed_residual_placebo": {
+            "mean": 0.07231512238979391,
+            "supported_sources": 12
+          }
+        }
+      }
+    },
+    "common_supported_query_ranking": {
+      "coverage": {
+        "queries": 752,
+        "positive_negative_queries": 418,
+        "sources": 10,
+        "videos": 18
+      },
+      "paired_top1": {
+        "static_displacement": {
+          "raw_correct_score_correct": 358,
+          "raw_correct_score_wrong": 52,
+          "raw_wrong_score_correct": 4,
+          "raw_wrong_score_wrong": 4
+        },
+        "scene_residual": {
+          "raw_correct_score_correct": 374,
+          "raw_correct_score_wrong": 36,
+          "raw_wrong_score_correct": 3,
+          "raw_wrong_score_wrong": 5
+        },
+        "scene_gain": {
+          "raw_correct_score_correct": 214,
+          "raw_correct_score_wrong": 196,
+          "raw_wrong_score_correct": 2,
+          "raw_wrong_score_wrong": 6
+        },
+        "reversed_residual_placebo": {
+          "raw_correct_score_correct": 21,
+          "raw_correct_score_wrong": 389,
+          "raw_wrong_score_correct": 0,
+          "raw_wrong_score_wrong": 8
+        }
+      },
+      "tie_rule": "highest score then lowest immutable reference_row",
+      "unknown_not_negative": true,
+      "interpretation": "known supported candidate ranking only; no deployment tracking metric"
+    }
+  },
+  "interpretation": "Fixed exploratory FIT population. Unknown endpoints are excluded from labels, residual-supported ranking shares one denominator, and no tracker, training, independent generalization, physical camera, or novelty claim is made."
+}

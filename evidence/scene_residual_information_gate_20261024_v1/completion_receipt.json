@@ -1,0 +1,13 @@
+{
+  "status": "PASS_SCENE_RESIDUAL_INFORMATION_GATE",
+  "summary_sha256": "a630a067d1ddbfd66dafc27d1683fb2f032f466e940d195bf97f9da9ca81e55d",
+  "seal_sha256": "7fe5ad8258f02457531489f697b8cba39096f43487626ff1ad802ac43d2d8a79",
+  "pair_receipts_sha256": "8c71250ba4b115d7702f66f8b1788ccbb326aa9e2ce67b70ecc066d3c823b2da",
+  "pair_count": 677,
+  "candidate_count": 1210939,
+  "available_candidates": 1207931,
+  "actual_exit_code": 0,
+  "GT_free_export_reused_after_finalizer_repair": true,
+  "GPU": false,
+  "training": false
+}
