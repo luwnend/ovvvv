@@ -10,7 +10,8 @@
     "fold_macro": "unweighted mean of evaluable source/fold AUROCs",
     "unknown_identity_policy": "exclude from pair AUROC; never a negative",
     "unknown_top1_policy": "keep in the GT-free candidate pool; count selected unknown as unresolved",
-    "gt_candidate_filter": false,
+    "gt_query_population_filter": true,
+    "gt_removes_or_adds_candidates": false,
     "feature_gt_access": false,
     "gt_used_to_select_memory_or_reference": false,
     "topk": 5,
@@ -824,42 +825,42 @@
           "positive_pairs": 21,
           "hard_negative_pairs": 26,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
           "auroc": 0.9285714285714286,
           "positive_pairs": 8,
           "hard_negative_pairs": 35,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
           "auroc": 0.8746258729630861,
           "positive_pairs": 31,
           "hard_negative_pairs": 97,
           "videos": 2,
-          "positive_gt_trajectories": 1
+          "positive_videos": 1
         },
         "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
           "auroc": 0.7736900780379041,
           "positive_pairs": 39,
           "hard_negative_pairs": 46,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
           "auroc": 0.9435483870967742,
           "positive_pairs": 12,
           "hard_negative_pairs": 31,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "YouTube/z-fsLpGHq6o": {
           "auroc": 1.0,
           "positive_pairs": 18,
           "hard_negative_pairs": 6,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         }
       },
       "sources_with_both_classes": 6,
@@ -881,42 +882,42 @@
           "positive_pairs": 21,
           "hard_negative_pairs": 26,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
           "auroc": 0.9392857142857143,
           "positive_pairs": 8,
           "hard_negative_pairs": 35,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
           "auroc": 0.9723977386099102,
           "positive_pairs": 31,
           "hard_negative_pairs": 97,
           "videos": 2,
-          "positive_gt_trajectories": 1
+          "positive_videos": 1
         },
         "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
           "auroc": 0.8556298773690078,
           "positive_pairs": 39,
           "hard_negative_pairs": 46,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
           "auroc": 0.946236559139785,
           "positive_pairs": 12,
           "hard_negative_pairs": 31,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "YouTube/z-fsLpGHq6o": {
           "auroc": 1.0,
           "positive_pairs": 18,
           "hard_negative_pairs": 6,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         }
       },
       "sources_with_both_classes": 6,
@@ -938,42 +939,42 @@
           "positive_pairs": 21,
           "hard_negative_pairs": 26,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
           "auroc": 0.9821428571428571,
           "positive_pairs": 8,
           "hard_negative_pairs": 35,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
           "auroc": 0.8037911539740605,
           "positive_pairs": 31,
           "hard_negative_pairs": 97,
           "videos": 2,
-          "positive_gt_trajectories": 1
+          "positive_videos": 1
         },
         "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
           "auroc": 0.7090301003344481,
           "positive_pairs": 39,
           "hard_negative_pairs": 46,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
           "auroc": 0.9327956989247311,
           "positive_pairs": 12,
           "hard_negative_pairs": 31,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "YouTube/z-fsLpGHq6o": {
           "auroc": 0.9814814814814815,
           "positive_pairs": 18,
           "hard_negative_pairs": 6,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         }
       },
       "sources_with_both_classes": 6,
@@ -995,42 +996,42 @@
           "positive_pairs": 21,
           "hard_negative_pairs": 26,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
           "auroc": 0.9571428571428572,
           "positive_pairs": 8,
           "hard_negative_pairs": 35,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
           "auroc": 0.951114067176588,
           "positive_pairs": 31,
           "hard_negative_pairs": 97,
           "videos": 2,
-          "positive_gt_trajectories": 1
+          "positive_videos": 1
         },
         "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
           "auroc": 0.8154960981047937,
           "positive_pairs": 39,
           "hard_negative_pairs": 46,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
           "auroc": 0.9516129032258065,
           "positive_pairs": 12,
           "hard_negative_pairs": 31,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "YouTube/z-fsLpGHq6o": {
           "auroc": 1.0,
           "positive_pairs": 18,
           "hard_negative_pairs": 6,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         }
       },
       "sources_with_both_classes": 6,
@@ -1052,42 +1053,42 @@
           "positive_pairs": 21,
           "hard_negative_pairs": 26,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
           "auroc": 0.9678571428571429,
           "positive_pairs": 8,
           "hard_negative_pairs": 35,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
           "auroc": 0.8244097106750915,
           "positive_pairs": 31,
           "hard_negative_pairs": 97,
           "videos": 2,
-          "positive_gt_trajectories": 1
+          "positive_videos": 1
         },
         "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
           "auroc": 0.8216276477146043,
           "positive_pairs": 39,
           "hard_negative_pairs": 46,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
           "auroc": 0.8655913978494624,
           "positive_pairs": 12,
           "hard_negative_pairs": 31,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "YouTube/z-fsLpGHq6o": {
           "auroc": 0.9722222222222222,
           "positive_pairs": 18,
           "hard_negative_pairs": 6,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         }
       },
       "sources_with_both_classes": 6,
@@ -1109,42 +1110,42 @@
           "positive_pairs": 21,
           "hard_negative_pairs": 26,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
           "auroc": 0.9714285714285714,
           "positive_pairs": 8,
           "hard_negative_pairs": 35,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
           "auroc": 0.8167608912537413,
           "positive_pairs": 31,
           "hard_negative_pairs": 97,
           "videos": 2,
-          "positive_gt_trajectories": 1
+          "positive_videos": 1
         },
         "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
           "auroc": 0.6750278706800446,
           "positive_pairs": 39,
           "hard_negative_pairs": 46,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
           "auroc": 0.9274193548387096,
           "positive_pairs": 12,
           "hard_negative_pairs": 31,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "YouTube/z-fsLpGHq6o": {
           "auroc": 0.9444444444444444,
           "positive_pairs": 18,
           "hard_negative_pairs": 6,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         }
       },
       "sources_with_both_classes": 6,
@@ -1166,42 +1167,42 @@
           "positive_pairs": 21,
           "hard_negative_pairs": 26,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
           "auroc": 0.9428571428571428,
           "positive_pairs": 8,
           "hard_negative_pairs": 35,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
           "auroc": 0.9674093781177253,
           "positive_pairs": 31,
           "hard_negative_pairs": 97,
           "videos": 2,
-          "positive_gt_trajectories": 1
+          "positive_videos": 1
         },
         "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
           "auroc": 0.8857302118171684,
           "positive_pairs": 39,
           "hard_negative_pairs": 46,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
           "auroc": 0.946236559139785,
           "positive_pairs": 12,
           "hard_negative_pairs": 31,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "YouTube/z-fsLpGHq6o": {
           "auroc": 1.0,
           "positive_pairs": 18,
           "hard_negative_pairs": 6,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         }
       },
       "sources_with_both_classes": 6,
@@ -1223,42 +1224,42 @@
           "positive_pairs": 21,
           "hard_negative_pairs": 26,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
           "auroc": 0.9464285714285714,
           "positive_pairs": 8,
           "hard_negative_pairs": 35,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
           "auroc": 0.8370468905886266,
           "positive_pairs": 31,
           "hard_negative_pairs": 97,
           "videos": 2,
-          "positive_gt_trajectories": 1
+          "positive_videos": 1
         },
         "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
           "auroc": 0.6945373467112598,
           "positive_pairs": 39,
           "hard_negative_pairs": 46,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
           "auroc": 0.9301075268817204,
           "positive_pairs": 12,
           "hard_negative_pairs": 31,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "YouTube/z-fsLpGHq6o": {
           "auroc": 1.0,
           "positive_pairs": 18,
           "hard_negative_pairs": 6,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         }
       },
       "sources_with_both_classes": 6,
@@ -1280,42 +1281,42 @@
           "positive_pairs": 21,
           "hard_negative_pairs": 26,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
           "auroc": 0.9821428571428571,
           "positive_pairs": 8,
           "hard_negative_pairs": 35,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
           "auroc": 0.7914865314266711,
           "positive_pairs": 31,
           "hard_negative_pairs": 97,
           "videos": 2,
-          "positive_gt_trajectories": 1
+          "positive_videos": 1
         },
         "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
           "auroc": 0.664994425863991,
           "positive_pairs": 39,
           "hard_negative_pairs": 46,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
           "auroc": 0.9354838709677419,
           "positive_pairs": 12,
           "hard_negative_pairs": 31,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         },
         "YouTube/z-fsLpGHq6o": {
           "auroc": 0.9722222222222222,
           "positive_pairs": 18,
           "hard_negative_pairs": 6,
           "videos": 2,
-          "positive_gt_trajectories": 2
+          "positive_videos": 2
         }
       },
       "sources_with_both_classes": 6,
@@ -8271,7 +8272,7 @@
     "Pair support is correlated through shared rows, videos, and GT trajectories.",
     "Query/key local-token scores have no trained parameters; this is an information gate, not a proposed network result."
   ],
-  "elapsed_seconds": 2.091872469522059,
+  "elapsed_seconds": 2.1655754735693336,
   "cpu_only": true,
   "gpu_used": false,
   "model_loaded": false,

@@ -1,0 +1,47 @@
+{
+  "schema_version": "OVMOT_GEOMETRY_ROI_PUBLICATION_V1",
+  "status": "PASS_PUBLICATION_COPY_VERIFIED",
+  "source_root": "/home/chenhc/ov/OVMOT_RESEARCH",
+  "files": {
+    "geometry_roi_information_gate_20261024.py": {
+      "sha256": "17857b352683e6312cff833a840590a435f670f784adc2849344d30789480ba8",
+      "bytes": 54323
+    },
+    "test_geometry_roi_information_gate_20261024.py": {
+      "sha256": "6ed639b7d2a4aecdd8a34f329987804600d9ad7266a1a1026c2a86df05a21e7a",
+      "bytes": 12664
+    },
+    "independent_audit_geometry_roi_information_gate_20261024.py": {
+      "sha256": "c5c4e5fc0b206a67376012c3692ea11bfd4da9927e100890ceb847df9a115fa0",
+      "bytes": 13275
+    },
+    "seal_geometry_roi_full_audit_receipt_20261024.py": {
+      "sha256": "5e7d0a2f422bbe821014ce39c20e97cab19944c5b4102e151e02cce3c432eb6f",
+      "bytes": 16996
+    },
+    "test_seal_geometry_roi_full_audit_receipt_20261024.py": {
+      "sha256": "4ac68ef02ea6ee887ac34aa2d954fb5edd4f12a54c71c8884cafd706abb3a490",
+      "bytes": 2460
+    },
+    "geometry_roi_information_gate_full_20261024.md": {
+      "sha256": "015dd6512dad6f1c75a590a64740469da8e1b63b8eb1b80e7bce07d6071af824",
+      "bytes": 5708
+    },
+    "evaluation_result.json": {
+      "sha256": "526fee660a1fe3cd2b153e1d06ac0ab9bd9375858bebbe2482b859f9f8f64e8d",
+      "bytes": 279324
+    },
+    "independent_audit_full.json": {
+      "sha256": "2eccf5d61a5ca91f8730258a777702257dd48880811738b6f415f8b12bab702d",
+      "bytes": 2865
+    },
+    "acceptance_receipt.json": {
+      "sha256": "ab4858bc3a78f4499371ad299d3da30a73cc2b8bf3af5cb7d1192a14283cbbf6",
+      "bytes": 8003
+    },
+    "audit_receipt.json": {
+      "sha256": "00bc681f09f2bca0105bc9a3636a34e11729eddf3e78e6ea253c8c8273f5d45b",
+      "bytes": 265635
+    }
+  }
+}

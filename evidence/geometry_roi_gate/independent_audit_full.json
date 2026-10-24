@@ -1,7 +1,7 @@
 {
   "status": "PASS_INDEPENDENT_GEOMETRY_ROI_GATE_FULL_AUDIT",
   "scope": "six-source three-fold fixed-feature information gate",
-  "evaluator_output_sha256": "51d2be63181f616cb859447ae3d8667c0c9a82cc6913aaa698636a996f91cfa5",
+  "evaluator_output_sha256": "526fee660a1fe3cd2b153e1d06ac0ab9bd9375858bebbe2482b859f9f8f64e8d",
   "manifest_sha256": "4d2b2b775b4a4d207829cfcb359b3ec8ab34e28291847570ef5d4c7ba7ec109a",
   "observations": 122,
   "primary_pairs": 370,

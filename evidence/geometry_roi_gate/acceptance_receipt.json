@@ -22,7 +22,9 @@
     "3": 0
   },
   "all_exit_zero": true,
+  "evaluator_reruns_normalized_identical": true,
   "independent_audit_status": "PASS_INDEPENDENT_GEOMETRY_ROI_GATE_FULL_AUDIT",
+  "independent_max_auroc_abs_difference": 0.0,
   "support": {
     "rows": 122,
     "sources": 6,
@@ -138,17 +140,93 @@
       "evaluated": true
     }
   ],
+  "matched_contrasts": {
+    "local_tokens_vs_causal_raw": {
+      "control": "raw256_causal_mean",
+      "candidate": "fgfa_aligned_past_mean",
+      "transitions": {
+        "repair_control_error": 1,
+        "break_control_correct": 1,
+        "both_correct": 47,
+        "both_wrong": 8,
+        "control_unresolved": 0,
+        "candidate_unresolved": 0,
+        "fixed_query_set": true
+      },
+      "source_macro_delta": -0.0007936507936507931
+    },
+    "local_tokens_vs_causal_global_mean": {
+      "control": "token_mean_causal",
+      "candidate": "fgfa_aligned_past_mean",
+      "transitions": {
+        "repair_control_error": 1,
+        "break_control_correct": 1,
+        "both_correct": 47,
+        "both_wrong": 8,
+        "control_unresolved": 0,
+        "candidate_unresolved": 0,
+        "fixed_query_set": true
+      },
+      "source_macro_delta": -0.0007936507936507931
+    },
+    "spatial_vs_causal_global_mean": {
+      "control": "token_mean_causal",
+      "candidate": "spatial_topk_geometry",
+      "transitions": {
+        "repair_control_error": 2,
+        "break_control_correct": 11,
+        "both_correct": 37,
+        "both_wrong": 7,
+        "control_unresolved": 0,
+        "candidate_unresolved": 0,
+        "fixed_query_set": true
+      },
+      "source_macro_delta": -0.18492063492063493
+    },
+    "spatial_vs_random_permutation": {
+      "control": "random_token_permutation",
+      "candidate": "spatial_topk_geometry",
+      "transitions": {
+        "repair_control_error": 1,
+        "break_control_correct": 3,
+        "both_correct": 38,
+        "both_wrong": 15,
+        "control_unresolved": 0,
+        "candidate_unresolved": 0,
+        "fixed_query_set": true
+      },
+      "source_macro_delta": -0.03888888888888888
+    },
+    "causal_raw_vs_current_raw": {
+      "control": "raw256",
+      "candidate": "raw256_causal_mean",
+      "transitions": {
+        "repair_control_error": 5,
+        "break_control_correct": 2,
+        "both_correct": 43,
+        "both_wrong": 7,
+        "control_unresolved": 0,
+        "candidate_unresolved": 0,
+        "fixed_query_set": true
+      },
+      "source_macro_delta": 0.02103174603174603
+    }
+  },
+  "strict_past_cross_track_review": {
+    "status": "PASS_INDEPENDENT_GEOMETRY_ROI_GATE_REVIEW",
+    "report": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/geometry_roi_gate_independent_review_20261024.md"
+  },
   "provenance_hold": true,
   "terminal_collection_receipt_present": false,
   "gpu_used": false,
   "training_started": false,
   "outputs": {
     "report": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/geometry_roi_information_gate_full_20261024.md",
-    "report_sha256": "f10f46f7077855148057b5b95b2b325f9af303864eb5f7ab72960747c95344d9",
-    "evaluation": "/home/chenhc/ov/OVMOT_RESEARCH/results/geometry_roi_information_gate_full_20261024_v3/evaluation_result.json",
-    "evaluation_sha256": "51d2be63181f616cb859447ae3d8667c0c9a82cc6913aaa698636a996f91cfa5",
-    "independent_audit": "/home/chenhc/ov/OVMOT_RESEARCH/results/geometry_roi_information_gate_full_20261024_v3/independent_audit_full.json",
-    "independent_audit_sha256": "d3bc47e895106df129241a9fb59f07213cb6a71c1bdc9a6bea0b2e3d9ef65548",
+    "report_sha256": "015dd6512dad6f1c75a590a64740469da8e1b63b8eb1b80e7bce07d6071af824",
+    "evaluation": "/home/chenhc/ov/OVMOT_RESEARCH/results/geometry_roi_information_gate_full_20261024_v4/evaluation_result.json",
+    "evaluation_sha256": "526fee660a1fe3cd2b153e1d06ac0ab9bd9375858bebbe2482b859f9f8f64e8d",
+    "independent_audit": "/home/chenhc/ov/OVMOT_RESEARCH/results/geometry_roi_information_gate_full_20261024_v4/independent_audit_full.json",
+    "independent_audit_sha256": "2eccf5d61a5ca91f8730258a777702257dd48880811738b6f415f8b12bab702d",
     "receipt": "/home/chenhc/ov/OVMOT_RESEARCH/results/geometry_roi_full_audit_receipt_20261024_v2/audit_receipt.json",
     "receipt_sha256": "00bc681f09f2bca0105bc9a3636a34e11729eddf3e78e6ea253c8c8273f5d45b"
   },
