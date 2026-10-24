@@ -1,0 +1,19 @@
+{
+  "status": "GT_FREE_FIT_CONTAINMENT_BUDGET_ONLY",
+  "frames": 15283,
+  "edges": 425844,
+  "unique_parent_child_edges": 227001,
+  "unique_parent_frames": 165504,
+  "unique_parent_tracks": 46704,
+  "unique_child_tracks": 104029,
+  "area_ratio_bins": {
+    "lt10pct": 274115,
+    "10to30pct": 144852,
+    "30to60pct": 6877
+  },
+  "sources_available": "not joined in this detector-only audit",
+  "gt_used": false,
+  "training": false,
+  "GPU": false,
+  "interpretation": "Candidate relationship budget only. Repeated track observations are not independent events. No claim about parent class error, occlusion causality or tracking performance."
+}
