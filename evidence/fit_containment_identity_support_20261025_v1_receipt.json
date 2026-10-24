@@ -1,0 +1,9 @@
+{
+  "status": "PASS_DESCRIPTIVE_SUPPORT_AUDIT",
+  "edges_sha256": "b9d969a4c6b7028f58fa73e0c366404c16ecc9ecc7d0f32f701ed2e177483efe",
+  "gt_free_observations_sha256": "fdd3a0e69d37f5be36c6a88c307fec0fe6035d09ef4939e5f8d4118becc300ce",
+  "supervised_observations_sha256": "1b4c568792df1af28d53f1efe6ecf80b6573ccc161f5fd7865854450d14d7385",
+  "script_sha256": "7544549795d7700c29f843a8dfd7bbbb2fbdfb00fb1a90c7a4e947edf33f8369",
+  "training": false,
+  "GPU": false
+}

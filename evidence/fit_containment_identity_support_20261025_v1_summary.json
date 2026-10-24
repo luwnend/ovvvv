@@ -1,0 +1,20 @@
+{
+  "status": "FIT_CONTAINMENT_IDENTITY_SUPPORT_DESCRIPTION",
+  "edges": 205999,
+  "unique_parent_tracks": 42108,
+  "unique_child_tracks": 93909,
+  "sources": 341,
+  "unknown_not_negative": true,
+  "identity_status": {
+    "parent_known": 42937,
+    "unknown": 158090,
+    "both_known": 1821,
+    "child_known": 3151
+  },
+  "known_endpoint_pair_identity": {
+    "same_gt": 680,
+    "different_gt": 1141
+  },
+  "sources_with_any_known_endpoint": 336,
+  "interpretation": "A relation is not an independent sample. Both-known endpoints are manual anchors, not full-track purity. Same/different GT labels are for later scoring, never for selecting parent, child, relation, memory or thresholds."
+}

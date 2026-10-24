@@ -22,6 +22,8 @@
 
 full FIT 扫描覆盖 7 个数据 block；最大 source 仅占 4.79% 的去重边。最常见的预测类对仍包括 `car→wheel`、`person→shoe`、`car→taillight`，明显偏向部件检测。这个分布**偏向部件检测**，不能把事件数量等同于 independent error support；顶层类对高度集中，pilot 必须按 source→GT trajectory 抽样和汇总。
 
+身份支持联合是独立只读描述：205,999 条关系中 `both_known` 仅 1,821（680 同 GT、1,141 不同 GT）、`parent_known` 42,937、`child_known` 3,151、`unknown` 158,090，覆盖 336 个 source。unknown 没有被当负例。这条支持表只说明可做后续诊断的合法端点覆盖，不能把 1,821 条当作训练集大小；真实 teacher/分类评测仍需按 source→GT trajectory 去重并确认每个 source 的正负支持。
+
 回执：`PASS_GT_FREE_BUDGET_AUDIT`，脚本 SHA `13a1d393…`，边文件 SHA `b9d969a4…`，summary SHA `937d4444…`，未使用 GT、未训练、未用 GPU。输入 frame execution SHA `e0e327a8…` 与冻结 full collector 一致。
 
 ## 当前方法状态
