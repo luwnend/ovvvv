@@ -5,24 +5,24 @@
 
 ## 事件预算
 
-只用冻结 FIT 缓存的检测框、标签、released ID，按 `area_ratio∈[0.01,0.8]`、`IoC>0.8` 和 child 中心落在 parent 内建立父—子边；每个 `(video, parent track, child track)` 只保留最早一帧，避免把重复观测当独立事件。脚本为 `tmp_analysis/audit_fit_containment_events_20261025.py`，输出在 `/home/chenhc/ov/OVMOT_RESEARCH/results/fit_containment_event_budget_20261025_v2/`。
+只用冻结 FIT 缓存的检测框、标签、released ID，按 `area_ratio∈[0.01,0.8]`、`IoC>0.8` 和 child 中心落在 parent 内建立父—子边；每个 `(video, parent track, child track)` 只保留最早一帧，避免把重复观测当独立事件。脚本为 `tmp_analysis/audit_fit_containment_events_20261025.py`，输出在 `/home/chenhc/ov/OVMOT_RESEARCH/results/fit_containment_event_budget_20261025_v4/`。
 
 | 量 | 数值 |
 |---|---:|
-| 扫描帧 | 15,283 |
-| 原始边 | 425,844 |
-| 去重 parent-child 边 | **227,001** |
-| unique parent frames | 165,504 |
-| unique parent tracks | 46,704 |
-| unique child tracks | 104,029 |
-| 有事件的视频 | 448/448 |
-| 有事件的 source | 383 |
+| 扫描帧（FIT only） | 13,791 |
+| 原始边 | 388,367 |
+| 去重 parent-child 边 | **205,999** |
+| unique parent frames | 150,465 |
+| unique parent tracks | 42,108 |
+| unique child tracks | 93,909 |
+| 有事件的视频 | 405/405 FIT |
+| 有事件的 source | 341/341 FIT |
 | area ratio p10 / p50 / p90 | 0.015 / 0.061 / 0.241 |
 | IoC p10 / p50 / p90 | 0.879 / 1.000 / 1.000 |
 
-七个数据 block 均有覆盖：HACS 95、LaSOT 88、Charades 74、AVA 61、YFCC100M 48、BDD 48、ArgoVerse 34 个视频。最常见的预测类对包括 `car→wheel` 4,951、`person→shoe` 1,140、`car→taillight` 3,730、`person→short_pants` 813 条去重边。这个分布**偏向部件检测**，不能把事件数量等同于 independent error support；顶层类对高度集中，pilot 必须按 source→GT trajectory 抽样和汇总。
+full FIT 扫描覆盖 7 个数据 block；最大 source 仅占 4.79% 的去重边。最常见的预测类对仍包括 `car→wheel`、`person→shoe`、`car→taillight`，明显偏向部件检测。这个分布**偏向部件检测**，不能把事件数量等同于 independent error support；顶层类对高度集中，pilot 必须按 source→GT trajectory 抽样和汇总。
 
-回执：`PASS_GT_FREE_BUDGET_AUDIT`，脚本 SHA `52a9a230…`，边文件 SHA `80f1aace…`，summary SHA `30ba7a06…`，未使用 GT、未训练、未用 GPU。输入 frame execution SHA 与冻结 full collector 一致。
+回执：`PASS_GT_FREE_BUDGET_AUDIT`，脚本 SHA `13a1d393…`，边文件 SHA `b9d969a4…`，summary SHA `937d4444…`，未使用 GT、未训练、未用 GPU。输入 frame execution SHA `e0e327a8…` 与冻结 full collector 一致。
 
 ## 当前方法状态
 
