@@ -335,6 +335,8 @@ def default_vocab_case(backward=False):
             "parent_input": parent.grad,
             "child_input": child.grad,
             "child_mask": model.child_mask[0].weight.grad,
+            "stable_spatial_norm_weight": model.child_mask[1].norm.weight.grad,
+            "stable_spatial_norm_bias": model.child_mask[1].norm.bias.grad,
             "child_query": model.child_query[0].weight.grad,
             "relation": model.relation[-1].weight.grad,
         }
@@ -372,6 +374,8 @@ def parameter_gradient_case(n_parent):
         "parent_input": args[0].grad,
         "child_input": args[1].grad,
         "child_mask": model.child_mask[0].weight.grad,
+        "stable_spatial_norm_weight": model.child_mask[1].norm.weight.grad,
+        "stable_spatial_norm_bias": model.child_mask[1].norm.bias.grad,
         "child_query": model.child_query[0].weight.grad,
         "relation": model.relation[-1].weight.grad,
     }
@@ -674,6 +678,51 @@ def nonfinite_contract():
     return all(value["rejected"] for value in details.values()), details
 
 
+def documented_repeated_edge_tokens_case():
+    """The public docstring says child_tokens are repeated per edge."""
+    model = make_model(
+        classes=5,
+        dim=8,
+        hidden=8,
+        max_children_per_parent=2,
+        max_edges=2,
+    )
+    parent = torch.randn(2, 8, 2, 2)
+    # One unique child appears in two edges.  The documented tensor is E rows,
+    # while child_posterior has n_child rows.
+    child = torch.randn(2, 8, 2, 2)
+    posterior = torch.softmax(torch.randn(1, 5), dim=-1)
+    embedding = torch.randn(5, 8)
+    args = [
+        parent,
+        child,
+        torch.tensor([0, 1], dtype=torch.long),
+        torch.tensor([0, 0], dtype=torch.long),
+        torch.ones(2, 2, 2),
+        posterior,
+        embedding,
+        torch.zeros(2, 5),
+        torch.tensor([10, 10], dtype=torch.long),
+        torch.tensor([9, 9], dtype=torch.long),
+    ]
+    try:
+        out = model(*args)
+        accepted = output_ok(out, (2, 5))
+        message = "accepted"
+    except BaseException as exc:
+        accepted = False
+        message = "%s: %s" % (type(exc).__name__, exc)
+    return accepted, {
+        "documented_child_token_rows_E": 2,
+        "unique_child_posterior_rows": 1,
+        "two_edges_share_child": True,
+        "accepted": accepted,
+        "exception_or_result": message,
+        "source_relevant_lines": [130, 131],
+        "documented_input": "child_tokens: [E,D,H,W], repeated per edge",
+    }
+
+
 def owner_tie_case():
     model = make_model(classes=3, dim=3, hidden=4)
     model.child_mask = ConstMask([1.0, 1.0])
@@ -942,6 +991,16 @@ def class_condition_case():
 def class_relation_not_scalar_case():
     model = make_model(classes=4, dim=8, hidden=8)
     model.child_mask = ConstMask([1.0])
+    with torch.no_grad():
+        # Deterministic per-class relation values: hidden[0]=1 through GELU(1),
+        # and four distinct class logits. This avoids mistaking random tiny
+        # initialization spread for a scalar relation.
+        for parameter in model.relation[0].parameters():
+            parameter.zero_()
+        model.relation[0].bias.fill_(1.0)
+        model.relation[-1].weight.zero_()
+        model.relation[-1].weight[:, 0] = torch.tensor([0.0, 0.5, 1.0, 1.5])
+        model.relation[-1].bias.fill_(-4.0)
     args = base_args(
         classes=4, dim=8, height=1, width=1,
         n_parent=1, n_child=1, n_edge=1,
@@ -964,12 +1023,17 @@ def class_relation_not_scalar_case():
         if finite_coefficients.numel() > 1
         else 0.0
     )
-    return bool(positive.sum() >= 2 and spread > 1e-5), {
+    class_logits = torch.tensor([0.0, 0.5, 1.0, 1.5])
+    sigmoid_spread = float(torch.sigmoid(class_logits).max()
+                           - torch.sigmoid(class_logits).min())
+    return bool(positive.sum() >= 2 and spread > 1e-4), {
         "parent_positive_evidence": evidence.tolist(),
         "correction": out.tolist(),
         "negative_correction_over_positive_evidence": coefficients.tolist(),
         "positive_class_count": int(positive.sum()),
         "coefficient_spread": spread,
+        "configured_relation_logits": class_logits.tolist(),
+        "configured_sigmoid_spread": sigmoid_spread,
     }
 
 
@@ -1020,6 +1084,11 @@ def main():
     probe(2, "per_parent_and_global_caps_plus_time_contract",
           limit_and_time_contract)
     probe(2, "six_nonfinite_input_kinds_rejected", nonfinite_contract)
+    probe(
+        2,
+        "documented_edge_repeated_child_tokens_with_one_unique_child",
+        documented_repeated_edge_tokens_case,
+    )
 
     # Round 3: ledger math, category conditioning, 1203 backward, and ordinary
     # train-mode backward for the legal 1x1 layouts.

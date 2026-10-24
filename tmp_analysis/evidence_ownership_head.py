@@ -127,8 +127,18 @@ class EvidenceOwnershipLedger(nn.Module):
             raise ValueError("wrong class embedding shape")
         if classes != self.class_width:
             raise ValueError("class vocabulary width differs from relation width")
-        if child_tokens.shape[0] != n_child:
-            raise ValueError("child token rows differ from posterior rows")
+        # child_tokens are edge-aligned by the documented interface.  A unique
+        # child posterior may be addressed by edge_child.
+        if child_tokens.shape[0] not in (len(edge_child), n_child):
+            raise ValueError("child tokens must be edge-aligned or unique-child rows")
+        if child_tokens.shape[0] == len(edge_child):
+            child_tokens_for_edge = child_tokens
+        else:
+            child_tokens_for_edge = child_tokens[edge_child]
+        if child_posterior.shape[0] == len(edge_child):
+            child_posterior_for_edge = child_posterior
+        else:
+            child_posterior_for_edge = child_posterior[edge_child]
         if child_geometry.shape != (len(edge_child), 5):
             raise ValueError("child geometry must be [edges,5]")
         if parent_time.dtype != child_time.dtype:
@@ -153,7 +163,9 @@ class EvidenceOwnershipLedger(nn.Module):
                                device=parent_tokens.device)
 
         # Predicted child occupancy in the parent ROI is nonnegative.
-        predicted = torch.sigmoid(self.child_mask(child_tokens))[:, 0]
+        predicted = torch.sigmoid(
+            self.child_mask(child_tokens_for_edge)
+        )[:, 0]
         child_mask = predicted * overlap.clamp(0, 1)
         # Per-cell ownership is decided by the actual score mask = predicted
         # occupancy * overlap.  Ties deterministically retain the lower edge
@@ -182,7 +194,7 @@ class EvidenceOwnershipLedger(nn.Module):
         for edge, (parent_index, child_index) in enumerate(
             zip(edge_parent.tolist(), edge_child.tolist())
         ):
-            class_support = child_posterior[child_index].clamp(0, 1)
+            class_support = child_posterior_for_edge[edge].clamp(0, 1)
             # Explain-away is strongest when a contained child has detector
             # evidence for the same parent class: that region may be the source
             # of the parent's positive class evidence. The posterior is a
@@ -190,9 +202,9 @@ class EvidenceOwnershipLedger(nn.Module):
             available = class_support.unsqueeze(1).detach()
             child_relation = self.child_query(
                 torch.cat(
-                    [child_tokens[edge].mean((-2, -1)).unsqueeze(0),
+                    [child_tokens_for_edge[edge].mean((-2, -1)).unsqueeze(0),
                      child_geometry[edge].unsqueeze(0),
-                     child_posterior[child_index].unsqueeze(0)],
+                     child_posterior_for_edge[edge].unsqueeze(0)],
                     dim=1,
                 )
             )[0]

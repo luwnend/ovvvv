@@ -1,5 +1,5 @@
 {
-  "all_passed": true,
+  "all_passed": false,
   "cuda_available": false,
   "cuda_used": false,
   "main_sha256_after": "c0ea9872ea22e50615093394c5923ba7b59e3af662dcb6a5caea075de861bc9d",
@@ -574,6 +574,24 @@
     {
       "counterexample": true,
       "detail": {
+        "accepted": false,
+        "documented_child_token_rows_E": 2,
+        "documented_input": "child_tokens: [E,D,H,W], repeated per edge",
+        "exception_or_result": "ValueError: child token rows differ from posterior rows",
+        "source_relevant_lines": [
+          130,
+          131
+        ],
+        "two_edges_share_child": true,
+        "unique_child_posterior_rows": 1
+      },
+      "name": "documented_edge_repeated_child_tokens_with_one_unique_child",
+      "passed": false,
+      "round": 2
+    },
+    {
+      "counterexample": true,
+      "detail": {
         "expected_lower_edge_after_reversal": [
           [
             0.0,
@@ -641,31 +659,31 @@
       "detail": {
         "bottom_only": [
           [
-            -0.00618739565834403,
-            -0.06475964933633804,
-            -0.06145444139838219
+            0.0,
+            -0.06645487993955612,
+            -0.026579469442367554
           ]
         ],
         "combined": [
           [
-            -0.04322601482272148,
-            -0.06475964933633804,
-            -0.15182480216026306
+            -0.25443658232688904,
+            -0.06645487993955612,
+            -0.08363279700279236
           ]
         ],
         "expected_no_double_subtract": [
           [
-            -0.04322601482272148,
-            -0.06475964933633804,
-            -0.15182480216026306
+            -0.25443658232688904,
+            -0.06645487993955612,
+            -0.08363279700279236
           ]
         ],
         "max_abs_diff": 0.0,
         "top_only": [
           [
-            -0.03703862056136131,
+            -0.25443658232688904,
             0.0,
-            -0.09037036448717117
+            -0.057053327560424805
           ]
         ]
       },
@@ -679,16 +697,16 @@
         "max_abs_diff": 0.0,
         "once": [
           [
-            -0.06627030670642853,
-            -0.07321023941040039,
-            0.0
+            0.0,
+            0.0,
+            -0.0442492738366127
           ]
         ],
         "twice": [
           [
-            -0.06627030670642853,
-            -0.07321023941040039,
-            0.0
+            0.0,
+            0.0,
+            -0.0442492738366127
           ]
         ]
       },
@@ -722,26 +740,33 @@
     {
       "counterexample": true,
       "detail": {
-        "coefficient_spread": 1.8587568774819374e-05,
+        "coefficient_spread": 0.007819167338311672,
+        "configured_relation_logits": [
+          0.0,
+          0.5,
+          1.0,
+          1.5
+        ],
+        "configured_sigmoid_spread": 0.3175744414329529,
         "correction": [
           [
-            -0.0011421621311455965,
+            -0.0023121354170143604,
             0.0,
-            -0.00012094801058992743,
-            0.0
+            0.0,
+            -0.0006856170366518199
           ]
         ],
         "negative_correction_over_positive_evidence": [
-          0.003300114069133997,
+          0.0032872434239834547,
           0.0,
-          0.0032815265003591776,
-          0.0
+          0.0,
+          0.01110641099512577
         ],
         "parent_positive_evidence": [
-          0.34609776735305786,
+          0.7033660411834717,
           0.0,
-          0.0368572399020195,
-          0.0
+          0.0,
+          0.061731643974781036
         ],
         "positive_class_count": 2
       },
@@ -754,28 +779,38 @@
       "detail": {
         "gradients": {
           "child_input": {
-            "abs_sum": 7.807584916008636e-05,
+            "abs_sum": 0.0003514999116305262,
             "finite": true,
             "nonzero": true
           },
           "child_mask": {
-            "abs_sum": 0.0021264334209263325,
+            "abs_sum": 0.0219099298119545,
             "finite": true,
             "nonzero": true
           },
           "child_query": {
-            "abs_sum": 1.4839964933344163e-05,
+            "abs_sum": 8.097514364635572e-05,
             "finite": true,
             "nonzero": true
           },
           "parent_input": {
-            "abs_sum": 0.0015080831944942474,
+            "abs_sum": 0.003549379063770175,
             "finite": true,
             "nonzero": true
           },
           "posterior_grad_is_none": true,
           "relation": {
-            "abs_sum": 0.0002953493094537407,
+            "abs_sum": 0.0018485157052055001,
+            "finite": true,
+            "nonzero": true
+          },
+          "stable_spatial_norm_bias": {
+            "abs_sum": 0.0008267252705991268,
+            "finite": true,
+            "nonzero": true
+          },
+          "stable_spatial_norm_weight": {
+            "abs_sum": 0.0007984749972820282,
             "finite": true,
             "nonzero": true
           }
@@ -783,11 +818,11 @@
         "n_parent": 1,
         "output": [
           [
+            -7.578862278023735e-05,
+            -2.7046684408560395e-05,
             0.0,
-            -0.0003618549380917102,
             0.0,
-            0.0,
-            0.0
+            -0.001894445507787168
           ]
         ]
       },
@@ -800,28 +835,38 @@
       "detail": {
         "gradients": {
           "child_input": {
-            "abs_sum": 0.0005287451203912497,
+            "abs_sum": 0.000886244815774262,
             "finite": true,
             "nonzero": true
           },
           "child_mask": {
-            "abs_sum": 0.011347147636115551,
+            "abs_sum": 0.01910405606031418,
             "finite": true,
             "nonzero": true
           },
           "child_query": {
-            "abs_sum": 6.01765641476959e-05,
+            "abs_sum": 3.603767618187703e-05,
             "finite": true,
             "nonzero": true
           },
           "parent_input": {
-            "abs_sum": 0.010442809201776981,
+            "abs_sum": 0.0063024419359862804,
             "finite": true,
             "nonzero": true
           },
           "posterior_grad_is_none": true,
           "relation": {
-            "abs_sum": 0.0020480751991271973,
+            "abs_sum": 0.002911956049501896,
+            "finite": true,
+            "nonzero": true
+          },
+          "stable_spatial_norm_bias": {
+            "abs_sum": 0.0008529610349796712,
+            "finite": true,
+            "nonzero": true
+          },
+          "stable_spatial_norm_weight": {
+            "abs_sum": 0.0006676393677480519,
             "finite": true,
             "nonzero": true
           }
@@ -831,16 +876,16 @@
           [
             0.0,
             0.0,
-            -0.0003736332873813808,
-            0.0,
-            -0.0010527786798775196
+            -0.00013652034976985306,
+            -0.001406657393090427,
+            0.0
           ],
           [
+            -0.001153486780822277,
             0.0,
-            -0.0013330277288332582,
             0.0,
             0.0,
-            -3.5293112887302414e-05
+            -0.0006253533065319061
           ]
         ]
       },
@@ -855,27 +900,37 @@
         "finite": true,
         "gradients": {
           "child_input": {
-            "abs_sum": 0.00038621947169303894,
+            "abs_sum": 0.0004936023615300655,
             "finite": true,
             "nonzero": true
           },
           "child_mask": {
-            "abs_sum": 0.24729254841804504,
+            "abs_sum": 0.3364284932613373,
             "finite": true,
             "nonzero": true
           },
           "child_query": {
-            "abs_sum": 8.817025445750915e-06,
+            "abs_sum": 1.585161589900963e-05,
             "finite": true,
             "nonzero": true
           },
           "parent_input": {
-            "abs_sum": 0.00019035162404179573,
+            "abs_sum": 0.00024811062030494213,
             "finite": true,
             "nonzero": true
           },
           "relation": {
-            "abs_sum": 0.0003360080299898982,
+            "abs_sum": 0.0004443718062248081,
+            "finite": true,
+            "nonzero": true
+          },
+          "stable_spatial_norm_bias": {
+            "abs_sum": 0.00046578969340771437,
+            "finite": true,
+            "nonzero": true
+          },
+          "stable_spatial_norm_weight": {
+            "abs_sum": 0.0004055461031384766,
             "finite": true,
             "nonzero": true
           }
@@ -899,9 +954,9 @@
       "passed": 13
     },
     "2": {
-      "checks": 5,
-      "counterexamples": 5,
-      "failed": 0,
+      "checks": 6,
+      "counterexamples": 6,
+      "failed": 1,
       "passed": 5
     },
     "3": {
@@ -911,12 +966,12 @@
       "passed": 9
     }
   },
-  "script_sha256": "5fd8d4aba91f747c4c3be2ba7970d4f20956de938c18fa30764c6658638e2a4c",
+  "script_sha256": "a94036859fa5fc36fd9f3ec8ec3f4d1e77618edf717a0bc5a847f9406c736b12",
   "snapshot_path": "/raid/datasets/chc_data/partwhole_review_20261025_v1/evidence_ownership_head_c0ea9872.py",
   "snapshot_sha256": "c0ea9872ea22e50615093394c5923ba7b59e3af662dcb6a5caea075de861bc9d",
   "source_binding_unchanged": true,
   "source_sha256": "c0ea9872ea22e50615093394c5923ba7b59e3af662dcb6a5caea075de861bc9d",
-  "status": "PASS_ALLOW_READ_ONLY_OCCLUSION_COLLECTION",
+  "status": "FAIL_DO_NOT_START_OCCLUSION_OR_TRAINING",
   "timestamps_used_for_selection": false,
   "torch": "1.10.0+cu113",
   "training_run": false
