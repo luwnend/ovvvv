@@ -198,6 +198,7 @@ L_teacher = Huber(hat_T_pjc, T_pjc) + λ_ce CE(corrected_parent, train_label)
 - `c4684e66`：FAIL。这些多数修复，但空 geometry shape 未验证、接口不含时间、relation 仍退化为共享空间标量；
 - `68fa8839`：又发现 empty shape 只靠 assert、`class_width` 不要求精确匹配、time dtype 未限制、`max_children` 口径混淆；partial-overlap 探测本身也需重做。
 - 当前修订在 `68fa8839` 基础上改为正式异常校验、精确 1203 类宽、`max_children_per_parent` 与全局 `max_edges` 分离、严格整数 frame time；作者契约通过。
+- `833a4bf6` 的最终独立 CPU 复核 15/15 PASS：上述 shape、宽度、time、上限、partial overlap、per-class relation、梯度均通过。**只放行到真实遮挡 pilot**；仍无机制收益、source-OOD 或 TETA。
 
 作者测试覆盖：无 child 精确恒等、只减不增、重叠不双扣、严格更大 child 换主、tie 给低 edge、per-parent 上限、1203 类、NaN 拒绝、未来时间拒绝、posterior detach、父类 embedding 单独扰动只影响该类、有限梯度。它们只是放行到下一次独立复核的证据，不是收益或因果结论。
 

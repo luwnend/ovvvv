@@ -1,0 +1,585 @@
+{
+  "current_source": "/raid/datasets/chc_data/partwhole_review_20261025_v1/evidence_ownership_head_833a4bf.py",
+  "current_source_sha256": "833a4bf6dcd7e6af2763b602f975ee9a0e7fea09e68dde9a5b7904f84305af6b",
+  "current_source_sha256_after": "833a4bf6dcd7e6af2763b602f975ee9a0e7fea09e68dde9a5b7904f84305af6b",
+  "snapshot": "/raid/datasets/chc_data/partwhole_review_20261025_v1/evidence_ownership_head_833a4bf.py",
+  "snapshot_sha256": "833a4bf6dcd7e6af2763b602f975ee9a0e7fea09e68dde9a5b7904f84305af6b",
+  "audit_scope": "CURRENT_SNAPSHOT_AUDITED; NOT a dynamic file guarantee after this run",
+  "torch_version": "1.10.0+cu113",
+  "device": "cpu",
+  "rounds": {
+    "1": 3,
+    "2": 4,
+    "3": 9
+  },
+  "criteria": {
+    "counterexample: empty shape checks survive python -O": {
+      "name": "counterexample: empty shape checks survive python -O",
+      "passed": true,
+      "detail": {
+        "returncode": 0,
+        "stdout": "REJECT ValueError overlap must be [E,H,W]",
+        "stderr": "",
+        "cases": [
+          {
+            "overlap_shape": [
+              0,
+              2,
+              3
+            ],
+            "stdout": "REJECT ValueError overlap must be [E,H,W]",
+            "stderr": "",
+            "returncode": 0
+          },
+          {
+            "overlap_shape": [
+              0,
+              3,
+              2
+            ],
+            "stdout": "REJECT ValueError overlap must be [E,H,W]",
+            "stderr": "",
+            "returncode": 0
+          },
+          {
+            "overlap_shape": [
+              1,
+              2,
+              2
+            ],
+            "stdout": "REJECT ValueError overlap must be [E,H,W]",
+            "stderr": "",
+            "returncode": 0
+          }
+        ]
+      }
+    },
+    "counterexample: class width must equal posterior width (empty/nonempty)": {
+      "name": "counterexample: class width must equal posterior width (empty/nonempty)",
+      "passed": true,
+      "detail": {
+        "empty": {
+          "rejected": true,
+          "exception": "ValueError: class vocabulary width differs from relation width"
+        },
+        "nonempty": {
+          "rejected": true,
+          "exception": "ValueError: class vocabulary width differs from relation width"
+        }
+      }
+    },
+    "time contract exactly accepts int32/int64 past and rejects mixed/nonfinite/future": {
+      "name": "time contract exactly accepts int32/int64 past and rejects mixed/nonfinite/future",
+      "passed": true,
+      "detail": {
+        "accepted_int32_past": {
+          "accepted": true,
+          "exception": "accepted without exception"
+        },
+        "accepted_int64_past": {
+          "accepted": true,
+          "exception": "accepted without exception"
+        },
+        "mixed_int64_float32": {
+          "rejected": true,
+          "exception": "TypeError: parent and child times must share dtype"
+        },
+        "bool": {
+          "rejected": true,
+          "exception": "TypeError: observation times must be integer frame indices"
+        },
+        "float32": {
+          "rejected": true,
+          "exception": "TypeError: observation times must be integer frame indices"
+        },
+        "mixed_int32_int64": {
+          "rejected": true,
+          "exception": "TypeError: parent and child times must share dtype"
+        },
+        "future": {
+          "rejected": true,
+          "exception": "ValueError: future child observation"
+        }
+      }
+    },
+    "per-parent child limit and global edge limit are separate": {
+      "name": "per-parent child limit and global edge limit are separate",
+      "passed": true,
+      "detail": {
+        "legal": "accepted without exception",
+        "per_parent": "ValueError: per-parent child count exceeds max_children_per_parent",
+        "global_edges": "ValueError: edge count exceeds max_edges"
+      }
+    },
+    "[0,1,0] local max and strict tie uses lower edge": {
+      "name": "[0,1,0] local max and strict tie uses lower edge",
+      "passed": true,
+      "detail": {
+        "local_max": [
+          [
+            0.0,
+            0.0,
+            -0.351187139749527
+          ],
+          [
+            0.0,
+            -0.49993830919265747,
+            0.0
+          ]
+        ],
+        "tie_forward": [
+          [
+            -0.25846827030181885,
+            0.0,
+            0.0
+          ]
+        ],
+        "tie_payload_reversed": [
+          [
+            0.0,
+            0.0,
+            -0.25846827030181885
+          ]
+        ]
+      }
+    },
+    "different partial regions nonzero and no duplicate charge": {
+      "name": "different partial regions nonzero and no duplicate charge",
+      "passed": true,
+      "detail": {
+        "a_top": [
+          [
+            -0.5582914352416992,
+            0.0,
+            0.0
+          ]
+        ],
+        "b_bottom": [
+          [
+            0.0,
+            0.0,
+            -0.49625909328460693
+          ]
+        ],
+        "both": [
+          [
+            -0.5582914352416992,
+            0.0,
+            -0.49625909328460693
+          ]
+        ],
+        "expected_one_owner_per_cell": [
+          [
+            -0.5582914352416992,
+            0.0,
+            -0.49625909328460693
+          ]
+        ],
+        "max_abs_diff": 0.0
+      }
+    },
+    "relation emits per-class channels": {
+      "name": "relation emits per-class channels",
+      "passed": true,
+      "detail": {
+        "relation_last_linear_output_shape": [
+          4,
+          3
+        ],
+        "interpreted_hwc_shape": [
+          2,
+          2,
+          3
+        ],
+        "correction": [
+          [
+            -0.0036503379233181477,
+            -0.0011575462995097041,
+            0.0
+          ]
+        ]
+      }
+    },
+    "shuffled relation embeddings alter result": {
+      "name": "shuffled relation embeddings alter result",
+      "passed": true,
+      "detail": {
+        "difference": 0.0007833703421056271
+      }
+    },
+    "no-child exact identity": {
+      "name": "no-child exact identity",
+      "passed": true,
+      "detail": {
+        "shape": [
+          1,
+          3
+        ],
+        "exact_zero": true
+      }
+    },
+    "random inputs finite and nonpositive": {
+      "name": "random inputs finite and nonpositive",
+      "passed": true,
+      "detail": {
+        "failing_seeds": []
+      }
+    },
+    "random-init relation has nonzero per-class variation": {
+      "name": "random-init relation has nonzero per-class variation",
+      "passed": true,
+      "detail": {
+        "mean_class_spread": 6.0321297496557236e-05,
+        "shared_scalar_rmse": 2.885664980567526e-05,
+        "interpretation": "initial relation has measurable class variation but is numerically small; capacity is not gain evidence"
+      }
+    },
+    "class-local embedding perturbation": {
+      "name": "class-local embedding perturbation",
+      "passed": true,
+      "detail": {
+        "delta": [
+          -0.038589924573898315,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "gradients finite and child_query alive": {
+      "name": "gradients finite and child_query alive",
+      "passed": true,
+      "detail": {
+        "param_grads_finite": true,
+        "child_query_first_maxabs": 1.271961627935525e-05,
+        "relation_last_maxabs": 0.0007668402977287769
+      }
+    },
+    "actual 1203-class nonempty vocabulary": {
+      "name": "actual 1203-class nonempty vocabulary",
+      "passed": true,
+      "detail": {
+        "shape": [
+          1,
+          1203
+        ],
+        "finite": true,
+        "max": 0.0
+      }
+    },
+    "counterexample: single-row train-mode child mask does not crash GroupNorm": {
+      "name": "counterexample: single-row train-mode child mask does not crash GroupNorm",
+      "passed": false,
+      "detail": {
+        "accepted": false,
+        "exception": "ValueError: Expected more than 1 value per channel when training, got input size [1, 8, 1, 1]"
+      }
+    }
+  },
+  "tests": [
+    {
+      "round": 1,
+      "name": "counterexample: empty shape checks survive python -O",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "returncode": 0,
+        "stdout": "REJECT ValueError overlap must be [E,H,W]",
+        "stderr": "",
+        "cases": [
+          {
+            "overlap_shape": [
+              0,
+              2,
+              3
+            ],
+            "stdout": "REJECT ValueError overlap must be [E,H,W]",
+            "stderr": "",
+            "returncode": 0
+          },
+          {
+            "overlap_shape": [
+              0,
+              3,
+              2
+            ],
+            "stdout": "REJECT ValueError overlap must be [E,H,W]",
+            "stderr": "",
+            "returncode": 0
+          },
+          {
+            "overlap_shape": [
+              1,
+              2,
+              2
+            ],
+            "stdout": "REJECT ValueError overlap must be [E,H,W]",
+            "stderr": "",
+            "returncode": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 1,
+      "name": "counterexample: class width must equal posterior width (empty/nonempty)",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "empty": {
+          "rejected": true,
+          "exception": "ValueError: class vocabulary width differs from relation width"
+        },
+        "nonempty": {
+          "rejected": true,
+          "exception": "ValueError: class vocabulary width differs from relation width"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "name": "time contract exactly accepts int32/int64 past and rejects mixed/nonfinite/future",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "accepted_int32_past": {
+          "accepted": true,
+          "exception": "accepted without exception"
+        },
+        "accepted_int64_past": {
+          "accepted": true,
+          "exception": "accepted without exception"
+        },
+        "mixed_int64_float32": {
+          "rejected": true,
+          "exception": "TypeError: parent and child times must share dtype"
+        },
+        "bool": {
+          "rejected": true,
+          "exception": "TypeError: observation times must be integer frame indices"
+        },
+        "float32": {
+          "rejected": true,
+          "exception": "TypeError: observation times must be integer frame indices"
+        },
+        "mixed_int32_int64": {
+          "rejected": true,
+          "exception": "TypeError: parent and child times must share dtype"
+        },
+        "future": {
+          "rejected": true,
+          "exception": "ValueError: future child observation"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "name": "per-parent child limit and global edge limit are separate",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "legal_one_per_parent": "accepted without exception",
+        "two_same_parent": "ValueError: per-parent child count exceeds max_children_per_parent",
+        "two_edges_global_limit_one": "ValueError: edge count exceeds max_edges"
+      }
+    },
+    {
+      "round": 2,
+      "name": "[0,1,0] local max and strict tie uses lower edge",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "local_max": [
+          [
+            0.0,
+            0.0,
+            -0.351187139749527
+          ],
+          [
+            0.0,
+            -0.49993830919265747,
+            0.0
+          ]
+        ],
+        "tie_forward": [
+          [
+            -0.25846827030181885,
+            0.0,
+            0.0
+          ]
+        ],
+        "tie_payload_reversed": [
+          [
+            0.0,
+            0.0,
+            -0.25846827030181885
+          ]
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "name": "different partial regions nonzero and no duplicate charge",
+      "passed": true,
+      "counterexample": true,
+      "detail": {
+        "a_top": [
+          [
+            -0.5582914352416992,
+            0.0,
+            0.0
+          ]
+        ],
+        "b_bottom": [
+          [
+            0.0,
+            0.0,
+            -0.49625909328460693
+          ]
+        ],
+        "both": [
+          [
+            -0.5582914352416992,
+            0.0,
+            -0.49625909328460693
+          ]
+        ],
+        "expected_one_owner_per_cell": [
+          [
+            -0.5582914352416992,
+            0.0,
+            -0.49625909328460693
+          ]
+        ],
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "round": 2,
+      "name": "per-parent child limit and global edge limit are separate",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "legal": "accepted without exception",
+        "per_parent": "ValueError: per-parent child count exceeds max_children_per_parent",
+        "global_edges": "ValueError: edge count exceeds max_edges"
+      }
+    },
+    {
+      "round": 3,
+      "name": "relation emits per-class channels",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "relation_last_linear_output_shape": [
+          4,
+          3
+        ],
+        "interpreted_hwc_shape": [
+          2,
+          2,
+          3
+        ],
+        "correction": [
+          [
+            -0.0036503379233181477,
+            -0.0011575462995097041,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "name": "shuffled relation embeddings alter result",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "difference": 0.0007833703421056271
+      }
+    },
+    {
+      "round": 3,
+      "name": "no-child exact identity",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "shape": [
+          1,
+          3
+        ],
+        "exact_zero": true
+      }
+    },
+    {
+      "round": 3,
+      "name": "random inputs finite and nonpositive",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "failing_seeds": []
+      }
+    },
+    {
+      "round": 3,
+      "name": "random-init relation has nonzero per-class variation",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "mean_class_spread": 6.0321297496557236e-05,
+        "shared_scalar_rmse": 2.885664980567526e-05,
+        "interpretation": "initial relation has measurable class variation but is numerically small; capacity is not gain evidence"
+      }
+    },
+    {
+      "round": 3,
+      "name": "class-local embedding perturbation",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "delta": [
+          -0.038589924573898315,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "name": "gradients finite and child_query alive",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "param_grads_finite": true,
+        "child_query_first_maxabs": 1.271961627935525e-05,
+        "relation_last_maxabs": 0.0007668402977287769
+      }
+    },
+    {
+      "round": 3,
+      "name": "actual 1203-class nonempty vocabulary",
+      "passed": true,
+      "counterexample": false,
+      "detail": {
+        "shape": [
+          1,
+          1203
+        ],
+        "finite": true,
+        "max": 0.0
+      }
+    },
+    {
+      "round": 3,
+      "name": "counterexample: single-row train-mode child mask does not crash GroupNorm",
+      "passed": false,
+      "counterexample": true,
+      "detail": {
+        "accepted": false,
+        "exception": "ValueError: Expected more than 1 value per channel when training, got input size [1, 8, 1, 1]"
+      }
+    }
+  ],
+  "failures": [
+    "counterexample: single-row train-mode child mask does not crash GroupNorm"
+  ]
+}
