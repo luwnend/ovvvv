@@ -185,6 +185,29 @@ FEATURE_SCENE_RESIDUAL_JSON = [
     "scene_residual_information_gate_20261024_v1/independent_output_audit.json",
 ]
 
+# Current containment / evidence-ownership stage.  JSONL edge lists and
+# prediction rows remain local; only conclusions, receipts and source text
+# travel to the managed repository.
+CONTAINMENT_SCRIPTS = [
+    "partwhole_semantic_independent_audit_20261025.md",
+    "sourceheldout_partwhole_protocol_20261025.md",
+    "module_direction_rethink_20261025.md",
+    "conservative_memory_gate_failure_20261025.md",
+    "owner_ledger_contract_audit_20261025.md",
+    "owner_ledger_v2_audit_20261025.md",
+    "owner_ledger_v2_audit_20261025.py",
+    "owner_ledger_v2_audit_evidence_20261025.json",
+    "audit_fit_containment_events_20261025.py",
+    "audit_fit_containment_identity_support_20261025.py",
+    "evidence_ownership_head.py",
+]
+CONTAINMENT_JSON = [
+    "results/fit_containment_event_budget_20261025_v4/summary.json",
+    "results/fit_containment_event_budget_20261025_v4/receipt.json",
+    "results/fit_containment_identity_support_20261025_v1/summary.json",
+    "results/fit_containment_identity_support_20261025_v1/receipt.json",
+]
+
 
 def feature_spacetime_mapping():
     """Return the exact lightweight allowlist without reading or copying files."""
@@ -203,6 +226,10 @@ def feature_spacetime_mapping():
                 for name in FEATURE_SCENE_RESIDUAL_SCRIPTS]
     mapping += [(ROOT / "results" / source, Path("evidence") / source)
                 for source in FEATURE_SCENE_RESIDUAL_JSON]
+    mapping += [(ROOT / "tmp_analysis" / name, Path("tmp_analysis") / name)
+                for name in CONTAINMENT_SCRIPTS]
+    mapping += [(ROOT / name, Path("evidence") / name)
+                for name in CONTAINMENT_JSON]
     return mapping
 
 

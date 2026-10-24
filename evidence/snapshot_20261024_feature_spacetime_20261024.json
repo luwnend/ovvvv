@@ -5,8 +5,8 @@
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/项目进度.md",
       "destination": "report/项目进度.md",
-      "bytes": 24836,
-      "sha256": "5fe2f80074e224a2c93f7804305c3fab54594193b8a6b0d56d9409f2604f358c"
+      "bytes": 32636,
+      "sha256": "51bcde8910db1002894134108730c84ff0a801d93a2f4df42a74c3e7a851c10c"
     },
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/report/COVTrack_特征与时空改进_20261024.md",
@@ -17,8 +17,8 @@
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/sync_research_stage.py",
       "destination": "tmp_analysis/sync_research_stage.py",
-      "bytes": 22626,
-      "sha256": "8d1ffa291afb9c8d0e97e2aa83894cdb4a2565197600c290b8bad00d64d5b1b0"
+      "bytes": 23894,
+      "sha256": "8cbb08430d8f0c2a2508e77538d065377149cb839808a0bd91da33f240b89990"
     },
     {
       "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_handoff_20261024.md",
@@ -421,6 +421,96 @@
       "destination": "evidence/scene_residual_information_gate_20261024_v1/independent_output_audit.json",
       "bytes": 647,
       "sha256": "e3e2ed8bfcab0ee39e94c9325644d0ce5ebf3d2eacac9005ed756fdccbeec9f3"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/partwhole_semantic_independent_audit_20261025.md",
+      "destination": "tmp_analysis/partwhole_semantic_independent_audit_20261025.md",
+      "bytes": 18237,
+      "sha256": "05cd6bcb145f61d8e9efead783f1381182ccde5b9c4e2ed05666822b950a5107"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/sourceheldout_partwhole_protocol_20261025.md",
+      "destination": "tmp_analysis/sourceheldout_partwhole_protocol_20261025.md",
+      "bytes": 22003,
+      "sha256": "53fb497a3537a846075e74852dbeafa1ada514cbb5a33a7502279a18defe912c"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/module_direction_rethink_20261025.md",
+      "destination": "tmp_analysis/module_direction_rethink_20261025.md",
+      "bytes": 27367,
+      "sha256": "f788a150b424a58873247a9cc39505f32bf159d751e20aa3ad563476f080a13f"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/conservative_memory_gate_failure_20261025.md",
+      "destination": "tmp_analysis/conservative_memory_gate_failure_20261025.md",
+      "bytes": 2107,
+      "sha256": "099ccb3e410cc50d5b1f8bf1cb9453b78924574cc33332529577703477aab818"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/owner_ledger_contract_audit_20261025.md",
+      "destination": "tmp_analysis/owner_ledger_contract_audit_20261025.md",
+      "bytes": 9955,
+      "sha256": "10ec33a3cad27c3501c8c7d2b8751095e86b8a143e464a8bc058834494e3145b"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/owner_ledger_v2_audit_20261025.md",
+      "destination": "tmp_analysis/owner_ledger_v2_audit_20261025.md",
+      "bytes": 9081,
+      "sha256": "3cdf971db0f42ca017dd0fca97f3fae14b69750bac68362f06fdbc5d251ce87e"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/owner_ledger_v2_audit_20261025.py",
+      "destination": "tmp_analysis/owner_ledger_v2_audit_20261025.py",
+      "bytes": 19479,
+      "sha256": "5bcac6a6b3676cd116344b7a7109c862dc75b851e93d36417571fa5f81a5a716"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/owner_ledger_v2_audit_evidence_20261025.json",
+      "destination": "tmp_analysis/owner_ledger_v2_audit_evidence_20261025.json",
+      "bytes": 10942,
+      "sha256": "f39dca5bd82fbabbff539999567079ddacc461ff5738cfa6c5e36ed22c88db52"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_fit_containment_events_20261025.py",
+      "destination": "tmp_analysis/audit_fit_containment_events_20261025.py",
+      "bytes": 8411,
+      "sha256": "13a1d3939b8a195cf7339534b1a83f9d9a917e8d765906cb91a34b2b0f8de8f7"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_fit_containment_identity_support_20261025.py",
+      "destination": "tmp_analysis/audit_fit_containment_identity_support_20261025.py",
+      "bytes": 3962,
+      "sha256": "7544549795d7700c29f843a8dfd7bbbb2fbdfb00fb1a90c7a4e947edf33f8369"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/evidence_ownership_head.py",
+      "destination": "tmp_analysis/evidence_ownership_head.py",
+      "bytes": 17935,
+      "sha256": "68fa88395a0e2e99bfe5a3fa7e4a3218ac09f45eb9dca96f260deffc0a453bd9"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_containment_event_budget_20261025_v4/summary.json",
+      "destination": "evidence/results/fit_containment_event_budget_20261025_v4/summary.json",
+      "bytes": 1561,
+      "sha256": "937d4444eaa6a87849c39e4708698a73076f9be6eff6d8d4cf5de83764e6c357"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_containment_event_budget_20261025_v4/receipt.json",
+      "destination": "evidence/results/fit_containment_event_budget_20261025_v4/receipt.json",
+      "bytes": 407,
+      "sha256": "8f45ba5a508ec0cfb8d96087ef18d6b0fea4f30793df28cbd148ba58ca7c23c9"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_containment_identity_support_20261025_v1/summary.json",
+      "destination": "evidence/results/fit_containment_identity_support_20261025_v1/summary.json",
+      "bytes": 694,
+      "sha256": "b3b0b3c52bc27f3421b302986dd3f0f67fc7e584a8cefad7c3a7971abb33a6a6"
+    },
+    {
+      "source": "/home/chenhc/ov/OVMOT_RESEARCH/results/fit_containment_identity_support_20261025_v1/receipt.json",
+      "destination": "evidence/results/fit_containment_identity_support_20261025_v1/receipt.json",
+      "bytes": 464,
+      "sha256": "a9f51f3d47c10e10e170c100a3370e28b8988d22caa073a2c61cf00f29acdb5a"
     }
   ],
   "excludes": [
