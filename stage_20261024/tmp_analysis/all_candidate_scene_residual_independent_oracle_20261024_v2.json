@@ -1,0 +1,33 @@
+{
+  "status": "PASS_INDEPENDENT_ALL_CANDIDATE_SCALAR_ORACLE_THREE_ROUNDS",
+  "subject_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_20261024.py",
+  "subject_sha256": "0824dbd527563496cf4d3275ec2de169295bf3d72c4eef145529ebd04cf5b7be",
+  "auditor_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_all_candidate_scene_residual_independent_20261024.py",
+  "auditor_sha256": "03892feaf3c0d886a13ffc78bf595f499be4d79af7edb416d5dc912c6906482c",
+  "frozen_cached_sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32",
+  "rounds": {
+    "1": {
+      "checks": [
+        "independent_scalar_oracle_all_QxM_random_alias_pools_and_exact_canonical_raw_cosine",
+        "nonfullpool_target_and_exclusion_creates_new_reciprocal_donor"
+      ],
+      "oracle_candidates": 468
+    },
+    "2": {
+      "checks": [
+        "direct_overlap_no_transitive_closure_touch_and_distant_proposal_alias",
+        "ties_zero_negative_targets_complete_missing_empty_and_invalid_proposals"
+      ]
+    },
+    "3": {
+      "checks": [
+        "memoize_on_off_per_candidate_arrays_and_exact_donor_provenance_equal",
+        "C_F_strided_layout_input_immutability_and_shared_geometry_unit_invariance"
+      ]
+    }
+  },
+  "oracle_imports_subject_matching_or_exclusion_or_fit": false,
+  "actual_data_or_labels_read": false,
+  "training_or_full_FIT_started": false,
+  "elapsed_seconds": 0.8402779353782535
+}

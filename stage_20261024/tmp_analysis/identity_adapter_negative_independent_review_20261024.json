@@ -1,0 +1,44 @@
+{
+  "status": "PASS_SCOPED_SIX_CHECK_DIAGNOSIS_AFTER_MACRO_WORDING_CORRECTION",
+  "review_date": "2026-10-24",
+  "script_sha256": "7f20102346afd9ec0611e5ae915a201a90a73e61fff972c62f2b1bfddddb8684",
+  "diagnosis_sha256": "2dd079ae7dec72501df9bbac4d27eea2cb752fec3d9ceeaca9f37d730834b81a",
+  "review_scope": "Read-only code and artifact inspection; no diagnostic rerun, optimizer replay, retraining, score regeneration or forbidden targets read.",
+  "checks": [
+    {
+      "number": 1,
+      "finding": "All 15 traces retain 50 adapter and 20 head epochs, complete logged batch counts, global weight sum 1 and expected optimizer-step counters.",
+      "limit": "Logged counters and independent lineage audit support completed execution. They do not independently replay the optimizer or prove convergence. Surrogate step objectives are descriptive."
+    },
+    {
+      "number": 2,
+      "finding": "All 15 adapter and head checkpoint states inspected finite; formerly zero adapter last-layer residual weights are nonzero. Prior actual-worker heldout-mutation and decoder-poison evidence is retained under the preflight hashes.",
+      "limit": "Nonzero residual parameters establish updates, not useful identity geometry. Mutation challenge is prior synthetic preflight evidence, not a new mutation of the sealed real experiment."
+    },
+    {
+      "number": 3,
+      "finding": "Current diagnosis input pins match. Completion and fresh audit bind the same global seal; all 60 inspected model checkpoint/trace/local-seal/receipt hashes match its model entries. Fresh audit reports all-candidate ten-column reconstruction with maximum absolute error 5.684341886080802e-14 and exact parent raw parity.",
+      "limit": "The completed full auditor is authenticated, not rerun by this review."
+    },
+    {
+      "number": 4,
+      "finding": "All 15 checkpoint train/held source sets are disjoint with union 341; receipt allowed-source sets equal their training partitions. The fresh independent audit covers source-fold and identity projection lineage; prior QA receipts remain hash-matched.",
+      "limit": "Receipt flags alone are not a new instrumentation proof of every live decoder action; this diagnosis correctly relies on the sealed execution plus audited implementation and preflight challenge."
+    },
+    {
+      "number": 5,
+      "finding": "All three fixed seeds and both lags show negative pure-adapter micro and source-trajectory-query macro differences on the fixed hard-query denominators 2949 and 2142.",
+      "limit": "Stop applies to this fixed 256-64-256, 50-epoch control on the examined FIT source OOF. It does not establish a unique failure cause or reject all representation learning. Equal G0 error counts alone should not be called per-query ranking identity."
+    },
+    {
+      "number": 6,
+      "finding": "The shared 1331-query, 107-source readout preserves negative pure-adapter direction in all six seed-lag cells. A1G1 has more micro errors than raw in all six cells. The revised report explicitly retains the seed 20261024, lag4 macro exception: A1G1 minus raw = +0.0002864408744199798, or +0.02864408744199798 percentage points.",
+      "limit": "Geometry recovery and interaction depend on readout and seed. Three rounds of two targeted diagnostic checks are not three additional independent training experiments."
+    }
+  ],
+  "blocking_findings_remaining": [],
+  "resolved_finding": "The former universal 'does not recover raw' wording merged micro and hierarchical macro. It is corrected to all shared cells losing raw micro and no consistent macro recovery, with the positive macro cell retained.",
+  "mechanism_document_sha256": "db0aef7b54fb5a0352c3b02394f9ac33d75b6eac34839bd3b5ced5bb4a242e85",
+  "pilot_rule_correction": "Exporter pilot uses its own lexicographic sealed-FIT source/video metadata rule, first video with at least four cached frames, prefix 0..3 and three past-adjacent pairs. It is distinct from the two-video ROI observation pilot.",
+  "sealed_experiment_files_modified": false
+}

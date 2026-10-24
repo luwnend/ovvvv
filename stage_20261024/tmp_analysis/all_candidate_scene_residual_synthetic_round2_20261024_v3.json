@@ -1,0 +1,28 @@
+{
+  "status": "PASS_INDEPENDENT_ALL_CANDIDATE_SCENE_RESIDUAL_SYNTHETIC_QA",
+  "round": 2,
+  "subject_sha256": "0824dbd527563496cf4d3275ec2de169295bf3d72c4eef145529ebd04cf5b7be",
+  "cached_sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32",
+  "auditor_sha256": "4f19314a478cab48a236f2f3200cf91034dd5cb44ee6138428ff2846aa14eb6e",
+  "seed": 20261026,
+  "checks": [
+    "all_candidates_independent_scalar_oracle_exact_anchors_exclusions_numeric_input_immutability",
+    "non_MNN_zero_negative_cosine_candidates_retained_and_deleted_competitor_rematches",
+    "strict_alias_touching_nontransitive_overlap_and_memo_on_off_exact_candidate_provenance",
+    "strict_ties_zero_raw_empty_query_reference_low_support_keep_full_shape_and_NaNs",
+    "fixed_exclusion_endpoint_perturbation_and_common_translation_axis_scale_geometry_invariance",
+    "C_F_strided_canonical_parity_invalid_boolean_overflow_proposal_and_geometry_fail_closed"
+  ],
+  "comparisons": {
+    "candidates": 713,
+    "exact_membership_fields": 3565,
+    "numeric_fields": 5704
+  },
+  "numeric_atol": 2e-12,
+  "numeric_rtol": 2e-12,
+  "oracle": "Independent canonical full C matrix and explicit per-row/per-column strict scan, scalar medians, direct scalar overlap, scalar candidate geometry; no subject/frozen fit or matcher helper used.",
+  "endpoint_independence": "Only conditional on unchanged explicit endpoint/proposal/direct-overlap exclusion sets.",
+  "real_cache_or_new_results_opened": false,
+  "GPU_or_training_or_method_effectiveness_or_novelty_established": false,
+  "elapsed_seconds": 0.9375000763684511
+}

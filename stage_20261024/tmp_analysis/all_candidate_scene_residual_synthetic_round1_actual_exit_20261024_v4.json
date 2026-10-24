@@ -1,0 +1,18 @@
+{
+  "round": 1,
+  "command": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/audit_all_candidate_scene_residual_20261024.py",
+    "--round",
+    "1",
+    "--output",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round1_20261024_v3.json"
+  ],
+  "actual_exit_code": 0,
+  "elapsed_seconds": 1.1466340692713857,
+  "receipt": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round1_20261024_v3.json",
+  "receipt_sha256": "23d228144b26b3ce557d665ee5731cde3a027788960bd10c76c99942d95bbeaa",
+  "stdout": "{\n  \"status\": \"PASS_INDEPENDENT_ALL_CANDIDATE_SCENE_RESIDUAL_SYNTHETIC_QA\",\n  \"round\": 1,\n  \"subject_sha256\": \"0824dbd527563496cf4d3275ec2de169295bf3d72c4eef145529ebd04cf5b7be\",\n  \"cached_sha256\": \"5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32\",\n  \"auditor_sha256\": \"4f19314a478cab48a236f2f3200cf91034dd5cb44ee6138428ff2846aa14eb6e\",\n  \"seed\": 20261025,\n  \"checks\": [\n    \"all_candidates_independent_scalar_oracle_exact_anchors_exclusions_numeric_input_immutability\",\n    \"non_MNN_zero_negative_cosine_candidates_retained_and_deleted_competitor_rematches\",\n    \"strict_alias_touching_nontransitive_overlap_and_memo_on_off_exact_candidate_provenance\",\n    \"strict_ties_zero_raw_empty_query_reference_low_support_keep_full_shape_and_NaNs\",\n    \"fixed_exclusion_endpoint_perturbation_and_common_translation_axis_scale_geometry_invariance\",\n    \"C_F_strided_canonical_parity_invalid_boolean_overflow_proposal_and_geometry_fail_closed\"\n  ],\n  \"comparisons\": {\n    \"candidates\": 713,\n    \"exact_membership_fields\": 3565,\n    \"numeric_fields\": 5704\n  },\n  \"numeric_atol\": 2e-12,\n  \"numeric_rtol\": 2e-12,\n  \"oracle\": \"Independent canonical full C matrix and explicit per-row/per-column strict scan, scalar medians, direct scalar overlap, scalar candidate geometry; no subject/frozen fit or matcher helper used.\",\n  \"endpoint_independence\": \"Only conditional on unchanged explicit endpoint/proposal/direct-overlap exclusion sets.\",\n  \"real_cache_or_new_results_opened\": false,\n  \"GPU_or_training_or_method_effectiveness_or_novelty_established\": false,\n  \"elapsed_seconds\": 1.0263752657920122\n}\n",
+  "stderr": "",
+  "timed_out": false
+}

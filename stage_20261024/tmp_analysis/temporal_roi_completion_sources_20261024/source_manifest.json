@@ -1,0 +1,248 @@
+{
+  "schema": "TEMPORAL_ROI_COMPLETION_NOVELTY_SOURCES_V1",
+  "audit_date": "2026-10-24",
+  "retrieved_utc": "2026-10-23T20:01:43.518833+00:00",
+  "status": "BOUNDED_PRIMARY_SOURCE_AND_READ_ONLY_CODE_AUDIT",
+  "selected_primary_work_count": 4,
+  "candidate": {
+    "path": "tmp_analysis/network_spacetime_next_information_audit_20261024.md",
+    "sha256_at_read": "199b771851d8584623f49824316e4459afe45c8cd055250d6bfc7fa73310b123"
+  },
+  "local_precheck": [
+    {
+      "path": "tmp_analysis/appearance_transport_literature_audit_20261024.md",
+      "sha256": "0eb46ce85441bd612d568e7f90a61ed2d4592e673d7116fda0c2d10dcaf618bc"
+    },
+    {
+      "path": "tmp_analysis/novelty_audit_20261023.md",
+      "sha256": "257c28e4399eee2f0034afc75856299f0b706db9d55d071a69fdfb5b4a64878b"
+    },
+    {
+      "path": "tmp_analysis/covtrack_feature_spacetime_design_20261024.md",
+      "sha256": "4ec1a8cbcaf8c21985df5c0f8c99bd3f195a94cae40d1a03ba83246360b4f966"
+    }
+  ],
+  "discovery": "Local targeted search first; primary CVF papers, author-linked official GitHub repositories; no secondary claims admitted. HF Markdown unavailable for selected old papers, primary PDF fallback used.",
+  "sources": [
+    {
+      "id": "VRSTC",
+      "title": "VRSTC: Occlusion-Free Video Person Re-Identification",
+      "venue": "CVPR 2019",
+      "paper_url": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Hou_VRSTC_Occlusion-Free_Video_Person_Re-Identification_CVPR_2019_paper.pdf",
+      "version": "Official CVF conference PDF",
+      "artifact": {
+        "temporary_path": "/tmp/information_constraint_literature_20261024/vrstc_cvpr2019.pdf",
+        "bytes": 556368,
+        "sha256": "937c56bfdca1e7918833941a5134c7c0b73be48821280f2da7eca490015db46f"
+      },
+      "read_bounds": [
+        "Sections 3.1-3.6, Figures 1-2, Equations 1-10",
+        "Section 4.1, whole-video region mean occlusion heuristic",
+        "Sections 5.2 and 5.3.1, complete Table 1"
+      ],
+      "supports": [
+        "spatial and previous/next local patch completion",
+        "random occlusion with original current RGB target",
+        "frozen pretrained ID guider with identity cross entropy",
+        "capacity-matched current-only AE and temporal no-attention controls"
+      ],
+      "implementation": {
+        "status": "NOT_INDEPENDENTLY_IDENTIFIED_IN_BOUNDED_SEARCH",
+        "searched": "paper title/authors, VRSTC/STCnet source code",
+        "limitation": "No claim that code does not exist; unrelated STCNet repositories not substituted."
+      }
+    },
+    {
+      "id": "FGFA",
+      "title": "Flow-Guided Feature Aggregation for Video Object Detection",
+      "venue": "ICCV 2017",
+      "paper_url": "https://openaccess.thecvf.com/content_ICCV_2017/papers/Zhu_Flow-Guided_Feature_Aggregation_ICCV_2017_paper.pdf",
+      "version": "Official CVF conference PDF",
+      "artifact": {
+        "temporary_path": "/tmp/temporal_roi_completion_audit_20261024/fgfa.pdf",
+        "bytes": 1141470,
+        "sha256": "d7a589ea0a9120a7f8e3e9eb6d4884abd707b8818e5d3e60afb32e0cedc0193d"
+      },
+      "read_bounds": [
+        "Section 3, Equations 1-5, Algorithm 1",
+        "Section 4.2, Table 1 and component ablation discussion"
+      ],
+      "supports": [
+        "dense flow-guided feature warping",
+        "per-location normalized cosine weights",
+        "symmetric temporal window includes future frames",
+        "single-frame and unaligned aggregation controls"
+      ],
+      "implementation": {
+        "status": "OFFICIAL_REPOSITORY_READ_ONLY_CODE_INSPECTION",
+        "repository": "https://github.com/msracver/Flow-Guided-Feature-Aggregation",
+        "commit": "f01243e23a2e2be0a91d0a5a927433686305a054",
+        "files": [
+          {
+            "path": "fgfa_rfcn/symbols/resnet_v1_101_flownet_rfcn.py",
+            "url": "https://github.com/msracver/Flow-Guided-Feature-Aggregation/blob/f01243e23a2e2be0a91d0a5a927433686305a054/fgfa_rfcn/symbols/resnet_v1_101_flownet_rfcn.py",
+            "read_lines": [
+              [
+                743,
+                764
+              ],
+              [
+                880,
+                912
+              ],
+              [
+                1055,
+                1083
+              ]
+            ],
+            "sha256": "197a7cedd84a58dd039018005a36df3c45992bdc4d27185ec1137e8b10c58275"
+          }
+        ],
+        "executed": false
+      }
+    },
+    {
+      "id": "DropMAE",
+      "title": "DropMAE: Masked Autoencoders With Spatial-Attention Dropout for Tracking Tasks",
+      "venue": "CVPR 2023",
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Wu_DropMAE_Masked_Autoencoders_With_Spatial-Attention_Dropout_for_Tracking_Tasks_CVPR_2023_paper.pdf",
+      "version": "Official CVF 2023 conference PDF, not later retitled arXiv revision",
+      "artifact": {
+        "temporary_path": "/tmp/temporal_roi_completion_audit_20261024/dropmae.pdf",
+        "bytes": 7367393,
+        "sha256": "0539dcd464a5e7185e8cbc2c68c6c6e8eb2d85308ffb1a0c382507d3ef3495f8"
+      },
+      "read_bounds": [
+        "Sections 3.1-3.4, Equations 1-4",
+        "Section 4.2, MAE/TwinMAE/DropMAE comparisons",
+        "Section 6, dropout ratio and encoder/decoder ablations"
+      ],
+      "supports": [
+        "two-frame masked pixel reconstruction",
+        "adaptive removal of within-frame attention to encourage temporal correspondence",
+        "TwinMAE and image MAE controls",
+        "pretraining not causal online past-only completion"
+      ],
+      "implementation": {
+        "status": "OFFICIAL_REPOSITORY_READ_ONLY_CODE_INSPECTION",
+        "repository": "https://github.com/jimmy-dq/DropMAE",
+        "commit": "4de150de7ea56623b5d4fdc1cd23019238dc4c27",
+        "files": [
+          {
+            "path": "models_mae.py",
+            "url": "https://github.com/jimmy-dq/DropMAE/blob/4de150de7ea56623b5d4fdc1cd23019238dc4c27/models_mae.py",
+            "read_lines": [
+              [
+                26,
+                64
+              ],
+              [
+                159,
+                172
+              ],
+              [
+                331,
+                382
+              ],
+              [
+                403,
+                439
+              ]
+            ],
+            "sha256": "6320c26f07af2141b075814e3536f5460d331c2633705208b85ba6e51dcfee1e"
+          },
+          {
+            "path": "dataset_video/KineticsDataset.py",
+            "url": "https://github.com/jimmy-dq/DropMAE/blob/4de150de7ea56623b5d4fdc1cd23019238dc4c27/dataset_video/KineticsDataset.py",
+            "read_lines": [
+              [
+                50,
+                78
+              ]
+            ],
+            "sha256": "6f0e7bd585f5bca71e4cb5d921d9df74dcaba9f7807f6845681e67a1a21a18c0"
+          }
+        ],
+        "executed": false
+      }
+    },
+    {
+      "id": "MVD",
+      "title": "Masked Video Distillation: Rethinking Masked Feature Modeling for Self-Supervised Video Representation Learning",
+      "venue": "CVPR 2023",
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_Masked_Video_Distillation_Rethinking_Masked_Feature_Modeling_for_Self-Supervised_Video_CVPR_2023_paper.pdf",
+      "version": "Official CVF conference PDF",
+      "artifact": {
+        "temporary_path": "/tmp/temporal_roi_completion_audit_20261024/mvd.pdf",
+        "bytes": 1896758,
+        "sha256": "8ffbad5e967e56d325617cb234c017159114582c14a7ae5722e00df8a95bc90b"
+      },
+      "read_bounds": [
+        "Sections 3.1-3.3, Equations 1-3, Algorithm 1",
+        "Section 4.3, Tables 7-9"
+      ],
+      "supports": [
+        "fixed unmasked image/video teachers generate masked feature targets",
+        "Smooth L1 spatial and spatiotemporal targets",
+        "tube masking",
+        "masked reconstruction vs per-token distillation and fixed vs EMA teacher controls"
+      ],
+      "implementation": {
+        "status": "OFFICIAL_REPOSITORY_READ_ONLY_CODE_INSPECTION",
+        "repository": "https://github.com/ruiwang2021/mvd",
+        "commit": "45b877a6d18202a81528eeb31ff2da2c0e9ef2ea",
+        "files": [
+          {
+            "path": "engine_for_pretraining.py",
+            "url": "https://github.com/ruiwang2021/mvd/blob/45b877a6d18202a81528eeb31ff2da2c0e9ef2ea/engine_for_pretraining.py",
+            "read_lines": [
+              [
+                12,
+                32
+              ],
+              [
+                47,
+                94
+              ]
+            ],
+            "sha256": "6c2810fee53749103831a2c2fca6f267e9b7b2c1823d9929e7ea7b7fc7bcbf16"
+          },
+          {
+            "path": "run_mvd_pretraining.py",
+            "url": "https://github.com/ruiwang2021/mvd/blob/45b877a6d18202a81528eeb31ff2da2c0e9ef2ea/run_mvd_pretraining.py",
+            "read_lines": [
+              [
+                42,
+                50
+              ],
+              [
+                265,
+                343
+              ]
+            ],
+            "sha256": "29141f1ec262d08e9b7b7c67454d586df2a8dc7694bb1c71459537980cd9e266"
+          }
+        ],
+        "executed": false
+      }
+    }
+  ],
+  "screened_not_selected": [
+    {
+      "title": "Video-Based Person Re-Identification With Spatial and Temporal Memory Networks",
+      "venue": "ICCV 2021",
+      "paper_url": "https://arxiv.org/pdf/2108.09039",
+      "pdf_sha256": "590aa3d3ddde6364a931dc76a5ca04dab08e34aa3b801d52b62e03eb14f4f684",
+      "official_repository": "https://github.com/cvlab-yonsei/STMN",
+      "commit": "298e2a8eb78f886111e688c8801d727bbf2d7fa5",
+      "reason": "Learned external key/value interference suppression and clip-level temporal weighting; not a masked teacher or cross-frame local completion target. Not needed beyond the four decisive works."
+    }
+  ],
+  "artifact_retention": "Downloaded PDFs and inspected code remain in /tmp; stable original URLs, version labels and hashes are retained here. No source installation or execution.",
+  "limits": [
+    "Bounded near-neighbor audit, not an exhaustive novelty proof.",
+    "No new OOF/donor-out results or experiment data read.",
+    "No frozen code/cache/protocol modified and no experiment launched.",
+    "Public implementation inspection establishes the named code paths, not reproducibility or benchmark parity."
+  ]
+}

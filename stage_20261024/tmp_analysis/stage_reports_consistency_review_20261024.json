@@ -1,0 +1,26 @@
+{
+  "status": "NEEDS_ONE_WORDING_CLARIFICATION_NO_NUMERIC_OR_STATUS_BLOCK",
+  "review_scope": "Read-only review of four updated stage reports against lightweight sealed briefs and completion receipts; no large rehash, rerun or report edit.",
+  "reports": [
+    "report/COVTrack_身份外观与时空OOF_20261024.md",
+    "report/COVTrack_外部运动预测诊断_20261024.md",
+    "report/COVTrack_特征与时空改进_20261024.md",
+    "report/COVTrack_ROI空间观测_20261024.md"
+  ],
+  "checks": {
+    "oof": "Denominators are separated: full hard lag1 2949/172 and lag4 2142/160; shared 1331/107 is separately labeled. Micro error counts and hierarchical macro pp are not mixed in the result tables. Shared-cell exception (+0.0286 pp macro for seed 20261024 lag4) is explicitly retained; all six shared cells losing raw micro is correctly stated.",
+    "donor": "Completion status, actual exit0 wording, strict support counts, h counts, gain values and gain units match the sealed completion/readout: +0.446546749414 and +0.566239510456 are normalized L1 gains, not pixels or percentage points. Prefix/non-prefix and unsupported-source wording is consistent. Startup paragraphs are explicitly historical and do not imply running status.",
+    "roi": "Four-frame observation status and 241 retained rows match the observation receipt. Native full-batch FC replay and float16 cache parity are stated with the correct scope; saved retained-subset FC replay remains explicitly unverified. No identity/effectiveness/novelty overclaim found.",
+    "feature": "OOF, donor and ROI summaries use the same populations and units; historical design paragraphs are explicitly marked as executed/finished. The report preserves unknown-negative and known-subset limits."
+  },
+  "required_correction": {
+    "file": "report/COVTrack_身份外观与时空OOF_20261024.md",
+    "line": 94,
+    "issue": "The sentence says the 'fresh完整output audit' had maximum error 2.66e-15. That value is from the synthetic/preflight complete-output artifact; the real fresh audit bound to this completed run reports maximum absolute score error 5.684341886080802e-14 (raw bitwise exact).",
+    "recommended_text": "合成完整输出审计的全部十列最大误差为2.66e-15；真实15-worker统一评价后的fresh全输出审计最大绝对误差为5.684e-14，raw逐候选bitwise精确。",
+    "severity": "wording provenance ambiguity; does not change any result"
+  },
+  "no_other_blocking_findings": true,
+  "historical_running_text_check": "PASS: donor startup/live checks are labeled historical and final sections state COMPLETE; the other three reports state completed/observed scope without stale running claims.",
+  "large_rehash_performed": false
+}

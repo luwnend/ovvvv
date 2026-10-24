@@ -1,0 +1,8 @@
+{
+  "status": "PASS_WAITED_CPU_FOUR_FRAME_ALL_CANDIDATE_BENCHMARK",
+  "protocol_sha256": "dfd211302b202e9678bb782e2543aae3501c5aa0eb118d370d24bddea1fd7ee6",
+  "actual_exit_sha256": "1854813498903426cf00486f060e34266154149f325455e972a4ccb37a91a539",
+  "benchmark_receipt_sha256": "4de650b1e28e2cbbf38967a267f98c3388f979417a0f814684c0c33861d9ec6b",
+  "all_input_pins_and_protected7_unchanged": true,
+  "method_effectiveness_or_novelty_established": false
+}

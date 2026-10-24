@@ -1,0 +1,164 @@
+{
+  "status": "COMPLETE_FIXED_METADATA_FOUR_FRAME_CPU_BENCHMARK",
+  "protocol_sha256": "dfd211302b202e9678bb782e2543aae3501c5aa0eb118d370d24bddea1fd7ee6",
+  "module_sha256": "0824dbd527563496cf4d3275ec2de169295bf3d72c4eef145529ebd04cf5b7be",
+  "frames": [
+    {
+      "image_id": 214313,
+      "video_id": 1271,
+      "frame_id": 0,
+      "frame_index": 150,
+      "observations": 50,
+      "npz": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214313_f0.npz",
+      "npz_sha256": "d1b1e5a0013d663b5d1074949d9fe320bb775eb7a3453c28f65b6df1449e826e"
+    },
+    {
+      "image_id": 214314,
+      "video_id": 1271,
+      "frame_id": 1,
+      "frame_index": 240,
+      "observations": 54,
+      "npz": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214314_f1.npz",
+      "npz_sha256": "15174f41631cdfb93f859d3aa665dd954580073a145a08a5866a8ba8c85cb265"
+    },
+    {
+      "image_id": 214315,
+      "video_id": 1271,
+      "frame_id": 2,
+      "frame_index": 270,
+      "observations": 56,
+      "npz": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214315_f2.npz",
+      "npz_sha256": "09c0ae627eed2bb33e6d3a608d8547985b659586253457e1ad2a2228755c403b"
+    },
+    {
+      "image_id": 214316,
+      "video_id": 1271,
+      "frame_id": 3,
+      "frame_index": 300,
+      "observations": 53,
+      "npz": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214316_f3.npz",
+      "npz_sha256": "f84fd73425853441c79724a37dc378f18d7aeceea9fddb57fadbec9ecc9505bb"
+    }
+  ],
+  "pairs": [
+    {
+      "query_frame": 1,
+      "reference_frame": 0,
+      "query_image_id": 214314,
+      "reference_image_id": 214313,
+      "shape": [
+        54,
+        50
+      ],
+      "total_candidates": 2700,
+      "available_candidates": 2700,
+      "donor_fit_count": 2064,
+      "cosine_products_built": 1,
+      "compute_elapsed_seconds": 0.7957577789202332,
+      "peak_RSS_KiB": 48396,
+      "output_array_nbytes": {
+        "raw_cosine": 21600,
+        "available": 2700,
+        "anchor_count": 21600,
+        "fit_index": 21600,
+        "pair_scale_xy": 43200,
+        "static_abs_L1": 21600,
+        "translation_xy": 43200,
+        "residual_mad_xy": 43200,
+        "residual_dxdy": 43200,
+        "corrected_L1": 21600,
+        "gain": 21600
+      },
+      "output_arrays_nbytes_total": 305100,
+      "npz": "q1_r0.npz",
+      "npz_sha256": "d4c03cf153c6ebf235eb37e91ef0ddc3e6e86befbc6fe67f9be86233ed49984f",
+      "npz_storage_bytes": 178482,
+      "fit_records_file": "q1_r0_fits.json",
+      "fit_records_sha256": "867549269970cb11b6cdb5096b9e342ef19a9d1baa89da7c35f9bb6c973016ea",
+      "fit_records_storage_bytes": 2440838,
+      "raw_cosine_source": "copy of canonical full CachedSceneMotion matrix; no second cosine product",
+      "no_identity_tracking_or_novelty_evaluation": true
+    },
+    {
+      "query_frame": 2,
+      "reference_frame": 1,
+      "query_image_id": 214315,
+      "reference_image_id": 214314,
+      "shape": [
+        56,
+        54
+      ],
+      "total_candidates": 3024,
+      "available_candidates": 3024,
+      "donor_fit_count": 2496,
+      "cosine_products_built": 1,
+      "compute_elapsed_seconds": 1.0809758426621556,
+      "peak_RSS_KiB": 48396,
+      "output_array_nbytes": {
+        "raw_cosine": 24192,
+        "available": 3024,
+        "anchor_count": 24192,
+        "fit_index": 24192,
+        "pair_scale_xy": 48384,
+        "static_abs_L1": 24192,
+        "translation_xy": 48384,
+        "residual_mad_xy": 48384,
+        "residual_dxdy": 48384,
+        "corrected_L1": 24192,
+        "gain": 24192
+      },
+      "output_arrays_nbytes_total": 341712,
+      "npz": "q2_r1.npz",
+      "npz_sha256": "ff48c1f12a0f4dff05d838223ae26960f9ed6c9fe78ffd91aebecb009632d267",
+      "npz_storage_bytes": 201067,
+      "fit_records_file": "q2_r1_fits.json",
+      "fit_records_sha256": "3b88d85112f5345b2f1479aeab14b45ceb108f0cca5c1e714df5871ee9a377f0",
+      "fit_records_storage_bytes": 3535424,
+      "raw_cosine_source": "copy of canonical full CachedSceneMotion matrix; no second cosine product",
+      "no_identity_tracking_or_novelty_evaluation": true
+    },
+    {
+      "query_frame": 3,
+      "reference_frame": 2,
+      "query_image_id": 214316,
+      "reference_image_id": 214315,
+      "shape": [
+        53,
+        56
+      ],
+      "total_candidates": 2968,
+      "available_candidates": 2968,
+      "donor_fit_count": 2288,
+      "cosine_products_built": 1,
+      "compute_elapsed_seconds": 0.8810776434838772,
+      "peak_RSS_KiB": 49152,
+      "output_array_nbytes": {
+        "raw_cosine": 23744,
+        "available": 2968,
+        "anchor_count": 23744,
+        "fit_index": 23744,
+        "pair_scale_xy": 47488,
+        "static_abs_L1": 23744,
+        "translation_xy": 47488,
+        "residual_mad_xy": 47488,
+        "residual_dxdy": 47488,
+        "corrected_L1": 23744,
+        "gain": 23744
+      },
+      "output_arrays_nbytes_total": 335384,
+      "npz": "q3_r2.npz",
+      "npz_sha256": "40da36c3452105f2f62dc67e49f1b43f5e4cbb8ab284523db9606261ab500949",
+      "npz_storage_bytes": 195714,
+      "fit_records_file": "q3_r2_fits.json",
+      "fit_records_sha256": "677f22639543892cfdef6b9f2ea45206a05777eba837f566be634b268fee586e",
+      "fit_records_storage_bytes": 3156107,
+      "raw_cosine_source": "copy of canonical full CachedSceneMotion matrix; no second cosine product",
+      "no_identity_tracking_or_novelty_evaluation": true
+    }
+  ],
+  "elapsed_seconds": 4.310910431668162,
+  "peak_RSS_KiB": 62120,
+  "all_input_pins_and_protected7_unchanged": true,
+  "CPU_only": true,
+  "full_FIT_extrapolation_or_method_effectiveness_or_novelty_established": false
+}

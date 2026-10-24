@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "-u",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_scene_translation_donorout_20261024.py",
+    "--finalize",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/scene_translation_donorout_execution_20261024_v1/launch_spec.json"
+  ],
+  "pid": 399200,
+  "identity": {
+    "pid": 399200,
+    "start_ticks": 574853082,
+    "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+    "cmdline": [
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+      "-u",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/run_scene_translation_donorout_20261024.py",
+      "--finalize",
+      "/home/chenhc/ov/OVMOT_RESEARCH/results/scene_translation_donorout_execution_20261024_v1/launch_spec.json"
+    ],
+    "state": "R"
+  },
+  "started_utc": "2026-10-23T20:03:49.881151+00:00",
+  "finished_utc": "2026-10-23T20:03:50.497929+00:00",
+  "elapsed_seconds": 0.6167838703840971,
+  "actual_exit_code": 0,
+  "waited_by_parent_pid": 387140
+}

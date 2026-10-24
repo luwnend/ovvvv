@@ -1,0 +1,5480 @@
+{
+  "status": "PASS_MINIMAL_GTFREE_DONOR_PREDICTABILITY",
+  "primary_strict": {
+    "1": {
+      "supported_sources": 341,
+      "source_macro_gain": {
+        "proposal_overlap_excluded": 0.4465467494139273
+      },
+      "by_source": {
+        "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2": {
+          "fullpool_holdouts": 657,
+          "supported_frame_pairs": 22,
+          "valid_holdouts": 657,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.22062090192523254
+          }
+        },
+        "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929": {
+          "fullpool_holdouts": 679,
+          "supported_frame_pairs": 18,
+          "valid_holdouts": 678,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 3.881397559224313
+          }
+        },
+        "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e": {
+          "fullpool_holdouts": 1060,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1060,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.23195990805335714
+          }
+        },
+        "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818": {
+          "fullpool_holdouts": 918,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 918,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.26166014305931984
+          }
+        },
+        "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec": {
+          "fullpool_holdouts": 1253,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 1253,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.039039408834642714
+          }
+        },
+        "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2": {
+          "fullpool_holdouts": 1171,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 1171,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5599273547339754
+          }
+        },
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": {
+          "fullpool_holdouts": 1213,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1210,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.29748494914908813
+          }
+        },
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
+          "fullpool_holdouts": 700,
+          "supported_frame_pairs": 21,
+          "valid_holdouts": 700,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1533494028095649
+          }
+        },
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
+          "fullpool_holdouts": 1293,
+          "supported_frame_pairs": 43,
+          "valid_holdouts": 1293,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.47207036096024174
+          }
+        },
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
+          "fullpool_holdouts": 1755,
+          "supported_frame_pairs": 56,
+          "valid_holdouts": 1755,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3135697846524191
+          }
+        },
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
+          "fullpool_holdouts": 1328,
+          "supported_frame_pairs": 47,
+          "valid_holdouts": 1328,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.012072751101800448
+          }
+        },
+        "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8": {
+          "fullpool_holdouts": 970,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 970,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.09589933994309079
+          }
+        },
+        "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0": {
+          "fullpool_holdouts": 447,
+          "supported_frame_pairs": 15,
+          "valid_holdouts": 447,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.04857347170004146
+          }
+        },
+        "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2": {
+          "fullpool_holdouts": 880,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 880,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8997538871602295
+          }
+        },
+        "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7": {
+          "fullpool_holdouts": 601,
+          "supported_frame_pairs": 21,
+          "valid_holdouts": 601,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.0286341099289045
+          }
+        },
+        "BDD/b1d0a191-03dcecc2": {
+          "fullpool_holdouts": 1496,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1496,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5084108365159838
+          }
+        },
+        "BDD/b20b69d2-e31380a7": {
+          "fullpool_holdouts": 395,
+          "supported_frame_pairs": 12,
+          "valid_holdouts": 386,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6169435653669547
+          }
+        },
+        "BDD/b20b9c19-91e01a50": {
+          "fullpool_holdouts": 731,
+          "supported_frame_pairs": 24,
+          "valid_holdouts": 710,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.07935675966322389
+          }
+        },
+        "BDD/b21c68e6-65674a17": {
+          "fullpool_holdouts": 1257,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1255,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.14783674713931172
+          }
+        },
+        "BDD/b21d5efb-5e2cd743": {
+          "fullpool_holdouts": 191,
+          "supported_frame_pairs": 7,
+          "valid_holdouts": 190,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.05135966026314739
+          }
+        },
+        "BDD/b22a4d9f-73cc8810": {
+          "fullpool_holdouts": 1229,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 1229,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9255790987234845
+          }
+        },
+        "BDD/b232c7c9-d251d9ee": {
+          "fullpool_holdouts": 1456,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1454,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0044580664767070784
+          }
+        },
+        "BDD/b249e7f2-92d2efad": {
+          "fullpool_holdouts": 1173,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 1173,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.23962398144965558
+          }
+        },
+        "BDD/b262f576-b0373824": {
+          "fullpool_holdouts": 724,
+          "supported_frame_pairs": 22,
+          "valid_holdouts": 724,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.40279175362347375
+          }
+        },
+        "BDD/b27098c3-c443b6e3": {
+          "fullpool_holdouts": 813,
+          "supported_frame_pairs": 24,
+          "valid_holdouts": 813,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2585283115716693
+          }
+        },
+        "BDD/b27127df-eac9b95e": {
+          "fullpool_holdouts": 1166,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 1162,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.28821066905212567
+          }
+        },
+        "BDD/b27369f3-9b9598f4": {
+          "fullpool_holdouts": 1224,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 1224,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.11896316227684577
+          }
+        },
+        "BDD/b27688b6-cd521517": {
+          "fullpool_holdouts": 1076,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1066,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1990475588016008
+          }
+        },
+        "BDD/b28ec521-898e11bd": {
+          "fullpool_holdouts": 1216,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1189,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.09262346475211762
+          }
+        },
+        "BDD/b2bee3e1-80c787bd": {
+          "fullpool_holdouts": 1042,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 1040,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3845470989559502
+          }
+        },
+        "BDD/b2d502aa-64d3e228": {
+          "fullpool_holdouts": 462,
+          "supported_frame_pairs": 13,
+          "valid_holdouts": 462,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7628234625008022
+          }
+        },
+        "BDD/b2d502aa-f0b28e3e": {
+          "fullpool_holdouts": 528,
+          "supported_frame_pairs": 16,
+          "valid_holdouts": 528,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.09116512320234035
+          }
+        },
+        "BDD/b2dbb793-9f0b2bec": {
+          "fullpool_holdouts": 1086,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1056,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.24225942675960818
+          }
+        },
+        "BDD/b2de938e-84eab379": {
+          "fullpool_holdouts": 1395,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1395,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.028070192034459967
+          }
+        },
+        "BDD/b2e2b2be-4142962b": {
+          "fullpool_holdouts": 811,
+          "supported_frame_pairs": 24,
+          "valid_holdouts": 811,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.01827515647297481
+          }
+        },
+        "BDD/b2fc7cb5-1635d64b": {
+          "fullpool_holdouts": 749,
+          "supported_frame_pairs": 25,
+          "valid_holdouts": 744,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3983792929186438
+          }
+        },
+        "BDD/b2ff6aba-fa4ac7d7": {
+          "fullpool_holdouts": 1359,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1359,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0424060551815976
+          }
+        },
+        "BDD/b3079ec6-df7b2d92": {
+          "fullpool_holdouts": 1610,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 1608,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9354062629809596
+          }
+        },
+        "BDD/b30b460d-73d12a29": {
+          "fullpool_holdouts": 791,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 789,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.20494108078798054
+          }
+        },
+        "BDD/b3159650-1ba75f9b": {
+          "fullpool_holdouts": 1085,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 1081,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0182280286258882
+          }
+        },
+        "BDD/b3378e5e-b7593301": {
+          "fullpool_holdouts": 1004,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 1004,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.026925279041472037
+          }
+        },
+        "BDD/b33ea6cb-3464fb13": {
+          "fullpool_holdouts": 1117,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 1117,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.04792655410739188
+          }
+        },
+        "BDD/b34b1b88-5bfe3b85": {
+          "fullpool_holdouts": 530,
+          "supported_frame_pairs": 23,
+          "valid_holdouts": 530,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.09138125981660745
+          }
+        },
+        "BDD/b368ee71-cf27b7fa": {
+          "fullpool_holdouts": 1494,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1493,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.05051103210452434
+          }
+        },
+        "BDD/b36e0178-2037ca44": {
+          "fullpool_holdouts": 670,
+          "supported_frame_pairs": 23,
+          "valid_holdouts": 666,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.019634185751833
+          }
+        },
+        "BDD/b39fe3cd-227ff7a8": {
+          "fullpool_holdouts": 1113,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 1112,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0007862967201535
+          }
+        },
+        "BDD/b3a9281a-e8ba5d66": {
+          "fullpool_holdouts": 1372,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1372,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2698636236010871
+          }
+        },
+        "BDD/b3b9ee6e-6d2617d1": {
+          "fullpool_holdouts": 1091,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1071,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2730113628154692
+          }
+        },
+        "BDD/b3be4113-1fb56ec4": {
+          "fullpool_holdouts": 1117,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 1117,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8494425766627641
+          }
+        },
+        "BDD/b3ce9f98-2dc52573": {
+          "fullpool_holdouts": 847,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 847,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4538242192891949
+          }
+        },
+        "BDD/b3da33d5-a64e7657": {
+          "fullpool_holdouts": 1281,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1280,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0507507704324857
+          }
+        },
+        "BDD/b40b0ea3-b242efc9": {
+          "fullpool_holdouts": 1295,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 1289,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.06929125975381793
+          }
+        },
+        "BDD/b422ec08-d42660b6": {
+          "fullpool_holdouts": 591,
+          "supported_frame_pairs": 19,
+          "valid_holdouts": 591,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5485897257083122
+          }
+        },
+        "BDD/b4235ab3-b305d3e9": {
+          "fullpool_holdouts": 321,
+          "supported_frame_pairs": 16,
+          "valid_holdouts": 321,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.25921377664609235
+          }
+        },
+        "BDD/b4278d1f-dbd0295c": {
+          "fullpool_holdouts": 433,
+          "supported_frame_pairs": 14,
+          "valid_holdouts": 431,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.7763278608565933
+          }
+        },
+        "BDD/b4301c7b-da5261f0": {
+          "fullpool_holdouts": 1160,
+          "supported_frame_pairs": 37,
+          "valid_holdouts": 1154,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.19813091381733752
+          }
+        },
+        "BDD/b4466011-05cbc315": {
+          "fullpool_holdouts": 1409,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1409,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.061448597194293374
+          }
+        },
+        "BDD/b4536117-bc85ba28": {
+          "fullpool_holdouts": 1185,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1185,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.02665367990759549
+          }
+        },
+        "Charades/0LHWF": {
+          "fullpool_holdouts": 933,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 933,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0010028047262713308
+          }
+        },
+        "Charades/35LUV": {
+          "fullpool_holdouts": 1223,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 1222,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.00071726916046354
+          }
+        },
+        "Charades/3N1I2": {
+          "fullpool_holdouts": 886,
+          "supported_frame_pairs": 20,
+          "valid_holdouts": 886,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0012201807321258432
+          }
+        },
+        "Charades/48BUM": {
+          "fullpool_holdouts": 616,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 614,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6226752518873614
+          }
+        },
+        "Charades/4H61U": {
+          "fullpool_holdouts": 1213,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1213,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.00034631069176685664
+          }
+        },
+        "Charades/4K0BP": {
+          "fullpool_holdouts": 1003,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 1003,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0008531809084602141
+          }
+        },
+        "Charades/50E06": {
+          "fullpool_holdouts": 656,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 656,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0051482810005773995
+          }
+        },
+        "Charades/5HPZ1": {
+          "fullpool_holdouts": 1126,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 1126,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0006037039053834682
+          }
+        },
+        "Charades/6EU06": {
+          "fullpool_holdouts": 728,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 726,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4218138790973714
+          }
+        },
+        "Charades/6FV5P": {
+          "fullpool_holdouts": 929,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 926,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0014739500924260485
+          }
+        },
+        "Charades/7177T": {
+          "fullpool_holdouts": 1217,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1217,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0004911047774683788
+          }
+        },
+        "Charades/735W9": {
+          "fullpool_holdouts": 1320,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 1320,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.005230125147447301
+          }
+        },
+        "Charades/7P0JX": {
+          "fullpool_holdouts": 658,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 654,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.29935415574914015
+          }
+        },
+        "Charades/8Q0EY": {
+          "fullpool_holdouts": 1231,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 1220,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 6.808976088347221e-05
+          }
+        },
+        "Charades/9M48H": {
+          "fullpool_holdouts": 1183,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 1183,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -3.923451436873476e-05
+          }
+        },
+        "Charades/9UU4W": {
+          "fullpool_holdouts": 1180,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 1180,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.00038057546925098087
+          }
+        },
+        "Charades/A2EY4": {
+          "fullpool_holdouts": 1113,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 1113,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.00032941657420833617
+          }
+        },
+        "Charades/AIOTI": {
+          "fullpool_holdouts": 618,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 610,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.42668532653162844
+          }
+        },
+        "Charades/AVSN8": {
+          "fullpool_holdouts": 861,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 861,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.44189061951478614
+          }
+        },
+        "Charades/BI6Y4": {
+          "fullpool_holdouts": 1422,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 1421,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.05489202027495079
+          }
+        },
+        "Charades/CF9QP": {
+          "fullpool_holdouts": 590,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 584,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3642847799179496
+          }
+        },
+        "Charades/E8468": {
+          "fullpool_holdouts": 753,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 753,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6108636960176039
+          }
+        },
+        "Charades/E9FY2": {
+          "fullpool_holdouts": 699,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 698,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3170418410014516
+          }
+        },
+        "Charades/EIKUN": {
+          "fullpool_holdouts": 657,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 656,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7418864811099672
+          }
+        },
+        "Charades/FHAV0": {
+          "fullpool_holdouts": 799,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 799,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.34353088030031864
+          }
+        },
+        "Charades/FZAEP": {
+          "fullpool_holdouts": 1142,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 1142,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0011679212297609264
+          }
+        },
+        "Charades/G2DIN": {
+          "fullpool_holdouts": 962,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 962,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.011463175210234393
+          }
+        },
+        "Charades/G8NEV": {
+          "fullpool_holdouts": 1000,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 1000,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.002432237994138229
+          }
+        },
+        "Charades/GL2JW": {
+          "fullpool_holdouts": 869,
+          "supported_frame_pairs": 23,
+          "valid_holdouts": 868,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.005287079816051149
+          }
+        },
+        "Charades/GQ341": {
+          "fullpool_holdouts": 1187,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1187,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -4.609758772715099e-05
+          }
+        },
+        "Charades/HOYUT": {
+          "fullpool_holdouts": 831,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 831,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0008463203252405543
+          }
+        },
+        "Charades/HSKVH": {
+          "fullpool_holdouts": 312,
+          "supported_frame_pairs": 12,
+          "valid_holdouts": 312,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.001470263750837702
+          }
+        },
+        "Charades/HYD3N": {
+          "fullpool_holdouts": 588,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 578,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7934730485296785
+          }
+        },
+        "Charades/IIL9C": {
+          "fullpool_holdouts": 614,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 609,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.010839390291237788
+          }
+        },
+        "Charades/IULK6": {
+          "fullpool_holdouts": 1144,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1144,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -9.062948420031576e-06
+          }
+        },
+        "Charades/JMPKP": {
+          "fullpool_holdouts": 937,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 937,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0019394425722065716
+          }
+        },
+        "Charades/KA3ER": {
+          "fullpool_holdouts": 1179,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1175,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6700367907358428
+          }
+        },
+        "Charades/KPHP5": {
+          "fullpool_holdouts": 666,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 653,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6362820269239259
+          }
+        },
+        "Charades/LHTSI": {
+          "fullpool_holdouts": 973,
+          "supported_frame_pairs": 25,
+          "valid_holdouts": 973,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 9.172695710335628e-05
+          }
+        },
+        "Charades/M6ERH": {
+          "fullpool_holdouts": 1274,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 1274,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0058729381919836905
+          }
+        },
+        "Charades/MZ9X7": {
+          "fullpool_holdouts": 440,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 419,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.27536327585962356
+          }
+        },
+        "Charades/NPEA3": {
+          "fullpool_holdouts": 697,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 696,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.47832100055440663
+          }
+        },
+        "Charades/O87OF": {
+          "fullpool_holdouts": 966,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 966,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0005212436833537302
+          }
+        },
+        "Charades/O8DER": {
+          "fullpool_holdouts": 719,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 716,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.24221450744678963
+          }
+        },
+        "Charades/PC7H2": {
+          "fullpool_holdouts": 1036,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 1035,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0001536905707522912
+          }
+        },
+        "Charades/PEWH4": {
+          "fullpool_holdouts": 865,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 864,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.012533835987868813
+          }
+        },
+        "Charades/PJUM0": {
+          "fullpool_holdouts": 1409,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 1409,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0007254017740108568
+          }
+        },
+        "Charades/QBUAT": {
+          "fullpool_holdouts": 965,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 965,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0023893153644598077
+          }
+        },
+        "Charades/QCPXJ": {
+          "fullpool_holdouts": 1448,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 1448,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0002642947658451594
+          }
+        },
+        "Charades/QHU9R": {
+          "fullpool_holdouts": 958,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 956,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0050920722215801574
+          }
+        },
+        "Charades/QZZPS": {
+          "fullpool_holdouts": 515,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 515,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0020277666259128323
+          }
+        },
+        "Charades/S7OTQ": {
+          "fullpool_holdouts": 1150,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1150,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.00044374223404780393
+          }
+        },
+        "Charades/SROEU": {
+          "fullpool_holdouts": 969,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 969,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.014358872371026008
+          }
+        },
+        "Charades/SVA4D": {
+          "fullpool_holdouts": 1030,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1030,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.27483836004373396
+          }
+        },
+        "Charades/TQO6O": {
+          "fullpool_holdouts": 499,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 487,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.000783529532325035
+          }
+        },
+        "Charades/U08M9": {
+          "fullpool_holdouts": 730,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 729,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.007149015589126622
+          }
+        },
+        "Charades/U4J2Q": {
+          "fullpool_holdouts": 1271,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1271,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.00017274105434984376
+          }
+        },
+        "Charades/UDGP2": {
+          "fullpool_holdouts": 1106,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 1106,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.41473386634408377
+          }
+        },
+        "Charades/V7YEJ": {
+          "fullpool_holdouts": 991,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 991,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0006718381849336376
+          }
+        },
+        "Charades/W97NR": {
+          "fullpool_holdouts": 830,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 828,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0017993146116321798
+          }
+        },
+        "Charades/X9LP4": {
+          "fullpool_holdouts": 828,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 828,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0014000800020905252
+          }
+        },
+        "Charades/Y3M3W": {
+          "fullpool_holdouts": 1113,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 1113,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0006214761122927007
+          }
+        },
+        "Charades/YE6UZ": {
+          "fullpool_holdouts": 1550,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 1550,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0034806655791745633
+          }
+        },
+        "Charades/YK49T": {
+          "fullpool_holdouts": 735,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 735,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.005866711707064517
+          }
+        },
+        "Charades/YXQWH": {
+          "fullpool_holdouts": 707,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 705,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3560016170874681
+          }
+        },
+        "Charades/Z6HEA": {
+          "fullpool_holdouts": 623,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 620,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6312949684919954
+          }
+        },
+        "LaSOT/airplane-4": {
+          "fullpool_holdouts": 252,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 185,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 5.422175798819059
+          }
+        },
+        "LaSOT/basketball-11": {
+          "fullpool_holdouts": 1460,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1460,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.1756221431417713
+          }
+        },
+        "LaSOT/basketball-4": {
+          "fullpool_holdouts": 1712,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1712,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1638544918597971
+          }
+        },
+        "LaSOT/basketball-6": {
+          "fullpool_holdouts": 1216,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1216,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.023097714699935008
+          }
+        },
+        "LaSOT/bicycle-4": {
+          "fullpool_holdouts": 1281,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1281,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9875936752757872
+          }
+        },
+        "LaSOT/bicycle-7": {
+          "fullpool_holdouts": 919,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 919,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.594017568874209
+          }
+        },
+        "LaSOT/bicycle-9": {
+          "fullpool_holdouts": 1152,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1152,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7760514917790748
+          }
+        },
+        "LaSOT/bird-11": {
+          "fullpool_holdouts": 544,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 544,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.772821119484536
+          }
+        },
+        "LaSOT/bird-12": {
+          "fullpool_holdouts": 329,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 308,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.5104105572004904
+          }
+        },
+        "LaSOT/bird-17": {
+          "fullpool_holdouts": 610,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 600,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3069247458583775
+          }
+        },
+        "LaSOT/boat-4": {
+          "fullpool_holdouts": 781,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 766,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.3467065995646381
+          }
+        },
+        "LaSOT/boat-9": {
+          "fullpool_holdouts": 361,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 321,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.66839524337427
+          }
+        },
+        "LaSOT/book-11": {
+          "fullpool_holdouts": 1769,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1769,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3207804548370978
+          }
+        },
+        "LaSOT/book-15": {
+          "fullpool_holdouts": 925,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 924,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.14778563166139227
+          }
+        },
+        "LaSOT/book-2": {
+          "fullpool_holdouts": 620,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 590,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.005012089299483783
+          }
+        },
+        "LaSOT/book-3": {
+          "fullpool_holdouts": 1101,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1101,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0008028410131306248
+          }
+        },
+        "LaSOT/bottle-12": {
+          "fullpool_holdouts": 1355,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1355,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4927840561997891
+          }
+        },
+        "LaSOT/bus-19": {
+          "fullpool_holdouts": 128,
+          "supported_frame_pairs": 6,
+          "valid_holdouts": 125,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.3930135758392135
+          }
+        },
+        "LaSOT/bus-8": {
+          "fullpool_holdouts": 1327,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1326,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3420356732875152
+          }
+        },
+        "LaSOT/car-17": {
+          "fullpool_holdouts": 1128,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1112,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.25178434493147317
+          }
+        },
+        "LaSOT/cat-1": {
+          "fullpool_holdouts": 166,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 125,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1589774938273589
+          }
+        },
+        "LaSOT/cat-13": {
+          "fullpool_holdouts": 687,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 686,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7771183650841453
+          }
+        },
+        "LaSOT/cat-4": {
+          "fullpool_holdouts": 294,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 257,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.10864017907303868
+          }
+        },
+        "LaSOT/cat-7": {
+          "fullpool_holdouts": 1351,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1351,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2880947755610068
+          }
+        },
+        "LaSOT/cattle-14": {
+          "fullpool_holdouts": 1081,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1081,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7556463786523595
+          }
+        },
+        "LaSOT/cattle-9": {
+          "fullpool_holdouts": 560,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 560,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.7406611860426557
+          }
+        },
+        "LaSOT/cup-9": {
+          "fullpool_holdouts": 369,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 343,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.02386652042257041
+          }
+        },
+        "LaSOT/deer-15": {
+          "fullpool_holdouts": 321,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 317,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0515437582112333
+          }
+        },
+        "LaSOT/deer-4": {
+          "fullpool_holdouts": 346,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 339,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.24186957116971441
+          }
+        },
+        "LaSOT/dog-13": {
+          "fullpool_holdouts": 1003,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 998,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5759440561742227
+          }
+        },
+        "LaSOT/electricfan-13": {
+          "fullpool_holdouts": 1329,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1329,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.06344892694829884
+          }
+        },
+        "LaSOT/elephant-14": {
+          "fullpool_holdouts": 606,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 595,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5767085227327231
+          }
+        },
+        "LaSOT/elephant-6": {
+          "fullpool_holdouts": 352,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 336,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.39451992259909086
+          }
+        },
+        "LaSOT/flag-5": {
+          "fullpool_holdouts": 675,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 672,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9338838525063812
+          }
+        },
+        "LaSOT/giraffe-19": {
+          "fullpool_holdouts": 687,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 687,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5447107911723895
+          }
+        },
+        "LaSOT/goldfish-17": {
+          "fullpool_holdouts": 883,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 857,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.33649702702922446
+          }
+        },
+        "LaSOT/guitar-9": {
+          "fullpool_holdouts": 787,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 781,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.10401713403639234
+          }
+        },
+        "LaSOT/hat-18": {
+          "fullpool_holdouts": 2056,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 2056,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 3.6242255128841294e-05
+          }
+        },
+        "LaSOT/helmet-1": {
+          "fullpool_holdouts": 603,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 579,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.04789941497129355
+          }
+        },
+        "LaSOT/helmet-3": {
+          "fullpool_holdouts": 942,
+          "supported_frame_pairs": 37,
+          "valid_holdouts": 942,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.1832490108776876
+          }
+        },
+        "LaSOT/kite-18": {
+          "fullpool_holdouts": 70,
+          "supported_frame_pairs": 7,
+          "valid_holdouts": 66,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.3374086600771216
+          }
+        },
+        "LaSOT/lion-12": {
+          "fullpool_holdouts": 932,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 930,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.10510335265255148
+          }
+        },
+        "LaSOT/lion-15": {
+          "fullpool_holdouts": 1060,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1053,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7390945669321631
+          }
+        },
+        "LaSOT/lion-9": {
+          "fullpool_holdouts": 326,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 292,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1776973086355886
+          }
+        },
+        "LaSOT/lizard-16": {
+          "fullpool_holdouts": 748,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 740,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.930842693771587
+          }
+        },
+        "LaSOT/microphone-12": {
+          "fullpool_holdouts": 1397,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1397,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.42071421389393365
+          }
+        },
+        "LaSOT/microphone-13": {
+          "fullpool_holdouts": 1187,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1187,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.44277758413114754
+          }
+        },
+        "LaSOT/microphone-3": {
+          "fullpool_holdouts": 1083,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1083,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.30097301225920425
+          }
+        },
+        "LaSOT/monkey-16": {
+          "fullpool_holdouts": 1020,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1020,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.06510087306538996
+          }
+        },
+        "LaSOT/monkey-19": {
+          "fullpool_holdouts": 395,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 385,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.13920574659371826
+          }
+        },
+        "LaSOT/motorcycle-19": {
+          "fullpool_holdouts": 485,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 483,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.90217967043656
+          }
+        },
+        "LaSOT/person-2": {
+          "fullpool_holdouts": 1481,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1481,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.17576005478122594
+          }
+        },
+        "LaSOT/person-3": {
+          "fullpool_holdouts": 1144,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1144,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8309816332599246
+          }
+        },
+        "LaSOT/person-7": {
+          "fullpool_holdouts": 1081,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1081,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9520597757205104
+          }
+        },
+        "LaSOT/pool-17": {
+          "fullpool_holdouts": 1032,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1023,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.1189337566414337
+          }
+        },
+        "LaSOT/rabbit-17": {
+          "fullpool_holdouts": 831,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 822,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.40702980077594075
+          }
+        },
+        "LaSOT/racing-14": {
+          "fullpool_holdouts": 746,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 734,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0493785660253105
+          }
+        },
+        "LaSOT/racing-20": {
+          "fullpool_holdouts": 911,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 903,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.7481737526848429
+          }
+        },
+        "LaSOT/shark-20": {
+          "fullpool_holdouts": 144,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 68,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -2.3490046372835254
+          }
+        },
+        "LaSOT/sheep-15": {
+          "fullpool_holdouts": 583,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 583,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.804825757492014
+          }
+        },
+        "LaSOT/skateboard-1": {
+          "fullpool_holdouts": 452,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 446,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4594544709702593
+          }
+        },
+        "LaSOT/skateboard-18": {
+          "fullpool_holdouts": 540,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 530,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.7659754937586258
+          }
+        },
+        "LaSOT/skateboard-8": {
+          "fullpool_holdouts": 490,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 479,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.42891042135795093
+          }
+        },
+        "LaSOT/spider-5": {
+          "fullpool_holdouts": 1104,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1077,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.714392796416185
+          }
+        },
+        "LaSOT/surfboard-8": {
+          "fullpool_holdouts": 415,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 410,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8071481524886333
+          }
+        },
+        "LaSOT/swing-18": {
+          "fullpool_holdouts": 1093,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 1093,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.157131864111985
+          }
+        },
+        "LaSOT/tank-12": {
+          "fullpool_holdouts": 796,
+          "supported_frame_pairs": 23,
+          "valid_holdouts": 796,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.224975775220701
+          }
+        },
+        "LaSOT/tank-2": {
+          "fullpool_holdouts": 1396,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1396,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.720297040432382
+          }
+        },
+        "LaSOT/tiger-13": {
+          "fullpool_holdouts": 1049,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1049,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.6989732479552107
+          }
+        },
+        "LaSOT/truck-10": {
+          "fullpool_holdouts": 1444,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1440,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.32355979605584473
+          }
+        },
+        "LaSOT/truck-5": {
+          "fullpool_holdouts": 1194,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1188,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5811082015107126
+          }
+        },
+        "LaSOT/umbrella-18": {
+          "fullpool_holdouts": 957,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 956,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.10524868403583386
+          }
+        },
+        "LaSOT/volleyball-18": {
+          "fullpool_holdouts": 1738,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1738,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.00035868731243787473
+          }
+        },
+        "LaSOT/volleyball-19": {
+          "fullpool_holdouts": 1472,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1472,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7503772997886475
+          }
+        },
+        "LaSOT/volleyball-20": {
+          "fullpool_holdouts": 1673,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1673,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.007299909762507457
+          }
+        },
+        "LaSOT/zebra-14": {
+          "fullpool_holdouts": 491,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 491,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.852987734391968
+          }
+        },
+        "LaSOT/zebra-18": {
+          "fullpool_holdouts": 275,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 245,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.46605270501465396
+          }
+        },
+        "LaSOT/zebra-19": {
+          "fullpool_holdouts": 915,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 915,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8321757639819239
+          }
+        },
+        "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11": {
+          "fullpool_holdouts": 1126,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1125,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.09424482185539458
+          }
+        },
+        "YFCC100M/v_23584c2660351f12cffe1399c47ce870": {
+          "fullpool_holdouts": 1004,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1001,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8118701861662515
+          }
+        },
+        "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5": {
+          "fullpool_holdouts": 858,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 858,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9277373165841747
+          }
+        },
+        "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b": {
+          "fullpool_holdouts": 1207,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1207,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0371499789099022
+          }
+        },
+        "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461": {
+          "fullpool_holdouts": 1255,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1255,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.20485141851351601
+          }
+        },
+        "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d": {
+          "fullpool_holdouts": 773,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 764,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6760980694572295
+          }
+        },
+        "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3": {
+          "fullpool_holdouts": 969,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 969,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.15850836363869064
+          }
+        },
+        "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3": {
+          "fullpool_holdouts": 754,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 740,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.12914172985782588
+          }
+        },
+        "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215": {
+          "fullpool_holdouts": 590,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 585,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.012293661568085222
+          }
+        },
+        "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0": {
+          "fullpool_holdouts": 1343,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1343,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.31269483065878023
+          }
+        },
+        "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629": {
+          "fullpool_holdouts": 1137,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1137,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5368923743474324
+          }
+        },
+        "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3": {
+          "fullpool_holdouts": 1060,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 1060,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9577860899630892
+          }
+        },
+        "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b": {
+          "fullpool_holdouts": 952,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 942,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.20958497844652862
+          }
+        },
+        "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf": {
+          "fullpool_holdouts": 711,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 709,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8103634699608528
+          }
+        },
+        "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d": {
+          "fullpool_holdouts": 652,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 649,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.40713277086183525
+          }
+        },
+        "YFCC100M/v_6f90a13c795ef37404d95983341df": {
+          "fullpool_holdouts": 1369,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1369,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.285749043741517
+          }
+        },
+        "YFCC100M/v_72252bc9435f88bbfb28aac25484f30": {
+          "fullpool_holdouts": 379,
+          "supported_frame_pairs": 14,
+          "valid_holdouts": 379,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.9323373401725061
+          }
+        },
+        "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a": {
+          "fullpool_holdouts": 164,
+          "supported_frame_pairs": 17,
+          "valid_holdouts": 158,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 5.55643604687946
+          }
+        },
+        "YFCC100M/v_82e9bb97b1a1fdde489511e69126644": {
+          "fullpool_holdouts": 966,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 966,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.134808631511592
+          }
+        },
+        "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30": {
+          "fullpool_holdouts": 338,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 309,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.11443467194344877
+          }
+        },
+        "YFCC100M/v_9018a07931e02026b3bd6e82489d4624": {
+          "fullpool_holdouts": 1065,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 1065,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.000531944791006912
+          }
+        },
+        "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c": {
+          "fullpool_holdouts": 697,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 688,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8483512328530832
+          }
+        },
+        "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3": {
+          "fullpool_holdouts": 374,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 354,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.13862045479107085
+          }
+        },
+        "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5": {
+          "fullpool_holdouts": 1217,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1217,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.22883609231909352
+          }
+        },
+        "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c": {
+          "fullpool_holdouts": 420,
+          "supported_frame_pairs": 20,
+          "valid_holdouts": 419,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.3672986400270235
+          }
+        },
+        "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20": {
+          "fullpool_holdouts": 882,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 880,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9070585727953061
+          }
+        },
+        "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a": {
+          "fullpool_holdouts": 1209,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1190,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.35176259389917075
+          }
+        },
+        "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46": {
+          "fullpool_holdouts": 909,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 904,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3313201184811425
+          }
+        },
+        "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33": {
+          "fullpool_holdouts": 754,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 754,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6250452301887733
+          }
+        },
+        "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4": {
+          "fullpool_holdouts": 170,
+          "supported_frame_pairs": 26,
+          "valid_holdouts": 108,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.9953987114147467
+          }
+        },
+        "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452": {
+          "fullpool_holdouts": 1053,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1053,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.08365848948450118
+          }
+        },
+        "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e": {
+          "fullpool_holdouts": 862,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 858,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.154494596403991
+          }
+        },
+        "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150": {
+          "fullpool_holdouts": 708,
+          "supported_frame_pairs": 25,
+          "valid_holdouts": 705,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.3549779549091099
+          }
+        },
+        "YFCC100M/v_df4744928b9b4199b5c73344efdce65": {
+          "fullpool_holdouts": 412,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 388,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.01739899900606117
+          }
+        },
+        "YFCC100M/v_e16e325327dd0974bda9bbd7a35118c": {
+          "fullpool_holdouts": 47,
+          "supported_frame_pairs": 2,
+          "valid_holdouts": 47,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.210639485293518
+          }
+        },
+        "YFCC100M/v_e2d3c540737396bebd0a4b53b3174e": {
+          "fullpool_holdouts": 597,
+          "supported_frame_pairs": 20,
+          "valid_holdouts": 597,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.11903670439972942
+          }
+        },
+        "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40": {
+          "fullpool_holdouts": 1144,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1144,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.26072765674953713
+          }
+        },
+        "YFCC100M/v_ea33c680e1f18d71543b8f80815beec": {
+          "fullpool_holdouts": 634,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 628,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.10358686013770955
+          }
+        },
+        "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5": {
+          "fullpool_holdouts": 1000,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1000,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.08970507774581939
+          }
+        },
+        "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e": {
+          "fullpool_holdouts": 893,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 892,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.941877227396307
+          }
+        },
+        "YFCC100M/v_f729d4f362aea24236153ffc589adac": {
+          "fullpool_holdouts": 1184,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 1184,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.049600512855114375
+          }
+        },
+        "YFCC100M/v_f93e2640ce4cf8b1195c94764803414": {
+          "fullpool_holdouts": 961,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 960,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.4993789437689569
+          }
+        },
+        "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c": {
+          "fullpool_holdouts": 967,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 952,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0590854436251705
+          }
+        },
+        "YouTube/-6quA485tw8": {
+          "fullpool_holdouts": 1779,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1779,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3565521816350879
+          }
+        },
+        "YouTube/-dQIXiV6gk0": {
+          "fullpool_holdouts": 441,
+          "supported_frame_pairs": 19,
+          "valid_holdouts": 439,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6585957698051675
+          }
+        },
+        "YouTube/1cU81_rjt7s": {
+          "fullpool_holdouts": 568,
+          "supported_frame_pairs": 17,
+          "valid_holdouts": 568,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4237303911058422
+          }
+        },
+        "YouTube/1mPd_3N5gNQ": {
+          "fullpool_holdouts": 343,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 296,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.9360960147589845
+          }
+        },
+        "YouTube/25eIK85JWi4": {
+          "fullpool_holdouts": 880,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 877,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0004280769613111804
+          }
+        },
+        "YouTube/313tbNN4J3o": {
+          "fullpool_holdouts": 1262,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1261,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9859261035227149
+          }
+        },
+        "YouTube/4ltcNlAq1wI": {
+          "fullpool_holdouts": 857,
+          "supported_frame_pairs": 37,
+          "valid_holdouts": 856,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6711764932245128
+          }
+        },
+        "YouTube/5BDj0ow5hnA": {
+          "fullpool_holdouts": 4876,
+          "supported_frame_pairs": 194,
+          "valid_holdouts": 4856,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.13709000601849483
+          }
+        },
+        "YouTube/7SFkVnnp_eE": {
+          "fullpool_holdouts": 803,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 789,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.021241720411386632
+          }
+        },
+        "YouTube/7XQoDEQGqaw": {
+          "fullpool_holdouts": 1838,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1838,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.10557760268749043
+          }
+        },
+        "YouTube/7YULkl7Xm04": {
+          "fullpool_holdouts": 493,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 485,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4844054492853002
+          }
+        },
+        "YouTube/7_xkhnbnI7M": {
+          "fullpool_holdouts": 650,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 627,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.006766084564091696
+          }
+        },
+        "YouTube/87ksUt7mO3o": {
+          "fullpool_holdouts": 1429,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1429,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.08835887151892491
+          }
+        },
+        "YouTube/9sZI9IdgXZY": {
+          "fullpool_holdouts": 1035,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1032,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7695693697507966
+          }
+        },
+        "YouTube/AjH8TFfZIGY": {
+          "fullpool_holdouts": 1099,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1064,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.009797233592850412
+          }
+        },
+        "YouTube/C48cXamb2B0": {
+          "fullpool_holdouts": 884,
+          "supported_frame_pairs": 37,
+          "valid_holdouts": 880,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.005487534836421473
+          }
+        },
+        "YouTube/Ce7YdX2cido": {
+          "fullpool_holdouts": 388,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 372,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.20728916545504125
+          }
+        },
+        "YouTube/D8Vhxbho1fY": {
+          "fullpool_holdouts": 2013,
+          "supported_frame_pairs": 67,
+          "valid_holdouts": 2011,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.12064602053010515
+          }
+        },
+        "YouTube/EOSzItLkZQQ": {
+          "fullpool_holdouts": 705,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 700,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4254192649965665
+          }
+        },
+        "YouTube/Fu0b-YbpPak": {
+          "fullpool_holdouts": 1195,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1195,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.2415410667321067
+          }
+        },
+        "YouTube/H8g9ZBuQmrE": {
+          "fullpool_holdouts": 957,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 957,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.023002816621042383
+          }
+        },
+        "YouTube/HtaNMyVa260": {
+          "fullpool_holdouts": 1272,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1272,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.38083886143780726
+          }
+        },
+        "YouTube/I7Q-x9MorO0": {
+          "fullpool_holdouts": 1373,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1373,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.000944008532974409
+          }
+        },
+        "YouTube/IS3OtsJFP7Y": {
+          "fullpool_holdouts": 1254,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1253,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.6696925566754321
+          }
+        },
+        "YouTube/IUbQjSiZL-Y": {
+          "fullpool_holdouts": 824,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 822,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5815351544690771
+          }
+        },
+        "YouTube/JMzNLlatrys": {
+          "fullpool_holdouts": 1107,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1103,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.45296834424732907
+          }
+        },
+        "YouTube/JX1uj-YRiYo": {
+          "fullpool_holdouts": 513,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 510,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0072978527195864
+          }
+        },
+        "YouTube/JvtJRvTKzvw": {
+          "fullpool_holdouts": 1439,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1439,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.000391247891330774
+          }
+        },
+        "YouTube/KUdBvuRaAbk": {
+          "fullpool_holdouts": 1202,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1201,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0025977714351894444
+          }
+        },
+        "YouTube/LFPYYYZstjg": {
+          "fullpool_holdouts": 1183,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1183,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5283265091969569
+          }
+        },
+        "YouTube/Or8dXBSS_LM": {
+          "fullpool_holdouts": 1118,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 1118,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.896320395583002
+          }
+        },
+        "YouTube/PQkE02amSDY": {
+          "fullpool_holdouts": 892,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 885,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5582354343373266
+          }
+        },
+        "YouTube/Q5SutMM8H4I": {
+          "fullpool_holdouts": 766,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 766,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.9065261086305445
+          }
+        },
+        "YouTube/QEFmA2nj12w": {
+          "fullpool_holdouts": 1409,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1409,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.07259619023610261
+          }
+        },
+        "YouTube/Q_701AtuEbE": {
+          "fullpool_holdouts": 1080,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 1080,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0024927047519880882
+          }
+        },
+        "YouTube/QlXEyPOUMUg": {
+          "fullpool_holdouts": 1160,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 1160,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1098581118451485
+          }
+        },
+        "YouTube/Rf1XKstMa4E": {
+          "fullpool_holdouts": 863,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 862,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1930101850988068
+          }
+        },
+        "YouTube/SA-if-DMT7E": {
+          "fullpool_holdouts": 887,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 874,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.011196812462790912
+          }
+        },
+        "YouTube/TcB0IFBwk-k": {
+          "fullpool_holdouts": 936,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 935,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.00020687311225376552
+          }
+        },
+        "YouTube/VTEcwSCLwLg": {
+          "fullpool_holdouts": 408,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 359,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0271203202195263
+          }
+        },
+        "YouTube/Vl9zODoJMIU": {
+          "fullpool_holdouts": 766,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 752,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2821566457001797
+          }
+        },
+        "YouTube/WKqbLbU68wU": {
+          "fullpool_holdouts": 5648,
+          "supported_frame_pairs": 223,
+          "valid_holdouts": 5647,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.08221250269404447
+          }
+        },
+        "YouTube/WwmfBwEMP6s": {
+          "fullpool_holdouts": 946,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 946,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1865780721314795
+          }
+        },
+        "YouTube/XOe9GeojzCs": {
+          "fullpool_holdouts": 16367,
+          "supported_frame_pairs": 662,
+          "valid_holdouts": 16201,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2443035672232738
+          }
+        },
+        "YouTube/XV_FF3WC7kA": {
+          "fullpool_holdouts": 5784,
+          "supported_frame_pairs": 298,
+          "valid_holdouts": 5772,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.16950139004115222
+          }
+        },
+        "YouTube/Y0DKz3JCq3I": {
+          "fullpool_holdouts": 781,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 774,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.1855545838171184
+          }
+        },
+        "YouTube/YAAUPjq-L-Q": {
+          "fullpool_holdouts": 1836,
+          "supported_frame_pairs": 67,
+          "valid_holdouts": 1831,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1872962213640443
+          }
+        },
+        "YouTube/YD5C5LX7j4k": {
+          "fullpool_holdouts": 1201,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1201,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.5568110207066697
+          }
+        },
+        "YouTube/Z11ALGaUmH0": {
+          "fullpool_holdouts": 896,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 889,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5901288096301796
+          }
+        },
+        "YouTube/ZbeMNLwASVo": {
+          "fullpool_holdouts": 4992,
+          "supported_frame_pairs": 187,
+          "valid_holdouts": 4929,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.021495594913963873
+          }
+        },
+        "YouTube/Zyo70ZiXmYY": {
+          "fullpool_holdouts": 1417,
+          "supported_frame_pairs": 37,
+          "valid_holdouts": 1414,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.20986985730545016
+          }
+        },
+        "YouTube/aboKQqtoowA": {
+          "fullpool_holdouts": 1183,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1183,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5076174332987653
+          }
+        },
+        "YouTube/bFTTE4TV-ek": {
+          "fullpool_holdouts": 1421,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1421,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0007304948954160028
+          }
+        },
+        "YouTube/bLoWh2xbm6o": {
+          "fullpool_holdouts": 1403,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1403,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.2247610188736178
+          }
+        },
+        "YouTube/blDEcY6HZUU": {
+          "fullpool_holdouts": 455,
+          "supported_frame_pairs": 22,
+          "valid_holdouts": 453,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5788119224816115
+          }
+        },
+        "YouTube/c0FxOPxBaac": {
+          "fullpool_holdouts": 809,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 806,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6505125659548641
+          }
+        },
+        "YouTube/cB83GjrvoeE": {
+          "fullpool_holdouts": 872,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 872,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.007022204702520838
+          }
+        },
+        "YouTube/cLiJgvrDlWw": {
+          "fullpool_holdouts": 440,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 428,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.19733352605996218
+          }
+        },
+        "YouTube/d-orB-PokJw": {
+          "fullpool_holdouts": 492,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 466,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.034751915781465706
+          }
+        },
+        "YouTube/dYAA0JLFrTc": {
+          "fullpool_holdouts": 373,
+          "supported_frame_pairs": 40,
+          "valid_holdouts": 343,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -1.2828219063257174
+          }
+        },
+        "YouTube/dZZqaYgPrY0": {
+          "fullpool_holdouts": 927,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 926,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.08393479636485261
+          }
+        },
+        "YouTube/dtlXB2kt09k": {
+          "fullpool_holdouts": 772,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 772,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0019327238591729816
+          }
+        },
+        "YouTube/eXklJqhFx8E": {
+          "fullpool_holdouts": 1923,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1923,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 6.116044395721858e-05
+          }
+        },
+        "YouTube/ef5NncrTQu4": {
+          "fullpool_holdouts": 479,
+          "supported_frame_pairs": 20,
+          "valid_holdouts": 476,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6324843056756513
+          }
+        },
+        "YouTube/f9U2VDJTIhg": {
+          "fullpool_holdouts": 1170,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1170,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.8901523282646109
+          }
+        },
+        "YouTube/h3-lxgAoXwI": {
+          "fullpool_holdouts": 1492,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1492,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0003989221103725788
+          }
+        },
+        "YouTube/hL-ePuEk4_M": {
+          "fullpool_holdouts": 1083,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1083,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2123999001922195
+          }
+        },
+        "YouTube/hg9scj8FyjY": {
+          "fullpool_holdouts": 532,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 469,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.28872329313305584
+          }
+        },
+        "YouTube/iSjk42F0rvM": {
+          "fullpool_holdouts": 1398,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1398,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.037514569582772155
+          }
+        },
+        "YouTube/jO3vuJ4xhns": {
+          "fullpool_holdouts": 1279,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 1279,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5282850096304759
+          }
+        },
+        "YouTube/kM1naurrexk": {
+          "fullpool_holdouts": 706,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 697,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9945097578123415
+          }
+        },
+        "YouTube/lC0HkItqIqA": {
+          "fullpool_holdouts": 600,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 599,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8423525080510978
+          }
+        },
+        "YouTube/mThUfYcea3I": {
+          "fullpool_holdouts": 554,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 538,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.20053283237669836
+          }
+        },
+        "YouTube/mkcDANJjDcM": {
+          "fullpool_holdouts": 1498,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1498,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.08648260122624797
+          }
+        },
+        "YouTube/mq7Wv-5qJwc": {
+          "fullpool_holdouts": 382,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 333,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.21041958149600176
+          }
+        },
+        "YouTube/nKsIbi_R02U": {
+          "fullpool_holdouts": 1248,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1245,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1304258962733972
+          }
+        },
+        "YouTube/na6zkG7dl3A": {
+          "fullpool_holdouts": 917,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 917,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.6538791653665497
+          }
+        },
+        "YouTube/od2IpoFxeMI": {
+          "fullpool_holdouts": 862,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 859,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.7278180630137163
+          }
+        },
+        "YouTube/owDp3KOHmu8": {
+          "fullpool_holdouts": 578,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 574,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5809891162032997
+          }
+        },
+        "YouTube/pI8tpZLBcFk": {
+          "fullpool_holdouts": 780,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 779,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7601594308813386
+          }
+        },
+        "YouTube/qlPC7oMm93g": {
+          "fullpool_holdouts": 1622,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1622,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.10769431717366344
+          }
+        },
+        "YouTube/rin4oz7Fego": {
+          "fullpool_holdouts": 1678,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1678,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.1099824441747854
+          }
+        },
+        "YouTube/s54UiLm7JLU": {
+          "fullpool_holdouts": 1119,
+          "supported_frame_pairs": 38,
+          "valid_holdouts": 1119,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.4283091950803593
+          }
+        },
+        "YouTube/sRd38UFfp6c": {
+          "fullpool_holdouts": 540,
+          "supported_frame_pairs": 37,
+          "valid_holdouts": 537,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.02101904874787675
+          }
+        },
+        "YouTube/tvzrxfgWSc4": {
+          "fullpool_holdouts": 1811,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1811,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0005924777219872752
+          }
+        },
+        "YouTube/u40AQIBH_Gs": {
+          "fullpool_holdouts": 1596,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1596,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0221187600095916
+          }
+        },
+        "YouTube/uqUfP7ugJp0": {
+          "fullpool_holdouts": 1356,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1350,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2526546174812408
+          }
+        },
+        "YouTube/uwW0ejeosmk": {
+          "fullpool_holdouts": 2854,
+          "supported_frame_pairs": 117,
+          "valid_holdouts": 2846,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.23829053406609746
+          }
+        },
+        "YouTube/v0N4o4Px8jQ": {
+          "fullpool_holdouts": 1291,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1290,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0587816035571598
+          }
+        },
+        "YouTube/vbQwxMme5yk": {
+          "fullpool_holdouts": 989,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 988,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.19528313055883517
+          }
+        },
+        "YouTube/vrWYdPeIUqw": {
+          "fullpool_holdouts": 905,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 904,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.3805309674997928
+          }
+        },
+        "YouTube/yZGRVcIKU6Q": {
+          "fullpool_holdouts": 1592,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1560,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0004785211190814841
+          }
+        },
+        "YouTube/yb7EbSnIAqM": {
+          "fullpool_holdouts": 1268,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1268,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.8325563336649737
+          }
+        },
+        "YouTube/z-fsLpGHq6o": {
+          "fullpool_holdouts": 8252,
+          "supported_frame_pairs": 256,
+          "valid_holdouts": 8244,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0363662820201737
+          }
+        },
+        "YouTube/zVN1SBxfR40": {
+          "fullpool_holdouts": 1640,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 1640,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.027826209835557787
+          }
+        },
+        "YouTube/zhdNNmwnYMI": {
+          "fullpool_holdouts": 397,
+          "supported_frame_pairs": 39,
+          "valid_holdouts": 392,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.06191315094916328
+          }
+        }
+      }
+    },
+    "4": {
+      "supported_sources": 340,
+      "source_macro_gain": {
+        "proposal_overlap_excluded": 0.5662395104558168
+      },
+      "by_source": {
+        "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2": {
+          "fullpool_holdouts": 378,
+          "supported_frame_pairs": 16,
+          "valid_holdouts": 378,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.003727859126563343
+          }
+        },
+        "ArgoVerse/0ef28d5c-ae34-370b-99e7-6709e1c4b929": {
+          "fullpool_holdouts": 308,
+          "supported_frame_pairs": 12,
+          "valid_holdouts": 308,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 3.9244717082241394
+          }
+        },
+        "ArgoVerse/26d141ec-f952-3908-b4cc-ae359377424e": {
+          "fullpool_holdouts": 617,
+          "supported_frame_pairs": 24,
+          "valid_holdouts": 617,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.17484016900235333
+          }
+        },
+        "ArgoVerse/5ab2697b-6e3e-3454-a36a-aba2c6f27818": {
+          "fullpool_holdouts": 597,
+          "supported_frame_pairs": 24,
+          "valid_holdouts": 597,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2727821334454434
+          }
+        },
+        "ArgoVerse/649750f3-0163-34eb-a102-7aaf5384eaec": {
+          "fullpool_holdouts": 848,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 848,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.008778424447978566
+          }
+        },
+        "ArgoVerse/6725b340-0cf9-326e-a243-631ffc768df2": {
+          "fullpool_holdouts": 718,
+          "supported_frame_pairs": 23,
+          "valid_holdouts": 718,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.3964822320227446
+          }
+        },
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": {
+          "fullpool_holdouts": 889,
+          "supported_frame_pairs": 24,
+          "valid_holdouts": 888,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.18339613485454365
+          }
+        },
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
+          "fullpool_holdouts": 408,
+          "supported_frame_pairs": 15,
+          "valid_holdouts": 408,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.27787975905072587
+          }
+        },
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
+          "fullpool_holdouts": 862,
+          "supported_frame_pairs": 37,
+          "valid_holdouts": 862,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5012549135926944
+          }
+        },
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
+          "fullpool_holdouts": 1186,
+          "supported_frame_pairs": 50,
+          "valid_holdouts": 1186,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.48491749338591034
+          }
+        },
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
+          "fullpool_holdouts": 907,
+          "supported_frame_pairs": 41,
+          "valid_holdouts": 907,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.04737161783573978
+          }
+        },
+        "ArgoVerse/cb762bb1-7ce1-3ba5-b53d-13c159b532c8": {
+          "fullpool_holdouts": 600,
+          "supported_frame_pairs": 24,
+          "valid_holdouts": 600,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0773581908641927
+          }
+        },
+        "ArgoVerse/dcdcd8b3-0ba1-3218-b2ea-7bb965aad3f0": {
+          "fullpool_holdouts": 270,
+          "supported_frame_pairs": 12,
+          "valid_holdouts": 270,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.17664450508419213
+          }
+        },
+        "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2": {
+          "fullpool_holdouts": 537,
+          "supported_frame_pairs": 26,
+          "valid_holdouts": 537,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4183727369819498
+          }
+        },
+        "ArgoVerse/f9fa3960-537f-3151-a1a3-37a9c0d6d7f7": {
+          "fullpool_holdouts": 306,
+          "supported_frame_pairs": 15,
+          "valid_holdouts": 306,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.13391404390842235
+          }
+        },
+        "BDD/b1d0a191-03dcecc2": {
+          "fullpool_holdouts": 1047,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1047,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.43672177536689316
+          }
+        },
+        "BDD/b20b69d2-e31380a7": {
+          "fullpool_holdouts": 235,
+          "supported_frame_pairs": 9,
+          "valid_holdouts": 228,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.222483293408785
+          }
+        },
+        "BDD/b20b9c19-91e01a50": {
+          "fullpool_holdouts": 468,
+          "supported_frame_pairs": 21,
+          "valid_holdouts": 449,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.026269977617235356
+          }
+        },
+        "BDD/b21c68e6-65674a17": {
+          "fullpool_holdouts": 1008,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1006,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.09564803269235861
+          }
+        },
+        "BDD/b21d5efb-5e2cd743": {
+          "fullpool_holdouts": 99,
+          "supported_frame_pairs": 4,
+          "valid_holdouts": 98,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.04944567146930032
+          }
+        },
+        "BDD/b22a4d9f-73cc8810": {
+          "fullpool_holdouts": 870,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 870,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6425618393855794
+          }
+        },
+        "BDD/b232c7c9-d251d9ee": {
+          "fullpool_holdouts": 1176,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1173,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.018527647313732576
+          }
+        },
+        "BDD/b249e7f2-92d2efad": {
+          "fullpool_holdouts": 870,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 870,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.650113152551634
+          }
+        },
+        "BDD/b262f576-b0373824": {
+          "fullpool_holdouts": 558,
+          "supported_frame_pairs": 19,
+          "valid_holdouts": 558,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.20721295035896212
+          }
+        },
+        "BDD/b27098c3-c443b6e3": {
+          "fullpool_holdouts": 574,
+          "supported_frame_pairs": 21,
+          "valid_holdouts": 574,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.34435133751191543
+          }
+        },
+        "BDD/b27127df-eac9b95e": {
+          "fullpool_holdouts": 870,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 868,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.35621622224471244
+          }
+        },
+        "BDD/b27369f3-9b9598f4": {
+          "fullpool_holdouts": 915,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 915,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2560522704206364
+          }
+        },
+        "BDD/b27688b6-cd521517": {
+          "fullpool_holdouts": 805,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 795,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.27542695016195634
+          }
+        },
+        "BDD/b28ec521-898e11bd": {
+          "fullpool_holdouts": 882,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 861,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2691818357821583
+          }
+        },
+        "BDD/b2bee3e1-80c787bd": {
+          "fullpool_holdouts": 778,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 776,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3150140632636456
+          }
+        },
+        "BDD/b2d502aa-64d3e228": {
+          "fullpool_holdouts": 290,
+          "supported_frame_pairs": 10,
+          "valid_holdouts": 290,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.420634191769879
+          }
+        },
+        "BDD/b2d502aa-f0b28e3e": {
+          "fullpool_holdouts": 385,
+          "supported_frame_pairs": 13,
+          "valid_holdouts": 385,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.03366150351930988
+          }
+        },
+        "BDD/b2dbb793-9f0b2bec": {
+          "fullpool_holdouts": 808,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 780,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.521520560051076
+          }
+        },
+        "BDD/b2de938e-84eab379": {
+          "fullpool_holdouts": 1093,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1093,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.02191273474896681
+          }
+        },
+        "BDD/b2e2b2be-4142962b": {
+          "fullpool_holdouts": 583,
+          "supported_frame_pairs": 21,
+          "valid_holdouts": 583,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.020109243319083054
+          }
+        },
+        "BDD/b2fc7cb5-1635d64b": {
+          "fullpool_holdouts": 512,
+          "supported_frame_pairs": 22,
+          "valid_holdouts": 505,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.340097962727604
+          }
+        },
+        "BDD/b2ff6aba-fa4ac7d7": {
+          "fullpool_holdouts": 1080,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1080,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.13278276845364317
+          }
+        },
+        "BDD/b3079ec6-df7b2d92": {
+          "fullpool_holdouts": 1188,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 1187,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9170572963952051
+          }
+        },
+        "BDD/b30b460d-73d12a29": {
+          "fullpool_holdouts": 557,
+          "supported_frame_pairs": 25,
+          "valid_holdouts": 556,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4260858885400885
+          }
+        },
+        "BDD/b3159650-1ba75f9b": {
+          "fullpool_holdouts": 804,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 795,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6732856231306891
+          }
+        },
+        "BDD/b3378e5e-b7593301": {
+          "fullpool_holdouts": 792,
+          "supported_frame_pairs": 25,
+          "valid_holdouts": 792,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1493582914641629
+          }
+        },
+        "BDD/b33ea6cb-3464fb13": {
+          "fullpool_holdouts": 787,
+          "supported_frame_pairs": 25,
+          "valid_holdouts": 787,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.02700625441990268
+          }
+        },
+        "BDD/b34b1b88-5bfe3b85": {
+          "fullpool_holdouts": 371,
+          "supported_frame_pairs": 20,
+          "valid_holdouts": 371,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.031209310765594432
+          }
+        },
+        "BDD/b368ee71-cf27b7fa": {
+          "fullpool_holdouts": 1173,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1173,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.031043467308662493
+          }
+        },
+        "BDD/b36e0178-2037ca44": {
+          "fullpool_holdouts": 485,
+          "supported_frame_pairs": 20,
+          "valid_holdouts": 483,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.174919281050569
+          }
+        },
+        "BDD/b39fe3cd-227ff7a8": {
+          "fullpool_holdouts": 829,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 827,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0661034790148787
+          }
+        },
+        "BDD/b3a9281a-e8ba5d66": {
+          "fullpool_holdouts": 1144,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1144,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3863155309831968
+          }
+        },
+        "BDD/b3b9ee6e-6d2617d1": {
+          "fullpool_holdouts": 866,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 844,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1933872852639348
+          }
+        },
+        "BDD/b3be4113-1fb56ec4": {
+          "fullpool_holdouts": 847,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 847,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.4198456518823348
+          }
+        },
+        "BDD/b3ce9f98-2dc52573": {
+          "fullpool_holdouts": 609,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 609,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0339259607106035
+          }
+        },
+        "BDD/b3da33d5-a64e7657": {
+          "fullpool_holdouts": 968,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 968,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2595636014686807
+          }
+        },
+        "BDD/b40b0ea3-b242efc9": {
+          "fullpool_holdouts": 980,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 972,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.03781827598649274
+          }
+        },
+        "BDD/b422ec08-d42660b6": {
+          "fullpool_holdouts": 401,
+          "supported_frame_pairs": 16,
+          "valid_holdouts": 401,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5014392644768708
+          }
+        },
+        "BDD/b4235ab3-b305d3e9": {
+          "fullpool_holdouts": 208,
+          "supported_frame_pairs": 13,
+          "valid_holdouts": 208,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.2183899883484473
+          }
+        },
+        "BDD/b4278d1f-dbd0295c": {
+          "fullpool_holdouts": 274,
+          "supported_frame_pairs": 11,
+          "valid_holdouts": 272,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.855640749993473
+          }
+        },
+        "BDD/b4301c7b-da5261f0": {
+          "fullpool_holdouts": 910,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 903,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.11489940753047168
+          }
+        },
+        "BDD/b4466011-05cbc315": {
+          "fullpool_holdouts": 1130,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1130,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0026348793878960353
+          }
+        },
+        "BDD/b4536117-bc85ba28": {
+          "fullpool_holdouts": 983,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 981,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.03243064896731468
+          }
+        },
+        "Charades/0LHWF": {
+          "fullpool_holdouts": 822,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 822,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0013683320795693538
+          }
+        },
+        "Charades/35LUV": {
+          "fullpool_holdouts": 1065,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 1065,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.00016624995913127114
+          }
+        },
+        "Charades/3N1I2": {
+          "fullpool_holdouts": 729,
+          "supported_frame_pairs": 17,
+          "valid_holdouts": 729,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0012631879389807237
+          }
+        },
+        "Charades/48BUM": {
+          "fullpool_holdouts": 513,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 511,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8163875848847768
+          }
+        },
+        "Charades/4H61U": {
+          "fullpool_holdouts": 1020,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 1020,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.00015050438307195866
+          }
+        },
+        "Charades/4K0BP": {
+          "fullpool_holdouts": 855,
+          "supported_frame_pairs": 26,
+          "valid_holdouts": 855,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.00035686836342232895
+          }
+        },
+        "Charades/50E06": {
+          "fullpool_holdouts": 563,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 563,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0004583692226098277
+          }
+        },
+        "Charades/5HPZ1": {
+          "fullpool_holdouts": 952,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 951,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0017497478796004544
+          }
+        },
+        "Charades/6EU06": {
+          "fullpool_holdouts": 575,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 574,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7113694655292288
+          }
+        },
+        "Charades/6FV5P": {
+          "fullpool_holdouts": 799,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 798,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0001989619409776695
+          }
+        },
+        "Charades/7177T": {
+          "fullpool_holdouts": 1028,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 1028,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0029921709813804914
+          }
+        },
+        "Charades/735W9": {
+          "fullpool_holdouts": 1148,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 1148,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.007750737631882805
+          }
+        },
+        "Charades/7P0JX": {
+          "fullpool_holdouts": 531,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 528,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5463567905989817
+          }
+        },
+        "Charades/8Q0EY": {
+          "fullpool_holdouts": 1100,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 1090,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.00022955343165118394
+          }
+        },
+        "Charades/9M48H": {
+          "fullpool_holdouts": 1018,
+          "supported_frame_pairs": 26,
+          "valid_holdouts": 1018,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.00032077869548877846
+          }
+        },
+        "Charades/9UU4W": {
+          "fullpool_holdouts": 1054,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 1054,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -1.4561921621938508e-05
+          }
+        },
+        "Charades/A2EY4": {
+          "fullpool_holdouts": 936,
+          "supported_frame_pairs": 26,
+          "valid_holdouts": 936,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.000562111503425856
+          }
+        },
+        "Charades/AIOTI": {
+          "fullpool_holdouts": 485,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 477,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.43696534603490944
+          }
+        },
+        "Charades/AVSN8": {
+          "fullpool_holdouts": 689,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 689,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5287630526515723
+          }
+        },
+        "Charades/BI6Y4": {
+          "fullpool_holdouts": 1236,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 1236,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3481000786609023
+          }
+        },
+        "Charades/CF9QP": {
+          "fullpool_holdouts": 492,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 486,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7410678133813577
+          }
+        },
+        "Charades/E8468": {
+          "fullpool_holdouts": 586,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 586,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.316171140768293
+          }
+        },
+        "Charades/E9FY2": {
+          "fullpool_holdouts": 516,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 514,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.04393249614576894
+          }
+        },
+        "Charades/EIKUN": {
+          "fullpool_holdouts": 491,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 491,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5179143080392363
+          }
+        },
+        "Charades/FHAV0": {
+          "fullpool_holdouts": 641,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 641,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.29796981667652295
+          }
+        },
+        "Charades/FZAEP": {
+          "fullpool_holdouts": 997,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 997,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.00012449437386390772
+          }
+        },
+        "Charades/G2DIN": {
+          "fullpool_holdouts": 753,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 753,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.04393997932829708
+          }
+        },
+        "Charades/G8NEV": {
+          "fullpool_holdouts": 874,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 874,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.002171839453634637
+          }
+        },
+        "Charades/GL2JW": {
+          "fullpool_holdouts": 723,
+          "supported_frame_pairs": 20,
+          "valid_holdouts": 723,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0019032103006111517
+          }
+        },
+        "Charades/GQ341": {
+          "fullpool_holdouts": 1047,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 1047,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 7.354152977484286e-05
+          }
+        },
+        "Charades/HOYUT": {
+          "fullpool_holdouts": 704,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 704,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.006125914327199306
+          }
+        },
+        "Charades/HSKVH": {
+          "fullpool_holdouts": 187,
+          "supported_frame_pairs": 9,
+          "valid_holdouts": 187,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.05735042367614662
+          }
+        },
+        "Charades/HYD3N": {
+          "fullpool_holdouts": 467,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 461,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6798398830915439
+          }
+        },
+        "Charades/IIL9C": {
+          "fullpool_holdouts": 531,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 521,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.04580908895549012
+          }
+        },
+        "Charades/IULK6": {
+          "fullpool_holdouts": 981,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 981,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.000675846854866438
+          }
+        },
+        "Charades/JMPKP": {
+          "fullpool_holdouts": 791,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 791,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0020586543266278017
+          }
+        },
+        "Charades/KA3ER": {
+          "fullpool_holdouts": 915,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 910,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0399257920245601
+          }
+        },
+        "Charades/KPHP5": {
+          "fullpool_holdouts": 535,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 524,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.7354872065617029
+          }
+        },
+        "Charades/LHTSI": {
+          "fullpool_holdouts": 848,
+          "supported_frame_pairs": 22,
+          "valid_holdouts": 848,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.00040982829523472083
+          }
+        },
+        "Charades/M6ERH": {
+          "fullpool_holdouts": 1096,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 1096,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.00440964338334197
+          }
+        },
+        "Charades/MZ9X7": {
+          "fullpool_holdouts": 370,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 352,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.26836568762254726
+          }
+        },
+        "Charades/NPEA3": {
+          "fullpool_holdouts": 533,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 531,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6809485516122222
+          }
+        },
+        "Charades/O87OF": {
+          "fullpool_holdouts": 835,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 835,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0011580828407141014
+          }
+        },
+        "Charades/O8DER": {
+          "fullpool_holdouts": 542,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 540,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8088178986364094
+          }
+        },
+        "Charades/PC7H2": {
+          "fullpool_holdouts": 897,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 896,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0007648532308494241
+          }
+        },
+        "Charades/PEWH4": {
+          "fullpool_holdouts": 748,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 748,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.002884482878191716
+          }
+        },
+        "Charades/PJUM0": {
+          "fullpool_holdouts": 1224,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 1224,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -4.2326017152946714e-05
+          }
+        },
+        "Charades/QBUAT": {
+          "fullpool_holdouts": 801,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 801,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.004086445807074219
+          }
+        },
+        "Charades/QCPXJ": {
+          "fullpool_holdouts": 1282,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 1282,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.00036060275751845293
+          }
+        },
+        "Charades/QHU9R": {
+          "fullpool_holdouts": 834,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 834,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.010138705589005485
+          }
+        },
+        "Charades/QZZPS": {
+          "fullpool_holdouts": 448,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 448,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.014579110050532534
+          }
+        },
+        "Charades/S7OTQ": {
+          "fullpool_holdouts": 1018,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 1018,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.00032432316113004817
+          }
+        },
+        "Charades/SROEU": {
+          "fullpool_holdouts": 810,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 810,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.041207372943652766
+          }
+        },
+        "Charades/SVA4D": {
+          "fullpool_holdouts": 859,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 859,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.620493357303872
+          }
+        },
+        "Charades/TQO6O": {
+          "fullpool_holdouts": 427,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 418,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.011111748966948424
+          }
+        },
+        "Charades/U08M9": {
+          "fullpool_holdouts": 648,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 647,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.007199440782177261
+          }
+        },
+        "Charades/U4J2Q": {
+          "fullpool_holdouts": 1124,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 1124,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0002494971812423245
+          }
+        },
+        "Charades/UDGP2": {
+          "fullpool_holdouts": 837,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 837,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2975186405785856
+          }
+        },
+        "Charades/V7YEJ": {
+          "fullpool_holdouts": 876,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 876,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.000591733289298127
+          }
+        },
+        "Charades/W97NR": {
+          "fullpool_holdouts": 689,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 685,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.005290379794167831
+          }
+        },
+        "Charades/X9LP4": {
+          "fullpool_holdouts": 712,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 712,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0016098447779435074
+          }
+        },
+        "Charades/Y3M3W": {
+          "fullpool_holdouts": 978,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 978,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0009983427736706882
+          }
+        },
+        "Charades/YE6UZ": {
+          "fullpool_holdouts": 1334,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 1334,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0028789526631860913
+          }
+        },
+        "Charades/YK49T": {
+          "fullpool_holdouts": 644,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 644,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.004875449448470824
+          }
+        },
+        "Charades/YXQWH": {
+          "fullpool_holdouts": 551,
+          "supported_frame_pairs": 26,
+          "valid_holdouts": 549,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2960451946224224
+          }
+        },
+        "Charades/Z6HEA": {
+          "fullpool_holdouts": 506,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 504,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.08628360357105469
+          }
+        },
+        "LaSOT/airplane-4": {
+          "fullpool_holdouts": 202,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 122,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 4.324450126894815
+          }
+        },
+        "LaSOT/basketball-11": {
+          "fullpool_holdouts": 1154,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1154,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.769626913503375
+          }
+        },
+        "LaSOT/basketball-4": {
+          "fullpool_holdouts": 1393,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1393,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.328887547026763
+          }
+        },
+        "LaSOT/basketball-6": {
+          "fullpool_holdouts": 1071,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1071,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.09804292651626346
+          }
+        },
+        "LaSOT/bicycle-4": {
+          "fullpool_holdouts": 1050,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1050,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.713573135471019
+          }
+        },
+        "LaSOT/bicycle-7": {
+          "fullpool_holdouts": 781,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 781,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.09938067635751709
+          }
+        },
+        "LaSOT/bicycle-9": {
+          "fullpool_holdouts": 843,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 843,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.4392393449867802
+          }
+        },
+        "LaSOT/bird-11": {
+          "fullpool_holdouts": 443,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 443,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9513054516322703
+          }
+        },
+        "LaSOT/bird-12": {
+          "fullpool_holdouts": 273,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 248,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -1.1113528473541567
+          }
+        },
+        "LaSOT/bird-17": {
+          "fullpool_holdouts": 482,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 476,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.32499023772945695
+          }
+        },
+        "LaSOT/boat-4": {
+          "fullpool_holdouts": 542,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 521,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.949297598951841
+          }
+        },
+        "LaSOT/boat-9": {
+          "fullpool_holdouts": 283,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 250,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.9208698071224801
+          }
+        },
+        "LaSOT/book-11": {
+          "fullpool_holdouts": 1451,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1451,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8661240649517576
+          }
+        },
+        "LaSOT/book-15": {
+          "fullpool_holdouts": 766,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 764,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3266075230996094
+          }
+        },
+        "LaSOT/book-2": {
+          "fullpool_holdouts": 513,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 482,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.03319078129670813
+          }
+        },
+        "LaSOT/book-3": {
+          "fullpool_holdouts": 951,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 950,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.017562195159139683
+          }
+        },
+        "LaSOT/bottle-12": {
+          "fullpool_holdouts": 1172,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1172,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.1597427227475114
+          }
+        },
+        "LaSOT/bus-19": {
+          "fullpool_holdouts": 53,
+          "supported_frame_pairs": 3,
+          "valid_holdouts": 51,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 3.203818331670636
+          }
+        },
+        "LaSOT/bus-8": {
+          "fullpool_holdouts": 1103,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1101,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6401190287228572
+          }
+        },
+        "LaSOT/car-17": {
+          "fullpool_holdouts": 866,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 852,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.44694590095580433
+          }
+        },
+        "LaSOT/cat-1": {
+          "fullpool_holdouts": 136,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 89,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -1.3706000987689075
+          }
+        },
+        "LaSOT/cat-13": {
+          "fullpool_holdouts": 623,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 623,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9657551622715062
+          }
+        },
+        "LaSOT/cat-4": {
+          "fullpool_holdouts": 246,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 211,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.11147938743675183
+          }
+        },
+        "LaSOT/cat-7": {
+          "fullpool_holdouts": 1206,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1206,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7312810950959557
+          }
+        },
+        "LaSOT/cattle-14": {
+          "fullpool_holdouts": 872,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 872,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8763524818811589
+          }
+        },
+        "LaSOT/cattle-9": {
+          "fullpool_holdouts": 454,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 454,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 3.6665898636773195
+          }
+        },
+        "LaSOT/cup-9": {
+          "fullpool_holdouts": 304,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 277,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.16654847254205443
+          }
+        },
+        "LaSOT/deer-15": {
+          "fullpool_holdouts": 259,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 253,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -1.016048522198054
+          }
+        },
+        "LaSOT/deer-4": {
+          "fullpool_holdouts": 300,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 293,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.16356443719707914
+          }
+        },
+        "LaSOT/dog-13": {
+          "fullpool_holdouts": 817,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 809,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.5032839879406679
+          }
+        },
+        "LaSOT/electricfan-13": {
+          "fullpool_holdouts": 1058,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1058,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.20069693505086095
+          }
+        },
+        "LaSOT/elephant-14": {
+          "fullpool_holdouts": 469,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 459,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7091091872607284
+          }
+        },
+        "LaSOT/elephant-6": {
+          "fullpool_holdouts": 291,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 273,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.40852293953285684
+          }
+        },
+        "LaSOT/flag-5": {
+          "fullpool_holdouts": 533,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 532,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5979838273506224
+          }
+        },
+        "LaSOT/giraffe-19": {
+          "fullpool_holdouts": 645,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 645,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7039101550848043
+          }
+        },
+        "LaSOT/goldfish-17": {
+          "fullpool_holdouts": 749,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 721,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.43849275356172446
+          }
+        },
+        "LaSOT/guitar-9": {
+          "fullpool_holdouts": 656,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 651,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.01295510588825946
+          }
+        },
+        "LaSOT/hat-18": {
+          "fullpool_holdouts": 1818,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1817,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.00020818100926290708
+          }
+        },
+        "LaSOT/helmet-1": {
+          "fullpool_holdouts": 478,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 453,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.06761054298018349
+          }
+        },
+        "LaSOT/helmet-3": {
+          "fullpool_holdouts": 666,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 666,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.871962544468069
+          }
+        },
+        "LaSOT/kite-18": {
+          "fullpool_holdouts": 38,
+          "supported_frame_pairs": 4,
+          "valid_holdouts": 37,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.43946033972864884
+          }
+        },
+        "LaSOT/lion-12": {
+          "fullpool_holdouts": 777,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 776,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2374689567605196
+          }
+        },
+        "LaSOT/lion-15": {
+          "fullpool_holdouts": 906,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 900,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.1991548770438634
+          }
+        },
+        "LaSOT/lion-9": {
+          "fullpool_holdouts": 272,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 246,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -1.2445485295260867
+          }
+        },
+        "LaSOT/lizard-16": {
+          "fullpool_holdouts": 601,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 587,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.1957875830945175
+          }
+        },
+        "LaSOT/microphone-12": {
+          "fullpool_holdouts": 1137,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1137,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8523890690886116
+          }
+        },
+        "LaSOT/microphone-13": {
+          "fullpool_holdouts": 976,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 976,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7699364805453105
+          }
+        },
+        "LaSOT/microphone-3": {
+          "fullpool_holdouts": 897,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 897,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.25441991618014587
+          }
+        },
+        "LaSOT/monkey-16": {
+          "fullpool_holdouts": 850,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 850,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3250428223093874
+          }
+        },
+        "LaSOT/monkey-19": {
+          "fullpool_holdouts": 360,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 354,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.22481631489705464
+          }
+        },
+        "LaSOT/motorcycle-19": {
+          "fullpool_holdouts": 357,
+          "supported_frame_pairs": 25,
+          "valid_holdouts": 356,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 4.049817140582754
+          }
+        },
+        "LaSOT/person-2": {
+          "fullpool_holdouts": 1144,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1144,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1355602537512747
+          }
+        },
+        "LaSOT/person-3": {
+          "fullpool_holdouts": 913,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 913,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5732702248901946
+          }
+        },
+        "LaSOT/person-7": {
+          "fullpool_holdouts": 808,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 808,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0720120300345872
+          }
+        },
+        "LaSOT/pool-17": {
+          "fullpool_holdouts": 724,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 716,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.053598836971964
+          }
+        },
+        "LaSOT/rabbit-17": {
+          "fullpool_holdouts": 647,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 638,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1179216206645489
+          }
+        },
+        "LaSOT/racing-14": {
+          "fullpool_holdouts": 610,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 595,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.1780507434781915
+          }
+        },
+        "LaSOT/racing-20": {
+          "fullpool_holdouts": 656,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 649,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.36764144051775205
+          }
+        },
+        "LaSOT/shark-20": {
+          "fullpool_holdouts": 130,
+          "supported_frame_pairs": 25,
+          "valid_holdouts": 58,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -3.4988947157250077
+          }
+        },
+        "LaSOT/sheep-15": {
+          "fullpool_holdouts": 443,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 443,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.5925445926199664
+          }
+        },
+        "LaSOT/skateboard-1": {
+          "fullpool_holdouts": 387,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 380,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2956639213714266
+          }
+        },
+        "LaSOT/skateboard-18": {
+          "fullpool_holdouts": 432,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 414,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.0310569656622626
+          }
+        },
+        "LaSOT/skateboard-8": {
+          "fullpool_holdouts": 407,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 401,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.930521174567001
+          }
+        },
+        "LaSOT/spider-5": {
+          "fullpool_holdouts": 811,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 780,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.79615973046777
+          }
+        },
+        "LaSOT/surfboard-8": {
+          "fullpool_holdouts": 378,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 376,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3314990497746208
+          }
+        },
+        "LaSOT/swing-18": {
+          "fullpool_holdouts": 946,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 946,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9257773033061725
+          }
+        },
+        "LaSOT/tank-12": {
+          "fullpool_holdouts": 556,
+          "supported_frame_pairs": 20,
+          "valid_holdouts": 556,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 3.783795304745266
+          }
+        },
+        "LaSOT/tank-2": {
+          "fullpool_holdouts": 1164,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1164,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.1952865658551484
+          }
+        },
+        "LaSOT/tiger-13": {
+          "fullpool_holdouts": 821,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 821,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.362660894225405
+          }
+        },
+        "LaSOT/truck-10": {
+          "fullpool_holdouts": 1171,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1170,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5933575035117532
+          }
+        },
+        "LaSOT/truck-5": {
+          "fullpool_holdouts": 966,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 960,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9008972882491464
+          }
+        },
+        "LaSOT/umbrella-18": {
+          "fullpool_holdouts": 782,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 782,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.237131343679985
+          }
+        },
+        "LaSOT/volleyball-18": {
+          "fullpool_holdouts": 1441,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1441,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.04600683229213451
+          }
+        },
+        "LaSOT/volleyball-19": {
+          "fullpool_holdouts": 1202,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1202,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0677898937224444
+          }
+        },
+        "LaSOT/volleyball-20": {
+          "fullpool_holdouts": 1409,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1409,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.026244649860682895
+          }
+        },
+        "LaSOT/zebra-14": {
+          "fullpool_holdouts": 377,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 377,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8877701942862939
+          }
+        },
+        "LaSOT/zebra-18": {
+          "fullpool_holdouts": 220,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 195,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -3.1893363006873883
+          }
+        },
+        "LaSOT/zebra-19": {
+          "fullpool_holdouts": 760,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 760,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.1795965687759162
+          }
+        },
+        "YFCC100M/v_12238710b8f3e71839ffbf64f3d82f11": {
+          "fullpool_holdouts": 962,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 960,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2402668918008792
+          }
+        },
+        "YFCC100M/v_23584c2660351f12cffe1399c47ce870": {
+          "fullpool_holdouts": 796,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 793,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4433603363006282
+          }
+        },
+        "YFCC100M/v_2501d6da0cfca808ee42aceeeb45bf5": {
+          "fullpool_holdouts": 652,
+          "supported_frame_pairs": 25,
+          "valid_holdouts": 652,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5467829350483135
+          }
+        },
+        "YFCC100M/v_2e57298c79de27c95ed26fbe5b182b": {
+          "fullpool_holdouts": 1083,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1083,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.09833914548124341
+          }
+        },
+        "YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461": {
+          "fullpool_holdouts": 1054,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1054,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6153762837387498
+          }
+        },
+        "YFCC100M/v_3a81943ebfae3fbc2a0d36686dbdb1d": {
+          "fullpool_holdouts": 637,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 627,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6275074084735162
+          }
+        },
+        "YFCC100M/v_3d84802a7129a8649f38d2bcf2debc3": {
+          "fullpool_holdouts": 814,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 814,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.34388449143491673
+          }
+        },
+        "YFCC100M/v_3ed691e9601aa3b9fe30a61a1232af3": {
+          "fullpool_holdouts": 641,
+          "supported_frame_pairs": 30,
+          "valid_holdouts": 629,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.16030620487346425
+          }
+        },
+        "YFCC100M/v_414b7f18dc5ebf7b56972ae8e82215": {
+          "fullpool_holdouts": 492,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 487,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.19108644485972875
+          }
+        },
+        "YFCC100M/v_4a3feaf750f9ca8ed67a8461deb0a8f0": {
+          "fullpool_holdouts": 1101,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1101,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6269009461597415
+          }
+        },
+        "YFCC100M/v_4e83e77f55b758f728818ccc4fbf2629": {
+          "fullpool_holdouts": 949,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 949,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.4760697239504976
+          }
+        },
+        "YFCC100M/v_516e7b2db9b5ec69bbee5f536bf77f3": {
+          "fullpool_holdouts": 854,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 854,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.616114756974557
+          }
+        },
+        "YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b": {
+          "fullpool_holdouts": 787,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 778,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4171225618189109
+          }
+        },
+        "YFCC100M/v_5d2225140e1aa84f7419b3c9871e7bf": {
+          "fullpool_holdouts": 593,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 592,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7129047680607459
+          }
+        },
+        "YFCC100M/v_6f26504bb5244ddd4469376ecc9d29d": {
+          "fullpool_holdouts": 521,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 519,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.40430182687754784
+          }
+        },
+        "YFCC100M/v_6f90a13c795ef37404d95983341df": {
+          "fullpool_holdouts": 1045,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1045,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 4.488499859840329
+          }
+        },
+        "YFCC100M/v_72252bc9435f88bbfb28aac25484f30": {
+          "fullpool_holdouts": 250,
+          "supported_frame_pairs": 11,
+          "valid_holdouts": 250,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.1333477481366827
+          }
+        },
+        "YFCC100M/v_75ae80daae69afcfbae2eea5a980b4a": {
+          "fullpool_holdouts": 82,
+          "supported_frame_pairs": 14,
+          "valid_holdouts": 75,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 6.505302969549484
+          }
+        },
+        "YFCC100M/v_82e9bb97b1a1fdde489511e69126644": {
+          "fullpool_holdouts": 691,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 691,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.2209895353878357
+          }
+        },
+        "YFCC100M/v_8aa7ca8fdb3ea12c15b9b7f338a93b30": {
+          "fullpool_holdouts": 276,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 248,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.1790265845586792
+          }
+        },
+        "YFCC100M/v_9018a07931e02026b3bd6e82489d4624": {
+          "fullpool_holdouts": 925,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 925,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0026382432990281197
+          }
+        },
+        "YFCC100M/v_a556a65c3a85d0de0717b8cef2f219c": {
+          "fullpool_holdouts": 479,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 473,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.42737337398570313
+          }
+        },
+        "YFCC100M/v_a8c41f7b5b7b954d1d395dbd6fb2c3": {
+          "fullpool_holdouts": 315,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 300,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.4685320757384819
+          }
+        },
+        "YFCC100M/v_acffebb61476f6f54f4b357e2fbfb0d5": {
+          "fullpool_holdouts": 1050,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1050,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2730241355875279
+          }
+        },
+        "YFCC100M/v_ae4c865e2aff9a1fd3435ac885b45c": {
+          "fullpool_holdouts": 298,
+          "supported_frame_pairs": 17,
+          "valid_holdouts": 298,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.17971666753088875
+          }
+        },
+        "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20": {
+          "fullpool_holdouts": 713,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 709,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6473893857794385
+          }
+        },
+        "YFCC100M/v_bc4cb41ae520888a4e7cb7cb4224b3a": {
+          "fullpool_holdouts": 965,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 943,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4771299385156367
+          }
+        },
+        "YFCC100M/v_bcfdfcfdc8dfd352d18ce4698eb46": {
+          "fullpool_holdouts": 718,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 715,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.44158286351680226
+          }
+        },
+        "YFCC100M/v_c132c89de7fa33cbbdbe9669d114e33": {
+          "fullpool_holdouts": 595,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 595,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.3043794828475375
+          }
+        },
+        "YFCC100M/v_c794573b23461933fbe96a3b1a2d1de4": {
+          "fullpool_holdouts": 129,
+          "supported_frame_pairs": 24,
+          "valid_holdouts": 60,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -2.1320970657960747
+          }
+        },
+        "YFCC100M/v_d4fa85cf4d613518a6e9e7948102452": {
+          "fullpool_holdouts": 911,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 911,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.23263268729525602
+          }
+        },
+        "YFCC100M/v_d58b6fdb1975c540e531ef6eae855e9e": {
+          "fullpool_holdouts": 612,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 608,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.360970205046117
+          }
+        },
+        "YFCC100M/v_d5d999bcfb4a811b40de7d319e30d150": {
+          "fullpool_holdouts": 549,
+          "supported_frame_pairs": 22,
+          "valid_holdouts": 548,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7222979285317103
+          }
+        },
+        "YFCC100M/v_df4744928b9b4199b5c73344efdce65": {
+          "fullpool_holdouts": 346,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 327,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.36036779250735246
+          }
+        },
+        "YFCC100M/v_e16e325327dd0974bda9bbd7a35118c": {
+          "fullpool_holdouts": 0,
+          "supported_frame_pairs": 0,
+          "valid_holdouts": 0,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": null
+          }
+        },
+        "YFCC100M/v_e2d3c540737396bebd0a4b53b3174e": {
+          "fullpool_holdouts": 498,
+          "supported_frame_pairs": 17,
+          "valid_holdouts": 498,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5932825336733683
+          }
+        },
+        "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40": {
+          "fullpool_holdouts": 910,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 910,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.10444975544306556
+          }
+        },
+        "YFCC100M/v_ea33c680e1f18d71543b8f80815beec": {
+          "fullpool_holdouts": 511,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 506,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.027298934509474317
+          }
+        },
+        "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5": {
+          "fullpool_holdouts": 842,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 842,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.25944153355652577
+          }
+        },
+        "YFCC100M/v_f69ebe5b731d3e87c1a3992ee39c3b7e": {
+          "fullpool_holdouts": 711,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 710,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.16083189567352
+          }
+        },
+        "YFCC100M/v_f729d4f362aea24236153ffc589adac": {
+          "fullpool_holdouts": 975,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 975,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.11367138495071155
+          }
+        },
+        "YFCC100M/v_f93e2640ce4cf8b1195c94764803414": {
+          "fullpool_holdouts": 756,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 753,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.123929519641333
+          }
+        },
+        "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c": {
+          "fullpool_holdouts": 835,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 821,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.17412432851598264
+          }
+        },
+        "YouTube/-6quA485tw8": {
+          "fullpool_holdouts": 1519,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1519,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8071103424807704
+          }
+        },
+        "YouTube/-dQIXiV6gk0": {
+          "fullpool_holdouts": 315,
+          "supported_frame_pairs": 16,
+          "valid_holdouts": 314,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.735279570758915
+          }
+        },
+        "YouTube/1cU81_rjt7s": {
+          "fullpool_holdouts": 352,
+          "supported_frame_pairs": 14,
+          "valid_holdouts": 352,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.49328887654907555
+          }
+        },
+        "YouTube/1mPd_3N5gNQ": {
+          "fullpool_holdouts": 275,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 234,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.16501771488403166
+          }
+        },
+        "YouTube/25eIK85JWi4": {
+          "fullpool_holdouts": 739,
+          "supported_frame_pairs": 29,
+          "valid_holdouts": 739,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0015814671039373015
+          }
+        },
+        "YouTube/313tbNN4J3o": {
+          "fullpool_holdouts": 1017,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1016,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.629654141088897
+          }
+        },
+        "YouTube/4ltcNlAq1wI": {
+          "fullpool_holdouts": 708,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 708,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0800451094120895
+          }
+        },
+        "YouTube/5BDj0ow5hnA": {
+          "fullpool_holdouts": 4089,
+          "supported_frame_pairs": 179,
+          "valid_holdouts": 4070,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2774977270320763
+          }
+        },
+        "YouTube/7SFkVnnp_eE": {
+          "fullpool_holdouts": 665,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 651,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.14343637178167448
+          }
+        },
+        "YouTube/7XQoDEQGqaw": {
+          "fullpool_holdouts": 1634,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1634,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.17915155725193918
+          }
+        },
+        "YouTube/7YULkl7Xm04": {
+          "fullpool_holdouts": 371,
+          "supported_frame_pairs": 25,
+          "valid_holdouts": 362,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6125202628522475
+          }
+        },
+        "YouTube/7_xkhnbnI7M": {
+          "fullpool_holdouts": 551,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 524,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.01788258518636625
+          }
+        },
+        "YouTube/87ksUt7mO3o": {
+          "fullpool_holdouts": 1230,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1230,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3914439730263608
+          }
+        },
+        "YouTube/9sZI9IdgXZY": {
+          "fullpool_holdouts": 788,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 785,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.4896875721235936
+          }
+        },
+        "YouTube/AjH8TFfZIGY": {
+          "fullpool_holdouts": 884,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 855,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.00847580150374537
+          }
+        },
+        "YouTube/C48cXamb2B0": {
+          "fullpool_holdouts": 752,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 751,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.011457061279216096
+          }
+        },
+        "YouTube/Ce7YdX2cido": {
+          "fullpool_holdouts": 324,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 304,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.1603862615779741
+          }
+        },
+        "YouTube/D8Vhxbho1fY": {
+          "fullpool_holdouts": 1636,
+          "supported_frame_pairs": 61,
+          "valid_holdouts": 1635,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.05034955899319072
+          }
+        },
+        "YouTube/EOSzItLkZQQ": {
+          "fullpool_holdouts": 541,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 537,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.671300304914988
+          }
+        },
+        "YouTube/Fu0b-YbpPak": {
+          "fullpool_holdouts": 897,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 897,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 3.4894580414936534
+          }
+        },
+        "YouTube/H8g9ZBuQmrE": {
+          "fullpool_holdouts": 779,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 779,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.018314661912962483
+          }
+        },
+        "YouTube/HtaNMyVa260": {
+          "fullpool_holdouts": 989,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 989,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.07182069484668402
+          }
+        },
+        "YouTube/I7Q-x9MorO0": {
+          "fullpool_holdouts": 1139,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1139,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0005382957263466722
+          }
+        },
+        "YouTube/IS3OtsJFP7Y": {
+          "fullpool_holdouts": 967,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 965,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.720686446084361
+          }
+        },
+        "YouTube/IUbQjSiZL-Y": {
+          "fullpool_holdouts": 712,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 710,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.40444903527366244
+          }
+        },
+        "YouTube/JMzNLlatrys": {
+          "fullpool_holdouts": 906,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 899,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.3830972420232337
+          }
+        },
+        "YouTube/JX1uj-YRiYo": {
+          "fullpool_holdouts": 442,
+          "supported_frame_pairs": 32,
+          "valid_holdouts": 440,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9847281042549558
+          }
+        },
+        "YouTube/JvtJRvTKzvw": {
+          "fullpool_holdouts": 1206,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1206,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0011587833652148577
+          }
+        },
+        "YouTube/KUdBvuRaAbk": {
+          "fullpool_holdouts": 1030,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1030,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.004423137839206062
+          }
+        },
+        "YouTube/LFPYYYZstjg": {
+          "fullpool_holdouts": 970,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 970,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.8531061704112789
+          }
+        },
+        "YouTube/Or8dXBSS_LM": {
+          "fullpool_holdouts": 886,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 886,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.766741475121362
+          }
+        },
+        "YouTube/PQkE02amSDY": {
+          "fullpool_holdouts": 711,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 704,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5703138267691565
+          }
+        },
+        "YouTube/Q5SutMM8H4I": {
+          "fullpool_holdouts": 595,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 595,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9698185110456881
+          }
+        },
+        "YouTube/QEFmA2nj12w": {
+          "fullpool_holdouts": 1209,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1209,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.14224404793360487
+          }
+        },
+        "YouTube/Q_701AtuEbE": {
+          "fullpool_holdouts": 916,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 916,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.005046345370668169
+          }
+        },
+        "YouTube/QlXEyPOUMUg": {
+          "fullpool_holdouts": 976,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 976,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.22415132075179584
+          }
+        },
+        "YouTube/Rf1XKstMa4E": {
+          "fullpool_holdouts": 709,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 708,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4422636020328612
+          }
+        },
+        "YouTube/SA-if-DMT7E": {
+          "fullpool_holdouts": 813,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 803,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.03464621581026479
+          }
+        },
+        "YouTube/TcB0IFBwk-k": {
+          "fullpool_holdouts": 806,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 803,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0014464438557464068
+          }
+        },
+        "YouTube/VTEcwSCLwLg": {
+          "fullpool_holdouts": 349,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 312,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.09832950322941372
+          }
+        },
+        "YouTube/Vl9zODoJMIU": {
+          "fullpool_holdouts": 654,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 643,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.21104496079125462
+          }
+        },
+        "YouTube/WKqbLbU68wU": {
+          "fullpool_holdouts": 4672,
+          "supported_frame_pairs": 205,
+          "valid_holdouts": 4671,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.29572685387747516
+          }
+        },
+        "YouTube/WwmfBwEMP6s": {
+          "fullpool_holdouts": 785,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 785,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.15787888331851685
+          }
+        },
+        "YouTube/XOe9GeojzCs": {
+          "fullpool_holdouts": 13479,
+          "supported_frame_pairs": 608,
+          "valid_holdouts": 13326,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.20454472338553384
+          }
+        },
+        "YouTube/XV_FF3WC7kA": {
+          "fullpool_holdouts": 4644,
+          "supported_frame_pairs": 274,
+          "valid_holdouts": 4637,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.168288034501527
+          }
+        },
+        "YouTube/Y0DKz3JCq3I": {
+          "fullpool_holdouts": 658,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 655,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.4954251537889793
+          }
+        },
+        "YouTube/YAAUPjq-L-Q": {
+          "fullpool_holdouts": 1521,
+          "supported_frame_pairs": 61,
+          "valid_holdouts": 1519,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.43240395394727293
+          }
+        },
+        "YouTube/YD5C5LX7j4k": {
+          "fullpool_holdouts": 920,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 920,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.9442728046923357
+          }
+        },
+        "YouTube/Z11ALGaUmH0": {
+          "fullpool_holdouts": 774,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 770,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5610499031087879
+          }
+        },
+        "YouTube/ZbeMNLwASVo": {
+          "fullpool_holdouts": 4046,
+          "supported_frame_pairs": 172,
+          "valid_holdouts": 3974,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.023977429399496476
+          }
+        },
+        "YouTube/Zyo70ZiXmYY": {
+          "fullpool_holdouts": 1152,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 1148,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5249235652095026
+          }
+        },
+        "YouTube/aboKQqtoowA": {
+          "fullpool_holdouts": 976,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 976,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0743560914376868
+          }
+        },
+        "YouTube/bFTTE4TV-ek": {
+          "fullpool_holdouts": 1153,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1153,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.004593453710819538
+          }
+        },
+        "YouTube/bLoWh2xbm6o": {
+          "fullpool_holdouts": 1162,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1162,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.4562728582764333
+          }
+        },
+        "YouTube/blDEcY6HZUU": {
+          "fullpool_holdouts": 339,
+          "supported_frame_pairs": 19,
+          "valid_holdouts": 335,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 3.0783963622835406
+          }
+        },
+        "YouTube/c0FxOPxBaac": {
+          "fullpool_holdouts": 615,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 608,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.6838516528715708
+          }
+        },
+        "YouTube/cB83GjrvoeE": {
+          "fullpool_holdouts": 821,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 820,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.015152277924455552
+          }
+        },
+        "YouTube/cLiJgvrDlWw": {
+          "fullpool_holdouts": 350,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 339,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3698438241843433
+          }
+        },
+        "YouTube/d-orB-PokJw": {
+          "fullpool_holdouts": 400,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 376,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.05377276072668169
+          }
+        },
+        "YouTube/dYAA0JLFrTc": {
+          "fullpool_holdouts": 302,
+          "supported_frame_pairs": 37,
+          "valid_holdouts": 270,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.18034245577480737
+          }
+        },
+        "YouTube/dZZqaYgPrY0": {
+          "fullpool_holdouts": 752,
+          "supported_frame_pairs": 28,
+          "valid_holdouts": 752,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.05370761284810248
+          }
+        },
+        "YouTube/dtlXB2kt09k": {
+          "fullpool_holdouts": 588,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 588,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.03106997767406436
+          }
+        },
+        "YouTube/eXklJqhFx8E": {
+          "fullpool_holdouts": 1704,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1704,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -4.7670160945929465e-05
+          }
+        },
+        "YouTube/ef5NncrTQu4": {
+          "fullpool_holdouts": 300,
+          "supported_frame_pairs": 17,
+          "valid_holdouts": 299,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.0515847887734382
+          }
+        },
+        "YouTube/f9U2VDJTIhg": {
+          "fullpool_holdouts": 896,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 896,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.9535119625320632
+          }
+        },
+        "YouTube/h3-lxgAoXwI": {
+          "fullpool_holdouts": 1369,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1369,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.0007154391541382872
+          }
+        },
+        "YouTube/hL-ePuEk4_M": {
+          "fullpool_holdouts": 912,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 912,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.5465345592907271
+          }
+        },
+        "YouTube/hg9scj8FyjY": {
+          "fullpool_holdouts": 407,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 345,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.6195020577601084
+          }
+        },
+        "YouTube/iSjk42F0rvM": {
+          "fullpool_holdouts": 1233,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1233,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.06008914620369289
+          }
+        },
+        "YouTube/jO3vuJ4xhns": {
+          "fullpool_holdouts": 1066,
+          "supported_frame_pairs": 26,
+          "valid_holdouts": 1066,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.3993108240699301
+          }
+        },
+        "YouTube/kM1naurrexk": {
+          "fullpool_holdouts": 586,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 575,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.5696691189955896
+          }
+        },
+        "YouTube/lC0HkItqIqA": {
+          "fullpool_holdouts": 488,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 488,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.2313821948745323
+          }
+        },
+        "YouTube/mThUfYcea3I": {
+          "fullpool_holdouts": 470,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 454,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.21370452447945779
+          }
+        },
+        "YouTube/mkcDANJjDcM": {
+          "fullpool_holdouts": 1281,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1281,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2423356403748863
+          }
+        },
+        "YouTube/mq7Wv-5qJwc": {
+          "fullpool_holdouts": 318,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 278,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7007399711444832
+          }
+        },
+        "YouTube/nKsIbi_R02U": {
+          "fullpool_holdouts": 1033,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1033,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.3671600454170832
+          }
+        },
+        "YouTube/na6zkG7dl3A": {
+          "fullpool_holdouts": 713,
+          "supported_frame_pairs": 24,
+          "valid_holdouts": 713,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.4942410574332001
+          }
+        },
+        "YouTube/od2IpoFxeMI": {
+          "fullpool_holdouts": 724,
+          "supported_frame_pairs": 31,
+          "valid_holdouts": 724,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.8278614643696733
+          }
+        },
+        "YouTube/owDp3KOHmu8": {
+          "fullpool_holdouts": 460,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 456,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.1122230683538117
+          }
+        },
+        "YouTube/pI8tpZLBcFk": {
+          "fullpool_holdouts": 602,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 602,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.9987098501457761
+          }
+        },
+        "YouTube/qlPC7oMm93g": {
+          "fullpool_holdouts": 1429,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1429,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.19079017705630114
+          }
+        },
+        "YouTube/rin4oz7Fego": {
+          "fullpool_holdouts": 1322,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1322,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.6990604062250174
+          }
+        },
+        "YouTube/s54UiLm7JLU": {
+          "fullpool_holdouts": 841,
+          "supported_frame_pairs": 35,
+          "valid_holdouts": 841,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.5437535367197497
+          }
+        },
+        "YouTube/sRd38UFfp6c": {
+          "fullpool_holdouts": 454,
+          "supported_frame_pairs": 34,
+          "valid_holdouts": 450,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.10035554172124043
+          }
+        },
+        "YouTube/tvzrxfgWSc4": {
+          "fullpool_holdouts": 1594,
+          "supported_frame_pairs": 33,
+          "valid_holdouts": 1594,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0011906320791021528
+          }
+        },
+        "YouTube/u40AQIBH_Gs": {
+          "fullpool_holdouts": 1232,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1232,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 2.0209769098594577
+          }
+        },
+        "YouTube/uqUfP7ugJp0": {
+          "fullpool_holdouts": 1100,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1092,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.7477974530905813
+          }
+        },
+        "YouTube/uwW0ejeosmk": {
+          "fullpool_holdouts": 2282,
+          "supported_frame_pairs": 108,
+          "valid_holdouts": 2276,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.4137535315049012
+          }
+        },
+        "YouTube/v0N4o4Px8jQ": {
+          "fullpool_holdouts": 1072,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1071,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.6713774509591606
+          }
+        },
+        "YouTube/vbQwxMme5yk": {
+          "fullpool_holdouts": 758,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 757,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.2785276662980014
+          }
+        },
+        "YouTube/vrWYdPeIUqw": {
+          "fullpool_holdouts": 718,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 717,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 1.162107613874048
+          }
+        },
+        "YouTube/yZGRVcIKU6Q": {
+          "fullpool_holdouts": 1427,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1396,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.0004560475274777585
+          }
+        },
+        "YouTube/yb7EbSnIAqM": {
+          "fullpool_holdouts": 995,
+          "supported_frame_pairs": 27,
+          "valid_holdouts": 995,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 4.730765352258333
+          }
+        },
+        "YouTube/z-fsLpGHq6o": {
+          "fullpool_holdouts": 6820,
+          "supported_frame_pairs": 235,
+          "valid_holdouts": 6816,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.07653530894574781
+          }
+        },
+        "YouTube/zVN1SBxfR40": {
+          "fullpool_holdouts": 1375,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 1375,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": 0.046597254835272245
+          }
+        },
+        "YouTube/zhdNNmwnYMI": {
+          "fullpool_holdouts": 325,
+          "supported_frame_pairs": 36,
+          "valid_holdouts": 320,
+          "source_mean_frame_median_gain": {
+            "proposal_overlap_excluded": -0.3406609479771671
+          }
+        }
+      }
+    }
+  },
+  "summary_sha256": "5b5518c9d44f76e8d88967df0b59d4e497636746c6c301b578623168b4be98a9",
+  "audit_sha256": "9f374a8c7fe8f76c951d7832e360aa91a6b098cb5672522fcc6ca1e9294368ca",
+  "is_identity_or_tracking_or_novelty_evidence": false
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS_DONOROUT_PRODUCER_AND_FRESH_INDEPENDENT_AUDIT",
+  "producer_actual_exit_code": 0,
+  "auditor_actual_exit_code": 0,
+  "producer_exit_sha256": "ee60e60367d7238e4fa4a6fc59431d155d372aabfb9f10334f21f4f4431d92e2",
+  "auditor_exit_sha256": "fb11d69463b6efe72a812d95c044b1642c966d9d2e6a2b13d81463d1b33f8949",
+  "audit_sha256": "9f374a8c7fe8f76c951d7832e360aa91a6b098cb5672522fcc6ca1e9294368ca",
+  "protocol_sha256": "7ba6cb5a7151dd462ec2abde7cef5c8e2b310d3f9a3f6f1dd16f774217e78220"
+}

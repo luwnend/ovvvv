@@ -1,0 +1,358 @@
+{
+  "status": "STOP_THIS_FIXED_IDENTITY_ADAPTER_CONTROL_AFTER_THREE_ROUNDS_TWO_CHECKS",
+  "rounds": [
+    {
+      "round": 1,
+      "checks": [
+        "All 15 real traces: complete 50/20 epochs, finite surrogate losses, global weights and optimizer-step counts",
+        "All 15 sealed checkpoints finite with nonzero formerly-zero residual weights; actual worker label-mutation challenge retained"
+      ],
+      "models": [
+        {
+          "fold": 0,
+          "seed": 20261024,
+          "query_lags": 4184,
+          "adapter_optimizer_steps": 3300,
+          "last_weight_norm": 7.848413227943678,
+          "surrogate_first": 0.07110838845618771,
+          "surrogate_final": 0.0007236497030350429
+        },
+        {
+          "fold": 0,
+          "seed": 20261025,
+          "query_lags": 4184,
+          "adapter_optimizer_steps": 3300,
+          "last_weight_norm": 7.916827146655243,
+          "surrogate_first": 0.07122884801808285,
+          "surrogate_final": 0.0007143280374815964
+        },
+        {
+          "fold": 0,
+          "seed": 20261026,
+          "query_lags": 4184,
+          "adapter_optimizer_steps": 3300,
+          "last_weight_norm": 8.009756856688433,
+          "surrogate_first": 0.07017385319007378,
+          "surrogate_final": 0.0007548394040590552
+        },
+        {
+          "fold": 1,
+          "seed": 20261024,
+          "query_lags": 4619,
+          "adapter_optimizer_steps": 3650,
+          "last_weight_norm": 8.27949691298759,
+          "surrogate_first": 0.07260833354750934,
+          "surrogate_final": 0.0007625329227880559
+        },
+        {
+          "fold": 1,
+          "seed": 20261025,
+          "query_lags": 4619,
+          "adapter_optimizer_steps": 3650,
+          "last_weight_norm": 8.000614575687505,
+          "surrogate_first": 0.07279915147732459,
+          "surrogate_final": 0.0007419662534786083
+        },
+        {
+          "fold": 1,
+          "seed": 20261026,
+          "query_lags": 4619,
+          "adapter_optimizer_steps": 3650,
+          "last_weight_norm": 8.321578752542798,
+          "surrogate_first": 0.07233275987101416,
+          "surrogate_final": 0.0007685621202511026
+        },
+        {
+          "fold": 2,
+          "seed": 20261024,
+          "query_lags": 4831,
+          "adapter_optimizer_steps": 3800,
+          "last_weight_norm": 8.526605780840697,
+          "surrogate_first": 0.07347996500606774,
+          "surrogate_final": 0.0007459998315979181
+        },
+        {
+          "fold": 2,
+          "seed": 20261025,
+          "query_lags": 4831,
+          "adapter_optimizer_steps": 3800,
+          "last_weight_norm": 8.510892967525184,
+          "surrogate_first": 0.07319509142816037,
+          "surrogate_final": 0.0007277682853088205
+        },
+        {
+          "fold": 2,
+          "seed": 20261026,
+          "query_lags": 4831,
+          "adapter_optimizer_steps": 3800,
+          "last_weight_norm": 8.496022853089597,
+          "surrogate_first": 0.07461778813849623,
+          "surrogate_final": 0.000771628057491033
+        },
+        {
+          "fold": 3,
+          "seed": 20261024,
+          "query_lags": 4342,
+          "adapter_optimizer_steps": 3400,
+          "last_weight_norm": 7.983741107675334,
+          "surrogate_first": 0.0809326210657684,
+          "surrogate_final": 0.0008422746856675789
+        },
+        {
+          "fold": 3,
+          "seed": 20261025,
+          "query_lags": 4342,
+          "adapter_optimizer_steps": 3400,
+          "last_weight_norm": 8.095329158079391,
+          "surrogate_first": 0.08135447968541304,
+          "surrogate_final": 0.0008332941957975978
+        },
+        {
+          "fold": 3,
+          "seed": 20261026,
+          "query_lags": 4342,
+          "adapter_optimizer_steps": 3400,
+          "last_weight_norm": 8.037177310895371,
+          "surrogate_first": 0.08156907480236443,
+          "surrogate_final": 0.0008708871869617891
+        },
+        {
+          "fold": 4,
+          "seed": 20261024,
+          "query_lags": 4720,
+          "adapter_optimizer_steps": 3700,
+          "last_weight_norm": 8.382976157847395,
+          "surrogate_first": 0.06977473533622179,
+          "surrogate_final": 0.000659630510265442
+        },
+        {
+          "fold": 4,
+          "seed": 20261025,
+          "query_lags": 4720,
+          "adapter_optimizer_steps": 3700,
+          "last_weight_norm": 8.325266709011942,
+          "surrogate_first": 0.06964628461416542,
+          "surrogate_final": 0.0006723328044496695
+        },
+        {
+          "fold": 4,
+          "seed": 20261026,
+          "query_lags": 4720,
+          "adapter_optimizer_steps": 3700,
+          "last_weight_norm": 8.440356397509332,
+          "surrogate_first": 0.0691862211439986,
+          "surrogate_final": 0.0006776846475846069
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "checks": [
+        "Bind fresh all-candidate ten-score reconstruction and exact parent raw/ranking coverage audit",
+        "All 15 train-source partitions and allowed identity projections remain disjoint from heldout; preflight QA hashes retained"
+      ],
+      "maximum_absolute_score_error": 5.684341886080802e-14,
+      "optimizer_replay_performed": false
+    },
+    {
+      "round": 3,
+      "checks": [
+        "All fixed seeds and both lags lose pure appearance retrieval on the prespecified hard query populations",
+        "Same negative pure-appearance direction on fixed cross-lag 1331 queries; geometry rescue and interaction vary. A1G1 loses raw micro in every shared cell; one shared macro cell exceeds raw by 0.028644 pp, so it does not consistently recover raw"
+      ],
+      "full_hard": [
+        {
+          "seed": 20261024,
+          "lag": 1,
+          "queries": 2949,
+          "baseline_wrong_alternative_correct": 14,
+          "baseline_correct_alternative_wrong": 55,
+          "both_correct": 2848,
+          "both_wrong": 32,
+          "net_correct": -41,
+          "micro_correctness_delta": -0.013903017972193954,
+          "source_GTtrajectory_query_macro_delta": -0.024912846128585353
+        },
+        {
+          "seed": 20261024,
+          "lag": 4,
+          "queries": 2142,
+          "baseline_wrong_alternative_correct": 42,
+          "baseline_correct_alternative_wrong": 114,
+          "both_correct": 1879,
+          "both_wrong": 107,
+          "net_correct": -72,
+          "micro_correctness_delta": -0.03361344537815125,
+          "source_GTtrajectory_query_macro_delta": -0.04382153585284454
+        },
+        {
+          "seed": 20261025,
+          "lag": 1,
+          "queries": 2949,
+          "baseline_wrong_alternative_correct": 14,
+          "baseline_correct_alternative_wrong": 53,
+          "both_correct": 2850,
+          "both_wrong": 32,
+          "net_correct": -39,
+          "micro_correctness_delta": -0.01322482197355035,
+          "source_GTtrajectory_query_macro_delta": -0.018681985580864424
+        },
+        {
+          "seed": 20261025,
+          "lag": 4,
+          "queries": 2142,
+          "baseline_wrong_alternative_correct": 43,
+          "baseline_correct_alternative_wrong": 104,
+          "both_correct": 1889,
+          "both_wrong": 106,
+          "net_correct": -61,
+          "micro_correctness_delta": -0.028478057889822606,
+          "source_GTtrajectory_query_macro_delta": -0.03201293200629429
+        },
+        {
+          "seed": 20261026,
+          "lag": 1,
+          "queries": 2949,
+          "baseline_wrong_alternative_correct": 14,
+          "baseline_correct_alternative_wrong": 61,
+          "both_correct": 2842,
+          "both_wrong": 32,
+          "net_correct": -47,
+          "micro_correctness_delta": -0.01593760596812477,
+          "source_GTtrajectory_query_macro_delta": -0.020517995178501947
+        },
+        {
+          "seed": 20261026,
+          "lag": 4,
+          "queries": 2142,
+          "baseline_wrong_alternative_correct": 54,
+          "baseline_correct_alternative_wrong": 106,
+          "both_correct": 1887,
+          "both_wrong": 95,
+          "net_correct": -52,
+          "micro_correctness_delta": -0.024276377217553713,
+          "source_GTtrajectory_query_macro_delta": -0.035138728663341
+        }
+      ],
+      "shared_1331": [
+        {
+          "seed": 20261024,
+          "lag": 1,
+          "raw_errors": 16,
+          "adapter_errors": 25,
+          "A1G1_errors": 22,
+          "adapter_minus_raw": -0.014662740284537179,
+          "A1G1_minus_raw": -0.012989541611036937,
+          "A1G1_minus_A1G0": 0.0016731986735002424,
+          "A1G1_minus_A1Gmask": 0.0016731986735002424,
+          "interaction": -0.00014682061147230918
+        },
+        {
+          "seed": 20261024,
+          "lag": 4,
+          "raw_errors": 99,
+          "adapter_errors": 134,
+          "A1G1_errors": 128,
+          "adapter_minus_raw": -0.01268608932687909,
+          "A1G1_minus_raw": 0.0002864408744199798,
+          "A1G1_minus_A1G0": 0.01297253020129907,
+          "A1G1_minus_A1Gmask": 0.008715001644704956,
+          "interaction": 0.012566295334986877
+        },
+        {
+          "seed": 20261025,
+          "lag": 1,
+          "raw_errors": 16,
+          "adapter_errors": 25,
+          "A1G1_errors": 21,
+          "adapter_minus_raw": -0.009550233644859851,
+          "A1G1_minus_raw": -0.0030471183800623303,
+          "A1G1_minus_A1G0": 0.006503115264797521,
+          "A1G1_minus_A1Gmask": 0.006503115264797521,
+          "interaction": 0.0038912995104584125
+        },
+        {
+          "seed": 20261025,
+          "lag": 4,
+          "raw_errors": 99,
+          "adapter_errors": 127,
+          "A1G1_errors": 126,
+          "adapter_minus_raw": -0.0025159273432330265,
+          "A1G1_minus_raw": -0.003756470289383529,
+          "A1G1_minus_A1G0": -0.0012405429461505024,
+          "A1G1_minus_A1Gmask": -0.0034657320872273356,
+          "interaction": -0.010727557748585914
+        },
+        {
+          "seed": 20261026,
+          "lag": 1,
+          "raw_errors": 16,
+          "adapter_errors": 32,
+          "A1G1_errors": 27,
+          "adapter_minus_raw": -0.024149946842703773,
+          "A1G1_minus_raw": -0.015310382979775494,
+          "A1G1_minus_A1G0": 0.008839563862928279,
+          "A1G1_minus_A1Gmask": 0.008839563862928279,
+          "interaction": 0.0070195445779557275
+        },
+        {
+          "seed": 20261026,
+          "lag": 4,
+          "raw_errors": 99,
+          "adapter_errors": 117,
+          "A1G1_errors": 116,
+          "adapter_minus_raw": -0.012447902415591794,
+          "A1G1_minus_raw": -0.009524745613930463,
+          "A1G1_minus_A1G0": 0.0029231568016613307,
+          "A1G1_minus_A1Gmask": 0.0029231568016613307,
+          "interaction": 0.00903487179442053
+        }
+      ]
+    }
+  ],
+  "interpretation": "The executed fixed adapter is ineffective on this examined FIT source-OOF readout. No discovered execution, projection or scoring defect explains the negative result. This is not a proof that identity learning or temporal networks fail.",
+  "training_trace_limit": "Surrogate minibatch objectives decrease descriptively; different step states/orders prevent interpreting them as exact full-data fixed-state loss or convergence proof. No optimizer replay, early-epoch rescue, seed selection, tune/test read or new training.",
+  "likely_hypotheses_not_identified": [
+    "Sparse supervised trajectories may allow source-specific metric distortion",
+    "Fixed pairwise training objective and hierarchy need not preserve unseen-source top1 geometry"
+  ],
+  "negative_control_scope": "Stop this 256-64-256/50-epoch/three-seed control as an improvement; do not rename it a new temporal mechanism.",
+  "input_sha256": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_independent_preflight_20261024.json": "9fb4633e125a6f646a9de55642ad376da4642df220ff3a87673fe0c9b2dc100c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/control_brief.json": "6151312be15306423ae17a0bd8fbf9ee1179bac27cc2e536b6c00d70b9eb883c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/independent_output_audit.json": "af4afb5c7ddf1597a6275dc584275f834b88a7e4d8d5ec4b61283fbf5a8ae9f7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/completion_receipt.json": "455cb35b9805ffa7bdcbe073fa84539e9443781ab3f13e000810cc459fcae2af",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold0_seed20261024/checkpoint.json": "d92a51d642834dbcd8a4b12ec5e51f678e1d8857e4064398e2aa19b7be2ee0a1",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold0_seed20261024/training_trace.json": "af14e9b2bc3a7385d2146251970fcdbd7c3ab70871df7dbd579be1d35499aee4",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold0_seed20261025/checkpoint.json": "4b9966dd209d0b3db7863a8fd24730e56ae10971dfd4c1e8d35ad93705c0db9c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold0_seed20261025/training_trace.json": "caa6ed8b8daa396f014effabad68192849b16055d7be2452b80619b995686ff6",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold0_seed20261026/checkpoint.json": "75439a7aee4f8a40790fb04ca86d682391c8af8428609a5388839d0d4ed381e3",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold0_seed20261026/training_trace.json": "6379e4140793edf74ac2bbfc02f2afc71047467b5810c20efddd1c61a0cfa325",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold1_seed20261024/checkpoint.json": "ac8b055d188488f80ccdb1b17967129cae1f4c1274d7311317fddb5f73409de3",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold1_seed20261024/training_trace.json": "77814c7970940525ab18823e3d11a1948fac13d7bf9f31f742334393ae234132",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold1_seed20261025/checkpoint.json": "fc0bea575d89f1a132c84529fe13eb2213ddb54521eb2044b5913188359f39ec",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold1_seed20261025/training_trace.json": "6917344194a3b0c356b1b7760d7abd29770bf19a555b31cdd6134dc0b84280ca",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold1_seed20261026/checkpoint.json": "6a679d9e3fb63f60abd9d12655ceca205ca8a0998f8cfc7ebb646c3267d2939c",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold1_seed20261026/training_trace.json": "0513d819b13220d0b8fc2c9401b2e6f7e04389b5fff6922b1d52076c251a7808",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold2_seed20261024/checkpoint.json": "9f252dc4385a8fa4bb751e8539b5264445042e17685844e5dc716deb95649518",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold2_seed20261024/training_trace.json": "0979b7621ab732195f03e41bb27542e0222f3b7506ece562ebb8c817c4e501a8",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold2_seed20261025/checkpoint.json": "d8a8493ca33f86642c37f730f04cdb355243bca4fff7223f69165cc6876c6686",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold2_seed20261025/training_trace.json": "5e7873687ac899bfbd85fbd5623936909a3ae5c1ef26425b8928ac5fb2545d92",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold2_seed20261026/checkpoint.json": "2105baf1fbc2d349d1d61087818f268e32c668c71451a8e0d130982557868d41",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold2_seed20261026/training_trace.json": "fa9f61a449c9e747b8ae4002280454eb85ec5ef862aa6f23cf6f2d4648a9b003",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold3_seed20261024/checkpoint.json": "f3a3d888d9ed9711a380406226075baebc4f51b7073279ea0c4e65a1a2b59f4a",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold3_seed20261024/training_trace.json": "9240e1e4f79686ec435e9cb5fa6026f996ec26eb1ec7def2cdcecb197fd09868",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold3_seed20261025/checkpoint.json": "332b3c013d8e6a5e618a1c835247ea82ec3dafa9ac68b97453924628863bd92a",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold3_seed20261025/training_trace.json": "63695b5ff5e508cd4d3c489d181db7f2cef6eea2aabb2d1b39bac2c8ebbfff0d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold3_seed20261026/checkpoint.json": "64b376dd480dfb4714b0d6986d8bd5fc6b05c127e49510b96cdc498a55b38609",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold3_seed20261026/training_trace.json": "16d7aef2359b090cc1f70e0a8fcdb4ff38431d6af5d3753c9e164b84ac500bc7",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold4_seed20261024/checkpoint.json": "7820aa4cae9fe2237cab82ffe481a8aaf45e09c6c5921110154c78957e5a1eea",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold4_seed20261024/training_trace.json": "934c0c0291f5ec1148827ac4e3f7faaa98de7df794f9d519250ed250b947a4e0",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold4_seed20261025/checkpoint.json": "434cbe4b6bde13f9539b071de6bea5e5c20cc0a008da2194e01e1d0ba1f59d10",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold4_seed20261025/training_trace.json": "2803af4a2f54951af3b5cb68adc7c0230be76361887891746435c74558dfabd4",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold4_seed20261026/checkpoint.json": "30aa23edd608fa27139c7d45bf8684d1867296628b9cbc4bc00858d6b179e88d",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/models/fold4_seed20261026/training_trace.json": "0a974c50d6a093d259579bec613a1e34a5cc51a9bdc11fe2c2a2651d5696d228"
+  },
+  "GPU_used": false,
+  "script_sha256": "7f20102346afd9ec0611e5ae915a201a90a73e61fff972c62f2b1bfddddb8684"
+}

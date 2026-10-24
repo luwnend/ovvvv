@@ -1,0 +1,87 @@
+{
+  "status": "PASS_INDEPENDENT_FOUR_FRAME_BENCHMARK_OUTPUT_AUDIT",
+  "protocol_sha256": "dfd211302b202e9678bb782e2543aae3501c5aa0eb118d370d24bddea1fd7ee6",
+  "actual_exit": {
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 4.422678217291832,
+    "child_pid": 504689,
+    "waited_by_parent_pid": 504681,
+    "protocol_sha256": "dfd211302b202e9678bb782e2543aae3501c5aa0eb118d370d24bddea1fd7ee6",
+    "launch_sha256": "11bf91215a73f82d84b7bb13dcad646fa073f412f818e75ed849c98ad4841ad9"
+  },
+  "completion_sha256": "92cb981bea1947b9549fe9afe93d44223d199df81535da4f7253fd8d7cde32c8",
+  "output_receipt_sha256": "4de650b1e28e2cbbf38967a267f98c3388f979417a0f814684c0c33861d9ec6b",
+  "pairs": [
+    {
+      "pair": [
+        1,
+        0
+      ],
+      "shape": [
+        54,
+        50
+      ],
+      "candidates": 2700,
+      "fits": 2064,
+      "compute_s": 0.7957577789202332,
+      "RSS_KiB": 48396,
+      "array_bytes": 305100,
+      "npz_bytes": 178482,
+      "fit_json_bytes": 2440838
+    },
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "shape": [
+        56,
+        54
+      ],
+      "candidates": 3024,
+      "fits": 2496,
+      "compute_s": 1.0809758426621556,
+      "RSS_KiB": 48396,
+      "array_bytes": 341712,
+      "npz_bytes": 201067,
+      "fit_json_bytes": 3535424
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "shape": [
+        53,
+        56
+      ],
+      "candidates": 2968,
+      "fits": 2288,
+      "compute_s": 0.8810776434838772,
+      "RSS_KiB": 49152,
+      "array_bytes": 335384,
+      "npz_bytes": 195714,
+      "fit_json_bytes": 3156107
+    }
+  ],
+  "total_candidates": 8692,
+  "total_fit_records": 6848,
+  "elapsed_s": 26.251894230023026,
+  "auditor_path": "/tmp/audit_four_frame_bench.py",
+  "auditor_sha256": "1503a29a736a1af4185a902670793bac5cd1a126288dc07bee655823bbfd2b3e",
+  "python": "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "read_only_source_audit": true,
+  "raw_cosine_check": "independent canonical float64 C matrix under single-thread environment, exact element equality",
+  "strict_provenance_check": "every QxM fit index checked against independently computed endpoint/proposal/direct positive-overlap exclusion tuples",
+  "missing_scale_check": "all pair scales/static finite and all unavailable donor fields NaN; no padding",
+  "method_effectiveness_or_novelty_established": false,
+  "original_inputs_modified": false,
+  "finished_utc": "2026-10-24T01:13:12.656986+00:00"
+}

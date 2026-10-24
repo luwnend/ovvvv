@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+    "-u",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/finalize_identity_spacetime_oof_stage_20261024.py",
+    "--out",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1",
+    "--execution",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_execution_20261024_v1"
+  ],
+  "pid": 449107,
+  "identity": {
+    "pid": 449107,
+    "start_ticks": 575727664,
+    "boot_id": "631a721b-3652-43b7-b488-a2812a573b83",
+    "cmdline": [
+      "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python3.8",
+      "-u",
+      "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/finalize_identity_spacetime_oof_stage_20261024.py",
+      "--out",
+      "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1",
+      "--execution",
+      "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_execution_20261024_v1"
+    ],
+    "state": "R"
+  },
+  "started_utc": "2026-10-23T22:29:35.698822+00:00",
+  "finished_utc": "2026-10-23T22:30:27.318887+00:00",
+  "elapsed_seconds": 51.62008992489427,
+  "actual_exit_code": 0,
+  "waited_by_parent_pid": 358090
+}

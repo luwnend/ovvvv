@@ -1,0 +1,138 @@
+{
+  "status": "FROZEN_METADATA_FOUR_FRAME_CPU_ALL_CANDIDATE_BENCHMARK_V1",
+  "schema": "METADATA_FOUR_FRAME_CPU_ALL_CANDIDATE_SCENE_RESIDUAL_BENCHMARK_V1",
+  "runner_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/benchmark_all_candidate_scene_residual_20261024.py",
+  "runner_sha256": "dd23845ac63c1635f5c0c855d6e796f4d9e1dba4596d004f51717fbbc3e355b8",
+  "module_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_20261024.py",
+  "module_sha256": "0824dbd527563496cf4d3275ec2de169295bf3d72c4eef145529ebd04cf5b7be",
+  "cached_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_endpoint_scene_motion_20261024.py",
+  "cached_sha256": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32",
+  "output_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/all_candidate_scene_residual_four_frame_cpu_20261024_v1",
+  "execution_directory": "/home/chenhc/ov/OVMOT_RESEARCH/results/all_candidate_scene_residual_four_frame_cpu_execution_20261024_v1",
+  "protected_authority_path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_protected_before_20261024.json",
+  "source_roles_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/source_roles.json",
+  "plan_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json",
+  "inventory_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump_inventory.json",
+  "frame_execution_path": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/frame_execution.jsonl",
+  "runtime": {
+    "python": "/home/chenhc/.conda/envs/ovtrack_ovmot/bin/python",
+    "CPU_only": true,
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "hard_timeout_seconds": 300,
+    "threads": 1
+  },
+  "selection": "Metadata-only fixed first four cached prefix frames of lexicographically first FIT source and first allocated FIT video with at least four cached frames; no outcome/identity/category/GT/feature selection.",
+  "source": 1271,
+  "source_group": "ArgoVerse/08a8b7f0-c317-3bdb-b3dc-b7c9b6d033e2",
+  "frames": [
+    {
+      "image_id": 214313,
+      "video_id": 1271,
+      "frame_id": 0,
+      "frame_index": 150,
+      "observations": 50,
+      "npz": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214313_f0.npz",
+      "npz_sha256": "d1b1e5a0013d663b5d1074949d9fe320bb775eb7a3453c28f65b6df1449e826e"
+    },
+    {
+      "image_id": 214314,
+      "video_id": 1271,
+      "frame_id": 1,
+      "frame_index": 240,
+      "observations": 54,
+      "npz": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214314_f1.npz",
+      "npz_sha256": "15174f41631cdfb93f859d3aa665dd954580073a145a08a5866a8ba8c85cb265"
+    },
+    {
+      "image_id": 214315,
+      "video_id": 1271,
+      "frame_id": 2,
+      "frame_index": 270,
+      "observations": 56,
+      "npz": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214315_f2.npz",
+      "npz_sha256": "09c0ae627eed2bb33e6d3a608d8547985b659586253457e1ad2a2228755c403b"
+    },
+    {
+      "image_id": 214316,
+      "video_id": 1271,
+      "frame_id": 3,
+      "frame_index": 300,
+      "observations": 53,
+      "npz": "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214316_f3.npz",
+      "npz_sha256": "f84fd73425853441c79724a37dc378f18d7aeceea9fddb57fadbec9ecc9505bb"
+    }
+  ],
+  "pairs": [
+    {
+      "query_frame": 1,
+      "reference_frame": 0
+    },
+    {
+      "query_frame": 2,
+      "reference_frame": 1
+    },
+    {
+      "query_frame": 3,
+      "reference_frame": 2
+    }
+  ],
+  "allowed_cache_members": [
+    "det_bboxes",
+    "track_feats",
+    "roi_proposal_row",
+    "video_id",
+    "image_id",
+    "frame_id",
+    "frame_index"
+  ],
+  "synthetic_actual_exit_receipts": [
+    {
+      "receipt": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round1_20261024_v3.json",
+      "receipt_sha256": "23d228144b26b3ce557d665ee5731cde3a027788960bd10c76c99942d95bbeaa",
+      "actual_exit_receipt": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round1_actual_exit_20261024_v4.json",
+      "actual_exit_receipt_sha256": "c4df6e1422fa134e57ae29dcf2baa85dd2ddf2143040ae90b5df8d5eb119a093"
+    },
+    {
+      "receipt": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round2_20261024_v3.json",
+      "receipt_sha256": "2608ef704962b7807ce2a81e2ebe74852e0013aca09b649097859c3d3d17fe3a",
+      "actual_exit_receipt": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round2_actual_exit_20261024_v4.json",
+      "actual_exit_receipt_sha256": "33a67233ef178a7385175de7f47dda20b2fc2b11a30f7155fe142c48e60feb62"
+    },
+    {
+      "receipt": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round3_20261024_v3.json",
+      "receipt_sha256": "bfc2fe70fcce3876f12aa2a2b9a82ce9c06ab9a8952a635ba7ca43a8e95dcea9",
+      "actual_exit_receipt": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round3_actual_exit_20261024_v4.json",
+      "actual_exit_receipt_sha256": "fc8712f09e481bbeab354915c20a2cde51a725596af48f4a2fcc720c56995095"
+    }
+  ],
+  "input_pins": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_20261024.py": "0824dbd527563496cf4d3275ec2de169295bf3d72c4eef145529ebd04cf5b7be",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/cached_endpoint_scene_motion_20261024.py": "5eaf00fa1bd52ab0c5a3430fcdf90fd9609d4c17fdc3d81db06cf25bc41b0f32",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_protected_before_20261024.json": "cb32e7704490e70b657b9cd3c7145d19a2f578aad33b9b77e61b951660207297",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/pair_context_v1/source_roles.json": "afa61df067f392b84ba917e1c536a9b64b869dbda19a2236b0a05b6f5c51cb8b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collection_plan.json": "cbb14c6fd41135d887b46ce1b5869f0068b76922bf5c40f87f78ec2c2a715f9b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump_inventory.json": "5a7f94a531e754aef0cec1c78b82a080ee92d6e451f943a46be8c71c6a7676db",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/frame_execution.jsonl": "e0e327a887840fbbdf5acacc374a589f696ad529af62d7a9a535bc2dd6161c07",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214313_f0.npz": "d1b1e5a0013d663b5d1074949d9fe320bb775eb7a3453c28f65b6df1449e826e",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214314_f1.npz": "15174f41631cdfb93f859d3aa665dd954580073a145a08a5866a8ba8c85cb265",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214315_f2.npz": "09c0ae627eed2bb33e6d3a608d8547985b659586253457e1ad2a2228755c403b",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/base_error_full_collection_20261023/full_collect_v1/dump/v1271_i214316_f3.npz": "f84fd73425853441c79724a37dc378f18d7aeceea9fddb57fadbec9ecc9505bb",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round1_20261024_v3.json": "23d228144b26b3ce557d665ee5731cde3a027788960bd10c76c99942d95bbeaa",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round1_actual_exit_20261024_v3.json": "33c062d0cce9f7e001cc08620d379a1b1b69c5988d30d80a72065503902c4fdb",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round2_20261024_v3.json": "2608ef704962b7807ce2a81e2ebe74852e0013aca09b649097859c3d3d17fe3a",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round2_actual_exit_20261024_v3.json": "afcd8d5e300e3a2445573406de2bf516cb1593f32c5cfe98b675479fe4b4e510",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round3_20261024_v3.json": "bfc2fe70fcce3876f12aa2a2b9a82ce9c06ab9a8952a635ba7ca43a8e95dcea9",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/all_candidate_scene_residual_synthetic_round3_actual_exit_20261024_v3.json": "ef8eb2af6dff1d1eb67dcc0026a6f37be76cfce06e4566d9dce035f500f6d988",
+    "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/benchmark_all_candidate_scene_residual_20261024.py": "dd23845ac63c1635f5c0c855d6e796f4d9e1dba4596d004f51717fbbc3e355b8"
+  },
+  "forbidden": "No GT/class/identity/posterior/released IDs, no OOF/donorout/ROI outputs, no training/GPU, no retries/overwrite, no method effectiveness/novelty.",
+  "output_schema": {
+    "per_pair_npz": "all full QxM arrays including raw_cosine, available, anchor_count, fit_index, pair_scale_xy, static_abs_L1, translation_xy, residual_mad_xy, residual_dxdy, corrected_L1, gain; companion JSON fit/exclusion provenance",
+    "missing": "candidate always retained; donor-dependent values NaN when <3 anchors",
+    "raw": "only boxes/raw/proposal and frame locators"
+  },
+  "interpretation": "CPU resource benchmark and ordinary raw geometric cue only; no physical camera motion, identity, tracking, generalization or novelty claim."
+}

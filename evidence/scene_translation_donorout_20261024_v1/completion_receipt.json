@@ -1,0 +1,13 @@
+{
+  "status": "PASS_DONOROUT_DIAGNOSTIC_AND_INDEPENDENT_OUTPUT_AUDIT",
+  "launch_sha256": "90c7fb204ad38a28960abaac95b2daae9b5921e98ae936f7b1144c8d39c0de78",
+  "execution_receipt_sha256": "2d46d7aef281d4a97e0592821eb0741947913c2c831065f997b71299d05bec4f",
+  "protocol_sha256": "7ba6cb5a7151dd462ec2abde7cef5c8e2b310d3f9a3f6f1dd16f774217e78220",
+  "seal_sha256": "ca3b2803366d16d98aa62324a7f1c4230314570db4a839891156f4c8fd2856fc",
+  "independent_audit_sha256": "9f374a8c7fe8f76c951d7832e360aa91a6b098cb5672522fcc6ca1e9294368ca",
+  "summary_sha256": "5b5518c9d44f76e8d88967df0b59d4e497636746c6c301b578623168b4be98a9",
+  "brief_sha256": "c3d4d00b8c48eca816cecc0394d0e057e2bb6a53dec474b810f9f41f56c48f5f",
+  "protected_files_unchanged": true,
+  "all_pinned_files_unchanged": true,
+  "method_effectiveness_or_novelty_established": false
+}

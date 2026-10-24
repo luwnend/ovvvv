@@ -1,0 +1,9 @@
+{
+  "actual_exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 4.422678217291832,
+  "child_pid": 504689,
+  "waited_by_parent_pid": 504681,
+  "protocol_sha256": "dfd211302b202e9678bb782e2543aae3501c5aa0eb118d370d24bddea1fd7ee6",
+  "launch_sha256": "11bf91215a73f82d84b7bb13dcad646fa073f412f818e75ed849c98ad4841ad9"
+}

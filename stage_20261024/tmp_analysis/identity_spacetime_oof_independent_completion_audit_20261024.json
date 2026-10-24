@@ -1,0 +1,2470 @@
+{
+  "status": "PASS_INDEPENDENT_CURRENT_COMPLETION_CHAIN_AND_READOUT_AUDIT",
+  "finished_utc": "2026-10-24T00:49:31.572018+00:00",
+  "scope": "Exploratory source OOF on already examined FIT, sparse known conditional ranking only",
+  "source_artifacts": {
+    "execution_receipt": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_execution_20261024_v1/execution_receipt.json",
+      "sha256": "d8d7fff51fe7768de010a4bd07e180ce9b8cae68657018418f857d7cfbea1dad"
+    },
+    "launch_spec": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_execution_20261024_v1/launch_spec.json",
+      "sha256": "818cecdd0c35249aaf1e91d1ef58b2bb0782d4e3675b4a07cd1cb4266d7a62b1"
+    },
+    "coordinator_receipt": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/coordinator_receipt.json",
+      "sha256": "b95bb12d5b34caa4d3bb6fe3e9f7b616779ff7fdbf76efb3f711f5a9675ad411"
+    },
+    "global_GT_free_seal": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/GT_free_OOF_predictions_sealed.json",
+      "sha256": "42e474756e494db35468deb904b36e1fd78494bb844112e402b9e238a0f990b2"
+    },
+    "independent_output_audit": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/independent_output_audit.json",
+      "sha256": "af4afb5c7ddf1597a6275dc584275f834b88a7e4d8d5ec4b61283fbf5a8ae9f7"
+    },
+    "evaluation_summary": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/evaluation/summary.json",
+      "sha256": "b630f89c22acedc192758ad9cf12a64e7bbd38405a6f92ed0c3ccf40f67f62f8"
+    },
+    "query_database": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/evaluation/query_support.sqlite",
+      "sha256": "0258606c0a8a37f50ea9a12b1b23d4c96907e455da02955e34bad5f308689f60"
+    },
+    "control_brief": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/control_brief.json",
+      "sha256": "6151312be15306423ae17a0bd8fbf9ee1179bac27cc2e536b6c00d70b9eb883c"
+    },
+    "protocol": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/identity_spacetime_oof_protocol_20261024.json",
+      "sha256": "a7169f8674d8e019782820bc7b4a99ff4b2082bdeaa0a731e60352a488ed9be1"
+    },
+    "protected_authority": {
+      "path": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/feature_spacetime_protected_before_20261024.json",
+      "sha256": "cb32e7704490e70b657b9cd3c7145d19a2f578aad33b9b77e61b951660207297"
+    }
+  },
+  "extra_bound_files": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_execution_20261024_v1/finalization.exit.json": "f9b6ebc7f29f37b8652e4bcf4360ae1a7b1b6c5713a2bbe4a7ec46244ebbaa52",
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/identity_spacetime_oof_20261024_v1/completion_receipt.json": "455cb35b9805ffa7bdcbe073fa84539e9443781ab3f13e000810cc459fcae2af"
+  },
+  "hash_check": {
+    "launch_pins": 70,
+    "global_pins": 68,
+    "protected_snapshots": 7,
+    "all_protected_snapshots_match": true,
+    "sealed_model_members_rehashed": 3717,
+    "unique_files_hashed": 3803,
+    "bytes_hashed": 15202726878
+  },
+  "process_exit_check": {
+    "all_15_model_actual_exit_codes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unified_evaluation": 0,
+    "coordinator": 0,
+    "independent_auditor": 0,
+    "finalizer": 0,
+    "actual_parent_wait_records_equal": true
+  },
+  "seal_order": {
+    "last_model_finished_utc": "2026-10-23T21:09:47.704719+00:00",
+    "global_seal_mtime_utc": "2026-10-23T21:10:30.338820+00:00",
+    "unified_evaluation_started_utc": "2026-10-23T21:11:12.537268+00:00",
+    "sealed_code_gate_and_fresh_independent_audit_pass": true,
+    "mtime_is_corrobation_not_cryptographic_timestamp": true
+  },
+  "original_fresh_audit": {
+    "status": "PASS_INDEPENDENT_IDENTITY_SPACETIME_OOF_OUTPUT_AUDIT",
+    "full_all_ten_columns_recomputed": true,
+    "raw_parent_bitwise_exact": true,
+    "maximum_absolute_score_error": 5.684341886080802e-14,
+    "baseline_parity": {
+      "status": "PASS_EXACT_PARENT_RAW_SOURCE_UNION_COUNTS_TOP1_PAIRORDER",
+      "cells": 8208,
+      "shared_hard_queries": 1331
+    },
+    "query_rows_independently_rebuilt": 341157,
+    "optimizer_replay_performed": false
+  },
+  "independent_readout": {
+    "source_SQLite_open_mode": "read-only",
+    "macro": "Equal supported source -> equal official query GT trajectory -> equal query observation",
+    "scope": "same_predicted_category",
+    "population": "common_CV_covered_population",
+    "per_seed": {
+      "20261024": {
+        "per_lag_all_hard": {
+          "1": {
+            "queries": 2949,
+            "sources": 172,
+            "GTtrajectories": 578,
+            "features": {
+              "raw_appearance_cosine": {
+                "correct": 2903,
+                "micro": 0.984401492031197,
+                "source_GTtrajectory_query_macro": 0.9789994097226783,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "adapter_appearance_cosine": {
+                "correct": 2862,
+                "micro": 0.970498474059003,
+                "source_GTtrajectory_query_macro": 0.9540865635940929,
+                "repair_raw_error": 14,
+                "break_raw_correct": 55
+              },
+              "A0G0": {
+                "correct": 2903,
+                "micro": 0.984401492031197,
+                "source_GTtrajectory_query_macro": 0.9789994097226783,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "A0G1": {
+                "correct": 2912,
+                "micro": 0.9874533740250933,
+                "source_GTtrajectory_query_macro": 0.9807264610389612,
+                "repair_raw_error": 12,
+                "break_raw_correct": 3
+              },
+              "A0Gmask": {
+                "correct": 2899,
+                "micro": 0.9830451000339098,
+                "source_GTtrajectory_query_macro": 0.9733654119375177,
+                "repair_raw_error": 1,
+                "break_raw_correct": 5
+              },
+              "A0Gperm": {
+                "correct": 2905,
+                "micro": 0.9850796880298406,
+                "source_GTtrajectory_query_macro": 0.974904013138025,
+                "repair_raw_error": 11,
+                "break_raw_correct": 9
+              },
+              "A1G0": {
+                "correct": 2862,
+                "micro": 0.970498474059003,
+                "source_GTtrajectory_query_macro": 0.9540865635940929,
+                "repair_raw_error": 14,
+                "break_raw_correct": 55
+              },
+              "A1G1": {
+                "correct": 2872,
+                "micro": 0.973889454052221,
+                "source_GTtrajectory_query_macro": 0.9604593026121807,
+                "repair_raw_error": 15,
+                "break_raw_correct": 46
+              },
+              "A1Gmask": {
+                "correct": 2860,
+                "micro": 0.9698202780603594,
+                "source_GTtrajectory_query_macro": 0.9532213919440374,
+                "repair_raw_error": 13,
+                "break_raw_correct": 56
+              },
+              "A1Gperm": {
+                "correct": 2859,
+                "micro": 0.9694811800610377,
+                "source_GTtrajectory_query_macro": 0.9552373217506649,
+                "repair_raw_error": 15,
+                "break_raw_correct": 59
+              }
+            },
+            "comparisons": {
+              "adapter_cosine_minus_raw": {
+                "net_correct": -41,
+                "micro_delta": -0.013903017972193964,
+                "source_macro_delta": -0.024912846128585353,
+                "repair": 14,
+                "break_correct": 55,
+                "source_deletion_min": -0.0259722779772905,
+                "source_deletion_max": -0.019210582070857754,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0G0": {
+                "net_correct": 9,
+                "micro_delta": 0.003051881993896236,
+                "source_macro_delta": 0.0017270513162829237,
+                "repair": 12,
+                "break_correct": 3,
+                "source_deletion_min": 9.241418947750034e-05,
+                "source_deletion_max": 0.0031991393356763306,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1G0": {
+                "net_correct": 10,
+                "micro_delta": 0.00339097999321804,
+                "source_macro_delta": 0.00637273901808777,
+                "repair": 13,
+                "break_correct": 3,
+                "source_deletion_min": 0.003486029889538661,
+                "source_deletion_max": 0.007245428385779262,
+                "source_deletion_min_sources": [
+                  "LaSOT/basketball-11"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gmask": {
+                "net_correct": 13,
+                "micro_delta": 0.004408273991183452,
+                "source_macro_delta": 0.007361049101443529,
+                "repair": 17,
+                "break_correct": 4,
+                "source_deletion_min": 0.0015561429558378444,
+                "source_deletion_max": 0.00886608447630568,
+                "source_deletion_min_sources": [
+                  "Charades/PC7H2"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gperm": {
+                "net_correct": 7,
+                "micro_delta": 0.002373685995252628,
+                "source_macro_delta": 0.005822447900936223,
+                "repair": 14,
+                "break_correct": 7,
+                "source_deletion_min": 8.544087491454819e-06,
+                "source_deletion_max": 0.007318485607959291,
+                "source_deletion_min_sources": [
+                  "Charades/PC7H2"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gmask": {
+                "net_correct": 12,
+                "micro_delta": 0.004069175991861648,
+                "source_macro_delta": 0.007237910668143277,
+                "repair": 15,
+                "break_correct": 3,
+                "source_deletion_min": 0.004356261022927691,
+                "source_deletion_max": 0.008115659519168292,
+                "source_deletion_min_sources": [
+                  "LaSOT/basketball-11"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gperm": {
+                "net_correct": 13,
+                "micro_delta": 0.004408273991183452,
+                "source_macro_delta": 0.005221980861515818,
+                "repair": 17,
+                "break_correct": 4,
+                "source_deletion_min": 0.003303201022499267,
+                "source_deletion_max": 0.005739848195988545,
+                "source_deletion_min_sources": [
+                  "BDD/b249e7f2-92d2efad"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_raw": {
+                "net_correct": -31,
+                "micro_delta": -0.010512037978975925,
+                "source_macro_delta": -0.018540107110497583,
+                "repair": 15,
+                "break_correct": 46,
+                "source_deletion_min": -0.020293265631611494,
+                "source_deletion_max": -0.012800575573131964,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "appearance_geometry_2x2_interaction": {
+                "source_macro_mean": 0.004645687701804846,
+                "micro_mean": 0.00033909799932180403,
+                "source_deletion_min": 0.0017488788579558961,
+                "source_deletion_max": 0.00558659815620151,
+                "positive_direction_survives_all_supported_source_deletions": true
+              }
+            }
+          },
+          "4": {
+            "queries": 2142,
+            "sources": 160,
+            "GTtrajectories": 453,
+            "features": {
+              "raw_appearance_cosine": {
+                "correct": 1993,
+                "micro": 0.9304388422035481,
+                "source_GTtrajectory_query_macro": 0.9260941432927453,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "adapter_appearance_cosine": {
+                "correct": 1921,
+                "micro": 0.8968253968253969,
+                "source_GTtrajectory_query_macro": 0.8822726074399005,
+                "repair_raw_error": 42,
+                "break_raw_correct": 114
+              },
+              "A0G0": {
+                "correct": 1993,
+                "micro": 0.9304388422035481,
+                "source_GTtrajectory_query_macro": 0.9260941432927453,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "A0G1": {
+                "correct": 2002,
+                "micro": 0.934640522875817,
+                "source_GTtrajectory_query_macro": 0.9289658810539919,
+                "repair_raw_error": 29,
+                "break_raw_correct": 20
+              },
+              "A0Gmask": {
+                "correct": 1993,
+                "micro": 0.9304388422035481,
+                "source_GTtrajectory_query_macro": 0.9213106836967857,
+                "repair_raw_error": 6,
+                "break_raw_correct": 6
+              },
+              "A0Gperm": {
+                "correct": 1988,
+                "micro": 0.9281045751633987,
+                "source_GTtrajectory_query_macro": 0.9236574393716662,
+                "repair_raw_error": 15,
+                "break_raw_correct": 20
+              },
+              "A1G0": {
+                "correct": 1921,
+                "micro": 0.8968253968253969,
+                "source_GTtrajectory_query_macro": 0.8822726074399005,
+                "repair_raw_error": 42,
+                "break_raw_correct": 114
+              },
+              "A1G1": {
+                "correct": 1930,
+                "micro": 0.9010270774976658,
+                "source_GTtrajectory_query_macro": 0.8917333532912715,
+                "repair_raw_error": 46,
+                "break_raw_correct": 109
+              },
+              "A1Gmask": {
+                "correct": 1922,
+                "micro": 0.8972922502334267,
+                "source_GTtrajectory_query_macro": 0.8828976074399003,
+                "repair_raw_error": 41,
+                "break_raw_correct": 112
+              },
+              "A1Gperm": {
+                "correct": 1927,
+                "micro": 0.8996265172735761,
+                "source_GTtrajectory_query_macro": 0.8799014563279407,
+                "repair_raw_error": 44,
+                "break_raw_correct": 110
+              }
+            },
+            "comparisons": {
+              "adapter_cosine_minus_raw": {
+                "net_correct": -72,
+                "micro_delta": -0.03361344537815126,
+                "source_macro_delta": -0.04382153585284476,
+                "repair": 42,
+                "break_correct": 114,
+                "source_deletion_min": -0.04619357905527337,
+                "source_deletion_max": -0.03780783482047253,
+                "source_deletion_min_sources": [
+                  "ArgoVerse/e8ce69b2-36ab-38e8-87a4-b9e20fee7fd2",
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0G0": {
+                "net_correct": 9,
+                "micro_delta": 0.004201680672268907,
+                "source_macro_delta": 0.0028717377612466066,
+                "repair": 29,
+                "break_correct": 20,
+                "source_deletion_min": -0.003399509171072508,
+                "source_deletion_max": 0.00917910718112875,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1G0": {
+                "net_correct": 9,
+                "micro_delta": 0.004201680672268907,
+                "source_macro_delta": 0.00946074585137091,
+                "repair": 12,
+                "break_correct": 3,
+                "source_deletion_min": 0.0032309392215052603,
+                "source_deletion_max": 0.01050039932115404,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gmask": {
+                "net_correct": 9,
+                "micro_delta": 0.004201680672268907,
+                "source_macro_delta": 0.0076551973572062115,
+                "repair": 26,
+                "break_correct": 17,
+                "source_deletion_min": 0.0014140350764340031,
+                "source_deletion_max": 0.008620534028215974,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gperm": {
+                "net_correct": 14,
+                "micro_delta": 0.006535947712418301,
+                "source_macro_delta": 0.005308441682325693,
+                "repair": 35,
+                "break_correct": 21,
+                "source_deletion_min": -0.0009474800681000084,
+                "source_deletion_max": 0.007438264166700829,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1Gmask": {
+                "net_correct": 8,
+                "micro_delta": 0.003734827264239029,
+                "source_macro_delta": 0.008835745851371146,
+                "repair": 11,
+                "break_correct": 3,
+                "source_deletion_min": 0.0026020084038951958,
+                "source_deletion_max": 0.009871468503543975,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gperm": {
+                "net_correct": 3,
+                "micro_delta": 0.0014005602240896359,
+                "source_macro_delta": 0.011831896963330757,
+                "repair": 13,
+                "break_correct": 10,
+                "source_deletion_min": 0.0056170032335404125,
+                "source_deletion_max": 0.012886463333189192,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_raw": {
+                "net_correct": -63,
+                "micro_delta": -0.029411764705882353,
+                "source_macro_delta": -0.03436079000147385,
+                "repair": 46,
+                "break_correct": 109,
+                "source_deletion_min": -0.04086620377506791,
+                "source_deletion_max": -0.02828758742286665,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "appearance_geometry_2x2_interaction": {
+                "source_macro_mean": 0.006589008090124304,
+                "micro_mean": 0.0,
+                "source_deletion_min": 0.00034114021647713925,
+                "source_deletion_max": 0.008726884451277978,
+                "positive_direction_survives_all_supported_source_deletions": true
+              }
+            }
+          }
+        },
+        "cross_lag_common_1331": {
+          "1": {
+            "queries": 1331,
+            "sources": 107,
+            "GTtrajectories": 283,
+            "features": {
+              "raw_appearance_cosine": {
+                "correct": 1315,
+                "micro": 0.9879789631855748,
+                "source_GTtrajectory_query_macro": 0.992182168817683,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "adapter_appearance_cosine": {
+                "correct": 1306,
+                "micro": 0.9812171299774606,
+                "source_GTtrajectory_query_macro": 0.9775194285331458,
+                "repair_raw_error": 3,
+                "break_raw_correct": 12
+              },
+              "A0G0": {
+                "correct": 1315,
+                "micro": 0.9879789631855748,
+                "source_GTtrajectory_query_macro": 0.992182168817683,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "A0G1": {
+                "correct": 1320,
+                "micro": 0.9917355371900827,
+                "source_GTtrajectory_query_macro": 0.9940021881026555,
+                "repair_raw_error": 5,
+                "break_raw_correct": 0
+              },
+              "A0Gmask": {
+                "correct": 1314,
+                "micro": 0.9872276483846731,
+                "source_GTtrajectory_query_macro": 0.9918901127429166,
+                "repair_raw_error": 0,
+                "break_raw_correct": 1
+              },
+              "A0Gperm": {
+                "correct": 1319,
+                "micro": 0.990984222389181,
+                "source_GTtrajectory_query_macro": 0.9929832369084707,
+                "repair_raw_error": 4,
+                "break_raw_correct": 0
+              },
+              "A1G0": {
+                "correct": 1306,
+                "micro": 0.9812171299774606,
+                "source_GTtrajectory_query_macro": 0.9775194285331458,
+                "repair_raw_error": 3,
+                "break_raw_correct": 12
+              },
+              "A1G1": {
+                "correct": 1309,
+                "micro": 0.9834710743801653,
+                "source_GTtrajectory_query_macro": 0.979192627206646,
+                "repair_raw_error": 3,
+                "break_raw_correct": 9
+              },
+              "A1Gmask": {
+                "correct": 1306,
+                "micro": 0.9812171299774606,
+                "source_GTtrajectory_query_macro": 0.9775194285331458,
+                "repair_raw_error": 3,
+                "break_raw_correct": 12
+              },
+              "A1Gperm": {
+                "correct": 1305,
+                "micro": 0.980465815176559,
+                "source_GTtrajectory_query_macro": 0.9774930044120955,
+                "repair_raw_error": 3,
+                "break_raw_correct": 13
+              }
+            },
+            "comparisons": {
+              "adapter_cosine_minus_raw": {
+                "net_correct": -9,
+                "micro_delta": -0.0067618332081141996,
+                "source_macro_delta": -0.014662740284537179,
+                "repair": 3,
+                "break_correct": 12,
+                "source_deletion_min": -0.016373395067095613,
+                "source_deletion_max": -0.010084086890994985,
+                "source_deletion_min_sources": [
+                  "BDD/b4536117-bc85ba28"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0G0": {
+                "net_correct": 5,
+                "micro_delta": 0.003756574004507889,
+                "source_macro_delta": 0.0018200192849725516,
+                "repair": 5,
+                "break_correct": 0,
+                "source_deletion_min": 0.0008937930518119197,
+                "source_deletion_max": 0.0018371892782270138,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1G0": {
+                "net_correct": 3,
+                "micro_delta": 0.002253944402704733,
+                "source_macro_delta": 0.0016731986735002424,
+                "repair": 3,
+                "break_correct": 0,
+                "source_deletion_min": 0.00050973828362751,
+                "source_deletion_max": 0.0016889835666463778,
+                "source_deletion_min_sources": [
+                  "BDD/b2ff6aba-fa4ac7d7"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gmask": {
+                "net_correct": 6,
+                "micro_delta": 0.004507888805409466,
+                "source_macro_delta": 0.0021120753597388964,
+                "repair": 6,
+                "break_correct": 0,
+                "source_deletion_min": 0.0011886043725666366,
+                "source_deletion_max": 0.0021320005989817307,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gperm": {
+                "net_correct": 1,
+                "micro_delta": 0.0007513148009015778,
+                "source_macro_delta": 0.001018951194184825,
+                "repair": 2,
+                "break_correct": 1,
+                "source_deletion_min": 8.516771488469572e-05,
+                "source_deletion_max": 0.001238207547169811,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gmask": {
+                "net_correct": 3,
+                "micro_delta": 0.002253944402704733,
+                "source_macro_delta": 0.0016731986735002424,
+                "repair": 3,
+                "break_correct": 0,
+                "source_deletion_min": 0.00050973828362751,
+                "source_deletion_max": 0.0016889835666463778,
+                "source_deletion_min_sources": [
+                  "BDD/b2ff6aba-fa4ac7d7"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gperm": {
+                "net_correct": 4,
+                "micro_delta": 0.003005259203606311,
+                "source_macro_delta": 0.0016996227945504927,
+                "repair": 5,
+                "break_correct": 1,
+                "source_deletion_min": 0.0005364116888386515,
+                "source_deletion_max": 0.002187355085065067,
+                "source_deletion_min_sources": [
+                  "BDD/b2ff6aba-fa4ac7d7"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_raw": {
+                "net_correct": -6,
+                "micro_delta": -0.004507888805409466,
+                "source_macro_delta": -0.012989541611036937,
+                "repair": 3,
+                "break_correct": 9,
+                "source_deletion_min": -0.014684411500449232,
+                "source_deletion_max": -0.008395103324348605,
+                "source_deletion_min_sources": [
+                  "BDD/b4536117-bc85ba28"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "appearance_geometry_2x2_interaction": {
+                "source_macro_mean": -0.00014682061147230918,
+                "micro_mean": -0.0015026296018031556,
+                "source_deletion_min": -0.0013274509945995039,
+                "source_deletion_max": 0.0007951905148344582,
+                "positive_direction_survives_all_supported_source_deletions": false
+              }
+            }
+          },
+          "4": {
+            "queries": 1331,
+            "sources": 107,
+            "GTtrajectories": 283,
+            "features": {
+              "raw_appearance_cosine": {
+                "correct": 1232,
+                "micro": 0.9256198347107438,
+                "source_GTtrajectory_query_macro": 0.9044664997402705,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "adapter_appearance_cosine": {
+                "correct": 1197,
+                "micro": 0.8993238166791886,
+                "source_GTtrajectory_query_macro": 0.8917804104133914,
+                "repair_raw_error": 30,
+                "break_raw_correct": 65
+              },
+              "A0G0": {
+                "correct": 1232,
+                "micro": 0.9256198347107438,
+                "source_GTtrajectory_query_macro": 0.9044664997402705,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "A0G1": {
+                "correct": 1240,
+                "micro": 0.9316303531179564,
+                "source_GTtrajectory_query_macro": 0.9048727346065827,
+                "repair_raw_error": 21,
+                "break_raw_correct": 13
+              },
+              "A0Gmask": {
+                "correct": 1232,
+                "micro": 0.9256198347107438,
+                "source_GTtrajectory_query_macro": 0.9043471097844321,
+                "repair_raw_error": 4,
+                "break_raw_correct": 4
+              },
+              "A0Gperm": {
+                "correct": 1226,
+                "micro": 0.9211119459053343,
+                "source_GTtrajectory_query_macro": 0.9106790225441181,
+                "repair_raw_error": 8,
+                "break_raw_correct": 14
+              },
+              "A1G0": {
+                "correct": 1197,
+                "micro": 0.8993238166791886,
+                "source_GTtrajectory_query_macro": 0.8917804104133914,
+                "repair_raw_error": 30,
+                "break_raw_correct": 65
+              },
+              "A1G1": {
+                "correct": 1203,
+                "micro": 0.903831705484598,
+                "source_GTtrajectory_query_macro": 0.9047529406146905,
+                "repair_raw_error": 33,
+                "break_raw_correct": 62
+              },
+              "A1Gmask": {
+                "correct": 1198,
+                "micro": 0.9000751314800901,
+                "source_GTtrajectory_query_macro": 0.8960379389699855,
+                "repair_raw_error": 29,
+                "break_raw_correct": 63
+              },
+              "A1Gperm": {
+                "correct": 1205,
+                "micro": 0.9053343350864012,
+                "source_GTtrajectory_query_macro": 0.8983116162203965,
+                "repair_raw_error": 32,
+                "break_raw_correct": 59
+              }
+            },
+            "comparisons": {
+              "adapter_cosine_minus_raw": {
+                "net_correct": -35,
+                "micro_delta": -0.02629601803155522,
+                "source_macro_delta": -0.01268608932687909,
+                "repair": 30,
+                "break_correct": 65,
+                "source_deletion_min": -0.02223973167901957,
+                "source_deletion_max": -0.0033718071507176806,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5",
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0G0": {
+                "net_correct": 8,
+                "micro_delta": 0.006010518407212622,
+                "source_macro_delta": 0.00040623486631219397,
+                "repair": 21,
+                "break_correct": 13,
+                "source_deletion_min": -0.009023894993439703,
+                "source_deletion_max": 0.009844029534862185,
+                "source_deletion_min_sources": [
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1G0": {
+                "net_correct": 6,
+                "micro_delta": 0.004507888805409466,
+                "source_macro_delta": 0.01297253020129907,
+                "repair": 8,
+                "break_correct": 2,
+                "source_deletion_min": 0.008377931429613137,
+                "source_deletion_max": 0.013409377970493642,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gmask": {
+                "net_correct": 8,
+                "micro_delta": 0.006010518407212622,
+                "source_macro_delta": 0.0005256248221505722,
+                "repair": 19,
+                "break_correct": 11,
+                "source_deletion_min": -0.0010417434971372627,
+                "source_deletion_max": 0.00288907411292563,
+                "source_deletion_min_sources": [
+                  "BDD/b20b69d2-e31380a7"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0Gperm": {
+                "net_correct": 14,
+                "micro_delta": 0.010518407212622089,
+                "source_macro_delta": -0.005806287937535459,
+                "repair": 24,
+                "break_correct": 10,
+                "source_deletion_min": -0.007747856691663089,
+                "source_deletion_max": 0.0035728980253180425,
+                "source_deletion_min_sources": [
+                  "BDD/b20b69d2-e31380a7"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1Gmask": {
+                "net_correct": 5,
+                "micro_delta": 0.003756574004507889,
+                "source_macro_delta": 0.008715001644704956,
+                "repair": 7,
+                "break_correct": 2,
+                "source_deletion_min": 0.005652564553302864,
+                "source_deletion_max": 0.009111684050158211,
+                "source_deletion_min_sources": [
+                  "BDD/b28ec521-898e11bd"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gperm": {
+                "net_correct": -2,
+                "micro_delta": -0.0015026296018031556,
+                "source_macro_delta": 0.006441324394294012,
+                "repair": 7,
+                "break_correct": 9,
+                "source_deletion_min": 0.003357437517510556,
+                "source_deletion_max": 0.006973789718768417,
+                "source_deletion_min_sources": [
+                  "BDD/b28ec521-898e11bd"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_raw": {
+                "net_correct": -29,
+                "micro_delta": -0.021788129226145755,
+                "source_macro_delta": 0.0002864408744199798,
+                "repair": 33,
+                "break_correct": 62,
+                "source_deletion_min": -0.00914481911733096,
+                "source_deletion_max": 0.009723105410970927,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5",
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "appearance_geometry_2x2_interaction": {
+                "source_macro_mean": 0.012566295334986877,
+                "micro_mean": -0.0015026296018031556,
+                "source_deletion_min": 0.003250883026826427,
+                "source_deletion_max": 0.022118807555128312,
+                "positive_direction_survives_all_supported_source_deletions": true
+              }
+            }
+          }
+        }
+      },
+      "20261025": {
+        "per_lag_all_hard": {
+          "1": {
+            "queries": 2949,
+            "sources": 172,
+            "GTtrajectories": 578,
+            "features": {
+              "raw_appearance_cosine": {
+                "correct": 2903,
+                "micro": 0.984401492031197,
+                "source_GTtrajectory_query_macro": 0.9789994097226783,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "adapter_appearance_cosine": {
+                "correct": 2864,
+                "micro": 0.9711766700576466,
+                "source_GTtrajectory_query_macro": 0.9603174241418139,
+                "repair_raw_error": 14,
+                "break_raw_correct": 53
+              },
+              "A0G0": {
+                "correct": 2903,
+                "micro": 0.984401492031197,
+                "source_GTtrajectory_query_macro": 0.9789994097226783,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "A0G1": {
+                "correct": 2915,
+                "micro": 0.9884706680230587,
+                "source_GTtrajectory_query_macro": 0.9811988447598913,
+                "repair_raw_error": 15,
+                "break_raw_correct": 3
+              },
+              "A0Gmask": {
+                "correct": 2899,
+                "micro": 0.9830451000339098,
+                "source_GTtrajectory_query_macro": 0.9733654119375177,
+                "repair_raw_error": 1,
+                "break_raw_correct": 5
+              },
+              "A0Gperm": {
+                "correct": 2902,
+                "micro": 0.9840623940318752,
+                "source_GTtrajectory_query_macro": 0.9744311780231902,
+                "repair_raw_error": 9,
+                "break_raw_correct": 10
+              },
+              "A1G0": {
+                "correct": 2864,
+                "micro": 0.9711766700576466,
+                "source_GTtrajectory_query_macro": 0.9603174241418139,
+                "repair_raw_error": 14,
+                "break_raw_correct": 53
+              },
+              "A1G1": {
+                "correct": 2875,
+                "micro": 0.9749067480501865,
+                "source_GTtrajectory_query_macro": 0.9644723244740397,
+                "repair_raw_error": 18,
+                "break_raw_correct": 46
+              },
+              "A1Gmask": {
+                "correct": 2864,
+                "micro": 0.9711766700576466,
+                "source_GTtrajectory_query_macro": 0.9604696943522236,
+                "repair_raw_error": 15,
+                "break_raw_correct": 54
+              },
+              "A1Gperm": {
+                "correct": 2860,
+                "micro": 0.9698202780603594,
+                "source_GTtrajectory_query_macro": 0.9601086691616074,
+                "repair_raw_error": 14,
+                "break_raw_correct": 57
+              }
+            },
+            "comparisons": {
+              "adapter_cosine_minus_raw": {
+                "net_correct": -39,
+                "micro_delta": -0.013224821973550356,
+                "source_macro_delta": -0.018681985580864424,
+                "repair": 14,
+                "break_correct": 53,
+                "source_deletion_min": -0.020545622923442468,
+                "source_deletion_max": -0.01294328374215592,
+                "source_deletion_min_sources": [
+                  "BDD/b262f576-b0373824"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0G0": {
+                "net_correct": 12,
+                "micro_delta": 0.004069175991861648,
+                "source_macro_delta": 0.0021994350372129823,
+                "repair": 15,
+                "break_correct": 3,
+                "source_deletion_min": 0.0005675603883079106,
+                "source_deletion_max": 0.003674285534506741,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1G0": {
+                "net_correct": 11,
+                "micro_delta": 0.003730077992539844,
+                "source_macro_delta": 0.004154900332225875,
+                "repair": 13,
+                "break_correct": 2,
+                "source_deletion_min": 0.0012552213868003328,
+                "source_deletion_max": 0.005933583959899748,
+                "source_deletion_min_sources": [
+                  "LaSOT/basketball-11"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gmask": {
+                "net_correct": 16,
+                "micro_delta": 0.0054255679891488644,
+                "source_macro_delta": 0.007833432822373587,
+                "repair": 20,
+                "break_correct": 4,
+                "source_deletion_min": 0.002031289154668255,
+                "source_deletion_max": 0.009341230675136092,
+                "source_deletion_min_sources": [
+                  "Charades/PC7H2"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gperm": {
+                "net_correct": 13,
+                "micro_delta": 0.004408273991183452,
+                "source_macro_delta": 0.006767666736701039,
+                "repair": 18,
+                "break_correct": 5,
+                "source_deletion_min": 0.0009592905187870854,
+                "source_deletion_max": 0.008269232039254922,
+                "source_deletion_min_sources": [
+                  "Charades/PC7H2"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gmask": {
+                "net_correct": 11,
+                "micro_delta": 0.003730077992539844,
+                "source_macro_delta": 0.00400263012181612,
+                "repair": 13,
+                "break_correct": 2,
+                "source_deletion_min": 0.0011020607073238637,
+                "source_deletion_max": 0.005780423280423279,
+                "source_deletion_min_sources": [
+                  "LaSOT/basketball-11"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gperm": {
+                "net_correct": 15,
+                "micro_delta": 0.00508646998982706,
+                "source_macro_delta": 0.004363655312432324,
+                "repair": 18,
+                "break_correct": 3,
+                "source_deletion_min": 0.0034145148951561528,
+                "source_deletion_max": 0.004973969086189291,
+                "source_deletion_min_sources": [
+                  "LaSOT/bicycle-9"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_raw": {
+                "net_correct": -28,
+                "micro_delta": -0.009494743981010512,
+                "source_macro_delta": -0.01452708524863855,
+                "repair": 18,
+                "break_correct": 46,
+                "source_deletion_min": -0.01607402726763629,
+                "source_deletion_max": -0.008764085747168453,
+                "source_deletion_min_sources": [
+                  "BDD/b3da33d5-a64e7657"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "appearance_geometry_2x2_interaction": {
+                "source_macro_mean": 0.0019554652950128926,
+                "micro_mean": -0.00033909799932180403,
+                "source_deletion_min": -0.000957075843612841,
+                "source_deletion_max": 0.0037212867294865743,
+                "positive_direction_survives_all_supported_source_deletions": false
+              }
+            }
+          },
+          "4": {
+            "queries": 2142,
+            "sources": 160,
+            "GTtrajectories": 453,
+            "features": {
+              "raw_appearance_cosine": {
+                "correct": 1993,
+                "micro": 0.9304388422035481,
+                "source_GTtrajectory_query_macro": 0.9260941432927453,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "adapter_appearance_cosine": {
+                "correct": 1932,
+                "micro": 0.9019607843137255,
+                "source_GTtrajectory_query_macro": 0.894081211286451,
+                "repair_raw_error": 43,
+                "break_raw_correct": 104
+              },
+              "A0G0": {
+                "correct": 1993,
+                "micro": 0.9304388422035481,
+                "source_GTtrajectory_query_macro": 0.9260941432927453,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "A0G1": {
+                "correct": 2000,
+                "micro": 0.9337068160597572,
+                "source_GTtrajectory_query_macro": 0.9346688755193219,
+                "repair_raw_error": 27,
+                "break_raw_correct": 20
+              },
+              "A0Gmask": {
+                "correct": 1992,
+                "micro": 0.9299719887955182,
+                "source_GTtrajectory_query_macro": 0.9192273503634525,
+                "repair_raw_error": 5,
+                "break_raw_correct": 6
+              },
+              "A0Gperm": {
+                "correct": 1988,
+                "micro": 0.9281045751633987,
+                "source_GTtrajectory_query_macro": 0.9241158678088306,
+                "repair_raw_error": 17,
+                "break_raw_correct": 22
+              },
+              "A1G0": {
+                "correct": 1932,
+                "micro": 0.9019607843137255,
+                "source_GTtrajectory_query_macro": 0.894081211286451,
+                "repair_raw_error": 43,
+                "break_raw_correct": 104
+              },
+              "A1G1": {
+                "correct": 1937,
+                "micro": 0.9042950513538749,
+                "source_GTtrajectory_query_macro": 0.8971455037648057,
+                "repair_raw_error": 47,
+                "break_raw_correct": 103
+              },
+              "A1Gmask": {
+                "correct": 1933,
+                "micro": 0.9024276377217554,
+                "source_GTtrajectory_query_macro": 0.8950534335086731,
+                "repair_raw_error": 44,
+                "break_raw_correct": 104
+              },
+              "A1Gperm": {
+                "correct": 1922,
+                "micro": 0.8972922502334267,
+                "source_GTtrajectory_query_macro": 0.8848415104719146,
+                "repair_raw_error": 41,
+                "break_raw_correct": 112
+              }
+            },
+            "comparisons": {
+              "adapter_cosine_minus_raw": {
+                "net_correct": -61,
+                "micro_delta": -0.028478057889822595,
+                "source_macro_delta": -0.03201293200629429,
+                "repair": 43,
+                "break_correct": 104,
+                "source_deletion_min": -0.034310707260002654,
+                "source_deletion_max": -0.025924963025201822,
+                "source_deletion_min_sources": [
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0G0": {
+                "net_correct": 7,
+                "micro_delta": 0.0032679738562091504,
+                "source_macro_delta": 0.008574732226576565,
+                "repair": 27,
+                "break_correct": 20,
+                "source_deletion_min": 0.0023393531839765403,
+                "source_deletion_max": 0.009676879389427273,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1G0": {
+                "net_correct": 5,
+                "micro_delta": 0.002334267040149393,
+                "source_macro_delta": 0.003064292478354713,
+                "repair": 12,
+                "break_correct": 7,
+                "source_deletion_min": 0.0009871286993928508,
+                "source_deletion_max": 0.004655891802118218,
+                "source_deletion_min_sources": [
+                  "BDD/b20b9c19-91e01a50"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gmask": {
+                "net_correct": 8,
+                "micro_delta": 0.003734827264239029,
+                "source_macro_delta": 0.015441525155869384,
+                "repair": 26,
+                "break_correct": 18,
+                "source_deletion_min": 0.009249333490183262,
+                "source_deletion_max": 0.016586859695633997,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17",
+                  "YouTube/Y0DKz3JCq3I"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gperm": {
+                "net_correct": 12,
+                "micro_delta": 0.0056022408963585435,
+                "source_macro_delta": 0.01055300771049128,
+                "repair": 34,
+                "break_correct": 22,
+                "source_deletion_min": 0.0043300706520666855,
+                "source_deletion_max": 0.012715814886867524,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17",
+                  "YouTube/Y0DKz3JCq3I"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gmask": {
+                "net_correct": 4,
+                "micro_delta": 0.0018674136321195146,
+                "source_macro_delta": 0.002092070256132672,
+                "repair": 11,
+                "break_correct": 7,
+                "source_deletion_min": 8.79187199941952e-06,
+                "source_deletion_max": 0.0036775549747247865,
+                "source_deletion_min_sources": [
+                  "BDD/b20b9c19-91e01a50"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gperm": {
+                "net_correct": 15,
+                "micro_delta": 0.0070028011204481795,
+                "source_macro_delta": 0.012303993292891113,
+                "repair": 21,
+                "break_correct": 6,
+                "source_deletion_min": 0.009236722810456675,
+                "source_deletion_max": 0.01280066411024703,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_b9e87a1eb4ca4a47d8d80da9f7d7f20"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_raw": {
+                "net_correct": -56,
+                "micro_delta": -0.026143790849673203,
+                "source_macro_delta": -0.02894863952793958,
+                "repair": 47,
+                "break_correct": 103,
+                "source_deletion_min": -0.031227142501909597,
+                "source_deletion_max": -0.022841398267108758,
+                "source_deletion_min_sources": [
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "appearance_geometry_2x2_interaction": {
+                "source_macro_mean": -0.0055104397482218515,
+                "micro_mean": -0.0009337068160597573,
+                "source_deletion_min": -0.007641532660684316,
+                "source_deletion_max": 0.0007442115741165225,
+                "positive_direction_survives_all_supported_source_deletions": false
+              }
+            }
+          }
+        },
+        "cross_lag_common_1331": {
+          "1": {
+            "queries": 1331,
+            "sources": 107,
+            "GTtrajectories": 283,
+            "features": {
+              "raw_appearance_cosine": {
+                "correct": 1315,
+                "micro": 0.9879789631855748,
+                "source_GTtrajectory_query_macro": 0.992182168817683,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "adapter_appearance_cosine": {
+                "correct": 1306,
+                "micro": 0.9812171299774606,
+                "source_GTtrajectory_query_macro": 0.9826319351728231,
+                "repair_raw_error": 4,
+                "break_raw_correct": 13
+              },
+              "A0G0": {
+                "correct": 1315,
+                "micro": 0.9879789631855748,
+                "source_GTtrajectory_query_macro": 0.992182168817683,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "A0G1": {
+                "correct": 1322,
+                "micro": 0.9932381667918858,
+                "source_GTtrajectory_query_macro": 0.9947939845720221,
+                "repair_raw_error": 7,
+                "break_raw_correct": 0
+              },
+              "A0Gmask": {
+                "correct": 1314,
+                "micro": 0.9872276483846731,
+                "source_GTtrajectory_query_macro": 0.9918901127429166,
+                "repair_raw_error": 0,
+                "break_raw_correct": 1
+              },
+              "A0Gperm": {
+                "correct": 1317,
+                "micro": 0.9894815927873779,
+                "source_GTtrajectory_query_macro": 0.9927013796172677,
+                "repair_raw_error": 2,
+                "break_raw_correct": 0
+              },
+              "A1G0": {
+                "correct": 1306,
+                "micro": 0.9812171299774606,
+                "source_GTtrajectory_query_macro": 0.9826319351728231,
+                "repair_raw_error": 4,
+                "break_raw_correct": 13
+              },
+              "A1G1": {
+                "correct": 1310,
+                "micro": 0.9842223891810669,
+                "source_GTtrajectory_query_macro": 0.9891350504376206,
+                "repair_raw_error": 5,
+                "break_raw_correct": 10
+              },
+              "A1Gmask": {
+                "correct": 1306,
+                "micro": 0.9812171299774606,
+                "source_GTtrajectory_query_macro": 0.9826319351728231,
+                "repair_raw_error": 4,
+                "break_raw_correct": 13
+              },
+              "A1Gperm": {
+                "correct": 1302,
+                "micro": 0.9782118707738543,
+                "source_GTtrajectory_query_macro": 0.977265843185439,
+                "repair_raw_error": 3,
+                "break_raw_correct": 16
+              }
+            },
+            "comparisons": {
+              "adapter_cosine_minus_raw": {
+                "net_correct": -9,
+                "micro_delta": -0.0067618332081141996,
+                "source_macro_delta": -0.009550233644859851,
+                "repair": 4,
+                "break_correct": 13,
+                "source_deletion_min": -0.011212657232704402,
+                "source_deletion_max": -0.006495676100628931,
+                "source_deletion_min_sources": [
+                  "BDD/b4536117-bc85ba28"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0G0": {
+                "net_correct": 7,
+                "micro_delta": 0.005259203606311044,
+                "source_macro_delta": 0.0026118157543391085,
+                "repair": 7,
+                "break_correct": 0,
+                "source_deletion_min": 0.001693059299191375,
+                "source_deletion_max": 0.002636455525606469,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1G0": {
+                "net_correct": 4,
+                "micro_delta": 0.003005259203606311,
+                "source_macro_delta": 0.006503115264797521,
+                "repair": 4,
+                "break_correct": 0,
+                "source_deletion_min": 0.0034198113207547162,
+                "source_deletion_max": 0.006564465408805031,
+                "source_deletion_min_sources": [
+                  "BDD/b28ec521-898e11bd"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gmask": {
+                "net_correct": 8,
+                "micro_delta": 0.006010518407212622,
+                "source_macro_delta": 0.0029038718291054533,
+                "repair": 8,
+                "break_correct": 0,
+                "source_deletion_min": 0.001987870619946092,
+                "source_deletion_max": 0.002931266846361186,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gperm": {
+                "net_correct": 5,
+                "micro_delta": 0.003756574004507889,
+                "source_macro_delta": 0.0020926049547543846,
+                "repair": 5,
+                "break_correct": 0,
+                "source_deletion_min": 0.0011689502845163224,
+                "source_deletion_max": 0.0021123465109314163,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gmask": {
+                "net_correct": 4,
+                "micro_delta": 0.003005259203606311,
+                "source_macro_delta": 0.006503115264797521,
+                "repair": 4,
+                "break_correct": 0,
+                "source_deletion_min": 0.0034198113207547162,
+                "source_deletion_max": 0.006564465408805031,
+                "source_deletion_min_sources": [
+                  "BDD/b28ec521-898e11bd"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gperm": {
+                "net_correct": 8,
+                "micro_delta": 0.006010518407212622,
+                "source_macro_delta": 0.011869207252181657,
+                "repair": 8,
+                "break_correct": 0,
+                "source_deletion_min": 0.007264199773428651,
+                "source_deletion_max": 0.011981180905504122,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ea33c680e1f18d71543b8f80815beec"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_raw": {
+                "net_correct": -5,
+                "micro_delta": -0.003756574004507889,
+                "source_macro_delta": -0.0030471183800623303,
+                "repair": 5,
+                "break_correct": 10,
+                "source_deletion_min": -0.004648191823899373,
+                "source_deletion_max": -0.0010543014375561555,
+                "source_deletion_min_sources": [
+                  "BDD/b4536117-bc85ba28"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "appearance_geometry_2x2_interaction": {
+                "source_macro_mean": 0.0038912995104584125,
+                "micro_mean": -0.002253944402704733,
+                "source_deletion_min": 0.0007833557951482473,
+                "source_deletion_max": 0.004586889787361486,
+                "positive_direction_survives_all_supported_source_deletions": true
+              }
+            }
+          },
+          "4": {
+            "queries": 1331,
+            "sources": 107,
+            "GTtrajectories": 283,
+            "features": {
+              "raw_appearance_cosine": {
+                "correct": 1232,
+                "micro": 0.9256198347107438,
+                "source_GTtrajectory_query_macro": 0.9044664997402705,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "adapter_appearance_cosine": {
+                "correct": 1204,
+                "micro": 0.9045830202854996,
+                "source_GTtrajectory_query_macro": 0.9019505723970375,
+                "repair_raw_error": 30,
+                "break_raw_correct": 58
+              },
+              "A0G0": {
+                "correct": 1232,
+                "micro": 0.9256198347107438,
+                "source_GTtrajectory_query_macro": 0.9044664997402705,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "A0G1": {
+                "correct": 1241,
+                "micro": 0.932381667918858,
+                "source_GTtrajectory_query_macro": 0.9139535145427059,
+                "repair_raw_error": 20,
+                "break_raw_correct": 11
+              },
+              "A0Gmask": {
+                "correct": 1231,
+                "micro": 0.9248685199098422,
+                "source_GTtrajectory_query_macro": 0.8950013153919087,
+                "repair_raw_error": 3,
+                "break_raw_correct": 4
+              },
+              "A0Gperm": {
+                "correct": 1226,
+                "micro": 0.9211119459053343,
+                "source_GTtrajectory_query_macro": 0.9115976262664602,
+                "repair_raw_error": 9,
+                "break_raw_correct": 15
+              },
+              "A1G0": {
+                "correct": 1204,
+                "micro": 0.9045830202854996,
+                "source_GTtrajectory_query_macro": 0.9019505723970375,
+                "repair_raw_error": 30,
+                "break_raw_correct": 58
+              },
+              "A1G1": {
+                "correct": 1205,
+                "micro": 0.9053343350864012,
+                "source_GTtrajectory_query_macro": 0.900710029450887,
+                "repair_raw_error": 33,
+                "break_raw_correct": 60
+              },
+              "A1Gmask": {
+                "correct": 1206,
+                "micro": 0.9060856498873028,
+                "source_GTtrajectory_query_macro": 0.9041757615381143,
+                "repair_raw_error": 31,
+                "break_raw_correct": 57
+              },
+              "A1Gperm": {
+                "correct": 1198,
+                "micro": 0.9000751314800901,
+                "source_GTtrajectory_query_macro": 0.8973982905667182,
+                "repair_raw_error": 29,
+                "break_raw_correct": 63
+              }
+            },
+            "comparisons": {
+              "adapter_cosine_minus_raw": {
+                "net_correct": -28,
+                "micro_delta": -0.021036814425244178,
+                "source_macro_delta": -0.0025159273432330265,
+                "repair": 30,
+                "break_correct": 58,
+                "source_deletion_min": -0.011973624770999667,
+                "source_deletion_max": 0.006894299757302219,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5",
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0G0": {
+                "net_correct": 9,
+                "micro_delta": 0.0067618332081141996,
+                "source_macro_delta": 0.009487014802435412,
+                "repair": 20,
+                "break_correct": 11,
+                "source_deletion_min": 0.0001425526779300362,
+                "source_deletion_max": 0.011935005508118716,
+                "source_deletion_min_sources": [
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1G0": {
+                "net_correct": 1,
+                "micro_delta": 0.0007513148009015778,
+                "source_macro_delta": -0.0012405429461505024,
+                "repair": 7,
+                "break_correct": 6,
+                "source_deletion_min": -0.0028245732255166222,
+                "source_deletion_max": 0.0011062443845462715,
+                "source_deletion_min_sources": [
+                  "BDD/b4536117-bc85ba28"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0Gmask": {
+                "net_correct": 10,
+                "micro_delta": 0.007513148009015778,
+                "source_macro_delta": 0.018952199150797155,
+                "repair": 20,
+                "break_correct": 10,
+                "source_deletion_min": 0.009697031218257634,
+                "source_deletion_max": 0.021489484048446313,
+                "source_deletion_min_sources": [
+                  "YouTube/Y0DKz3JCq3I",
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gperm": {
+                "net_correct": 15,
+                "micro_delta": 0.011269722013523666,
+                "source_macro_delta": 0.0023558882762456657,
+                "repair": 25,
+                "break_correct": 10,
+                "source_deletion_min": -0.00705584862680843,
+                "source_deletion_max": 0.011812075901493456,
+                "source_deletion_min_sources": [
+                  "YouTube/Y0DKz3JCq3I"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1Gmask": {
+                "net_correct": -1,
+                "micro_delta": -0.0007513148009015778,
+                "source_macro_delta": -0.0034657320872273356,
+                "repair": 6,
+                "break_correct": 7,
+                "source_deletion_min": -0.004441823899371069,
+                "source_deletion_max": -0.0011399371069182392,
+                "source_deletion_min_sources": [
+                  "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48",
+                  "LaSOT/person-7"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1Gperm": {
+                "net_correct": 7,
+                "micro_delta": 0.005259203606311044,
+                "source_macro_delta": 0.0033117388841688022,
+                "repair": 12,
+                "break_correct": 5,
+                "source_deletion_min": 0.002294763674480653,
+                "source_deletion_max": 0.003971912521440822,
+                "source_deletion_min_sources": [
+                  "BDD/b2fc7cb5-1635d64b"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_raw": {
+                "net_correct": -27,
+                "micro_delta": -0.0202854996243426,
+                "source_macro_delta": -0.003756470289383529,
+                "repair": 33,
+                "break_correct": 60,
+                "source_deletion_min": -0.013225870952491127,
+                "source_deletion_max": 0.005642053575810761,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5",
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "appearance_geometry_2x2_interaction": {
+                "source_macro_mean": -0.010727557748585914,
+                "micro_mean": -0.006010518407212622,
+                "source_deletion_min": -0.013187251689610182,
+                "source_deletion_max": -0.0013947988594215025,
+                "positive_direction_survives_all_supported_source_deletions": false
+              }
+            }
+          }
+        }
+      },
+      "20261026": {
+        "per_lag_all_hard": {
+          "1": {
+            "queries": 2949,
+            "sources": 172,
+            "GTtrajectories": 578,
+            "features": {
+              "raw_appearance_cosine": {
+                "correct": 2903,
+                "micro": 0.984401492031197,
+                "source_GTtrajectory_query_macro": 0.9789994097226783,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "adapter_appearance_cosine": {
+                "correct": 2856,
+                "micro": 0.9684638860630722,
+                "source_GTtrajectory_query_macro": 0.9584814145441763,
+                "repair_raw_error": 14,
+                "break_raw_correct": 61
+              },
+              "A0G0": {
+                "correct": 2903,
+                "micro": 0.984401492031197,
+                "source_GTtrajectory_query_macro": 0.9789994097226783,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "A0G1": {
+                "correct": 2911,
+                "micro": 0.9871142760257714,
+                "source_GTtrajectory_query_macro": 0.980055087838518,
+                "repair_raw_error": 14,
+                "break_raw_correct": 6
+              },
+              "A0Gmask": {
+                "correct": 2899,
+                "micro": 0.9830451000339098,
+                "source_GTtrajectory_query_macro": 0.9733654119375177,
+                "repair_raw_error": 1,
+                "break_raw_correct": 5
+              },
+              "A0Gperm": {
+                "correct": 2906,
+                "micro": 0.9854187860291624,
+                "source_GTtrajectory_query_macro": 0.9753562095204538,
+                "repair_raw_error": 12,
+                "break_raw_correct": 9
+              },
+              "A1G0": {
+                "correct": 2856,
+                "micro": 0.9684638860630722,
+                "source_GTtrajectory_query_macro": 0.9584814145441763,
+                "repair_raw_error": 14,
+                "break_raw_correct": 61
+              },
+              "A1G1": {
+                "correct": 2870,
+                "micro": 0.9732112580535774,
+                "source_GTtrajectory_query_macro": 0.9623661925568614,
+                "repair_raw_error": 14,
+                "break_raw_correct": 47
+              },
+              "A1Gmask": {
+                "correct": 2857,
+                "micro": 0.9688029840623941,
+                "source_GTtrajectory_query_macro": 0.9586890557401896,
+                "repair_raw_error": 14,
+                "break_raw_correct": 60
+              },
+              "A1Gperm": {
+                "correct": 2856,
+                "micro": 0.9684638860630722,
+                "source_GTtrajectory_query_macro": 0.9577946255579688,
+                "repair_raw_error": 15,
+                "break_raw_correct": 62
+              }
+            },
+            "comparisons": {
+              "adapter_cosine_minus_raw": {
+                "net_correct": -47,
+                "micro_delta": -0.01593760596812479,
+                "source_macro_delta": -0.020517995178501947,
+                "repair": 14,
+                "break_correct": 61,
+                "source_deletion_min": -0.022099971758493063,
+                "source_deletion_max": -0.014790030238025227,
+                "source_deletion_min_sources": [
+                  "BDD/b3da33d5-a64e7657"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0G0": {
+                "net_correct": 8,
+                "micro_delta": 0.0027127839945744322,
+                "source_macro_delta": 0.001055678115839731,
+                "repair": 14,
+                "break_correct": 6,
+                "source_deletion_min": -0.0005828851700323856,
+                "source_deletion_max": 0.002523839976166445,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1G0": {
+                "net_correct": 14,
+                "micro_delta": 0.004747371990505256,
+                "source_macro_delta": 0.003884778012685053,
+                "repair": 17,
+                "break_correct": 3,
+                "source_deletion_min": 0.0019581782739677487,
+                "source_deletion_max": 0.0048821548821548835,
+                "source_deletion_min_sources": [
+                  "LaSOT/bicycle-9"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gmask": {
+                "net_correct": 12,
+                "micro_delta": 0.004069175991861648,
+                "source_macro_delta": 0.006689675901000336,
+                "repair": 18,
+                "break_correct": 6,
+                "source_deletion_min": 0.000880843596327957,
+                "source_deletion_max": 0.008190785116795793,
+                "source_deletion_min_sources": [
+                  "Charades/PC7H2"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gperm": {
+                "net_correct": 5,
+                "micro_delta": 0.00169548999660902,
+                "source_macro_delta": 0.004698878318064259,
+                "repair": 14,
+                "break_correct": 9,
+                "source_deletion_min": -0.0011215960777364302,
+                "source_deletion_max": 0.006188345442731405,
+                "source_deletion_min_sources": [
+                  "Charades/PC7H2"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1Gmask": {
+                "net_correct": 13,
+                "micro_delta": 0.004408273991183452,
+                "source_macro_delta": 0.003677136816671811,
+                "repair": 16,
+                "break_correct": 3,
+                "source_deletion_min": 0.0017493228019543822,
+                "source_deletion_max": 0.004673299410141517,
+                "source_deletion_min_sources": [
+                  "LaSOT/bicycle-9"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gperm": {
+                "net_correct": 14,
+                "micro_delta": 0.004747371990505256,
+                "source_macro_delta": 0.004571566998892607,
+                "repair": 18,
+                "break_correct": 4,
+                "source_deletion_min": 0.002648983570036201,
+                "source_deletion_max": 0.0055729601782233355,
+                "source_deletion_min_sources": [
+                  "LaSOT/bicycle-9"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_raw": {
+                "net_correct": -33,
+                "micro_delta": -0.011190233977619531,
+                "source_macro_delta": -0.016633217165816894,
+                "repair": 14,
+                "break_correct": 47,
+                "source_deletion_min": -0.018192475745733894,
+                "source_deletion_max": -0.010882534225266059,
+                "source_deletion_min_sources": [
+                  "BDD/b3da33d5-a64e7657"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "appearance_geometry_2x2_interaction": {
+                "source_macro_mean": 0.002829099896845322,
+                "micro_mean": 0.002034587995930824,
+                "source_deletion_min": 0.0008963266018948727,
+                "source_deletion_max": 0.004490381182791559,
+                "positive_direction_survives_all_supported_source_deletions": true
+              }
+            }
+          },
+          "4": {
+            "queries": 2142,
+            "sources": 160,
+            "GTtrajectories": 453,
+            "features": {
+              "raw_appearance_cosine": {
+                "correct": 1993,
+                "micro": 0.9304388422035481,
+                "source_GTtrajectory_query_macro": 0.9260941432927453,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "adapter_appearance_cosine": {
+                "correct": 1941,
+                "micro": 0.9061624649859944,
+                "source_GTtrajectory_query_macro": 0.8909554146294039,
+                "repair_raw_error": 54,
+                "break_raw_correct": 106
+              },
+              "A0G0": {
+                "correct": 1993,
+                "micro": 0.9304388422035481,
+                "source_GTtrajectory_query_macro": 0.9260941432927453,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "A0G1": {
+                "correct": 2005,
+                "micro": 0.9360410830999066,
+                "source_GTtrajectory_query_macro": 0.9257689386506349,
+                "repair_raw_error": 33,
+                "break_raw_correct": 21
+              },
+              "A0Gmask": {
+                "correct": 1993,
+                "micro": 0.9304388422035481,
+                "source_GTtrajectory_query_macro": 0.9200086003634524,
+                "repair_raw_error": 6,
+                "break_raw_correct": 6
+              },
+              "A0Gperm": {
+                "correct": 1985,
+                "micro": 0.9267040149393091,
+                "source_GTtrajectory_query_macro": 0.9214201993051849,
+                "repair_raw_error": 15,
+                "break_raw_correct": 23
+              },
+              "A1G0": {
+                "correct": 1941,
+                "micro": 0.9061624649859944,
+                "source_GTtrajectory_query_macro": 0.8909554146294039,
+                "repair_raw_error": 54,
+                "break_raw_correct": 106
+              },
+              "A1G1": {
+                "correct": 1946,
+                "micro": 0.9084967320261438,
+                "source_GTtrajectory_query_macro": 0.9002671202848596,
+                "repair_raw_error": 53,
+                "break_raw_correct": 100
+              },
+              "A1Gmask": {
+                "correct": 1941,
+                "micro": 0.9061624649859944,
+                "source_GTtrajectory_query_macro": 0.8909554146294039,
+                "repair_raw_error": 54,
+                "break_raw_correct": 106
+              },
+              "A1Gperm": {
+                "correct": 1938,
+                "micro": 0.9047619047619048,
+                "source_GTtrajectory_query_macro": 0.8900084900262293,
+                "repair_raw_error": 52,
+                "break_raw_correct": 107
+              }
+            },
+            "comparisons": {
+              "adapter_cosine_minus_raw": {
+                "net_correct": -52,
+                "micro_delta": -0.02427637721755369,
+                "source_macro_delta": -0.035138728663341445,
+                "repair": 54,
+                "break_correct": 106,
+                "source_deletion_min": -0.037456163015521314,
+                "source_deletion_max": -0.029070418780720475,
+                "source_deletion_min_sources": [
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0G0": {
+                "net_correct": 12,
+                "micro_delta": 0.0056022408963585435,
+                "source_macro_delta": -0.00032520464211038824,
+                "repair": 33,
+                "break_correct": 21,
+                "source_deletion_min": -0.006616558130425341,
+                "source_deletion_max": 0.005962058221775916,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1G0": {
+                "net_correct": 5,
+                "micro_delta": 0.002334267040149393,
+                "source_macro_delta": 0.009311705655455693,
+                "repair": 11,
+                "break_correct": 6,
+                "source_deletion_min": 0.003080961665867328,
+                "source_deletion_max": 0.010942596885993115,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gmask": {
+                "net_correct": 12,
+                "micro_delta": 0.0056022408963585435,
+                "source_macro_delta": 0.005760338287182476,
+                "repair": 31,
+                "break_correct": 19,
+                "source_deletion_min": -0.0004927413462311984,
+                "source_deletion_max": 0.012085875005970059,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0Gperm": {
+                "net_correct": 20,
+                "micro_delta": 0.009337068160597572,
+                "source_macro_delta": 0.004348739345449992,
+                "repair": 39,
+                "break_correct": 19,
+                "source_deletion_min": -0.0019132182687296862,
+                "source_deletion_max": 0.010665398083471571,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1Gmask": {
+                "net_correct": 5,
+                "micro_delta": 0.002334267040149393,
+                "source_macro_delta": 0.009311705655455693,
+                "repair": 11,
+                "break_correct": 6,
+                "source_deletion_min": 0.003080961665867328,
+                "source_deletion_max": 0.010942596885993115,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gperm": {
+                "net_correct": 8,
+                "micro_delta": 0.003734827264239029,
+                "source_macro_delta": 0.010258630258630275,
+                "repair": 13,
+                "break_correct": 5,
+                "source_deletion_min": 0.004033841769690828,
+                "source_deletion_max": 0.011895476989816614,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_raw": {
+                "net_correct": -47,
+                "micro_delta": -0.021942110177404293,
+                "source_macro_delta": -0.025827023007885752,
+                "repair": 53,
+                "break_correct": 100,
+                "source_deletion_min": -0.03227876529095377,
+                "source_deletion_max": -0.01970014893875251,
+                "source_deletion_min_sources": [
+                  "LaSOT/pool-17"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "appearance_geometry_2x2_interaction": {
+                "source_macro_mean": 0.009636910297566081,
+                "micro_mean": -0.0032679738562091504,
+                "source_deletion_min": 0.003408211620192043,
+                "source_deletion_max": 0.011793955854992882,
+                "positive_direction_survives_all_supported_source_deletions": true
+              }
+            }
+          }
+        },
+        "cross_lag_common_1331": {
+          "1": {
+            "queries": 1331,
+            "sources": 107,
+            "GTtrajectories": 283,
+            "features": {
+              "raw_appearance_cosine": {
+                "correct": 1315,
+                "micro": 0.9879789631855748,
+                "source_GTtrajectory_query_macro": 0.992182168817683,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "adapter_appearance_cosine": {
+                "correct": 1299,
+                "micro": 0.9759579263711495,
+                "source_GTtrajectory_query_macro": 0.9680322219749792,
+                "repair_raw_error": 4,
+                "break_raw_correct": 20
+              },
+              "A0G0": {
+                "correct": 1315,
+                "micro": 0.9879789631855748,
+                "source_GTtrajectory_query_macro": 0.992182168817683,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "A0G1": {
+                "correct": 1320,
+                "micro": 0.9917355371900827,
+                "source_GTtrajectory_query_macro": 0.9940021881026555,
+                "repair_raw_error": 5,
+                "break_raw_correct": 0
+              },
+              "A0Gmask": {
+                "correct": 1314,
+                "micro": 0.9872276483846731,
+                "source_GTtrajectory_query_macro": 0.9918901127429166,
+                "repair_raw_error": 0,
+                "break_raw_correct": 1
+              },
+              "A0Gperm": {
+                "correct": 1319,
+                "micro": 0.990984222389181,
+                "source_GTtrajectory_query_macro": 0.9929832369084707,
+                "repair_raw_error": 4,
+                "break_raw_correct": 0
+              },
+              "A1G0": {
+                "correct": 1299,
+                "micro": 0.9759579263711495,
+                "source_GTtrajectory_query_macro": 0.9680322219749792,
+                "repair_raw_error": 4,
+                "break_raw_correct": 20
+              },
+              "A1G1": {
+                "correct": 1304,
+                "micro": 0.9797145003756574,
+                "source_GTtrajectory_query_macro": 0.9768717858379075,
+                "repair_raw_error": 4,
+                "break_raw_correct": 15
+              },
+              "A1Gmask": {
+                "correct": 1299,
+                "micro": 0.9759579263711495,
+                "source_GTtrajectory_query_macro": 0.9680322219749792,
+                "repair_raw_error": 4,
+                "break_raw_correct": 20
+              },
+              "A1Gperm": {
+                "correct": 1302,
+                "micro": 0.9782118707738543,
+                "source_GTtrajectory_query_macro": 0.9739289731988331,
+                "repair_raw_error": 5,
+                "break_raw_correct": 18
+              }
+            },
+            "comparisons": {
+              "adapter_cosine_minus_raw": {
+                "net_correct": -16,
+                "micro_delta": -0.012021036814425245,
+                "source_macro_delta": -0.024149946842703773,
+                "repair": 4,
+                "break_correct": 20,
+                "source_deletion_min": -0.025950103573924327,
+                "source_deletion_max": -0.0196607953978237,
+                "source_deletion_min_sources": [
+                  "BDD/b4536117-bc85ba28"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0G0": {
+                "net_correct": 5,
+                "micro_delta": 0.003756574004507889,
+                "source_macro_delta": 0.0018200192849725516,
+                "repair": 5,
+                "break_correct": 0,
+                "source_deletion_min": 0.0008937930518119197,
+                "source_deletion_max": 0.0018371892782270138,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1G0": {
+                "net_correct": 5,
+                "micro_delta": 0.003756574004507889,
+                "source_macro_delta": 0.008839563862928279,
+                "repair": 6,
+                "break_correct": 1,
+                "source_deletion_min": 0.004205974842767295,
+                "source_deletion_max": 0.011281446540880502,
+                "source_deletion_min_sources": [
+                  "YouTube/Fu0b-YbpPak"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gmask": {
+                "net_correct": 6,
+                "micro_delta": 0.004507888805409466,
+                "source_macro_delta": 0.0021120753597388964,
+                "repair": 6,
+                "break_correct": 0,
+                "source_deletion_min": 0.0011886043725666366,
+                "source_deletion_max": 0.0021320005989817307,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A0G1_minus_A0Gperm": {
+                "net_correct": 1,
+                "micro_delta": 0.0007513148009015778,
+                "source_macro_delta": 0.001018951194184825,
+                "repair": 2,
+                "break_correct": 1,
+                "source_deletion_min": 8.516771488469572e-05,
+                "source_deletion_max": 0.001238207547169811,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_ff68bbc26aec375b6ea0326ea74375c"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gmask": {
+                "net_correct": 5,
+                "micro_delta": 0.003756574004507889,
+                "source_macro_delta": 0.008839563862928279,
+                "repair": 6,
+                "break_correct": 1,
+                "source_deletion_min": 0.004205974842767295,
+                "source_deletion_max": 0.011281446540880502,
+                "source_deletion_min_sources": [
+                  "YouTube/Fu0b-YbpPak"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_A1Gperm": {
+                "net_correct": 2,
+                "micro_delta": 0.0015026296018031556,
+                "source_macro_delta": 0.002942812639074366,
+                "repair": 5,
+                "break_correct": 3,
+                "source_deletion_min": -0.00017407906558850102,
+                "source_deletion_max": 0.0053290655884995495,
+                "source_deletion_min_sources": [
+                  "BDD/b28ec521-898e11bd"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_raw": {
+                "net_correct": -11,
+                "micro_delta": -0.008264462809917356,
+                "source_macro_delta": -0.015310382979775494,
+                "repair": 4,
+                "break_correct": 15,
+                "source_deletion_min": -0.017027147599081565,
+                "source_deletion_max": -0.010737839422980937,
+                "source_deletion_min_sources": [
+                  "BDD/b4536117-bc85ba28"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "appearance_geometry_2x2_interaction": {
+                "source_macro_mean": 0.0070195445779557275,
+                "micro_mean": 0.0,
+                "source_deletion_min": 0.0023687855645402804,
+                "source_deletion_max": 0.009444257262653489,
+                "positive_direction_survives_all_supported_source_deletions": true
+              }
+            }
+          },
+          "4": {
+            "queries": 1331,
+            "sources": 107,
+            "GTtrajectories": 283,
+            "features": {
+              "raw_appearance_cosine": {
+                "correct": 1232,
+                "micro": 0.9256198347107438,
+                "source_GTtrajectory_query_macro": 0.9044664997402705,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "adapter_appearance_cosine": {
+                "correct": 1214,
+                "micro": 0.9120961682945155,
+                "source_GTtrajectory_query_macro": 0.8920185973246787,
+                "repair_raw_error": 41,
+                "break_raw_correct": 59
+              },
+              "A0G0": {
+                "correct": 1232,
+                "micro": 0.9256198347107438,
+                "source_GTtrajectory_query_macro": 0.9044664997402705,
+                "repair_raw_error": 0,
+                "break_raw_correct": 0
+              },
+              "A0G1": {
+                "correct": 1242,
+                "micro": 0.9331329827197595,
+                "source_GTtrajectory_query_macro": 0.8983547847475113,
+                "repair_raw_error": 23,
+                "break_raw_correct": 13
+              },
+              "A0Gmask": {
+                "correct": 1232,
+                "micro": 0.9256198347107438,
+                "source_GTtrajectory_query_macro": 0.8973377639900396,
+                "repair_raw_error": 4,
+                "break_raw_correct": 4
+              },
+              "A0Gperm": {
+                "correct": 1226,
+                "micro": 0.9211119459053343,
+                "source_GTtrajectory_query_macro": 0.9112436642886663,
+                "repair_raw_error": 8,
+                "break_raw_correct": 14
+              },
+              "A1G0": {
+                "correct": 1214,
+                "micro": 0.9120961682945155,
+                "source_GTtrajectory_query_macro": 0.8920185973246787,
+                "repair_raw_error": 41,
+                "break_raw_correct": 59
+              },
+              "A1G1": {
+                "correct": 1215,
+                "micro": 0.912847483095417,
+                "source_GTtrajectory_query_macro": 0.89494175412634,
+                "repair_raw_error": 38,
+                "break_raw_correct": 55
+              },
+              "A1Gmask": {
+                "correct": 1214,
+                "micro": 0.9120961682945155,
+                "source_GTtrajectory_query_macro": 0.8920185973246787,
+                "repair_raw_error": 41,
+                "break_raw_correct": 59
+              },
+              "A1Gperm": {
+                "correct": 1210,
+                "micro": 0.9090909090909091,
+                "source_GTtrajectory_query_macro": 0.888308094431933,
+                "repair_raw_error": 39,
+                "break_raw_correct": 61
+              }
+            },
+            "comparisons": {
+              "adapter_cosine_minus_raw": {
+                "net_correct": -18,
+                "micro_delta": -0.013523666416228399,
+                "source_macro_delta": -0.012447902415591794,
+                "repair": 41,
+                "break_correct": 59,
+                "source_deletion_min": -0.021999297721399386,
+                "source_deletion_max": -0.0031313731930974974,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5",
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0G0": {
+                "net_correct": 10,
+                "micro_delta": 0.007513148009015778,
+                "source_macro_delta": -0.0061117149927591985,
+                "repair": 23,
+                "break_correct": 13,
+                "source_deletion_min": -0.015603334945521163,
+                "source_deletion_max": 0.003264589582780723,
+                "source_deletion_min_sources": [
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1G0": {
+                "net_correct": 1,
+                "micro_delta": 0.0007513148009015778,
+                "source_macro_delta": 0.0029231568016613307,
+                "repair": 5,
+                "break_correct": 4,
+                "source_deletion_min": -0.0017662473794549261,
+                "source_deletion_max": 0.004129979035639413,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0Gmask": {
+                "net_correct": 10,
+                "micro_delta": 0.007513148009015778,
+                "source_macro_delta": 0.001017020757471676,
+                "repair": 22,
+                "break_correct": 12,
+                "source_deletion_min": -0.008407346971231303,
+                "source_deletion_max": 0.010460577557070585,
+                "source_deletion_min_sources": [
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A0G1_minus_A0Gperm": {
+                "net_correct": 16,
+                "micro_delta": 0.012021036814425245,
+                "source_macro_delta": -0.01288887954115503,
+                "repair": 27,
+                "break_correct": 11,
+                "source_deletion_min": -0.015368963310411219,
+                "source_deletion_max": -0.0035765104802225403,
+                "source_deletion_min_sources": [
+                  "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1Gmask": {
+                "net_correct": 1,
+                "micro_delta": 0.0007513148009015778,
+                "source_macro_delta": 0.0029231568016613307,
+                "repair": 5,
+                "break_correct": 4,
+                "source_deletion_min": -0.0017662473794549261,
+                "source_deletion_max": 0.004129979035639413,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "A1G1_minus_A1Gperm": {
+                "net_correct": 5,
+                "micro_delta": 0.003756574004507889,
+                "source_macro_delta": 0.00663365969440699,
+                "repair": 8,
+                "break_correct": 3,
+                "source_deletion_min": 0.001979260257562146,
+                "source_deletion_max": 0.007875486672656485,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_e3b5fc3b4fb43618f62c98cda737db40"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": true
+              },
+              "A1G1_minus_raw": {
+                "net_correct": -17,
+                "micro_delta": -0.012772351615326822,
+                "source_macro_delta": -0.009524745613930463,
+                "repair": 38,
+                "break_correct": 55,
+                "source_deletion_min": -0.019048563968778843,
+                "source_deletion_max": -0.000180639440476956,
+                "source_deletion_min_sources": [
+                  "YFCC100M/v_f5a6df69456bdb95c52f76e1c7fe65e5",
+                  "YouTube/f9U2VDJTIhg"
+                ],
+                "positive_direction_survives_all_supported_source_deletions": false
+              },
+              "appearance_geometry_2x2_interaction": {
+                "source_macro_mean": 0.00903487179442053,
+                "micro_mean": -0.0067618332081141996,
+                "source_deletion_min": -0.0003138558301601777,
+                "source_deletion_max": 0.018554068698141708,
+                "positive_direction_survives_all_supported_source_deletions": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "per_lag_hard_counts": {
+      "1": 2949,
+      "4": 2142
+    },
+    "common_1331_sources": 107,
+    "all_primary_brief_values_and_source_deletion_extrema_checked": true,
+    "all_shared_feature_macro_and_error_counts_checked_against_original_cross_lag_readout": true
+  },
+  "interpretation": {
+    "ordinary_adapter_has_negative_macro_and_micro_in_all_seeds_both_lags": true,
+    "A1G1_below_raw_macro_and_micro_in_all_seeds_on_full_per_lag_hard_queries": true,
+    "geometry_G1_vs_G0_mask_perm_positive_all_seeds_on_full_per_lag_hard_queries": true,
+    "shared_1331_geometry_robustness_does_not_hold": true,
+    "shared_1331_interaction_not_consistently_positive": true,
+    "novel_method_or_backbone_feature_improvement_or_tracking_gain_established": false,
+    "continue_only_with_new_information_or_different_training_mechanism_not_scale_up_same_adapter": true
+  },
+  "protected_snapshots": {
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/tao_track.json": {
+      "exists": true,
+      "sha256": "a01eb48eb91c7116330fd31158b219f61fb3d2c68ff805ff44b6a43749370a48"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/cov_val_full_official_a100/OVTrack/teta_summary_results.pth": {
+      "exists": true,
+      "sha256": "621b769b60f88816be02c9cb79339b493ef60f17717a135cf663e3599a8a1d62"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/weights/ctao_public.pth": {
+      "exists": false,
+      "sha256": null
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/work/covtrack_base/configs/uncertainty-ovtrack-teta/ovtrack_r50_ctao_train.py": {
+      "exists": true,
+      "sha256": "d8ae926e540c327d4baa2ced8cb1338f70d6a67eb73d2fb02de4d79893cecc08"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/results/covtrack_ctao_train20_bs24_20261022/ovtrack_r50_ctao_train.py": {
+      "exists": true,
+      "sha256": "b907b90fe73d6c515d3487efeb7d921dbbc874b4ef4a840cecebb50a1e9a169d"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/scripts/train_covtrack20.py": {
+      "exists": true,
+      "sha256": "0beeac07b81caa5c1be3ee2232adee2d4d78a554bbac310b233e2d567395312c"
+    },
+    "/home/chenhc/ov/OVMOT_RESEARCH/repos/COVTrack/ovtrack/models/roi_heads/class_name.py": {
+      "exists": true,
+      "sha256": "6f50d7b3f16eef96e15b6cfbf97a53b195e26dbc34df51e7679645c99e6937d9"
+    }
+  },
+  "elapsed_seconds": 21.208439053967595,
+  "original_artifacts_modified": false,
+  "optimizer_or_training_rerun": false
+}
