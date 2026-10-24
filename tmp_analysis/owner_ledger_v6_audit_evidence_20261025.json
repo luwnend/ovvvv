@@ -1,0 +1,923 @@
+{
+  "all_passed": true,
+  "cuda_available": false,
+  "cuda_used": false,
+  "main_sha256_after": "c0ea9872ea22e50615093394c5923ba7b59e3af662dcb6a5caea075de861bc9d",
+  "occlusion_collection_run": false,
+  "python": "3.8.20 (default, Oct  3 2024, 15:24:27) \n[GCC 11.2.0]",
+  "results": [
+    {
+      "counterexample": true,
+      "detail": {
+        "finite": true,
+        "height": 1,
+        "max": 0.0,
+        "min": -0.0006141273770481348,
+        "mode": "train",
+        "n": 1,
+        "nonpositive": true,
+        "shape": [
+          1,
+          5
+        ],
+        "width": 1
+      },
+      "name": "train_batch1_1x1",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "finite": true,
+        "height": 1,
+        "max": 0.0,
+        "min": -0.002567718969658017,
+        "mode": "train",
+        "n": 2,
+        "nonpositive": true,
+        "shape": [
+          2,
+          5
+        ],
+        "width": 1
+      },
+      "name": "train_batch2_1x1",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "finite": true,
+        "height": 2,
+        "max": 0.0,
+        "min": -0.005648649297654629,
+        "mode": "train",
+        "n": 1,
+        "nonpositive": true,
+        "shape": [
+          1,
+          5
+        ],
+        "width": 2
+      },
+      "name": "train_batch1_2x2",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "finite": true,
+        "height": 2,
+        "max": -0.00026954454369843006,
+        "min": -0.0024366937577724457,
+        "mode": "train",
+        "n": 2,
+        "nonpositive": true,
+        "shape": [
+          2,
+          5
+        ],
+        "width": 2
+      },
+      "name": "train_batch2_2x2",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "finite": true,
+        "height": 1,
+        "max": 0.0,
+        "min": -0.0026672862004488707,
+        "mode": "eval",
+        "n": 1,
+        "nonpositive": true,
+        "shape": [
+          1,
+          5
+        ],
+        "width": 1
+      },
+      "name": "eval_batch1_1x1",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "finite": true,
+        "height": 1,
+        "max": 0.0,
+        "min": -0.002335716038942337,
+        "mode": "eval",
+        "n": 2,
+        "nonpositive": true,
+        "shape": [
+          2,
+          5
+        ],
+        "width": 1
+      },
+      "name": "eval_batch2_1x1",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "finite": true,
+        "height": 2,
+        "max": 0.0,
+        "min": -0.0007524029351770878,
+        "mode": "eval",
+        "n": 1,
+        "nonpositive": true,
+        "shape": [
+          1,
+          5
+        ],
+        "width": 2
+      },
+      "name": "eval_batch1_2x2",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "finite": true,
+        "height": 2,
+        "max": -9.55262512434274e-05,
+        "min": -0.001895359018817544,
+        "mode": "eval",
+        "n": 2,
+        "nonpositive": true,
+        "shape": [
+          2,
+          5
+        ],
+        "width": 2
+      },
+      "name": "eval_batch2_2x2",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "batch1": {
+          "eval": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -2.148718158423435e-05
+            ]
+          ],
+          "n": 1,
+          "state_unchanged": true,
+          "train": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -2.148718158423435e-05
+            ]
+          ],
+          "train_eval_max_abs_diff": 0.0
+        },
+        "batch2": {
+          "eval": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.00011421240924391896
+            ],
+            [
+              0.0,
+              0.0,
+              -0.00016201996186282486,
+              0.0,
+              -9.625520760891959e-05
+            ]
+          ],
+          "n": 2,
+          "state_unchanged": true,
+          "train": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.00011421240924391896
+            ],
+            [
+              0.0,
+              0.0,
+              -0.00016201996186282486,
+              0.0,
+              -9.625520760891959e-05
+            ]
+          ],
+          "train_eval_max_abs_diff": 0.0
+        }
+      },
+      "name": "train_eval_parity_batch1_and_batch2_1x1",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "eval": {
+          "batch_output": [
+            [
+              -0.003821401856839657,
+              0.0,
+              0.0,
+              0.0,
+              -0.00027993001276627183
+            ],
+            [
+              -0.0023648152127861977,
+              0.0,
+              0.0,
+              -6.864102761028334e-05,
+              -0.001375005696900189
+            ]
+          ],
+          "max_abs_diff": 0.0,
+          "mode": "eval",
+          "singleton_output": [
+            [
+              -0.003821401856839657,
+              0.0,
+              0.0,
+              0.0,
+              -0.00027993001276627183
+            ],
+            [
+              -0.0023648152127861977,
+              0.0,
+              0.0,
+              -6.864102761028334e-05,
+              -0.001375005696900189
+            ]
+          ],
+          "tolerance": 1e-06
+        },
+        "train": {
+          "batch_output": [
+            [
+              0.0,
+              0.0,
+              -4.577337676892057e-05,
+              -3.8478541682707146e-05,
+              -0.00018920080037787557
+            ],
+            [
+              0.0,
+              -0.0003473488031886518,
+              -0.001016224967315793,
+              0.0,
+              0.0
+            ]
+          ],
+          "max_abs_diff": 1.4551915228366852e-11,
+          "mode": "train",
+          "singleton_output": [
+            [
+              0.0,
+              0.0,
+              -4.577338040689938e-05,
+              -3.847854532068595e-05,
+              -0.0001892008149297908
+            ],
+            [
+              0.0,
+              -0.0003473488031886518,
+              -0.001016224967315793,
+              0.0,
+              0.0
+            ]
+          ],
+          "tolerance": 1e-06
+        }
+      },
+      "name": "batch_independence_train_and_eval",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "case": "zero",
+        "expected_zero": true,
+        "finite": true,
+        "nonpositive": true,
+        "output": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "name": "all_zero_features",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "case": "one",
+        "expected_zero": true,
+        "finite": true,
+        "nonpositive": true,
+        "output": [
+          [
+            -0.0023260607849806547,
+            -0.0023252391256392,
+            -0.002306888112798333,
+            -0.002327656839042902,
+            -0.0022967152763158083
+          ]
+        ]
+      },
+      "name": "all_one_features",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "backward": false,
+        "finite": true,
+        "nonpositive": true,
+        "shape": [
+          1,
+          1203
+        ]
+      },
+      "name": "default_1203_vocab_train_1x1",
+      "passed": true,
+      "round": 1
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "exact_zero": true,
+        "mode": "train",
+        "shape": [
+          1,
+          5
+        ]
+      },
+      "name": "empty_edge_exact_zero_train_1x1",
+      "passed": true,
+      "round": 2
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "exact_zero": true,
+        "mode": "eval",
+        "shape": [
+          1,
+          5
+        ]
+      },
+      "name": "empty_edge_exact_zero_eval_1x1",
+      "passed": true,
+      "round": 2
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "child_time_shape_mismatch": {
+          "exception": "ValueError: time vectors must align with parent/edge rows",
+          "rejected": true
+        },
+        "child_token_count_mismatch": {
+          "exception": "ValueError: child token rows differ from posterior rows",
+          "rejected": true
+        },
+        "child_token_dim_mismatch": {
+          "exception": "ValueError: child token tensor shape differs from parent ROI",
+          "rejected": true
+        },
+        "edge_length_mismatch": {
+          "exception": "ValueError: time vectors must align with parent/edge rows",
+          "rejected": true
+        },
+        "empty_overlap_wrong_height": {
+          "returncode": 0,
+          "shape": [
+            0,
+            3,
+            2
+          ],
+          "stderr": "",
+          "stdout": "REJECT ValueError overlap must be [E,H,W]"
+        },
+        "empty_overlap_wrong_width": {
+          "returncode": 0,
+          "shape": [
+            0,
+            2,
+            3
+          ],
+          "stderr": "",
+          "stdout": "REJECT ValueError overlap must be [E,H,W]"
+        },
+        "geometry_shape_mismatch": {
+          "exception": "ValueError: child geometry must be [edges,5]",
+          "rejected": true
+        },
+        "high_child_index": {
+          "exception": "IndexError: child or parent index out of range",
+          "rejected": true
+        },
+        "high_parent_index": {
+          "exception": "IndexError: child or parent index out of range",
+          "rejected": true
+        },
+        "index_dtype_bool": {
+          "exception": "TypeError: edge indices must be int64",
+          "rejected": true
+        },
+        "index_dtype_int32": {
+          "exception": "TypeError: edge indices must be int64",
+          "rejected": true
+        },
+        "negative_parent_index": {
+          "exception": "RuntimeError: bincount only supports 1-d non-negative integral inputs.",
+          "rejected": true
+        },
+        "nonempty_overlap_wrong": {
+          "returncode": 0,
+          "shape": [
+            1,
+            2,
+            2
+          ],
+          "stderr": "",
+          "stdout": "REJECT ValueError overlap must be [E,H,W]"
+        },
+        "overlap_nonempty_wrong_shape": {
+          "exception": "ValueError: overlap must be [E,H,W]",
+          "rejected": true
+        },
+        "parent_time_shape_mismatch": {
+          "exception": "ValueError: time vectors must align with parent/edge rows",
+          "rejected": true
+        },
+        "posterior_class_width_mismatch": {
+          "exception": "ValueError: wrong class embedding shape",
+          "rejected": true
+        }
+      },
+      "name": "shape_contract_under_python_O_and_controls",
+      "passed": true,
+      "round": 2
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "bool": {
+          "exception": "TypeError: observation times must be integer frame indices",
+          "rejected": true
+        },
+        "float32": {
+          "exception": "TypeError: observation times must be integer frame indices",
+          "rejected": true
+        },
+        "future": {
+          "exception": "ValueError: future child observation",
+          "rejected": true
+        },
+        "global_edge_cap_rejected": {
+          "exception": "ValueError: edge count exceeds max_edges",
+          "rejected": true
+        },
+        "legal_one_per_parent_under_two_edges": {
+          "accepted": true,
+          "exception": "accepted without exception"
+        },
+        "mixed_int32_int64": {
+          "exception": "TypeError: parent and child times must share dtype",
+          "rejected": true
+        },
+        "mixed_int64_float32": {
+          "exception": "TypeError: parent and child times must share dtype",
+          "rejected": true
+        },
+        "past_int32": {
+          "accepted": true,
+          "exception": "accepted without exception"
+        },
+        "past_int64": {
+          "accepted": true,
+          "exception": "accepted without exception"
+        },
+        "two_children_same_parent_rejected": {
+          "exception": "ValueError: per-parent child count exceeds max_children_per_parent",
+          "rejected": true
+        }
+      },
+      "name": "per_parent_and_global_caps_plus_time_contract",
+      "passed": true,
+      "round": 2
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "child": {
+          "exception": "ValueError: nonfinite child token",
+          "rejected": true
+        },
+        "embedding": {
+          "exception": "ValueError: nonfinite class embedding",
+          "rejected": true
+        },
+        "geometry": {
+          "exception": "ValueError: nonfinite child geometry",
+          "rejected": true
+        },
+        "overlap": {
+          "exception": "ValueError: nonfinite overlap",
+          "rejected": true
+        },
+        "parent": {
+          "exception": "ValueError: nonfinite parent token",
+          "rejected": true
+        },
+        "posterior": {
+          "exception": "ValueError: nonfinite child posterior",
+          "rejected": true
+        }
+      },
+      "name": "six_nonfinite_input_kinds_rejected",
+      "passed": true,
+      "round": 2
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "expected_lower_edge_after_reversal": [
+          [
+            0.0,
+            0.0,
+            -0.25846824049949646
+          ]
+        ],
+        "expected_lower_edge_forward": [
+          [
+            -0.25846824049949646,
+            0.0,
+            0.0
+          ]
+        ],
+        "forward": [
+          [
+            -0.25846824049949646,
+            0.0,
+            0.0
+          ]
+        ],
+        "reversed_payload": [
+          [
+            0.0,
+            0.0,
+            -0.25846824049949646
+          ]
+        ],
+        "strict_tie_and_no_class_spill": true
+      },
+      "name": "strict_owner_tie_lower_edge_and_local_class_evidence",
+      "passed": true,
+      "round": 3
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "combined": [
+          [
+            -0.49993830919265747,
+            0.0,
+            0.0
+          ]
+        ],
+        "max_abs_diff": 0.0,
+        "only_score9": [
+          [
+            -0.49993830919265747,
+            0.0,
+            0.0
+          ]
+        ],
+        "three_child_scores": [
+          1.0,
+          9.0,
+          5.0
+        ]
+      },
+      "name": "owner_local_max_three_children",
+      "passed": true,
+      "round": 3
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "bottom_only": [
+          [
+            -0.00618739565834403,
+            -0.06475964933633804,
+            -0.06145444139838219
+          ]
+        ],
+        "combined": [
+          [
+            -0.04322601482272148,
+            -0.06475964933633804,
+            -0.15182480216026306
+          ]
+        ],
+        "expected_no_double_subtract": [
+          [
+            -0.04322601482272148,
+            -0.06475964933633804,
+            -0.15182480216026306
+          ]
+        ],
+        "max_abs_diff": 0.0,
+        "top_only": [
+          [
+            -0.03703862056136131,
+            0.0,
+            -0.09037036448717117
+          ]
+        ]
+      },
+      "name": "partial_overlap_one_owner_no_double_subtract",
+      "passed": true,
+      "round": 3
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "max_abs_diff": 0.0,
+        "once": [
+          [
+            -0.06627030670642853,
+            -0.07321023941040039,
+            0.0
+          ]
+        ],
+        "twice": [
+          [
+            -0.06627030670642853,
+            -0.07321023941040039,
+            0.0
+          ]
+        ]
+      },
+      "name": "equal_full_overlap_charges_once",
+      "passed": true,
+      "round": 3
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "class_conditioned_no_spill": true,
+        "posterior_first_class": [
+          [
+            -0.25846824049949646,
+            0.0,
+            0.0
+          ]
+        ],
+        "posterior_second_class": [
+          [
+            0.0,
+            -0.25846824049949646,
+            0.0
+          ]
+        ]
+      },
+      "name": "child_posterior_is_class_conditioned",
+      "passed": true,
+      "round": 3
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "coefficient_spread": 1.8587568774819374e-05,
+        "correction": [
+          [
+            -0.0011421621311455965,
+            0.0,
+            -0.00012094801058992743,
+            0.0
+          ]
+        ],
+        "negative_correction_over_positive_evidence": [
+          0.003300114069133997,
+          0.0,
+          0.0032815265003591776,
+          0.0
+        ],
+        "parent_positive_evidence": [
+          0.34609776735305786,
+          0.0,
+          0.0368572399020195,
+          0.0
+        ],
+        "positive_class_count": 2
+      },
+      "name": "per_class_relation_not_shared_scalar",
+      "passed": true,
+      "round": 3
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "gradients": {
+          "child_input": {
+            "abs_sum": 7.807584916008636e-05,
+            "finite": true,
+            "nonzero": true
+          },
+          "child_mask": {
+            "abs_sum": 0.0021264334209263325,
+            "finite": true,
+            "nonzero": true
+          },
+          "child_query": {
+            "abs_sum": 1.4839964933344163e-05,
+            "finite": true,
+            "nonzero": true
+          },
+          "parent_input": {
+            "abs_sum": 0.0015080831944942474,
+            "finite": true,
+            "nonzero": true
+          },
+          "posterior_grad_is_none": true,
+          "relation": {
+            "abs_sum": 0.0002953493094537407,
+            "finite": true,
+            "nonzero": true
+          }
+        },
+        "n_parent": 1,
+        "output": [
+          [
+            0.0,
+            -0.0003618549380917102,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "name": "train_batch1_1x1_backward",
+      "passed": true,
+      "round": 3
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "gradients": {
+          "child_input": {
+            "abs_sum": 0.0005287451203912497,
+            "finite": true,
+            "nonzero": true
+          },
+          "child_mask": {
+            "abs_sum": 0.011347147636115551,
+            "finite": true,
+            "nonzero": true
+          },
+          "child_query": {
+            "abs_sum": 6.01765641476959e-05,
+            "finite": true,
+            "nonzero": true
+          },
+          "parent_input": {
+            "abs_sum": 0.010442809201776981,
+            "finite": true,
+            "nonzero": true
+          },
+          "posterior_grad_is_none": true,
+          "relation": {
+            "abs_sum": 0.0020480751991271973,
+            "finite": true,
+            "nonzero": true
+          }
+        },
+        "n_parent": 2,
+        "output": [
+          [
+            0.0,
+            0.0,
+            -0.0003736332873813808,
+            0.0,
+            -0.0010527786798775196
+          ],
+          [
+            0.0,
+            -0.0013330277288332582,
+            0.0,
+            0.0,
+            -3.5293112887302414e-05
+          ]
+        ]
+      },
+      "name": "train_batch2_1x1_backward",
+      "passed": true,
+      "round": 3
+    },
+    {
+      "counterexample": true,
+      "detail": {
+        "backward": true,
+        "finite": true,
+        "gradients": {
+          "child_input": {
+            "abs_sum": 0.00038621947169303894,
+            "finite": true,
+            "nonzero": true
+          },
+          "child_mask": {
+            "abs_sum": 0.24729254841804504,
+            "finite": true,
+            "nonzero": true
+          },
+          "child_query": {
+            "abs_sum": 8.817025445750915e-06,
+            "finite": true,
+            "nonzero": true
+          },
+          "parent_input": {
+            "abs_sum": 0.00019035162404179573,
+            "finite": true,
+            "nonzero": true
+          },
+          "relation": {
+            "abs_sum": 0.0003360080299898982,
+            "finite": true,
+            "nonzero": true
+          }
+        },
+        "nonpositive": true,
+        "shape": [
+          1,
+          1203
+        ]
+      },
+      "name": "default_1203_train_1x1_backward",
+      "passed": true,
+      "round": 3
+    }
+  ],
+  "rounds": {
+    "1": {
+      "checks": 13,
+      "counterexamples": 13,
+      "failed": 0,
+      "passed": 13
+    },
+    "2": {
+      "checks": 5,
+      "counterexamples": 5,
+      "failed": 0,
+      "passed": 5
+    },
+    "3": {
+      "checks": 9,
+      "counterexamples": 9,
+      "failed": 0,
+      "passed": 9
+    }
+  },
+  "script_sha256": "5fd8d4aba91f747c4c3be2ba7970d4f20956de938c18fa30764c6658638e2a4c",
+  "snapshot_path": "/raid/datasets/chc_data/partwhole_review_20261025_v1/evidence_ownership_head_c0ea9872.py",
+  "snapshot_sha256": "c0ea9872ea22e50615093394c5923ba7b59e3af662dcb6a5caea075de861bc9d",
+  "source_binding_unchanged": true,
+  "source_sha256": "c0ea9872ea22e50615093394c5923ba7b59e3af662dcb6a5caea075de861bc9d",
+  "status": "PASS_ALLOW_READ_ONLY_OCCLUSION_COLLECTION",
+  "timestamps_used_for_selection": false,
+  "torch": "1.10.0+cu113",
+  "training_run": false
+}
