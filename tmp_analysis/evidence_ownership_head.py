@@ -38,7 +38,10 @@ class EvidenceOwnershipLedger(nn.Module):
         self.class_width = int(class_width)
         self.child_mask = nn.Sequential(
             nn.Conv2d(dim, hidden, 3, padding=1),
-            nn.GroupNorm(8, hidden),
+            # InstanceNorm has per-sample statistics, so the legitimate single
+            # edge batch also works in training mode. GroupNorm would fail for
+            # exactly one sample per channel.
+            nn.InstanceNorm2d(hidden, affine=True),
             nn.GELU(),
             nn.Conv2d(hidden, 1, 1),
         )
