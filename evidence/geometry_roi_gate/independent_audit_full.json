@@ -1,0 +1,93 @@
+{
+  "status": "PASS_INDEPENDENT_GEOMETRY_ROI_GATE_FULL_AUDIT",
+  "scope": "six-source three-fold fixed-feature information gate",
+  "evaluator_output_sha256": "51d2be63181f616cb859447ae3d8667c0c9a82cc6913aaa698636a996f91cfa5",
+  "manifest_sha256": "4d2b2b775b4a4d207829cfcb359b3ec8ab34e28291847570ef5d4c7ba7ec109a",
+  "observations": 122,
+  "primary_pairs": 370,
+  "positive_pairs": 129,
+  "hard_negative_pairs": 241,
+  "max_auroc_abs_difference": 0.0,
+  "top1_queries": 57,
+  "top1": {
+    "raw256": {
+      "queries": 57,
+      "resolved_queries": 57,
+      "unresolved_unknown_selection": 0,
+      "correct": 45,
+      "accuracy_known_resolved": 0.7894736842105263
+    },
+    "raw256_causal_mean": {
+      "queries": 57,
+      "resolved_queries": 57,
+      "unresolved_unknown_selection": 0,
+      "correct": 48,
+      "accuracy_known_resolved": 0.8421052631578947
+    },
+    "token_mean": {
+      "queries": 57,
+      "resolved_queries": 57,
+      "unresolved_unknown_selection": 0,
+      "correct": 37,
+      "accuracy_known_resolved": 0.6491228070175439
+    },
+    "token_mean_causal": {
+      "queries": 57,
+      "resolved_queries": 57,
+      "unresolved_unknown_selection": 0,
+      "correct": 48,
+      "accuracy_known_resolved": 0.8421052631578947
+    },
+    "token_center": {
+      "queries": 57,
+      "resolved_queries": 57,
+      "unresolved_unknown_selection": 0,
+      "correct": 40,
+      "accuracy_known_resolved": 0.7017543859649122
+    },
+    "spatial_topk_geometry": {
+      "queries": 57,
+      "resolved_queries": 57,
+      "unresolved_unknown_selection": 0,
+      "correct": 39,
+      "accuracy_known_resolved": 0.6842105263157895
+    },
+    "fgfa_aligned_past_mean": {
+      "queries": 57,
+      "resolved_queries": 57,
+      "unresolved_unknown_selection": 0,
+      "correct": 48,
+      "accuracy_known_resolved": 0.8421052631578947
+    },
+    "random_token_permutation": {
+      "queries": 57,
+      "resolved_queries": 57,
+      "unresolved_unknown_selection": 0,
+      "correct": 41,
+      "accuracy_known_resolved": 0.7192982456140351
+    },
+    "global_mean_geometry": {
+      "queries": 57,
+      "resolved_queries": 57,
+      "unresolved_unknown_selection": 0,
+      "correct": 35,
+      "accuracy_known_resolved": 0.6140350877192983
+    }
+  },
+  "independent_auroc": {
+    "raw256": 0.9164096241151952,
+    "raw256_causal_mean": 0.9479848106272319,
+    "token_mean": 0.8887197024890837,
+    "token_mean_causal": 0.9373473123946656,
+    "token_center": 0.9025130141147478,
+    "spatial_topk_geometry": 0.87727542686949,
+    "fgfa_aligned_past_mean": 0.9503233752731303,
+    "random_token_permutation": 0.8888381267531006,
+    "global_mean_geometry": 0.8785397220886514
+  },
+  "unknown_identity_used_as_negative": false,
+  "gt_used_to_select_candidate": false,
+  "cpu_only": true,
+  "gpu_used": false,
+  "training_started": false
+}

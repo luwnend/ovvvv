@@ -1,0 +1,160 @@
+{
+  "status": "PASS_GEOMETRY_ROI_INFORMATION_GATE_EVIDENCE_PACKAGE",
+  "method_verdict": "STOP_LOCAL_TOKEN_ATTENTION_TRAINING",
+  "evaluation_status": "PASS_REAL_THREE_FOLD_INFORMATION_GATE",
+  "author_tests_exit_codes": {
+    "1": 0,
+    "2": 0,
+    "3": 0
+  },
+  "independent_audit_exit_codes": {
+    "1": 0,
+    "2": 0,
+    "3": 0
+  },
+  "receipt_contract_tests_exit_codes": {
+    "1": 0,
+    "2": 0,
+    "3": 0
+  },
+  "evaluator_rerun_exit_codes": {
+    "2": 0,
+    "3": 0
+  },
+  "all_exit_zero": true,
+  "independent_audit_status": "PASS_INDEPENDENT_GEOMETRY_ROI_GATE_FULL_AUDIT",
+  "support": {
+    "rows": 122,
+    "sources": 6,
+    "videos": 12,
+    "folds": 3,
+    "known_identity_rows": 122,
+    "unknown_identity_rows_excluded": 0,
+    "primary_positive_pairs": 129,
+    "primary_hard_negative_pairs": 241,
+    "by_source": {
+      "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": {
+        "observations": 19,
+        "known_identity_observations": 19,
+        "unknown_identity_observations_excluded": 0,
+        "videos": 2,
+        "known_gt_trajectories": 9,
+        "positive_pairs": 21,
+        "hard_negative_pairs": 26,
+        "positive_identity_units": 21,
+        "hard_negative_identity_units": 26
+      },
+      "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": {
+        "observations": 17,
+        "known_identity_observations": 17,
+        "unknown_identity_observations_excluded": 0,
+        "videos": 2,
+        "known_gt_trajectories": 12,
+        "positive_pairs": 8,
+        "hard_negative_pairs": 35,
+        "positive_identity_units": 8,
+        "hard_negative_identity_units": 35
+      },
+      "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": {
+        "observations": 27,
+        "known_identity_observations": 27,
+        "unknown_identity_observations_excluded": 0,
+        "videos": 2,
+        "known_gt_trajectories": 16,
+        "positive_pairs": 31,
+        "hard_negative_pairs": 97,
+        "positive_identity_units": 31,
+        "hard_negative_identity_units": 97
+      },
+      "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": {
+        "observations": 27,
+        "known_identity_observations": 27,
+        "unknown_identity_observations_excluded": 0,
+        "videos": 2,
+        "known_gt_trajectories": 10,
+        "positive_pairs": 39,
+        "hard_negative_pairs": 46,
+        "positive_identity_units": 39,
+        "hard_negative_identity_units": 46
+      },
+      "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": {
+        "observations": 16,
+        "known_identity_observations": 16,
+        "unknown_identity_observations_excluded": 0,
+        "videos": 2,
+        "known_gt_trajectories": 8,
+        "positive_pairs": 12,
+        "hard_negative_pairs": 31,
+        "positive_identity_units": 12,
+        "hard_negative_identity_units": 31
+      },
+      "YouTube/z-fsLpGHq6o": {
+        "observations": 16,
+        "known_identity_observations": 16,
+        "unknown_identity_observations_excluded": 0,
+        "videos": 2,
+        "known_gt_trajectories": 6,
+        "positive_pairs": 18,
+        "hard_negative_pairs": 6,
+        "positive_identity_units": 18,
+        "hard_negative_identity_units": 6
+      }
+    },
+    "unknown_identity_used_as_negative": false,
+    "pair_counts_are_not_independent_samples": true
+  },
+  "fold_status": [
+    {
+      "fold": 0,
+      "sources": [
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a",
+        "YouTube/z-fsLpGHq6o"
+      ],
+      "available_observations": 32,
+      "available_positive_pairs": 30,
+      "available_hard_negative_pairs": 37,
+      "evaluated": true
+    },
+    {
+      "fold": 1,
+      "sources": [
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0",
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+      ],
+      "available_observations": 44,
+      "available_positive_pairs": 39,
+      "available_hard_negative_pairs": 132,
+      "evaluated": true
+    },
+    {
+      "fold": 2,
+      "sources": [
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48",
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+      ],
+      "available_observations": 46,
+      "available_positive_pairs": 60,
+      "available_hard_negative_pairs": 72,
+      "evaluated": true
+    }
+  ],
+  "provenance_hold": true,
+  "terminal_collection_receipt_present": false,
+  "gpu_used": false,
+  "training_started": false,
+  "outputs": {
+    "report": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/geometry_roi_information_gate_full_20261024.md",
+    "report_sha256": "f10f46f7077855148057b5b95b2b325f9af303864eb5f7ab72960747c95344d9",
+    "evaluation": "/home/chenhc/ov/OVMOT_RESEARCH/results/geometry_roi_information_gate_full_20261024_v3/evaluation_result.json",
+    "evaluation_sha256": "51d2be63181f616cb859447ae3d8667c0c9a82cc6913aaa698636a996f91cfa5",
+    "independent_audit": "/home/chenhc/ov/OVMOT_RESEARCH/results/geometry_roi_information_gate_full_20261024_v3/independent_audit_full.json",
+    "independent_audit_sha256": "d3bc47e895106df129241a9fb59f07213cb6a71c1bdc9a6bea0b2e3d9ef65548",
+    "receipt": "/home/chenhc/ov/OVMOT_RESEARCH/results/geometry_roi_full_audit_receipt_20261024_v2/audit_receipt.json",
+    "receipt_sha256": "00bc681f09f2bca0105bc9a3636a34e11729eddf3e78e6ea253c8c8273f5d45b"
+  },
+  "limitations": [
+    "Fixed-feature gate only; no trained network or closed-loop tracker.",
+    "Independent audit receipt is not a formal collector completion receipt.",
+    "Pair support is correlated through shared rows, videos and trajectories."
+  ]
+}

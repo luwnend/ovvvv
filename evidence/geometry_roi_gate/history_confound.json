@@ -1,0 +1,3629 @@
+{
+  "status": "DIAGNOSTIC_CPU_HISTORY_CONFOUND",
+  "rows": 122,
+  "arms": {
+    "raw_cur": {
+      "source_macro": 0.9164096241151952,
+      "pairs": 370,
+      "per_source": {
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": 0.9435483870967742,
+        "YouTube/z-fsLpGHq6o": 1.0,
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": 0.8746258729630861,
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": 0.9285714285714286,
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": 0.7736900780379041,
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": 0.978021978021978
+      },
+      "pooled": 0.8520698639390138,
+      "top1": {
+        "correct": 45,
+        "queries": 57,
+        "accuracy": 0.7894736842105263,
+        "records": [
+          {
+            "q": 616217,
+            "s": 616988,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616321,
+            "s": 616217,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616558,
+            "s": 616647,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616647,
+            "s": 616558,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616988,
+            "s": 616217,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 617158,
+            "s": 616988,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 319534,
+            "s": 320531,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320172,
+            "s": 320804,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320173,
+            "s": 320531,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320531,
+            "s": 320173,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320552,
+            "s": 320822,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320822,
+            "s": 320552,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 339674,
+            "s": 341142,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 339998,
+            "s": 339674,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 340387,
+            "s": 339998,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347582,
+            "s": 347363,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347997,
+            "s": 347363,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 611683,
+            "s": 611993,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611688,
+            "s": 612344,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611992,
+            "s": 612686,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611993,
+            "s": 611683,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611994,
+            "s": 613463,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612345,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612346,
+            "s": 611993,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612357,
+            "s": 611994,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612682,
+            "s": 613441,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612686,
+            "s": 611992,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613066,
+            "s": 612345,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613067,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613441,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613463,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 623468,
+            "s": 623685,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623685,
+            "s": 623468,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623799,
+            "s": 623685,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300293,
+            "s": 300355,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300355,
+            "s": 300293,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 315495,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315516,
+            "s": 316460,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315770,
+            "s": 315495,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316087,
+            "s": 315495,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316460,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316464,
+            "s": 315770,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316827,
+            "s": 317193,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 317193,
+            "s": 316827,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619086,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619087,
+            "s": 619375,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619373,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619375,
+            "s": 619087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619386,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619678,
+            "s": 619087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619692,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 610701,
+            "s": 611317,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 610814,
+            "s": 611328,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611139,
+            "s": 611328,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611317,
+            "s": 610701,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611328,
+            "s": 611139,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611347,
+            "s": 611000,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          }
+        ]
+      }
+    },
+    "raw_last": {
+      "source_macro": 0.9283724309581548,
+      "pairs": 370,
+      "per_source": {
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": 0.9408602150537635,
+        "YouTube/z-fsLpGHq6o": 1.0,
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": 0.8598270701696042,
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": 0.9767857142857143,
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": 0.8202341137123745,
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": 0.9725274725274725
+      },
+      "pooled": 0.8630544565601982,
+      "top1": {
+        "correct": 51,
+        "queries": 57,
+        "accuracy": 0.8947368421052632,
+        "records": [
+          {
+            "q": 616217,
+            "s": 616321,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616321,
+            "s": 616217,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616558,
+            "s": 616647,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616647,
+            "s": 616558,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616988,
+            "s": 617158,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 617158,
+            "s": 616988,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 319534,
+            "s": 320173,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320172,
+            "s": 320552,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320173,
+            "s": 320531,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320531,
+            "s": 320173,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320552,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320822,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 339674,
+            "s": 339998,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 339998,
+            "s": 339674,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 340387,
+            "s": 339674,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347582,
+            "s": 347363,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347997,
+            "s": 347582,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 611683,
+            "s": 611993,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611688,
+            "s": 611992,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611992,
+            "s": 611688,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611993,
+            "s": 611683,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611994,
+            "s": 612357,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612345,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612346,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612357,
+            "s": 611994,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612682,
+            "s": 612346,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612686,
+            "s": 613463,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613066,
+            "s": 612345,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613067,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613441,
+            "s": 613067,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613463,
+            "s": 612686,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 623468,
+            "s": 623799,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623685,
+            "s": 623468,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623799,
+            "s": 623468,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300293,
+            "s": 300355,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300355,
+            "s": 300293,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 315495,
+            "s": 315770,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315516,
+            "s": 316827,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315770,
+            "s": 315495,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316087,
+            "s": 315770,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316460,
+            "s": 315770,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316464,
+            "s": 316087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316827,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 317193,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619086,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619087,
+            "s": 619375,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619373,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619375,
+            "s": 619087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619386,
+            "s": 619086,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619678,
+            "s": 619375,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619692,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 610701,
+            "s": 611317,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 610814,
+            "s": 611139,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611139,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611317,
+            "s": 610701,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611328,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611347,
+            "s": 611000,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          }
+        ]
+      }
+    },
+    "raw_hist_mean": {
+      "source_macro": 0.9478709126643837,
+      "pairs": 370,
+      "per_source": {
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": 0.9408602150537635,
+        "YouTube/z-fsLpGHq6o": 1.0,
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": 0.9582640505487197,
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": 0.9767857142857143,
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": 0.8369565217391305,
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": 0.9743589743589743
+      },
+      "pooled": 0.8987905690115475,
+      "top1": {
+        "correct": 51,
+        "queries": 57,
+        "accuracy": 0.8947368421052632,
+        "records": [
+          {
+            "q": 616217,
+            "s": 616321,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616321,
+            "s": 616217,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616558,
+            "s": 616647,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616647,
+            "s": 616558,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616988,
+            "s": 617158,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 617158,
+            "s": 616988,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 319534,
+            "s": 320173,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320172,
+            "s": 320552,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320173,
+            "s": 320531,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320531,
+            "s": 320173,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320552,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320822,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 339674,
+            "s": 339998,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 339998,
+            "s": 339674,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 340387,
+            "s": 339674,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347582,
+            "s": 347363,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347997,
+            "s": 347582,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 611683,
+            "s": 611993,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611688,
+            "s": 611992,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611992,
+            "s": 611688,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611993,
+            "s": 611683,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611994,
+            "s": 612357,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612345,
+            "s": 612686,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612346,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612357,
+            "s": 611994,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612682,
+            "s": 612346,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612686,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613066,
+            "s": 613463,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613067,
+            "s": 613441,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613441,
+            "s": 613067,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613463,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 623468,
+            "s": 623685,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623685,
+            "s": 623799,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623799,
+            "s": 623685,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300293,
+            "s": 300355,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300355,
+            "s": 300293,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 315495,
+            "s": 315770,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315516,
+            "s": 315770,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315770,
+            "s": 315495,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316087,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316460,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316464,
+            "s": 316827,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316827,
+            "s": 317193,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 317193,
+            "s": 316827,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619086,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619087,
+            "s": 619375,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619373,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619375,
+            "s": 619087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619386,
+            "s": 619086,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619678,
+            "s": 619375,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619692,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 610701,
+            "s": 611317,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 610814,
+            "s": 611139,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611139,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611317,
+            "s": 610701,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611328,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611347,
+            "s": 611000,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          }
+        ]
+      }
+    },
+    "raw_cur_plus_hist_mean": {
+      "source_macro": 0.9462499564596484,
+      "pairs": 370,
+      "per_source": {
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": 0.946236559139785,
+        "YouTube/z-fsLpGHq6o": 1.0,
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": 0.9544396408380446,
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": 0.9678571428571429,
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": 0.8327759197324415,
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": 0.9761904761904762
+      },
+      "pooled": 0.8999324519926662,
+      "top1": {
+        "correct": 50,
+        "queries": 57,
+        "accuracy": 0.8771929824561403,
+        "records": [
+          {
+            "q": 616217,
+            "s": 616321,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616321,
+            "s": 616217,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616558,
+            "s": 616647,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616647,
+            "s": 616558,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616988,
+            "s": 617158,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 617158,
+            "s": 616988,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 319534,
+            "s": 320173,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320172,
+            "s": 320552,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320173,
+            "s": 320531,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320531,
+            "s": 320173,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320552,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320822,
+            "s": 320552,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 339674,
+            "s": 339998,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 339998,
+            "s": 339674,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 340387,
+            "s": 339998,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347582,
+            "s": 347363,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347997,
+            "s": 347363,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 611683,
+            "s": 611993,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611688,
+            "s": 611992,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611992,
+            "s": 612345,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611993,
+            "s": 611683,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611994,
+            "s": 612357,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612345,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612346,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612357,
+            "s": 611994,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612682,
+            "s": 612346,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612686,
+            "s": 612345,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613066,
+            "s": 612345,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613067,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613441,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613463,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 623468,
+            "s": 623685,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623685,
+            "s": 623468,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623799,
+            "s": 623685,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300293,
+            "s": 300355,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300355,
+            "s": 300293,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 315495,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315516,
+            "s": 316460,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315770,
+            "s": 315495,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316087,
+            "s": 315495,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316460,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316464,
+            "s": 315770,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316827,
+            "s": 317193,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 317193,
+            "s": 316827,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619086,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619087,
+            "s": 619375,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619373,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619375,
+            "s": 619087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619386,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619678,
+            "s": 619087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619692,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 610701,
+            "s": 611317,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 610814,
+            "s": 611139,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611139,
+            "s": 611328,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611317,
+            "s": 610701,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611328,
+            "s": 611139,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611347,
+            "s": 611000,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          }
+        ]
+      }
+    },
+    "tok_cur_mean": {
+      "source_macro": 0.8887197024890837,
+      "pairs": 370,
+      "per_source": {
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": 0.9327956989247311,
+        "YouTube/z-fsLpGHq6o": 0.9814814814814815,
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": 0.8037911539740605,
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": 0.9821428571428571,
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": 0.7090301003344481,
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": 0.9230769230769231
+      },
+      "pooled": 0.8127955225320853,
+      "top1": {
+        "correct": 37,
+        "queries": 57,
+        "accuracy": 0.6491228070175439,
+        "records": [
+          {
+            "q": 616217,
+            "s": 616988,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616321,
+            "s": 616988,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616558,
+            "s": 616647,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616647,
+            "s": 616321,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616988,
+            "s": 616217,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 617158,
+            "s": 616988,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 319534,
+            "s": 320531,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320172,
+            "s": 320804,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320173,
+            "s": 320531,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320531,
+            "s": 320173,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320552,
+            "s": 320822,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320822,
+            "s": 320552,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 339674,
+            "s": 341142,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 339998,
+            "s": 339674,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 340387,
+            "s": 341142,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347582,
+            "s": 347363,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347997,
+            "s": 347363,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 611683,
+            "s": 611993,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611688,
+            "s": 612344,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611992,
+            "s": 612686,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611993,
+            "s": 612346,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611994,
+            "s": 613463,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612345,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612346,
+            "s": 611993,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612357,
+            "s": 613463,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612682,
+            "s": 613441,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612686,
+            "s": 611992,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613066,
+            "s": 612345,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613067,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613441,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613463,
+            "s": 612357,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 623468,
+            "s": 623685,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623685,
+            "s": 623468,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623799,
+            "s": 623685,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300293,
+            "s": 300355,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300355,
+            "s": 300473,
+            "correct": false,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 315495,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315516,
+            "s": 315770,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315770,
+            "s": 315495,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316087,
+            "s": 315495,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316460,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316464,
+            "s": 315770,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316827,
+            "s": 317193,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 317193,
+            "s": 316827,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619086,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619087,
+            "s": 619375,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619373,
+            "s": 619087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619375,
+            "s": 619087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619386,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619678,
+            "s": 619087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619692,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 610701,
+            "s": 611339,
+            "correct": false,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 610814,
+            "s": 611506,
+            "correct": false,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611139,
+            "s": 611328,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611317,
+            "s": 611506,
+            "correct": false,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611328,
+            "s": 611139,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611347,
+            "s": 611000,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          }
+        ]
+      }
+    },
+    "tok_last_mean": {
+      "source_macro": 0.8989170081218888,
+      "pairs": 370,
+      "per_source": {
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": 0.9516129032258065,
+        "YouTube/z-fsLpGHq6o": 1.0,
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": 0.8162620552045228,
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": 0.9732142857142857,
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": 0.7073578595317725,
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": 0.945054945054945
+      },
+      "pooled": 0.8253884010421693,
+      "top1": {
+        "correct": 48,
+        "queries": 57,
+        "accuracy": 0.8421052631578947,
+        "records": [
+          {
+            "q": 616217,
+            "s": 616321,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616321,
+            "s": 616217,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616558,
+            "s": 616647,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616647,
+            "s": 616558,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616988,
+            "s": 617158,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 617158,
+            "s": 616988,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 319534,
+            "s": 320173,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320172,
+            "s": 320552,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320173,
+            "s": 320531,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320531,
+            "s": 320173,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320552,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320822,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 339674,
+            "s": 339998,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 339998,
+            "s": 339674,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 340387,
+            "s": 339674,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347582,
+            "s": 347363,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347997,
+            "s": 347582,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 611683,
+            "s": 611993,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611688,
+            "s": 611992,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611992,
+            "s": 611688,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611993,
+            "s": 611683,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611994,
+            "s": 612357,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612345,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612346,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612357,
+            "s": 613463,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612682,
+            "s": 612346,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612686,
+            "s": 613463,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613066,
+            "s": 612345,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613067,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613441,
+            "s": 613067,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613463,
+            "s": 612686,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 623468,
+            "s": 623799,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623685,
+            "s": 623468,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623799,
+            "s": 623468,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300293,
+            "s": 300355,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300355,
+            "s": 300293,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 315495,
+            "s": 315770,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315516,
+            "s": 316087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315770,
+            "s": 315495,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316087,
+            "s": 315770,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316460,
+            "s": 315770,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316464,
+            "s": 316087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316827,
+            "s": 316464,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 317193,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619086,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619087,
+            "s": 619375,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619373,
+            "s": 619087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619375,
+            "s": 619087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619386,
+            "s": 619678,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619678,
+            "s": 619375,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619692,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 610701,
+            "s": 611317,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 610814,
+            "s": 611139,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611139,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611317,
+            "s": 610701,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611328,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611347,
+            "s": 611000,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          }
+        ]
+      }
+    },
+    "tok_hist_mean": {
+      "source_macro": 0.9342882629520872,
+      "pairs": 370,
+      "per_source": {
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": 0.9516129032258065,
+        "YouTube/z-fsLpGHq6o": 1.0,
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": 0.9429664117060192,
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": 0.9732142857142857,
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": 0.7837235228539576,
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": 0.9542124542124543
+      },
+      "pooled": 0.8838978416803371,
+      "top1": {
+        "correct": 51,
+        "queries": 57,
+        "accuracy": 0.8947368421052632,
+        "records": [
+          {
+            "q": 616217,
+            "s": 616321,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616321,
+            "s": 616217,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616558,
+            "s": 616647,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616647,
+            "s": 616558,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616988,
+            "s": 617158,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 617158,
+            "s": 616988,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 319534,
+            "s": 320173,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320172,
+            "s": 320552,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320173,
+            "s": 320531,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320531,
+            "s": 320173,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320552,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320822,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 339674,
+            "s": 339998,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 339998,
+            "s": 339674,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 340387,
+            "s": 339674,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347582,
+            "s": 347363,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347997,
+            "s": 347582,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 611683,
+            "s": 611993,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611688,
+            "s": 611992,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611992,
+            "s": 611688,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611993,
+            "s": 611683,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611994,
+            "s": 612357,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612345,
+            "s": 612686,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612346,
+            "s": 612682,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612357,
+            "s": 611994,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612682,
+            "s": 612346,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612686,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613066,
+            "s": 612686,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613067,
+            "s": 613441,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613441,
+            "s": 613067,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613463,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 623468,
+            "s": 623799,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623685,
+            "s": 623799,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623799,
+            "s": 623685,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300293,
+            "s": 300355,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300355,
+            "s": 300293,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 315495,
+            "s": 315770,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315516,
+            "s": 316087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315770,
+            "s": 315495,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316087,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316460,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316464,
+            "s": 317193,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316827,
+            "s": 317193,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 317193,
+            "s": 316827,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619086,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619087,
+            "s": 619375,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619373,
+            "s": 619087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619375,
+            "s": 619087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619386,
+            "s": 619086,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619678,
+            "s": 619375,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619692,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 610701,
+            "s": 611317,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 610814,
+            "s": 611139,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611139,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611317,
+            "s": 610701,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611328,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611347,
+            "s": 611000,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          }
+        ]
+      }
+    },
+    "raw_cur_box": {
+      "source_macro": 0.40797280828560495,
+      "pairs": 370,
+      "per_source": {
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": 0.31989247311827956,
+        "YouTube/z-fsLpGHq6o": 0.07407407407407407,
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": 0.4313269038909212,
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": 0.8357142857142857,
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": 0.5652173913043478,
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": 0.2216117216117216
+      },
+      "pooled": 0.3796519669336421,
+      "top1": {
+        "correct": 26,
+        "queries": 57,
+        "accuracy": 0.45614035087719296,
+        "records": [
+          {
+            "q": 616217,
+            "s": 616988,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616321,
+            "s": 616988,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616558,
+            "s": 616321,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616647,
+            "s": 616321,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616988,
+            "s": 616217,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 617158,
+            "s": 616988,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 319534,
+            "s": 320822,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320172,
+            "s": 320804,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320173,
+            "s": 319218,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320531,
+            "s": 320822,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320552,
+            "s": 320822,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320822,
+            "s": 320552,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 339674,
+            "s": 341141,
+            "correct": false,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 339998,
+            "s": 341141,
+            "correct": false,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 340387,
+            "s": 341141,
+            "correct": false,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347582,
+            "s": 347361,
+            "correct": false,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347997,
+            "s": 347361,
+            "correct": false,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 611683,
+            "s": 613066,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611688,
+            "s": 612344,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611992,
+            "s": 611688,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611993,
+            "s": 612345,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611994,
+            "s": 613463,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612345,
+            "s": 613441,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612346,
+            "s": 613066,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612357,
+            "s": 611994,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612682,
+            "s": 612345,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612686,
+            "s": 613441,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613066,
+            "s": 613463,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613067,
+            "s": 611688,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613441,
+            "s": 612345,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613463,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 623468,
+            "s": 623799,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623685,
+            "s": 623799,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623799,
+            "s": 623685,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300293,
+            "s": 300355,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300355,
+            "s": 300293,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 315495,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315516,
+            "s": 316460,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315770,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316087,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316460,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316464,
+            "s": 315770,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316827,
+            "s": 315770,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 317193,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619086,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619087,
+            "s": 619678,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619373,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619375,
+            "s": 619087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619386,
+            "s": 619086,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619678,
+            "s": 619087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619692,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 610701,
+            "s": 611317,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 610814,
+            "s": 611328,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611139,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611317,
+            "s": 610701,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611328,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611347,
+            "s": 611000,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          }
+        ]
+      }
+    },
+    "raw_hist_box": {
+      "source_macro": 0.5080590610675606,
+      "pairs": 370,
+      "per_source": {
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": 0.3978494623655914,
+        "YouTube/z-fsLpGHq6o": 0.2962962962962963,
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": 0.642833388759561,
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": 0.8464285714285714,
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": 0.6488294314381271,
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": 0.21611721611721613
+      },
+      "pooled": 0.495882788124417,
+      "top1": {
+        "correct": 42,
+        "queries": 57,
+        "accuracy": 0.7368421052631579,
+        "records": [
+          {
+            "q": 616217,
+            "s": 616988,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616321,
+            "s": 616988,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616558,
+            "s": 616647,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616647,
+            "s": 616217,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616988,
+            "s": 617158,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 617158,
+            "s": 616988,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 319534,
+            "s": 320822,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320172,
+            "s": 320552,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320173,
+            "s": 320822,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320531,
+            "s": 320822,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320552,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320822,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 339674,
+            "s": 340387,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 339998,
+            "s": 340387,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 340387,
+            "s": 341142,
+            "correct": true,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347582,
+            "s": 347361,
+            "correct": false,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347997,
+            "s": 347361,
+            "correct": false,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 611683,
+            "s": 613067,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611688,
+            "s": 611992,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611992,
+            "s": 611688,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611993,
+            "s": 613067,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611994,
+            "s": 612357,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612345,
+            "s": 611688,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612346,
+            "s": 613067,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612357,
+            "s": 611994,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612682,
+            "s": 613067,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612686,
+            "s": 613463,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613066,
+            "s": 613463,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613067,
+            "s": 612346,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613441,
+            "s": 613067,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613463,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 623468,
+            "s": 623799,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623685,
+            "s": 623799,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623799,
+            "s": 623685,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300293,
+            "s": 300355,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300355,
+            "s": 300293,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 315495,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315516,
+            "s": 315770,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315770,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316087,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316460,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316464,
+            "s": 316827,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316827,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 317193,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619086,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619087,
+            "s": 619678,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619373,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619375,
+            "s": 619087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619386,
+            "s": 619086,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619678,
+            "s": 619087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619692,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 610701,
+            "s": 611317,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 610814,
+            "s": 611139,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611139,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611317,
+            "s": 610701,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611328,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611347,
+            "s": 611000,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          }
+        ]
+      }
+    },
+    "tok_hist_box": {
+      "source_macro": 0.3483760523791515,
+      "pairs": 370,
+      "per_source": {
+        "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a": 0.3172043010752688,
+        "YouTube/z-fsLpGHq6o": 0.018518518518518517,
+        "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0": 0.3693049551047556,
+        "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68": 0.7214285714285714,
+        "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48": 0.4659977703455964,
+        "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072": 0.1978021978021978
+      },
+      "pooled": 0.34352986586895684,
+      "top1": {
+        "correct": 32,
+        "queries": 57,
+        "accuracy": 0.5614035087719298,
+        "records": [
+          {
+            "q": 616217,
+            "s": 616988,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616321,
+            "s": 616988,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616558,
+            "s": 616988,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616647,
+            "s": 616988,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 616988,
+            "s": 617158,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 617158,
+            "s": 616988,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 319534,
+            "s": 319218,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320172,
+            "s": 320552,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320173,
+            "s": 319218,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320531,
+            "s": 319218,
+            "correct": false,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320552,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 320822,
+            "s": 320172,
+            "correct": true,
+            "source": "ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a"
+          },
+          {
+            "q": 339674,
+            "s": 341141,
+            "correct": false,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 339998,
+            "s": 341141,
+            "correct": false,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 340387,
+            "s": 341141,
+            "correct": false,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347582,
+            "s": 347361,
+            "correct": false,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 347997,
+            "s": 347361,
+            "correct": false,
+            "source": "YouTube/z-fsLpGHq6o"
+          },
+          {
+            "q": 611683,
+            "s": 613463,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611688,
+            "s": 611992,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611992,
+            "s": 611688,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611993,
+            "s": 613463,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 611994,
+            "s": 612357,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612345,
+            "s": 611688,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612346,
+            "s": 613463,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612357,
+            "s": 611994,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612682,
+            "s": 613463,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 612686,
+            "s": 613463,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613066,
+            "s": 613463,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613067,
+            "s": 613463,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613441,
+            "s": 612686,
+            "correct": false,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 613463,
+            "s": 613066,
+            "correct": true,
+            "source": "ArgoVerse/aeb73d7a-8257-3225-972e-99307b3a5cb0"
+          },
+          {
+            "q": 623468,
+            "s": 623799,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623685,
+            "s": 623799,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 623799,
+            "s": 623685,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300293,
+            "s": 300355,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 300355,
+            "s": 300293,
+            "correct": true,
+            "source": "ArgoVerse/a6cab660-f086-3e2a-8ad9-7144f93f5b68"
+          },
+          {
+            "q": 315495,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315516,
+            "s": 316087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 315770,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316087,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316460,
+            "s": 316087,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316464,
+            "s": 317193,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 316827,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 317193,
+            "s": 316460,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619086,
+            "s": 619692,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619087,
+            "s": 619678,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619373,
+            "s": 619087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619375,
+            "s": 619692,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619386,
+            "s": 619086,
+            "correct": true,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619678,
+            "s": 619087,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 619692,
+            "s": 619086,
+            "correct": false,
+            "source": "ArgoVerse/af706af1-a226-3f6f-8d65-b1f4b9457c48"
+          },
+          {
+            "q": 610701,
+            "s": 611317,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 610814,
+            "s": 611139,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611139,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611317,
+            "s": 610701,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611328,
+            "s": 610814,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          },
+          {
+            "q": 611347,
+            "s": 611000,
+            "correct": true,
+            "source": "ArgoVerse/a64c1df5-9ad2-3f9e-9117-83ef0f8f3072"
+          }
+        ]
+      }
+    }
+  },
+  "uses_gt_only_for_scoring": true,
+  "training": false,
+  "gpu_used": false
+}

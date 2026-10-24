@@ -1,0 +1,1512 @@
+{
+  "schema_version": "OVMOT_GEOMETRY_ROI_INDEPENDENT_AUDIT_V1",
+  "status": "PASS_INDEPENDENT_GEOMETRY_ROI_PILOT_AUDIT",
+  "audited_at": "2026-10-24T14:12:00.103314+00:00",
+  "objects": {
+    "output_directory": "/raid/datasets/chc_data/geometry_roi_pilot_20261024_v10",
+    "manifest": "/home/chenhc/ov/OVMOT_RESEARCH/tmp_analysis/geometry_roi_pilot_manifest_20261024_v13.json",
+    "manifest_sha256": "d0b8b842d38e4377f619fdca8f253c331748e2d3c1589cc6659fee5312a92dd1",
+    "receipt": "/raid/datasets/chc_data/geometry_roi_pilot_20261024_v10/collection_receipt.json"
+  },
+  "summary": {
+    "rounds": 3,
+    "checks_per_round": [
+      7,
+      1,
+      7
+    ],
+    "frames": 18,
+    "retained_rows": 995,
+    "archive_npz_count": 18,
+    "independent_author_receipt_trusted": false,
+    "inconsistencies": 0
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "name": "frozen_manifest_and_artifact_integrity",
+      "checks": [
+        {
+          "name": "manifest_sha_matches_started_and_receipt",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "current_manifest_sha256": "d0b8b842d38e4377f619fdca8f253c331748e2d3c1589cc6659fee5312a92dd1",
+            "started": "d0b8b842d38e4377f619fdca8f253c331748e2d3c1589cc6659fee5312a92dd1",
+            "receipt": "d0b8b842d38e4377f619fdca8f253c331748e2d3c1589cc6659fee5312a92dd1"
+          }
+        },
+        {
+          "name": "runner_sha_matches_all_receipts",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "runner_sha256": "3df0930b559f66572e07c9d8607c77101cc5c3af5be2dddc54abb5298a3df6ad"
+          }
+        },
+        {
+          "name": "all_input_pins_rehashed",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "pin_count": 5,
+            "mismatches": []
+          }
+        },
+        {
+          "name": "frozen_model_source_tree_rehashed",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "source_count": 71,
+            "mismatches": []
+          }
+        },
+        {
+          "name": "output_inventory_exact",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "expected_count": 20,
+            "actual_count": 20,
+            "missing": [],
+            "extra": []
+          }
+        },
+        {
+          "name": "per_page_hash_schema_dtype_finite_metadata",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "pages": [
+              {
+                "frame_index": 0,
+                "frame_id": 0,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444365_f0.npz",
+                "file_sha256": "f0d6e40eeac3c029cd973d54b2e0307ff26011d79d7f03edf4ffb26c3328a2c0",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 52,
+                "roi_shape": [
+                  52,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  52,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  52,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 1,
+                "frame_id": 1,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444395_f1.npz",
+                "file_sha256": "2988964f1cbc4a4fed8a1529400a6f9f3a634576c24ab04344ad97a8f6b0dd17",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 52,
+                "roi_shape": [
+                  52,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  52,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  52,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 2,
+                "frame_id": 2,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444425_f2.npz",
+                "file_sha256": "b04f5cd4dc9142055f64b44e396db841cf14de3d0cd987896de5c248dc8ac251",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 55,
+                "roi_shape": [
+                  55,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  55,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  55,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 3,
+                "frame_id": 3,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444455_f3.npz",
+                "file_sha256": "33ec8ce1cf71e77ad7ecd9f8c3a2b3738ce3129429fea26a2da72a9be6f9d139",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 53,
+                "roi_shape": [
+                  53,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  53,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  53,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 4,
+                "frame_id": 4,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444485_f4.npz",
+                "file_sha256": "a94e64b6fb2267def28d7ce45fcda92bc71c647e1e3b8f11fa0071defc1f5819",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 59,
+                "roi_shape": [
+                  59,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  59,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  59,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 5,
+                "frame_id": 5,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444486_f5.npz",
+                "file_sha256": "ff27ef2b7fa4bca063678dc0adcb06830caa4d1e08bd398d56ba11e2af36daf4",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 56,
+                "roi_shape": [
+                  56,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  56,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  56,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 6,
+                "frame_id": 6,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444516_f6.npz",
+                "file_sha256": "9e0674321b6a535e171a56087d2e470d2a3d6111e89a37489606fa95b81c86e4",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 54,
+                "roi_shape": [
+                  54,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  54,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  54,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 7,
+                "frame_id": 7,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444546_f7.npz",
+                "file_sha256": "72afbf0abf8e402c4fefb2b6388698b3af08dfbda8d3690ea9a9a978f14b8aa5",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 52,
+                "roi_shape": [
+                  52,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  52,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  52,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 8,
+                "frame_id": 8,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444576_f8.npz",
+                "file_sha256": "7d177217b398714d19696e009db2d7085c482ce7e7888195d1822cf8efcac09e",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 60,
+                "roi_shape": [
+                  60,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  60,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  60,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 9,
+                "frame_id": 9,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444606_f9.npz",
+                "file_sha256": "3e523bf07180fc222e76eca26359b15db59ff884eee826a4521558100b8ce245",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 57,
+                "roi_shape": [
+                  57,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  57,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  57,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 10,
+                "frame_id": 10,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444607_f10.npz",
+                "file_sha256": "a50f604dfe62c9a23c944d0dadf5fb59cd77f8a721c547116c49166f1330a0b7",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 61,
+                "roi_shape": [
+                  61,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  61,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  61,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 11,
+                "frame_id": 11,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444616_f11.npz",
+                "file_sha256": "c0be5fc421c64b18e4ca3983e671750f58a00470e87479b0e42f97977523a686",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 56,
+                "roi_shape": [
+                  56,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  56,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  56,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 12,
+                "frame_id": 12,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444646_f12.npz",
+                "file_sha256": "798f2c984ef19df7970e840a54f4fc3c010fca4b0980e4e41f0212724c55a5b7",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 51,
+                "roi_shape": [
+                  51,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  51,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  51,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 13,
+                "frame_id": 13,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444676_f13.npz",
+                "file_sha256": "ff49f71fd99a1a31c0aed7e0e03ec2e57ff5adfa2081cf7e61590825cfa6340b",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 51,
+                "roi_shape": [
+                  51,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  51,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  51,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 14,
+                "frame_id": 14,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444706_f14.npz",
+                "file_sha256": "843b5b1dadce88e94415f3d084ffd954324015a86728e8fc2445bc21938870ab",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 58,
+                "roi_shape": [
+                  58,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  58,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  58,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 15,
+                "frame_id": 15,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444736_f15.npz",
+                "file_sha256": "d37ef8dd79f19e35de2065afca088b01cebf1ca071b7ade9b4d65ebc7fb1d1d4",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 59,
+                "roi_shape": [
+                  59,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  59,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  59,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 16,
+                "frame_id": 16,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444766_f16.npz",
+                "file_sha256": "6cf90cd85f5256676a6c34404527a080b06da31edfe46fe014b377e079ffafff",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 52,
+                "roi_shape": [
+                  52,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  52,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  52,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 17,
+                "frame_id": 17,
+                "manifest_cache_sha_ok": true,
+                "manifest_image_sha_ok": true,
+                "file": "v2583_i444796_f17.npz",
+                "file_sha256": "4cdc4feb67bb04ff32145ab4022373dcbf483ca8ae915788287fe73d79a90040",
+                "receipt_filename_ok": true,
+                "receipt_sha_ok": true,
+                "members_exact": true,
+                "forbidden_members": [],
+                "N": 57,
+                "roi_shape": [
+                  57,
+                  256,
+                  7,
+                  7
+                ],
+                "conv_shape": [
+                  57,
+                  256,
+                  7,
+                  7
+                ],
+                "raw_shape": [
+                  57,
+                  256
+                ],
+                "spatial_shape_ok": true,
+                "box_shapes_ok": true,
+                "locator_shapes_ok": true,
+                "finite": true,
+                "dtypes_ok": true,
+                "metadata_ok": true,
+                "preprocessing_json_ok": true,
+                "receipt_counts_ok": true,
+                "status": "PASS"
+              }
+            ],
+            "total_rows": 995,
+            "receipt_total_rows": 995
+          }
+        },
+        {
+          "name": "receipt_counts_exact",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "manifest_frames": 18,
+            "receipt_frames": 18,
+            "recomputed_rows": 995,
+            "receipt_rows": 995
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "name": "parent_row_provenance_and_geometry",
+      "checks": [
+        {
+          "name": "all_rows_and_boxes_reproject_through_parent",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "pages": [
+              {
+                "frame_index": 0,
+                "frame_id": 0,
+                "keep_dtype_bool": true,
+                "keep_count": 52,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 1,
+                "frame_id": 1,
+                "keep_dtype_bool": true,
+                "keep_count": 52,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 2,
+                "frame_id": 2,
+                "keep_dtype_bool": true,
+                "keep_count": 55,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 3,
+                "frame_id": 3,
+                "keep_dtype_bool": true,
+                "keep_count": 53,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 4,
+                "frame_id": 4,
+                "keep_dtype_bool": true,
+                "keep_count": 59,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 5,
+                "frame_id": 5,
+                "keep_dtype_bool": true,
+                "keep_count": 56,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 6,
+                "frame_id": 6,
+                "keep_dtype_bool": true,
+                "keep_count": 54,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 7,
+                "frame_id": 7,
+                "keep_dtype_bool": true,
+                "keep_count": 52,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 8,
+                "frame_id": 8,
+                "keep_dtype_bool": true,
+                "keep_count": 60,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 9,
+                "frame_id": 9,
+                "keep_dtype_bool": true,
+                "keep_count": 57,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 10,
+                "frame_id": 10,
+                "keep_dtype_bool": true,
+                "keep_count": 61,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 11,
+                "frame_id": 11,
+                "keep_dtype_bool": true,
+                "keep_count": 56,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 12,
+                "frame_id": 12,
+                "keep_dtype_bool": true,
+                "keep_count": 51,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 13,
+                "frame_id": 13,
+                "keep_dtype_bool": true,
+                "keep_count": 51,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 14,
+                "frame_id": 14,
+                "keep_dtype_bool": true,
+                "keep_count": 58,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 15,
+                "frame_id": 15,
+                "keep_dtype_bool": true,
+                "keep_count": 59,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 16,
+                "frame_id": 16,
+                "keep_dtype_bool": true,
+                "keep_count": 52,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              },
+              {
+                "frame_index": 17,
+                "frame_id": 17,
+                "keep_dtype_bool": true,
+                "keep_count": 57,
+                "row_locator_equals_keep_positions": true,
+                "raw256_exact_parent_rows": true,
+                "retained_det_boxes_exact_parent_rows": true,
+                "pretracker_boxes_exact_kept_rows": true,
+                "roi_proposal_row_exact_parent_kept_rows": true,
+                "proposal_locator_range_ok": true,
+                "proposal_locator_unique": true,
+                "metadata_frame_lineage_ok": true,
+                "parent_filename_bytes_ok": true,
+                "detector_box_finiteness": true,
+                "keep_mask_shape_matches_pretracker": true,
+                "status": "PASS"
+              }
+            ],
+            "checked_rows": 995
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "name": "sequence_media_scope_and_process_closure",
+      "checks": [
+        {
+          "name": "single_video_contiguous_prefix",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "video_ids": [
+              2583
+            ],
+            "frame_ids": {
+              "2583": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17
+              ]
+            }
+          }
+        },
+        {
+          "name": "image_ids_unique",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "duplicates": []
+          }
+        },
+        {
+          "name": "all_media_hashes_and_dimensions",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "image_count": 18,
+            "PIL_available": true,
+            "images": [
+              {
+                "frame_id": 0,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966684122113568.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 1,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966685121109824.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 2,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966686120104712.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 3,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966687119112472.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 4,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966688118108872.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 5,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966692114104192.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 6,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966693113112112.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 7,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966694112109056.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 8,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966695111105392.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 9,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966696110112632.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 10,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966707099103272.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 11,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966708098113272.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 12,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966709097108504.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 13,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966710096104408.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 14,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966711095114488.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 15,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966712094108976.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 16,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966713093104056.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              },
+              {
+                "frame_id": 17,
+                "image_path": "/home/chenhc/ov/OVMOT_RESEARCH/data_tao/frames/train/ArgoVerse/bae67a44-0f30-30c1-8999-06fc1c7ab80a/ring_front_center_315966714092113896.jpg",
+                "sha_ok": true,
+                "width": 1920,
+                "height": 1200,
+                "format": "JPEG",
+                "orientation_ok": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "collector_pid_terminal",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "pid": 3886610,
+            "ps_returncode": 1,
+            "ps_stdout": "",
+            "receipt_terminal": "PASS_GEOMETRY_ROI_TOKEN_COLLECTION_V1"
+          }
+        },
+        {
+          "name": "no_gt_identity_posterior_payload",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "violations": [],
+            "exact_member_allowlist": [
+              "roi_input",
+              "conv_spatial",
+              "raw_output",
+              "pretracker_det_row",
+              "roi_proposal_row",
+              "det_bboxes",
+              "pretracker_det_bboxes",
+              "preprocessing_json",
+              "source",
+              "video_id",
+              "image_id",
+              "frame_id",
+              "image_sha256",
+              "cache_sha256"
+            ]
+          }
+        },
+        {
+          "name": "frozen_checkpoint_causal_replay_diagnostic",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "per_frame": [
+              {
+                "frame_id": 0,
+                "spatial_max_abs_float32_cpu": 0.0012977123260498047,
+                "raw_max_abs_float32_cpu": 0.00041735172271728516,
+                "raw_mean_abs_float32_cpu": 7.619710231665522e-05
+              },
+              {
+                "frame_id": 1,
+                "spatial_max_abs_float32_cpu": 0.0013227462768554688,
+                "raw_max_abs_float32_cpu": 0.00043845176696777344,
+                "raw_mean_abs_float32_cpu": 7.628827006556094e-05
+              },
+              {
+                "frame_id": 2,
+                "spatial_max_abs_float32_cpu": 0.0015997886657714844,
+                "raw_max_abs_float32_cpu": 0.0004998445510864258,
+                "raw_mean_abs_float32_cpu": 7.781837484799325e-05
+              },
+              {
+                "frame_id": 3,
+                "spatial_max_abs_float32_cpu": 0.0014612674713134766,
+                "raw_max_abs_float32_cpu": 0.00047975778579711914,
+                "raw_mean_abs_float32_cpu": 7.860284677008167e-05
+              },
+              {
+                "frame_id": 4,
+                "spatial_max_abs_float32_cpu": 0.0015451908111572266,
+                "raw_max_abs_float32_cpu": 0.0004700124263763428,
+                "raw_mean_abs_float32_cpu": 7.816463039489463e-05
+              },
+              {
+                "frame_id": 5,
+                "spatial_max_abs_float32_cpu": 0.0015323162078857422,
+                "raw_max_abs_float32_cpu": 0.0004229545593261719,
+                "raw_mean_abs_float32_cpu": 7.613700290676206e-05
+              },
+              {
+                "frame_id": 6,
+                "spatial_max_abs_float32_cpu": 0.0015349388122558594,
+                "raw_max_abs_float32_cpu": 0.0004235506057739258,
+                "raw_mean_abs_float32_cpu": 7.515806646551937e-05
+              },
+              {
+                "frame_id": 7,
+                "spatial_max_abs_float32_cpu": 0.0015411376953125,
+                "raw_max_abs_float32_cpu": 0.000501096248626709,
+                "raw_mean_abs_float32_cpu": 7.541131344623864e-05
+              },
+              {
+                "frame_id": 8,
+                "spatial_max_abs_float32_cpu": 0.001416921615600586,
+                "raw_max_abs_float32_cpu": 0.00048476457595825195,
+                "raw_mean_abs_float32_cpu": 7.484804518753663e-05
+              },
+              {
+                "frame_id": 9,
+                "spatial_max_abs_float32_cpu": 0.0013679265975952148,
+                "raw_max_abs_float32_cpu": 0.0004571676254272461,
+                "raw_mean_abs_float32_cpu": 7.324538455577567e-05
+              },
+              {
+                "frame_id": 10,
+                "spatial_max_abs_float32_cpu": 0.0014630556106567383,
+                "raw_max_abs_float32_cpu": 0.00043201446533203125,
+                "raw_mean_abs_float32_cpu": 7.577858923468739e-05
+              },
+              {
+                "frame_id": 11,
+                "spatial_max_abs_float32_cpu": 0.0013499855995178223,
+                "raw_max_abs_float32_cpu": 0.0005303025245666504,
+                "raw_mean_abs_float32_cpu": 7.786975766066462e-05
+              },
+              {
+                "frame_id": 12,
+                "spatial_max_abs_float32_cpu": 0.0017377138137817383,
+                "raw_max_abs_float32_cpu": 0.0004942417144775391,
+                "raw_mean_abs_float32_cpu": 7.598269439768046e-05
+              },
+              {
+                "frame_id": 13,
+                "spatial_max_abs_float32_cpu": 0.0015606880187988281,
+                "raw_max_abs_float32_cpu": 0.0004864335060119629,
+                "raw_mean_abs_float32_cpu": 7.587316213175654e-05
+              },
+              {
+                "frame_id": 14,
+                "spatial_max_abs_float32_cpu": 0.0013453960418701172,
+                "raw_max_abs_float32_cpu": 0.0004722476005554199,
+                "raw_mean_abs_float32_cpu": 7.7199780207593e-05
+              },
+              {
+                "frame_id": 15,
+                "spatial_max_abs_float32_cpu": 0.001500844955444336,
+                "raw_max_abs_float32_cpu": 0.0004761219024658203,
+                "raw_mean_abs_float32_cpu": 7.849605026422068e-05
+              },
+              {
+                "frame_id": 16,
+                "spatial_max_abs_float32_cpu": 0.001684427261352539,
+                "raw_max_abs_float32_cpu": 0.0004203915596008301,
+                "raw_mean_abs_float32_cpu": 7.625416765222326e-05
+              },
+              {
+                "frame_id": 17,
+                "spatial_max_abs_float32_cpu": 0.0015906691551208496,
+                "raw_max_abs_float32_cpu": 0.0004381537437438965,
+                "raw_mean_abs_float32_cpu": 7.631991320522502e-05
+              }
+            ],
+            "tolerance_note": "CPU float32 replay of CUDA float16 cache; not an exact-bit test. Parent raw256 equality is the exact integrity test."
+          }
+        },
+        {
+          "name": "runtime_and_scope_flags",
+          "status": "PASS",
+          "independent": true,
+          "details": {
+            "started_training": false,
+            "receipt_training": false,
+            "automatic_retry": false,
+            "access_scope": "only cache_member_allowlist; no GT/identity/class/posterior/matching"
+          }
+        }
+      ]
+    }
+  ],
+  "scope_caveats": [
+    "This audit verifies cache provenance, frozen-input identity, row/geometry consistency, media hashes, and checkpoint causal replay. It cannot prove GPU device ownership during the already-completed run except from the frozen started/receipt records.",
+    "The CPU float32 causal replay is approximate because the production values were computed on CUDA in float16; exact parent track_feats equality is checked separately."
+  ]
+}
