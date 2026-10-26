@@ -8,7 +8,7 @@ TAO val 复现通过：本次训练的 `epoch_20.pth` 得到 Combined/Base/Novel
 
 BDD100K zero-shot 的 **COVTrack 正式结果**为 **42.745 TETA**（LocA 42.584、AssocA 37.353、ClsA 48.299），使用完整 200 视频、官方 BDD COCO 标注、DetPro BDD 8 类 prompt、`BDDVideoDataset`、COVTrack 自有 `OVTrackRoIHeadUncertainty + FeatureFusionModule + OVTrackerUncertainty`、`dynamic_rcnn_thre=True`、`.37/80/50/.4` 和 `exhaustive=False`。独立 OVTR BDD evaluator 对同一预测复核为 **42.703 / 42.304 / 37.510 / 48.295**，差异仅 0.042 TETA。论文 Table X 的 COVTrack 为 **45.8 / 44.1 / 39.4 / 53.9**，当前差 **3.055 TETA**，主要剩余差距为 LocA **1.516**、AssocA **2.047**、ClsA **5.601**。
 
-另有一条容易混淆的 **43.675** 结果：它使用同一官方 GT/prompt 和我们自己的 checkpoint，但运行的是 OVTrack 式 head 与 `.0001/50/.5/10/.8` 推理配置；它是配置对照，**不是 COVTrack 复现结果**。师兄提到的 45.8 使用 COVTrack 方法的新推理配置，不能用 OVTrack 的配置替代。
+另有一条容易混淆的 **43.675** 结果：它使用同一官方 GT/prompt、我们自己的 checkpoint 和 COVTrack 代码，但沿用 OVTrack/旧 TAO 的 `.0001/50/.5/10/.8` 推理参数；它是共享推理参数的对照，**不是 COVTrack 自有配置的正式复现结果**。师兄提到的 45.8 使用 COVTrack 方法的自有推理配置，不能用 OVTrack 的配置替代。
 
 公开 COVTrack 仓库（`main`，HEAD `9b0ced5779ee36f5dd73dbe39b5ae5d57abb4b3b`）没有 BDD 专用训练或评测脚本；其 BDD wrapper 明确写的是 `TETA(exhaustive=True)`。`exhaustive=False` 是原作者与师兄沟通后的评测口径，不是公开 README 的默认值；报告中必须保留这个 provenance，不能把 42.745 或对照 43.675 当作仓库默认 exhaustive BDD 数值。
 
@@ -95,12 +95,12 @@ results/covtrack_epoch20_bdd_covtrack_protocol_full_independent_20261026/result.
 | TAO 发布参数 | 10 | max80、`.37/50/.4` | 34.034 | 44.732 | 32.460 | 24.911 | 下降，排除 |
 | LVIS DetPro 前 8 行 | 10 | `prompt_path` 前 8 行、max80 | 21.116 | 9.679 | 20.629 | 33.041 | 输入错配，排除 |
 | 现场 CLIP 文本头 | 10 | 原生名、max80、dynamic=True | 21.117 | 9.679 | 20.629 | 33.041 | 文本头错配，排除 |
-| 官方 BDD 协议 + OVTrack 式推理 | 10 | 官方 GT、DetPro BDD、`.0001/50/.5/10/.8`、False | 42.464 | 45.374 | 36.386 | 45.630 | 协议对照，不是 COVTrack |
-| 官方 BDD 协议 + OVTrack 式推理 | 200 | 官方 GT、DetPro BDD、`.0001/50/.5/10/.8`、False | 43.675 | 41.019 | 39.191 | 50.814 | 已知对照，不能报作 COVTrack |
+| 官方 BDD 协议 + OVTrack/旧 TAO 推理参数 | 10 | 官方 GT、DetPro BDD、`.0001/50/.5/10/.8`、False | 42.464 | 45.374 | 36.386 | 45.630 | 共享参数对照 |
+| 官方 BDD 协议 + OVTrack/旧 TAO 推理参数 | 200 | 官方 GT、DetPro BDD、`.0001/50/.5/10/.8`、False | 43.675 | 41.019 | 39.191 | 50.814 | 已知对照，不能报作 COVTrack 自有配置 |
 | COVTrack 自有配置 | 10 | 官方 GT、DetPro BDD、`.37/80/50/.4`、False | 42.130 | 47.502 | 33.909 | 44.980 | 快速验证通过 |
 | **COVTrack 自有配置** | **200** | 官方 GT、DetPro BDD、`.37/80/50/.4`、False | **42.745** | **42.584** | **37.353** | **48.299** | **COVTrack 正式结果** |
 
-前几轮的 37.621 不能解释为模型本身的 BDD 能力，因为同时叠加了自建 GT、错误文本头、动态阈值和不同包装器。改用官方 BDD 输入后，即使采用 OVTrack 式推理配置也达到 43.675；把 head/tracker 与阈值恢复为 COVTrack 自有配置后，为 42.745。两个编号回答的是不同问题，不能将较高的 43.675 写成 COVTrack 结果。
+前几轮的 37.621 不能解释为模型本身的 BDD 能力，因为同时叠加了自建 GT、错误文本头、动态阈值和不同包装器。改用官方 BDD 输入后，即使沿用 OVTrack/旧 TAO 推理参数也达到 43.675；把阈值恢复为 COVTrack 自有配置后，为 42.745。两个编号回答的是不同问题，不能将较高的 43.675 写成 COVTrack 自有配置的正式结果。
 
 ## 已排除的输入/评测错误
 
@@ -121,7 +121,7 @@ OVTrack 原文补充材料写的是：BDD 实验使用视频中出现的类别�
 
 ## 当前判断与后续
 
-已完成 TAO val 的有效复现，以及 BDD 完整 val 的可追溯 zero-shot 结果。COVTrack 自有配置的正式 BDD 距论文差 3.055 TETA；早期基于 37.621 的“训练不足/协议尚缺根因”判断由错误输入组合造成，应废弃。官方 BDD 协议下 OVTrack 式推理的 43.675 是有效对照，但不是 COVTrack 的方法复现。
+已完成 TAO val 的有效复现，以及 BDD 完整 val 的可追溯 zero-shot 结果。COVTrack 自有配置的正式 BDD 距论文差 3.055 TETA；早期基于 37.621 的“训练不足/协议尚缺根因”判断由错误输入组合造成，应废弃。官方 BDD 协议下沿用 OVTrack/旧 TAO 参数的 43.675 是共享参数对照，但不是 COVTrack 自有配置的正式复现。
 
 当前可复核的结论以 COVTrack 自有配置的正式协议为准。残差 3.055 不复用于 BDD 调参或模型选择；若继续缩小，应单独预注册“检测候选/分类头/关联器”的比较，并保持 TAO 选参和 BDD 不参与选择的边界。
 
