@@ -6,9 +6,11 @@
 
 TAO val 复现通过：本次训练的 `epoch_20.pth` 得到 Combined/Base/Novel TETA **38.828 / 39.443 / 34.239**；发布基线为 **39.554 / 34.205**，差值 **-0.111 / +0.034**。这是本次训练 checkpoint 的有效 TAO 复现结果。
 
-BDD100K zero-shot 的正式已验证结果为 **43.675 TETA**（LocA 41.019、AssocA 39.191、ClsA 50.814），使用完整 200 视频、官方 BDD COCO 标注、DetPro BDD 8 类 prompt、`BDDVideoDataset`、`dynamic_rcnn_thre=False`、`score_thr=0.0001`、`max_per_img=50` 和 `exhaustive=False`。独立 OVTR BDD evaluator 对同一预测复核为 **43.649 / 40.762 / 39.368 / 50.815**，两者差异仅 0.026 TETA。论文 Table X 的 COVTrack 为 **45.8 TETA**（LocA 44.1、AssocA 39.4、ClsA 53.9），当前差 **2.125**；LocA 和 AssocA 已接近，主要剩余差距在 ClsA **3.086**。
+BDD100K zero-shot 的 **COVTrack 正式结果**为 **42.745 TETA**（LocA 42.584、AssocA 37.353、ClsA 48.299），使用完整 200 视频、官方 BDD COCO 标注、DetPro BDD 8 类 prompt、`BDDVideoDataset`、COVTrack 自有 `OVTrackRoIHeadUncertainty + FeatureFusionModule + OVTrackerUncertainty`、`dynamic_rcnn_thre=True`、`.37/80/50/.4` 和 `exhaustive=False`。独立 OVTR BDD evaluator 对同一预测复核为 **42.703 / 42.304 / 37.510 / 48.295**，差异仅 0.042 TETA。论文 Table X 的 COVTrack 为 **45.8 / 44.1 / 39.4 / 53.9**，当前差 **3.055 TETA**，主要剩余差距为 LocA **1.516**、AssocA **2.047**、ClsA **5.601**。
 
-公开 COVTrack 仓库（`main`，HEAD `9b0ced5779ee36f5dd73dbe39b5ae5d57abb4b3b`）没有 BDD 专用训练或评测脚本；其 BDD wrapper 明确写的是 `TETA(exhaustive=True)`。`exhaustive=False` 是原作者与师兄沟通后的评测口径，不是公开 README 的默认值；报告中必须保留这个 provenance，不能把 43.675 当作仓库默认 exhaustive BDD 数值。
+另有一条容易混淆的 **43.675** 结果：它使用同一官方 GT/prompt 和我们自己的 checkpoint，但运行的是 OVTrack 式 head 与 `.0001/50/.5/10/.8` 推理配置；它是配置对照，**不是 COVTrack 复现结果**。师兄提到的 45.8 使用 COVTrack 方法的新推理配置，不能用 OVTrack 的配置替代。
+
+公开 COVTrack 仓库（`main`，HEAD `9b0ced5779ee36f5dd73dbe39b5ae5d57abb4b3b`）没有 BDD 专用训练或评测脚本；其 BDD wrapper 明确写的是 `TETA(exhaustive=True)`。`exhaustive=False` 是原作者与师兄沟通后的评测口径，不是公开 README 的默认值；报告中必须保留这个 provenance，不能把 42.745 或对照 43.675 当作仓库默认 exhaustive BDD 数值。
 
 ## TAO val/test
 
@@ -53,32 +55,34 @@ SHA256: 013a0ecbdc10cfb950a02eb42d89b14565de6c13ee7227a058c87c79899ab947
 |---|---|---|---|---|---|---|---|---|
 | name | pedestrian | rider | car | truck | bus | train | motorcycle | bicycle |
 
-隔离源码 `work/covtrack_epoch20_test_src_20261024` 使用同一 checkpoint，配置文件为 `tmp_configs/ovtrack_r50_bddmot_ours_official_20261026.py`：
+隔离源码 `work/covtrack_epoch20_test_src_20261024` 使用同一 checkpoint。**COVTrack 正式配置**为 `tmp_configs/ovtrack_r50_bddmot_covtrack_bdd_20261026.py`：
 
 ```text
 dataset: BDDVideoDataset
 classes: pedestrian, rider, car, truck, bus, train, motorcycle, bicycle
-dynamic_rcnn_thre=False
+roi_head: OVTrackRoIHeadUncertainty
+feature_fusion_head: FeatureFusionModule
+tracker: OVTrackerUncertainty
+dynamic_rcnn_thre=True
 prompt_path=detpro_prompt_bdd.pt  # 8x512
-test_cfg.rcnn.score_thr=0.0001
-test_cfg.rcnn.max_per_img=50
-tracker: match_score_thr=0.5, memo_frames=10, momentum_embed=0.8
+test_cfg.rcnn: score_thr=0.0001, max_per_img=80
+tracker: match_score_thr=0.37, memo_frames=50, momentum_embed=0.4
 TETA: exhaustive=False
 ```
 
-日志证据：`logs/covtrack_epoch20_bdd_ours_official_full_20261026.log` 记录 prompt 路径存在，`text features shape torch.Size([8, 512])`；配置 SHA 与 checkpoint/prompt/GT 哈希见输出目录 `manifest.json`。
+日志证据：`logs/covtrack_epoch20_bdd_covtrack_protocol_full_20261026.log` 记录 prompt 路径存在、`text features shape torch.Size([8, 512])` 及本地 `epoch_20.pth`；配置 SHA 与 checkpoint/prompt/GT 哈希见输出目录 `manifest.json`。
 
 正式产物：
 
 ```text
-results/covtrack_epoch20_bdd_ours_official_full_20261026/bdd_track_coco.json
-results/covtrack_epoch20_bdd_ours_official_full_20261026/bdd_track_scalabel.json
-results/covtrack_epoch20_bdd_ours_official_full_20261026/bdd_bbox.json
-results/covtrack_epoch20_bdd_ours_official_full_20261026/manifest.json
-results/covtrack_epoch20_bdd_ours_official_full_independent_20261026/result.json
+results/covtrack_epoch20_bdd_covtrack_protocol_full_20261026/bdd_track_coco.json
+results/covtrack_epoch20_bdd_covtrack_protocol_full_20261026/bdd_track_scalabel.json
+results/covtrack_epoch20_bdd_covtrack_protocol_full_20261026/bdd_bbox.json
+results/covtrack_epoch20_bdd_covtrack_protocol_full_20261026/manifest.json
+results/covtrack_epoch20_bdd_covtrack_protocol_full_independent_20261026/result.json
 ```
 
-官方 BDD wrapper 路径为 **43.675 / 41.019 / 39.191 / 50.814**；独立 OVTR BDD evaluator 为 **43.649 / 40.762 / 39.368 / 50.815**。Computed ClsA 完全相同（50.814 vs 50.815），其他指标的小差异来自两个 BDD evaluator 对本地 cluster 的处理。正式比较保留各自 evaluator 标签，不混用。
+官方 BDD wrapper 路径为 **42.745 / 42.584 / 37.353 / 48.299**；独立 OVTR BDD evaluator 为 **42.703 / 42.304 / 37.510 / 48.295**。差异来自两个 evaluator 对本地 cluster 的处理；正式比较保留各自 evaluator 标签，不混用。4 个没有任何轨迹的帧仍保留在 Scalabel 输出中，独立评测覆盖 39,973 帧。
 
 ## BDD 对照实验
 
@@ -91,16 +95,18 @@ results/covtrack_epoch20_bdd_ours_official_full_independent_20261026/result.json
 | TAO 发布参数 | 10 | max80、`.37/50/.4` | 34.034 | 44.732 | 32.460 | 24.911 | 下降，排除 |
 | LVIS DetPro 前 8 行 | 10 | `prompt_path` 前 8 行、max80 | 21.116 | 9.679 | 20.629 | 33.041 | 输入错配，排除 |
 | 现场 CLIP 文本头 | 10 | 原生名、max80、dynamic=True | 21.117 | 9.679 | 20.629 | 33.041 | 文本头错配，排除 |
-| 官方协议 | 10 | 官方 GT、DetPro BDD、dynamic=False、50、False | 42.464 | 45.374 | 36.386 | **45.630** | 快速验证通过 |
-| **官方协议** | **200** | 官方 GT、DetPro BDD、dynamic=False、50、False | **43.675** | **41.019** | **39.191** | **50.814** | **正式结果** |
+| 官方 BDD 协议 + OVTrack 式推理 | 10 | 官方 GT、DetPro BDD、`.0001/50/.5/10/.8`、False | 42.464 | 45.374 | 36.386 | 45.630 | 协议对照，不是 COVTrack |
+| 官方 BDD 协议 + OVTrack 式推理 | 200 | 官方 GT、DetPro BDD、`.0001/50/.5/10/.8`、False | 43.675 | 41.019 | 39.191 | 50.814 | 已知对照，不能报作 COVTrack |
+| COVTrack 自有配置 | 10 | 官方 GT、DetPro BDD、`.37/80/50/.4`、False | 42.130 | 47.502 | 33.909 | 44.980 | 快速验证通过 |
+| **COVTrack 自有配置** | **200** | 官方 GT、DetPro BDD、`.37/80/50/.4`、False | **42.745** | **42.584** | **37.353** | **48.299** | **COVTrack 正式结果** |
 
-前几轮的 37.621 不能解释为模型本身的 BDD 能力，因为同时叠加了自建 GT、错误文本头、动态阈值和不同的数据包装器。改用官方输入后，核心变化全部在 ClsA：37.621 → 43.675，ClsA 35.896 → 50.814。这同时说明先前“模型训练不足”的判断不成立。
+前几轮的 37.621 不能解释为模型本身的 BDD 能力，因为同时叠加了自建 GT、错误文本头、动态阈值和不同包装器。改用官方 BDD 输入后，即使采用 OVTrack 式推理配置也达到 43.675；把 head/tracker 与阈值恢复为 COVTrack 自有配置后，为 42.745。两个编号回答的是不同问题，不能将较高的 43.675 写成 COVTrack 结果。
 
 ## 已排除的输入/评测错误
 
 - 类别顺序：早期 `TaoDataset` 配置使用 LVIS 风格的简写类名，`cat_ids` 为 `[2,3,4,5,6,7,8]`；它的 `person` 在 LVIS 风格转换文件上能找到对应项，但 `pedestrian/rider` 的语义链与官方 `BDDVideoDataset` 的 `[1..8]` 并不等价。正式配置改用官方 `BDDVideoDataset` 和原生 BDD 类名，避免这条歧义路径。
-- 评测上限：早期结果每帧最多 47 条预测，截断前后分数一致；正式协议虽设为 `max_per_img=50`，保存的完整 200 视频预测为 1,187,332 条，最终 TETA 由官方 wrapper 与独立 evaluator 双重复算，未再靠离线截断修复。
-- 动态 R-CNN 分数阈值：早期 `dynamic_rcnn_thre=True` 会把 8 类测试阈值抬到约 0.111；它使保存预测的分数下限恰好为 0.111，和正式协议固定的 `0.0001` 明显不同。正式配置已将这一项显式关闭，因此不再把两类得分混为同一协议。
+- 评测上限：早期结果每帧最多 47 条预测，截断前后分数一致；COVTrack 正式配置将 `max_per_img` 设为 80，完整 200 视频保存了 1,208,126 条轨迹记录，最终 TETA 由官方 wrapper 与独立 evaluator 双重复算。
+- 动态 R-CNN 分数阈值：COVTrack 自有配置保留 `dynamic_rcnn_thre=True`，8 类下自动阈值约 0.111；OVTrack 式对照关闭该动态阈值并使用 0.0001，两者分数不可当作同一推理配置。
 - 推理实际生成：普通 GT 446,840，预测 1,019,664 条，轨迹约 200,213 条；类别无关 IoU@0.5 召回约 59.4%、精度约 26.3%，匹配框 IoU 中位 0.818。同帧 IoU≥0.5 重复框为 0 对。问题指向候选数量/关联碎片化，并非简单同帧 NMS。
 - 轨道合并：相邻帧、同类、IoU≥0.5 仅 84 对，10 视频 TETA 36.404 → 36.367，下降，停止该方向。
 - 官方权重 `ctao_public.pth` 在早期 10 视频配置下为 36.055，不代表它们在正式协议下的差异；该对比使用错误类名和 prompt，因此不能用于判断模型权重优劣。
@@ -115,23 +121,24 @@ OVTrack 原文补充材料写的是：BDD 实验使用视频中出现的类别�
 
 ## 当前判断与后续
 
-已完成 TAO val 的有效复现，以及 BDD 完整 val 的可追溯 zero-shot 结果。正式 BDD 距论文只差 2.125 TETA；LocA 与 AssocA 已接近，剩余主要是 ClsA 差 3.086。先前基于 37.621 的“训练不足/协议尚缺根因”判断由错误输入组合造成，应废弃。
+已完成 TAO val 的有效复现，以及 BDD 完整 val 的可追溯 zero-shot 结果。COVTrack 自有配置的正式 BDD 距论文差 3.055 TETA；早期基于 37.621 的“训练不足/协议尚缺根因”判断由错误输入组合造成，应废弃。官方 BDD 协议下 OVTrack 式推理的 43.675 是有效对照，但不是 COVTrack 的方法复现。
 
-当前可复核的结论以正式协议为准。残差 2.125 不复用于 BDD 调参或模型选择；若继续缩小，应单独预注册“检测候选/分类头/关联器”的比较，并保持 TAO 选参和 BDD 不参与选择的边界。
+当前可复核的结论以 COVTrack 自有配置的正式协议为准。残差 3.055 不复用于 BDD 调参或模型选择；若继续缩小，应单独预注册“检测候选/分类头/关联器”的比较，并保持 TAO 选参和 BDD 不参与选择的边界。
 
 ## 产物与校验
 
 | artifact | sha256 |
 |---|---|
 | `epoch_20.pth` | `3205bfc9e6fd570532ff12ece58c2037a9f1c039daa09a5a37a3964dd37f3a44` |
-| 正式 BDD COCO 预测 | `a035542a3cfd14d63b770eff953c141d5587a05140895bf60463c9df790bc6b8` |
-| 正式 BDD Scalabel 预测 | `5a2b190be0502934dd82df1adeaade31ccee50084e3f7b0c78d936e4355362a3` |
-| 正式 BDD 检测输出 | `399abb4362f97c4655f77d1697dec72fb0c0a5c10db8cb050716c73dc71b665c` |
-| 独立 BDD TETA 回执 | `07999e1ea01fd4d84248f43496766fdea57c9711e48139a51f70c08322982e97` |
+| COVTrack 正式 BDD COCO 预测 | `3002e5c19ff5063e3a7d327423937012cd333a2a5cc0485b80f7298132d39c25` |
+| COVTrack 正式 BDD Scalabel 预测 | `4e0497dbe61e41a0ead5066e4f5efdd7fe66e98392038cb04251c9e265794892` |
+| COVTrack 正式 BDD 检测输出 | `1fee4833794c6dcb5c521a9e7e58256b4a15e77d16642de14f06d4808cf37228` |
+| COVTrack 正式配置 | `6dbd8b14ffb97e78cb50c918dfba3136ae4b7d19b19a08ae632d1c6b8e09c21e` |
+| COVTrack 独立 BDD TETA 回执 | `04d469849447f1151dfdfd372ed7754439b0157bb34d29c927b7e870a119757d` |
 | 完整 val `tao_track.json` | `3512db84bfdf129fc33d4be18f3982f3a34f2a8417f51169b675aa06e670a430` |
 | 完整 val 独立 TETA 回执 | `d056693ae4557faa5f803935895eadda9e56136fc3393353e3d74f5c9f4fb4b4` |
 | 10 视频 A 参数预测 | `9d9a2061e8afd88fb0d8218c3eb73aefdcfe84ba63fdeeb2fbf06c07abedeb05` |
 | 10 视频自定义 8 类预测 | `bbe191c796cc1fc1af71f044311502da302f6baa786976b0f471e9d3618df01e` |
 | 自定义 8 类独立 TETA 回执 | `17c9a90925c3873dccfaa314abbf1b429519fafefe24edfbae7809d3c3eca3fd` |
 
-正式 BDD 独立评测回执：`results/covtrack_epoch20_bdd_ours_official_full_independent_20261026/result.json`。
+COVTrack 正式 BDD 独立评测回执：`results/covtrack_epoch20_bdd_covtrack_protocol_full_independent_20261026/result.json`。
